@@ -9,10 +9,17 @@
 import UIKit
 
 class ViewController: UIViewController {
-
+    @IBOutlet weak var Help: UIButton!
+    
+    @IBOutlet weak var News: UIButton!
+    
+    @IBOutlet weak var Apps: UIButton!
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view.
+        Help.layer.cornerRadius = 6
+        News.layer.cornerRadius = 6
+        Apps.layer.cornerRadius = 6
     }
 
 
