@@ -17,9 +17,9 @@ class ViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view.
-        Help.layer.cornerRadius = 6
-        News.layer.cornerRadius = 6
-        Apps.layer.cornerRadius = 6
+        Help.layer.cornerRadius = 15
+        News.layer.cornerRadius = 15
+        Apps.layer.cornerRadius = 15
     }
 
 

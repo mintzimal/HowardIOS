@@ -14,6 +14,7 @@
 		F7DC650A224D182C00C8EA66 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F7DC6508224D182C00C8EA66 /* LaunchScreen.storyboard */; };
 		F7DC6515224D182C00C8EA66 /* Howard2Tests.swift in Sources */ = {isa = PBXBuildFile; fileRef = F7DC6514224D182C00C8EA66 /* Howard2Tests.swift */; };
 		F7DC6520224D182C00C8EA66 /* Howard2UITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = F7DC651F224D182C00C8EA66 /* Howard2UITests.swift */; };
+		F7DC652E224D241200C8EA66 /* Apps.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F7DC652D224D241200C8EA66 /* Apps.storyboard */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -47,6 +48,7 @@
 		F7DC651B224D182C00C8EA66 /* Howard2UITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = Howard2UITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		F7DC651F224D182C00C8EA66 /* Howard2UITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Howard2UITests.swift; sourceTree = "<group>"; };
 		F7DC6521224D182C00C8EA66 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		F7DC652D224D241200C8EA66 /* Apps.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Apps.storyboard; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -103,6 +105,7 @@
 				F7DC6506224D182C00C8EA66 /* Assets.xcassets */,
 				F7DC6508224D182C00C8EA66 /* LaunchScreen.storyboard */,
 				F7DC650B224D182C00C8EA66 /* Info.plist */,
+				F7DC652D224D241200C8EA66 /* Apps.storyboard */,
 			);
 			path = Howard2;
 			sourceTree = "<group>";
@@ -231,6 +234,7 @@
 			files = (
 				F7DC650A224D182C00C8EA66 /* LaunchScreen.storyboard in Resources */,
 				F7DC6507224D182C00C8EA66 /* Assets.xcassets in Resources */,
+				F7DC652E224D241200C8EA66 /* Apps.storyboard in Resources */,
 				F7DC6505224D182A00C8EA66 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
