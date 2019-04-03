@@ -24,6 +24,9 @@
                                 <color key="backgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="36"/>
                                 <state key="normal" title="District 1"/>
+                                <connections>
+                                    <action selector="callDistrictOne:" destination="f0A-fP-LMs" eventType="touchUpInside" id="8tB-xy-kE1"/>
+                                </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="x9s-NW-dZC">
                                 <rect key="frame" x="99" y="443" width="177" height="119"/>
