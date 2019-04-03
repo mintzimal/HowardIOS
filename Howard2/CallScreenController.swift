@@ -1,8 +1,8 @@
 //
 //  CallScreenController.swift
-//  HowardCenter
+//  Howard2
 //
-//  Created by Noah Mintz Roberts on 3/7/19.
+//  Created by Noah Mintz Roberts on 4/3/19.
 //  Copyright © 2019 William Risigo. All rights reserved.
 //
 
@@ -10,7 +10,6 @@ import UIKit
 
 class CallScreenController: UIViewController {
     
-    //Properties
     @IBOutlet weak var districtOneButton: UIButton!
     @IBOutlet weak var districtTwoButton: UIButton!
     
@@ -26,7 +25,6 @@ class CallScreenController: UIViewController {
         dialNumber(number: "+6178173687")
     }
     
-
     override func viewDidLoad() {
         super.viewDidLoad()
 
