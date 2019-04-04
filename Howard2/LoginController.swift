@@ -9,7 +9,12 @@
 import UIKit
 
 class LoginController: UIViewController {
-
+    
+    
+    @IBOutlet weak var usernameInput: UITextField!
+    @IBOutlet weak var passwordInput: UITextField!
+    
+    
     override func viewDidLoad() {
         super.viewDidLoad()
 
