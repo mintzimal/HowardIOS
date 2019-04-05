@@ -17,6 +17,8 @@
 		3939DBEA2256499B001A8A7B /* SignupController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3939DBE92256499B001A8A7B /* SignupController.swift */; };
 		3939DBEC225649B9001A8A7B /* LaunchScreenController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3939DBEB225649B9001A8A7B /* LaunchScreenController.swift */; };
 		3939DBEE225649D7001A8A7B /* AppsController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3939DBED225649D7001A8A7B /* AppsController.swift */; };
+		97A06B7D2257AA6200044F3D /* CheckList.swift in Sources */ = {isa = PBXBuildFile; fileRef = 97A06B7C2257AA6200044F3D /* CheckList.swift */; };
+		97D8BE6D2257AD9D00371361 /* CheckList.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 97D8BE6C2257AD9D00371361 /* CheckList.storyboard */; };
 		F7DC6500224D182A00C8EA66 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F7DC64FF224D182A00C8EA66 /* AppDelegate.swift */; };
 		F7DC6502224D182A00C8EA66 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F7DC6501224D182A00C8EA66 /* ViewController.swift */; };
 		F7DC6505224D182A00C8EA66 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F7DC6503224D182A00C8EA66 /* Main.storyboard */; };
@@ -55,6 +57,8 @@
 		3939DBE92256499B001A8A7B /* SignupController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignupController.swift; sourceTree = "<group>"; };
 		3939DBEB225649B9001A8A7B /* LaunchScreenController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LaunchScreenController.swift; sourceTree = "<group>"; };
 		3939DBED225649D7001A8A7B /* AppsController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppsController.swift; sourceTree = "<group>"; };
+		97A06B7C2257AA6200044F3D /* CheckList.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CheckList.swift; sourceTree = "<group>"; };
+		97D8BE6C2257AD9D00371361 /* CheckList.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = CheckList.storyboard; sourceTree = "<group>"; };
 		F7DC64FC224D182A00C8EA66 /* Howard2.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Howard2.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		F7DC64FF224D182A00C8EA66 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		F7DC6501224D182A00C8EA66 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -136,6 +140,8 @@
 				F7DC652D224D241200C8EA66 /* Apps.storyboard */,
 				39113F5022551D9200111AB4 /* CallScreenController.swift */,
 				39113F5222551DAD00111AB4 /* CallScreen.storyboard */,
+				97A06B7C2257AA6200044F3D /* CheckList.swift */,
+				97D8BE6C2257AD9D00371361 /* CheckList.storyboard */,
 			);
 			path = Howard2;
 			sourceTree = "<group>";
@@ -270,6 +276,7 @@
 				F7DC652E224D241200C8EA66 /* Apps.storyboard in Resources */,
 				F7DC6505224D182A00C8EA66 /* Main.storyboard in Resources */,
 				39113F5322551DAD00111AB4 /* CallScreen.storyboard in Resources */,
+				97D8BE6D2257AD9D00371361 /* CheckList.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -295,6 +302,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				3939DBE622564973001A8A7B /* NewsController.swift in Sources */,
+				97A06B7D2257AA6200044F3D /* CheckList.swift in Sources */,
 				F7DC6502224D182A00C8EA66 /* ViewController.swift in Sources */,
 				F7DC6500224D182A00C8EA66 /* AppDelegate.swift in Sources */,
 				3939DBEA2256499B001A8A7B /* SignupController.swift in Sources */,
@@ -479,13 +487,14 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = C99N7BFNYQ;
 				INFOPLIST_FILE = Howard2/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.1;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.william.Howard2;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_VERSION = 5.0;
+				SWIFT_VERSION = 4.2;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Debug;
@@ -497,13 +506,14 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = C99N7BFNYQ;
 				INFOPLIST_FILE = Howard2/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.1;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.william.Howard2;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_VERSION = 5.0;
+				SWIFT_VERSION = 4.2;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Release;
