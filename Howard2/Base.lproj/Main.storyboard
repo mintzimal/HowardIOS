@@ -26,6 +26,9 @@
                                 <state key="normal" title="News">
                                     <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 </state>
+                                <connections>
+                                    <segue destination="g2P-8c-CJ6" kind="show" id="b1C-6W-VGA"/>
+                                </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="242-Gn-JJt">
                                 <rect key="frame" x="64" y="649" width="300" height="100"/>
@@ -52,6 +55,9 @@
                                 <state key="normal" title="Help">
                                     <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 </state>
+                                <connections>
+                                    <segue destination="q2I-IR-uJd" kind="show" id="vgF-kR-oWR"/>
+                                </connections>
                             </button>
                         </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
@@ -74,6 +80,22 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="FwD-Yb-dqr" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="599" y="-88"/>
+        </scene>
+        <!--News-->
+        <scene sceneID="Hr3-Az-lC7">
+            <objects>
+                <viewControllerPlaceholder storyboardName="News" referencedIdentifier="News" id="g2P-8c-CJ6" sceneMemberID="viewController"/>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="OQA-4u-PgS" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="628" y="21"/>
+        </scene>
+        <!--Help-->
+        <scene sceneID="vnO-rf-S6s">
+            <objects>
+                <viewControllerPlaceholder storyboardName="CallScreen" referencedIdentifier="Help" id="q2I-IR-uJd" sceneMemberID="viewController"/>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="pnY-KO-lpf" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="544" y="161"/>
         </scene>
     </scenes>
     <resources>
