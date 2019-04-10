@@ -13,12 +13,13 @@ class LoginController: UIViewController {
     
     @IBOutlet weak var usernameInput: UITextField!
     @IBOutlet weak var passwordInput: UITextField!
+    @IBOutlet weak var submitButton: UIButton!
     
     
     override func viewDidLoad() {
         super.viewDidLoad()
-
         // Do any additional setup after loading the view.
+        submitButton.layer.cornerRadius = 15
     }
     
 

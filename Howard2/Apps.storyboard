@@ -30,23 +30,29 @@
                                 <nil key="highlightedColor"/>
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Apps" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="T0W-Um-MPA">
-                                <rect key="frame" x="137" y="60" width="141" height="104"/>
+                                <rect key="frame" x="132" y="44" width="150" height="104"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <fontDescription key="fontDescription" style="UICTFontTextStyleTitle1"/>
+                                <fontDescription key="fontDescription" name="HelveticaNeue-Bold" family="Helvetica Neue" pointSize="60"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="8V6-W1-Jxd">
-                                <rect key="frame" x="100" y="779" width="214" height="83"/>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="8V6-W1-Jxd">
+                                <rect key="frame" x="20" y="763" width="118" height="99"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <color key="backgroundColor" red="0.33487445119999998" green="0.40583652260000003" blue="0.69807046650000004" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
-                                <fontDescription key="fontDescription" name="GeezaPro-Bold" family="Geeza Pro" pointSize="51"/>
                                 <color key="tintColor" red="0.0" green="0.47843137250000001" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                <state key="normal" title="Settings">
+                                <state key="normal" title="Settings" image="SettingsIcon.png">
                                     <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 </state>
                                 <connections>
                                     <segue destination="Jig-ZB-3sr" kind="show" id="Jfn-bR-pJZ"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="CWf-9m-uiD">
+                                <rect key="frame" x="281" y="769" width="102" height="86"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Button" image="HomeIcon.png"/>
+                                <connections>
+                                    <segue destination="vCx-KO-RkI" kind="show" id="0DT-u5-LGG"/>
                                 </connections>
                             </button>
                         </subviews>
@@ -66,8 +72,18 @@
             </objects>
             <point key="canvasLocation" x="483" y="-255"/>
         </scene>
+        <!--HomePage-->
+        <scene sceneID="Ii2-kQ-DEG">
+            <objects>
+                <viewControllerPlaceholder storyboardName="Main" referencedIdentifier="HomePage" id="vCx-KO-RkI" sceneMemberID="viewController"/>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="PF0-rY-SJt" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="483" y="-188"/>
+        </scene>
     </scenes>
     <resources>
+        <image name="HomeIcon.png" width="512" height="512"/>
         <image name="PillReminder" width="512" height="512"/>
+        <image name="SettingsIcon.png" width="512" height="512"/>
     </resources>
 </document>

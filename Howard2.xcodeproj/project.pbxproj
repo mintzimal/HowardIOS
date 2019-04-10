@@ -8,7 +8,6 @@
 
 /* Begin PBXBuildFile section */
 		39113F5122551D9200111AB4 /* CallScreenController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 39113F5022551D9200111AB4 /* CallScreenController.swift */; };
-		39113F5322551DAD00111AB4 /* CallScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 39113F5222551DAD00111AB4 /* CallScreen.storyboard */; };
 		3939DBE022564918001A8A7B /* Login.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3939DBDF22564918001A8A7B /* Login.storyboard */; };
 		3939DBE222564928001A8A7B /* Signup.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3939DBE122564928001A8A7B /* Signup.storyboard */; };
 		3939DBE422564943001A8A7B /* News.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3939DBE322564943001A8A7B /* News.storyboard */; };
@@ -17,6 +16,11 @@
 		3939DBEA2256499B001A8A7B /* SignupController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3939DBE92256499B001A8A7B /* SignupController.swift */; };
 		3939DBEC225649B9001A8A7B /* LaunchScreenController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3939DBEB225649B9001A8A7B /* LaunchScreenController.swift */; };
 		3939DBEE225649D7001A8A7B /* AppsController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3939DBED225649D7001A8A7B /* AppsController.swift */; };
+		396027D4225E9A390007CCDD /* NewCallScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 396027D3225E9A390007CCDD /* NewCallScreen.storyboard */; };
+		396027D6225E9AD90007CCDD /* NewCallScreenController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 396027D5225E9AD90007CCDD /* NewCallScreenController.swift */; };
+		396027D9225E9DA10007CCDD /* SettingsIcon.png in Resources */ = {isa = PBXBuildFile; fileRef = 396027D8225E9DA10007CCDD /* SettingsIcon.png */; };
+		396027DD225E9F390007CCDD /* HomeIcon.png in Resources */ = {isa = PBXBuildFile; fileRef = 396027DC225E9F380007CCDD /* HomeIcon.png */; };
+		396027DF225EAE7B0007CCDD /* pleasewait.png in Resources */ = {isa = PBXBuildFile; fileRef = 396027DE225EAE7B0007CCDD /* pleasewait.png */; };
 		97A06B7D2257AA6200044F3D /* CheckList.swift in Sources */ = {isa = PBXBuildFile; fileRef = 97A06B7C2257AA6200044F3D /* CheckList.swift */; };
 		97D8BE6D2257AD9D00371361 /* CheckList.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 97D8BE6C2257AD9D00371361 /* CheckList.storyboard */; };
 		F7DC6500224D182A00C8EA66 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F7DC64FF224D182A00C8EA66 /* AppDelegate.swift */; };
@@ -48,7 +52,6 @@
 
 /* Begin PBXFileReference section */
 		39113F5022551D9200111AB4 /* CallScreenController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CallScreenController.swift; sourceTree = "<group>"; };
-		39113F5222551DAD00111AB4 /* CallScreen.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = CallScreen.storyboard; sourceTree = "<group>"; };
 		3939DBDF22564918001A8A7B /* Login.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Login.storyboard; sourceTree = "<group>"; };
 		3939DBE122564928001A8A7B /* Signup.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Signup.storyboard; sourceTree = "<group>"; };
 		3939DBE322564943001A8A7B /* News.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = News.storyboard; sourceTree = "<group>"; };
@@ -57,6 +60,11 @@
 		3939DBE92256499B001A8A7B /* SignupController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignupController.swift; sourceTree = "<group>"; };
 		3939DBEB225649B9001A8A7B /* LaunchScreenController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LaunchScreenController.swift; sourceTree = "<group>"; };
 		3939DBED225649D7001A8A7B /* AppsController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppsController.swift; sourceTree = "<group>"; };
+		396027D3225E9A390007CCDD /* NewCallScreen.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = NewCallScreen.storyboard; sourceTree = "<group>"; };
+		396027D5225E9AD90007CCDD /* NewCallScreenController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewCallScreenController.swift; sourceTree = "<group>"; };
+		396027D8225E9DA10007CCDD /* SettingsIcon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = SettingsIcon.png; path = ../../../SettingsIcon.png; sourceTree = "<group>"; };
+		396027DC225E9F380007CCDD /* HomeIcon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = HomeIcon.png; path = ../../../HomeIcon.png; sourceTree = "<group>"; };
+		396027DE225EAE7B0007CCDD /* pleasewait.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = pleasewait.png; path = ../../../pleasewait.png; sourceTree = "<group>"; };
 		97A06B7C2257AA6200044F3D /* CheckList.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CheckList.swift; sourceTree = "<group>"; };
 		97D8BE6C2257AD9D00371361 /* CheckList.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = CheckList.storyboard; sourceTree = "<group>"; };
 		F7DC64FC224D182A00C8EA66 /* Howard2.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Howard2.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -100,6 +108,16 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		396027D7225E9D520007CCDD /* Images */ = {
+			isa = PBXGroup;
+			children = (
+				396027DE225EAE7B0007CCDD /* pleasewait.png */,
+				396027DC225E9F380007CCDD /* HomeIcon.png */,
+				396027D8225E9DA10007CCDD /* SettingsIcon.png */,
+			);
+			path = Images;
+			sourceTree = "<group>";
+		};
 		F7DC64F3224D182A00C8EA66 = {
 			isa = PBXGroup;
 			children = (
@@ -123,6 +141,8 @@
 		F7DC64FE224D182A00C8EA66 /* Howard2 */ = {
 			isa = PBXGroup;
 			children = (
+				396027D7225E9D520007CCDD /* Images */,
+				396027D5225E9AD90007CCDD /* NewCallScreenController.swift */,
 				F7DC64FF224D182A00C8EA66 /* AppDelegate.swift */,
 				F7DC6501224D182A00C8EA66 /* ViewController.swift */,
 				F7DC6503224D182A00C8EA66 /* Main.storyboard */,
@@ -139,7 +159,7 @@
 				F7DC650B224D182C00C8EA66 /* Info.plist */,
 				F7DC652D224D241200C8EA66 /* Apps.storyboard */,
 				39113F5022551D9200111AB4 /* CallScreenController.swift */,
-				39113F5222551DAD00111AB4 /* CallScreen.storyboard */,
+				396027D3225E9A390007CCDD /* NewCallScreen.storyboard */,
 				97A06B7C2257AA6200044F3D /* CheckList.swift */,
 				97D8BE6C2257AD9D00371361 /* CheckList.storyboard */,
 			);
@@ -273,9 +293,12 @@
 				F7DC6507224D182C00C8EA66 /* Assets.xcassets in Resources */,
 				3939DBE422564943001A8A7B /* News.storyboard in Resources */,
 				3939DBE022564918001A8A7B /* Login.storyboard in Resources */,
+				396027D9225E9DA10007CCDD /* SettingsIcon.png in Resources */,
 				F7DC652E224D241200C8EA66 /* Apps.storyboard in Resources */,
+				396027DD225E9F390007CCDD /* HomeIcon.png in Resources */,
+				396027DF225EAE7B0007CCDD /* pleasewait.png in Resources */,
 				F7DC6505224D182A00C8EA66 /* Main.storyboard in Resources */,
-				39113F5322551DAD00111AB4 /* CallScreen.storyboard in Resources */,
+				396027D4225E9A390007CCDD /* NewCallScreen.storyboard in Resources */,
 				97D8BE6D2257AD9D00371361 /* CheckList.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -305,6 +328,7 @@
 				97A06B7D2257AA6200044F3D /* CheckList.swift in Sources */,
 				F7DC6502224D182A00C8EA66 /* ViewController.swift in Sources */,
 				F7DC6500224D182A00C8EA66 /* AppDelegate.swift in Sources */,
+				396027D6225E9AD90007CCDD /* NewCallScreenController.swift in Sources */,
 				3939DBEA2256499B001A8A7B /* SignupController.swift in Sources */,
 				3939DBEC225649B9001A8A7B /* LaunchScreenController.swift in Sources */,
 				39113F5122551D9200111AB4 /* CallScreenController.swift in Sources */,

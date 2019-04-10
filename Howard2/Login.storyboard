@@ -13,7 +13,7 @@
         <!--Login Controller-->
         <scene sceneID="BzD-Bn-2lV">
             <objects>
-                <viewController id="nHa-AQ-h2e" customClass="LoginController" customModule="Howard2" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="Login" id="nHa-AQ-h2e" customClass="LoginController" customModule="Howard2" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="Ig7-Jp-st0">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -52,18 +52,39 @@
                                 <fontDescription key="fontDescription" type="system" pointSize="48"/>
                                 <textInputTraits key="textInputTraits"/>
                             </textField>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Wtf-24-1LG">
+                                <rect key="frame" x="100" y="707" width="214" height="89"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" red="0.33487445119999998" green="0.40583652260000003" blue="0.69807046650000004" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                <fontDescription key="fontDescription" name="GeezaPro-Bold" family="Geeza Pro" pointSize="55"/>
+                                <state key="normal" title="Submit">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </state>
+                                <connections>
+                                    <segue destination="DbA-2Q-tyy" kind="show" id="VEB-qx-5pa"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <viewLayoutGuide key="safeArea" id="sIx-O7-nhy"/>
                     </view>
                     <connections>
                         <outlet property="passwordInput" destination="d0H-vJ-UOG" id="vu8-HI-D3t"/>
+                        <outlet property="submitButton" destination="Wtf-24-1LG" id="ful-ds-HvJ"/>
                         <outlet property="usernameInput" destination="BYh-Yh-J1F" id="oJs-xz-u38"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="VDz-pj-YX3" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="137.68115942028987" y="136.60714285714286"/>
+        </scene>
+        <!--HomePage-->
+        <scene sceneID="SoN-ns-efO">
+            <objects>
+                <viewControllerPlaceholder storyboardName="Main" referencedIdentifier="HomePage" id="DbA-2Q-tyy" sceneMemberID="viewController"/>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="bYa-8z-9wl" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="709" y="155"/>
         </scene>
     </scenes>
     <resources>

@@ -8,27 +8,27 @@
 
 import UIKit
 
-class CallScreenController: UIViewController {
+class NewCallScreenController: UIViewController {
     
     @IBOutlet weak var districtOneButton: UIButton!
     @IBOutlet weak var districtTwoButton: UIButton!
     
-    
-   @IBAction func callDistrictOne(_ sender: Any) {
+    @IBAction func connectDistrictOne(_ sender: Any) {
         print("Calling District One")
         dialNumber(number: "+8027777928")
     }
     
-    
-    @IBAction func callDistrictTwo(_ sender: Any) {
+    @IBAction func connectDistrictTwo(_ sender: Any) {
         print("Calling District Two")
         dialNumber(number: "+6178173687")
     }
     
     override func viewDidLoad() {
         super.viewDidLoad()
-
+        
         // Do any additional setup after loading the view.
+        districtOneButton.layer.cornerRadius = 15
+        districtTwoButton.layer.cornerRadius = 15
     }
     
     func dialNumber(number : String) {
@@ -52,15 +52,15 @@ class CallScreenController: UIViewController {
         }
     }
     
-
+    
     /*
-    // MARK: - Navigation
-
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
-    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        // Get the new view controller using segue.destination.
-        // Pass the selected object to the new view controller.
-    }
-    */
-
+     // MARK: - Navigation
+     
+     // In a storyboard-based application, you will often want to do a little preparation before navigation
+     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+     // Get the new view controller using segue.destination.
+     // Pass the selected object to the new view controller.
+     }
+     */
+    
 }

@@ -20,9 +20,29 @@
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <viewLayoutGuide key="safeArea" id="PCW-2I-JKZ"/>
                     </view>
+                    <navigationItem key="navigationItem" id="INr-gW-ned"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="USC-LJ-bDJ" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
+            <point key="canvasLocation" x="1065.217391304348" y="20.758928571428569"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="acF-Lt-NJ1">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="P3O-O8-zXM" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="wdx-GK-Ll7">
+                        <rect key="frame" x="0.0" y="44" width="414" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="86q-kX-viy" kind="relationship" relationship="rootViewController" id="rTj-2y-JJU"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="ByS-g9-xXH" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="155.07246376811597" y="20.758928571428569"/>
         </scene>
     </scenes>
 </document>

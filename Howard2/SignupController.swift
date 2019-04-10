@@ -14,12 +14,14 @@ class SignupController: UIViewController {
     @IBOutlet weak var emailInput: UITextField!
     @IBOutlet weak var passwordInput: UITextField!
     @IBOutlet weak var confirmInput: UITextField!
+    @IBOutlet weak var submitButton: UIButton!
     
 
     override func viewDidLoad() {
         super.viewDidLoad()
-
         // Do any additional setup after loading the view.
+        submitButton.layer.cornerRadius = 15
+
     }
     
 
