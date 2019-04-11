@@ -21,9 +21,11 @@ class checkList: UIViewController, UITableViewDataSource {
         
         let cell = tableView.dequeueReusableCell(withIdentifier: "CheckBoxCell")
         
+        let items = ["FaceBook", "YouTube" , "Calender"]
         if let lbl = cell?.contentView.viewWithTag(1) as? UILabel {
-            lbl.text = "item-\(1)"
-        }
+            for item in items{
+                lbl.text = item
+            }}
         
         if let btnChk = cell?.contentView.viewWithTag(2) as? UIButton {
             btnChk.addTarget(self, action: #selector(checkboxClicked(_ :)), for: .touchUpInside)
