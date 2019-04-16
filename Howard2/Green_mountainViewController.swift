@@ -15,7 +15,7 @@ class Green_mountainViewController: UIViewController, WKNavigationDelegate {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        webView.load(URLRequest(url: URL(string: "https://www.gmsavt.org")!))
+        webView.load(URLRequest(url: URL(string: "http://www.gmsavt.org")!))
         
         let refresh = UIBarButtonItem(barButtonSystemItem: .refresh, target: webView, action: #selector(webView.reload))
         toolbarItems = [refresh]

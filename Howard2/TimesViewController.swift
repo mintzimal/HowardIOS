@@ -18,7 +18,7 @@ class TimesViewController: UIViewController, WKNavigationDelegate{
 
         webView.autoresizingMask = [.flexibleWidth, .flexibleHeight]
         
-        webView.load(URLRequest(url: URL(string: "https://time.com")!))
+        webView.load(URLRequest(url: URL(string: "http://time.com")!))
         //webView.allowsBackForwardNavigationGestures = true
         
         let refresh = UIBarButtonItem(barButtonSystemItem: .refresh, target: webView, action: #selector(webView.reload))

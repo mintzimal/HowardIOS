@@ -66,9 +66,9 @@
 		396027D5225E9AD90007CCDD /* NewCallScreenController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewCallScreenController.swift; sourceTree = "<group>"; };
 		396027D8225E9DA10007CCDD /* SettingsIcon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = SettingsIcon.png; path = ../../../SettingsIcon.png; sourceTree = "<group>"; };
 		396027DC225E9F380007CCDD /* HomeIcon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = HomeIcon.png; path = ../../../HomeIcon.png; sourceTree = "<group>"; };
-		3B7922AC22666051008B307F /* Seven_daysViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = Seven_daysViewController.swift; path = ../../../Seven_daysViewController.swift; sourceTree = "<group>"; };
-		3B7922AD22666051008B307F /* Green_mountainViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = Green_mountainViewController.swift; path = ../../../Green_mountainViewController.swift; sourceTree = "<group>"; };
-		3B7922AE22666051008B307F /* TimesViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = TimesViewController.swift; path = ../../../TimesViewController.swift; sourceTree = "<group>"; };
+		3B7922AC22666051008B307F /* Seven_daysViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Seven_daysViewController.swift; sourceTree = "<group>"; };
+		3B7922AD22666051008B307F /* Green_mountainViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Green_mountainViewController.swift; sourceTree = "<group>"; };
+		3B7922AE22666051008B307F /* TimesViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TimesViewController.swift; sourceTree = "<group>"; };
 		97A06B7C2257AA6200044F3D /* CheckList.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CheckList.swift; sourceTree = "<group>"; };
 		97D8BE6C2257AD9D00371361 /* CheckList.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = CheckList.storyboard; sourceTree = "<group>"; };
 		F7DC64FC224D182A00C8EA66 /* Howard2.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Howard2.app; sourceTree = BUILT_PRODUCTS_DIR; };
