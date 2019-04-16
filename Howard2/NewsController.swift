@@ -7,35 +7,21 @@
 //
 
 import UIKit
-import WebKit
 
-class NewsController: UIViewController, WKNavigationDelegate {
+class NewsController: UIViewController {
     
-    var webView: WKWebView!
-
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        // 1
-        let url = URL(string: "https://www.sevendaysvt.com/vermont/EventSearch")!
-        webView.load(URLRequest(url: url))
         
-        // 2
-        let refresh = UIBarButtonItem(barButtonSystemItem: .refresh, target: webView, action: #selector(webView.reload))
-        toolbarItems = [refresh]
-        navigationController?.isToolbarHidden = false
-        
+        // Do any additional setup after loading the view.
     }
     
-    override func loadView() {
-        webView = WKWebView()
-        webView.navigationDelegate = self
-        view = webView
-    }
     
-    func webView(_ webView: WKWebView, didFinish navigation: WKNavigation!) {
-        title = webView.title
-    }
+    @IBOutlet weak var News1: UIButton!
+    @IBOutlet weak var News2: UIButton!
+    @IBOutlet weak var News3: UIButton!
+    
     
 
     /*

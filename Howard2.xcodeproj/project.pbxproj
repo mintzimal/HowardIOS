@@ -24,6 +24,11 @@
 		3939DBEE225649D7001A8A7B /* AppsController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3939DBED225649D7001A8A7B /* AppsController.swift */; };
 		396027D4225E9A390007CCDD /* NewCallScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 396027D3225E9A390007CCDD /* NewCallScreen.storyboard */; };
 		396027D6225E9AD90007CCDD /* NewCallScreenController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 396027D5225E9AD90007CCDD /* NewCallScreenController.swift */; };
+		396027D9225E9DA10007CCDD /* SettingsIcon.png in Resources */ = {isa = PBXBuildFile; fileRef = 396027D8225E9DA10007CCDD /* SettingsIcon.png */; };
+		396027DD225E9F390007CCDD /* HomeIcon.png in Resources */ = {isa = PBXBuildFile; fileRef = 396027DC225E9F380007CCDD /* HomeIcon.png */; };
+		3B7922AF22666051008B307F /* Seven_daysViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B7922AC22666051008B307F /* Seven_daysViewController.swift */; };
+		3B7922B022666051008B307F /* Green_mountainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B7922AD22666051008B307F /* Green_mountainViewController.swift */; };
+		3B7922B122666051008B307F /* TimesViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B7922AE22666051008B307F /* TimesViewController.swift */; };
 		97A06B7D2257AA6200044F3D /* CheckList.swift in Sources */ = {isa = PBXBuildFile; fileRef = 97A06B7C2257AA6200044F3D /* CheckList.swift */; };
 		97D8BE6D2257AD9D00371361 /* CheckList.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 97D8BE6C2257AD9D00371361 /* CheckList.storyboard */; };
 		F7DC6500224D182A00C8EA66 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F7DC64FF224D182A00C8EA66 /* AppDelegate.swift */; };
@@ -71,6 +76,11 @@
 		3939DBED225649D7001A8A7B /* AppsController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppsController.swift; sourceTree = "<group>"; };
 		396027D3225E9A390007CCDD /* NewCallScreen.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = NewCallScreen.storyboard; sourceTree = "<group>"; };
 		396027D5225E9AD90007CCDD /* NewCallScreenController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewCallScreenController.swift; sourceTree = "<group>"; };
+		396027D8225E9DA10007CCDD /* SettingsIcon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = SettingsIcon.png; path = ../../../SettingsIcon.png; sourceTree = "<group>"; };
+		396027DC225E9F380007CCDD /* HomeIcon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = HomeIcon.png; path = ../../../HomeIcon.png; sourceTree = "<group>"; };
+		3B7922AC22666051008B307F /* Seven_daysViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Seven_daysViewController.swift; sourceTree = "<group>"; };
+		3B7922AD22666051008B307F /* Green_mountainViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Green_mountainViewController.swift; sourceTree = "<group>"; };
+		3B7922AE22666051008B307F /* TimesViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TimesViewController.swift; sourceTree = "<group>"; };
 		97A06B7C2257AA6200044F3D /* CheckList.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CheckList.swift; sourceTree = "<group>"; };
 		97D8BE6C2257AD9D00371361 /* CheckList.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = CheckList.storyboard; sourceTree = "<group>"; };
 		F7DC64FC224D182A00C8EA66 /* Howard2.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Howard2.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -153,6 +163,9 @@
 				F7DC64FF224D182A00C8EA66 /* AppDelegate.swift */,
 				F7DC6501224D182A00C8EA66 /* ViewController.swift */,
 				F7DC6503224D182A00C8EA66 /* Main.storyboard */,
+				3B7922AD22666051008B307F /* Green_mountainViewController.swift */,
+				3B7922AC22666051008B307F /* Seven_daysViewController.swift */,
+				3B7922AE22666051008B307F /* TimesViewController.swift */,
 				F7DC6506224D182C00C8EA66 /* Assets.xcassets */,
 				F7DC6508224D182C00C8EA66 /* LaunchScreen.storyboard */,
 				3939DBDF22564918001A8A7B /* Login.storyboard */,
@@ -339,13 +352,16 @@
 				97A06B7D2257AA6200044F3D /* CheckList.swift in Sources */,
 				F7DC6502224D182A00C8EA66 /* ViewController.swift in Sources */,
 				F7DC6500224D182A00C8EA66 /* AppDelegate.swift in Sources */,
+				3B7922B122666051008B307F /* TimesViewController.swift in Sources */,
 				396027D6225E9AD90007CCDD /* NewCallScreenController.swift in Sources */,
+				3B7922AF22666051008B307F /* Seven_daysViewController.swift in Sources */,
 				3939DBEA2256499B001A8A7B /* SignupController.swift in Sources */,
 				3939DBEC225649B9001A8A7B /* LaunchScreenController.swift in Sources */,
 				39038295226689A3003422D3 /* AskHowardController.swift in Sources */,
 				39113F5122551D9200111AB4 /* CallScreenController.swift in Sources */,
 				3939DBE822564989001A8A7B /* LoginController.swift in Sources */,
 				3939DBEE225649D7001A8A7B /* AppsController.swift in Sources */,
+				3B7922B022666051008B307F /* Green_mountainViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
