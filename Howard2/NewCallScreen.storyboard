@@ -39,7 +39,7 @@
                                 </state>
                                 <connections>
                                     <action selector="callDistrictOne:" destination="bYQ-cy-aDS" eventType="touchUpInside" id="u1N-oy-fRi"/>
-                                    <action selector="connectDistrictOne:" destination="bYQ-cy-aDS" eventType="touchUpInside" id="t5W-uP-Fc7"/>
+                                    <action selector="connectDistrictOne:" destination="bYQ-cy-aDS" eventType="touchUpInside" id="jnr-pn-dHR"/>
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ePn-Nc-FHz">
@@ -67,7 +67,7 @@
                         <viewLayoutGuide key="safeArea" id="Q9i-z4-AaO"/>
                     </view>
                     <connections>
-                        <outlet property="districtOneButton" destination="ePn-Nc-FHz" id="YyN-hG-WZF"/>
+                        <outlet property="districtOneButton" destination="AXm-XJ-hbE" id="0HO-5A-LKf"/>
                         <outlet property="districtTwoButton" destination="ePn-Nc-FHz" id="ktW-iC-wDW"/>
                     </connections>
                 </viewController>

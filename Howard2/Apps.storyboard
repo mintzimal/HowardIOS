@@ -55,6 +55,14 @@
                                     <segue destination="vCx-KO-RkI" kind="show" id="0DT-u5-LGG"/>
                                 </connections>
                             </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="SYC-Nq-wiA">
+                                <rect key="frame" x="156" y="768" width="102" height="86"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Button" image="questionMark.png"/>
+                                <connections>
+                                    <segue destination="F28-uG-vDl" kind="show" id="G2D-kH-sl5"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <viewLayoutGuide key="safeArea" id="evN-Ue-UB8"/>
@@ -80,10 +88,19 @@
             </objects>
             <point key="canvasLocation" x="483" y="-188"/>
         </scene>
+        <!--AskHoward-->
+        <scene sceneID="Dzm-2F-PEC">
+            <objects>
+                <viewControllerPlaceholder storyboardName="AskHoward" referencedIdentifier="AskHoward" id="F28-uG-vDl" sceneMemberID="viewController"/>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="ytQ-Tw-Ygm" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="483" y="-359"/>
+        </scene>
     </scenes>
     <resources>
         <image name="HomeIcon.png" width="512" height="512"/>
         <image name="PillReminder" width="512" height="512"/>
         <image name="SettingsIcon.png" width="512" height="512"/>
+        <image name="questionMark.png" width="225" height="225"/>
     </resources>
 </document>

@@ -10,13 +10,16 @@ import UIKit
 
 class NewCallScreenController: UIViewController {
     
+    
     @IBOutlet weak var districtOneButton: UIButton!
     @IBOutlet weak var districtTwoButton: UIButton!
+    
     
     @IBAction func connectDistrictOne(_ sender: Any) {
         print("Calling District One")
         dialNumber(number: "+8027777928")
     }
+    
     
     @IBAction func connectDistrictTwo(_ sender: Any) {
         print("Calling District Two")
