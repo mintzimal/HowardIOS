@@ -62,6 +62,14 @@
                                     <segue destination="pHw-ze-X9C" kind="show" id="ccr-TI-RQS"/>
                                 </connections>
                             </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="sZK-sy-rEU">
+                                <rect key="frame" x="310" y="785" width="84" height="77"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Button" image="map"/>
+                                <connections>
+                                    <segue destination="bOC-JQ-4zS" kind="show" id="Z5E-or-Ffa"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <viewLayoutGuide key="safeArea" id="Q9i-z4-AaO"/>
@@ -75,6 +83,41 @@
             </objects>
             <point key="canvasLocation" x="47.826086956521742" y="20.758928571428569"/>
         </scene>
+        <!--Map View Controller-->
+        <scene sceneID="zTP-Ol-gXO">
+            <objects>
+                <viewController storyboardIdentifier="Map" id="bOC-JQ-4zS" customClass="MapViewController" customModule="Howard2" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="fWQ-X5-c7I">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <mapView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" mapType="standard" showsUserLocation="YES" translatesAutoresizingMaskIntoConstraints="NO" id="QTV-vC-WMs">
+                                <rect key="frame" x="0.0" y="85" width="414" height="777"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <connections>
+                                    <outlet property="delegate" destination="bOC-JQ-4zS" id="oMo-mF-cru"/>
+                                </connections>
+                            </mapView>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="leading" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="PwB-lg-PtJ">
+                                <rect key="frame" x="0.0" y="47" width="414" height="39"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Back"/>
+                                <connections>
+                                    <segue destination="bYQ-cy-aDS" kind="show" id="FAb-c7-cAr"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <viewLayoutGuide key="safeArea" id="RLe-hE-S1k"/>
+                    </view>
+                    <connections>
+                        <outlet property="mapView" destination="QTV-vC-WMs" id="GVb-YR-f0k"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="AUI-Uc-paJ" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="815.94202898550736" y="20.758928571428569"/>
+        </scene>
         <!--HomePage-->
         <scene sceneID="ZHz-Ff-xTu">
             <objects>
@@ -87,5 +130,9 @@
     <resources>
         <image name="HomeIcon.png" width="512" height="512"/>
         <image name="Main" width="612" height="331"/>
+        <image name="map" width="225" height="225"/>
     </resources>
+    <inferredMetricsTieBreakers>
+        <segue reference="FAb-c7-cAr"/>
+    </inferredMetricsTieBreakers>
 </document>
