@@ -1,11 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14460.31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14490.70" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
     <device id="retina6_1" orientation="portrait">
         <adaptation id="fullscreen"/>
     </device>
     <dependencies>
         <deployment identifier="iOS"/>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14460.20"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14490.49"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
@@ -23,7 +23,7 @@
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <prototypes>
-                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="CheckBoxCell" rowHeight="100" id="r4a-zi-nmE">
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="CheckBoxCell1" rowHeight="100" id="r4a-zi-nmE">
                                         <rect key="frame" x="0.0" y="28" width="375" height="100"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="r4a-zi-nmE" id="haP-c8-AF1">
@@ -61,7 +61,84 @@
                                         </tableViewCellContentView>
                                         <color key="backgroundColor" red="1" green="0.57637232540000005" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                     </tableViewCell>
+                                    <tableViewCell clipsSubviews="YES" tag="3" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="CheckBoxCell2" rowHeight="100" id="H1k-qk-Twg">
+                                        <rect key="frame" x="0.0" y="128" width="375" height="100"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="H1k-qk-Twg" id="Kb1-c1-1ne">
+                                            <rect key="frame" x="0.0" y="0.0" width="375" height="99.5"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <label opaque="NO" userInteractionEnabled="NO" tag="5" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="hI2-TM-32r">
+                                                    <rect key="frame" x="30" y="11" width="265" height="50"/>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                    <nil key="textColor"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                                <button opaque="NO" tag="6" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" adjustsImageWhenHighlighted="NO" lineBreakMode="middleTruncation" hasAttributedTitle="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Tdz-T1-sVJ">
+                                                    <rect key="frame" x="295" y="11" width="50" height="50"/>
+                                                    <constraints>
+                                                        <constraint firstAttribute="width" constant="50" id="0gm-HG-PhE"/>
+                                                        <constraint firstAttribute="height" constant="50" id="Nka-W9-DZj"/>
+                                                    </constraints>
+                                                    <state key="normal" image="Checkmarkempty"/>
+                                                    <state key="selected" image="Checkmark"/>
+                                                </button>
+                                            </subviews>
+                                            <constraints>
+                                                <constraint firstAttribute="bottomMargin" secondItem="Tdz-T1-sVJ" secondAttribute="bottom" id="0be-Bx-1S6"/>
+                                                <constraint firstItem="Tdz-T1-sVJ" firstAttribute="leading" secondItem="hI2-TM-32r" secondAttribute="trailing" constant="10" id="9j7-OZ-A6N"/>
+                                                <constraint firstItem="Tdz-T1-sVJ" firstAttribute="leading" secondItem="hI2-TM-32r" secondAttribute="trailing" id="ACq-mt-BzJ"/>
+                                                <constraint firstItem="Tdz-T1-sVJ" firstAttribute="top" secondItem="Kb1-c1-1ne" secondAttribute="topMargin" id="MRp-lu-BnY"/>
+                                                <constraint firstAttribute="bottomMargin" secondItem="Tdz-T1-sVJ" secondAttribute="bottom" id="MVV-mX-IZ9"/>
+                                                <constraint firstAttribute="bottomMargin" secondItem="hI2-TM-32r" secondAttribute="bottom" id="OFL-zE-KTS"/>
+                                                <constraint firstItem="hI2-TM-32r" firstAttribute="leading" secondItem="Kb1-c1-1ne" secondAttribute="leadingMargin" constant="10" id="UHd-PC-9LU"/>
+                                                <constraint firstAttribute="trailingMargin" secondItem="Tdz-T1-sVJ" secondAttribute="trailing" constant="10" id="cae-c4-Bph"/>
+                                                <constraint firstItem="Tdz-T1-sVJ" firstAttribute="leading" secondItem="hI2-TM-32r" secondAttribute="trailing" id="lma-xQ-SBu"/>
+                                                <constraint firstItem="hI2-TM-32r" firstAttribute="top" secondItem="Kb1-c1-1ne" secondAttribute="topMargin" id="nNv-lH-KTL"/>
+                                            </constraints>
+                                        </tableViewCellContentView>
+                                        <color key="backgroundColor" red="1" green="0.57637232540000005" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                    </tableViewCell>
+                                    <tableViewCell clipsSubviews="YES" tag="4" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="CheckBoxCell3" rowHeight="100" id="SLo-gi-TQg">
+                                        <rect key="frame" x="0.0" y="228" width="375" height="100"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="SLo-gi-TQg" id="y9O-7W-gKK">
+                                            <rect key="frame" x="0.0" y="0.0" width="375" height="99.5"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <label opaque="NO" userInteractionEnabled="NO" tag="7" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="qb3-u9-12r">
+                                                    <rect key="frame" x="30" y="11" width="265" height="50"/>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                    <nil key="textColor"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                                <button opaque="NO" tag="8" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" adjustsImageWhenHighlighted="NO" lineBreakMode="middleTruncation" hasAttributedTitle="YES" translatesAutoresizingMaskIntoConstraints="NO" id="UJa-MK-a6d">
+                                                    <rect key="frame" x="295" y="11" width="50" height="50"/>
+                                                    <constraints>
+                                                        <constraint firstAttribute="width" constant="50" id="Bvw-KF-fJj"/>
+                                                        <constraint firstAttribute="height" constant="50" id="oXz-35-WXJ"/>
+                                                    </constraints>
+                                                    <state key="normal" image="Checkmarkempty"/>
+                                                    <state key="selected" image="Checkmark"/>
+                                                </button>
+                                            </subviews>
+                                            <constraints>
+                                                <constraint firstAttribute="bottomMargin" secondItem="UJa-MK-a6d" secondAttribute="bottom" id="7oA-jx-x26"/>
+                                                <constraint firstAttribute="bottomMargin" secondItem="UJa-MK-a6d" secondAttribute="bottom" id="98q-sD-9hw"/>
+                                                <constraint firstAttribute="bottomMargin" secondItem="qb3-u9-12r" secondAttribute="bottom" id="B0g-c7-A9V"/>
+                                                <constraint firstItem="UJa-MK-a6d" firstAttribute="top" secondItem="y9O-7W-gKK" secondAttribute="topMargin" id="LN5-Cd-yB0"/>
+                                                <constraint firstItem="UJa-MK-a6d" firstAttribute="leading" secondItem="qb3-u9-12r" secondAttribute="trailing" constant="10" id="PFV-E9-MCG"/>
+                                                <constraint firstItem="qb3-u9-12r" firstAttribute="top" secondItem="y9O-7W-gKK" secondAttribute="topMargin" id="QtD-ob-EVc"/>
+                                                <constraint firstItem="UJa-MK-a6d" firstAttribute="leading" secondItem="qb3-u9-12r" secondAttribute="trailing" id="TMa-if-rL3"/>
+                                                <constraint firstAttribute="trailingMargin" secondItem="UJa-MK-a6d" secondAttribute="trailing" constant="10" id="eOU-Z4-87A"/>
+                                                <constraint firstItem="UJa-MK-a6d" firstAttribute="leading" secondItem="qb3-u9-12r" secondAttribute="trailing" id="ohS-h2-AqK"/>
+                                                <constraint firstItem="qb3-u9-12r" firstAttribute="leading" secondItem="y9O-7W-gKK" secondAttribute="leadingMargin" constant="10" id="yR2-92-jdq"/>
+                                            </constraints>
+                                        </tableViewCellContentView>
+                                        <color key="backgroundColor" red="1" green="0.57637232540000005" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                    </tableViewCell>
                                 </prototypes>
+                                <sections/>
                             </tableView>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
