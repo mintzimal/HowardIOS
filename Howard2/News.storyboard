@@ -72,10 +72,13 @@
                                     <segue destination="SQK-Jj-3nt" kind="show" id="Ud8-Yz-EDC"/>
                                 </connections>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Ag7-HQ-asJ">
-                                <rect key="frame" x="163" y="786" width="77" height="56"/>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="XkZ-W2-QMO">
+                                <rect key="frame" x="146" y="773" width="122" height="89"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <state key="normal" title="Home"/>
+                                <state key="normal" title="HomeButton" image="HomeIcon.png"/>
+                                <connections>
+                                    <segue destination="SIq-wY-5nm" kind="show" id="Es3-2K-krF"/>
+                                </connections>
                             </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
@@ -86,6 +89,14 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="USC-LJ-bDJ" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="1065.217391304348" y="20.758928571428569"/>
+        </scene>
+        <!--HomePage-->
+        <scene sceneID="iaX-vw-FIv">
+            <objects>
+                <viewControllerPlaceholder storyboardName="Main" referencedIdentifier="HomePage" id="SIq-wY-5nm" sceneMemberID="viewController"/>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="f6z-87-Dpc" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1076" y="432"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="acF-Lt-NJ1">
@@ -199,6 +210,7 @@
     </scenes>
     <resources>
         <image name="Green Mountain" width="200" height="200"/>
+        <image name="HomeIcon.png" width="512" height="512"/>
         <image name="Seven days" width="210" height="240"/>
         <image name="Times" width="225" height="225"/>
     </resources>
