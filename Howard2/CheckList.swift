@@ -22,7 +22,7 @@ class checkList: UIViewController,UITableViewDataSource {
     
     
         func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-            return 1
+            return 3
         }
     
         func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> (UITableViewCell) {
@@ -38,11 +38,11 @@ class checkList: UIViewController,UITableViewDataSource {
                 
                     lbl.text = "FaceBook"
                 }
-            if let lbl2 = cell2?.contentView.viewWithTag(5) as? UILabel {
+            if let lbl2 = cell?.contentView.viewWithTag(5) as? UILabel {
                 
                 lbl2.text = "YouTube"
             }
-            if let lbl3 = cell3?.contentView.viewWithTag(4) as? UILabel {
+            if let lbl3 = cell?.contentView.viewWithTag(4) as? UILabel {
                 
                 lbl3.text = "Calender"
             }
