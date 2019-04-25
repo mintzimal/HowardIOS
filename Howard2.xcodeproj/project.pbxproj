@@ -24,6 +24,8 @@
 		3939DBEE225649D7001A8A7B /* AppsController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3939DBED225649D7001A8A7B /* AppsController.swift */; };
 		396027D4225E9A390007CCDD /* NewCallScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 396027D3225E9A390007CCDD /* NewCallScreen.storyboard */; };
 		396027D6225E9AD90007CCDD /* NewCallScreenController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 396027D5225E9AD90007CCDD /* NewCallScreenController.swift */; };
+		396E0DC3226FCCD7004F2C13 /* NewCheckList.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 396E0DC2226FCCD7004F2C13 /* NewCheckList.storyboard */; };
+		396E0DC5226FCD86004F2C13 /* NewCheckListController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 396E0DC4226FCD86004F2C13 /* NewCheckListController.swift */; };
 		3B7922AF22666051008B307F /* Seven_daysViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B7922AC22666051008B307F /* Seven_daysViewController.swift */; };
 		3B7922B022666051008B307F /* Green_mountainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B7922AD22666051008B307F /* Green_mountainViewController.swift */; };
 		3B7922B122666051008B307F /* TimesViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B7922AE22666051008B307F /* TimesViewController.swift */; };
@@ -75,6 +77,8 @@
 		3939DBED225649D7001A8A7B /* AppsController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppsController.swift; sourceTree = "<group>"; };
 		396027D3225E9A390007CCDD /* NewCallScreen.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = NewCallScreen.storyboard; sourceTree = "<group>"; };
 		396027D5225E9AD90007CCDD /* NewCallScreenController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewCallScreenController.swift; sourceTree = "<group>"; };
+		396E0DC2226FCCD7004F2C13 /* NewCheckList.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = NewCheckList.storyboard; sourceTree = "<group>"; };
+		396E0DC4226FCD86004F2C13 /* NewCheckListController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewCheckListController.swift; sourceTree = "<group>"; };
 		3B7922AC22666051008B307F /* Seven_daysViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Seven_daysViewController.swift; sourceTree = "<group>"; };
 		3B7922AD22666051008B307F /* Green_mountainViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Green_mountainViewController.swift; sourceTree = "<group>"; };
 		3B7922AE22666051008B307F /* TimesViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TimesViewController.swift; sourceTree = "<group>"; };
@@ -181,6 +185,8 @@
 				3BD10A5D22669B5C001D0B5B /* MapViewController.swift */,
 				97A06B7C2257AA6200044F3D /* CheckList.swift */,
 				97D8BE6C2257AD9D00371361 /* CheckList.storyboard */,
+				396E0DC2226FCCD7004F2C13 /* NewCheckList.storyboard */,
+				396E0DC4226FCD86004F2C13 /* NewCheckListController.swift */,
 				390382922266868F003422D3 /* AskHoward.storyboard */,
 				39038294226689A3003422D3 /* AskHowardController.swift */,
 			);
@@ -322,6 +328,7 @@
 				390382902266864B003422D3 /* HomeIcon.png in Resources */,
 				F7DC6505224D182A00C8EA66 /* Main.storyboard in Resources */,
 				396027D4225E9A390007CCDD /* NewCallScreen.storyboard in Resources */,
+				396E0DC3226FCCD7004F2C13 /* NewCheckList.storyboard in Resources */,
 				97D8BE6D2257AD9D00371361 /* CheckList.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -362,6 +369,7 @@
 				3939DBEE225649D7001A8A7B /* AppsController.swift in Sources */,
 				3BD10A5E22669B5C001D0B5B /* MapViewController.swift in Sources */,
 				3B7922B022666051008B307F /* Green_mountainViewController.swift in Sources */,
+				396E0DC5226FCD86004F2C13 /* NewCheckListController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
