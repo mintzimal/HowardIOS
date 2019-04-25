@@ -1,0 +1,194 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14490.70" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina6_5" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14490.49"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController storyboardIdentifier="HomePage" id="BYZ-38-t0r" customClass="ViewController" customModule="Howard2" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Zbc-IP-P4L" userLabel="Canvas">
+                                <rect key="frame" x="0.0" y="0.0" width="414" height="862"/>
+                                <subviews>
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="3aI-go-fBt" userLabel="Middle">
+                                        <rect key="frame" x="101" y="361" width="212" height="250"/>
+                                        <subviews>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="bt0-zQ-OsI">
+                                                <rect key="frame" x="34" y="18" width="156" height="57"/>
+                                                <color key="backgroundColor" red="0.33644006413619709" green="0.40332308714348264" blue="0.69790317357512954" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="width" constant="156" id="tUQ-Lt-HGN"/>
+                                                    <constraint firstAttribute="height" constant="57" id="x9r-zQ-0B5"/>
+                                                </constraints>
+                                                <fontDescription key="fontDescription" name="GeezaPro-Bold" family="Geeza Pro" pointSize="36"/>
+                                                <state key="normal" title="Help">
+                                                    <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                </state>
+                                                <connections>
+                                                    <segue destination="q2I-IR-uJd" kind="show" id="vgF-kR-oWR"/>
+                                                </connections>
+                                            </button>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="5nP-0y-vUb">
+                                                <rect key="frame" x="34" y="148" width="156" height="57"/>
+                                                <color key="backgroundColor" red="0.33487445116043091" green="0.40583652257919312" blue="0.6980704665184021" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="width" constant="156" id="2aw-hc-SsC"/>
+                                                    <constraint firstAttribute="height" constant="57" id="hsO-kA-eeI"/>
+                                                </constraints>
+                                                <fontDescription key="fontDescription" name="GeezaPro-Bold" family="Geeza Pro" pointSize="36"/>
+                                                <state key="normal" title="News">
+                                                    <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                </state>
+                                                <connections>
+                                                    <segue destination="g2P-8c-CJ6" kind="show" id="b1C-6W-VGA"/>
+                                                </connections>
+                                            </button>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="WP3-bI-bWY">
+                                                <rect key="frame" x="65" y="213" width="92" height="37"/>
+                                                <color key="backgroundColor" red="0.33487445119999998" green="0.40583652260000003" blue="0.69807046650000004" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="height" constant="37" id="Pah-ra-r8A"/>
+                                                    <constraint firstAttribute="width" constant="92" id="Vl8-AP-rvx"/>
+                                                </constraints>
+                                                <fontDescription key="fontDescription" name="GeezaPro-Bold" family="Geeza Pro" pointSize="20"/>
+                                                <state key="normal" title="Logout">
+                                                    <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                </state>
+                                                <connections>
+                                                    <action selector="logoutButton:" destination="jY4-Fr-0Sh" eventType="touchUpInside" id="zZa-MX-eK1"/>
+                                                    <segue destination="Nou-9T-gcG" kind="show" id="eA6-zH-P1V"/>
+                                                </connections>
+                                            </button>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="242-Gn-JJt">
+                                                <rect key="frame" x="34" y="83" width="156" height="57"/>
+                                                <color key="backgroundColor" red="0.33487445116043091" green="0.40583652257919312" blue="0.6980704665184021" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="height" constant="57" id="XRo-Dv-0Im"/>
+                                                    <constraint firstAttribute="width" constant="156" id="Xb5-eq-N19"/>
+                                                </constraints>
+                                                <fontDescription key="fontDescription" name="GeezaPro-Bold" family="Geeza Pro" pointSize="36"/>
+                                                <color key="tintColor" red="0.0" green="0.47843137250000001" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                <state key="normal" title="Apps">
+                                                    <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                </state>
+                                                <connections>
+                                                    <segue destination="z7S-dV-br0" kind="show" id="VJW-eQ-V5T"/>
+                                                </connections>
+                                            </button>
+                                        </subviews>
+                                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <constraints>
+                                            <constraint firstItem="bt0-zQ-OsI" firstAttribute="leading" secondItem="3aI-go-fBt" secondAttribute="leading" constant="34" id="2gr-5C-kFG"/>
+                                            <constraint firstAttribute="height" constant="250" id="8XB-Va-cYt"/>
+                                            <constraint firstItem="5nP-0y-vUb" firstAttribute="top" secondItem="242-Gn-JJt" secondAttribute="bottom" constant="8" id="CPY-1R-8TQ"/>
+                                            <constraint firstAttribute="width" constant="212" id="CYs-bl-h5p"/>
+                                            <constraint firstItem="WP3-bI-bWY" firstAttribute="leading" secondItem="3aI-go-fBt" secondAttribute="leading" constant="65" id="Jwn-9n-ELn"/>
+                                            <constraint firstAttribute="bottom" secondItem="WP3-bI-bWY" secondAttribute="bottom" id="OGl-P0-wDs"/>
+                                            <constraint firstItem="WP3-bI-bWY" firstAttribute="top" secondItem="5nP-0y-vUb" secondAttribute="bottom" constant="8" id="aa1-3Y-FWE"/>
+                                            <constraint firstItem="242-Gn-JJt" firstAttribute="top" secondItem="bt0-zQ-OsI" secondAttribute="bottom" constant="8" id="b2Y-NP-ieW"/>
+                                            <constraint firstItem="242-Gn-JJt" firstAttribute="leading" secondItem="3aI-go-fBt" secondAttribute="leading" constant="34" id="hPW-99-qF6"/>
+                                            <constraint firstItem="5nP-0y-vUb" firstAttribute="leading" secondItem="3aI-go-fBt" secondAttribute="leading" constant="34" id="x3Y-F2-vsI"/>
+                                        </constraints>
+                                    </view>
+                                    <view contentMode="scaleToFill" restorationIdentifier="View" translatesAutoresizingMaskIntoConstraints="NO" id="8nn-7m-E3K" userLabel="Top">
+                                        <rect key="frame" x="0.0" y="0.0" width="414" height="361"/>
+                                        <subviews>
+                                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" verticalCompressionResistancePriority="749" image="Main" translatesAutoresizingMaskIntoConstraints="NO" id="2sv-JA-2Yu">
+                                                <rect key="frame" x="107" y="128" width="200" height="113"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="height" constant="113" id="EuT-yA-iSD"/>
+                                                    <constraint firstAttribute="width" constant="200" id="XPv-SP-Kyf"/>
+                                                </constraints>
+                                            </imageView>
+                                        </subviews>
+                                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <constraints>
+                                            <constraint firstItem="2sv-JA-2Yu" firstAttribute="centerX" secondItem="8nn-7m-E3K" secondAttribute="centerX" id="Kfl-92-HYr"/>
+                                            <constraint firstItem="2sv-JA-2Yu" firstAttribute="centerY" secondItem="8nn-7m-E3K" secondAttribute="centerY" constant="4" id="bEu-m4-T6V"/>
+                                        </constraints>
+                                    </view>
+                                </subviews>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <constraints>
+                                    <constraint firstItem="8nn-7m-E3K" firstAttribute="leading" secondItem="Zbc-IP-P4L" secondAttribute="leading" id="1EA-WW-sj8"/>
+                                    <constraint firstAttribute="trailing" secondItem="8nn-7m-E3K" secondAttribute="trailing" id="4Kv-Nn-hxj"/>
+                                    <constraint firstItem="3aI-go-fBt" firstAttribute="top" secondItem="8nn-7m-E3K" secondAttribute="bottom" id="AgE-0g-aNy"/>
+                                    <constraint firstAttribute="trailing" secondItem="8nn-7m-E3K" secondAttribute="trailing" id="GPl-At-Jqq"/>
+                                    <constraint firstItem="3aI-go-fBt" firstAttribute="centerX" secondItem="Zbc-IP-P4L" secondAttribute="centerX" id="KKK-Vk-24y"/>
+                                    <constraint firstItem="8nn-7m-E3K" firstAttribute="top" secondItem="Zbc-IP-P4L" secondAttribute="top" id="O9W-D8-k0O"/>
+                                    <constraint firstItem="3aI-go-fBt" firstAttribute="top" secondItem="8nn-7m-E3K" secondAttribute="bottom" id="buO-hr-OPz"/>
+                                    <constraint firstItem="8nn-7m-E3K" firstAttribute="top" secondItem="Zbc-IP-P4L" secondAttribute="top" id="dp1-Uf-Ozv"/>
+                                    <constraint firstItem="3aI-go-fBt" firstAttribute="centerY" secondItem="Zbc-IP-P4L" secondAttribute="centerY" constant="55" id="mY3-7F-toj"/>
+                                    <constraint firstItem="8nn-7m-E3K" firstAttribute="leading" secondItem="Zbc-IP-P4L" secondAttribute="leading" id="sJn-IL-ENu"/>
+                                </constraints>
+                            </view>
+                        </subviews>
+                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="Zbc-IP-P4L" firstAttribute="bottom" secondItem="6Tk-OE-BBY" secondAttribute="bottom" id="SWF-Hm-aJN"/>
+                            <constraint firstItem="Zbc-IP-P4L" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="top" id="oPB-h2-EBi"/>
+                            <constraint firstItem="Zbc-IP-P4L" firstAttribute="trailing" secondItem="6Tk-OE-BBY" secondAttribute="trailing" id="vn9-Yr-fSL"/>
+                            <constraint firstItem="Zbc-IP-P4L" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="zWf-fP-p89"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                    </view>
+                    <connections>
+                        <outlet property="Apps" destination="242-Gn-JJt" id="TXL-4S-3bd"/>
+                        <outlet property="Help" destination="bt0-zQ-OsI" id="d3d-Rc-Dxa"/>
+                        <outlet property="News" destination="5nP-0y-vUb" id="3QN-Vm-4z6"/>
+                        <outlet property="logoutButton" destination="WP3-bI-bWY" id="Y31-sS-BUv"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+                <exit id="jY4-Fr-0Sh" userLabel="Exit" sceneMemberID="exit"/>
+            </objects>
+            <point key="canvasLocation" x="43.125" y="18.75"/>
+        </scene>
+        <!--App-->
+        <scene sceneID="gcj-oX-2Mk">
+            <objects>
+                <viewControllerPlaceholder storyboardName="Apps" referencedIdentifier="App" id="z7S-dV-br0" sceneMemberID="viewController"/>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="FwD-Yb-dqr" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="599" y="-88"/>
+        </scene>
+        <!--News-->
+        <scene sceneID="Hr3-Az-lC7">
+            <objects>
+                <viewControllerPlaceholder storyboardName="News" referencedIdentifier="News" id="g2P-8c-CJ6" sceneMemberID="viewController"/>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="OQA-4u-PgS" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="628" y="21"/>
+        </scene>
+        <!--Help-->
+        <scene sceneID="vnO-rf-S6s">
+            <objects>
+                <viewControllerPlaceholder storyboardName="NewCallScreen" referencedIdentifier="Help" id="q2I-IR-uJd" sceneMemberID="viewController"/>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="pnY-KO-lpf" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="544" y="161"/>
+        </scene>
+        <!--LaunchScreen-->
+        <scene sceneID="2fJ-Kc-lBQ">
+            <objects>
+                <viewControllerPlaceholder storyboardName="LaunchScreen" referencedIdentifier="LaunchScreen" id="Nou-9T-gcG" sceneMemberID="viewController"/>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="L35-D0-Pze" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="709" y="86"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="Main" width="612" height="331"/>
+    </resources>
+</document>
