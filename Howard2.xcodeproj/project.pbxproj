@@ -29,7 +29,7 @@
 		3B7922B022666051008B307F /* Green_mountainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B7922AD22666051008B307F /* Green_mountainViewController.swift */; };
 		3B7922B122666051008B307F /* TimesViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B7922AE22666051008B307F /* TimesViewController.swift */; };
 		3BD10A5E22669B5C001D0B5B /* MapViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3BD10A5D22669B5C001D0B5B /* MapViewController.swift */; };
-		9703856D22721D0D00C47655 /* Flash.png in Resources */ = {isa = PBXBuildFile; fileRef = 9703856C22721D0D00C47655 /* Flash.png */; };
+		9703856F22721E7C00C47655 /* Images in Resources */ = {isa = PBXBuildFile; fileRef = 9703856E22721E7C00C47655 /* Images */; };
 		F7DC6500224D182A00C8EA66 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F7DC64FF224D182A00C8EA66 /* AppDelegate.swift */; };
 		F7DC6502224D182A00C8EA66 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F7DC6501224D182A00C8EA66 /* ViewController.swift */; };
 		F7DC6505224D182A00C8EA66 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F7DC6503224D182A00C8EA66 /* Main.storyboard */; };
@@ -80,7 +80,7 @@
 		3B7922AD22666051008B307F /* Green_mountainViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Green_mountainViewController.swift; sourceTree = "<group>"; };
 		3B7922AE22666051008B307F /* TimesViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TimesViewController.swift; sourceTree = "<group>"; };
 		3BD10A5D22669B5C001D0B5B /* MapViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MapViewController.swift; sourceTree = "<group>"; };
-		9703856C22721D0D00C47655 /* Flash.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = Flash.png; path = ../../../../Desktop/Flash.png; sourceTree = "<group>"; };
+		9703856E22721E7C00C47655 /* Images */ = {isa = PBXFileReference; lastKnownFileType = folder; name = Images; sourceTree = "<group>"; };
 		F7DC64FC224D182A00C8EA66 /* Howard2.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Howard2.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		F7DC64FF224D182A00C8EA66 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		F7DC6501224D182A00C8EA66 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -125,7 +125,7 @@
 		396027D7225E9D520007CCDD /* Images */ = {
 			isa = PBXGroup;
 			children = (
-				9703856C22721D0D00C47655 /* Flash.png */,
+				9703856E22721E7C00C47655 /* Images */,
 				3903829622668B2A003422D3 /* questionMark.png */,
 				3903828C2266864B003422D3 /* funguy.png */,
 				3903828D2266864B003422D3 /* HomeIcon.png */,
@@ -383,8 +383,8 @@
 				3903828F2266864B003422D3 /* funguy.png in Resources */,
 				390382932266868F003422D3 /* AskHoward.storyboard in Resources */,
 				F7DC652E224D241200C8EA66 /* Apps.storyboard in Resources */,
-				9703856D22721D0D00C47655 /* Flash.png in Resources */,
 				390382902266864B003422D3 /* HomeIcon.png in Resources */,
+				9703856F22721E7C00C47655 /* Images in Resources */,
 				F7DC6505224D182A00C8EA66 /* Main.storyboard in Resources */,
 				396027D4225E9A390007CCDD /* NewCallScreen.storyboard in Resources */,
 				396E0DC3226FCCD7004F2C13 /* NewCheckList.storyboard in Resources */,
