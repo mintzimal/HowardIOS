@@ -10,10 +10,10 @@ import UIKit
 
 class LoginController: UIViewController {
     
-    
-    @IBOutlet weak var PINView: UILabel!
+    @IBOutlet weak var PINView: UITextField!
     @IBOutlet weak var submitButton: UIButton!
     
+    @IBOutlet weak var ShowButton: UIButton!
     @IBOutlet weak var Button1: UIButton!
     @IBOutlet weak var Button2: UIButton!
     @IBOutlet weak var Button3: UIButton!
@@ -43,6 +43,16 @@ class LoginController: UIViewController {
         
     }
     
+    @IBAction func ShowText(_ sender: Any) {
+        if(PINView.isSecureTextEntry == true){
+            PINView.isSecureTextEntry = false
+            ShowButton.setTitle("Hide", for: .normal)
+        }else{
+            PINView.isSecureTextEntry = true
+            ShowButton.setTitle("Show", for: .normal)
+        }
+        
+    }
     @IBAction func Add1(_ sender: Any) {
         let text = (PINView.text ?? "")+"1"
         PINView.text = text
