@@ -7,6 +7,8 @@
 //
 
 import UIKit
+import AVFoundation
+
 
 class CallScreenController: UIViewController {
     
@@ -51,6 +53,41 @@ class CallScreenController: UIViewController {
             print("Error calling your district, please try again")
         }
     }
+    var isTorch = false
+    @IBAction func actionTorchClick(sender: AnyObject) {
+        
+        
+        
+        guard let device = AVCaptureDevice.default(for: AVMediaType.video) else { return }
+        
+        if device.hasTorch {
+            
+            isTorch = !isTorch
+            do {
+                try device.lockForConfiguration()
+                if isTorch == true {
+                    device.torchMode = .on
+                    
+                } else {
+                    device.torchMode = .off
+                    
+                }
+                
+                
+                
+                device.unlockForConfiguration()
+                
+            } catch {
+                
+                print("Torch is not working.")
+                
+            }
+            
+        } else {
+            
+            print("Torch not compatible with device.")
+            
+        }}
     
     
     
