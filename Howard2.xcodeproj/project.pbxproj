@@ -13,7 +13,6 @@
 		390382932266868F003422D3 /* AskHoward.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 390382922266868F003422D3 /* AskHoward.storyboard */; };
 		39038295226689A3003422D3 /* AskHowardController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 39038294226689A3003422D3 /* AskHowardController.swift */; };
 		3903829722668B2A003422D3 /* questionMark.png in Resources */ = {isa = PBXBuildFile; fileRef = 3903829622668B2A003422D3 /* questionMark.png */; };
-		39113F5122551D9200111AB4 /* CallScreenController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 39113F5022551D9200111AB4 /* CallScreenController.swift */; };
 		3939DBE022564918001A8A7B /* Login.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3939DBDF22564918001A8A7B /* Login.storyboard */; };
 		3939DBE222564928001A8A7B /* Signup.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3939DBE122564928001A8A7B /* Signup.storyboard */; };
 		3939DBE422564943001A8A7B /* News.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3939DBE322564943001A8A7B /* News.storyboard */; };
@@ -30,6 +29,7 @@
 		3B7922B022666051008B307F /* Green_mountainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B7922AD22666051008B307F /* Green_mountainViewController.swift */; };
 		3B7922B122666051008B307F /* TimesViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B7922AE22666051008B307F /* TimesViewController.swift */; };
 		3BD10A5E22669B5C001D0B5B /* MapViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3BD10A5D22669B5C001D0B5B /* MapViewController.swift */; };
+		9703856D22721D0D00C47655 /* Flash.png in Resources */ = {isa = PBXBuildFile; fileRef = 9703856C22721D0D00C47655 /* Flash.png */; };
 		F7DC6500224D182A00C8EA66 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F7DC64FF224D182A00C8EA66 /* AppDelegate.swift */; };
 		F7DC6502224D182A00C8EA66 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F7DC6501224D182A00C8EA66 /* ViewController.swift */; };
 		F7DC6505224D182A00C8EA66 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F7DC6503224D182A00C8EA66 /* Main.storyboard */; };
@@ -64,7 +64,6 @@
 		390382922266868F003422D3 /* AskHoward.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = AskHoward.storyboard; sourceTree = "<group>"; };
 		39038294226689A3003422D3 /* AskHowardController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AskHowardController.swift; sourceTree = "<group>"; };
 		3903829622668B2A003422D3 /* questionMark.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = questionMark.png; sourceTree = "<group>"; };
-		39113F5022551D9200111AB4 /* CallScreenController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CallScreenController.swift; sourceTree = "<group>"; };
 		3939DBDF22564918001A8A7B /* Login.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Login.storyboard; sourceTree = "<group>"; };
 		3939DBE122564928001A8A7B /* Signup.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Signup.storyboard; sourceTree = "<group>"; };
 		3939DBE322564943001A8A7B /* News.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = News.storyboard; sourceTree = "<group>"; };
@@ -81,6 +80,7 @@
 		3B7922AD22666051008B307F /* Green_mountainViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Green_mountainViewController.swift; sourceTree = "<group>"; };
 		3B7922AE22666051008B307F /* TimesViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TimesViewController.swift; sourceTree = "<group>"; };
 		3BD10A5D22669B5C001D0B5B /* MapViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MapViewController.swift; sourceTree = "<group>"; };
+		9703856C22721D0D00C47655 /* Flash.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = Flash.png; path = ../../../../Desktop/Flash.png; sourceTree = "<group>"; };
 		F7DC64FC224D182A00C8EA66 /* Howard2.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Howard2.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		F7DC64FF224D182A00C8EA66 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		F7DC6501224D182A00C8EA66 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -125,6 +125,7 @@
 		396027D7225E9D520007CCDD /* Images */ = {
 			isa = PBXGroup;
 			children = (
+				9703856C22721D0D00C47655 /* Flash.png */,
 				3903829622668B2A003422D3 /* questionMark.png */,
 				3903828C2266864B003422D3 /* funguy.png */,
 				3903828D2266864B003422D3 /* HomeIcon.png */,
@@ -176,7 +177,6 @@
 			isa = PBXGroup;
 			children = (
 				3BD10A5D22669B5C001D0B5B /* MapViewController.swift */,
-				39113F5022551D9200111AB4 /* CallScreenController.swift */,
 				396027D5225E9AD90007CCDD /* NewCallScreenController.swift */,
 				396027D3225E9A390007CCDD /* NewCallScreen.storyboard */,
 			);
@@ -383,6 +383,7 @@
 				3903828F2266864B003422D3 /* funguy.png in Resources */,
 				390382932266868F003422D3 /* AskHoward.storyboard in Resources */,
 				F7DC652E224D241200C8EA66 /* Apps.storyboard in Resources */,
+				9703856D22721D0D00C47655 /* Flash.png in Resources */,
 				390382902266864B003422D3 /* HomeIcon.png in Resources */,
 				F7DC6505224D182A00C8EA66 /* Main.storyboard in Resources */,
 				396027D4225E9A390007CCDD /* NewCallScreen.storyboard in Resources */,
@@ -420,7 +421,6 @@
 				3939DBEA2256499B001A8A7B /* SignupController.swift in Sources */,
 				3939DBEC225649B9001A8A7B /* LaunchScreenController.swift in Sources */,
 				39038295226689A3003422D3 /* AskHowardController.swift in Sources */,
-				39113F5122551D9200111AB4 /* CallScreenController.swift in Sources */,
 				3939DBE822564989001A8A7B /* LoginController.swift in Sources */,
 				3939DBEE225649D7001A8A7B /* AppsController.swift in Sources */,
 				3BD10A5E22669B5C001D0B5B /* MapViewController.swift in Sources */,

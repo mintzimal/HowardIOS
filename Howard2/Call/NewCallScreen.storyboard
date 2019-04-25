@@ -70,11 +70,20 @@
                                     <segue destination="bOC-JQ-4zS" kind="show" id="Z5E-or-Ffa"/>
                                 </connections>
                             </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="CoP-Ol-01B">
+                                <rect key="frame" x="20" y="795" width="79" height="84"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Button" image="Flash.png"/>
+                                <connections>
+                                    <action selector="actionTorchClickWithSender:" destination="bYQ-cy-aDS" eventType="touchUpInside" id="VZO-lr-l3g"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <viewLayoutGuide key="safeArea" id="Q9i-z4-AaO"/>
                     </view>
                     <connections>
+                        <outlet property="Flash" destination="CoP-Ol-01B" id="ILW-nD-gnN"/>
                         <outlet property="districtOneButton" destination="AXm-XJ-hbE" id="0HO-5A-LKf"/>
                         <outlet property="districtTwoButton" destination="ePn-Nc-FHz" id="ktW-iC-wDW"/>
                     </connections>
@@ -128,11 +137,12 @@
         </scene>
     </scenes>
     <resources>
+        <image name="Flash.png" width="225" height="225"/>
         <image name="HomeIcon.png" width="512" height="512"/>
         <image name="Main" width="612" height="331"/>
         <image name="map" width="225" height="225"/>
     </resources>
     <inferredMetricsTieBreakers>
-        <segue reference="FAb-c7-cAr"/>
+        <segue reference="Z5E-or-Ffa"/>
     </inferredMetricsTieBreakers>
 </document>

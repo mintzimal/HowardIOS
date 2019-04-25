@@ -7,21 +7,22 @@
 //
 
 import UIKit
+import AVFoundation
+
 
 class NewCallScreenController: UIViewController {
-    
     
     @IBOutlet weak var districtOneButton: UIButton!
     @IBOutlet weak var districtTwoButton: UIButton!
     
     
-    @IBAction func connectDistrictOne(_ sender: Any) {
+    @IBAction func callDistrictOne(_ sender: Any) {
         print("Calling District One")
         dialNumber(number: "+8027777928")
     }
     
     
-    @IBAction func connectDistrictTwo(_ sender: Any) {
+    @IBAction func callDistrictTwo(_ sender: Any) {
         print("Calling District Two")
         dialNumber(number: "+6178173687")
     }
@@ -30,8 +31,6 @@ class NewCallScreenController: UIViewController {
         super.viewDidLoad()
         
         // Do any additional setup after loading the view.
-        districtOneButton.layer.cornerRadius = 15
-        districtTwoButton.layer.cornerRadius = 15
     }
     
     func dialNumber(number : String) {
@@ -54,6 +53,44 @@ class NewCallScreenController: UIViewController {
             print("Error calling your district, please try again")
         }
     }
+    var isTorch = false
+    @IBOutlet weak var Flash: UIButton!
+    @IBAction func actionTorchClick(sender: AnyObject) {
+        
+        
+        
+        guard let device = AVCaptureDevice.default(for: AVMediaType.video) else { return }
+        
+        if device.hasTorch {
+            
+            isTorch = !isTorch
+            do {
+                try device.lockForConfiguration()
+                if isTorch == true {
+                    device.torchMode = .on
+                    
+                } else {
+                    device.torchMode = .off
+                    
+                }
+                
+                
+                
+                device.unlockForConfiguration()
+                
+            } catch {
+                
+                print("Torch is not working.")
+                
+            }
+            
+        } else {
+            
+            print("Torch not compatible with device.")
+            
+        }}
+    
+    
     
     
     /*
