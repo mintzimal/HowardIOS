@@ -30,8 +30,6 @@
 		3B7922B022666051008B307F /* Green_mountainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B7922AD22666051008B307F /* Green_mountainViewController.swift */; };
 		3B7922B122666051008B307F /* TimesViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B7922AE22666051008B307F /* TimesViewController.swift */; };
 		3BD10A5E22669B5C001D0B5B /* MapViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3BD10A5D22669B5C001D0B5B /* MapViewController.swift */; };
-		97A06B7D2257AA6200044F3D /* CheckList.swift in Sources */ = {isa = PBXBuildFile; fileRef = 97A06B7C2257AA6200044F3D /* CheckList.swift */; };
-		97D8BE6D2257AD9D00371361 /* CheckList.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 97D8BE6C2257AD9D00371361 /* CheckList.storyboard */; };
 		F7DC6500224D182A00C8EA66 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F7DC64FF224D182A00C8EA66 /* AppDelegate.swift */; };
 		F7DC6502224D182A00C8EA66 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F7DC6501224D182A00C8EA66 /* ViewController.swift */; };
 		F7DC6505224D182A00C8EA66 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F7DC6503224D182A00C8EA66 /* Main.storyboard */; };
@@ -83,8 +81,6 @@
 		3B7922AD22666051008B307F /* Green_mountainViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Green_mountainViewController.swift; sourceTree = "<group>"; };
 		3B7922AE22666051008B307F /* TimesViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TimesViewController.swift; sourceTree = "<group>"; };
 		3BD10A5D22669B5C001D0B5B /* MapViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MapViewController.swift; sourceTree = "<group>"; };
-		97A06B7C2257AA6200044F3D /* CheckList.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CheckList.swift; sourceTree = "<group>"; };
-		97D8BE6C2257AD9D00371361 /* CheckList.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = CheckList.storyboard; sourceTree = "<group>"; };
 		F7DC64FC224D182A00C8EA66 /* Howard2.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Howard2.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		F7DC64FF224D182A00C8EA66 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		F7DC6501224D182A00C8EA66 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -137,6 +133,84 @@
 			path = Images;
 			sourceTree = "<group>";
 		};
+		F75E70B122721608009BC7EA /* News */ = {
+			isa = PBXGroup;
+			children = (
+				3B7922AD22666051008B307F /* Green_mountainViewController.swift */,
+				3B7922AC22666051008B307F /* Seven_daysViewController.swift */,
+				3B7922AE22666051008B307F /* TimesViewController.swift */,
+				3939DBE322564943001A8A7B /* News.storyboard */,
+				3939DBE522564973001A8A7B /* NewsController.swift */,
+			);
+			path = News;
+			sourceTree = "<group>";
+		};
+		F75E70B222721616009BC7EA /* Login */ = {
+			isa = PBXGroup;
+			children = (
+				3939DBE722564989001A8A7B /* LoginController.swift */,
+				3939DBDF22564918001A8A7B /* Login.storyboard */,
+			);
+			path = Login;
+			sourceTree = "<group>";
+		};
+		F75E70B322721627009BC7EA /* Signup */ = {
+			isa = PBXGroup;
+			children = (
+				3939DBE92256499B001A8A7B /* SignupController.swift */,
+				3939DBE122564928001A8A7B /* Signup.storyboard */,
+			);
+			path = Signup;
+			sourceTree = "<group>";
+		};
+		F75E70B42272163A009BC7EA /* Apps */ = {
+			isa = PBXGroup;
+			children = (
+				3939DBED225649D7001A8A7B /* AppsController.swift */,
+				F7DC652D224D241200C8EA66 /* Apps.storyboard */,
+			);
+			path = Apps;
+			sourceTree = "<group>";
+		};
+		F75E70B522721653009BC7EA /* Call */ = {
+			isa = PBXGroup;
+			children = (
+				3BD10A5D22669B5C001D0B5B /* MapViewController.swift */,
+				39113F5022551D9200111AB4 /* CallScreenController.swift */,
+				396027D5225E9AD90007CCDD /* NewCallScreenController.swift */,
+				396027D3225E9A390007CCDD /* NewCallScreen.storyboard */,
+			);
+			path = Call;
+			sourceTree = "<group>";
+		};
+		F75E70B62272167B009BC7EA /* Checklist */ = {
+			isa = PBXGroup;
+			children = (
+				396E0DC2226FCCD7004F2C13 /* NewCheckList.storyboard */,
+				396E0DC4226FCD86004F2C13 /* NewCheckListController.swift */,
+			);
+			path = Checklist;
+			sourceTree = "<group>";
+		};
+		F75E70B7227216D6009BC7EA /* Main */ = {
+			isa = PBXGroup;
+			children = (
+				F7DC6508224D182C00C8EA66 /* LaunchScreen.storyboard */,
+				F7DC6501224D182A00C8EA66 /* ViewController.swift */,
+				F7DC6503224D182A00C8EA66 /* Main.storyboard */,
+			);
+			path = Main;
+			sourceTree = "<group>";
+		};
+		F75E70B82272172C009BC7EA /* AskHoward */ = {
+			isa = PBXGroup;
+			children = (
+				390382922266868F003422D3 /* AskHoward.storyboard */,
+				39038294226689A3003422D3 /* AskHowardController.swift */,
+			);
+			path = AskHoward;
+			sourceTree = "<group>";
+		};
 		F7DC64F3224D182A00C8EA66 = {
 			isa = PBXGroup;
 			children = (
@@ -161,34 +235,18 @@
 			isa = PBXGroup;
 			children = (
 				396027D7225E9D520007CCDD /* Images */,
-				396027D5225E9AD90007CCDD /* NewCallScreenController.swift */,
 				F7DC64FF224D182A00C8EA66 /* AppDelegate.swift */,
-				F7DC6501224D182A00C8EA66 /* ViewController.swift */,
-				F7DC6503224D182A00C8EA66 /* Main.storyboard */,
-				3B7922AD22666051008B307F /* Green_mountainViewController.swift */,
-				3B7922AC22666051008B307F /* Seven_daysViewController.swift */,
-				3B7922AE22666051008B307F /* TimesViewController.swift */,
 				F7DC6506224D182C00C8EA66 /* Assets.xcassets */,
-				F7DC6508224D182C00C8EA66 /* LaunchScreen.storyboard */,
-				3939DBDF22564918001A8A7B /* Login.storyboard */,
-				3939DBE122564928001A8A7B /* Signup.storyboard */,
-				3939DBE322564943001A8A7B /* News.storyboard */,
-				3939DBE522564973001A8A7B /* NewsController.swift */,
-				3939DBE722564989001A8A7B /* LoginController.swift */,
-				3939DBE92256499B001A8A7B /* SignupController.swift */,
+				F75E70B42272163A009BC7EA /* Apps */,
+				F75E70B82272172C009BC7EA /* AskHoward */,
+				F75E70B522721653009BC7EA /* Call */,
+				F75E70B62272167B009BC7EA /* Checklist */,
+				F75E70B222721616009BC7EA /* Login */,
+				F75E70B7227216D6009BC7EA /* Main */,
+				F75E70B122721608009BC7EA /* News */,
+				F75E70B322721627009BC7EA /* Signup */,
 				3939DBEB225649B9001A8A7B /* LaunchScreenController.swift */,
-				3939DBED225649D7001A8A7B /* AppsController.swift */,
 				F7DC650B224D182C00C8EA66 /* Info.plist */,
-				F7DC652D224D241200C8EA66 /* Apps.storyboard */,
-				39113F5022551D9200111AB4 /* CallScreenController.swift */,
-				396027D3225E9A390007CCDD /* NewCallScreen.storyboard */,
-				3BD10A5D22669B5C001D0B5B /* MapViewController.swift */,
-				97A06B7C2257AA6200044F3D /* CheckList.swift */,
-				97D8BE6C2257AD9D00371361 /* CheckList.storyboard */,
-				396E0DC2226FCCD7004F2C13 /* NewCheckList.storyboard */,
-				396E0DC4226FCD86004F2C13 /* NewCheckListController.swift */,
-				390382922266868F003422D3 /* AskHoward.storyboard */,
-				39038294226689A3003422D3 /* AskHowardController.swift */,
 			);
 			path = Howard2;
 			sourceTree = "<group>";
@@ -329,7 +387,6 @@
 				F7DC6505224D182A00C8EA66 /* Main.storyboard in Resources */,
 				396027D4225E9A390007CCDD /* NewCallScreen.storyboard in Resources */,
 				396E0DC3226FCCD7004F2C13 /* NewCheckList.storyboard in Resources */,
-				97D8BE6D2257AD9D00371361 /* CheckList.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -355,7 +412,6 @@
 			buildActionMask = 2147483647;
 			files = (
 				3939DBE622564973001A8A7B /* NewsController.swift in Sources */,
-				97A06B7D2257AA6200044F3D /* CheckList.swift in Sources */,
 				F7DC6502224D182A00C8EA66 /* ViewController.swift in Sources */,
 				F7DC6500224D182A00C8EA66 /* AppDelegate.swift in Sources */,
 				3B7922B122666051008B307F /* TimesViewController.swift in Sources */,
