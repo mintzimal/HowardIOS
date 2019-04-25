@@ -13,13 +13,26 @@
         <scene sceneID="YOQ-MO-cXh">
             <objects>
                 <tableViewController storyboardIdentifier="NewCheckList" id="3KJ-YA-ndq" customClass="NewCheckListController" customModule="Howard2" customModuleProvider="target" sceneMemberID="viewController">
-                    <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" id="JnV-cs-E1Z">
+                    <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" contentViewInsetsToSafeArea="NO" id="JnV-cs-E1Z">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <view key="tableHeaderView" contentMode="scaleToFill" id="Udp-fo-Xks">
+                            <rect key="frame" x="0.0" y="0.0" width="414" height="26"/>
+                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        </view>
+                        <button key="tableFooterView" opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="2Oe-K5-k7C">
+                            <rect key="frame" x="0.0" y="174" width="414" height="161"/>
+                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <state key="normal" title="Button" image="HomeIcon.png"/>
+                            <connections>
+                                <segue destination="KZx-fZ-fP4" kind="showDetail" id="03X-z3-5JP"/>
+                            </connections>
+                        </button>
                         <prototypes>
                             <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="AppOne" textLabel="KZF-GP-hrx" detailTextLabel="N3s-0A-PxY" rowHeight="120" style="IBUITableViewCellStyleSubtitle" id="DKS-yk-F7d">
-                                <rect key="frame" x="0.0" y="28" width="414" height="120"/>
+                                <rect key="frame" x="0.0" y="54" width="414" height="120"/>
                                 <autoresizingMask key="autoresizingMask"/>
                                 <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="DKS-yk-F7d" id="9qd-LY-ety">
                                     <rect key="frame" x="0.0" y="0.0" width="414" height="119.5"/>
@@ -56,5 +69,16 @@
             </objects>
             <point key="canvasLocation" x="-91.304347826086968" y="-2.0089285714285712"/>
         </scene>
+        <!--HomePage-->
+        <scene sceneID="xkl-2J-ePT">
+            <objects>
+                <viewControllerPlaceholder storyboardName="Main" referencedIdentifier="HomePage" id="KZx-fZ-fP4" sceneMemberID="viewController"/>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="jRP-br-df7" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1076" y="432"/>
+        </scene>
     </scenes>
+    <resources>
+        <image name="HomeIcon.png" width="512" height="512"/>
+    </resources>
 </document>
