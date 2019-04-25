@@ -25,6 +25,7 @@
 		396027D6225E9AD90007CCDD /* NewCallScreenController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 396027D5225E9AD90007CCDD /* NewCallScreenController.swift */; };
 		396E0DC3226FCCD7004F2C13 /* NewCheckList.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 396E0DC2226FCCD7004F2C13 /* NewCheckList.storyboard */; };
 		396E0DC5226FCD86004F2C13 /* NewCheckListController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 396E0DC4226FCD86004F2C13 /* NewCheckListController.swift */; };
+		39ED26B122723EA600B7D843 /* border.png in Resources */ = {isa = PBXBuildFile; fileRef = 39ED26B022723EA600B7D843 /* border.png */; };
 		3B7922AF22666051008B307F /* Seven_daysViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B7922AC22666051008B307F /* Seven_daysViewController.swift */; };
 		3B7922B022666051008B307F /* Green_mountainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B7922AD22666051008B307F /* Green_mountainViewController.swift */; };
 		3B7922B122666051008B307F /* TimesViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B7922AE22666051008B307F /* TimesViewController.swift */; };
@@ -76,6 +77,7 @@
 		396027D5225E9AD90007CCDD /* NewCallScreenController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewCallScreenController.swift; sourceTree = "<group>"; };
 		396E0DC2226FCCD7004F2C13 /* NewCheckList.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = NewCheckList.storyboard; sourceTree = "<group>"; };
 		396E0DC4226FCD86004F2C13 /* NewCheckListController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewCheckListController.swift; sourceTree = "<group>"; };
+		39ED26B022723EA600B7D843 /* border.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = border.png; path = Howard2/Images/border.png; sourceTree = SOURCE_ROOT; };
 		3B7922AC22666051008B307F /* Seven_daysViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Seven_daysViewController.swift; sourceTree = "<group>"; };
 		3B7922AD22666051008B307F /* Green_mountainViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Green_mountainViewController.swift; sourceTree = "<group>"; };
 		3B7922AE22666051008B307F /* TimesViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TimesViewController.swift; sourceTree = "<group>"; };
@@ -125,6 +127,7 @@
 		396027D7225E9D520007CCDD /* Images */ = {
 			isa = PBXGroup;
 			children = (
+				39ED26B022723EA600B7D843 /* border.png */,
 				9703856E22721E7C00C47655 /* Flash.png */,
 				3903829622668B2A003422D3 /* questionMark.png */,
 				3903828C2266864B003422D3 /* funguy.png */,
@@ -196,6 +199,7 @@
 			isa = PBXGroup;
 			children = (
 				F7DC6508224D182C00C8EA66 /* LaunchScreen.storyboard */,
+				3939DBEB225649B9001A8A7B /* LaunchScreenController.swift */,
 				F7DC6501224D182A00C8EA66 /* ViewController.swift */,
 				F7DC6503224D182A00C8EA66 /* Main.storyboard */,
 			);
@@ -234,9 +238,10 @@
 		F7DC64FE224D182A00C8EA66 /* Howard2 */ = {
 			isa = PBXGroup;
 			children = (
-				396027D7225E9D520007CCDD /* Images */,
 				F7DC64FF224D182A00C8EA66 /* AppDelegate.swift */,
+				F7DC650B224D182C00C8EA66 /* Info.plist */,
 				F7DC6506224D182C00C8EA66 /* Assets.xcassets */,
+				396027D7225E9D520007CCDD /* Images */,
 				F75E70B42272163A009BC7EA /* Apps */,
 				F75E70B82272172C009BC7EA /* AskHoward */,
 				F75E70B522721653009BC7EA /* Call */,
@@ -245,8 +250,6 @@
 				F75E70B7227216D6009BC7EA /* Main */,
 				F75E70B122721608009BC7EA /* News */,
 				F75E70B322721627009BC7EA /* Signup */,
-				3939DBEB225649B9001A8A7B /* LaunchScreenController.swift */,
-				F7DC650B224D182C00C8EA66 /* Info.plist */,
 			);
 			path = Howard2;
 			sourceTree = "<group>";
@@ -384,6 +387,7 @@
 				390382932266868F003422D3 /* AskHoward.storyboard in Resources */,
 				F7DC652E224D241200C8EA66 /* Apps.storyboard in Resources */,
 				390382902266864B003422D3 /* HomeIcon.png in Resources */,
+				39ED26B122723EA600B7D843 /* border.png in Resources */,
 				9703856F22721E7C00C47655 /* Flash.png in Resources */,
 				F7DC6505224D182A00C8EA66 /* Main.storyboard in Resources */,
 				396027D4225E9A390007CCDD /* NewCallScreen.storyboard in Resources */,

@@ -12,7 +12,6 @@ class LaunchScreenController: UIViewController {
 
     @IBOutlet weak var loginButton: UIButton!
     @IBOutlet weak var signupButton: UIButton!
-    @IBOutlet weak var skipButton: UIButton!
 
     
     
@@ -21,7 +20,6 @@ class LaunchScreenController: UIViewController {
         // Do any additional setup after loading the view.
         loginButton.layer.cornerRadius = 15
         signupButton.layer.cornerRadius = 15
-        skipButton.layer.cornerRadius = 15
     }
     
 
