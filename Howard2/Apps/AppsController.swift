@@ -7,8 +7,42 @@
 //
 
 import UIKit
+import SafariServices
 
-class AppsController: UIViewController {
+class AppsController: UIViewController, SFSafariViewControllerDelegate {
+    
+    @IBOutlet weak var AppOne: UIButton!
+    @IBOutlet weak var AppTwo: UIButton!
+    @IBOutlet weak var AppThree: UIButton!
+    @IBOutlet weak var AppFour: UIButton!
+    @IBOutlet weak var AppFive: UIButton!
+    @IBOutlet weak var AppSix: UIButton!
+    
+    @IBOutlet weak var LabelOne: UILabel!
+    @IBOutlet weak var LabelTwo: UILabel!
+    @IBOutlet weak var LabelThree: UILabel!
+    @IBOutlet weak var LabelFour: UILabel!
+    @IBOutlet weak var LabelFive: UILabel!
+    @IBOutlet weak var LabelSix: UILabel!
+    
+    private var funFacts:String = "https://www.mentalfloss.com/amazingfactgenerator"
+    private var calender:String = "https://calendar.google.com/calendar/"
+    private var youtube:String = "https://youtube.com"
+    
+    @IBAction func funFactGenerator(_ sender: Any){
+        let svc = SFSafariViewController(url: NSURL(string: self.funFacts)! as URL)
+        self.present(svc,animated: true, completion: nil)
+    }
+    
+    @IBAction func calenderLoader(_ sender: Any){
+        let svc = SFSafariViewController(url: NSURL(string: self.calender)! as URL)
+        self.present(svc,animated: true, completion: nil)
+    }
+    
+    @IBAction func youtubeLoader(_ sender: Any){
+        let svc = SFSafariViewController(url: NSURL(string: self.youtube)! as URL)
+        self.present(svc,animated: true, completion: nil)
+    }
 
     override func viewDidLoad() {
         super.viewDidLoad()

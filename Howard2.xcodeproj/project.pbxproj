@@ -15,6 +15,10 @@
 		3903829722668B2A003422D3 /* questionMark.png in Resources */ = {isa = PBXBuildFile; fileRef = 3903829622668B2A003422D3 /* questionMark.png */; };
 		39068991227298CF0068E4D2 /* N10.png in Resources */ = {isa = PBXBuildFile; fileRef = 39068990227298CF0068E4D2 /* N10.png */; };
 		3906899322729CEC0068E4D2 /* SD.jpeg in Resources */ = {isa = PBXBuildFile; fileRef = 3906899222729CEC0068E4D2 /* SD.jpeg */; };
+		390689952272A2090068E4D2 /* placeholder.png in Resources */ = {isa = PBXBuildFile; fileRef = 390689942272A2080068E4D2 /* placeholder.png */; };
+		390689972272A33F0068E4D2 /* xylophone.jpeg in Resources */ = {isa = PBXBuildFile; fileRef = 390689962272A33F0068E4D2 /* xylophone.jpeg */; };
+		390689992272A4010068E4D2 /* Calender.png in Resources */ = {isa = PBXBuildFile; fileRef = 390689982272A4000068E4D2 /* Calender.png */; };
+		3906899B2272A5810068E4D2 /* thinker.png in Resources */ = {isa = PBXBuildFile; fileRef = 3906899A2272A5810068E4D2 /* thinker.png */; };
 		3939DBE022564918001A8A7B /* Login.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3939DBDF22564918001A8A7B /* Login.storyboard */; };
 		3939DBE222564928001A8A7B /* Signup.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3939DBE122564928001A8A7B /* Signup.storyboard */; };
 		3939DBE822564989001A8A7B /* LoginController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3939DBE722564989001A8A7B /* LoginController.swift */; };
@@ -68,6 +72,10 @@
 		3903829622668B2A003422D3 /* questionMark.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = questionMark.png; sourceTree = "<group>"; };
 		39068990227298CF0068E4D2 /* N10.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = N10.png; sourceTree = "<group>"; };
 		3906899222729CEC0068E4D2 /* SD.jpeg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = SD.jpeg; sourceTree = "<group>"; };
+		390689942272A2080068E4D2 /* placeholder.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = placeholder.png; sourceTree = "<group>"; };
+		390689962272A33F0068E4D2 /* xylophone.jpeg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = xylophone.jpeg; sourceTree = "<group>"; };
+		390689982272A4000068E4D2 /* Calender.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = Calender.png; path = Howard2/Images/Calender.png; sourceTree = SOURCE_ROOT; };
+		3906899A2272A5810068E4D2 /* thinker.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = thinker.png; sourceTree = "<group>"; };
 		3939DBDF22564918001A8A7B /* Login.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Login.storyboard; sourceTree = "<group>"; };
 		3939DBE122564928001A8A7B /* Signup.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Signup.storyboard; sourceTree = "<group>"; };
 		3939DBE722564989001A8A7B /* LoginController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginController.swift; sourceTree = "<group>"; };
@@ -130,6 +138,10 @@
 		396027D7225E9D520007CCDD /* Images */ = {
 			isa = PBXGroup;
 			children = (
+				3906899A2272A5810068E4D2 /* thinker.png */,
+				390689962272A33F0068E4D2 /* xylophone.jpeg */,
+				390689942272A2080068E4D2 /* placeholder.png */,
+				390689982272A4000068E4D2 /* Calender.png */,
 				3906899222729CEC0068E4D2 /* SD.jpeg */,
 				39068990227298CF0068E4D2 /* N10.png */,
 				39B88B9B227295E70018B675 /* WCAX.png */,
@@ -385,17 +397,21 @@
 				3939DBE222564928001A8A7B /* Signup.storyboard in Resources */,
 				390382912266864B003422D3 /* SettingsIcon.png in Resources */,
 				F7DC650A224D182C00C8EA66 /* LaunchScreen.storyboard in Resources */,
+				390689952272A2090068E4D2 /* placeholder.png in Resources */,
 				F7DC6507224D182C00C8EA66 /* Assets.xcassets in Resources */,
 				3939DBE022564918001A8A7B /* Login.storyboard in Resources */,
 				3903829722668B2A003422D3 /* questionMark.png in Resources */,
 				39B88B962272943D0018B675 /* MCV.png in Resources */,
+				390689992272A4010068E4D2 /* Calender.png in Resources */,
 				3903828F2266864B003422D3 /* funguy.png in Resources */,
+				3906899B2272A5810068E4D2 /* thinker.png in Resources */,
 				390382932266868F003422D3 /* AskHoward.storyboard in Resources */,
 				39B88B93227292620018B675 /* BFP.png in Resources */,
 				39068991227298CF0068E4D2 /* N10.png in Resources */,
 				F7DC652E224D241200C8EA66 /* Apps.storyboard in Resources */,
 				390382902266864B003422D3 /* HomeIcon.png in Resources */,
 				39ED26B122723EA600B7D843 /* border.png in Resources */,
+				390689972272A33F0068E4D2 /* xylophone.jpeg in Resources */,
 				9703856F22721E7C00C47655 /* Flash.png in Resources */,
 				F7DC6505224D182A00C8EA66 /* Main.storyboard in Resources */,
 				39B88B8D22728DC70018B675 /* NewNews.storyboard in Resources */,
