@@ -22,7 +22,14 @@ class NewCheckListController: UITableViewController {
         appStruct(id: 1, title: "Medication Manager", text: "Helpful daily reminders"),
         appStruct(id: 2, title: "Google Calender", text: "So everything is in one place"),
         appStruct(id: 3, title: "Learn Something New", text: "New Tricks for Everyone"),
-        appStruct(id: 4, title: "Youtube", text: "Watch YouTube right from this app!")
+        appStruct(id: 4, title: "Youtube", text: "Watch YouTube right from this app!"),
+        appStruct(id: 5, title: "Xylophone", text: "Mess with a basic instrument"),
+        appStruct(id: 6, title: "SSTA Bus Schedule", text: "See when transportation services arrives"),
+        appStruct(id:7, title: "Higher Ground Live Music", text: "Check performance schedules"),
+        appStruct(id:8, title: "Messages", text: "Receive messages from your safety connection specialist"),
+        appStruct(id:9, title: "Motivational", text: "Get motivational messages everyday!"),
+        appStruct(id:10, title: "Text to Speech", text: "Type what you want to vocalize")
+        
     ]
 
     override func viewDidLoad() {
