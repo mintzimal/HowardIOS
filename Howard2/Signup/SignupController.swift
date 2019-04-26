@@ -90,7 +90,7 @@ class SignupController: UIViewController {
     
     @IBAction func SubmitButton(_ sender: Any) {
         
-        if(PINView.text != "PIN:  "){
+        if(PINView.text != ""){
         
             UserDefaults.standard.set(PINView.text, forKey: "PIN")
             

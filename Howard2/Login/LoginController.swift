@@ -99,8 +99,8 @@ class LoginController: UIViewController {
     }
     
     @IBAction func SubmitButton(_ sender: Any) {
-        
-        if(PINView.text != "PIN:  "){
+    
+        if(PINView.text != ""){
             if(PINView.text == UserDefaults.standard.string(forKey: "PIN") ?? "" ){
             
                 
