@@ -2,6 +2,12 @@
 <Workspace
    version = "1.0">
    <FileRef
+      location = "group:/Users/mintzimal/Documents/HowardCenterFinal/Howard2/Images/WVNY.png">
+   </FileRef>
+   <FileRef
+      location = "group:/Users/mintzimal/Documents/HowardCenterFinal/Howard2/Images/WCAX.png">
+   </FileRef>
+   <FileRef
       location = "self:">
    </FileRef>
 </Workspace>
