@@ -22,6 +22,8 @@ class LaunchScreenController: UIViewController {
         signupButton.layer.cornerRadius = 15
     }
     
+    
+    
 
     /*
     // MARK: - Navigation
