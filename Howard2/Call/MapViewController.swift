@@ -79,7 +79,13 @@ extension MapViewController : CLLocationManagerDelegate {
     }
     
     func locationManager(_ manager: CLLocationManager, didUpdateLocations locations: [CLLocation]) {
-         let userLocation:CLLocation = locations[0] as CLLocation
+        if let location = locations.first {
+            let span = MKCoordinateSpan(latitudeDelta: 0.05, longitudeDelta: 0.05)
+            let region = MKCoordinateRegion(center: location.coordinate, span: span)
+            mapView.setRegion(region, animated: true)
+        }
+        
+        let userLocation:CLLocation = locations[0] as CLLocation
         
         // Drop a pin at user's Current Location
         let myAnnotation: MKPointAnnotation = MKPointAnnotation()
@@ -91,10 +97,6 @@ extension MapViewController : CLLocationManagerDelegate {
             print("location:: (location)")
         }
         
-        func locationManager(manager: CLLocationManager, didFailWithError error: NSError)
-        {
-            print("Error \(error)")
-        }
     }
 
     /*
