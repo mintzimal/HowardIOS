@@ -36,6 +36,15 @@
 		39ED26B122723EA600B7D843 /* border.png in Resources */ = {isa = PBXBuildFile; fileRef = 39ED26B022723EA600B7D843 /* border.png */; };
 		3BD10A5E22669B5C001D0B5B /* MapViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3BD10A5D22669B5C001D0B5B /* MapViewController.swift */; };
 		9703856F22721E7C00C47655 /* Flash.png in Resources */ = {isa = PBXBuildFile; fileRef = 9703856E22721E7C00C47655 /* Flash.png */; };
+		F76F0E102273F76600021131 /* ChatViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F76F0E052273F76600021131 /* ChatViewController.swift */; };
+		F76F0E112273F76600021131 /* MessageCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = F76F0E062273F76600021131 /* MessageCell.xib */; };
+		F76F0E122273F76600021131 /* Message.swift in Sources */ = {isa = PBXBuildFile; fileRef = F76F0E072273F76600021131 /* Message.swift */; };
+		F76F0E132273F76600021131 /* WelcomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F76F0E082273F76600021131 /* WelcomeViewController.swift */; };
+		F76F0E152273F76600021131 /* CustomMessageCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = F76F0E0A2273F76600021131 /* CustomMessageCell.swift */; };
+		F76F0E162273F76600021131 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F76F0E0B2273F76600021131 /* Images.xcassets */; };
+		F76F0E172273F76600021131 /* LogInViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F76F0E0C2273F76600021131 /* LogInViewController.swift */; };
+		F76F0E1A2273F76600021131 /* RegisterViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F76F0E0F2273F76600021131 /* RegisterViewController.swift */; };
+		F76F0E202273FFE600021131 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = F76F0E1F2273FFE600021131 /* GoogleService-Info.plist */; };
 		F7DC6500224D182A00C8EA66 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F7DC64FF224D182A00C8EA66 /* AppDelegate.swift */; };
 		F7DC6502224D182A00C8EA66 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F7DC6501224D182A00C8EA66 /* ViewController.swift */; };
 		F7DC6505224D182A00C8EA66 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F7DC6503224D182A00C8EA66 /* Main.storyboard */; };
@@ -94,6 +103,15 @@
 		39ED26B022723EA600B7D843 /* border.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = border.png; path = Howard2/Images/border.png; sourceTree = SOURCE_ROOT; };
 		3BD10A5D22669B5C001D0B5B /* MapViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MapViewController.swift; sourceTree = "<group>"; };
 		9703856E22721E7C00C47655 /* Flash.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Flash.png; sourceTree = "<group>"; };
+		F76F0E052273F76600021131 /* ChatViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ChatViewController.swift; sourceTree = "<group>"; };
+		F76F0E062273F76600021131 /* MessageCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = MessageCell.xib; sourceTree = "<group>"; };
+		F76F0E072273F76600021131 /* Message.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Message.swift; sourceTree = "<group>"; };
+		F76F0E082273F76600021131 /* WelcomeViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WelcomeViewController.swift; sourceTree = "<group>"; };
+		F76F0E0A2273F76600021131 /* CustomMessageCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CustomMessageCell.swift; sourceTree = "<group>"; };
+		F76F0E0B2273F76600021131 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
+		F76F0E0C2273F76600021131 /* LogInViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LogInViewController.swift; sourceTree = "<group>"; };
+		F76F0E0F2273F76600021131 /* RegisterViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RegisterViewController.swift; sourceTree = "<group>"; };
+		F76F0E1F2273FFE600021131 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 		F7DC64FC224D182A00C8EA66 /* Howard2.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Howard2.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		F7DC64FF224D182A00C8EA66 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		F7DC6501224D182A00C8EA66 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -232,6 +250,53 @@
 			path = AskHoward;
 			sourceTree = "<group>";
 		};
+		F76F0E042273F76600021131 /* Flash Chat */ = {
+			isa = PBXGroup;
+			children = (
+				F76F0E1E2273F8CB00021131 /* Controllers */,
+				F76F0E1B2273F7CF00021131 /* Model */,
+				F76F0E1C2273F86600021131 /* Views */,
+				F76F0E0B2273F76600021131 /* Images.xcassets */,
+			);
+			path = "Flash Chat";
+			sourceTree = "<group>";
+		};
+		F76F0E1B2273F7CF00021131 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				F76F0E072273F76600021131 /* Message.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		F76F0E1C2273F86600021131 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				F76F0E1D2273F89700021131 /* Custom Cell */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		F76F0E1D2273F89700021131 /* Custom Cell */ = {
+			isa = PBXGroup;
+			children = (
+				F76F0E0A2273F76600021131 /* CustomMessageCell.swift */,
+				F76F0E062273F76600021131 /* MessageCell.xib */,
+			);
+			path = "Custom Cell";
+			sourceTree = "<group>";
+		};
+		F76F0E1E2273F8CB00021131 /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				F76F0E052273F76600021131 /* ChatViewController.swift */,
+				F76F0E082273F76600021131 /* WelcomeViewController.swift */,
+				F76F0E0C2273F76600021131 /* LogInViewController.swift */,
+				F76F0E0F2273F76600021131 /* RegisterViewController.swift */,
+			);
+			path = Controllers;
+			sourceTree = "<group>";
+		};
 		F7DC64F3224D182A00C8EA66 = {
 			isa = PBXGroup;
 			children = (
@@ -256,7 +321,9 @@
 			isa = PBXGroup;
 			children = (
 				F7DC64FF224D182A00C8EA66 /* AppDelegate.swift */,
+				F76F0E042273F76600021131 /* Flash Chat */,
 				F7DC650B224D182C00C8EA66 /* Info.plist */,
+				F76F0E1F2273FFE600021131 /* GoogleService-Info.plist */,
 				F7DC6506224D182C00C8EA66 /* Assets.xcassets */,
 				396027D7225E9D520007CCDD /* Images */,
 				F75E70B42272163A009BC7EA /* Apps */,
@@ -401,8 +468,11 @@
 				F7DC6507224D182C00C8EA66 /* Assets.xcassets in Resources */,
 				3939DBE022564918001A8A7B /* Login.storyboard in Resources */,
 				3903829722668B2A003422D3 /* questionMark.png in Resources */,
+				F76F0E162273F76600021131 /* Images.xcassets in Resources */,
 				39B88B962272943D0018B675 /* MCV.png in Resources */,
 				390689992272A4010068E4D2 /* Calender.png in Resources */,
+				F76F0E202273FFE600021131 /* GoogleService-Info.plist in Resources */,
+				F76F0E112273F76600021131 /* MessageCell.xib in Resources */,
 				3903828F2266864B003422D3 /* funguy.png in Resources */,
 				3906899B2272A5810068E4D2 /* thinker.png in Resources */,
 				390382932266868F003422D3 /* AskHoward.storyboard in Resources */,
@@ -447,11 +517,17 @@
 				396027D6225E9AD90007CCDD /* NewCallScreenController.swift in Sources */,
 				3939DBEA2256499B001A8A7B /* SignupController.swift in Sources */,
 				3939DBEC225649B9001A8A7B /* LaunchScreenController.swift in Sources */,
+				F76F0E152273F76600021131 /* CustomMessageCell.swift in Sources */,
 				39038295226689A3003422D3 /* AskHowardController.swift in Sources */,
 				3939DBE822564989001A8A7B /* LoginController.swift in Sources */,
+				F76F0E1A2273F76600021131 /* RegisterViewController.swift in Sources */,
 				3939DBEE225649D7001A8A7B /* AppsController.swift in Sources */,
+				F76F0E122273F76600021131 /* Message.swift in Sources */,
 				3BD10A5E22669B5C001D0B5B /* MapViewController.swift in Sources */,
+				F76F0E172273F76600021131 /* LogInViewController.swift in Sources */,
+				F76F0E102273F76600021131 /* ChatViewController.swift in Sources */,
 				396E0DC5226FCD86004F2C13 /* NewCheckListController.swift in Sources */,
+				F76F0E132273F76600021131 /* WelcomeViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

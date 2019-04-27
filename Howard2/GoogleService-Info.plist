@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>CLIENT_ID</key>
+	<string>492128129469-f10pag00ltr1ter5r9k00vnqr8pts5fo.apps.googleusercontent.com</string>
+	<key>REVERSED_CLIENT_ID</key>
+	<string>com.googleusercontent.apps.492128129469-f10pag00ltr1ter5r9k00vnqr8pts5fo</string>
+	<key>API_KEY</key>
+	<string>AIzaSyBSFXOYwzfuD30yP-vNLh1RgNTr_0Ebm4w</string>
+	<key>GCM_SENDER_ID</key>
+	<string>492128129469</string>
+	<key>PLIST_VERSION</key>
+	<string>1</string>
+	<key>BUNDLE_ID</key>
+	<string>com.william.Howard2</string>
+	<key>PROJECT_ID</key>
+	<string>howardcenter-4cf88</string>
+	<key>STORAGE_BUCKET</key>
+	<string>howardcenter-4cf88.appspot.com</string>
+	<key>IS_ADS_ENABLED</key>
+	<false></false>
+	<key>IS_ANALYTICS_ENABLED</key>
+	<false></false>
+	<key>IS_APPINVITE_ENABLED</key>
+	<true></true>
+	<key>IS_GCM_ENABLED</key>
+	<true></true>
+	<key>IS_SIGNIN_ENABLED</key>
+	<true></true>
+	<key>GOOGLE_APP_ID</key>
+	<string>1:492128129469:ios:abf3f2f49e9d9b2f</string>
+	<key>DATABASE_URL</key>
+	<string>https://howardcenter-4cf88.firebaseio.com</string>
+</dict>
+</plist>
