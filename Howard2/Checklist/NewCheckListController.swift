@@ -13,25 +13,26 @@ struct appStruct {
     var id : Int
     var title : String
     var text : String
+    var image : String
     
 }
 
 class NewCheckListController: UITableViewController {
     
     var arrayOfApps = [
-        appStruct(id: 1, title: "Medication Manager", text: "Helpful daily reminders"),
-        appStruct(id: 2, title: "Google Calender", text: "So everything is in one place"),
-        appStruct(id: 3, title: "Learn Something New", text: "New Tricks for Everyone"),
-        appStruct(id: 4, title: "Youtube", text: "Watch YouTube right from this app!"),
-        appStruct(id: 5, title: "Xylophone", text: "Mess with a basic instrument"),
-        appStruct(id: 6, title: "SSTA Bus Schedule", text: "See when transportation services arrives"),
-        appStruct(id:7, title: "Higher Ground Live Music", text: "Check performance schedules"),
-        appStruct(id:8, title: "Messages", text: "Receive messages from your safety connection specialist"),
-        appStruct(id:9, title: "Motivational", text: "Get motivational messages everyday!"),
-        appStruct(id:10, title: "Text to Speech", text: "Type what you want to vocalize")
+        appStruct(id: 1, title: "Medication Manager", text: "Helpful daily reminders", image: "PillReminder"),
+        appStruct(id: 2, title: "Google Calender", text: "So everything is in one place",image: "Calender.png"),
+        appStruct(id: 3, title: "Learn Something New", text: "New Tricks for Everyone",image: "thinker.png"),
+        appStruct(id: 4, title: "Youtube", text: "Watch YouTube right from this app!",image: "youtube"),
+        appStruct(id: 5, title: "Xylophone", text: "Mess with a basic instrument",image: "xylophone.jpg"),
+        appStruct(id: 6, title: "SSTA Bus Schedule", text: "See when transportation services arrives",image: "bus.jpg"),
+        appStruct(id:7, title: "Higher Ground Live Music", text: "Check performance schedules",image: "concert.jpg"),
+        appStruct(id:8, title: "Messages", text: "Receive messages from your safety connection specialist",image: "messages.jpg"),
+        appStruct(id:9, title: "Motivational", text: "Get motivational messages everyday!",image: "motivation.jpg"),
+        appStruct(id:10, title: "Text to Speech", text: "Type what you want to vocalize",image: "speech.jpeg")
         
     ]
-
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         
@@ -54,9 +55,13 @@ class NewCheckListController: UITableViewController {
         
         override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
             let cell = tableView.dequeueReusableCell(withIdentifier: "AppOne", for: indexPath)
-            
+            let apps = arrayOfApps[indexPath.row]
             cell.textLabel?.text = arrayOfApps[indexPath.row].title;
             cell.detailTextLabel?.text = arrayOfApps[indexPath.row].text
+            //var imageName = UIImage(named: arrayOfApps[indexPath.row].image)
+            //cell.imageView?.image = arrayOfApps[indexPath.row].imageName
+            //cell.imageView?.image = imageName
+            cell.imageView?.image = UIImage(named: apps.image)
             
             let bgColorView = UIView()
             bgColorView.backgroundColor = .green
