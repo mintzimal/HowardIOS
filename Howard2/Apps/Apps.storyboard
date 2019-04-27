@@ -67,7 +67,7 @@
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="p2S-Qp-Lqj">
                                 <rect key="frame" x="226" y="156" width="134" height="128"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <state key="normal" title="Button" image="xylophone.jpeg"/>
+                                <state key="normal" title="Button" image="xylophone.jpg"/>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="lPw-Rj-CR8">
                                 <rect key="frame" x="51" y="156" width="134" height="128"/>
@@ -212,7 +212,7 @@
         <image name="placeholder.png" width="2400" height="2400"/>
         <image name="questionMark.png" width="225" height="225"/>
         <image name="thinker.png" width="550" height="500"/>
-        <image name="xylophone.jpeg" width="230" height="219"/>
+        <image name="xylophone.jpg" width="230" height="219"/>
         <image name="youtube" width="900" height="520"/>
     </resources>
 </document>
