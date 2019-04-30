@@ -27,6 +27,7 @@
                             <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             <state key="normal" title="Button" image="Main"/>
                             <connections>
+                                <action selector="getRows:" destination="3KJ-YA-ndq" eventType="touchUpInside" id="va1-HW-sOA"/>
                                 <segue destination="KZx-fZ-fP4" kind="showDetail" id="03X-z3-5JP"/>
                             </connections>
                         </button>
@@ -64,6 +65,10 @@
                             <outlet property="delegate" destination="3KJ-YA-ndq" id="A8y-xj-Mcv"/>
                         </connections>
                     </tableView>
+                    <connections>
+                        <outlet property="Home" destination="2Oe-K5-k7C" id="lck-PT-tdA"/>
+                        <outlet property="tableOutlet" destination="JnV-cs-E1Z" id="Ehj-B0-2ir"/>
+                    </connections>
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="th1-eU-yhR" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
