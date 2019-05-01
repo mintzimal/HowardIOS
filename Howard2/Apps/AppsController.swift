@@ -47,7 +47,8 @@ class AppsController: UIViewController, SFSafariViewControllerDelegate {
         appStruct(id:7, title: "Messages", text: "Receive messages from your safety connection specialist",image: "messages.jpg"),
         appStruct(id:8, title: "Motivational", text: "Get motivational messages everyday!",image: "motivation.jpg"),
         appStruct(id:9, title: "Text to Speech", text: "Type what you want to vocalize",image: "speech.jpeg"),
-        appStruct(id:10, title: "GMT Bus Schedule Links", text: "Displays information about city public transit",image: "bus.png")
+        appStruct(id:10, title: "GMT Bus Schedule Links", text: "Displays information about city public transit",image: "bus.png"),
+        appStruct(id:11, title: "Flynn Show Schedule", text: "Look at upcoming plays/performances", image: "curtain.png" )
         
     ]
     
@@ -59,6 +60,8 @@ class AppsController: UIViewController, SFSafariViewControllerDelegate {
     private var GMTQuick:String = "http://ridegmt.com/gmt-schedules/"
     private var Motivational:String = "https://www.brainyquote.com/quote_of_the_day"
     private var HigherGround:String = "https://www.highergroundmusic.com/"
+    private var Flynn:String = "https://www.flynncenter.org/calendar.html"
+    private var Roxie:String = "http://merrilltheatres.net/showtimes.html"
     
     
     
@@ -177,6 +180,10 @@ class AppsController: UIViewController, SFSafariViewControllerDelegate {
         if(Label == arrayOfApps[10].title){
             //CCTV Bus Schedule Calls
             let svc = SFSafariViewController(url: NSURL(string: self.GMTQuick)! as URL)
+            self.present(svc, animated: true, completion: nil)
+        }
+        if(Label == arrayOfApps[11].title){
+            let svc = SFSafariViewController(url: NSURL(string: self.Flynn)! as URL)
             self.present(svc, animated: true, completion: nil)
         }
     }
