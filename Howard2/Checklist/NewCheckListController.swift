@@ -21,7 +21,7 @@ class NewCheckListController: UITableViewController {
         
         self.tableView.allowsMultipleSelection = true;
         
-        guard var data = UserDefaults.standard.value(forKey:"AppFiles") as? Data else { return }
+        guard let data = UserDefaults.standard.value(forKey:"AppFiles") as? Data else { return }
         
         let arrayOfApps = try? PropertyListDecoder().decode(Array<appStruct>.self, from: data)
 
@@ -42,6 +42,7 @@ class NewCheckListController: UITableViewController {
         }
         
         UserDefaults.standard.set(values, forKey: "AppSelection")
+        print("You selected:", values)
         
     }
     
@@ -55,7 +56,7 @@ class NewCheckListController: UITableViewController {
         }
         
         override func tableView(_ tableView: UITableView, titleForHeaderInSection section: Int) -> String? {
-            return "Click to Select Which Apps to Show"
+            return "Click to Select Which Apps to Show (You may choose 6)"
         }
         
         override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {

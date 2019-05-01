@@ -79,7 +79,7 @@
                                                     <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                 </state>
                                                 <connections>
-                                                    <action selector="connectDistrictTwo:" destination="bYQ-cy-aDS" eventType="touchUpInside" id="RR6-su-anh"/>
+                                                    <action selector="callDistrictTwo:" destination="bYQ-cy-aDS" eventType="touchUpInside" id="A20-EL-3V3"/>
                                                 </connections>
                                             </button>
                                         </subviews>

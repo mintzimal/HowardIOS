@@ -24,6 +24,8 @@ class SignupController: UIViewController {
     @IBOutlet weak var Button8: UIButton!
     @IBOutlet weak var Button9: UIButton!
     
+    @IBOutlet weak var districtSlider: UISlider!
+    
 
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -91,6 +93,14 @@ class SignupController: UIViewController {
     @IBAction func SubmitButton(_ sender: Any) {
         
         if(PINView.text != ""){
+            
+            if districtSlider.value >= 1.5{
+                UserDefaults.standard.set(2, forKey: "District")
+            }
+            
+            if districtSlider.value < 1.5 {
+                UserDefaults.standard.set(1, forKey: "District")
+            }
         
             UserDefaults.standard.set(PINView.text, forKey: "PIN")
             

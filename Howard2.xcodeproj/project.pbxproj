@@ -19,6 +19,7 @@
 		390689972272A33F0068E4D2 /* xylophone.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 390689962272A33F0068E4D2 /* xylophone.jpg */; };
 		390689992272A4010068E4D2 /* Calender.png in Resources */ = {isa = PBXBuildFile; fileRef = 390689982272A4000068E4D2 /* Calender.png */; };
 		3906899B2272A5810068E4D2 /* thinker.png in Resources */ = {isa = PBXBuildFile; fileRef = 3906899A2272A5810068E4D2 /* thinker.png */; };
+		3906899D227928A30068E4D2 /* refresh.png in Resources */ = {isa = PBXBuildFile; fileRef = 3906899C227928A30068E4D2 /* refresh.png */; };
 		3939DBE022564918001A8A7B /* Login.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3939DBDF22564918001A8A7B /* Login.storyboard */; };
 		3939DBE222564928001A8A7B /* Signup.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3939DBE122564928001A8A7B /* Signup.storyboard */; };
 		3939DBE822564989001A8A7B /* LoginController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3939DBE722564989001A8A7B /* LoginController.swift */; };
@@ -81,6 +82,7 @@
 		390689962272A33F0068E4D2 /* xylophone.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = xylophone.jpg; sourceTree = "<group>"; };
 		390689982272A4000068E4D2 /* Calender.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = Calender.png; path = Howard2/Images/Calender.png; sourceTree = SOURCE_ROOT; };
 		3906899A2272A5810068E4D2 /* thinker.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = thinker.png; sourceTree = "<group>"; };
+		3906899C227928A30068E4D2 /* refresh.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = refresh.png; path = Howard2/Images/refresh.png; sourceTree = SOURCE_ROOT; };
 		3939DBDF22564918001A8A7B /* Login.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Login.storyboard; sourceTree = "<group>"; };
 		3939DBE122564928001A8A7B /* Signup.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Signup.storyboard; sourceTree = "<group>"; };
 		3939DBE722564989001A8A7B /* LoginController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginController.swift; sourceTree = "<group>"; };
@@ -151,6 +153,7 @@
 				9703857A2274FE3B00C47655 /* motivation.jpg */,
 				970385782274FCCE00C47655 /* speech.jpeg */,
 				970385762274FB4700C47655 /* concert.jpg */,
+				3906899C227928A30068E4D2 /* refresh.png */,
 				970385742274F7A400C47655 /* bus.jpg */,
 				970385722274F5F900C47655 /* messages.jpg */,
 				3906899A2272A5810068E4D2 /* thinker.png */,
@@ -427,6 +430,7 @@
 				9703857B2274FE3B00C47655 /* motivation.jpg in Resources */,
 				39B88B93227292620018B675 /* BFP.png in Resources */,
 				39068991227298CF0068E4D2 /* N10.png in Resources */,
+				3906899D227928A30068E4D2 /* refresh.png in Resources */,
 				F7DC652E224D241200C8EA66 /* Apps.storyboard in Resources */,
 				390382902266864B003422D3 /* HomeIcon.png in Resources */,
 				970385732274F5F900C47655 /* messages.jpg in Resources */,

@@ -20,6 +20,8 @@ struct appStruct:Codable {
 
 class AppsController: UIViewController, SFSafariViewControllerDelegate {
     
+    @IBOutlet weak var refreshButton: UIButton!
+    
     @IBOutlet weak var AppOne: UIButton!
     @IBOutlet weak var AppTwo: UIButton!
     @IBOutlet weak var AppThree: UIButton!
@@ -52,28 +54,70 @@ class AppsController: UIViewController, SFSafariViewControllerDelegate {
     private var calender:String = "https://calendar.google.com/calendar/"
     private var youtube:String = "https://youtube.com"
     
-    @IBAction func funFactGenerator(_ sender: Any){
-        let svc = SFSafariViewController(url: NSURL(string: self.funFacts)! as URL)
-        self.present(svc,animated: true, completion: nil)
-    }
     
-    @IBAction func calenderLoader(_ sender: Any){
-        let svc = SFSafariViewController(url: NSURL(string: self.calender)! as URL)
-        self.present(svc,animated: true, completion: nil)
-    }
     
-    @IBAction func youtubeLoader(_ sender: Any){
-        let svc = SFSafariViewController(url: NSURL(string: self.youtube)! as URL)
-        self.present(svc,animated: true, completion: nil)
+    @IBAction func refresh(_ sender: Any) {
+        let selectedApps:[Int] = UserDefaults.standard.array(forKey: "AppSelection") as? [Int] ?? [1,2,3,4,5,6]
+        
+        print("You Loaded:" , selectedApps)
+        
+        UserDefaults.standard.set(try? PropertyListEncoder().encode(arrayOfApps), forKey:"AppFiles")
+        
+        if selectedApps.count >= 1 {
+            LabelOne.text = arrayOfApps[selectedApps[0]].title
+            AppOne.setImage(UIImage(named: arrayOfApps[selectedApps[0]].image), for: .normal)
+        }
+        if selectedApps.count >= 2 {
+            LabelTwo.text = arrayOfApps[selectedApps[1]].title
+            AppTwo.setImage(UIImage(named: arrayOfApps[selectedApps[1]].image), for: .normal)
+        }
+        if selectedApps.count >= 3 {
+            LabelThree.text = arrayOfApps[selectedApps[2]].title
+            AppThree.setImage(UIImage(named: arrayOfApps[selectedApps[2]].image), for: .normal)
+        }
+        if selectedApps.count >= 4 {
+            LabelFour.text = arrayOfApps[selectedApps[3]].title
+            AppFour.setImage(UIImage(named: arrayOfApps[selectedApps[3]].image), for: .normal)
+        }
+        if selectedApps.count >= 5 {
+            LabelFive.text = arrayOfApps[selectedApps[4]].title
+            AppFive.setImage(UIImage(named: arrayOfApps[selectedApps[4]].image), for: .normal)
+        }
+        if selectedApps.count >= 6 {
+            LabelSix.text = arrayOfApps[selectedApps[5]].title
+            AppSix.setImage(UIImage(named: arrayOfApps[selectedApps[5]].image), for: .normal)
     }
+    }
+
+    
+    @IBAction func ButtonSorter(sender: UIButton) {
+        
+    if sender == AppOne {
+        
+        print("App1")
+    
+    } else if sender == AppTwo {
+        
+        print("App2")
+    
+    } else if sender == AppThree {
+    
+    } else if sender == AppFour {
+        
+    } else if sender == AppFive {
+        
+    } else if sender == AppSix {
+        
+    }
+    }
+
 
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        let selectedApps:[Int] = UserDefaults.standard.array(forKey: "AppsSelection") as? [Int] ?? [1,2,3,4,5,6]
+        refresh(refreshButton)
         
-        UserDefaults.standard.set(try? PropertyListEncoder().encode(arrayOfApps), forKey:"AppFiles")
-        
+        }
 
         // Do any additional setup after loading the view.
     }
@@ -88,5 +132,3 @@ class AppsController: UIViewController, SFSafariViewControllerDelegate {
         // Pass the selected object to the new view controller.
     }
     */
-
-}
