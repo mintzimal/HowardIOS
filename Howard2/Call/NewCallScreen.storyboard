@@ -10,6 +10,14 @@
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
+        <!--navBar1-->
+        <scene sceneID="dMH-Sw-RfD">
+            <objects>
+                <viewControllerPlaceholder storyboardName="ChatRoom" referencedIdentifier="navBar1" id="5yf-UP-a8I" sceneMemberID="viewController"/>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="5vf-ZY-J8n" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-560" y="29"/>
+        </scene>
         <!--New Call Screen Controller-->
         <scene sceneID="j81-iY-pz5">
             <objects>
@@ -61,9 +69,13 @@
                                                 <nil key="textColor"/>
                                                 <nil key="highlightedColor"/>
                                             </label>
-                                            <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="AXm-XJ-hbE">
-                                                <rect key="frame" x="13" y="66" width="352" height="220"/>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="AXm-XJ-hbE">
+                                                <rect key="frame" x="13" y="66" width="347" height="108"/>
                                                 <color key="backgroundColor" red="0.33644006409999999" green="0.40332308709999998" blue="0.69790317359999998" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="height" constant="108" id="Bhr-VO-xPN"/>
+                                                    <constraint firstAttribute="width" constant="347" id="YEF-Hj-VRW"/>
+                                                </constraints>
                                                 <fontDescription key="fontDescription" name="GeezaPro-Bold" family="Geeza Pro" pointSize="52"/>
                                                 <state key="normal" title="District #">
                                                     <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
@@ -72,16 +84,34 @@
                                                     <action selector="callDistrictFunction:" destination="bYQ-cy-aDS" eventType="touchUpInside" id="jED-AK-uwb"/>
                                                 </connections>
                                             </button>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="pNy-36-jSx">
+                                                <rect key="frame" x="16" y="182" width="347" height="108"/>
+                                                <color key="backgroundColor" red="0.33644006409999999" green="0.40332308709999998" blue="0.69790317359999998" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="width" constant="347" id="4UQ-yQ-eJZ"/>
+                                                    <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="108" id="Dmo-Tc-nGG"/>
+                                                    <constraint firstAttribute="height" constant="108" id="Lkh-7r-qgd"/>
+                                                    <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="347" id="RxP-tE-Oa4"/>
+                                                </constraints>
+                                                <fontDescription key="fontDescription" name="GeezaPro-Bold" family="Geeza Pro" pointSize="52"/>
+                                                <state key="normal" title="Message">
+                                                    <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                </state>
+                                                <connections>
+                                                    <action selector="callDistrictFunction:" destination="bYQ-cy-aDS" eventType="touchUpInside" id="91G-23-yZ1"/>
+                                                    <segue destination="5yf-UP-a8I" kind="show" id="5jt-Po-PmI"/>
+                                                </connections>
+                                            </button>
                                         </subviews>
                                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         <constraints>
-                                            <constraint firstItem="AXm-XJ-hbE" firstAttribute="bottom" secondItem="hSE-77-j1y" secondAttribute="bottomMargin" id="0nt-EQ-E7q"/>
-                                            <constraint firstItem="AXm-XJ-hbE" firstAttribute="top" secondItem="p4J-Fn-yQB" secondAttribute="bottom" constant="19" id="1QN-j4-0tR"/>
                                             <constraint firstItem="p4J-Fn-yQB" firstAttribute="leading" secondItem="hSE-77-j1y" secondAttribute="leadingMargin" id="1ec-nH-xHE"/>
+                                            <constraint firstItem="AXm-XJ-hbE" firstAttribute="leading" secondItem="hSE-77-j1y" secondAttribute="leading" constant="13" id="7H5-Fc-ary"/>
                                             <constraint firstItem="p4J-Fn-yQB" firstAttribute="top" secondItem="hSE-77-j1y" secondAttribute="top" id="Dle-0h-5k8"/>
                                             <constraint firstAttribute="trailing" secondItem="p4J-Fn-yQB" secondAttribute="trailing" constant="19" id="a5y-aD-ssB"/>
-                                            <constraint firstItem="AXm-XJ-hbE" firstAttribute="leading" secondItem="hSE-77-j1y" secondAttribute="leading" constant="13" id="iOO-hC-7cd"/>
-                                            <constraint firstItem="AXm-XJ-hbE" firstAttribute="centerX" secondItem="hSE-77-j1y" secondAttribute="centerX" id="kgz-ea-rIL"/>
+                                            <constraint firstItem="AXm-XJ-hbE" firstAttribute="top" secondItem="p4J-Fn-yQB" secondAttribute="bottom" constant="19" id="j54-ih-NaN"/>
+                                            <constraint firstItem="pNy-36-jSx" firstAttribute="top" secondItem="AXm-XJ-hbE" secondAttribute="bottom" constant="8" id="ptN-nt-9XH"/>
+                                            <constraint firstItem="pNy-36-jSx" firstAttribute="leading" secondItem="hSE-77-j1y" secondAttribute="leading" constant="16" id="rKG-5X-2bJ"/>
                                         </constraints>
                                     </view>
                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="s4i-y1-P6w" userLabel="Bottom">

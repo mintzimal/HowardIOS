@@ -39,12 +39,27 @@
 		39B88B962272943D0018B675 /* MCV.png in Resources */ = {isa = PBXBuildFile; fileRef = 39B88B952272943D0018B675 /* MCV.png */; };
 		39ED26B122723EA600B7D843 /* border.png in Resources */ = {isa = PBXBuildFile; fileRef = 39ED26B022723EA600B7D843 /* border.png */; };
 		3BD10A5E22669B5C001D0B5B /* MapViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3BD10A5D22669B5C001D0B5B /* MapViewController.swift */; };
+		90F3D09151375758BCB60624 /* Pods_Howard2Tests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 14F761DFDB77D8341E666CB9 /* Pods_Howard2Tests.framework */; };
 		9703856F22721E7C00C47655 /* Flash.png in Resources */ = {isa = PBXBuildFile; fileRef = 9703856E22721E7C00C47655 /* Flash.png */; };
 		970385732274F5F900C47655 /* messages.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 970385722274F5F900C47655 /* messages.jpg */; };
 		970385752274F7A400C47655 /* bus.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 970385742274F7A400C47655 /* bus.jpg */; };
 		970385772274FB4700C47655 /* concert.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 970385762274FB4700C47655 /* concert.jpg */; };
 		970385792274FCCE00C47655 /* speech.jpeg in Resources */ = {isa = PBXBuildFile; fileRef = 970385782274FCCE00C47655 /* speech.jpeg */; };
 		9703857B2274FE3B00C47655 /* motivation.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 9703857A2274FE3B00C47655 /* motivation.jpg */; };
+		BB2C7F657E8BD5354296FC30 /* Pods_Howard2.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E8A1C8F5C002156960D2A655 /* Pods_Howard2.framework */; };
+		F544E4CD4905606B7A5B9A2F /* Pods_Howard2UITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 38396B5807B2566ECC327698 /* Pods_Howard2UITests.framework */; };
+		F7838118227A126500902F3B /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = F7838117227A126500902F3B /* GoogleService-Info.plist */; };
+		F7838120227A29AF00902F3B /* ChatRoom.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F783811F227A29AE00902F3B /* ChatRoom.storyboard */; };
+		F7838122227A4F1200902F3B /* Xylophone.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F7838121227A4F1200902F3B /* Xylophone.storyboard */; };
+		F7A7046B227A0CDE00C0146B /* CustomMessageCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = F7A70460227A0CDB00C0146B /* CustomMessageCell.swift */; };
+		F7A7046C227A0CDE00C0146B /* WelcomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F7A70461227A0CDB00C0146B /* WelcomeViewController.swift */; };
+		F7A7046D227A0CDE00C0146B /* RegisterViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F7A70462227A0CDB00C0146B /* RegisterViewController.swift */; };
+		F7A70470227A0CDE00C0146B /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F7A70465227A0CDB00C0146B /* AppDelegate.swift */; };
+		F7A70471227A0CDE00C0146B /* LogInViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F7A70466227A0CDB00C0146B /* LogInViewController.swift */; };
+		F7A70472227A0CDE00C0146B /* ChatViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F7A70467227A0CDB00C0146B /* ChatViewController.swift */; };
+		F7A70473227A0CDE00C0146B /* Message.swift in Sources */ = {isa = PBXBuildFile; fileRef = F7A70468227A0CDC00C0146B /* Message.swift */; };
+		F7A70474227A0CDE00C0146B /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F7A70469227A0CDD00C0146B /* Images.xcassets */; };
+		F7A70475227A0CDE00C0146B /* MessageCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = F7A7046A227A0CDE00C0146B /* MessageCell.xib */; };
 		9703857D227A5BC100C47655 /* bus.png in Resources */ = {isa = PBXBuildFile; fileRef = 9703857C227A5BC000C47655 /* bus.png */; };
 		9703857F227A626900C47655 /* youTube.png in Resources */ = {isa = PBXBuildFile; fileRef = 9703857E227A626900C47655 /* youTube.png */; };
 		F7DC6500224D182A00C8EA66 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F7DC64FF224D182A00C8EA66 /* AppDelegate.swift */; };
@@ -75,6 +90,9 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		13131011034041BCEA7925CB /* Pods-Howard2Tests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Howard2Tests.release.xcconfig"; path = "Target Support Files/Pods-Howard2Tests/Pods-Howard2Tests.release.xcconfig"; sourceTree = "<group>"; };
+		14F761DFDB77D8341E666CB9 /* Pods_Howard2Tests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Howard2Tests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		38396B5807B2566ECC327698 /* Pods_Howard2UITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Howard2UITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		3903828C2266864B003422D3 /* funguy.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = funguy.png; sourceTree = "<group>"; };
 		3903828D2266864B003422D3 /* HomeIcon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = HomeIcon.png; sourceTree = "<group>"; };
 		3903828E2266864B003422D3 /* SettingsIcon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = SettingsIcon.png; sourceTree = "<group>"; };
@@ -108,16 +126,34 @@
 		39B88B9B227295E70018B675 /* WCAX.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = WCAX.png; path = /Users/mintzimal/Documents/HowardCenterFinal/Howard2/Images/WCAX.png; sourceTree = "<absolute>"; };
 		39ED26B022723EA600B7D843 /* border.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = border.png; path = Howard2/Images/border.png; sourceTree = SOURCE_ROOT; };
 		3BD10A5D22669B5C001D0B5B /* MapViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MapViewController.swift; sourceTree = "<group>"; };
+		4334D3AEF8A2D47BF7F50B80 /* Pods-Howard2UITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Howard2UITests.release.xcconfig"; path = "Target Support Files/Pods-Howard2UITests/Pods-Howard2UITests.release.xcconfig"; sourceTree = "<group>"; };
+		5F9BB3E553FA092987382D05 /* Pods-Howard2.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Howard2.release.xcconfig"; path = "Target Support Files/Pods-Howard2/Pods-Howard2.release.xcconfig"; sourceTree = "<group>"; };
+		6CDB798EA0DE69394BFC242F /* Pods-Howard2UITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Howard2UITests.debug.xcconfig"; path = "Target Support Files/Pods-Howard2UITests/Pods-Howard2UITests.debug.xcconfig"; sourceTree = "<group>"; };
+		8EB9640237BD46A865126FA4 /* Pods-Howard2Tests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Howard2Tests.debug.xcconfig"; path = "Target Support Files/Pods-Howard2Tests/Pods-Howard2Tests.debug.xcconfig"; sourceTree = "<group>"; };
+		95ED57F9C15FD9D490D0A6C1 /* Pods-Howard2.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Howard2.debug.xcconfig"; path = "Target Support Files/Pods-Howard2/Pods-Howard2.debug.xcconfig"; sourceTree = "<group>"; };
 		9703856E22721E7C00C47655 /* Flash.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Flash.png; sourceTree = "<group>"; };
 		970385722274F5F900C47655 /* messages.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = messages.jpg; sourceTree = "<group>"; };
 		970385742274F7A400C47655 /* bus.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = bus.jpg; sourceTree = "<group>"; };
 		970385762274FB4700C47655 /* concert.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = concert.jpg; sourceTree = "<group>"; };
 		970385782274FCCE00C47655 /* speech.jpeg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = speech.jpeg; sourceTree = "<group>"; };
 		9703857A2274FE3B00C47655 /* motivation.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = motivation.jpg; sourceTree = "<group>"; };
+		E8A1C8F5C002156960D2A655 /* Pods_Howard2.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Howard2.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		F7838117227A126500902F3B /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
+		F783811F227A29AE00902F3B /* ChatRoom.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = ChatRoom.storyboard; sourceTree = "<group>"; };
+		F7838121227A4F1200902F3B /* Xylophone.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Xylophone.storyboard; sourceTree = "<group>"; };
+		F7838128227A501F00902F3B /* Xylo.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Xylo.swift; sourceTree = "<group>"; };
+		F7A70460227A0CDB00C0146B /* CustomMessageCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CustomMessageCell.swift; sourceTree = "<group>"; };
+		F7A70461227A0CDB00C0146B /* WelcomeViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WelcomeViewController.swift; sourceTree = "<group>"; };
+		F7A70462227A0CDB00C0146B /* RegisterViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RegisterViewController.swift; sourceTree = "<group>"; };
+		F7A70465227A0CDB00C0146B /* AppDelegate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		F7A70466227A0CDB00C0146B /* LogInViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LogInViewController.swift; sourceTree = "<group>"; };
+		F7A70467227A0CDB00C0146B /* ChatViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ChatViewController.swift; sourceTree = "<group>"; };
+		F7A70468227A0CDC00C0146B /* Message.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Message.swift; sourceTree = "<group>"; };
+		F7A70469227A0CDD00C0146B /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
+		F7A7046A227A0CDE00C0146B /* MessageCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = MessageCell.xib; sourceTree = "<group>"; };
 		9703857C227A5BC000C47655 /* bus.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = bus.png; sourceTree = "<group>"; };
 		9703857E227A626900C47655 /* youTube.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = youTube.png; sourceTree = "<group>"; };
 		F7DC64FC224D182A00C8EA66 /* Howard2.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Howard2.app; sourceTree = BUILT_PRODUCTS_DIR; };
-		F7DC64FF224D182A00C8EA66 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		F7DC6501224D182A00C8EA66 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		F7DC6504224D182A00C8EA66 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		F7DC6506224D182C00C8EA66 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -137,6 +173,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				BB2C7F657E8BD5354296FC30 /* Pods_Howard2.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -144,6 +181,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				90F3D09151375758BCB60624 /* Pods_Howard2Tests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -151,6 +189,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				F544E4CD4905606B7A5B9A2F /* Pods_Howard2UITests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -188,6 +227,29 @@
 				390689A0227948FC0068E4D2 /* peeking reverse.png */,
 			);
 			path = Images;
+			sourceTree = "<group>";
+		};
+		56084EB6B685B25DC211EEC1 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				E8A1C8F5C002156960D2A655 /* Pods_Howard2.framework */,
+				14F761DFDB77D8341E666CB9 /* Pods_Howard2Tests.framework */,
+				38396B5807B2566ECC327698 /* Pods_Howard2UITests.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		742BD5C5F7A7E218609A9B1C /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				95ED57F9C15FD9D490D0A6C1 /* Pods-Howard2.debug.xcconfig */,
+				5F9BB3E553FA092987382D05 /* Pods-Howard2.release.xcconfig */,
+				8EB9640237BD46A865126FA4 /* Pods-Howard2Tests.debug.xcconfig */,
+				13131011034041BCEA7925CB /* Pods-Howard2Tests.release.xcconfig */,
+				6CDB798EA0DE69394BFC242F /* Pods-Howard2UITests.debug.xcconfig */,
+				4334D3AEF8A2D47BF7F50B80 /* Pods-Howard2UITests.release.xcconfig */,
+			);
+			path = Pods;
 			sourceTree = "<group>";
 		};
 		F75E70B122721608009BC7EA /* News */ = {
@@ -265,6 +327,63 @@
 			path = AskHoward;
 			sourceTree = "<group>";
 		};
+		F7838127227A501E00902F3B /* Xylo */ = {
+			isa = PBXGroup;
+			children = (
+				F7838128227A501F00902F3B /* Xylo.swift */,
+				F7838121227A4F1200902F3B /* Xylophone.storyboard */,
+			);
+			path = Xylo;
+			sourceTree = "<group>";
+		};
+		F7A70476227A0DBE00C0146B /* Messages */ = {
+			isa = PBXGroup;
+			children = (
+				F7A70469227A0CDD00C0146B /* Images.xcassets */,
+				F7A70478227A0DFE00C0146B /* View */,
+				F7A70477227A0DEB00C0146B /* Model */,
+				F7A7047A227A0E4700C0146B /* Controller */,
+			);
+			path = Messages;
+			sourceTree = "<group>";
+		};
+		F7A70477227A0DEB00C0146B /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				F7A70468227A0CDC00C0146B /* Message.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		F7A70478227A0DFE00C0146B /* View */ = {
+			isa = PBXGroup;
+			children = (
+				F783811F227A29AE00902F3B /* ChatRoom.storyboard */,
+				F7A70479227A0E2A00C0146B /* Custom Cell */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		F7A70479227A0E2A00C0146B /* Custom Cell */ = {
+			isa = PBXGroup;
+			children = (
+				F7A7046A227A0CDE00C0146B /* MessageCell.xib */,
+				F7A70460227A0CDB00C0146B /* CustomMessageCell.swift */,
+			);
+			path = "Custom Cell";
+			sourceTree = "<group>";
+		};
+		F7A7047A227A0E4700C0146B /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				F7A70462227A0CDB00C0146B /* RegisterViewController.swift */,
+				F7A70467227A0CDB00C0146B /* ChatViewController.swift */,
+				F7A70466227A0CDB00C0146B /* LogInViewController.swift */,
+				F7A70461227A0CDB00C0146B /* WelcomeViewController.swift */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
 		F7DC64F3224D182A00C8EA66 = {
 			isa = PBXGroup;
 			children = (
@@ -272,6 +391,8 @@
 				F7DC6513224D182C00C8EA66 /* Howard2Tests */,
 				F7DC651E224D182C00C8EA66 /* Howard2UITests */,
 				F7DC64FD224D182A00C8EA66 /* Products */,
+				742BD5C5F7A7E218609A9B1C /* Pods */,
+				56084EB6B685B25DC211EEC1 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -288,9 +409,12 @@
 		F7DC64FE224D182A00C8EA66 /* Howard2 */ = {
 			isa = PBXGroup;
 			children = (
-				F7DC64FF224D182A00C8EA66 /* AppDelegate.swift */,
 				F7DC650B224D182C00C8EA66 /* Info.plist */,
+				F7838117227A126500902F3B /* GoogleService-Info.plist */,
 				F7DC6506224D182C00C8EA66 /* Assets.xcassets */,
+				F7A70465227A0CDB00C0146B /* AppDelegate.swift */,
+				F7838127227A501E00902F3B /* Xylo */,
+				F7A70476227A0DBE00C0146B /* Messages */,
 				396027D7225E9D520007CCDD /* Images */,
 				F75E70B42272163A009BC7EA /* Apps */,
 				F75E70B82272172C009BC7EA /* AskHoward */,
@@ -329,9 +453,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = F7DC6524224D182C00C8EA66 /* Build configuration list for PBXNativeTarget "Howard2" */;
 			buildPhases = (
+				43D1ACB327C991157FC3D9FF /* [CP] Check Pods Manifest.lock */,
 				F7DC64F8224D182A00C8EA66 /* Sources */,
 				F7DC64F9224D182A00C8EA66 /* Frameworks */,
 				F7DC64FA224D182A00C8EA66 /* Resources */,
+				77D07E87F34B40CFBC9E31E4 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -346,6 +472,7 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = F7DC6527224D182C00C8EA66 /* Build configuration list for PBXNativeTarget "Howard2Tests" */;
 			buildPhases = (
+				77819ECD9031F25CD00F4239 /* [CP] Check Pods Manifest.lock */,
 				F7DC650C224D182C00C8EA66 /* Sources */,
 				F7DC650D224D182C00C8EA66 /* Frameworks */,
 				F7DC650E224D182C00C8EA66 /* Resources */,
@@ -364,6 +491,7 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = F7DC652A224D182C00C8EA66 /* Build configuration list for PBXNativeTarget "Howard2UITests" */;
 			buildPhases = (
+				CF284C7581AF6B1898D11913 /* [CP] Check Pods Manifest.lock */,
 				F7DC6517224D182C00C8EA66 /* Sources */,
 				F7DC6518224D182C00C8EA66 /* Frameworks */,
 				F7DC6519224D182C00C8EA66 /* Resources */,
@@ -427,6 +555,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				3906899322729CEC0068E4D2 /* SD.jpeg in Resources */,
+				F7838122227A4F1200902F3B /* Xylophone.storyboard in Resources */,
 				3939DBE222564928001A8A7B /* Signup.storyboard in Resources */,
 				970385752274F7A400C47655 /* bus.jpg in Resources */,
 				390382912266864B003422D3 /* SettingsIcon.png in Resources */,
@@ -440,9 +569,12 @@
 				970385772274FB4700C47655 /* concert.jpg in Resources */,
 				3903829722668B2A003422D3 /* questionMark.png in Resources */,
 				39B88B962272943D0018B675 /* MCV.png in Resources */,
+				F7A70475227A0CDE00C0146B /* MessageCell.xib in Resources */,
 				390689992272A4010068E4D2 /* Calender.png in Resources */,
 				3903828F2266864B003422D3 /* funguy.png in Resources */,
+				F7838120227A29AF00902F3B /* ChatRoom.storyboard in Resources */,
 				970385792274FCCE00C47655 /* speech.jpeg in Resources */,
+				F7A70474227A0CDE00C0146B /* Images.xcassets in Resources */,
 				3906899B2272A5810068E4D2 /* thinker.png in Resources */,
 				390382932266868F003422D3 /* AskHoward.storyboard in Resources */,
 				9703857B2274FE3B00C47655 /* motivation.jpg in Resources */,
@@ -456,6 +588,7 @@
 				39ED26B122723EA600B7D843 /* border.png in Resources */,
 				390689972272A33F0068E4D2 /* xylophone.jpg in Resources */,
 				9703856F22721E7C00C47655 /* Flash.png in Resources */,
+				F7838118227A126500902F3B /* GoogleService-Info.plist in Resources */,
 				F7DC6505224D182A00C8EA66 /* Main.storyboard in Resources */,
 				39B88B8D22728DC70018B675 /* NewNews.storyboard in Resources */,
 				396027D4225E9A390007CCDD /* NewCallScreen.storyboard in Resources */,
@@ -480,6 +613,107 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		43D1ACB327C991157FC3D9FF /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-Howard2-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		77819ECD9031F25CD00F4239 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-Howard2Tests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		77D07E87F34B40CFBC9E31E4 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Howard2/Pods-Howard2-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/ChameleonFramework/ChameleonFramework.framework",
+				"${BUILT_PRODUCTS_DIR}/GTMSessionFetcher/GTMSessionFetcher.framework",
+				"${BUILT_PRODUCTS_DIR}/GoogleUtilities/GoogleUtilities.framework",
+				"${BUILT_PRODUCTS_DIR}/SVProgressHUD/SVProgressHUD.framework",
+				"${BUILT_PRODUCTS_DIR}/leveldb-library/leveldb.framework",
+				"${BUILT_PRODUCTS_DIR}/nanopb/nanopb.framework",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/ChameleonFramework.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/GTMSessionFetcher.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/GoogleUtilities.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SVProgressHUD.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/leveldb.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/nanopb.framework",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-Howard2/Pods-Howard2-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		CF284C7581AF6B1898D11913 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-Howard2UITests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		F7DC64F8224D182A00C8EA66 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
@@ -487,12 +721,18 @@
 			files = (
 				F7DC6502224D182A00C8EA66 /* ViewController.swift in Sources */,
 				39B88B8F22728DFE0018B675 /* NewNewsController.swift in Sources */,
-				F7DC6500224D182A00C8EA66 /* AppDelegate.swift in Sources */,
+				F7A70473227A0CDE00C0146B /* Message.swift in Sources */,
+				F7A70470227A0CDE00C0146B /* AppDelegate.swift in Sources */,
 				396027D6225E9AD90007CCDD /* NewCallScreenController.swift in Sources */,
 				3939DBEA2256499B001A8A7B /* SignupController.swift in Sources */,
 				3939DBEC225649B9001A8A7B /* LaunchScreenController.swift in Sources */,
+				F7A7046C227A0CDE00C0146B /* WelcomeViewController.swift in Sources */,
+				F7A7046B227A0CDE00C0146B /* CustomMessageCell.swift in Sources */,
 				39038295226689A3003422D3 /* AskHowardController.swift in Sources */,
+				F7A7046D227A0CDE00C0146B /* RegisterViewController.swift in Sources */,
+				F7A70472227A0CDE00C0146B /* ChatViewController.swift in Sources */,
 				3939DBE822564989001A8A7B /* LoginController.swift in Sources */,
+				F7A70471227A0CDE00C0146B /* LogInViewController.swift in Sources */,
 				3939DBEE225649D7001A8A7B /* AppsController.swift in Sources */,
 				3BD10A5E22669B5C001D0B5B /* MapViewController.swift in Sources */,
 				396E0DC5226FCD86004F2C13 /* NewCheckListController.swift in Sources */,
@@ -668,6 +908,7 @@
 		};
 		F7DC6525224D182C00C8EA66 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 95ED57F9C15FD9D490D0A6C1 /* Pods-Howard2.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
@@ -687,6 +928,7 @@
 		};
 		F7DC6526224D182C00C8EA66 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 5F9BB3E553FA092987382D05 /* Pods-Howard2.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
@@ -706,6 +948,7 @@
 		};
 		F7DC6528224D182C00C8EA66 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 8EB9640237BD46A865126FA4 /* Pods-Howard2Tests.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
@@ -726,6 +969,7 @@
 		};
 		F7DC6529224D182C00C8EA66 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 13131011034041BCEA7925CB /* Pods-Howard2Tests.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
@@ -746,6 +990,7 @@
 		};
 		F7DC652B224D182C00C8EA66 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 6CDB798EA0DE69394BFC242F /* Pods-Howard2UITests.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
@@ -765,6 +1010,7 @@
 		};
 		F7DC652C224D182C00C8EA66 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 4334D3AEF8A2D47BF7F50B80 /* Pods-Howard2UITests.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
