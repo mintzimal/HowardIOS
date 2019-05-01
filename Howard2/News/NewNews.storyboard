@@ -68,6 +68,9 @@
                                             <constraint firstAttribute="height" constant="99" id="EpK-lV-Fct"/>
                                         </constraints>
                                         <state key="normal" title="Button" image="SD.jpeg"/>
+                                        <connections>
+                                            <action selector="sevenDays:" destination="Aov-sj-blY" eventType="touchUpInside" id="T3c-dl-7EA"/>
+                                        </connections>
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="AyS-ga-J7Z">
                                         <rect key="frame" x="0.0" y="87" width="374" height="127"/>
@@ -75,6 +78,9 @@
                                             <constraint firstAttribute="height" constant="127" id="rd8-jC-uRG"/>
                                         </constraints>
                                         <state key="normal" title="Button" image="MCV.png"/>
+                                        <connections>
+                                            <action selector="myChamplainValley:" destination="Aov-sj-blY" eventType="touchUpInside" id="rfc-jq-Chs"/>
+                                        </connections>
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="HoT-Ey-feK">
                                         <rect key="frame" x="0.0" y="0.0" width="374" height="89"/>
@@ -82,11 +88,17 @@
                                             <constraint firstAttribute="height" constant="89" id="83y-E3-LUI"/>
                                         </constraints>
                                         <state key="normal" title="Button" image="BFP.png"/>
+                                        <connections>
+                                            <action selector="burlingtonFreePress:" destination="Aov-sj-blY" eventType="touchUpInside" id="d01-zs-pzU"/>
+                                        </connections>
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="As3-dS-sKG">
                                         <rect key="frame" x="0.0" y="329" width="374" height="117"/>
                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                         <state key="normal" title="Button" image="N10.png"/>
+                                        <connections>
+                                            <action selector="news10:" destination="Aov-sj-blY" eventType="touchUpInside" id="uZH-KH-PyR"/>
+                                        </connections>
                                     </button>
                                 </subviews>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
@@ -147,6 +159,12 @@
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="BVB-r5-CSd"/>
                     </view>
+                    <connections>
+                        <outlet property="News1" destination="HoT-Ey-feK" id="Rr8-YJ-tDO"/>
+                        <outlet property="News2" destination="AyS-ga-J7Z" id="JGS-AP-gAT"/>
+                        <outlet property="News4" destination="Ptl-h4-Kuu" id="0TN-TY-P4T"/>
+                        <outlet property="News5" destination="As3-dS-sKG" id="aaA-BP-hqA"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="1gB-6b-j90" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
