@@ -46,7 +46,8 @@ class AppsController: UIViewController, SFSafariViewControllerDelegate {
         appStruct(id:6, title: "Higher Ground Live Music", text: "Check performance schedules",image: "concert.jpg"),
         appStruct(id:7, title: "Messages", text: "Receive messages from your safety connection specialist",image: "messages.jpg"),
         appStruct(id:8, title: "Motivational", text: "Get motivational messages everyday!",image: "motivation.jpg"),
-        appStruct(id:9, title: "Text to Speech", text: "Type what you want to vocalize",image: "speech.jpeg")
+        appStruct(id:9, title: "Text to Speech", text: "Type what you want to vocalize",image: "speech.jpeg"),
+        appStruct(id:10, title: "CCTV Bus Schedule", text: "Displays information about city public transit",image: "bus.jpg")
         
     ]
     
@@ -124,6 +125,13 @@ class AppsController: UIViewController, SFSafariViewControllerDelegate {
         super.viewDidLoad()
         
         refresh(refreshButton)
+        
+        AppOne.layer.borderWidth = 3
+        AppTwo.layer.borderWidth = 3
+        AppThree.layer.borderWidth = 3
+        AppFour.layer.borderWidth = 3
+        AppFive.layer.borderWidth = 3
+        AppSix.layer.borderWidth = 3
         
         }
 
