@@ -37,7 +37,7 @@ class AppsController: UIViewController, SFSafariViewControllerDelegate {
     @IBOutlet weak var LabelSix: UILabel!
     
     var arrayOfApps = [
-        appStruct(id: 0, title: "Medication Manager", text: "Helpful daily reminders", image: "PillReminder"),
+        appStruct(id: 0, title: "Medication Manager", text: "Helpful daily reminders", image: "PillReminder.png"),
         appStruct(id: 1, title: "Google Calender", text: "So everything is in one place",image: "Calender.png"),
         appStruct(id: 2, title: "Learn Something New", text: "New Tricks for Everyone",image: "thinker.png"),
         appStruct(id: 3, title: "Youtube", text: "Watch YouTube right from this app!",image: "youtube"),
