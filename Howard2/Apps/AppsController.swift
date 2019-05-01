@@ -42,18 +42,23 @@ class AppsController: UIViewController, SFSafariViewControllerDelegate {
         appStruct(id: 2, title: "Learn Something New", text: "New Tricks for Everyone",image: "thinker.png"),
         appStruct(id: 3, title: "Youtube", text: "Watch YouTube right from this app!",image: "youtube"),
         appStruct(id: 4, title: "Xylophone", text: "Mess with a basic instrument",image: "xylophone.jpg"),
-        appStruct(id: 5, title: "SSTA Bus Schedule", text: "See when transportation services arrives",image: "bus.jpg"),
+        appStruct(id: 5, title: "GMT Bus Guide", text: "See when transportation services arrives",image: "bus.jpg"),
         appStruct(id:6, title: "Higher Ground Live Music", text: "Check performance schedules",image: "concert.jpg"),
         appStruct(id:7, title: "Messages", text: "Receive messages from your safety connection specialist",image: "messages.jpg"),
         appStruct(id:8, title: "Motivational", text: "Get motivational messages everyday!",image: "motivation.jpg"),
         appStruct(id:9, title: "Text to Speech", text: "Type what you want to vocalize",image: "speech.jpeg"),
-        appStruct(id:10, title: "CCTV Bus Schedule", text: "Displays information about city public transit",image: "bus.jpg")
+        appStruct(id:10, title: "GMT Bus Schedule Links", text: "Displays information about city public transit",image: "bus.jpg")
         
     ]
     
     private var funFacts:String = "https://www.mentalfloss.com/amazingfactgenerator"
     private var calender:String = "https://calendar.google.com/calendar/"
     private var youtube:String = "https://youtube.com"
+    
+    private var GMTGuide:String = "http://ridegmt.com/wp-content/uploads/chittendencounty_current.pdf"
+    private var GMTQuick:String = "http://ridegmt.com/gmt-schedules/"
+    private var Motivational:String = "https://www.brainyquote.com/quote_of_the_day"
+    private var HigherGround:String = "https://www.highergroundmusic.com/"
     
     
     
@@ -132,33 +137,47 @@ class AppsController: UIViewController, SFSafariViewControllerDelegate {
         }
         if(Label == arrayOfApps[1].title){
             //Google Calender Calls
+            let svc = SFSafariViewController(url: NSURL(string: self.calender)! as URL)
+            self.present(svc, animated: true, completion: nil)
         }
         if(Label == arrayOfApps[2].title){
             //Learn Something New Calls
+            let svc = SFSafariViewController(url: NSURL(string: self.funFacts)! as URL)
+            self.present(svc, animated: true, completion: nil)
         }
         if(Label == arrayOfApps[3].title){
             //Youtube Calls
+            let svc = SFSafariViewController(url: NSURL(string: self.youtube)! as URL)
+            self.present(svc, animated: true, completion: nil)
         }
         if(Label == arrayOfApps[4].title){
             //Xylophone Calls
         }
         if(Label == arrayOfApps[5].title){
             //SSTA Bus Schedule Calls
+            let svc = SFSafariViewController(url: NSURL(string: self.GMTGuide)! as URL)
+            self.present(svc, animated: true, completion: nil)
         }
         if(Label == arrayOfApps[6].title){
             //Higher Ground Live Music Calls
+            let svc = SFSafariViewController(url: NSURL(string: self.HigherGround)! as URL)
+            self.present(svc, animated: true, completion: nil)
         }
         if(Label == arrayOfApps[7].title){
             //Messages
         }
         if(Label == arrayOfApps[8].title){
             //Motivational Calls
+            let svc = SFSafariViewController(url: NSURL(string: self.Motivational)! as URL)
+            self.present(svc, animated: true, completion: nil)
         }
         if(Label == arrayOfApps[9].title){
             //Text To Speech Calls
         }
         if(Label == arrayOfApps[10].title){
             //CCTV Bus Schedule Calls
+            let svc = SFSafariViewController(url: NSURL(string: self.GMTQuick)! as URL)
+            self.present(svc, animated: true, completion: nil)
         }
     }
 
