@@ -40,7 +40,7 @@ class AppsController: UIViewController, SFSafariViewControllerDelegate {
         appStruct(id: 0, title: "Medication Manager", text: "Helpful daily reminders", image: "PillReminder.png"),
         appStruct(id: 1, title: "Google Calender", text: "So everything is in one place",image: "Calender.png"),
         appStruct(id: 2, title: "Learn Something New", text: "New Tricks for Everyone",image: "thinker.png"),
-        appStruct(id: 3, title: "Youtube", text: "Watch YouTube right from this app!",image: "youtube"),
+        appStruct(id: 3, title: "Youtube", text: "Watch YouTube right from this app!",image: "youTube.png"),
         appStruct(id: 4, title: "Xylophone", text: "Mess with a basic instrument",image: "xylophone.jpg"),
         appStruct(id: 5, title: "GMT Bus Guide", text: "See when transportation services arrives",image: "bus.png"),
         appStruct(id:6, title: "Higher Ground Live Music", text: "Check performance schedules",image: "concert.jpg"),
