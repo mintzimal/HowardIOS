@@ -29,10 +29,10 @@ class SignupController: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
-        // Do any additional setup after loading the view.
+         //Do any additional setup after loading the view.
         submitButton.layer.cornerRadius = 15
         PINView.layer.cornerRadius = 15
-        
+
         Button1.layer.cornerRadius = 15
         Button2.layer.cornerRadius = 15
         Button3.layer.cornerRadius = 15
