@@ -45,6 +45,7 @@
 		970385792274FCCE00C47655 /* speech.jpeg in Resources */ = {isa = PBXBuildFile; fileRef = 970385782274FCCE00C47655 /* speech.jpeg */; };
 		9703857B2274FE3B00C47655 /* motivation.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 9703857A2274FE3B00C47655 /* motivation.jpg */; };
 		9703857D227A5BC100C47655 /* bus.png in Resources */ = {isa = PBXBuildFile; fileRef = 9703857C227A5BC000C47655 /* bus.png */; };
+		9703857F227A626900C47655 /* youTube.png in Resources */ = {isa = PBXBuildFile; fileRef = 9703857E227A626900C47655 /* youTube.png */; };
 		F7DC6500224D182A00C8EA66 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F7DC64FF224D182A00C8EA66 /* AppDelegate.swift */; };
 		F7DC6502224D182A00C8EA66 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F7DC6501224D182A00C8EA66 /* ViewController.swift */; };
 		F7DC6505224D182A00C8EA66 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F7DC6503224D182A00C8EA66 /* Main.storyboard */; };
@@ -112,6 +113,7 @@
 		970385782274FCCE00C47655 /* speech.jpeg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = speech.jpeg; sourceTree = "<group>"; };
 		9703857A2274FE3B00C47655 /* motivation.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = motivation.jpg; sourceTree = "<group>"; };
 		9703857C227A5BC000C47655 /* bus.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = bus.png; sourceTree = "<group>"; };
+		9703857E227A626900C47655 /* youTube.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = youTube.png; sourceTree = "<group>"; };
 		F7DC64FC224D182A00C8EA66 /* Howard2.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Howard2.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		F7DC64FF224D182A00C8EA66 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		F7DC6501224D182A00C8EA66 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -156,6 +158,7 @@
 		396027D7225E9D520007CCDD /* Images */ = {
 			isa = PBXGroup;
 			children = (
+				9703857E227A626900C47655 /* youTube.png */,
 				9703857C227A5BC000C47655 /* bus.png */,
 				9703857A2274FE3B00C47655 /* motivation.jpg */,
 				970385782274FCCE00C47655 /* speech.jpeg */,
@@ -427,6 +430,7 @@
 				F7DC650A224D182C00C8EA66 /* LaunchScreen.storyboard in Resources */,
 				390689A1227948FC0068E4D2 /* peeking reverse.png in Resources */,
 				9703857D227A5BC100C47655 /* bus.png in Resources */,
+				9703857F227A626900C47655 /* youTube.png in Resources */,
 				390689952272A2090068E4D2 /* placeholder.png in Resources */,
 				F7DC6507224D182C00C8EA66 /* Assets.xcassets in Resources */,
 				3939DBE022564918001A8A7B /* Login.storyboard in Resources */,
