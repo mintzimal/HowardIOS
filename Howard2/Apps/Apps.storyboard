@@ -59,15 +59,13 @@
                                     <segue destination="F28-uG-vDl" kind="show" id="G2D-kH-sl5"/>
                                 </connections>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="fwb-bt-vYe">
-                                <rect key="frame" x="52" y="209" width="134" height="128"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <state key="normal" title="Button" image="PillReminder"/>
-                            </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="p2S-Qp-Lqj">
                                 <rect key="frame" x="227" y="209" width="134" height="128"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" title="Button" image="placeholder.png"/>
+                                <connections>
+                                    <action selector="ButtonSorterWithSender:" destination="9pS-Ge-hFz" eventType="touchUpInside" id="Ibl-6n-D5d"/>
+                                </connections>
                             </button>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Placeholder" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="VKx-1r-jwf">
                                 <rect key="frame" x="54" y="509" width="131" height="25"/>
@@ -92,11 +90,17 @@
                                 <rect key="frame" x="227" y="378" width="134" height="128"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" title="Button" image="placeholder.png"/>
+                                <connections>
+                                    <action selector="ButtonSorterWithSender:" destination="9pS-Ge-hFz" eventType="touchUpInside" id="J7R-1j-Kqv"/>
+                                </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="miS-dB-cr7">
                                 <rect key="frame" x="52" y="378" width="134" height="128"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" title="Button" image="placeholder.png"/>
+                                <connections>
+                                    <action selector="ButtonSorterWithSender:" destination="9pS-Ge-hFz" eventType="touchUpInside" id="vqh-GU-I0H"/>
+                                </connections>
                             </button>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Placeholder" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="zEn-BY-Kfc">
                                 <rect key="frame" x="71" y="687" width="100" height="25"/>
@@ -121,11 +125,17 @@
                                 <rect key="frame" x="229" y="547" width="134" height="128"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" title="Button" image="placeholder.png"/>
+                                <connections>
+                                    <action selector="ButtonSorterWithSender:" destination="9pS-Ge-hFz" eventType="touchUpInside" id="KE6-46-HSw"/>
+                                </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="BJB-cv-feJ">
                                 <rect key="frame" x="54" y="547" width="134" height="128"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" title="Button" image="placeholder.png"/>
+                                <connections>
+                                    <action selector="ButtonSorterWithSender:" destination="9pS-Ge-hFz" eventType="touchUpInside" id="XJZ-gC-EiG"/>
+                                </connections>
                             </button>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="qCu-8I-Dek">
                                 <rect key="frame" x="0.0" y="720" width="414" height="21"/>
@@ -142,11 +152,6 @@
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="dhP-ng-DKa">
-                                <rect key="frame" x="54" y="208" width="134" height="128"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <state key="normal" title="Button" image="placeholder.png"/>
-                            </button>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="car-uu-fZ2">
                                 <rect key="frame" x="0.0" y="156" width="414" height="21"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
@@ -171,7 +176,10 @@
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="lPw-Rj-CR8">
                                 <rect key="frame" x="51" y="208" width="137" height="129"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <state key="normal" title="Button" image="PillReminder"/>
+                                <state key="normal" title="Button" image="placeholder.png"/>
+                                <connections>
+                                    <action selector="ButtonSorterWithSender:" destination="9pS-Ge-hFz" eventType="touchUpInside" id="C4X-oK-X7C"/>
+                                </connections>
                             </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>

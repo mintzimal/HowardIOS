@@ -37,12 +37,15 @@ class NewCheckListController: UITableViewController {
         var values : [Int] = []
         var selected_indexPaths = tableOutlet!.indexPathsForSelectedRows
         
+        if selected_indexPaths != nil {
+        
         for value in selected_indexPaths!{
             values.append(value.row)
         }
         
         UserDefaults.standard.set(values, forKey: "AppSelection")
         print("You selected:", values)
+        }
         
     }
     

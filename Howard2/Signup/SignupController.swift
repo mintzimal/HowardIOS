@@ -94,6 +94,12 @@ class SignupController: UIViewController {
         
         if(PINView.text != ""){
             
+            var AllKeys = UserDefaults.standard.dictionaryRepresentation().keys
+            
+            for key in AllKeys{
+                UserDefaults.standard.removeObject(forKey: key)
+            }
+            
             if districtSlider.value >= 1.5{
                 UserDefaults.standard.set(2, forKey: "District")
             }

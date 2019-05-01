@@ -101,12 +101,20 @@ class AppsController: UIViewController, SFSafariViewControllerDelegate {
         print("App2")
     
     } else if sender == AppThree {
+        
+        print("App3")
     
     } else if sender == AppFour {
         
+        print("App4")
+        
     } else if sender == AppFive {
         
+        print("App5")
+        
     } else if sender == AppSix {
+        
+        print("App6")
         
     }
     }
