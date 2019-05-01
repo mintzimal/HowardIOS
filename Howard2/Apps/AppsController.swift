@@ -96,30 +96,71 @@ class AppsController: UIViewController, SFSafariViewControllerDelegate {
     if sender == AppOne {
         
         print("App1")
+        labelChecker(Label: LabelOne.text!)
     
     } else if sender == AppTwo {
         
         print("App2")
+        labelChecker(Label: LabelTwo.text!)
     
     } else if sender == AppThree {
         
         print("App3")
+        labelChecker(Label: LabelThree.text!)
     
     } else if sender == AppFour {
         
         print("App4")
+        labelChecker(Label: LabelFour.text!)
         
     } else if sender == AppFive {
         
         print("App5")
+        labelChecker(Label: LabelFive.text!)
         
     } else if sender == AppSix {
         
         print("App6")
+        labelChecker(Label: LabelSix.text!)
         
     }
     }
-
+    
+    func labelChecker(Label: String){
+        if(Label == arrayOfApps[0].title){
+            //Medication Manager Calls
+        }
+        if(Label == arrayOfApps[1].title){
+            //Google Calender Calls
+        }
+        if(Label == arrayOfApps[2].title){
+            //Learn Something New Calls
+        }
+        if(Label == arrayOfApps[3].title){
+            //Youtube Calls
+        }
+        if(Label == arrayOfApps[4].title){
+            //Xylophone Calls
+        }
+        if(Label == arrayOfApps[5].title){
+            //SSTA Bus Schedule Calls
+        }
+        if(Label == arrayOfApps[6].title){
+            //Higher Ground Live Music Calls
+        }
+        if(Label == arrayOfApps[7].title){
+            //Messages
+        }
+        if(Label == arrayOfApps[8].title){
+            //Motivational Calls
+        }
+        if(Label == arrayOfApps[9].title){
+            //Text To Speech Calls
+        }
+        if(Label == arrayOfApps[10].title){
+            //CCTV Bus Schedule Calls
+        }
+    }
 
     override func viewDidLoad() {
         super.viewDidLoad()
