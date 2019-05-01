@@ -20,6 +20,8 @@
 		390689992272A4010068E4D2 /* Calender.png in Resources */ = {isa = PBXBuildFile; fileRef = 390689982272A4000068E4D2 /* Calender.png */; };
 		3906899B2272A5810068E4D2 /* thinker.png in Resources */ = {isa = PBXBuildFile; fileRef = 3906899A2272A5810068E4D2 /* thinker.png */; };
 		3906899D227928A30068E4D2 /* refresh.png in Resources */ = {isa = PBXBuildFile; fileRef = 3906899C227928A30068E4D2 /* refresh.png */; };
+		3906899F2279479A0068E4D2 /* peeking.png in Resources */ = {isa = PBXBuildFile; fileRef = 3906899E2279479A0068E4D2 /* peeking.png */; };
+		390689A1227948FC0068E4D2 /* peeking reverse.png in Resources */ = {isa = PBXBuildFile; fileRef = 390689A0227948FC0068E4D2 /* peeking reverse.png */; };
 		3939DBE022564918001A8A7B /* Login.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3939DBDF22564918001A8A7B /* Login.storyboard */; };
 		3939DBE222564928001A8A7B /* Signup.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3939DBE122564928001A8A7B /* Signup.storyboard */; };
 		3939DBE822564989001A8A7B /* LoginController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3939DBE722564989001A8A7B /* LoginController.swift */; };
@@ -83,6 +85,8 @@
 		390689982272A4000068E4D2 /* Calender.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = Calender.png; path = Howard2/Images/Calender.png; sourceTree = SOURCE_ROOT; };
 		3906899A2272A5810068E4D2 /* thinker.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = thinker.png; sourceTree = "<group>"; };
 		3906899C227928A30068E4D2 /* refresh.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = refresh.png; path = Howard2/Images/refresh.png; sourceTree = SOURCE_ROOT; };
+		3906899E2279479A0068E4D2 /* peeking.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = peeking.png; path = Howard2/Images/peeking.png; sourceTree = SOURCE_ROOT; };
+		390689A0227948FC0068E4D2 /* peeking reverse.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "peeking reverse.png"; path = "Howard2/Images/peeking reverse.png"; sourceTree = SOURCE_ROOT; };
 		3939DBDF22564918001A8A7B /* Login.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Login.storyboard; sourceTree = "<group>"; };
 		3939DBE122564928001A8A7B /* Signup.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Signup.storyboard; sourceTree = "<group>"; };
 		3939DBE722564989001A8A7B /* LoginController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginController.swift; sourceTree = "<group>"; };
@@ -170,7 +174,9 @@
 				3903828C2266864B003422D3 /* funguy.png */,
 				39B88B92227292620018B675 /* BFP.png */,
 				3903828D2266864B003422D3 /* HomeIcon.png */,
+				3906899E2279479A0068E4D2 /* peeking.png */,
 				3903828E2266864B003422D3 /* SettingsIcon.png */,
+				390689A0227948FC0068E4D2 /* peeking reverse.png */,
 			);
 			path = Images;
 			sourceTree = "<group>";
@@ -416,6 +422,7 @@
 				970385752274F7A400C47655 /* bus.jpg in Resources */,
 				390382912266864B003422D3 /* SettingsIcon.png in Resources */,
 				F7DC650A224D182C00C8EA66 /* LaunchScreen.storyboard in Resources */,
+				390689A1227948FC0068E4D2 /* peeking reverse.png in Resources */,
 				390689952272A2090068E4D2 /* placeholder.png in Resources */,
 				F7DC6507224D182C00C8EA66 /* Assets.xcassets in Resources */,
 				3939DBE022564918001A8A7B /* Login.storyboard in Resources */,
@@ -441,6 +448,7 @@
 				39B88B8D22728DC70018B675 /* NewNews.storyboard in Resources */,
 				396027D4225E9A390007CCDD /* NewCallScreen.storyboard in Resources */,
 				396E0DC3226FCCD7004F2C13 /* NewCheckList.storyboard in Resources */,
+				3906899F2279479A0068E4D2 /* peeking.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

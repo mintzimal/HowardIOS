@@ -12,23 +12,35 @@ import AVFoundation
 
 class NewCallScreenController: UIViewController {
     
-    @IBOutlet weak var districtOneButton: UIButton!
-    @IBOutlet weak var districtTwoButton: UIButton!
+    @IBOutlet weak var districtButton: UIButton!
+    let District = UserDefaults.standard.integer(forKey: "District")
     
-    
-    @IBAction func callDistrictOne(_ sender: Any) {
-        print("Calling District One")
-        dialNumber(number: "+8027777928")
+    @IBAction func callDistrictFunction(_ sender: Any) {
+        if(District == 1){
+            print("Calling District One")
+            dialNumber(number: "+8027777928")
+        }
+        
+        if(District == 2){
+            print("Calling District Two")
+            dialNumber(number: "+6178173687")
+        }
     }
     
-    
-    @IBAction func callDistrictTwo(_ sender: Any) {
-        print("Calling District Two")
-        dialNumber(number: "+6178173687")
-    }
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        
+        districtButton.layer.cornerRadius = 50
+        
+        if(District == 1){
+            districtButton.setTitle("District 1", for: .normal)
+        }
+        
+        if(District == 2){
+            districtButton.setTitle("District 2", for: .normal)
+        }
+        
         
         // Do any additional setup after loading the view.
     }

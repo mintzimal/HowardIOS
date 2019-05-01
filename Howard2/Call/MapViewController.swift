@@ -49,6 +49,8 @@ class MapViewController: UIViewController, MKMapViewDelegate {
         geoButton.addTarget(self, action: #selector(MapViewController.geoButtonAction(_:)), for: .touchUpInside)
         
         view.addSubview(geoButton)
+        
+        geoButtonAction(geoButton)
     }
     
     @objc func geoButtonAction(_ sender: UIButton!) {
