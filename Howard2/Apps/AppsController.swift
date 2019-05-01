@@ -47,7 +47,7 @@ class AppsController: UIViewController, SFSafariViewControllerDelegate {
         appStruct(id:7, title: "Messages", text: "Receive messages from your safety connection specialist",image: "messages.jpg"),
         appStruct(id:8, title: "Motivational", text: "Get motivational messages everyday!",image: "motivation.jpg"),
         appStruct(id:9, title: "Text to Speech", text: "Type what you want to vocalize",image: "speech.jpeg"),
-        appStruct(id:10, title: "GMT Bus Schedule Links", text: "Displays information about city public transit",image: "bus.jpg")
+        appStruct(id:10, title: "GMT Bus Schedule Links", text: "Displays information about city public transit",image: "bus.png")
         
     ]
     
