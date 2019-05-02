@@ -49,7 +49,10 @@ class AppsController: UIViewController, SFSafariViewControllerDelegate {
         appStruct(id:9, title: "Text to Speech", text: "Type what you want to vocalize",image: "speech.jpeg"),
         appStruct(id:10, title: "GMT Bus Schedule Links", text: "Displays information about city public transit",image: "bus.png"),
         appStruct(id:11, title: "Flynn Show Schedule", text: "Look at upcoming plays/performances", image: "curtain.jpg" ),
-        appStruct(id:12, title: "Roxie Movie Schedule", text: "Local movie theatre schedules", image: "Roxie.jpg")
+        appStruct(id:12, title: "Roxie Movie Schedule", text: "Local movie theatre schedules", image: "Roxie.jpg"),
+        appStruct(id:13, title: "ECHO Science Center", text: "See what's happening at the local aquarium", image: "Echo.jpg"),
+        appStruct(id:14, title: "Burlington Weather", text: "The Local Forcast",image: "weather.jpg"),
+        appStruct(id:15, title: "Howard Center Main Site", text: "The Central Page for your HC Needs", image: "howardCenter.jpg")
         
     ]
     
@@ -63,6 +66,9 @@ class AppsController: UIViewController, SFSafariViewControllerDelegate {
     private var HigherGround:String = "https://www.highergroundmusic.com/"
     private var Flynn:String = "https://www.flynncenter.org/calendar.html"
     private var Roxie:String = "http://merrilltheatres.net/showtimes.html"
+    private var Echo:String = "https://www.echovermont.org/"
+    private var weather:String = "https://weather.com/weather/today/l/Burlington+VT+USVT0033:1:US"
+    private var howardCenter:String = "https://howardcenter.org/"
     
     
     
@@ -191,6 +197,19 @@ class AppsController: UIViewController, SFSafariViewControllerDelegate {
             let svc = SFSafariViewController(url: NSURL(string: self.Roxie)! as URL)
             self.present(svc, animated: true, completion: nil)
         }
+        if(Label == arrayOfApps[13].title){
+            let svc = SFSafariViewController(url: NSURL(string: self.Echo)! as URL)
+            self.present(svc, animated: true, completion: nil)
+        }
+        if(Label == arrayOfApps[14].title){
+            let svc = SFSafariViewController(url: NSURL(string: self.weather)! as URL)
+            self.present(svc, animated: true, completion: nil)
+        }
+        if(Label == arrayOfApps[15].title){
+            let svc = SFSafariViewController(url: NSURL(string: self.howardCenter)! as URL)
+            self.present(svc, animated: true, completion: nil)
+        }
+        
     }
 
     override func viewDidLoad() {
