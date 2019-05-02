@@ -162,6 +162,9 @@ class AppsController: UIViewController, SFSafariViewControllerDelegate {
         }
         if(Label == arrayOfApps[4].title){
             //Xylophone Calls
+            let viewController:UIViewController = UIStoryboard(name: "Xylophone", bundle: nil).instantiateViewController(withIdentifier: "Xylo") as UIViewController
+            
+            self.present(viewController, animated: true, completion: nil)
         }
         if(Label == arrayOfApps[5].title){
             //SSTA Bus Schedule Calls

@@ -45,19 +45,11 @@
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <subviews>
                                     <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Ptl-h4-Kuu">
-                                        <rect key="frame" x="0.0" y="222" width="374" height="99"/>
+                                        <rect key="frame" x="0.0" y="282" width="374" height="99"/>
                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                         <state key="normal" title="Button" image="SD.jpeg"/>
                                         <connections>
                                             <action selector="sevenDays:" destination="Aov-sj-blY" eventType="touchUpInside" id="T3c-dl-7EA"/>
-                                        </connections>
-                                    </button>
-                                    <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="AyS-ga-J7Z">
-                                        <rect key="frame" x="0.0" y="87" width="374" height="127"/>
-                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                        <state key="normal" title="Button" image="MCV.png"/>
-                                        <connections>
-                                            <action selector="myChamplainValley:" destination="Aov-sj-blY" eventType="touchUpInside" id="rfc-jq-Chs"/>
                                         </connections>
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="HoT-Ey-feK">
@@ -69,11 +61,19 @@
                                         </connections>
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="As3-dS-sKG">
-                                        <rect key="frame" x="0.0" y="329" width="374" height="117"/>
+                                        <rect key="frame" x="30" y="424" width="374" height="117"/>
                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                         <state key="normal" title="Button" image="N10.png"/>
                                         <connections>
                                             <action selector="news10:" destination="Aov-sj-blY" eventType="touchUpInside" id="uZH-KH-PyR"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="AyS-ga-J7Z">
+                                        <rect key="frame" x="8" y="106" width="374" height="127"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <state key="normal" title="Button" image="MCV.png"/>
+                                        <connections>
+                                            <action selector="myChamplainValley:" destination="Aov-sj-blY" eventType="touchUpInside" id="rfc-jq-Chs"/>
                                         </connections>
                                     </button>
                                 </subviews>

@@ -45,8 +45,8 @@
                                     <segue destination="qQg-wA-Esh" kind="push" identifier="goToRegistration" id="1Yf-oM-MEQ"/>
                                 </connections>
                             </button>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" image="background" translatesAutoresizingMaskIntoConstraints="NO" id="wWy-sR-rfK">
-                                <rect key="frame" x="0.0" y="174" width="414" height="544"/>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="background" translatesAutoresizingMaskIntoConstraints="NO" id="wWy-sR-rfK">
+                                <rect key="frame" x="0.0" y="174" width="414" height="505"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="505" id="BCK-zh-7Jw"/>
                                     <constraint firstAttribute="width" constant="414" id="MEM-Xz-TDl"/>
@@ -63,6 +63,14 @@
                                     <segue destination="ZGA-iC-40W" kind="push" id="aeO-5i-ZVb"/>
                                 </connections>
                             </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Dfe-Sm-AyG">
+                                <rect key="frame" x="0.0" y="674" width="414" height="21"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" red="0.33644006409999999" green="0.40332308709999998" blue="0.69790317359999998" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
                         </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
