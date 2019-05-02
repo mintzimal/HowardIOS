@@ -54,6 +54,14 @@
 		9703857F227A626900C47655 /* youTube.png in Resources */ = {isa = PBXBuildFile; fileRef = 9703857E227A626900C47655 /* youTube.png */; };
 		BB2C7F657E8BD5354296FC30 /* Pods_Howard2.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E8A1C8F5C002156960D2A655 /* Pods_Howard2.framework */; };
 		F544E4CD4905606B7A5B9A2F /* Pods_Howard2UITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 38396B5807B2566ECC327698 /* Pods_Howard2UITests.framework */; };
+		F74140DF227B2972007836F9 /* note2.wav in Resources */ = {isa = PBXBuildFile; fileRef = F74140D8227B2971007836F9 /* note2.wav */; };
+		F74140E0227B2972007836F9 /* note6.wav in Resources */ = {isa = PBXBuildFile; fileRef = F74140D9227B2971007836F9 /* note6.wav */; };
+		F74140E1227B2972007836F9 /* note3.wav in Resources */ = {isa = PBXBuildFile; fileRef = F74140DA227B2971007836F9 /* note3.wav */; };
+		F74140E2227B2972007836F9 /* note5.wav in Resources */ = {isa = PBXBuildFile; fileRef = F74140DB227B2971007836F9 /* note5.wav */; };
+		F74140E3227B2972007836F9 /* note7.wav in Resources */ = {isa = PBXBuildFile; fileRef = F74140DC227B2971007836F9 /* note7.wav */; };
+		F74140E4227B2972007836F9 /* note4.wav in Resources */ = {isa = PBXBuildFile; fileRef = F74140DD227B2971007836F9 /* note4.wav */; };
+		F74140E5227B2972007836F9 /* note1.wav in Resources */ = {isa = PBXBuildFile; fileRef = F74140DE227B2972007836F9 /* note1.wav */; };
+		F74140E8227B2A51007836F9 /* Xylophone.swift in Sources */ = {isa = PBXBuildFile; fileRef = F74140E7227B2A51007836F9 /* Xylophone.swift */; };
 		F7838118227A126500902F3B /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = F7838117227A126500902F3B /* GoogleService-Info.plist */; };
 		F7838120227A29AF00902F3B /* ChatRoom.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F783811F227A29AE00902F3B /* ChatRoom.storyboard */; };
 		F7838122227A4F1200902F3B /* Xylophone.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F7838121227A4F1200902F3B /* Xylophone.storyboard */; };
@@ -147,10 +155,17 @@
 		9703857C227A5BC000C47655 /* bus.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = bus.png; sourceTree = "<group>"; };
 		9703857E227A626900C47655 /* youTube.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = youTube.png; sourceTree = "<group>"; };
 		E8A1C8F5C002156960D2A655 /* Pods_Howard2.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Howard2.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		F74140D8227B2971007836F9 /* note2.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = note2.wav; sourceTree = "<group>"; };
+		F74140D9227B2971007836F9 /* note6.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = note6.wav; sourceTree = "<group>"; };
+		F74140DA227B2971007836F9 /* note3.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = note3.wav; sourceTree = "<group>"; };
+		F74140DB227B2971007836F9 /* note5.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = note5.wav; sourceTree = "<group>"; };
+		F74140DC227B2971007836F9 /* note7.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = note7.wav; sourceTree = "<group>"; };
+		F74140DD227B2971007836F9 /* note4.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = note4.wav; sourceTree = "<group>"; };
+		F74140DE227B2972007836F9 /* note1.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = note1.wav; sourceTree = "<group>"; };
+		F74140E7227B2A51007836F9 /* Xylophone.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Xylophone.swift; sourceTree = "<group>"; };
 		F7838117227A126500902F3B /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 		F783811F227A29AE00902F3B /* ChatRoom.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = ChatRoom.storyboard; sourceTree = "<group>"; };
 		F7838121227A4F1200902F3B /* Xylophone.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Xylophone.storyboard; sourceTree = "<group>"; };
-		F7838128227A501F00902F3B /* Xylo.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Xylo.swift; sourceTree = "<group>"; };
 		F7A70460227A0CDB00C0146B /* CustomMessageCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CustomMessageCell.swift; sourceTree = "<group>"; };
 		F7A70461227A0CDB00C0146B /* WelcomeViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WelcomeViewController.swift; sourceTree = "<group>"; };
 		F7A70462227A0CDB00C0146B /* RegisterViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RegisterViewController.swift; sourceTree = "<group>"; };
@@ -341,8 +356,15 @@
 		F7838127227A501E00902F3B /* Xylo */ = {
 			isa = PBXGroup;
 			children = (
-				F7838128227A501F00902F3B /* Xylo.swift */,
+				F74140E7227B2A51007836F9 /* Xylophone.swift */,
 				F7838121227A4F1200902F3B /* Xylophone.storyboard */,
+				F74140DE227B2972007836F9 /* note1.wav */,
+				F74140D8227B2971007836F9 /* note2.wav */,
+				F74140DA227B2971007836F9 /* note3.wav */,
+				F74140DD227B2971007836F9 /* note4.wav */,
+				F74140DB227B2971007836F9 /* note5.wav */,
+				F74140D9227B2971007836F9 /* note6.wav */,
+				F74140DC227B2971007836F9 /* note7.wav */,
 			);
 			path = Xylo;
 			sourceTree = "<group>";
@@ -565,6 +587,8 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				F74140E5227B2972007836F9 /* note1.wav in Resources */,
+				F74140E2227B2972007836F9 /* note5.wav in Resources */,
 				3906899322729CEC0068E4D2 /* SD.jpeg in Resources */,
 				F7838122227A4F1200902F3B /* Xylophone.storyboard in Resources */,
 				3939DBE222564928001A8A7B /* Signup.storyboard in Resources */,
@@ -599,14 +623,19 @@
 				390382902266864B003422D3 /* HomeIcon.png in Resources */,
 				970385732274F5F900C47655 /* messages.jpg in Resources */,
 				390689A8227A660F0068E4D2 /* curtain.jpg in Resources */,
+				F74140E3227B2972007836F9 /* note7.wav in Resources */,
+				F74140E1227B2972007836F9 /* note3.wav in Resources */,
+				F74140E4227B2972007836F9 /* note4.wav in Resources */,
 				39ED26B122723EA600B7D843 /* border.png in Resources */,
 				390689972272A33F0068E4D2 /* xylophone.jpg in Resources */,
+				F74140DF227B2972007836F9 /* note2.wav in Resources */,
 				9703856F22721E7C00C47655 /* Flash.png in Resources */,
 				F7838118227A126500902F3B /* GoogleService-Info.plist in Resources */,
 				F7DC6505224D182A00C8EA66 /* Main.storyboard in Resources */,
 				39B88B8D22728DC70018B675 /* NewNews.storyboard in Resources */,
 				39790958227A76D500EAA8FE /* Roxie.jpg in Resources */,
 				396027D4225E9A390007CCDD /* NewCallScreen.storyboard in Resources */,
+				F74140E0227B2972007836F9 /* note6.wav in Resources */,
 				396E0DC3226FCCD7004F2C13 /* NewCheckList.storyboard in Resources */,
 				3906899F2279479A0068E4D2 /* peeking.png in Resources */,
 			);
@@ -734,6 +763,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				F74140E8227B2A51007836F9 /* Xylophone.swift in Sources */,
 				F7DC6502224D182A00C8EA66 /* ViewController.swift in Sources */,
 				39B88B8F22728DFE0018B675 /* NewNewsController.swift in Sources */,
 				F7A70473227A0CDE00C0146B /* Message.swift in Sources */,
