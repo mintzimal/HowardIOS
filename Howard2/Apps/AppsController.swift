@@ -48,7 +48,8 @@ class AppsController: UIViewController, SFSafariViewControllerDelegate {
         appStruct(id:8, title: "Motivational", text: "Get motivational messages everyday!",image: "motivation.jpg"),
         appStruct(id:9, title: "Text to Speech", text: "Type what you want to vocalize",image: "speech.jpeg"),
         appStruct(id:10, title: "GMT Bus Schedule Links", text: "Displays information about city public transit",image: "bus.png"),
-        appStruct(id:11, title: "Flynn Show Schedule", text: "Look at upcoming plays/performances", image: "curtain.png" )
+        appStruct(id:11, title: "Flynn Show Schedule", text: "Look at upcoming plays/performances", image: "curtain.jpg" ),
+        appStruct(id:12, title: "Roxie Movie Schedule", text: "Local movie theatre schedules", image: "Roxie.jpg")
         
     ]
     
@@ -184,6 +185,10 @@ class AppsController: UIViewController, SFSafariViewControllerDelegate {
         }
         if(Label == arrayOfApps[11].title){
             let svc = SFSafariViewController(url: NSURL(string: self.Flynn)! as URL)
+            self.present(svc, animated: true, completion: nil)
+        }
+        if(Label == arrayOfApps[12].title){
+            let svc = SFSafariViewController(url: NSURL(string: self.Roxie)! as URL)
             self.present(svc, animated: true, completion: nil)
         }
     }
