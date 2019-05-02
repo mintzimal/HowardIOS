@@ -134,25 +134,40 @@
                                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="4un-Rr-BOp" userLabel="Entry">
                                                 <rect key="frame" x="0.0" y="-7" width="375" height="77"/>
                                                 <subviews>
-                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="0DO-iA-EeX">
-                                                        <rect key="frame" x="60" y="-5" width="256" height="85"/>
-                                                        <color key="backgroundColor" red="0.40628491770000003" green="0.63912940929999995" blue="1" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
-                                                        <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                    <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" clearButtonMode="always" translatesAutoresizingMaskIntoConstraints="NO" id="qCk-ra-IWB">
+                                                        <rect key="frame" x="139" y="8" width="97" height="30"/>
+                                                        <color key="backgroundColor" white="0.66666666669999997" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                         <constraints>
-                                                            <constraint firstAttribute="height" constant="85" id="7aM-K3-FhM"/>
-                                                            <constraint firstAttribute="width" constant="256" id="YfE-pE-tSK"/>
+                                                            <constraint firstAttribute="width" constant="97" id="04S-Kd-VWZ"/>
+                                                            <constraint firstAttribute="height" constant="30" id="yOU-bi-3ji"/>
                                                         </constraints>
-                                                        <fontDescription key="fontDescription" type="boldSystem" pointSize="32"/>
                                                         <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                                        <nil key="highlightedColor"/>
-                                                    </label>
+                                                        <fontDescription key="fontDescription" type="system" pointSize="32"/>
+                                                        <textInputTraits key="textInputTraits" secureTextEntry="YES"/>
+                                                        <connections>
+                                                            <action selector="ShowText:" destination="cdn-A1-9MT" eventType="editingDidEnd" id="CsE-BT-Ysf"/>
+                                                        </connections>
+                                                    </textField>
+                                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="kkD-z8-dnc">
+                                                        <rect key="frame" x="269" y="8" width="38" height="30"/>
+                                                        <constraints>
+                                                            <constraint firstAttribute="width" constant="38" id="Fd8-pT-ucs"/>
+                                                            <constraint firstAttribute="height" constant="30" id="OKy-to-PmB"/>
+                                                        </constraints>
+                                                        <state key="normal" title="Show"/>
+                                                        <connections>
+                                                            <action selector="ShowButton:" destination="cdn-A1-9MT" eventType="touchUpInside" id="hcG-y3-znR"/>
+                                                        </connections>
+                                                    </button>
                                                 </subviews>
                                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                 <constraints>
-                                                    <constraint firstItem="0DO-iA-EeX" firstAttribute="leading" secondItem="4un-Rr-BOp" secondAttribute="leading" constant="60" id="3Kg-dk-xpE"/>
                                                     <constraint firstAttribute="height" constant="77" id="ZIX-bK-YDb"/>
-                                                    <constraint firstItem="0DO-iA-EeX" firstAttribute="top" secondItem="4un-Rr-BOp" secondAttribute="top" constant="-5" id="eyK-Qs-LMu"/>
+                                                    <constraint firstItem="kkD-z8-dnc" firstAttribute="leading" secondItem="qCk-ra-IWB" secondAttribute="trailing" constant="33" id="aTN-4o-kq8"/>
+                                                    <constraint firstItem="qCk-ra-IWB" firstAttribute="leading" secondItem="4un-Rr-BOp" secondAttribute="leading" constant="139" id="dAp-Aq-JBy"/>
                                                     <constraint firstAttribute="width" constant="375" id="gSX-He-6PJ"/>
+                                                    <constraint firstItem="qCk-ra-IWB" firstAttribute="top" secondItem="4un-Rr-BOp" secondAttribute="top" constant="8" id="uWf-so-NhH"/>
+                                                    <constraint firstItem="kkD-z8-dnc" firstAttribute="top" secondItem="4un-Rr-BOp" secondAttribute="top" constant="8" id="xEd-y5-d8b"/>
                                                 </constraints>
                                             </view>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="5vT-bl-Tad">
@@ -334,8 +349,9 @@
                         <outlet property="Button7" destination="Rgz-Ab-efw" id="JMe-4o-d0P"/>
                         <outlet property="Button8" destination="9EO-5p-YAP" id="Zxo-fY-Zos"/>
                         <outlet property="Button9" destination="5vT-bl-Tad" id="ZHk-zz-wfe"/>
-                        <outlet property="PINView" destination="0DO-iA-EeX" id="rW3-WX-key"/>
+                        <outlet property="PINView" destination="qCk-ra-IWB" id="ZgD-2S-8tq"/>
                         <outlet property="districtSlider" destination="pVU-lE-BhH" id="Uui-fA-qMe"/>
+                        <outlet property="showButt" destination="kkD-z8-dnc" id="xfV-Cw-b7z"/>
                         <outlet property="submitButton" destination="evR-ki-eBN" id="c3x-fz-eYQ"/>
                     </connections>
                 </viewController>

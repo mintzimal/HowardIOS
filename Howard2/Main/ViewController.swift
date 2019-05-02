@@ -17,6 +17,8 @@ class ViewController: UIViewController {
     
     
     override func viewDidLoad() {
+        
+        self.navigationController?.setNavigationBarHidden(true, animated: false)
         super.viewDidLoad()
         // Do any additional setup after loading the view.
         Help.layer.cornerRadius = 15

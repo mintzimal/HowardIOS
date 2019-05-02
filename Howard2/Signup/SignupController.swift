@@ -10,8 +10,9 @@ import UIKit
 
 class SignupController: UIViewController {
     
+    @IBOutlet weak var PINView: UITextField!
     
-    @IBOutlet weak var PINView: UILabel!
+    @IBOutlet weak var showButt: UIButton!
     @IBOutlet weak var submitButton: UIButton!
     
     @IBOutlet weak var Button1: UIButton!
@@ -90,11 +91,21 @@ class SignupController: UIViewController {
         PINView.text = text
     }
     
+    @IBAction func ShowButton(_ sender: Any) {
+        if(PINView.isSecureTextEntry == true){
+            PINView.isSecureTextEntry = false
+            showButt.setTitle("Hide", for: .normal)
+        }else{
+            PINView.isSecureTextEntry = true
+            showButt.setTitle("Show", for: .normal)
+        }
+    }
+    
     @IBAction func SubmitButton(_ sender: Any) {
         
         if(PINView.text != ""){
             
-            var AllKeys = UserDefaults.standard.dictionaryRepresentation().keys
+            let AllKeys = UserDefaults.standard.dictionaryRepresentation().keys
             
             for key in AllKeys{
                 UserDefaults.standard.removeObject(forKey: key)
@@ -107,7 +118,6 @@ class SignupController: UIViewController {
             if districtSlider.value < 1.5 {
                 UserDefaults.standard.set(1, forKey: "District")
             }
-        
             UserDefaults.standard.set(PINView.text, forKey: "PIN")
             
             

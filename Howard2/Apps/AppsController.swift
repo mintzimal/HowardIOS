@@ -215,6 +215,7 @@ class AppsController: UIViewController, SFSafariViewControllerDelegate {
     override func viewDidLoad() {
         super.viewDidLoad()
         
+        
         refresh(refreshButton)
         
         AppOne.layer.borderWidth = 3

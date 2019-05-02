@@ -15,6 +15,7 @@ class NewCallScreenController: UIViewController {
     @IBOutlet weak var districtButton: UIButton!
     let District = UserDefaults.standard.integer(forKey: "District")
     
+    @IBOutlet weak var messageButton: UIButton!
     @IBAction func callDistrictFunction(_ sender: Any) {
         if(District == 1){
             print("Calling District One")
@@ -32,6 +33,7 @@ class NewCallScreenController: UIViewController {
         super.viewDidLoad()
         
         districtButton.layer.cornerRadius = 50
+        messageButton.layer.cornerRadius = 50
         
         if(District == 1){
             districtButton.setTitle("District 1", for: .normal)
