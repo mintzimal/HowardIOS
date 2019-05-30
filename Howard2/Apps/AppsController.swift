@@ -52,7 +52,8 @@ class AppsController: UIViewController, SFSafariViewControllerDelegate {
         appStruct(id:12, title: "Roxie Movie Schedule", text: "Local movie theatre schedules", image: "Roxie.jpg"),
         appStruct(id:13, title: "ECHO Science Center", text: "See what's happening at the local aquarium", image: "Echo.jpg"),
         appStruct(id:14, title: "Burlington Weather", text: "The Local Forcast",image: "weather.jpg"),
-        appStruct(id:15, title: "Howard Center Main Site", text: "The Central Page for your HC Needs", image: "howardCenter.jpg")
+        appStruct(id:15, title: "Howard Center Main Site", text: "The Central Page for your HC Needs", image: "howardCenter.jpg"),
+        appStruct(id:16, title: "Green Mountain Self Advocates",text: "Everyday Dreams, Everyday Relationships, Everyday Pride", image: "Green Mountain.png")
         
     ]
     
@@ -69,6 +70,7 @@ class AppsController: UIViewController, SFSafariViewControllerDelegate {
     private var Echo:String = "https://www.echovermont.org/"
     private var weather:String = "https://weather.com/weather/today/l/Burlington+VT+USVT0033:1:US"
     private var howardCenter:String = "https://howardcenter.org/"
+    private var GMSA:String = "http://www.gmsavt.org/"
     
     
     
@@ -210,6 +212,10 @@ class AppsController: UIViewController, SFSafariViewControllerDelegate {
         }
         if(Label == arrayOfApps[15].title){
             let svc = SFSafariViewController(url: NSURL(string: self.howardCenter)! as URL)
+            self.present(svc, animated: true, completion: nil)
+        }
+        if(Label == arrayOfApps[16].title){
+            let svc = SFSafariViewController(url: NSURL(string: self.GMSA)! as URL)
             self.present(svc, animated: true, completion: nil)
         }
         

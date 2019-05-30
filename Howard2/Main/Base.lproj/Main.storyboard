@@ -119,6 +119,11 @@
                                                     <segue destination="Nou-9T-gcG" kind="show" id="eA6-zH-P1V"/>
                                                 </connections>
                                             </button>
+                                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="HowardCenterHeader.png" translatesAutoresizingMaskIntoConstraints="NO" id="hjt-Lg-xjm">
+                                                <rect key="frame" x="-2" y="202" width="419" height="95"/>
+                                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                <color key="backgroundColor" red="0.8067662646198831" green="0.78512974403539548" blue="0.71892723931092428" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                            </imageView>
                                         </subviews>
                                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         <constraints>
@@ -161,7 +166,7 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
                 <exit id="jY4-Fr-0Sh" userLabel="Exit" sceneMemberID="exit"/>
             </objects>
-            <point key="canvasLocation" x="47.200000000000003" y="20.239880059970016"/>
+            <point key="canvasLocation" x="46.376811594202906" y="20.089285714285712"/>
         </scene>
         <!--App-->
         <scene sceneID="gcj-oX-2Mk">
@@ -171,10 +176,10 @@
             </objects>
             <point key="canvasLocation" x="599" y="-88"/>
         </scene>
-        <!--NewNews-->
+        <!--DynamicNews-->
         <scene sceneID="Hr3-Az-lC7">
             <objects>
-                <viewControllerPlaceholder storyboardName="NewNews" referencedIdentifier="NewNews" id="g2P-8c-CJ6" sceneMemberID="viewController"/>
+                <viewControllerPlaceholder storyboardName="DynamicNews" referencedIdentifier="DynamicNews" id="g2P-8c-CJ6" sceneMemberID="viewController"/>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="OQA-4u-PgS" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="628" y="21"/>
@@ -197,6 +202,7 @@
         </scene>
     </scenes>
     <resources>
+        <image name="HowardCenterHeader.png" width="630" height="200"/>
         <image name="Main" width="612" height="331"/>
     </resources>
 </document>
