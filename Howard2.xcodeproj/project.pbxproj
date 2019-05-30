@@ -37,6 +37,28 @@
 		3979095A227A7ADE00EAA8FE /* Echo.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 39790959227A7ADE00EAA8FE /* Echo.jpg */; };
 		3979095C227A7D1F00EAA8FE /* weather.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 3979095B227A7D1F00EAA8FE /* weather.jpg */; };
 		3979095E227A80FF00EAA8FE /* howardCenter.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 3979095D227A80FF00EAA8FE /* howardCenter.jpg */; };
+		397909622285A9E000EAA8FE /* HowardCenterHeader.png in Resources */ = {isa = PBXBuildFile; fileRef = 397909612285A9E000EAA8FE /* HowardCenterHeader.png */; };
+		3979096C229F791400EAA8FE /* DynamicNews.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3979096B229F791400EAA8FE /* DynamicNews.storyboard */; };
+		3979096E229F792700EAA8FE /* NewsChecklist.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3979096D229F792700EAA8FE /* NewsChecklist.storyboard */; };
+		39790970229F7E1300EAA8FE /* DynamicNewsController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3979096F229F7E1300EAA8FE /* DynamicNewsController.swift */; };
+		39790972229F84B300EAA8FE /* NewsChecklistController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 39790971229F84B300EAA8FE /* NewsChecklistController.swift */; };
+		39790974229F910800EAA8FE /* VPR.png in Resources */ = {isa = PBXBuildFile; fileRef = 39790973229F910800EAA8FE /* VPR.png */; };
+		39790976229F916E00EAA8FE /* CNN.png in Resources */ = {isa = PBXBuildFile; fileRef = 39790975229F916E00EAA8FE /* CNN.png */; };
+		39790978229F91A800EAA8FE /* ALZ.png in Resources */ = {isa = PBXBuildFile; fileRef = 39790977229F91A800EAA8FE /* ALZ.png */; };
+		3979097A229F920000EAA8FE /* ABC.png in Resources */ = {isa = PBXBuildFile; fileRef = 39790979229F91FF00EAA8FE /* ABC.png */; };
+		3979097C229F929400EAA8FE /* WSJ.png in Resources */ = {isa = PBXBuildFile; fileRef = 3979097B229F929400EAA8FE /* WSJ.png */; };
+		3979097E229F92DD00EAA8FE /* NPR.png in Resources */ = {isa = PBXBuildFile; fileRef = 3979097D229F92DD00EAA8FE /* NPR.png */; };
+		39790980229F930300EAA8FE /* reuters.png in Resources */ = {isa = PBXBuildFile; fileRef = 3979097F229F930300EAA8FE /* reuters.png */; };
+		39790982229F934500EAA8FE /* AP.png in Resources */ = {isa = PBXBuildFile; fileRef = 39790981229F934500EAA8FE /* AP.png */; };
+		39790984229F939C00EAA8FE /* HP.png in Resources */ = {isa = PBXBuildFile; fileRef = 39790983229F939C00EAA8FE /* HP.png */; };
+		39790986229F945F00EAA8FE /* BBC.png in Resources */ = {isa = PBXBuildFile; fileRef = 39790985229F945F00EAA8FE /* BBC.png */; };
+		39790988229F94B400EAA8FE /* guard.png in Resources */ = {isa = PBXBuildFile; fileRef = 39790987229F94B400EAA8FE /* guard.png */; };
+		3979098A229F94C000EAA8FE /* WP.png in Resources */ = {isa = PBXBuildFile; fileRef = 39790989229F94C000EAA8FE /* WP.png */; };
+		3979098C22A0012A00EAA8FE /* SD.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 3979098B22A0012A00EAA8FE /* SD.jpg */; };
+		3979098E22A001BA00EAA8FE /* WCAX.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 3979098D22A001BA00EAA8FE /* WCAX.jpg */; };
+		3979099022A001FA00EAA8FE /* MCV.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 3979098F22A001FA00EAA8FE /* MCV.jpg */; };
+		3979099222A0023100EAA8FE /* N10.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 3979099122A0023100EAA8FE /* N10.jpg */; };
+		3979099422A0025300EAA8FE /* VPR.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 3979099322A0025300EAA8FE /* VPR.jpg */; };
 		39B88B8D22728DC70018B675 /* NewNews.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 39B88B8C22728DC70018B675 /* NewNews.storyboard */; };
 		39B88B8F22728DFE0018B675 /* NewNewsController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 39B88B8E22728DFE0018B675 /* NewNewsController.swift */; };
 		39B88B93227292620018B675 /* BFP.png in Resources */ = {isa = PBXBuildFile; fileRef = 39B88B92227292620018B675 /* BFP.png */; };
@@ -134,6 +156,28 @@
 		39790959227A7ADE00EAA8FE /* Echo.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = Echo.jpg; sourceTree = "<group>"; };
 		3979095B227A7D1F00EAA8FE /* weather.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = weather.jpg; sourceTree = "<group>"; };
 		3979095D227A80FF00EAA8FE /* howardCenter.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = howardCenter.jpg; sourceTree = "<group>"; };
+		397909612285A9E000EAA8FE /* HowardCenterHeader.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = HowardCenterHeader.png; sourceTree = "<group>"; };
+		3979096B229F791400EAA8FE /* DynamicNews.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = DynamicNews.storyboard; sourceTree = "<group>"; };
+		3979096D229F792700EAA8FE /* NewsChecklist.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = NewsChecklist.storyboard; sourceTree = "<group>"; };
+		3979096F229F7E1300EAA8FE /* DynamicNewsController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DynamicNewsController.swift; sourceTree = "<group>"; };
+		39790971229F84B300EAA8FE /* NewsChecklistController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NewsChecklistController.swift; sourceTree = "<group>"; };
+		39790973229F910800EAA8FE /* VPR.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = VPR.png; sourceTree = "<group>"; };
+		39790975229F916E00EAA8FE /* CNN.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = CNN.png; sourceTree = "<group>"; };
+		39790977229F91A800EAA8FE /* ALZ.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = ALZ.png; sourceTree = "<group>"; };
+		39790979229F91FF00EAA8FE /* ABC.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = ABC.png; sourceTree = "<group>"; };
+		3979097B229F929400EAA8FE /* WSJ.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = WSJ.png; sourceTree = "<group>"; };
+		3979097D229F92DD00EAA8FE /* NPR.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = NPR.png; sourceTree = "<group>"; };
+		3979097F229F930300EAA8FE /* reuters.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = reuters.png; sourceTree = "<group>"; };
+		39790981229F934500EAA8FE /* AP.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = AP.png; sourceTree = "<group>"; };
+		39790983229F939C00EAA8FE /* HP.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = HP.png; sourceTree = "<group>"; };
+		39790985229F945F00EAA8FE /* BBC.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = BBC.png; sourceTree = "<group>"; };
+		39790987229F94B400EAA8FE /* guard.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = guard.png; sourceTree = "<group>"; };
+		39790989229F94C000EAA8FE /* WP.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = WP.png; sourceTree = "<group>"; };
+		3979098B22A0012A00EAA8FE /* SD.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = SD.jpg; sourceTree = "<group>"; };
+		3979098D22A001BA00EAA8FE /* WCAX.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = WCAX.jpg; sourceTree = "<group>"; };
+		3979098F22A001FA00EAA8FE /* MCV.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = MCV.jpg; sourceTree = "<group>"; };
+		3979099122A0023100EAA8FE /* N10.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = N10.jpg; sourceTree = "<group>"; };
+		3979099322A0025300EAA8FE /* VPR.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = VPR.jpg; sourceTree = "<group>"; };
 		39B88B8C22728DC70018B675 /* NewNews.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = NewNews.storyboard; sourceTree = "<group>"; };
 		39B88B8E22728DFE0018B675 /* NewNewsController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewNewsController.swift; sourceTree = "<group>"; };
 		39B88B92227292620018B675 /* BFP.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = BFP.png; path = Howard2/Images/BFP.png; sourceTree = SOURCE_ROOT; };
@@ -221,6 +265,24 @@
 		396027D7225E9D520007CCDD /* Images */ = {
 			isa = PBXGroup;
 			children = (
+				3979099322A0025300EAA8FE /* VPR.jpg */,
+				3979099122A0023100EAA8FE /* N10.jpg */,
+				3979098F22A001FA00EAA8FE /* MCV.jpg */,
+				3979098D22A001BA00EAA8FE /* WCAX.jpg */,
+				3979098B22A0012A00EAA8FE /* SD.jpg */,
+				39790989229F94C000EAA8FE /* WP.png */,
+				39790987229F94B400EAA8FE /* guard.png */,
+				39790985229F945F00EAA8FE /* BBC.png */,
+				39790983229F939C00EAA8FE /* HP.png */,
+				39790981229F934500EAA8FE /* AP.png */,
+				3979097F229F930300EAA8FE /* reuters.png */,
+				3979097D229F92DD00EAA8FE /* NPR.png */,
+				3979097B229F929400EAA8FE /* WSJ.png */,
+				39790979229F91FF00EAA8FE /* ABC.png */,
+				39790977229F91A800EAA8FE /* ALZ.png */,
+				39790975229F916E00EAA8FE /* CNN.png */,
+				39790973229F910800EAA8FE /* VPR.png */,
+				397909612285A9E000EAA8FE /* HowardCenterHeader.png */,
 				3979095D227A80FF00EAA8FE /* howardCenter.jpg */,
 				3979095B227A7D1F00EAA8FE /* weather.jpg */,
 				39790959227A7ADE00EAA8FE /* Echo.jpg */,
@@ -281,6 +343,10 @@
 		F75E70B122721608009BC7EA /* News */ = {
 			isa = PBXGroup;
 			children = (
+				3979096F229F7E1300EAA8FE /* DynamicNewsController.swift */,
+				39790971229F84B300EAA8FE /* NewsChecklistController.swift */,
+				3979096D229F792700EAA8FE /* NewsChecklist.storyboard */,
+				3979096B229F791400EAA8FE /* DynamicNews.storyboard */,
 				39B88B8C22728DC70018B675 /* NewNews.storyboard */,
 				39B88B8E22728DFE0018B675 /* NewNewsController.swift */,
 			);
@@ -587,10 +653,13 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				3979097C229F929400EAA8FE /* WSJ.png in Resources */,
+				39790986229F945F00EAA8FE /* BBC.png in Resources */,
 				F74140E5227B2972007836F9 /* note1.wav in Resources */,
 				F74140E2227B2972007836F9 /* note5.wav in Resources */,
 				3906899322729CEC0068E4D2 /* SD.jpeg in Resources */,
 				F7838122227A4F1200902F3B /* Xylophone.storyboard in Resources */,
+				3979099422A0025300EAA8FE /* VPR.jpg in Resources */,
 				3939DBE222564928001A8A7B /* Signup.storyboard in Resources */,
 				970385752274F7A400C47655 /* bus.jpg in Resources */,
 				390382912266864B003422D3 /* SettingsIcon.png in Resources */,
@@ -599,10 +668,14 @@
 				9703857D227A5BC100C47655 /* bus.png in Resources */,
 				9703857F227A626900C47655 /* youTube.png in Resources */,
 				390689952272A2090068E4D2 /* placeholder.png in Resources */,
+				3979097A229F920000EAA8FE /* ABC.png in Resources */,
+				3979099022A001FA00EAA8FE /* MCV.jpg in Resources */,
 				F7DC6507224D182C00C8EA66 /* Assets.xcassets in Resources */,
 				3939DBE022564918001A8A7B /* Login.storyboard in Resources */,
 				970385772274FB4700C47655 /* concert.jpg in Resources */,
+				3979096C229F791400EAA8FE /* DynamicNews.storyboard in Resources */,
 				3903829722668B2A003422D3 /* questionMark.png in Resources */,
+				39790980229F930300EAA8FE /* reuters.png in Resources */,
 				39B88B962272943D0018B675 /* MCV.png in Resources */,
 				F7A70475227A0CDE00C0146B /* MessageCell.xib in Resources */,
 				3979095C227A7D1F00EAA8FE /* weather.jpg in Resources */,
@@ -610,11 +683,19 @@
 				3903828F2266864B003422D3 /* funguy.png in Resources */,
 				3979095A227A7ADE00EAA8FE /* Echo.jpg in Resources */,
 				F7838120227A29AF00902F3B /* ChatRoom.storyboard in Resources */,
+				3979096E229F792700EAA8FE /* NewsChecklist.storyboard in Resources */,
 				970385792274FCCE00C47655 /* speech.jpeg in Resources */,
+				39790984229F939C00EAA8FE /* HP.png in Resources */,
 				F7A70474227A0CDE00C0146B /* Images.xcassets in Resources */,
+				3979099222A0023100EAA8FE /* N10.jpg in Resources */,
+				39790978229F91A800EAA8FE /* ALZ.png in Resources */,
 				3906899B2272A5810068E4D2 /* thinker.png in Resources */,
 				390382932266868F003422D3 /* AskHoward.storyboard in Resources */,
 				3979095E227A80FF00EAA8FE /* howardCenter.jpg in Resources */,
+				39790974229F910800EAA8FE /* VPR.png in Resources */,
+				39790988229F94B400EAA8FE /* guard.png in Resources */,
+				3979098E22A001BA00EAA8FE /* WCAX.jpg in Resources */,
+				397909622285A9E000EAA8FE /* HowardCenterHeader.png in Resources */,
 				9703857B2274FE3B00C47655 /* motivation.jpg in Resources */,
 				39B88B93227292620018B675 /* BFP.png in Resources */,
 				39068991227298CF0068E4D2 /* N10.png in Resources */,
@@ -622,21 +703,26 @@
 				F7DC652E224D241200C8EA66 /* Apps.storyboard in Resources */,
 				390382902266864B003422D3 /* HomeIcon.png in Resources */,
 				970385732274F5F900C47655 /* messages.jpg in Resources */,
+				3979097E229F92DD00EAA8FE /* NPR.png in Resources */,
 				390689A8227A660F0068E4D2 /* curtain.jpg in Resources */,
 				F74140E3227B2972007836F9 /* note7.wav in Resources */,
 				F74140E1227B2972007836F9 /* note3.wav in Resources */,
 				F74140E4227B2972007836F9 /* note4.wav in Resources */,
+				39790982229F934500EAA8FE /* AP.png in Resources */,
 				39ED26B122723EA600B7D843 /* border.png in Resources */,
 				390689972272A33F0068E4D2 /* xylophone.jpg in Resources */,
 				F74140DF227B2972007836F9 /* note2.wav in Resources */,
 				9703856F22721E7C00C47655 /* Flash.png in Resources */,
+				3979098A229F94C000EAA8FE /* WP.png in Resources */,
 				F7838118227A126500902F3B /* GoogleService-Info.plist in Resources */,
 				F7DC6505224D182A00C8EA66 /* Main.storyboard in Resources */,
+				39790976229F916E00EAA8FE /* CNN.png in Resources */,
 				39B88B8D22728DC70018B675 /* NewNews.storyboard in Resources */,
 				39790958227A76D500EAA8FE /* Roxie.jpg in Resources */,
 				396027D4225E9A390007CCDD /* NewCallScreen.storyboard in Resources */,
 				F74140E0227B2972007836F9 /* note6.wav in Resources */,
 				396E0DC3226FCCD7004F2C13 /* NewCheckList.storyboard in Resources */,
+				3979098C22A0012A00EAA8FE /* SD.jpg in Resources */,
 				3906899F2279479A0068E4D2 /* peeking.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -774,9 +860,11 @@
 				F7A7046C227A0CDE00C0146B /* WelcomeViewController.swift in Sources */,
 				F7A7046B227A0CDE00C0146B /* CustomMessageCell.swift in Sources */,
 				39038295226689A3003422D3 /* AskHowardController.swift in Sources */,
+				39790970229F7E1300EAA8FE /* DynamicNewsController.swift in Sources */,
 				F7A7046D227A0CDE00C0146B /* RegisterViewController.swift in Sources */,
 				F7A70472227A0CDE00C0146B /* ChatViewController.swift in Sources */,
 				3939DBE822564989001A8A7B /* LoginController.swift in Sources */,
+				39790972229F84B300EAA8FE /* NewsChecklistController.swift in Sources */,
 				F7A70471227A0CDE00C0146B /* LogInViewController.swift in Sources */,
 				3939DBEE225649D7001A8A7B /* AppsController.swift in Sources */,
 				3BD10A5E22669B5C001D0B5B /* MapViewController.swift in Sources */,
