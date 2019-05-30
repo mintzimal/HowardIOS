@@ -29,12 +29,12 @@ class DynamicNewsController: UIViewController, SFSafariViewControllerDelegate {
     
     
     var arrayOfNews = [
-        appStruct(id: 0, title: "Seven Days", text: "Local News", image: "SD.png"),
+        appStruct(id: 0, title: "Seven Days", text: "Local News", image: "SD.jpg"),
         appStruct(id: 1, title: "Burlington Free Press", text: "Local News",image: "BFP.png"),
-        appStruct(id: 2, title: "WCAX", text: "Local News",image: "WCAX.png"),
-        appStruct(id: 3, title: "My Champlain Valley", text: "Local News",image: "MCV.png"),
-        appStruct(id: 4, title: "News10", text: "Local News",image: "N10.png"),
-        appStruct(id: 5, title: "VPR", text: "Local News",image: "VPR.png"),
+        appStruct(id: 2, title: "WCAX", text: "Local News",image: "WCAX.jpg"),
+        appStruct(id: 3, title: "My Champlain Valley", text: "Local News",image: "MCV.jpg"),
+        appStruct(id: 4, title: "News10", text: "Local News",image: "N10.jpg"),
+        appStruct(id: 5, title: "VPR", text: "Local News",image: "VPR.jpg"),
         appStruct(id:6, title: "CNN", text: "Global News",image: "CNN.png"),
         appStruct(id:7, title: "Aljazeera", text: "Global News",image: "ALZ.png"),
         appStruct(id:8, title: "ABC", text: "Global News",image: "ABC.png"),
