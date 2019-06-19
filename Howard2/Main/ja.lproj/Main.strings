@@ -1,0 +1,12 @@
+
+/* Class = "UIButton"; normalTitle = "Apps"; ObjectID = "242-Gn-JJt"; */
+"242-Gn-JJt.normalTitle" = "アプリ";
+
+/* Class = "UIButton"; normalTitle = "News"; ObjectID = "5nP-0y-vUb"; */
+"5nP-0y-vUb.normalTitle" = "ニュース";
+
+/* Class = "UIButton"; normalTitle = "Logout"; ObjectID = "WP3-bI-bWY"; */
+"WP3-bI-bWY.normalTitle" = "ログアウト";
+
+/* Class = "UIButton"; normalTitle = "Help"; ObjectID = "bt0-zQ-OsI"; */
+"bt0-zQ-OsI.normalTitle" = "助けて";

@@ -1,0 +1,13 @@
+/* 
+  Localizable.strings
+  Howard2
+
+  Created by Noah Mintz Roberts on 6/19/19.
+  Copyright © 2019 William Risigo. All rights reserved.
+*/
+
+//MAIN LOCALIZATIONS
+"Apps" = "应用";
+"News" = "新闻";
+"Help" = "救命";
+"Logout" = "登出";

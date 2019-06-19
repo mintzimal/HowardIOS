@@ -1,0 +1,72 @@
+
+/* Class = "UILabel"; text = "District: "; ObjectID = "5ID-g4-lIm"; */
+"5ID-g4-lIm.text" = "District: ";
+
+/* Class = "UIButton"; normalTitle = "9"; ObjectID = "5vT-bl-Tad"; */
+"5vT-bl-Tad.normalTitle" = "9";
+
+/* Class = "UIButton"; normalTitle = "8"; ObjectID = "9EO-5p-YAP"; */
+"9EO-5p-YAP.normalTitle" = "8";
+
+/* Class = "UIButton"; normalTitle = "1"; ObjectID = "BSl-8c-ai8"; */
+"BSl-8c-ai8.normalTitle" = "1";
+
+/* Class = "UIButton"; normalTitle = "Yes"; ObjectID = "H9f-7O-eip"; */
+"H9f-7O-eip.normalTitle" = "Yes";
+
+/* Class = "UIButton"; normalTitle = "4"; ObjectID = "JMN-cC-Umt"; */
+"JMN-cC-Umt.normalTitle" = "4";
+
+/* Class = "UIButton"; normalTitle = "Skip for Now"; ObjectID = "Lso-bN-TNW"; */
+"Lso-bN-TNW.normalTitle" = "Skip for Now";
+
+/* Class = "UIButton"; normalTitle = "6"; ObjectID = "NLg-5Z-7dM"; */
+"NLg-5Z-7dM.normalTitle" = "6";
+
+/* Class = "UIButton"; normalTitle = "District 2"; ObjectID = "Qxd-je-5N8"; */
+"Qxd-je-5N8.normalTitle" = "District 2";
+
+/* Class = "UIButton"; normalTitle = "7"; ObjectID = "Rgz-Ab-efw"; */
+"Rgz-Ab-efw.normalTitle" = "7";
+
+/* Class = "UIButton"; normalTitle = "2"; ObjectID = "Z1a-Zc-Ewq"; */
+"Z1a-Zc-Ewq.normalTitle" = "2";
+
+/* Class = "UILabel"; text = "Is it any of these ones?"; ObjectID = "dhB-w9-wHi"; */
+"dhB-w9-wHi.text" = "Is it any of these ones?";
+
+/* Class = "UIButton"; normalTitle = "Submit"; ObjectID = "evR-ki-eBN"; */
+"evR-ki-eBN.normalTitle" = "Submit";
+
+/* Class = "UIButton"; normalTitle = "5"; ObjectID = "f4n-qI-kOv"; */
+"f4n-qI-kOv.normalTitle" = "5";
+
+/* Class = "UIButton"; normalTitle = "3"; ObjectID = "hgV-Zi-y7n"; */
+"hgV-Zi-y7n.normalTitle" = "3";
+
+/* Class = "UIButton"; normalTitle = "!"; ObjectID = "jLm-Xl-ruV"; */
+"jLm-Xl-ruV.normalTitle" = "!";
+
+/* Class = "UIButton"; normalTitle = "Show"; ObjectID = "kkD-z8-dnc"; */
+"kkD-z8-dnc.normalTitle" = "Show";
+
+/* Class = "UIButton"; normalTitle = "Next Page"; ObjectID = "mSQ-pc-Xta"; */
+"mSQ-pc-Xta.normalTitle" = "Next Page";
+
+/* Class = "UILabel"; text = "Is this correct?"; ObjectID = "mWe-Ui-CSj"; */
+"mWe-Ui-CSj.text" = "Is this correct?";
+
+/* Class = "UILabel"; text = "What is your prefered language?"; ObjectID = "p08-gh-73S"; */
+"p08-gh-73S.text" = "What is your prefered language?";
+
+/* Class = "UILabel"; text = "What district do you belong to?"; ObjectID = "pdb-rT-Nng"; */
+"pdb-rT-Nng.text" = "What district do you belong to?";
+
+/* Class = "UIButton"; normalTitle = "District 1"; ObjectID = "qV9-Fe-mzH"; */
+"qV9-Fe-mzH.normalTitle" = "District 1";
+
+/* Class = "UILabel"; text = "Language: "; ObjectID = "uZa-54-rtG"; */
+"uZa-54-rtG.text" = "Language: ";
+
+/* Class = "UIButton"; normalTitle = "No"; ObjectID = "wAZ-WY-2Rp"; */
+"wAZ-WY-2Rp.normalTitle" = "No";

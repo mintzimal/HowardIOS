@@ -1,0 +1,102 @@
+/* 
+  Localizable.strings
+  Howard2
+
+  Created by Noah Mintz Roberts on 6/19/19.
+  Copyright © 2019 William Risigo. All rights reserved.
+*/
+
+//MAIN LOCALIZATIONS
+"Apps" = "Apps";
+"News" = "News";
+"Help" = "Help";
+"Logout" = "Logout";
+
+//APP TITLES AND DESCRIPTION LOCALIZATIONS
+"Medication Manager" = "Medication Manager";
+"Helpful daily reminders" = "Helpful daily reminders";
+
+"Google Calender" = "Google Calender";
+"So everything is in one place" = "So everything is in one place";
+
+"Learn Something New" = "Learn Something New";
+"New Tricks for Everyone" = "New Tricks for Everyone";
+
+"Youtube" = "Youtube";
+"Watch YouTube right from this app!" = "Watch Youtube right from this app!";
+
+"Xylophone" = "Xylophone";
+"Mess with a basic instrument" = "Mess with a basic instrument";
+
+"GMT Bus Guide" = "GMT Bus Guide";
+"See when transportation services arrives" = "See when transportation services arrives";
+
+"Higher Ground Live Music" = "Higher Ground Live Music";
+"Check performance schedules" = "Check performance schedules";
+
+"Messages" = "Messages";
+"Receive messages from your safety connection specialist" = "Receive messages from your safety connection specialist";
+"Motivational" = "Motivational";
+"Get motivational messages everyday!" = "Get motivational messages everyday!";
+
+"Text to Speech" = "Text to Speech";
+"Type what you want to vocalize" = "Type what you want to vocalize";
+
+"GMT Bus Schedule Links" = "GMT Bus Schedule Links";
+"Displays information about city public transit" = "Displays information about city public transit";
+"Flynn Show Schedule" = "Flynn Show Schedule";
+"Look at upcoming plays/performances" = "Look at upcoming plays/performances";
+
+"Roxie Movie Schedule" = "Roxie Movie Schedule";
+"Local movie theatre schedules" = "Local movie theatre schedules";
+
+"ECHO Science Center" = "ECHO Science Center";
+"See what's happening at the local aquarium" = "See what's happening at the local aquarium";
+"Burlington Weather" = "Burlington Weather";
+"The Local Forcast" = "The Local Forcast";
+
+"Howard Center Main Site" = "Howard Center Main Site";
+"The Central Page for your HC Needs" = "The Central Page for your HC Needs";
+
+"Green Mountain Self Advocates" = "Green Mountain Self Advocates";
+"Everyday Dreams, Everyday Relationships, Everyday Pride" = "Everyday Dreams, Everyday Relationships, Everyday Pride";
+//-------------------------------------------------------------------------------------
+
+//NEWS LOCALIZATIONS
+"Local News" = "Local News";
+"Global News" = "Global News";
+"Seven Days" = "Seven Days";
+"Burlington Free Press" = "Burlington Free Press";
+"WCAX" = "WCAX";
+"My Champlain Valley" = "My Champlain Valley";
+"News10" = "News10";
+"VPR" = "VPR";
+"CNN" = "CNN";
+"Aljazeera" = "Aljazeera";
+"ABC" = "ABC";
+"Wall Street Journal" = "Wall Street Journal";
+"NPR" = "NPR";
+"Reuters" = "Reuters";
+"The Associated Press" = "The Associated Press";
+"Huffington Post" = "Huffington Post";
+"BBC" = "BBC";
+"Washington Post" = "Washington Post";
+"The Guardian" = "The Guardian";
+//------------------------------------------------------------------------------------
+
+//CALLSCREEN LOCALIZATIONS
+"District 1" = "District 1";
+"District 2" = "District 2";
+
+//------------------------------------------------------------------------------------
+
+//CHECKLIST LOCALIZATIONS
+"Click to Select Which Apps to Show (You may choose 6)" = "Click to Select Which Apps to Show (You may choose 6)";
+
+//------------------------------------------------------------------------------------
+
+//NEWS CHECKLIST LOCALIZATIONS
+"Click to Select Which News to Show (You may choose 6)" = "Click to Select Which News to Show (You may choose 6)";
+
+
+

@@ -7,6 +7,7 @@
 //
 
 import UIKit
+import Localize_Swift
 
 class SignupController: UIViewController {
     
@@ -106,7 +107,7 @@ class SignupController: UIViewController {
             YesButton?.layer.cornerRadius = 15
             NoButton?.layer.cornerRadius = 15
         
-        var newLanguageLabel:String = [languageLabel?.text, UserDefaults.standard.string(forKey: "Language") ].compactMap({$0}).joined(separator:" ")
+        var newLanguageLabel:String = [languageLabel?.text, UserDefaults.standard.string(forKey: "LanguageName") ].compactMap({$0}).joined(separator:" ")
         
         languageLabel?.text = newLanguageLabel
         
@@ -239,92 +240,112 @@ class SignupController: UIViewController {
         if(sender == L1){
             print("English")
             
-            UserDefaults.standard.set("English",forKey:"Language")
+            UserDefaults.standard.set("en",forKey:"Language")
+            UserDefaults.standard.set("English",forKey:"LanguageName")
         }
         
         if(sender == L2){
             print("French")
-            UserDefaults.standard.set("French",forKey:"Language")
+            UserDefaults.standard.set("fr",forKey:"Language")
+            UserDefaults.standard.set("French",forKey:"LanguageName")
+
+            
         }
         
         if(sender == L3){
             print("Spanish")
-            UserDefaults.standard.set("Spanish",forKey:"Language")
+            UserDefaults.standard.set("es",forKey:"Language")
+            UserDefaults.standard.set("Spanish",forKey:"LanguageName")
         }
         
         if(sender == L4){
             print("German")
-            UserDefaults.standard.set("German",forKey:"Language")
+            UserDefaults.standard.set("de",forKey:"Language")
+            UserDefaults.standard.set("German",forKey:"LanguageName")
         }
         
         if(sender == L5){
             print("Portuguese")
-            UserDefaults.standard.set("Portuguese",forKey:"Language")
+            UserDefaults.standard.set("pt",forKey:"Language")
+            UserDefaults.standard.set("Portuguese",forKey:"LanguageName")
         }
         
         if(sender == L6){
             print("Swahili")
-            UserDefaults.standard.set("Swahili",forKey:"Language")
+            UserDefaults.standard.set("sw",forKey:"Language")
+            UserDefaults.standard.set("Swahili",forKey:"LanguageName")
         }
         
         if(sender == L7){
             print("Swedish")
-            UserDefaults.standard.set("Swedish",forKey:"Language")
+            UserDefaults.standard.set("sv",forKey:"Language")
+            UserDefaults.standard.set("Swedish",forKey:"LanguageName")
         }
         
         if(sender == L8){
             print("Italian")
-            UserDefaults.standard.set("Italian",forKey:"Language")
+            UserDefaults.standard.set("it",forKey:"Language")
+            UserDefaults.standard.set("Italian",forKey:"LanguageName")
         }
         
         if(sender == L9){
             print("Russian")
-            UserDefaults.standard.set("Russian",forKey:"Language")
+            UserDefaults.standard.set("ru",forKey:"Language")
+            UserDefaults.standard.set("Russian",forKey:"LanguageName")
         }
         
         if(sender == L10){
-            print("Nepalese")
-            UserDefaults.standard.set("Nepalese",forKey:"Language")
+            print("Nepali")
+            UserDefaults.standard.set("ne",forKey:"Language")
+            UserDefaults.standard.set("Nepali",forKey:"LanguageName")
         }
         
         if(sender == L11){
             print("Arabic")
-            UserDefaults.standard.set("Arabic",forKey:"Language")
+            UserDefaults.standard.set("ar",forKey:"Language")
+            UserDefaults.standard.set("Arabic",forKey:"LanguageName")
         }
         
         if(sender == L12){
             print("Hindi")
-            UserDefaults.standard.set("Hindi",forKey:"Language")
+            UserDefaults.standard.set("hi",forKey:"Language")
+            UserDefaults.standard.set("Hindi",forKey:"LanguageName")
         }
         
         if(sender == L13){
             print("Punjabi")
-            UserDefaults.standard.set("Punjabi",forKey:"Language")
+            UserDefaults.standard.set("pa",forKey:"Language")
+            UserDefaults.standard.set("Punjabi",forKey:"LanguageName")
         }
         
         if(sender == L14){
             print("Chinese")
-            UserDefaults.standard.set("Chinese",forKey:"Language")
+            UserDefaults.standard.set("zn",forKey:"Language")
+            UserDefaults.standard.set("Chinese",forKey:"LanguageName")
         }
         
         if(sender == L15){
             print("Japanese")
-            UserDefaults.standard.set("Japanese",forKey:"Language")
+            UserDefaults.standard.set("ja",forKey:"Language")
+            UserDefaults.standard.set("Japanese",forKey:"LanguageName")
         }
         
         if(sender == L16){
             print("Hebrew")
-            UserDefaults.standard.set("Hebrew",forKey:"Language")
+            UserDefaults.standard.set("he",forKey:"Language")
+            UserDefaults.standard.set("Hebrew",forKey:"LanguageName")
         }
         
         if(sender == L17){
-            print("Bengali")
-            UserDefaults.standard.set("Bengali",forKey:"Language")
+            print("Bangla")
+            UserDefaults.standard.set("bn",forKey:"Language")
+            UserDefaults.standard.set("Bangla",forKey:"LanguageName")
         }
         
         if(sender == L18){
             print("Vietnamese")
-            UserDefaults.standard.set("Vietnamese",forKey:"Language")
+            UserDefaults.standard.set("vi",forKey:"Language")
+            UserDefaults.standard.set("Vietnamese ",forKey:"LanguageName")
         }
         
         let checkupController = self.storyboard!.instantiateViewController(withIdentifier: "Checkup")
