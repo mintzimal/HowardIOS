@@ -11,3 +11,46 @@
 "News" = "Notícia";
 "Help" = "Socorro";
 "Logout" = "Sair";
+
+//------------------------------------------------------------------------------------
+
+//CALLSCREEN LOCALIZATIONS
+"District 1" = "Distrito 1";
+"District 2" = "Distrito 2";
+"Message" = "Mensagem";
+"Click to Call" = "Clique para chamar";
+
+//------------------------------------------------------------------------------------
+
+//ASKHOWARD LOCALIZATIONS
+"Do you have any questions?" = "Você tem alguma pergunta?";
+"Click to Let Me Know" = "Clique para me deixar saber";
+
+//------------------------------------------------------------------------------------
+
+//CHECKLIST LOCALIZATIONS
+"You May Choose 6" = "Você pode escolher 6";
+
+//------------------------------------------------------------------------------------
+
+//NEWS LOCALIZATIONS
+"Local News" = "Notícias locais";
+"Global News" = "Notícias Globais";
+"Seven Days" = "Sete dias";
+"Burlington Free Press" = "Imprensa livre de Burlington";
+"WCAX" = "WCAX";
+"My Champlain Valley" = "Meu Vale Champlain";
+"News10" = "Notícias10";
+"VPR" = "VPR";
+"CNN" = "CNN";
+"Aljazeera" = "Al Jazeera";
+"ABC" = "ABC";
+"Wall Street Journal" = "Wall Street Journal";
+"NPR" = "NPR";
+"Reuters" = "Reuters";
+"The Associated Press" = "The Associated Press";
+"Huffington Post" = "Postagem Huffington";
+"BBC" = "BBC";
+"Washington Post" = "Washington Post";
+"The Guardian" = "O guardião";
+//------------------------------------------------------------------------------------

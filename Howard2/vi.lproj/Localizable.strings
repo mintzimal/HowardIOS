@@ -11,3 +11,46 @@
 "News" = "Tin tức";
 "Help" = "Cứu giúp";
 "Logout" = "Đăng xuất";
+
+//------------------------------------------------------------------------------------
+
+//CALLSCREEN LOCALIZATIONS
+"District 1" = "Quận 1";
+"District 2" = "Quận 2";
+"Message" = "Thông điệp";
+"Click to Call" = "Bấm để gọi";
+
+//------------------------------------------------------------------------------------
+
+//ASKHOWARD LOCALIZATIONS
+"Do you have any questions?" = "Bạn có câu hỏi nào không?";
+"Click to Let Me Know" = "Nhấn vào đây để cho tôi biết";
+
+//------------------------------------------------------------------------------------
+
+//CHECKLIST LOCALIZATIONS
+"You May Choose 6" = "Bạn có thể chọn 6";
+
+//------------------------------------------------------------------------------------
+
+//NEWS LOCALIZATIONS
+"Local News" = "Tin địa phương";
+"Global News" = "Tin tức toàn cầu";
+"Seven Days" = "Bảy ngày";
+"Burlington Free Press" = "Burlington miễn phí báo chí";
+"WCAX" = "WCAX";
+"My Champlain Valley" = "Thung lũng Champlain của tôi";
+"News10" = "Tin tức10";
+"VPR" = "VPR";
+"CNN" = "CNN";
+"Aljazeera" = "Aljazeera";
+"ABC" = "ABC";
+"Wall Street Journal" = "Tạp chí phố Wall";
+"NPR" = "NPR";
+"Reuters" = "Reuters";
+"The Associated Press" = "Báo chí liên quan";
+"Huffington Post" = "Bưu điện Huffington";
+"BBC" = "BBC";
+"Washington Post" = "Bưu điện Washington";
+"The Guardian" = "Người bảo vệ";
+//------------------------------------------------------------------------------------

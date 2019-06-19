@@ -179,6 +179,7 @@
                         <outlet property="LabelTwo" destination="oke-PK-V15" id="jU7-qL-dxV"/>
                         <outlet property="NewsFive" destination="BJB-cv-feJ" id="fUf-1G-cr2"/>
                         <outlet property="NewsFour" destination="RKL-wW-DoV" id="ZsG-0t-o8J"/>
+                        <outlet property="NewsLabel" destination="T0W-Um-MPA" id="WYR-wr-PvG"/>
                         <outlet property="NewsOne" destination="lPw-Rj-CR8" id="m54-Py-Hb3"/>
                         <outlet property="NewsSix" destination="HNs-Kx-p8q" id="JhP-zf-PR9"/>
                         <outlet property="NewsThree" destination="miS-dB-cr7" id="ovf-9e-SBM"/>

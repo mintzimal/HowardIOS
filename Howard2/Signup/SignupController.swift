@@ -320,7 +320,7 @@ class SignupController: UIViewController {
         
         if(sender == L14){
             print("Chinese")
-            UserDefaults.standard.set("zn",forKey:"Language")
+            UserDefaults.standard.set("zh",forKey:"Language")
             UserDefaults.standard.set("Chinese",forKey:"LanguageName")
         }
         

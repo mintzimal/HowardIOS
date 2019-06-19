@@ -11,3 +11,46 @@
 "News" = "Nyheter";
 "Help" = "Hjälp";
 "Logout" = "Logga ut";
+
+//------------------------------------------------------------------------------------
+
+//CALLSCREEN LOCALIZATIONS
+"District 1" = "Distrikt 1";
+"District 2" = "Distrikt 2";
+"Message" = "Meddelande";
+"Click to Call" = "Klicka för att ringa";
+
+//------------------------------------------------------------------------------------
+
+//ASKHOWARD LOCALIZATIONS
+"Do you have any questions?" = "Har du några frågor?";
+"Click to Let Me Know" = "Klicka för att låta mig veta";
+
+//------------------------------------------------------------------------------------
+
+//CHECKLIST LOCALIZATIONS
+"You May Choose 6" = "Du kan välja 6";
+
+//------------------------------------------------------------------------------------
+
+//NEWS LOCALIZATIONS
+"Local News" = "Lokala nyheter";
+"Global News" = "Global News";
+"Seven Days" = "Sju dagar";
+"Burlington Free Press" = "Burlington Free Press";
+"WCAX" = "WCAX";
+"My Champlain Valley" = "Min Champlain Valley";
+"News10" = "News10";
+"VPR" = "VPR";
+"CNN" = "CNN";
+"Aljazeera" = "Aljazeera";
+"ABC" = "ABC";
+"Wall Street Journal" = "Wall Street Journal";
+"NPR" = "NPR";
+"Reuters" = "Reuters";
+"The Associated Press" = "Den associerade pressen";
+"Huffington Post" = "Huffington Post";
+"BBC" = "BBC";
+"Washington Post" = "Washington Post";
+"The Guardian" = "Väktaren";
+//------------------------------------------------------------------------------------

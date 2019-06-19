@@ -60,15 +60,6 @@
                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="hSE-77-j1y" userLabel="Middle">
                                         <rect key="frame" x="-2" y="309" width="418" height="294"/>
                                         <subviews>
-                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="Click to Call" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="p4J-Fn-yQB">
-                                                <rect key="frame" x="14" y="0.0" width="391" height="47"/>
-                                                <constraints>
-                                                    <constraint firstAttribute="height" constant="47" id="LKD-Pr-UBz"/>
-                                                </constraints>
-                                                <fontDescription key="fontDescription" type="boldSystem" pointSize="55"/>
-                                                <nil key="textColor"/>
-                                                <nil key="highlightedColor"/>
-                                            </label>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="AXm-XJ-hbE">
                                                 <rect key="frame" x="36" y="70" width="347" height="108"/>
                                                 <color key="backgroundColor" red="0.33644006409999999" green="0.40332308709999998" blue="0.69790317359999998" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
@@ -100,6 +91,15 @@
                                                     <segue destination="5yf-UP-a8I" kind="show" id="5jt-Po-PmI"/>
                                                 </connections>
                                             </button>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="Click to Call" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="p4J-Fn-yQB">
+                                                <rect key="frame" x="14" y="0.0" width="391" height="47"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="height" constant="47" id="LKD-Pr-UBz"/>
+                                                </constraints>
+                                                <fontDescription key="fontDescription" type="boldSystem" pointSize="55"/>
+                                                <nil key="textColor"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
                                         </subviews>
                                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         <constraints>
@@ -196,6 +196,7 @@
                         <viewLayoutGuide key="safeArea" id="Q9i-z4-AaO"/>
                     </view>
                     <connections>
+                        <outlet property="CallLabel" destination="p4J-Fn-yQB" id="enH-DS-Mei"/>
                         <outlet property="Flash" destination="CoP-Ol-01B" id="ILW-nD-gnN"/>
                         <outlet property="districtButton" destination="AXm-XJ-hbE" id="Poe-d9-Cbp"/>
                         <outlet property="messageButton" destination="pNy-36-jSx" id="TsF-Sj-2a8"/>

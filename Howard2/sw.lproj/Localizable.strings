@@ -11,3 +11,46 @@
 "News" = "Habari";
 "Help" = "Msaada";
 "Logout" = "Kuingia";
+
+//------------------------------------------------------------------------------------
+
+//CALLSCREEN LOCALIZATIONS
+"District 1" = "Wilaya 1";
+"District 2" = "Wilaya 2";
+"Message" = "Ujumbe";
+"Click to Call" = "Bofya ili Uitane";
+
+//------------------------------------------------------------------------------------
+
+//ASKHOWARD LOCALIZATIONS
+"Do you have any questions?" = "Una maswali yoyote?";
+"Click to Let Me Know" = "Bofya ili Nipate kujua";
+
+//------------------------------------------------------------------------------------
+
+//CHECKLIST LOCALIZATIONS
+"You May Choose 6" = "Unaweza kuchagua 6";
+
+//------------------------------------------------------------------------------------
+
+//NEWS LOCALIZATIONS
+"Local News" = "Habari za Mitaa";
+"Global News" = "Habari za Global";
+"Seven Days" = "Siku saba";
+"Burlington Free Press" = "Burlington Free Press";
+"WCAX" = "WCAX";
+"My Champlain Valley" = "Mto wangu wa Champlain";
+"News10" = "Habari10";
+"VPR" = "VPR";
+"CNN" = "CNN";
+"Aljazeera" = "Aljazeera";
+"ABC" = "ABC";
+"Wall Street Journal" = "Wall Street Journal";
+"NPR" = "NPR";
+"Reuters" = "Reuters";
+"The Associated Press" = "The Associated Press";
+"Huffington Post" = "Huffington Post";
+"BBC" = "BBC";
+"Washington Post" = "Washington Post";
+"The Guardian" = "Mlezi";
+//------------------------------------------------------------------------------------

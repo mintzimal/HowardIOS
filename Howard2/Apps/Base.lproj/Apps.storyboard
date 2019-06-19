@@ -192,6 +192,7 @@
                         <outlet property="AppSix" destination="HNs-Kx-p8q" id="Uz5-eK-yVy"/>
                         <outlet property="AppThree" destination="miS-dB-cr7" id="Fna-H3-LVO"/>
                         <outlet property="AppTwo" destination="p2S-Qp-Lqj" id="Bcj-iv-SKT"/>
+                        <outlet property="AppsLabel" destination="T0W-Um-MPA" id="GrB-GI-ow3"/>
                         <outlet property="LabelFive" destination="zEn-BY-Kfc" id="L1h-9H-JLY"/>
                         <outlet property="LabelFour" destination="t5B-Iz-S9s" id="scf-ib-0Ql"/>
                         <outlet property="LabelOne" destination="5S8-x8-Qht" id="3By-xF-rHa"/>

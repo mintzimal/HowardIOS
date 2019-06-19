@@ -11,3 +11,46 @@
 "News" = "ニュース";
 "Help" = "助けて";
 "Logout" = "ログアウト";
+
+//------------------------------------------------------------------------------------
+
+//CALLSCREEN LOCALIZATIONS
+"District 1" = "1区";
+"District 2" = "2区";
+"Message" = "メッセージ";
+"Click to Call" = "電話するにはクリック";
+
+//------------------------------------------------------------------------------------
+
+//ASKHOWARD LOCALIZATIONS
+"Do you have any questions?" = "何か質問がありますか？";
+"Click to Let Me Know" = "クリックして私に知らせて";
+
+//------------------------------------------------------------------------------------
+
+//CHECKLIST LOCALIZATIONS
+"You May Choose 6" = "あなたが選ぶかもしれません6";
+
+//------------------------------------------------------------------------------------
+
+//NEWS LOCALIZATIONS
+"Local News" = "地元のニュース";
+"Global News" = "グローバルニュース";
+"Seven Days" = "七日間";
+"Burlington Free Press" = "バーリントンフリープレス";
+"WCAX" = "WCAX";
+"My Champlain Valley" = "私のシャンプレーンバレー";
+"News10" = "ニュース10";
+"VPR" = "VPR";
+"CNN" = "CNN";
+"Aljazeera" = "アルジャジーラ";
+"ABC" = "ABC";
+"Wall Street Journal" = "ウォールストリートジャーナルr";
+"NPR" = "NPR";
+"Reuters" = "ロイター";
+"The Associated Press" = "関連付けられているプレス";
+"Huffington Post" = "ハフィントンポスト";
+"BBC" = "BBC";
+"Washington Post" = "ワシントンポスト";
+"The Guardian" = "保護者";
+//------------------------------------------------------------------------------------

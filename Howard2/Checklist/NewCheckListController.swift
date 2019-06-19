@@ -59,7 +59,7 @@ class NewCheckListController: UITableViewController {
         }
         
         override func tableView(_ tableView: UITableView, titleForHeaderInSection section: Int) -> String? {
-            return "Click to Select Which Apps to Show (You may choose 6)"
+            return "You May Choose 6".localized()
         }
         
         override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {

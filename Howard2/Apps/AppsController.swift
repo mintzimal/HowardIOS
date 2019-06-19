@@ -36,6 +36,9 @@ class AppsController: UIViewController, SFSafariViewControllerDelegate {
     @IBOutlet weak var LabelFive: UILabel!
     @IBOutlet weak var LabelSix: UILabel!
     
+    @IBOutlet weak var AppsLabel: UILabel!
+    
+    
     var arrayOfApps = [
         appStruct(id: 0, title: "Medication Manager", text: "Helpful daily reminders", image: "PillReminder.png"),
         appStruct(id: 1, title: "Google Calender", text: "So everything is in one place",image: "Calender.png"),
@@ -233,6 +236,9 @@ class AppsController: UIViewController, SFSafariViewControllerDelegate {
         AppFour.layer.borderWidth = 3
         AppFive.layer.borderWidth = 3
         AppSix.layer.borderWidth = 3
+        
+        AppsLabel.adjustsFontSizeToFitWidth = true;
+        AppsLabel.text = "Apps".localized()
         
         }
 

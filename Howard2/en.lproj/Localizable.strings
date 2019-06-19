@@ -12,6 +12,27 @@
 "Help" = "Help";
 "Logout" = "Logout";
 
+//------------------------------------------------------------------------------------
+
+//CALLSCREEN LOCALIZATIONS
+"District 1" = "District 1";
+"District 2" = "District 2";
+"Message" = "Message";
+"Click to Call" = "Click to Call";
+
+//------------------------------------------------------------------------------------
+
+//ASKHOWARD LOCALIZATIONS
+"Do you have any questions?" = "Do you have any questions?";
+"Click to Let Me Know" = "Click to Let Me Know";
+
+//------------------------------------------------------------------------------------
+
+//CHECKLIST LOCALIZATIONS
+"You May Choose 6" = "You May Choose 6";
+
+//------------------------------------------------------------------------------------
+
 //APP TITLES AND DESCRIPTION LOCALIZATIONS
 "Medication Manager" = "Medication Manager";
 "Helpful daily reminders" = "Helpful daily reminders";
@@ -83,20 +104,5 @@
 "Washington Post" = "Washington Post";
 "The Guardian" = "The Guardian";
 //------------------------------------------------------------------------------------
-
-//CALLSCREEN LOCALIZATIONS
-"District 1" = "District 1";
-"District 2" = "District 2";
-
-//------------------------------------------------------------------------------------
-
-//CHECKLIST LOCALIZATIONS
-"Click to Select Which Apps to Show (You may choose 6)" = "Click to Select Which Apps to Show (You may choose 6)";
-
-//------------------------------------------------------------------------------------
-
-//NEWS CHECKLIST LOCALIZATIONS
-"Click to Select Which News to Show (You may choose 6)" = "Click to Select Which News to Show (You may choose 6)";
-
 
 

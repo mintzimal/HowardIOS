@@ -13,6 +13,8 @@ class AskHowardController: UIViewController, MFMailComposeViewControllerDelegate
     
     @IBOutlet weak var homeButton: UIButton!
     @IBOutlet weak var emailButton: UIButton!
+    @IBOutlet weak var QuestionLabel: UILabel!
+    
     
     @IBAction func sendMail(_ sender: Any) {
         
@@ -44,6 +46,13 @@ class AskHowardController: UIViewController, MFMailComposeViewControllerDelegate
         super.viewDidLoad()
         
         emailButton.layer.cornerRadius = 15
+        
+        emailButton.titleLabel?.adjustsFontSizeToFitWidth = true
+        emailButton.setTitle("Click to Let Me Know".localized(), for: .normal)
+        
+        QuestionLabel.adjustsFontSizeToFitWidth = true
+        QuestionLabel.text = "Do you have any questions?".localized()
+        
         
         // Do any additional setup after loading the view.
     }

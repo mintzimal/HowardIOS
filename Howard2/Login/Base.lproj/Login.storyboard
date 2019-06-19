@@ -245,10 +245,6 @@
                                             <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="byO-Fg-Hl6">
                                                 <rect key="frame" x="100" y="69" width="214" height="112"/>
                                                 <color key="backgroundColor" red="0.33487445119999998" green="0.40583652260000003" blue="0.69807046650000004" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
-                                                <constraints>
-                                                    <constraint firstAttribute="width" constant="214" id="Hmz-9c-x4V"/>
-                                                    <constraint firstAttribute="height" constant="89" id="k3n-Hj-bEP"/>
-                                                </constraints>
                                                 <fontDescription key="fontDescription" name="GeezaPro-Bold" family="Geeza Pro" pointSize="55"/>
                                                 <state key="normal" title="Submit">
                                                     <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
@@ -261,6 +257,18 @@
                                                 <rect key="frame" x="-30" y="-19" width="170" height="306"/>
                                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                             </imageView>
+                                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="7ZK-PQ-DiA">
+                                                <rect key="frame" x="158" y="189" width="98" height="90"/>
+                                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                <color key="backgroundColor" red="0.33487445119999998" green="0.40583652260000003" blue="0.69807046650000004" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                                <state key="normal" image="backArrow.png">
+                                                    <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                </state>
+                                                <connections>
+                                                    <action selector="SubmitButton:" destination="nHa-AQ-h2e" eventType="touchUpInside" id="wbM-8L-fAZ"/>
+                                                    <segue destination="EWh-nd-vIQ" kind="show" id="Mqm-Zu-9lo"/>
+                                                </connections>
+                                            </button>
                                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="peeking reverse.png" translatesAutoresizingMaskIntoConstraints="NO" id="DlL-3m-Hgg">
                                                 <rect key="frame" x="274" y="-19" width="170" height="306"/>
                                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
@@ -324,9 +332,18 @@
             </objects>
             <point key="canvasLocation" x="709" y="155"/>
         </scene>
+        <!--LaunchScreen-->
+        <scene sceneID="YNo-fs-xA9">
+            <objects>
+                <viewControllerPlaceholder storyboardName="LaunchScreen" referencedIdentifier="LaunchScreen" id="EWh-nd-vIQ" sceneMemberID="viewController"/>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="THQ-Rr-XvJ" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="137" y="571"/>
+        </scene>
     </scenes>
     <resources>
         <image name="Main" width="612" height="331"/>
+        <image name="backArrow.png" width="160" height="160"/>
         <image name="peeking reverse.png" width="216" height="233"/>
         <image name="peeking.png" width="216" height="233"/>
     </resources>

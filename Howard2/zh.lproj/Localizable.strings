@@ -11,3 +11,46 @@
 "News" = "新闻";
 "Help" = "救命";
 "Logout" = "登出";
+
+//------------------------------------------------------------------------------------
+
+//CALLSCREEN LOCALIZATIONS
+"District 1" = "1区";
+"District 2" = "2区";
+"Message" = "信息";
+"Click to Call" = "点击通话";
+
+//------------------------------------------------------------------------------------
+
+//ASKHOWARD LOCALIZATIONS
+"Do you have any questions?" = "你有任何问题吗？";
+"Click to Let Me Know" = "点击让我知道";
+
+//------------------------------------------------------------------------------------
+
+//CHECKLIST LOCALIZATIONS
+"You May Choose 6" = "你可以选择6";
+
+//------------------------------------------------------------------------------------
+
+//NEWS LOCALIZATIONS
+"Local News" = "本地新闻";
+"Global News" = "全球新闻";
+"Seven Days" = "七天";
+"Burlington Free Press" = "伯灵顿自由新闻";
+"WCAX" = "WCAX";
+"My Champlain Valley" = "我的Champlain山谷";
+"News10" = "新闻10";
+"VPR" = "VPR";
+"CNN" = "美国有线电视新闻网";
+"Aljazeera" = "半岛电视台";
+"ABC" = "ABC";
+"Wall Street Journal" = "华尔街日报";
+"NPR" = "美国国家公共电台";
+"Reuters" = "路透社";
+"The Associated Press" = "相关的新闻";
+"Huffington Post" = "赫芬顿邮报";
+"BBC" = "英国广播公司";
+"Washington Post" = "华盛顿邮报";
+"The Guardian" = "守护者";
+//------------------------------------------------------------------------------------

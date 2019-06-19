@@ -13,9 +13,11 @@ import AVFoundation
 class NewCallScreenController: UIViewController {
     
     @IBOutlet weak var districtButton: UIButton!
+    @IBOutlet weak var messageButton: UIButton!
+    @IBOutlet weak var CallLabel: UILabel!
+    
     let District = UserDefaults.standard.integer(forKey: "District")
     
-    @IBOutlet weak var messageButton: UIButton!
     @IBAction func callDistrictFunction(_ sender: Any) {
         if(District == 1){
             print("Calling District One")
@@ -35,12 +37,20 @@ class NewCallScreenController: UIViewController {
         districtButton.layer.cornerRadius = 50
         messageButton.layer.cornerRadius = 50
         
+        messageButton.titleLabel?.adjustsFontSizeToFitWidth = true
+        messageButton.setTitle("Message".localized(), for: .normal)
+        
+        districtButton.titleLabel?.adjustsFontSizeToFitWidth = true
+        
+        CallLabel.adjustsFontSizeToFitWidth = true
+        CallLabel.text = "Click to Call".localized()
+        
         if(District == 1){
-            districtButton.setTitle("District 1", for: .normal)
+            districtButton.setTitle("District 1".localized(), for: .normal)
         }
         
         if(District == 2){
-            districtButton.setTitle("District 2", for: .normal)
+            districtButton.setTitle("District 2".localized(), for: .normal)
         }
         
         
