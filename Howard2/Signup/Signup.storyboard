@@ -244,32 +244,13 @@
                                     </view>
                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Ch6-n0-cDa" userLabel="Bottom">
                                         <rect key="frame" x="0.0" y="612" width="414" height="231"/>
-                                        <subviews>
-                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="evR-ki-eBN">
-                                                <rect key="frame" x="100" y="37" width="187" height="89"/>
-                                                <color key="backgroundColor" red="0.33487445119999998" green="0.40583652260000003" blue="0.69807046650000004" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
-                                                <fontDescription key="fontDescription" name="GeezaPro-Bold" family="Geeza Pro" pointSize="55"/>
-                                                <state key="normal" title="Submit">
-                                                    <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                                </state>
-                                                <connections>
-                                                    <action selector="SubmitButton:" destination="cdn-A1-9MT" eventType="touchUpInside" id="d37-nE-VTT"/>
-                                                </connections>
-                                            </button>
-                                        </subviews>
                                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                        <constraints>
-                                            <constraint firstItem="evR-ki-eBN" firstAttribute="leading" secondItem="Ch6-n0-cDa" secondAttribute="leading" constant="100" id="UoB-H9-Em4"/>
-                                            <constraint firstAttribute="bottom" secondItem="evR-ki-eBN" secondAttribute="bottom" constant="105" id="YQR-c3-c8R"/>
-                                            <constraint firstItem="evR-ki-eBN" firstAttribute="centerY" secondItem="Ch6-n0-cDa" secondAttribute="centerY" constant="-34" id="glW-BU-ViV"/>
-                                        </constraints>
                                     </view>
                                 </subviews>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <constraints>
                                     <constraint firstItem="8g1-q5-J0D" firstAttribute="top" secondItem="el4-fG-jRt" secondAttribute="top" id="2Rx-pS-2kv"/>
                                     <constraint firstItem="8g1-q5-J0D" firstAttribute="leading" secondItem="el4-fG-jRt" secondAttribute="leading" id="6Oa-cs-fMm"/>
-                                    <constraint firstItem="evR-ki-eBN" firstAttribute="top" secondItem="bSl-t0-hZs" secondAttribute="bottom" constant="59.5" id="AGl-5V-D03"/>
                                     <constraint firstAttribute="trailing" secondItem="8g1-q5-J0D" secondAttribute="trailing" id="KC1-7J-uqd"/>
                                     <constraint firstItem="Ch6-n0-cDa" firstAttribute="top" secondItem="bSl-t0-hZs" secondAttribute="bottom" constant="22.5" id="Pkp-hI-owB"/>
                                     <constraint firstItem="bSl-t0-hZs" firstAttribute="centerX" secondItem="el4-fG-jRt" secondAttribute="centerX" id="R7q-8B-M6d"/>
@@ -280,6 +261,17 @@
                                     <constraint firstItem="Ch6-n0-cDa" firstAttribute="leading" secondItem="el4-fG-jRt" secondAttribute="leading" id="unh-Kq-eyp"/>
                                 </constraints>
                             </view>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="evR-ki-eBN">
+                                <rect key="frame" x="114" y="660" width="187" height="89"/>
+                                <color key="backgroundColor" red="0.33487445119999998" green="0.40583652260000003" blue="0.69807046650000004" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                <fontDescription key="fontDescription" name="GeezaPro-Bold" family="Geeza Pro" pointSize="55"/>
+                                <state key="normal" title="Submit">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </state>
+                                <connections>
+                                    <action selector="SubmitButton:" destination="cdn-A1-9MT" eventType="touchUpInside" id="d37-nE-VTT"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <constraints>
@@ -289,8 +281,11 @@
                             <constraint firstItem="no3-Tj-giC" firstAttribute="trailing" secondItem="Ch6-n0-cDa" secondAttribute="trailing" id="65H-FN-eI0"/>
                             <constraint firstItem="el4-fG-jRt" firstAttribute="top" secondItem="aiU-zA-Q98" secondAttribute="topMargin" constant="-27" id="Rqr-Ks-ECv"/>
                             <constraint firstItem="el4-fG-jRt" firstAttribute="leading" secondItem="aiU-zA-Q98" secondAttribute="leading" id="WYv-jI-atN"/>
+                            <constraint firstItem="evR-ki-eBN" firstAttribute="leading" secondItem="aiU-zA-Q98" secondAttribute="leading" constant="114" id="jqv-g9-VGG"/>
                             <constraint firstAttribute="trailing" secondItem="el4-fG-jRt" secondAttribute="trailing" id="niw-Qa-Usb"/>
+                            <constraint firstAttribute="bottom" secondItem="evR-ki-eBN" secondAttribute="bottom" constant="147" id="pSp-4H-Ia7"/>
                             <constraint firstItem="el4-fG-jRt" firstAttribute="centerY" secondItem="aiU-zA-Q98" secondAttribute="centerY" id="qdt-fJ-QDe"/>
+                            <constraint firstItem="evR-ki-eBN" firstAttribute="centerY" secondItem="aiU-zA-Q98" secondAttribute="centerY" constant="256.5" id="uHZ-5W-xCA"/>
                             <constraint firstItem="Ch6-n0-cDa" firstAttribute="centerX" secondItem="no3-Tj-giC" secondAttribute="centerX" id="zZf-eF-u54"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="no3-Tj-giC"/>
