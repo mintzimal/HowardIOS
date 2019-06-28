@@ -54,3 +54,53 @@
 "Washington Post" = "ਵਾਸ਼ਿੰਗਟਨ ਪੋਸਟ";
 "The Guardian" = "ਗਾਰਡੀਅਨ";
 //------------------------------------------------------------------------------------
+
+//APP TITLES AND DESCRIPTION LOCALIZATIONS
+"Medication Manager" = "ਦਵਾਈ ਪ੍ਰਬੰਧਕ";
+"Helpful daily reminders" = "ਸਹਾਇਕ ਰੋਜ਼ਾਨਾ ਰੀਮਾਈਂਡਰ";
+
+"Google Calender" = "ਗੂਗਲ ਕੈਲੰਡਰ";
+"So everything is in one place" = "ਇਸ ਲਈ ਹਰ ਚੀਜ਼ ਇਕ ਜਗ੍ਹਾ ਤੇ ਹੈ";
+
+"Learn Something New" = "ਕੁਝ ਨਵਾਂ ਸਿੱਖੋ";
+"New Tricks for Everyone" = "ਹਰ ਕੋਈ ਲਈ ਨਵੀਂ ਟਰਿੱਕ";
+
+"Youtube" = "ਯੂਟਿਊਬ";
+"Watch YouTube right from this app!" = "ਇਸ ਐਪ ਤੋਂ ਬਿਲਕੁਲ ਯੂਟਿਊਬ ਦੇਖੋ!";
+
+"Xylophone" = "ਜ਼ੀਲਾਫੋਨ";
+"Mess with a basic instrument" = "ਇੱਕ ਬੁਨਿਆਦੀ ਸਾਧਨ ਦੇ ਨਾਲ ਮਧ";
+
+"GMT Bus Guide" = "GMT ਬੱਸ ਗਾਈਡ";
+"See when transportation services arrives" = "ਦੇਖੋ ਕਿ ਆਵਾਜਾਈ ਸੇਵਾਵਾਂ ਕਦੋਂ ਆਉਂਦੀਆਂ ਹਨ";
+
+"Higher Ground Live Music" = "ਹਾਈ ਗਰਾਊਂਡ ਲਾਈਵ ਸੰਗੀਤ";
+"Check performance schedules" = "ਪ੍ਰਦਰਸ਼ਨ ਕਾਰਜਕ੍ਰਮ ਦੀ ਜਾਂਚ ਕਰੋ";
+
+"Messages" = "ਸੁਨੇਹੇ";
+"Receive messages from your safety connection specialist" = "ਆਪਣੇ ਸੁਰੱਖਿਆ ਕਨੈਕਸ਼ਨ ਮਾਹਿਰ ਤੋਂ ਸੰਦੇਸ਼ ਪ੍ਰਾਪਤ ਕਰੋ";
+"Motivational" = "ਪ੍ਰੇਰਕ";
+"Get motivational messages everyday!" = "ਹਰ ਰੋਜ਼ ਪ੍ਰੇਰਕ ਸੰਦੇਸ਼ ਪ੍ਰਾਪਤ ਕਰੋ!";
+
+"Text to Speech" = "ਟੈਕਸਟ ਤੋਂ ਸਪੀਚ";
+"Type what you want to vocalize" = "ਉਹ ਸ਼ਬਦ ਟਾਈਪ ਕਰੋ ਜੋ ਤੁਸੀਂ ਵੋਕਲ ਕਰਨਾ ਚਾਹੁੰਦੇ ਹੋ";
+
+"GMT Bus Schedule Links" = "GMT ਬੱਸ ਅਨੁਸੂਚੀ ਲਿੰਕ";
+"Displays information about city public transit" = "ਸ਼ਹਿਰ ਦੇ ਜਨਤਕ ਆਵਾਜਾਈ ਬਾਰੇ ਜਾਣਕਾਰੀ ਪ੍ਰਦਰਸ਼ਤ ਕਰਦੀ ਹੈ";
+"Flynn Show Schedule" = "ਫਲਾਈਨ ਸ਼ੋਅ ਅਨੁਸੂਚੀ";
+"Look at upcoming plays/performances" = "ਆਗਾਮੀ ਨਾਟਕ / ਪ੍ਰਦਰਸ਼ਨ ਦੇਖੋ";
+
+"Roxie Movie Schedule" = "ਰੋਜੀ ਮੂਵੀ ਸ਼ਡਿਊਲ";
+"Local movie theatre schedules" = "ਸਥਾਨਕ ਫਿਲਮ ਥੀਏਟਰ ਕਾਰਜਕ੍ਰਮ";
+
+"ECHO Science Center" = "ਈਕੋ ਵਿਗਿਆਨ ਕੇਂਦਰ";
+"See what's happening at the local aquarium" = "ਦੇਖੋ ਕਿ ਸਥਾਨਕ ਏਕੀਵੀਅਮ ਤੇ ਕੀ ਹੋ ਰਿਹਾ ਹੈ";
+"Burlington Weather" = "ਬਰਲਿੰਗਟਨ ਮੌਸਮ";
+"The Local Forcast" = "ਸਥਾਨਕ ਭਤੀਜਾ";
+
+"Howard Center Main Site" = "ਹਾਵਰਡ ਸੈਂਟਰ ਮੁੱਖ ਸਾਈਟ";
+"The Central Page for your HC Needs" = "ਤੁਹਾਡੇ ਐਚ ਸੀ ਦੀਆਂ ਲੋੜਾਂ ਲਈ ਕੇਂਦਰੀ ਪੰਨਾ";
+
+"Green Mountain Self Advocates" = "ਗ੍ਰੀਨ ਮਾਉਂਟੇਨ ਸੈਲਫ ਐਡਵੋਕੇਟਸ";
+"Everyday Dreams, Everyday Relationships, Everyday Pride" = "ਹਰ ਰੋਜ਼ ਦਾ ਸੁਪਨਾ, ਹਰ ਰੋਜ਼ ਦੇ ਰਿਸ਼ਤੇ, ਹਰ ਰੋਜ਼ ਦਾ ਮਾਣ";
+//-------------------------------------------------------------------------------------

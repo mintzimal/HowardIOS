@@ -54,3 +54,53 @@
 "Washington Post" = "ওয়াশিংটন পোস্ট";
 "The Guardian" = "অভিভাবক";
 //------------------------------------------------------------------------------------
+
+//APP TITLES AND DESCRIPTION LOCALIZATIONS
+"Medication Manager" = "ঔষধ ব্যবস্থাপক";
+"Helpful daily reminders" = "সহায়ক দৈনিক অনুস্মারক";
+
+"Google Calender" = "গুগল ক্যালেন্ডার";
+"So everything is in one place" = "তাই সবকিছু এক জায়গায় হয়";
+
+"Learn Something New" = "নতুন কিছু শেখ";
+"New Tricks for Everyone" = "প্রত্যেকের জন্য নতুন কৌশল";
+
+"Youtube" = "ইউটিউব";
+"Watch YouTube right from this app!" = "এই অ্যাপ্লিকেশন থেকে ডান ইউটিউব দেখুন!";
+
+"Xylophone" = "বাদ্যযন্ত্রবিশেষ";
+"Mess with a basic instrument" = "একটি মৌলিক উপকরণ সঙ্গে মেসেজ";
+
+"GMT Bus Guide" = "জিএমটি বাস গাইড";
+"See when transportation services arrives" = "পরিবহন সেবা আসে যখন দেখুন";
+
+"Higher Ground Live Music" = "উচ্চ গ্রাউন্ড লাইভ সঙ্গীত";
+"Check performance schedules" = "কর্মক্ষমতা সময়সূচী পরীক্ষা করুন";
+
+"Messages" = "বার্তা";
+"Receive messages from your safety connection specialist" = "আপনার নিরাপত্তা সংযোগ বিশেষজ্ঞ থেকে বার্তা গ্রহণ করুন";
+"Motivational" = "প্রেরণা";
+"Get motivational messages everyday!" = "প্রতিদিন প্রেরণামূলক বার্তা পান!";
+
+"Text to Speech" = "বক্তৃতা টেক্সট";
+"Type what you want to vocalize" = "আপনি কি বলতে চান টাইপ করুন";
+
+"GMT Bus Schedule Links" = "জিএমটি বাসের সময়সূচি লিংক";
+"Displays information about city public transit" = "শহর পাবলিক ট্রানজিট সম্পর্কে তথ্য প্রদর্শন করে";
+"Flynn Show Schedule" = "ফ্লিন শো সময়সূচী";
+"Look at upcoming plays/performances" = "আসন্ন নাটক / পারফরমেন্স তাকান";
+
+"Roxie Movie Schedule" = "রক্সি মুভি সময়সূচী";
+"Local movie theatre schedules" = "স্থানীয় সিনেমা থিয়েটার সময়সূচী";
+
+"ECHO Science Center" = "বিজ্ঞান কেন্দ্র প্রতিধ্বনি";
+"See what's happening at the local aquarium" = "স্থানীয় অ্যাকোয়ারিয়ামে কি ঘটছে তা দেখুন";
+"Burlington Weather" = "বার্লিংটন আবহাওয়া";
+"The Local Forcast" = "স্থানীয় ফরকাস্ট";
+
+"Howard Center Main Site" = "হাওয়ার্ড সেন্টার প্রধান সাইট";
+"The Central Page for your HC Needs" = "আপনার এইচসি জন্য কেন্দ্রীয় পাতা প্রয়োজন";
+
+"Green Mountain Self Advocates" = "গ্রীন মাউন্টেন সেল অ্যাডভোকেটস";
+"Everyday Dreams, Everyday Relationships, Everyday Pride" = "দৈনন্দিন স্বপ্ন, দৈনন্দিন সম্পর্ক, প্রতিদিনের গৌরব";
+//-------------------------------------------------------------------------------------

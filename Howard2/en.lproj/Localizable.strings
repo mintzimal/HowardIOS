@@ -33,6 +33,28 @@
 
 //------------------------------------------------------------------------------------
 
+//NEWS LOCALIZATIONS
+"Local News" = "Local News";
+"Global News" = "Global News";
+"Seven Days" = "Seven Days";
+"Burlington Free Press" = "Burlington Free Press";
+"WCAX" = "WCAX";
+"My Champlain Valley" = "My Champlain Valley";
+"News10" = "News10";
+"VPR" = "VPR";
+"CNN" = "CNN";
+"Aljazeera" = "Aljazeera";
+"ABC" = "ABC";
+"Wall Street Journal" = "Wall Street Journal";
+"NPR" = "NPR";
+"Reuters" = "Reuters";
+"The Associated Press" = "The Associated Press";
+"Huffington Post" = "Huffington Post";
+"BBC" = "BBC";
+"Washington Post" = "Washington Post";
+"The Guardian" = "The Guardian";
+//------------------------------------------------------------------------------------
+
 //APP TITLES AND DESCRIPTION LOCALIZATIONS
 "Medication Manager" = "Medication Manager";
 "Helpful daily reminders" = "Helpful daily reminders";
@@ -83,26 +105,6 @@
 "Everyday Dreams, Everyday Relationships, Everyday Pride" = "Everyday Dreams, Everyday Relationships, Everyday Pride";
 //-------------------------------------------------------------------------------------
 
-//NEWS LOCALIZATIONS
-"Local News" = "Local News";
-"Global News" = "Global News";
-"Seven Days" = "Seven Days";
-"Burlington Free Press" = "Burlington Free Press";
-"WCAX" = "WCAX";
-"My Champlain Valley" = "My Champlain Valley";
-"News10" = "News10";
-"VPR" = "VPR";
-"CNN" = "CNN";
-"Aljazeera" = "Aljazeera";
-"ABC" = "ABC";
-"Wall Street Journal" = "Wall Street Journal";
-"NPR" = "NPR";
-"Reuters" = "Reuters";
-"The Associated Press" = "The Associated Press";
-"Huffington Post" = "Huffington Post";
-"BBC" = "BBC";
-"Washington Post" = "Washington Post";
-"The Guardian" = "The Guardian";
-//------------------------------------------------------------------------------------
+
 
 
