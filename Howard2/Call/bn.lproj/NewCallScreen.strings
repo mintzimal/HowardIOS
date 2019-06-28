@@ -1,0 +1,23 @@
+
+/* Class = "UIButton"; normalTitle = "District #"; ObjectID = "AXm-XJ-hbE"; */
+"AXm-XJ-hbE.normalTitle" = "District #";
+
+/* Class = "UIButton"; normalTitle = "Button"; ObjectID = "CoP-Ol-01B"; */
+"CoP-Ol-01B.normalTitle" = "Button";
+
+/* Class = "UIButton"; normalTitle = "Back"; ObjectID = "PwB-lg-PtJ"; */
+"PwB-lg-PtJ.normalTitle" = "Back";
+
+/* Class = "UIButton"; normalTitle = "Button"; ObjectID = "fRk-WX-yX0"; */
+"fRk-WX-yX0.normalTitle" = "Button";
+
+/* Class = "UIButton"; normalTitle = "Button"; ObjectID = "sZK-sy-rEU"; */
+"sZK-sy-rEU.normalTitle" = "Button";
+
+//TO BE CHANGED HERE
+
+/* Class = "UILabel"; text = "Click to Call"; ObjectID = "p4J-Fn-yQB"; */
+"p4J-Fn-yQB.text" = "Click to Call";
+
+/* Class = "UIButton"; normalTitle = "Message"; ObjectID = "pNy-36-jSx"; */
+"pNy-36-jSx.normalTitle" = "Message";

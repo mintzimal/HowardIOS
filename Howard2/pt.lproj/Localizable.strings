@@ -1,0 +1,106 @@
+/* 
+  Localizable.strings
+  Howard2
+
+  Created by Noah Mintz Roberts on 6/19/19.
+  Copyright © 2019 William Risigo. All rights reserved.
+*/
+
+//MAIN LOCALIZATIONS
+"Apps" = "Apps";
+"News" = "Notícia";
+"Help" = "Socorro";
+"Logout" = "Sair";
+
+//------------------------------------------------------------------------------------
+
+//CALLSCREEN LOCALIZATIONS
+"District 1" = "Distrito 1";
+"District 2" = "Distrito 2";
+"Message" = "Mensagem";
+"Click to Call" = "Clique para chamar";
+
+//------------------------------------------------------------------------------------
+
+//ASKHOWARD LOCALIZATIONS
+"Do you have any questions?" = "Você tem alguma pergunta?";
+"Click to Let Me Know" = "Clique para me deixar saber";
+
+//------------------------------------------------------------------------------------
+
+//CHECKLIST LOCALIZATIONS
+"You May Choose 6" = "Você pode escolher 6";
+
+//------------------------------------------------------------------------------------
+
+//NEWS LOCALIZATIONS
+"Local News" = "Notícias locais";
+"Global News" = "Notícias Globais";
+"Seven Days" = "Sete dias";
+"Burlington Free Press" = "Imprensa livre de Burlington";
+"WCAX" = "WCAX";
+"My Champlain Valley" = "Meu Vale Champlain";
+"News10" = "Notícias10";
+"VPR" = "VPR";
+"CNN" = "CNN";
+"Aljazeera" = "Al Jazeera";
+"ABC" = "ABC";
+"Wall Street Journal" = "Wall Street Journal";
+"NPR" = "NPR";
+"Reuters" = "Reuters";
+"The Associated Press" = "The Associated Press";
+"Huffington Post" = "Postagem Huffington";
+"BBC" = "BBC";
+"Washington Post" = "Washington Post";
+"The Guardian" = "O guardião";
+//------------------------------------------------------------------------------------
+
+//APP TITLES AND DESCRIPTION LOCALIZATIONS
+"Medication Manager" = "Gerente de Medicação";
+"Helpful daily reminders" = "Lembretes diários úteis";
+
+"Google Calender" = "calendário do Google";
+"So everything is in one place" = "Então tudo está em um só lugar";
+
+"Learn Something New" = "Aprenda algo novo";
+"New Tricks for Everyone" = "Novos truques para todos";
+
+"Youtube" = "Youtube";
+"Watch YouTube right from this app!" = "Assista Youtube diretamente deste app!";
+
+"Xylophone" = "Xilofone";
+"Mess with a basic instrument" = "Mexer com um instrumento básico";
+
+"GMT Bus Guide" = "Guia de Ônibus GMT";
+"See when transportation services arrives" = "Veja quando chega o serviço de transporte";
+
+"Higher Ground Live Music" = "Música ao vivo mais alta";
+"Check performance schedules" = "Verifique os horários de desempenho";
+
+"Messages" = "Mensagens";
+"Receive messages from your safety connection specialist" = "Receba mensagens do seu especialista em conexão de segurança";
+"Motivational" = "Motivacional";
+"Get motivational messages everyday!" = "Receba mensagens motivacionais todos os dias!";
+
+"Text to Speech" = "Texto para fala";
+"Type what you want to vocalize" = "Digite o que você quer vocalizar";
+
+"GMT Bus Schedule Links" = "Links da agenda do barramento GMT";
+"Displays information about city public transit" = "Exibe informações sobre o transporte público da cidade";
+"Flynn Show Schedule" = "Horário Show Flynn";
+"Look at upcoming plays/performances" = "Veja as próximas peças / performances";
+
+"Roxie Movie Schedule" = "Horário do Filme Roxie";
+"Local movie theatre schedules" = "Horários da sala de cinema local";
+
+"ECHO Science Center" = "Centro de Ciências ECHO";
+"See what's happening at the local aquarium" = "Veja o que está acontecendo no aquário local";
+"Burlington Weather" = "Tempo Burlington";
+"The Local Forcast" = "O Forcast Local";
+
+"Howard Center Main Site" = "Site principal do Howard Center";
+"The Central Page for your HC Needs" = "A página central para suas necessidades de HC";
+
+"Green Mountain Self Advocates" = "auto defensores da montanha verde";
+"Everyday Dreams, Everyday Relationships, Everyday Pride" = "Todos os dias sonhos, todos os dias relacionamentos, todos os dias orgulho";
+//-------------------------------------------------------------------------------------

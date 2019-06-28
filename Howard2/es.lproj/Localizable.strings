@@ -1,0 +1,106 @@
+/* 
+  Localizable.strings
+  Howard2
+
+  Created by Noah Mintz Roberts on 6/19/19.
+  Copyright © 2019 William Risigo. All rights reserved.
+*/
+
+//MAIN LOCALIZATIONS
+"Apps" = "Aplicaciones";
+"News" = "Noticias";
+"Help" = "Ayuda";
+"Logout" = "Cerrar sesión";
+
+//------------------------------------------------------------------------------------
+
+//CALLSCREEN LOCALIZATIONS
+"District 1" = "Distrito 1";
+"District 2" = "Distrito 2";
+"Message" = "Mensaje";
+"Click to Call" = "Haz clic para llamar";
+
+//------------------------------------------------------------------------------------
+
+//ASKHOWARD LOCALIZATIONS
+"Do you have any questions?" = "¿Tiene usted alguna pregunta?";
+"Click to Let Me Know" = "Haga clic para dejarme saber";
+
+//------------------------------------------------------------------------------------
+
+//CHECKLIST LOCALIZATIONS
+"You May Choose 6" = "Puedes elegir 6";
+
+//------------------------------------------------------------------------------------
+
+//NEWS LOCALIZATIONS
+"Local News" = "Noticias locales";
+"Global News" = "Noticias globales";
+"Seven Days" = "Siete días";
+"Burlington Free Press" = "Prensa libre de Burlington";
+"WCAX" = "WCAX";
+"My Champlain Valley" = "Mi valle de champlain";
+"News10" = "Noticias10";
+"VPR" = "VPR";
+"CNN" = "CNN";
+"Aljazeera" = "Aljazeera";
+"ABC" = "ABC";
+"Wall Street Journal" = "Wall Street Journal";
+"NPR" = "NPR";
+"Reuters" = "Reuters";
+"The Associated Press" = "La Prensa Asociada";
+"Huffington Post" = "Correo Huffington";
+"BBC" = "BBC";
+"Washington Post" = "El Correo de Washington";
+"The Guardian" = "El guardián";
+//------------------------------------------------------------------------------------
+
+//APP TITLES AND DESCRIPTION LOCALIZATIONS
+"Medication Manager" = "Gerente de medicación";
+"Helpful daily reminders" = "Recordatorios diarios útiles";
+
+"Google Calender" = "calendario de Google";
+"So everything is in one place" = "Así que todo está en un solo lugar.";
+
+"Learn Something New" = "Aprende algo nuevo";
+"New Tricks for Everyone" = "Nuevos trucos para todos";
+
+"Youtube" = "Youtube";
+"Watch YouTube right from this app!" = "¡Mira Youtube desde esta aplicación!";
+
+"Xylophone" = "Xilófono";
+"Mess with a basic instrument" = "Lío con un instrumento básico.";
+
+"GMT Bus Guide" = "Guía de autobuses GMT";
+"See when transportation services arrives" = "Ver cuando llega el servicio de transporte.";
+
+"Higher Ground Live Music" = "Música en vivo más alta tierra";
+"Check performance schedules" = "Consultar horarios de desempeño";
+
+"Messages" = "Mensajes";
+"Receive messages from your safety connection specialist" = "Reciba mensajes de su especialista en conexiones de seguridad.";
+"Motivational" = "Motivacional";
+"Get motivational messages everyday!" = "Recibe mensajes de motivación todos los días!";
+
+"Text to Speech" = "Texto a voz";
+"Type what you want to vocalize" = "Escribe lo que quieras vocalizar";
+
+"GMT Bus Schedule Links" = "Enlaces del horario de autobuses de GMT";
+"Displays information about city public transit" = "Muestra información sobre el transporte público de la ciudad.";
+"Flynn Show Schedule" = "Flynn Mostrar Horario";
+"Look at upcoming plays/performances" = "Mira las próximas jugadas / actuaciones";
+
+"Roxie Movie Schedule" = "Horario de la película de Roxie";
+"Local movie theatre schedules" = "Horarios de cine local";
+
+"ECHO Science Center" = "Centro de Ciencias ECHO";
+"See what's happening at the local aquarium" = "Vea lo que está pasando en el acuario local";
+"Burlington Weather" = "Burlington Tiempo";
+"The Local Forcast" = "El local forcast";
+
+"Howard Center Main Site" = "Howard Center Sitio Principal";
+"The Central Page for your HC Needs" = "La página central para sus necesidades de HC";
+
+"Green Mountain Self Advocates" = "Autodefensores de Green Mountain";
+"Everyday Dreams, Everyday Relationships, Everyday Pride" = "Sueños cotidianos, relaciones cotidianas, orgullo cotidiano";
+//-------------------------------------------------------------------------------------

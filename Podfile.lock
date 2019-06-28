@@ -67,6 +67,7 @@ PODS:
     - GoogleUtilities/Logger
   - GTMSessionFetcher/Core (1.2.1)
   - leveldb-library (1.20)
+  - Localize-Swift (2.0.0)
   - nanopb (0.3.901):
     - nanopb/decode (= 0.3.901)
     - nanopb/encode (= 0.3.901)
@@ -79,6 +80,7 @@ DEPENDENCIES:
   - Firebase
   - Firebase/Auth
   - Firebase/Database
+  - Localize-Swift (~> 2.0)
   - SVProgressHUD
 
 SPEC REPOS:
@@ -95,6 +97,7 @@ SPEC REPOS:
     - GoogleUtilities
     - GTMSessionFetcher
     - leveldb-library
+    - Localize-Swift
     - nanopb
     - SVProgressHUD
 
@@ -111,9 +114,10 @@ SPEC CHECKSUMS:
   GoogleUtilities: 04fce34bcd5620c1ee76fb79172105c74a4df335
   GTMSessionFetcher: 32aeca0aa144acea523e1c8e053089dec2cb98ca
   leveldb-library: 08cba283675b7ed2d99629a4bc5fd052cd2bb6a5
+  Localize-Swift: c798ec9286494866f7068f85f7c71283ac5bdab4
   nanopb: 2901f78ea1b7b4015c860c2fdd1ea2fee1a18d48
   SVProgressHUD: 1428aafac632c1f86f62aa4243ec12008d7a51d6
 
-PODFILE CHECKSUM: 332074515665a23a5aa6e621e7d4b9f74c04a6ae
+PODFILE CHECKSUM: bbf51495b8173ac0f2d61a6eb16c8b289dba6e10
 
 COCOAPODS: 1.6.1

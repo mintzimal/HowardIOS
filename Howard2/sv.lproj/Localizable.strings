@@ -1,0 +1,106 @@
+/* 
+  Localizable.strings
+  Howard2
+
+  Created by Noah Mintz Roberts on 6/19/19.
+  Copyright © 2019 William Risigo. All rights reserved.
+*/
+
+//MAIN LOCALIZATIONS
+"Apps" = "Apps";
+"News" = "Nyheter";
+"Help" = "Hjälp";
+"Logout" = "Logga ut";
+
+//------------------------------------------------------------------------------------
+
+//CALLSCREEN LOCALIZATIONS
+"District 1" = "Distrikt 1";
+"District 2" = "Distrikt 2";
+"Message" = "Meddelande";
+"Click to Call" = "Klicka för att ringa";
+
+//------------------------------------------------------------------------------------
+
+//ASKHOWARD LOCALIZATIONS
+"Do you have any questions?" = "Har du några frågor?";
+"Click to Let Me Know" = "Klicka för att låta mig veta";
+
+//------------------------------------------------------------------------------------
+
+//CHECKLIST LOCALIZATIONS
+"You May Choose 6" = "Du kan välja 6";
+
+//------------------------------------------------------------------------------------
+
+//NEWS LOCALIZATIONS
+"Local News" = "Lokala nyheter";
+"Global News" = "Global News";
+"Seven Days" = "Sju dagar";
+"Burlington Free Press" = "Burlington Free Press";
+"WCAX" = "WCAX";
+"My Champlain Valley" = "Min Champlain Valley";
+"News10" = "News10";
+"VPR" = "VPR";
+"CNN" = "CNN";
+"Aljazeera" = "Aljazeera";
+"ABC" = "ABC";
+"Wall Street Journal" = "Wall Street Journal";
+"NPR" = "NPR";
+"Reuters" = "Reuters";
+"The Associated Press" = "Den associerade pressen";
+"Huffington Post" = "Huffington Post";
+"BBC" = "BBC";
+"Washington Post" = "Washington Post";
+"The Guardian" = "Väktaren";
+//------------------------------------------------------------------------------------
+
+//APP TITLES AND DESCRIPTION LOCALIZATIONS
+"Medication Manager" = "Medicinsk Chef";
+"Helpful daily reminders" = "Användbara dagliga påminnelser";
+
+"Google Calender" = "Google Kalender";
+"So everything is in one place" = "Så allt är på ett ställe";
+
+"Learn Something New" = "Lära Något Nytt";
+"New Tricks for Everyone" = "Nya tricks för alla";
+
+"Youtube" = "Youtube";
+"Watch YouTube right from this app!" = "Titta på Youtube direkt från den här appen!";
+
+"Xylophone" = "Xylofon";
+"Mess with a basic instrument" = "Mess med ett grundläggande instrument";
+
+"GMT Bus Guide" = "GMT Bus Guide";
+"See when transportation services arrives" = "Se när transporttjänster kommer fram";
+
+"Higher Ground Live Music" = "Högre Mark Levande Musik";
+"Check performance schedules" = "Kontrollera prestanda scheman";
+
+"Messages" = "Meddelanden";
+"Receive messages from your safety connection specialist" = "Ta emot meddelanden från din säkerhetsanslutnings specialist";
+"Motivational" = "Motiverande";
+"Get motivational messages everyday!" = "Få motivationsmeddelanden varje dag!";
+
+"Text to Speech" = "Text Till Tal";
+"Type what you want to vocalize" = "Skriv vad du vill vocalize";
+
+"GMT Bus Schedule Links" = "GMT Buss Schema Länkar";
+"Displays information about city public transit" = "Visar information om stads kollektivtrafik";
+"Flynn Show Schedule" = "Flynn Show Schema";
+"Look at upcoming plays/performances" = "Titta på kommande spel / föreställningar";
+
+"Roxie Movie Schedule" = "Roxie Film Schema";
+"Local movie theatre schedules" = "Lokala biografplaner";
+
+"ECHO Science Center" = "ECHO Vetenskapscenter";
+"See what's happening at the local aquarium" = "Se vad som händer på det lokala akvariet";
+"Burlington Weather" = "Burlington Väder";
+"The Local Forcast" = "Den lokala Forcast";
+
+"Howard Center Main Site" = "Howard centrum huvudplats";
+"The Central Page for your HC Needs" = "Den centrala sidan för dina HC behov";
+
+"Green Mountain Self Advocates" = "Green Mountain självförespråkare";
+"Everyday Dreams, Everyday Relationships, Everyday Pride" = "Vardagliga drömmar, vardagliga förhållanden, vardagspride";
+//-------------------------------------------------------------------------------------

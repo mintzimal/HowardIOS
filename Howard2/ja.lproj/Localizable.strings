@@ -1,0 +1,106 @@
+/* 
+  Localizable.strings
+  Howard2
+
+  Created by Noah Mintz Roberts on 6/19/19.
+  Copyright © 2019 William Risigo. All rights reserved.
+*/
+
+//MAIN LOCALIZATIONS
+"Apps" = "アプリ";
+"News" = "ニュース";
+"Help" = "助けて";
+"Logout" = "ログアウト";
+
+//------------------------------------------------------------------------------------
+
+//CALLSCREEN LOCALIZATIONS
+"District 1" = "1区";
+"District 2" = "2区";
+"Message" = "メッセージ";
+"Click to Call" = "電話するにはクリック";
+
+//------------------------------------------------------------------------------------
+
+//ASKHOWARD LOCALIZATIONS
+"Do you have any questions?" = "何か質問がありますか？";
+"Click to Let Me Know" = "クリックして私に知らせて";
+
+//------------------------------------------------------------------------------------
+
+//CHECKLIST LOCALIZATIONS
+"You May Choose 6" = "あなたが選ぶかもしれません6";
+
+//------------------------------------------------------------------------------------
+
+//NEWS LOCALIZATIONS
+"Local News" = "地元のニュース";
+"Global News" = "グローバルニュース";
+"Seven Days" = "七日間";
+"Burlington Free Press" = "バーリントンフリープレス";
+"WCAX" = "WCAX";
+"My Champlain Valley" = "私のシャンプレーンバレー";
+"News10" = "ニュース10";
+"VPR" = "VPR";
+"CNN" = "CNN";
+"Aljazeera" = "アルジャジーラ";
+"ABC" = "ABC";
+"Wall Street Journal" = "ウォールストリートジャーナルr";
+"NPR" = "NPR";
+"Reuters" = "ロイター";
+"The Associated Press" = "関連付けられているプレス";
+"Huffington Post" = "ハフィントンポスト";
+"BBC" = "BBC";
+"Washington Post" = "ワシントンポスト";
+"The Guardian" = "保護者";
+//------------------------------------------------------------------------------------
+
+//APP TITLES AND DESCRIPTION LOCALIZATIONS
+"Medication Manager" = "投薬マネージャ";
+"Helpful daily reminders" = "毎日の便利なお知らせ";
+
+"Google Calender" = "Googleカレンダー";
+"So everything is in one place" = "だからすべてが一箇所にある";
+
+"Learn Something New" = "何か新しいことを学ぶ";
+"New Tricks for Everyone" = "みんなのための新しいトリック";
+
+"Youtube" = "Youtube";
+"Watch YouTube right from this app!" = "このアプリからYouTubeを見てください。";
+
+"Xylophone" = "木琴";
+"Mess with a basic instrument" = "基本的な楽器との混乱";
+
+"GMT Bus Guide" = "GMTバスガイド";
+"See when transportation services arrives" = "輸送サービスが到着した時を見る";
+
+"Higher Ground Live Music" = "ハイヤーグラウンドライブミュージック";
+"Check performance schedules" = "パフォーマンススケジュールを確認する";
+
+"Messages" = "メッセージ";
+"Receive messages from your safety connection specialist" = "安全接続の専門家からメッセージを受け取る";
+"Motivational" = "やる気を起こさせる";
+"Get motivational messages everyday!" = "やる気を起こさせるメッセージを毎日入手！";
+
+"Text to Speech" = "スピーチへのテキスト";
+"Type what you want to vocalize" = "発声したいものを入力";
+
+"GMT Bus Schedule Links" = "GMTバススケジュールリンク";
+"Displays information about city public transit" = "市の公共交通機関に関する情報を表示します";
+"Flynn Show Schedule" = "フリンショースケジュール";
+"Look at upcoming plays/performances" = "今後の演劇/公演を見てください";
+
+"Roxie Movie Schedule" = "ロキシー映画のスケジュール";
+"Local movie theatre schedules" = "地元の映画館のスケジュール";
+
+"ECHO Science Center" = "エコーサイエンスセンター";
+"See what's happening at the local aquarium" = "地元の水族館で何が起こっているのかご覧ください。";
+"Burlington Weather" = "バーリントン天気";
+"The Local Forcast" = "ローカル予報";
+
+"Howard Center Main Site" = "ハワードセンター本館";
+"The Central Page for your HC Needs" = "あなたのHCニーズのための中央ページ";
+
+"Green Mountain Self Advocates" = "グリーンマウンテンの自己擁護団体";
+"Everyday Dreams, Everyday Relationships, Everyday Pride" = "日常の夢、日常の関係、日常のプライド";
+//-------------------------------------------------------------------------------------

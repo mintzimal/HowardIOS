@@ -7,6 +7,7 @@
 //
 
 import UIKit
+import Localize_Swift
 
 class ViewController: UIViewController {
     
@@ -25,6 +26,18 @@ class ViewController: UIViewController {
         News.layer.cornerRadius = 15
         Apps.layer.cornerRadius = 15
         logoutButton.layer.cornerRadius = 15
+        
+        Help.titleLabel?.adjustsFontSizeToFitWidth = true;
+        News.titleLabel?.adjustsFontSizeToFitWidth = true;
+        Apps.titleLabel?.adjustsFontSizeToFitWidth = true;
+        logoutButton.titleLabel?.adjustsFontSizeToFitWidth = true;
+
+        Localize.setCurrentLanguage(UserDefaults.standard.string(forKey: "Language")!)
+        
+        Apps.setTitle("Apps".localized(), for: .normal)
+        News.setTitle("News".localized(), for: .normal)
+        Help.setTitle("Help".localized(), for: .normal)
+        logoutButton.setTitle("Logout".localized(), for: .normal)
         
     }
 

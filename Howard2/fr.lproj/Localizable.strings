@@ -1,0 +1,106 @@
+/* 
+  Localizable.strings
+  Howard2
+
+  Created by Noah Mintz Roberts on 6/19/19.
+  Copyright © 2019 William Risigo. All rights reserved.
+*/
+
+//MAIN LOCALIZATIONS
+"Apps" = "Applications";
+"News" = "Nouvelles";
+"Help" = "Aidez-moi";
+"Logout" = "Connectez - Out";
+
+//------------------------------------------------------------------------------------
+
+//CALLSCREEN LOCALIZATIONS
+"District 1" = "District 1";
+"District 2" = "District 2";
+"Message" = "Message";
+"Click to Call" = "Cliquez pour appeler";
+
+//------------------------------------------------------------------------------------
+
+//ASKHOWARD LOCALIZATIONS
+"Do you have any questions?" = "Avez-vous des questions?";
+"Click to Let Me Know" = "Cliquez pour me le faire savoir";
+
+//------------------------------------------------------------------------------------
+
+//CHECKLIST LOCALIZATIONS
+"You May Choose 6" = "Vous pouvez choisir 6";
+
+//------------------------------------------------------------------------------------
+
+//NEWS LOCALIZATIONS
+"Local News" = "Nouvelles Locales";
+"Global News" = "Nouvelles Mondiales";
+"Seven Days" = "Sept Jours";
+"Burlington Free Press" = "Presse Gratuite De Burlington";
+"WCAX" = "WCAX";
+"My Champlain Valley" = "Ma Vallée De Champlain";
+"News10" = "Nouvelles10";
+"VPR" = "VPR";
+"CNN" = "CNN";
+"Aljazeera" = "Al Jazeera";
+"ABC" = "ABC";
+"Wall Street Journal" = "Le Journal Wall Street";
+"NPR" = "Radio Nationale Publique";
+"Reuters" = "Reuters";
+"The Associated Press" = "The Associated Press";
+"Huffington Post" = "Huffington Post";
+"BBC" = "BBC";
+"Washington Post" = "Washington Post";
+"The Guardian" = "Le Gardien";
+//------------------------------------------------------------------------------------
+
+//APP TITLES AND DESCRIPTION LOCALIZATIONS
+"Medication Manager" = "Gestionnaire de médicaments";
+"Helpful daily reminders" = "Rappels quotidiens utiles";
+
+"Google Calender" = "Google Agenda";
+"So everything is in one place" = "Donc tout est au même endroit";
+
+"Learn Something New" = "Apprendre quelque chose de nouveau";
+"New Tricks for Everyone" = "De nouveaux trucs pour tout le monde";
+
+"Youtube" = "Youtube";
+"Watch YouTube right from this app!" = "Regardez Youtube directement depuis cette application!";
+
+"Xylophone" = "Xylophone";
+"Mess with a basic instrument" = "Mess avec un instrument de base";
+
+"GMT Bus Guide" = "Guide de l'autobus GMT";
+"See when transportation services arrives" = "Voir quand les services de transport arrivent";
+
+"Higher Ground Live Music" = "Musique live au sol plus élevé";
+"Check performance schedules" = "Vérifier les horaires de performance";
+
+"Messages" = "Messages";
+"Receive messages from your safety connection specialist" = "Recevoir des messages de votre spécialiste des connexions de sécurité";
+"Motivational" = "De motivation";
+"Get motivational messages everyday!" = "Recevez des messages de motivation tous les jours!";
+
+"Text to Speech" = "Texte pour parler";
+"Type what you want to vocalize" = "Tapez ce que vous voulez vocaliser";
+
+"GMT Bus Schedule Links" = "Horaire des bus GMT";
+"Displays information about city public transit" = "Affiche des informations sur les transports en commun urbains";
+"Flynn Show Schedule" = "Flynn Show Calendrier";
+"Look at upcoming plays/performances" = "Regardez les pièces / performances à venir";
+
+"Roxie Movie Schedule" = "Horaire des films de Roxie";
+"Local movie theatre schedules" = "Horaires des salles de cinéma locales";
+
+"ECHO Science Center" = "Centre scientifique ECHO";
+"See what's happening at the local aquarium" = "Voir ce qui se passe à l'aquarium local";
+"Burlington Weather" = "Météo à Burlington";
+"The Local Forcast" = "La prévision locale";
+
+"Howard Center Main Site" = "Centre principal du centre Howard";
+"The Central Page for your HC Needs" = "La page centrale pour vos besoins en soins de santé";
+
+"Green Mountain Self Advocates" = "Green Mountain auto-avocats";
+"Everyday Dreams, Everyday Relationships, Everyday Pride" = "Rêves de tous les jours, relations de tous les jours, fierté de tous les jours";
+//-------------------------------------------------------------------------------------

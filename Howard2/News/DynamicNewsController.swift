@@ -27,6 +27,7 @@ class DynamicNewsController: UIViewController, SFSafariViewControllerDelegate {
     @IBOutlet weak var LabelFive: UILabel!
     @IBOutlet weak var LabelSix: UILabel!
     
+    @IBOutlet weak var NewsLabel: UILabel!
     
     var arrayOfNews = [
         appStruct(id: 0, title: "Seven Days", text: "Local News", image: "SD.jpg"),
@@ -39,7 +40,7 @@ class DynamicNewsController: UIViewController, SFSafariViewControllerDelegate {
         appStruct(id:7, title: "Aljazeera", text: "Global News",image: "ALZ.png"),
         appStruct(id:8, title: "ABC", text: "Global News",image: "ABC.png"),
         appStruct(id:9, title: "Wall Street Journal", text: "Global News",image: "WSJ.png"),
-        appStruct(id:10, title: "NPR", text: "Gobal News",image: "NPR.png"),
+        appStruct(id:10, title: "NPR", text:"Global News",image: "NPR.png"),
         appStruct(id:11, title: "Reuters", text: "Global News", image: "reuters.png" ),
         appStruct(id:12, title: "The Associated Press", text: "Global News", image: "AP.png"),
         appStruct(id:13, title: "Huffington Post", text: "Global News", image: "HP.png"),
@@ -76,27 +77,27 @@ class DynamicNewsController: UIViewController, SFSafariViewControllerDelegate {
         UserDefaults.standard.set(try? PropertyListEncoder().encode(arrayOfNews), forKey:"NewsFiles")
         
         if selectedApps.count >= 1 {
-            LabelOne.text = arrayOfNews[selectedApps[0]].title
+            LabelOne.text = arrayOfNews[selectedApps[0]].title.localized()
             NewsOne.setImage(UIImage(named: arrayOfNews[selectedApps[0]].image), for: .normal)
         }
         if selectedApps.count >= 2 {
-            LabelTwo.text = arrayOfNews[selectedApps[1]].title
+            LabelTwo.text = arrayOfNews[selectedApps[1]].title.localized()
             NewsTwo.setImage(UIImage(named: arrayOfNews[selectedApps[1]].image), for: .normal)
         }
         if selectedApps.count >= 3 {
-            LabelThree.text = arrayOfNews[selectedApps[2]].title
+            LabelThree.text = arrayOfNews[selectedApps[2]].title.localized()
             NewsThree.setImage(UIImage(named: arrayOfNews[selectedApps[2]].image), for: .normal)
         }
         if selectedApps.count >= 4 {
-            LabelFour.text = arrayOfNews[selectedApps[3]].title
+            LabelFour.text = arrayOfNews[selectedApps[3]].title.localized()
             NewsFour.setImage(UIImage(named: arrayOfNews[selectedApps[3]].image), for: .normal)
         }
         if selectedApps.count >= 5 {
-            LabelFive.text = arrayOfNews[selectedApps[4]].title
+            LabelFive.text = arrayOfNews[selectedApps[4]].title.localized()
             NewsFive.setImage(UIImage(named: arrayOfNews[selectedApps[4]].image), for: .normal)
         }
         if selectedApps.count >= 6 {
-            LabelSix.text = arrayOfNews[selectedApps[5]].title
+            LabelSix.text = arrayOfNews[selectedApps[5]].title.localized()
             NewsSix.setImage(UIImage(named: arrayOfNews[selectedApps[5]].image), for: .normal)
     }
     }
@@ -139,82 +140,82 @@ class DynamicNewsController: UIViewController, SFSafariViewControllerDelegate {
     
     func labelChecker(Label: String){
 
-        if(Label == arrayOfNews[0].title){
+        if(Label == arrayOfNews[0].title.localized()){
             //Google Calender Calls
             let svc = SFSafariViewController(url: NSURL(string: self.sevenDays)! as URL)
             self.present(svc, animated: true, completion: nil)
         }
-        if(Label == arrayOfNews[1].title){
+        if(Label == arrayOfNews[1].title.localized()){
             //Learn Something New Calls
             let svc = SFSafariViewController(url: NSURL(string: self.burlingtonFreePress)! as URL)
             self.present(svc, animated: true, completion: nil)
         }
-        if(Label == arrayOfNews[2].title){
+        if(Label == arrayOfNews[2].title.localized()){
             //Youtube Calls
             let svc = SFSafariViewController(url: NSURL(string: self.WCAX)! as URL)
             self.present(svc, animated: true, completion: nil)
         }
-        if(Label == arrayOfNews[3].title){
+        if(Label == arrayOfNews[3].title.localized()){
             //Xylophone Calls
             let svc = SFSafariViewController(url: NSURL(string: self.myChamplainValley)! as URL)
             self.present(svc, animated: true, completion: nil)
             
         }
-        if(Label == arrayOfNews[4].title){
+        if(Label == arrayOfNews[4].title.localized()){
             //SSTA Bus Schedule Calls
             let svc = SFSafariViewController(url: NSURL(string: self.news10)! as URL)
             self.present(svc, animated: true, completion: nil)
         }
-        if(Label == arrayOfNews[5].title){
+        if(Label == arrayOfNews[5].title.localized()){
             //Higher Ground Live Music Calls
             let svc = SFSafariViewController(url: NSURL(string: self.VPR)! as URL)
             self.present(svc, animated: true, completion: nil)
         }
-        if(Label == arrayOfNews[6].title){
+        if(Label == arrayOfNews[6].title.localized()){
             //Messages
             let svc = SFSafariViewController(url: NSURL(string: self.CNN)! as URL)
             self.present(svc, animated: true, completion: nil)
         }
-        if(Label == arrayOfNews[7].title){
+        if(Label == arrayOfNews[7].title.localized()){
             //Motivational Calls
             let svc = SFSafariViewController(url: NSURL(string: self.aljazeera)! as URL)
             self.present(svc, animated: true, completion: nil)
         }
-        if(Label == arrayOfNews[8].title){
+        if(Label == arrayOfNews[8].title.localized()){
             //Text To Speech Calls
             let svc = SFSafariViewController(url: NSURL(string: self.ABC)! as URL)
             self.present(svc, animated: true, completion: nil)
         }
-        if(Label == arrayOfNews[9].title){
+        if(Label == arrayOfNews[9].title.localized()){
             //CCTV Bus Schedule Calls
             let svc = SFSafariViewController(url: NSURL(string: self.wallStreetJournal)! as URL)
             self.present(svc, animated: true, completion: nil)
         }
-        if(Label == arrayOfNews[10].title){
+        if(Label == arrayOfNews[10].title.localized()){
             let svc = SFSafariViewController(url: NSURL(string: self.NPR)! as URL)
             self.present(svc, animated: true, completion: nil)
         }
-        if(Label == arrayOfNews[11].title){
+        if(Label == arrayOfNews[11].title.localized()){
             let svc = SFSafariViewController(url: NSURL(string: self.reuters)! as URL)
             self.present(svc, animated: true, completion: nil)
         }
-        if(Label == arrayOfNews[12].title){
+        if(Label == arrayOfNews[12].title.localized()){
             let svc = SFSafariViewController(url: NSURL(string: self.theAssociatedPress)! as URL)
             self.present(svc, animated: true, completion: nil)
         }
-        if(Label == arrayOfNews[13].title){
+        if(Label == arrayOfNews[13].title.localized()){
             let svc = SFSafariViewController(url: NSURL(string: self.huffingtonPost)! as URL)
             self.present(svc, animated: true, completion: nil)
         }
-        if(Label == arrayOfNews[14].title){
+        if(Label == arrayOfNews[14].title.localized()){
             let svc = SFSafariViewController(url: NSURL(string: self.BBC)! as URL)
             self.present(svc, animated: true, completion: nil)
         }
-        if(Label == arrayOfNews[15].title){
+        if(Label == arrayOfNews[15].title.localized()){
             let svc = SFSafariViewController(url: NSURL(string: self.washingtonPost)! as URL)
             self.present(svc, animated: true, completion: nil)
         }
-        if(Label == arrayOfNews[16].title){
+        if(Label == arrayOfNews[16].title.localized()){
             //Medication Manager Calls
             let svc = SFSafariViewController(url: NSURL(string: self.theGuardian)! as URL)
             self.present(svc, animated: true, completion: nil)
@@ -235,6 +236,16 @@ class DynamicNewsController: UIViewController, SFSafariViewControllerDelegate {
         NewsFour.layer.borderWidth = 3
         NewsFive.layer.borderWidth = 3
         NewsSix.layer.borderWidth = 3
+        
+        NewsOne.titleLabel?.adjustsFontSizeToFitWidth = true
+        NewsTwo.titleLabel?.adjustsFontSizeToFitWidth = true
+        NewsThree.titleLabel?.adjustsFontSizeToFitWidth = true
+        NewsFour.titleLabel?.adjustsFontSizeToFitWidth = true
+        NewsFive.titleLabel?.adjustsFontSizeToFitWidth = true
+        NewsSix.titleLabel?.adjustsFontSizeToFitWidth = true
+        
+        NewsLabel.adjustsFontSizeToFitWidth = true;
+        NewsLabel.text = "News".localized()
         
         }
 

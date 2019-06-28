@@ -59,18 +59,18 @@ class NewCheckListController: UITableViewController {
         }
         
         override func tableView(_ tableView: UITableView, titleForHeaderInSection section: Int) -> String? {
-            return "Click to Select Which Apps to Show (You may choose 6)"
+            return "You May Choose 6".localized()
         }
         
         override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
             let cell = tableView.dequeueReusableCell(withIdentifier: "AppOne", for: indexPath)
             let apps = arrayOfApps[indexPath.row]
-            cell.textLabel?.text = (arrayOfApps[indexPath.row] as appStruct).title;
-            cell.detailTextLabel?.text = (arrayOfApps[indexPath.row] as! appStruct).text
+            cell.textLabel?.text = (arrayOfApps[indexPath.row] as appStruct).title.localized();
+            cell.detailTextLabel?.text = (arrayOfApps[indexPath.row] ).text.localized()
             //var imageName = UIImage(named: arrayOfApps[indexPath.row].image)
             //cell.imageView?.image = arrayOfApps[indexPath.row].imageName
             //cell.imageView?.image = imageName
-            cell.imageView?.image = UIImage(named: ((apps as! appStruct).image))
+            cell.imageView?.image = UIImage(named: ((apps ).image))
             
             let bgColorView = UIView()
             bgColorView.backgroundColor = .green

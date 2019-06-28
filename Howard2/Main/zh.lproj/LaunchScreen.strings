@@ -1,0 +1,12 @@
+
+/* Class = "UILabel"; text = "*Signing up overrides previous Data*"; ObjectID = "2wh-A9-XX4"; */
+"2wh-A9-XX4.text" = "*Signing up overrides previous Data*";
+
+/* Class = "UIButton"; normalTitle = "Signup"; ObjectID = "IFi-TN-TCB"; */
+"IFi-TN-TCB.normalTitle" = "Signup";
+
+/* Class = "UIButton"; normalTitle = "Login"; ObjectID = "PXL-qw-Muv"; */
+"PXL-qw-Muv.normalTitle" = "Login";
+
+/* Class = "UILabel"; text = "Join the Community!"; ObjectID = "weN-Gh-Gm4"; */
+"weN-Gh-Gm4.text" = "Join the Community!";

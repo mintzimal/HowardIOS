@@ -1,0 +1,106 @@
+/* 
+  Localizable.strings
+  Howard2
+
+  Created by Noah Mintz Roberts on 6/19/19.
+  Copyright © 2019 William Risigo. All rights reserved.
+*/
+
+//MAIN LOCALIZATIONS
+"Apps" = "अनुप्रयोगहरू";
+"News" = "समाचार";
+"Help" = "मद्दत";
+"Logout" = "बाहिर निस्कनु";
+
+//------------------------------------------------------------------------------------
+
+//CALLSCREEN LOCALIZATIONS
+"District 1" = "जिल्ला 1";
+"District 2" = "जिल्ला 2";
+"Message" = "सन्देश";
+"Click to Call" = "कलमा क्लिक गर्नुहोस्";
+
+//------------------------------------------------------------------------------------
+
+//ASKHOWARD LOCALIZATIONS
+"Do you have any questions?" = "के तपाईंको कुनै प्रश्न छन्?";
+"Click to Let Me Know" = "मलाई थाहा छ क्लिक गर्नुहोस्";
+
+//------------------------------------------------------------------------------------
+
+//CHECKLIST LOCALIZATIONS
+"You May Choose 6" = "तपाईं 6 छान्नुहोस्";
+
+//------------------------------------------------------------------------------------
+
+//NEWS LOCALIZATIONS
+"Local News" = "स्थानीय समाचार";
+"Global News" = "ग्लोबल समाचार";
+"Seven Days" = "सात दिन";
+"Burlington Free Press" = "Burlington मुक्त प्रेस";
+"WCAX" = "WCAX";
+"My Champlain Valley" = "मेरो चामप्लेन घाटी";
+"News10" = "समाचार10";
+"VPR" = "VPR";
+"CNN" = "CNN";
+"Aljazeera" = "अल्जेजेरिया";
+"ABC" = "ए बी सी";
+"Wall Street Journal" = "पर्खाल सडक पत्रिका";
+"NPR" = "NPR";
+"Reuters" = "Reuters";
+"The Associated Press" = "सम्बद्ध प्रेस";
+"Huffington Post" = "हफिंगटन पोस्ट";
+"BBC" = "बीबीसी";
+"Washington Post" = "वाशिंगटन पोस्ट";
+"The Guardian" = "अभिभावक";
+//------------------------------------------------------------------------------------
+
+//APP TITLES AND DESCRIPTION LOCALIZATIONS
+"Medication Manager" = "औषधि प्रबन्धक";
+"Helpful daily reminders" = "सहायक दैनिक अनुस्मारकहरू";
+
+"Google Calender" = "गुगल क्यालेन्डर";
+"So everything is in one place" = "त्यसैले सबै चीज एकै ठाउँमा छ";
+
+"Learn Something New" = "केहि नयाँ सिक्नुहोस्";
+"New Tricks for Everyone" = "सबैका लागि नयाँ ट्रिक्सहरू";
+
+"Youtube" = "Youtube";
+"Watch YouTube right from this app!" = "यस एपबाट YouTube लाई हेर्नुहोस्!";
+
+"Xylophone" = "Xylophone";
+"Mess with a basic instrument" = "एक आधारभूत उपकरणको साथ मेस";
+
+"GMT Bus Guide" = "GMT बस गाइड";
+"See when transportation services arrives" = "जब यातायात सेवा आइपुगेको हेर्नुहोस्";
+
+"Higher Ground Live Music" = "उच्च मैदान लाइभ संगीत";
+"Check performance schedules" = "प्रदर्शन कार्यक्रमहरू जाँच गर्नुहोस्";
+
+"Messages" = "सन्देशहरू";
+"Receive messages from your safety connection specialist" = "तपाईंको सुरक्षा जडान विशेषज्ञबाट सन्देश प्राप्त गर्नुहोस्";
+"Motivational" = "प्रेरणा";
+"Get motivational messages everyday!" = "हरेक दिन प्रेरणात्मक सन्देश पाउनुहोस्!";
+
+"Text to Speech" = "भाषणमा पाठ";
+"Type what you want to vocalize" = "टाइप गर्नुहोस् कि तपाईलाई भित्री बनाउन चाहानुहुन्छ";
+
+"GMT Bus Schedule Links" = "GMT बस अनुसूची लिङ्कहरू";
+"Displays information about city public transit" = "शहरको सार्वजनिक ट्रान्जिटको बारेमा जानकारी प्रदर्शन गर्दछ";
+"Flynn Show Schedule" = "फलिन शो अनुसूची";
+"Look at upcoming plays/performances" = "आगामी खेलहरू / प्रदर्शन हेर्नुहोस्";
+
+"Roxie Movie Schedule" = "रोक्सी चलचित्र अनुसूची";
+"Local movie theatre schedules" = "स्थानीय फिल्म थियेटर कार्यक्रम";
+
+"ECHO Science Center" = "ईचओ विज्ञान केन्द्र";
+"See what's happening at the local aquarium" = "स्थानीय एक्वैरियममा के हुँदैछ हेर्नुहोस्";
+"Burlington Weather" = "Burlington मौसम";
+"The Local Forcast" = "स्थानीय फोरकास्ट";
+
+"Howard Center Main Site" = "हावर्ड केन्द्र मुख्य साइट";
+"The Central Page for your HC Needs" = "तपाईंको एचसी आवश्यकताहरूको लागि केन्द्रीय पृष्ठ";
+
+"Green Mountain Self Advocates" = "हरित पर्वत स्व अधिवेशन";
+"Everyday Dreams, Everyday Relationships, Everyday Pride" = "हरेक दिन सपनाहरू, हरेक दिन सम्बन्धहरू, रोजगारी गौरव";
+//-------------------------------------------------------------------------------------

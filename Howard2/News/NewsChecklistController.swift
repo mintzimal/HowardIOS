@@ -56,14 +56,14 @@ class NewsChecklistController: UITableViewController {
         }
         
         override func tableView(_ tableView: UITableView, titleForHeaderInSection section: Int) -> String? {
-            return "Click to Select Which News to Show (You may choose 6)"
+            return "You May Choose 6".localized()
         }
         
         override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
             let cell = tableView.dequeueReusableCell(withIdentifier: "AppOne", for: indexPath)
             let apps = arrayOfNews[indexPath.row]
-            cell.textLabel?.text = (arrayOfNews[indexPath.row] as appStruct).title;
-            cell.detailTextLabel?.text = (arrayOfNews[indexPath.row] as! appStruct).text
+            cell.textLabel?.text = (arrayOfNews[indexPath.row] as appStruct).title.localized();
+            cell.detailTextLabel?.text = (arrayOfNews[indexPath.row] ).text.localized()
             //var imageName = UIImage(named: arrayOfApps[indexPath.row].image)
             //cell.imageView?.image = arrayOfApps[indexPath.row].imageName
             //cell.imageView?.image = imageName

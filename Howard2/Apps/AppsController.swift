@@ -36,6 +36,9 @@ class AppsController: UIViewController, SFSafariViewControllerDelegate {
     @IBOutlet weak var LabelFive: UILabel!
     @IBOutlet weak var LabelSix: UILabel!
     
+    @IBOutlet weak var AppsLabel: UILabel!
+    
+    
     var arrayOfApps = [
         appStruct(id: 0, title: "Medication Manager", text: "Helpful daily reminders", image: "PillReminder.png"),
         appStruct(id: 1, title: "Google Calender", text: "So everything is in one place",image: "Calender.png"),
@@ -82,27 +85,27 @@ class AppsController: UIViewController, SFSafariViewControllerDelegate {
         UserDefaults.standard.set(try? PropertyListEncoder().encode(arrayOfApps), forKey:"AppFiles")
         
         if selectedApps.count >= 1 {
-            LabelOne.text = arrayOfApps[selectedApps[0]].title
+            LabelOne.text = arrayOfApps[selectedApps[0]].title.localized()
             AppOne.setImage(UIImage(named: arrayOfApps[selectedApps[0]].image), for: .normal)
         }
         if selectedApps.count >= 2 {
-            LabelTwo.text = arrayOfApps[selectedApps[1]].title
+            LabelTwo.text = arrayOfApps[selectedApps[1]].title.localized()
             AppTwo.setImage(UIImage(named: arrayOfApps[selectedApps[1]].image), for: .normal)
         }
         if selectedApps.count >= 3 {
-            LabelThree.text = arrayOfApps[selectedApps[2]].title
+            LabelThree.text = arrayOfApps[selectedApps[2]].title.localized()
             AppThree.setImage(UIImage(named: arrayOfApps[selectedApps[2]].image), for: .normal)
         }
         if selectedApps.count >= 4 {
-            LabelFour.text = arrayOfApps[selectedApps[3]].title
+            LabelFour.text = arrayOfApps[selectedApps[3]].title.localized()
             AppFour.setImage(UIImage(named: arrayOfApps[selectedApps[3]].image), for: .normal)
         }
         if selectedApps.count >= 5 {
-            LabelFive.text = arrayOfApps[selectedApps[4]].title
+            LabelFive.text = arrayOfApps[selectedApps[4]].title.localized()
             AppFive.setImage(UIImage(named: arrayOfApps[selectedApps[4]].image), for: .normal)
         }
         if selectedApps.count >= 6 {
-            LabelSix.text = arrayOfApps[selectedApps[5]].title
+            LabelSix.text = arrayOfApps[selectedApps[5]].title.localized()
             AppSix.setImage(UIImage(named: arrayOfApps[selectedApps[5]].image), for: .normal)
     }
     }
@@ -144,77 +147,77 @@ class AppsController: UIViewController, SFSafariViewControllerDelegate {
     }
     
     func labelChecker(Label: String){
-        if(Label == arrayOfApps[0].title){
+        if(Label == arrayOfApps[0].title.localized()){
             //Medication Manager Calls
         }
-        if(Label == arrayOfApps[1].title){
+        if(Label == arrayOfApps[1].title.localized()){
             //Google Calender Calls
             let svc = SFSafariViewController(url: NSURL(string: self.calender)! as URL)
             self.present(svc, animated: true, completion: nil)
         }
-        if(Label == arrayOfApps[2].title){
+        if(Label == arrayOfApps[2].title.localized()){
             //Learn Something New Calls
             let svc = SFSafariViewController(url: NSURL(string: self.funFacts)! as URL)
             self.present(svc, animated: true, completion: nil)
         }
-        if(Label == arrayOfApps[3].title){
+        if(Label == arrayOfApps[3].title.localized()){
             //Youtube Calls
             let svc = SFSafariViewController(url: NSURL(string: self.youtube)! as URL)
             self.present(svc, animated: true, completion: nil)
         }
-        if(Label == arrayOfApps[4].title){
+        if(Label == arrayOfApps[4].title.localized()){
             //Xylophone Calls
             let viewController:UIViewController = UIStoryboard(name: "Xylophone", bundle: nil).instantiateViewController(withIdentifier: "Xylo") as UIViewController
             
             self.present(viewController, animated: true, completion: nil)
         }
-        if(Label == arrayOfApps[5].title){
+        if(Label == arrayOfApps[5].title.localized()){
             //SSTA Bus Schedule Calls
             let svc = SFSafariViewController(url: NSURL(string: self.GMTGuide)! as URL)
             self.present(svc, animated: true, completion: nil)
         }
-        if(Label == arrayOfApps[6].title){
+        if(Label == arrayOfApps[6].title.localized()){
             //Higher Ground Live Music Calls
             let svc = SFSafariViewController(url: NSURL(string: self.HigherGround)! as URL)
             self.present(svc, animated: true, completion: nil)
         }
-        if(Label == arrayOfApps[7].title){
+        if(Label == arrayOfApps[7].title.localized()){
             //Messages
         }
-        if(Label == arrayOfApps[8].title){
+        if(Label == arrayOfApps[8].title.localized()){
             //Motivational Calls
             let svc = SFSafariViewController(url: NSURL(string: self.Motivational)! as URL)
             self.present(svc, animated: true, completion: nil)
         }
-        if(Label == arrayOfApps[9].title){
+        if(Label == arrayOfApps[9].title.localized()){
             //Text To Speech Calls
         }
-        if(Label == arrayOfApps[10].title){
+        if(Label == arrayOfApps[10].title.localized()){
             //CCTV Bus Schedule Calls
             let svc = SFSafariViewController(url: NSURL(string: self.GMTQuick)! as URL)
             self.present(svc, animated: true, completion: nil)
         }
-        if(Label == arrayOfApps[11].title){
+        if(Label == arrayOfApps[11].title.localized()){
             let svc = SFSafariViewController(url: NSURL(string: self.Flynn)! as URL)
             self.present(svc, animated: true, completion: nil)
         }
-        if(Label == arrayOfApps[12].title){
+        if(Label == arrayOfApps[12].title.localized()){
             let svc = SFSafariViewController(url: NSURL(string: self.Roxie)! as URL)
             self.present(svc, animated: true, completion: nil)
         }
-        if(Label == arrayOfApps[13].title){
+        if(Label == arrayOfApps[13].title.localized()){
             let svc = SFSafariViewController(url: NSURL(string: self.Echo)! as URL)
             self.present(svc, animated: true, completion: nil)
         }
-        if(Label == arrayOfApps[14].title){
+        if(Label == arrayOfApps[14].title.localized()){
             let svc = SFSafariViewController(url: NSURL(string: self.weather)! as URL)
             self.present(svc, animated: true, completion: nil)
         }
-        if(Label == arrayOfApps[15].title){
+        if(Label == arrayOfApps[15].title.localized()){
             let svc = SFSafariViewController(url: NSURL(string: self.howardCenter)! as URL)
             self.present(svc, animated: true, completion: nil)
         }
-        if(Label == arrayOfApps[16].title){
+        if(Label == arrayOfApps[16].title.localized()){
             let svc = SFSafariViewController(url: NSURL(string: self.GMSA)! as URL)
             self.present(svc, animated: true, completion: nil)
         }
@@ -233,6 +236,16 @@ class AppsController: UIViewController, SFSafariViewControllerDelegate {
         AppFour.layer.borderWidth = 3
         AppFive.layer.borderWidth = 3
         AppSix.layer.borderWidth = 3
+        
+        LabelOne.adjustsFontSizeToFitWidth = true
+        LabelTwo.adjustsFontSizeToFitWidth = true
+        LabelThree.adjustsFontSizeToFitWidth = true
+        LabelFour.adjustsFontSizeToFitWidth = true
+        LabelFive.adjustsFontSizeToFitWidth = true
+        LabelSix.adjustsFontSizeToFitWidth = true
+        
+        AppsLabel.adjustsFontSizeToFitWidth = true;
+        AppsLabel.text = "Apps".localized()
         
         }
 
