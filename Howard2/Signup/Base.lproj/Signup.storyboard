@@ -814,6 +814,7 @@
                                     <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 </state>
                                 <connections>
+                                    <action selector="checkUpSuccess:" destination="vS4-aj-ghc" eventType="touchUpInside" id="b6V-Yv-faa"/>
                                     <segue destination="W0q-6d-xKy" kind="show" id="yML-Qa-feY"/>
                                 </connections>
                             </button>

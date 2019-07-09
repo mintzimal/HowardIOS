@@ -36,6 +36,7 @@
                                                     <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                 </state>
                                                 <connections>
+                                                    <action selector="LeavingHome:" destination="BYZ-38-t0r" eventType="touchUpInside" id="O7c-3E-93t"/>
                                                     <segue destination="g2P-8c-CJ6" kind="show" id="b1C-6W-VGA"/>
                                                 </connections>
                                             </button>
@@ -51,6 +52,7 @@
                                                     <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                 </state>
                                                 <connections>
+                                                    <action selector="LeavingHome:" destination="BYZ-38-t0r" eventType="touchUpInside" id="e5q-FL-XwW"/>
                                                     <segue destination="q2I-IR-uJd" kind="show" id="vgF-kR-oWR"/>
                                                 </connections>
                                             </button>
@@ -67,6 +69,7 @@
                                                     <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                 </state>
                                                 <connections>
+                                                    <action selector="LeavingHome:" destination="BYZ-38-t0r" eventType="touchUpInside" id="PC7-x3-Pd0"/>
                                                     <segue destination="z7S-dV-br0" kind="show" id="VJW-eQ-V5T"/>
                                                 </connections>
                                             </button>
@@ -136,6 +139,7 @@
                                                     <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                 </state>
                                                 <connections>
+                                                    <action selector="LeavingHome:" destination="BYZ-38-t0r" eventType="touchUpInside" id="YLT-Lq-Goy"/>
                                                     <action selector="logoutButton:" destination="jY4-Fr-0Sh" eventType="touchUpInside" id="zZa-MX-eK1"/>
                                                     <segue destination="Nou-9T-gcG" kind="show" id="eA6-zH-P1V"/>
                                                 </connections>

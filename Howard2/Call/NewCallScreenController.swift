@@ -16,6 +16,10 @@ class NewCallScreenController: UIViewController {
     @IBOutlet weak var messageButton: UIButton!
     @IBOutlet weak var CallLabel: UILabel!
     
+    var RoadMap:Array<String> = UserDefaults.standard.stringArray(forKey: "RoadMap") ?? Array()
+    
+    var timeEntered:Date = Date()
+    
     let District = UserDefaults.standard.integer(forKey: "District")
     
     @IBAction func callDistrictFunction(_ sender: Any) {
@@ -33,6 +37,8 @@ class NewCallScreenController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        
+        RoadMap.append("Entered Help Screen at: \(timeEntered)")
         
         districtButton.layer.cornerRadius = 50
         messageButton.layer.cornerRadius = 50
@@ -114,6 +120,12 @@ class NewCallScreenController: UIViewController {
             
         }}
     
+    @IBAction func LeavingHelp(_ sender: Any) {
+        var timeSpent = Date().timeIntervalSince(timeEntered)
+        RoadMap.append("Exited Help Screen after: \(timeSpent) seconds")
+        
+        UserDefaults.standard.set(RoadMap,forKey: "RoadMap")
+    }
     
     
     

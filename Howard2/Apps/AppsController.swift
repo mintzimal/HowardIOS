@@ -38,6 +38,10 @@ class AppsController: UIViewController, SFSafariViewControllerDelegate {
     
     @IBOutlet weak var AppsLabel: UILabel!
     
+    var RoadMap:Array<String> = UserDefaults.standard.stringArray(forKey: "RoadMap") ?? Array()
+    
+    var timeEntered:Date = Date()
+    
     
     var arrayOfApps = [
         appStruct(id: 0, title: "Medication Manager", text: "Helpful daily reminders", image: "PillReminder.png"),
@@ -247,8 +251,19 @@ class AppsController: UIViewController, SFSafariViewControllerDelegate {
         AppsLabel.adjustsFontSizeToFitWidth = true;
         AppsLabel.text = "Apps".localized()
         
+        RoadMap.append("Entered Apps Screen at: \(timeEntered)")
+        
         }
 
+    @IBAction func LeavingApps(_ sender: Any) {
+        var timeSpent = Date().timeIntervalSince(timeEntered)
+        RoadMap.append("Exited Apps Screen after: \(timeSpent) seconds")
+        
+        UserDefaults.standard.set(RoadMap,forKey: "RoadMap")
+        
+        print(RoadMap)
+    }
+    
         // Do any additional setup after loading the view.
     }
     

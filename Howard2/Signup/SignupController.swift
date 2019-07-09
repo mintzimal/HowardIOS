@@ -64,11 +64,14 @@ class SignupController: UIViewController {
     @IBOutlet weak var YesButton: UIButton!
     @IBOutlet weak var NoButton: UIButton!
     
+    var RoadMap:Array<String> = UserDefaults.standard.stringArray(forKey: "RoadMap") ?? Array()
     
+    var timeEntered:Date = Date()
     
     override func viewDidLoad() {
         super.viewDidLoad()
          //Do any additional setup after loading the view.
+        
             submitButton?.layer.cornerRadius = 15
             PINView?.layer.cornerRadius = 15
 
@@ -106,6 +109,8 @@ class SignupController: UIViewController {
         
             YesButton?.layer.cornerRadius = 15
             NoButton?.layer.cornerRadius = 15
+        
+        
         
         var newLanguageLabel:String = [languageLabel?.text, UserDefaults.standard.string(forKey: "LanguageName") ].compactMap({$0}).joined(separator:" ")
         
@@ -181,7 +186,23 @@ class SignupController: UIViewController {
                 UserDefaults.standard.removeObject(forKey: key)
             }
             
+            RoadMap = Array()
+            
             UserDefaults.standard.set(PINView?.text, forKey: "PIN")
+            
+            var timeSpent = Date().timeIntervalSince(timeEntered)
+            
+            RoadMap.append("Entered Signup PIN Screen at: \(timeEntered)")
+            
+            RoadMap.append("Exited  Signup PIN Screen after: \(timeSpent) seconds")
+            
+            timeEntered = Date()
+            
+            RoadMap.append("Entered District Screen at: \(timeEntered)")
+            
+            UserDefaults.standard.set(RoadMap, forKey: "RoadMap")
+            
+            print(RoadMap)
             
             let districtController = self.storyboard!.instantiateViewController(withIdentifier: "District")
             
@@ -201,6 +222,16 @@ class SignupController: UIViewController {
         
         UserDefaults.standard.set(1,forKey: "District")
         
+        var timeSpent = Date().timeIntervalSince(timeEntered)
+        RoadMap.append("Exited District Screen after: \(timeSpent) seconds")
+        
+        timeEntered = Date()
+        RoadMap.append("Entered Language Screen at: \(timeEntered)")
+        
+        UserDefaults.standard.set(RoadMap,forKey: "RoadMap")
+        
+        print(RoadMap)
+        
 //        let viewController:UIViewController = UIStoryboard(name: "Language", bundle: nil).instantiateViewController(withIdentifier: "Language") as UIViewController
 //
 //        self.present(viewController, animated: false, completion: nil)
@@ -209,6 +240,16 @@ class SignupController: UIViewController {
     @IBAction func District2Selected(_ sender: Any) {
         
         UserDefaults.standard.set(2,forKey: "District")
+        
+        var timeSpent = Date().timeIntervalSince(timeEntered)
+        RoadMap.append("Exited District Screen after: \(timeSpent) seconds")
+        
+        timeEntered = Date()
+        RoadMap.append("Entered Language Screen at: \(timeEntered)")
+        
+        UserDefaults.standard.set(RoadMap, forKey: "RoadMap")
+        
+        print(RoadMap)
         
 //        let viewController:UIViewController = UIStoryboard(name: "Language", bundle: nil).instantiateViewController(withIdentifier: "Language") as UIViewController
 //
@@ -228,6 +269,18 @@ class SignupController: UIViewController {
     
     @IBAction func Skip(_ sender: Any) {
         
+        var timeSpent = Date().timeIntervalSince(timeEntered)
+        
+        RoadMap.append("Exited  Language Screen after: \(timeSpent) seconds")
+        
+        timeEntered = Date()
+        
+        RoadMap.append("Entered Checkup Screen at: \(timeEntered)")
+        
+        UserDefaults.standard.set(RoadMap,forKey: "RoadMap")
+        
+        print(RoadMap)
+        
         UserDefaults.standard.set("English",forKey:"Language")
         
         let checkupController = self.storyboard!.instantiateViewController(withIdentifier: "Checkup")
@@ -236,6 +289,18 @@ class SignupController: UIViewController {
     }
     
     @IBAction func Languages(_ sender:UIButton) {
+        
+        var timeSpent = Date().timeIntervalSince(timeEntered)
+        
+        RoadMap.append("Exited  Language Screen after: \(timeSpent) seconds")
+        
+        timeEntered = Date()
+        
+        RoadMap.append("Entered Checkup Screen at: \(timeEntered)")
+        
+        UserDefaults.standard.set(RoadMap,forKey: "RoadMap")
+        
+        print(RoadMap)
         
         if(sender == L1){
             print("English")
@@ -348,17 +413,37 @@ class SignupController: UIViewController {
             UserDefaults.standard.set("Vietnamese ",forKey:"LanguageName")
         }
         
+        
+        
         let checkupController = self.storyboard!.instantiateViewController(withIdentifier: "Checkup")
         
         self.present(checkupController, animated: false, completion: nil)
     }
     
     @IBAction func goBack(_ sender: Any) {
+        
+        var timeSpent = Date().timeIntervalSince(timeEntered)
+        
+        RoadMap.append("Exited  Checkup Screen after: \(timeSpent) seconds")
+        
+        UserDefaults.standard.set(RoadMap,forKey: "RoadMap")
+        
+        print(RoadMap)
+        
         let districtController = self.storyboard!.instantiateViewController(withIdentifier: "District")
         
         self.present(districtController, animated: false, completion: nil)
     }
     
+    @IBAction func checkUpSuccess(_ sender: Any) {
+        var timeSpent = Date().timeIntervalSince(timeEntered)
+        
+        RoadMap.append("Exited  Checkup Screen after: \(timeSpent) seconds")
+        
+        UserDefaults.standard.set(RoadMap, forKey: "RoadMap")
+        
+        print(RoadMap)
+    }
     
     
     

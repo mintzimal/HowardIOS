@@ -40,6 +40,7 @@
                                     <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 </state>
                                 <connections>
+                                    <action selector="LeavingNews:" destination="9pS-Ge-hFz" eventType="touchUpInside" id="1Mg-88-Dod"/>
                                     <segue destination="Jig-ZB-3sr" kind="show" id="36K-nG-wyx"/>
                                 </connections>
                             </button>
@@ -48,6 +49,7 @@
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" title="Button" image="HomeIcon.png"/>
                                 <connections>
+                                    <action selector="LeavingNews:" destination="9pS-Ge-hFz" eventType="touchUpInside" id="jyu-3n-YJJ"/>
                                     <segue destination="vCx-KO-RkI" kind="show" id="ina-aU-ecf"/>
                                 </connections>
                             </button>
@@ -56,6 +58,7 @@
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" title="Button" image="questionMark.png"/>
                                 <connections>
+                                    <action selector="LeavingNews:" destination="9pS-Ge-hFz" eventType="touchUpInside" id="ANg-CK-pXS"/>
                                     <segue destination="F28-uG-vDl" kind="show" id="Y5R-qq-RoS"/>
                                 </connections>
                             </button>

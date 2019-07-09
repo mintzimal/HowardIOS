@@ -31,7 +31,7 @@
                                                 </constraints>
                                             </imageView>
                                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="seT-Mw-Wcl" userLabel="Middle">
-                                                <rect key="frame" x="0.0" y="12" width="378" height="159"/>
+                                                <rect key="frame" x="0.0" y="12" width="375" height="159"/>
                                                 <subviews>
                                                     <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="PXL-qw-Muv">
                                                         <rect key="frame" x="53" y="29" width="290" height="100"/>
@@ -45,13 +45,13 @@
                                                             <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                         </state>
                                                         <connections>
+                                                            <action selector="LoginTracker:" destination="01J-lp-oVM" eventType="touchUpInside" id="lJP-LD-6on"/>
                                                             <segue destination="zce-Jp-1FO" kind="show" id="lsn-TX-cN9"/>
                                                         </connections>
                                                     </button>
                                                 </subviews>
                                                 <constraints>
                                                     <constraint firstAttribute="height" constant="159" id="DRE-UY-6cs"/>
-                                                    <constraint firstAttribute="width" constant="378" id="UrI-Xk-BUy"/>
                                                     <constraint firstItem="PXL-qw-Muv" firstAttribute="leading" secondItem="seT-Mw-Wcl" secondAttribute="leading" constant="80" id="V8D-Qu-qfi"/>
                                                     <constraint firstItem="PXL-qw-Muv" firstAttribute="top" secondItem="seT-Mw-Wcl" secondAttribute="top" constant="29" id="dsB-ce-XO5"/>
                                                 </constraints>
@@ -71,6 +71,7 @@
                                                             <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                         </state>
                                                         <connections>
+                                                            <action selector="SignupTracker:" destination="01J-lp-oVM" eventType="touchUpInside" id="dQK-ZA-Ptr"/>
                                                             <segue destination="eK2-F8-gcb" kind="show" id="zJd-pX-EmV"/>
                                                         </connections>
                                                     </button>

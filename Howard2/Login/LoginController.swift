@@ -24,6 +24,10 @@ class LoginController: UIViewController {
     @IBOutlet weak var Button8: UIButton!
     @IBOutlet weak var Button9: UIButton!
     
+    var RoadMap:Array<String> = UserDefaults.standard.object(forKey: "RoadMap") as? Array<String> ?? Array()
+    
+    var timeEntered:Date = Date()
+    
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -40,6 +44,10 @@ class LoginController: UIViewController {
         Button7.layer.cornerRadius = 15
         Button8.layer.cornerRadius = 15
         Button9.layer.cornerRadius = 15
+        
+        timeEntered = Date()
+        
+        RoadMap.append("Entered Login PIN Screen at: \(timeEntered)")
         
     }
     
@@ -103,6 +111,12 @@ class LoginController: UIViewController {
         if(PINView.text != ""){
             if(PINView.text == UserDefaults.standard.string(forKey: "PIN") ?? "" ){
             
+                var timeSpent = Date().timeIntervalSince(timeEntered)
+                RoadMap.append("Exited Login PIN Screen after: \(timeSpent) seconds")
+                
+                UserDefaults.standard.set(RoadMap, forKey: "RoadMap")
+                
+                print(RoadMap)
                 
                 let viewController:UIViewController = UIStoryboard(name: "Main", bundle: nil).instantiateViewController(withIdentifier: "HomePage") as UIViewController
                 // .instantiatViewControllerWithIdentifier() returns AnyObject! this must be downcast to utilize it
