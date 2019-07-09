@@ -15,6 +15,10 @@ class NewsChecklistController: UITableViewController {
     @IBOutlet var tableOutlet: UITableView!
     @IBOutlet weak var Home: UIButton!
     
+    var RoadMap:Array<String> = UserDefaults.standard.stringArray(forKey: "RoadMap") ?? Array()
+    
+    var timeEntered:Date = Date()
+    
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -26,12 +30,21 @@ class NewsChecklistController: UITableViewController {
         let arrayOfNews = try? PropertyListDecoder().decode(Array<appStruct>.self, from: data)
 
         self.arrayOfNews = arrayOfNews!
+        
+        RoadMap.append("Entered Checklist at: \(timeEntered)")
 
     }
     
     
         // MARK: - Table view data source
     @IBAction func getRows(_ sender: Any) {
+        
+        var timeSpent = Date().timeIntervalSince(timeEntered)
+        RoadMap.append("Exited Checklist after: \(timeSpent) seconds")
+        
+        UserDefaults.standard.set(RoadMap,forKey: "RoadMap")
+        print(RoadMap)
+        
         var values : [Int] = []
         var selected_indexPaths = tableOutlet!.indexPathsForSelectedRows
         

@@ -16,6 +16,10 @@ class ViewController: UIViewController {
     @IBOutlet weak var Apps: UIButton!
     @IBOutlet weak var logoutButton: UIButton!
     
+    var RoadMap:Array<String> = UserDefaults.standard.object(forKey: "RoadMap") as? Array<String> ?? Array()
+    
+    var timeEntered:Date = Date()
+    
     
     override func viewDidLoad() {
         
@@ -26,6 +30,10 @@ class ViewController: UIViewController {
         News.layer.cornerRadius = 15
         Apps.layer.cornerRadius = 15
         logoutButton.layer.cornerRadius = 15
+        
+        timeEntered = Date()
+        
+        RoadMap.append("Entered Home screen at: \(timeEntered)")
         
         Help.titleLabel?.adjustsFontSizeToFitWidth = true;
         News.titleLabel?.adjustsFontSizeToFitWidth = true;
@@ -40,6 +48,14 @@ class ViewController: UIViewController {
         logoutButton.setTitle("Logout".localized(), for: .normal)
         
     }
+    
+    @IBAction func LeavingHome(_ sender: Any) {
+        var timeSpent = Date().timeIntervalSince(timeEntered)
+        RoadMap.append("Exited Home screen after: \(timeSpent) seconds")
+        
+        UserDefaults.standard.set(RoadMap,forKey: "RoadMap")
+    }
+    
 
 
 }

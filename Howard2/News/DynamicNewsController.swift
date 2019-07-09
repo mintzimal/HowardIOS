@@ -29,6 +29,10 @@ class DynamicNewsController: UIViewController, SFSafariViewControllerDelegate {
     
     @IBOutlet weak var NewsLabel: UILabel!
     
+    var RoadMap:Array<String> = UserDefaults.standard.stringArray(forKey: "RoadMap") ?? Array()
+    
+    var timeEntered:Date = Date()
+    
     var arrayOfNews = [
         appStruct(id: 0, title: "Seven Days", text: "Local News", image: "SD.jpg"),
         appStruct(id: 1, title: "Burlington Free Press", text: "Local News",image: "BFP.png"),
@@ -247,7 +251,18 @@ class DynamicNewsController: UIViewController, SFSafariViewControllerDelegate {
         NewsLabel.adjustsFontSizeToFitWidth = true;
         NewsLabel.text = "News".localized()
         
+        RoadMap.append("Entered News Screen at: \(timeEntered)")
         }
+    
+    @IBAction func LeavingNews(_ sender: Any) {
+        var timeSpent = Date().timeIntervalSince(timeEntered)
+        RoadMap.append("Exited News Screen after: \(timeSpent) seconds")
+        
+        UserDefaults.standard.set(RoadMap,forKey: "RoadMap")
+        
+        print(RoadMap)
+    }
+    
 
         // Do any additional setup after loading the view.
     }

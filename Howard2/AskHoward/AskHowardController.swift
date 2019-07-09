@@ -15,6 +15,10 @@ class AskHowardController: UIViewController, MFMailComposeViewControllerDelegate
     @IBOutlet weak var emailButton: UIButton!
     @IBOutlet weak var QuestionLabel: UILabel!
     
+    var RoadMap:Array<String> = UserDefaults.standard.stringArray(forKey: "RoadMap") ?? Array()
+    
+    var timeEntered:Date = Date()
+    
     
     @IBAction func sendMail(_ sender: Any) {
         
@@ -53,9 +57,21 @@ class AskHowardController: UIViewController, MFMailComposeViewControllerDelegate
         QuestionLabel.adjustsFontSizeToFitWidth = true
         QuestionLabel.text = "Do you have any questions?".localized()
         
+        RoadMap.append("Entered Question and Answer Screen at: \(timeEntered)")
+        
         
         // Do any additional setup after loading the view.
     }
+    
+    @IBAction func LeavingQA(_ sender: Any) {
+        var timeSpent = Date().timeIntervalSince(timeEntered)
+        RoadMap.append("Exited Question and Answer Screen after: \(timeSpent) seconds")
+        
+        UserDefaults.standard.set(RoadMap,forKey: "RoadMap")
+        
+        print(RoadMap)
+    }
+    
 
 
     /*

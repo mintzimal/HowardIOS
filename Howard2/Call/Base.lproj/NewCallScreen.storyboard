@@ -119,6 +119,7 @@
                                                 <rect key="frame" x="170" y="120" width="112" height="106"/>
                                                 <state key="normal" title="Button" image="HomeIcon.png"/>
                                                 <connections>
+                                                    <action selector="LeavingHelp:" destination="bYQ-cy-aDS" eventType="touchUpInside" id="0KY-lB-zFJ"/>
                                                     <segue destination="pHw-ze-X9C" kind="show" id="ccr-TI-RQS"/>
                                                 </connections>
                                             </button>

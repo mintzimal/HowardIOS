@@ -30,6 +30,7 @@
                                     <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 </state>
                                 <connections>
+                                    <action selector="LeavingQA:" destination="89T-kU-rUW" eventType="touchUpInside" id="dQk-e2-4Xe"/>
                                     <segue destination="W9k-kn-WA8" kind="show" id="vvP-if-pP9"/>
                                 </connections>
                             </button>

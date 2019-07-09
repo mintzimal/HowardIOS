@@ -40,6 +40,7 @@
                                     <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 </state>
                                 <connections>
+                                    <action selector="LeavingApps:" destination="9pS-Ge-hFz" eventType="touchUpInside" id="Goe-zY-hSA"/>
                                     <segue destination="Jig-ZB-3sr" kind="show" id="Jfn-bR-pJZ"/>
                                 </connections>
                             </button>
@@ -48,6 +49,7 @@
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" title="Button" image="HomeIcon.png"/>
                                 <connections>
+                                    <action selector="LeavingApps:" destination="9pS-Ge-hFz" eventType="touchUpInside" id="RbE-qX-BH9"/>
                                     <segue destination="vCx-KO-RkI" kind="show" id="0DT-u5-LGG"/>
                                 </connections>
                             </button>
@@ -56,6 +58,7 @@
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" title="Button" image="questionMark.png"/>
                                 <connections>
+                                    <action selector="LeavingApps:" destination="9pS-Ge-hFz" eventType="touchUpInside" id="ycM-kM-Xdi"/>
                                     <segue destination="F28-uG-vDl" kind="show" id="G2D-kH-sl5"/>
                                 </connections>
                             </button>
