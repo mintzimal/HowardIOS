@@ -33,6 +33,8 @@ class DynamicNewsController: UIViewController, SFSafariViewControllerDelegate {
     
     var timeEntered:Date = Date()
     
+    var newsCount:[Int] = UserDefaults.standard.array(forKey: "newsCount") as? [Int] ?? [0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0]
+    
     var arrayOfNews = [
         appStruct(id: 0, title: "Seven Days", text: "Local News", image: "SD.jpg"),
         appStruct(id: 1, title: "Burlington Free Press", text: "Local News",image: "BFP.png"),
@@ -145,82 +147,122 @@ class DynamicNewsController: UIViewController, SFSafariViewControllerDelegate {
     func labelChecker(Label: String){
 
         if(Label == arrayOfNews[0].title.localized()){
-            //Google Calender Calls
+            //Seven Days Calls
+            newsCount[0]  += newsCount[0]
+            
             let svc = SFSafariViewController(url: NSURL(string: self.sevenDays)! as URL)
             self.present(svc, animated: true, completion: nil)
         }
         if(Label == arrayOfNews[1].title.localized()){
-            //Learn Something New Calls
+            //Burlington Free Press Calls
+            newsCount[1]  += newsCount[1]
+            
             let svc = SFSafariViewController(url: NSURL(string: self.burlingtonFreePress)! as URL)
             self.present(svc, animated: true, completion: nil)
         }
         if(Label == arrayOfNews[2].title.localized()){
-            //Youtube Calls
+            //WCAX Calls
+            newsCount[2]  += newsCount[2]
+            
             let svc = SFSafariViewController(url: NSURL(string: self.WCAX)! as URL)
             self.present(svc, animated: true, completion: nil)
         }
         if(Label == arrayOfNews[3].title.localized()){
-            //Xylophone Calls
+            //My Champlain Valley Calls
+            newsCount[3]  += newsCount[3]
+            
             let svc = SFSafariViewController(url: NSURL(string: self.myChamplainValley)! as URL)
             self.present(svc, animated: true, completion: nil)
             
         }
         if(Label == arrayOfNews[4].title.localized()){
-            //SSTA Bus Schedule Calls
+            //News10 Calls
+            newsCount[4]  += newsCount[4]
+            
             let svc = SFSafariViewController(url: NSURL(string: self.news10)! as URL)
             self.present(svc, animated: true, completion: nil)
         }
         if(Label == arrayOfNews[5].title.localized()){
-            //Higher Ground Live Music Calls
+            //VPR Calls
+            newsCount[5]  += newsCount[5]
+            
             let svc = SFSafariViewController(url: NSURL(string: self.VPR)! as URL)
             self.present(svc, animated: true, completion: nil)
         }
         if(Label == arrayOfNews[6].title.localized()){
-            //Messages
+            //CNN Calls
+            newsCount[6]  += newsCount[6]
+            
             let svc = SFSafariViewController(url: NSURL(string: self.CNN)! as URL)
             self.present(svc, animated: true, completion: nil)
         }
         if(Label == arrayOfNews[7].title.localized()){
-            //Motivational Calls
+            //Aljazeera Calls
+            newsCount[7]  += newsCount[7]
+            
             let svc = SFSafariViewController(url: NSURL(string: self.aljazeera)! as URL)
             self.present(svc, animated: true, completion: nil)
         }
         if(Label == arrayOfNews[8].title.localized()){
-            //Text To Speech Calls
+            //ABC Calls
+            newsCount[8]  += newsCount[8]
+            
             let svc = SFSafariViewController(url: NSURL(string: self.ABC)! as URL)
             self.present(svc, animated: true, completion: nil)
         }
         if(Label == arrayOfNews[9].title.localized()){
-            //CCTV Bus Schedule Calls
+            //Wall Street Journal Calls
+            newsCount[9]  += newsCount[9]
+            
             let svc = SFSafariViewController(url: NSURL(string: self.wallStreetJournal)! as URL)
             self.present(svc, animated: true, completion: nil)
         }
         if(Label == arrayOfNews[10].title.localized()){
+            //NPR Calls
+            newsCount[10]  += newsCount[10]
+            
             let svc = SFSafariViewController(url: NSURL(string: self.NPR)! as URL)
             self.present(svc, animated: true, completion: nil)
         }
         if(Label == arrayOfNews[11].title.localized()){
+            //Reuters Calls
+            newsCount[11]  += newsCount[11]
+            
             let svc = SFSafariViewController(url: NSURL(string: self.reuters)! as URL)
             self.present(svc, animated: true, completion: nil)
         }
         if(Label == arrayOfNews[12].title.localized()){
+            //The Associated Press Calls
+            newsCount[12]  += newsCount[12]
+            
             let svc = SFSafariViewController(url: NSURL(string: self.theAssociatedPress)! as URL)
             self.present(svc, animated: true, completion: nil)
         }
         if(Label == arrayOfNews[13].title.localized()){
+            //Huffington Post Calls
+            newsCount[13]  += newsCount[13]
+            
             let svc = SFSafariViewController(url: NSURL(string: self.huffingtonPost)! as URL)
             self.present(svc, animated: true, completion: nil)
         }
         if(Label == arrayOfNews[14].title.localized()){
+            //BBC Calls
+            newsCount[14]  += newsCount[14]
+            
             let svc = SFSafariViewController(url: NSURL(string: self.BBC)! as URL)
             self.present(svc, animated: true, completion: nil)
         }
         if(Label == arrayOfNews[15].title.localized()){
+            //Washington Post Calls
+            newsCount[15]  += newsCount[15]
+            
             let svc = SFSafariViewController(url: NSURL(string: self.washingtonPost)! as URL)
             self.present(svc, animated: true, completion: nil)
         }
         if(Label == arrayOfNews[16].title.localized()){
-            //Medication Manager Calls
+            //The Guardian Calls
+            newsCount[16]  += newsCount[16]
+            
             let svc = SFSafariViewController(url: NSURL(string: self.theGuardian)! as URL)
             self.present(svc, animated: true, completion: nil)
             
