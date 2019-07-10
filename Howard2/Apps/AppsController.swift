@@ -195,6 +195,9 @@ class AppsController: UIViewController, SFSafariViewControllerDelegate {
         }
         if(Label == arrayOfApps[9].title.localized()){
             //Text To Speech Calls
+            let viewController:UIViewController = UIStoryboard(name: "TextToSpeech", bundle: nil).instantiateViewController(withIdentifier: "TextToSpeech") as UIViewController
+            
+            self.present(viewController, animated: true, completion: nil)
         }
         if(Label == arrayOfApps[10].title.localized()){
             //CCTV Bus Schedule Calls

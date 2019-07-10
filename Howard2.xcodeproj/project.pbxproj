@@ -3,7 +3,7 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 51;
 	objects = {
 
 /* Begin PBXBuildFile section */
@@ -80,6 +80,9 @@
 		39790BA922BAA38000EAA8FE /* NewCheckList.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 39790BAB22BAA38000EAA8FE /* NewCheckList.storyboard */; };
 		39790BD422BACA0800EAA8FE /* Login.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 39790BD622BACA0800EAA8FE /* Login.storyboard */; };
 		39790BFC22BAD01800EAA8FE /* backArrow.png in Resources */ = {isa = PBXBuildFile; fileRef = 39790BFB22BAD01800EAA8FE /* backArrow.png */; };
+		39B2C3C522D57FEB00C5BFB2 /* TextToSpeech.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 39B2C3C422D57FEB00C5BFB2 /* TextToSpeech.storyboard */; };
+		39B2C3C722D5801A00C5BFB2 /* TextToSpeech.swift in Sources */ = {isa = PBXBuildFile; fileRef = 39B2C3C622D5801A00C5BFB2 /* TextToSpeech.swift */; };
+		39B2C3C922D5833B00C5BFB2 /* speaker.png in Resources */ = {isa = PBXBuildFile; fileRef = 39B2C3C822D5833B00C5BFB2 /* speaker.png */; };
 		39B88B93227292620018B675 /* BFP.png in Resources */ = {isa = PBXBuildFile; fileRef = 39B88B92227292620018B675 /* BFP.png */; };
 		39B88B962272943D0018B675 /* MCV.png in Resources */ = {isa = PBXBuildFile; fileRef = 39B88B952272943D0018B675 /* MCV.png */; };
 		39ED26B122723EA600B7D843 /* border.png in Resources */ = {isa = PBXBuildFile; fileRef = 39ED26B022723EA600B7D843 /* border.png */; };
@@ -414,6 +417,9 @@
 		39790BF822BACA1C00EAA8FE /* bn */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = bn; path = bn.lproj/Login.strings; sourceTree = "<group>"; };
 		39790BFA22BACA1D00EAA8FE /* ar */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = ar; path = ar.lproj/Login.strings; sourceTree = "<group>"; };
 		39790BFB22BAD01800EAA8FE /* backArrow.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = backArrow.png; sourceTree = "<group>"; };
+		39B2C3C422D57FEB00C5BFB2 /* TextToSpeech.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = TextToSpeech.storyboard; sourceTree = "<group>"; };
+		39B2C3C622D5801A00C5BFB2 /* TextToSpeech.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TextToSpeech.swift; sourceTree = "<group>"; };
+		39B2C3C822D5833B00C5BFB2 /* speaker.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = speaker.png; sourceTree = "<group>"; };
 		39B88B92227292620018B675 /* BFP.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = BFP.png; path = Howard2/Images/BFP.png; sourceTree = SOURCE_ROOT; };
 		39B88B952272943D0018B675 /* MCV.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = MCV.png; sourceTree = "<group>"; };
 		39B88B9B227295E70018B675 /* WCAX.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = WCAX.png; path = /Users/mintzimal/Documents/HowardCenterFinal/Howard2/Images/WCAX.png; sourceTree = "<absolute>"; };
@@ -498,6 +504,7 @@
 		396027D7225E9D520007CCDD /* Images */ = {
 			isa = PBXGroup;
 			children = (
+				39B2C3C822D5833B00C5BFB2 /* speaker.png */,
 				39790BFB22BAD01800EAA8FE /* backArrow.png */,
 				397909B722B1BBF700EAA8FE /* vietnamese.png */,
 				397909B522B1BBEC00EAA8FE /* swedish.jpg */,
@@ -567,6 +574,15 @@
 				390689A0227948FC0068E4D2 /* peeking reverse.png */,
 			);
 			path = Images;
+			sourceTree = "<group>";
+		};
+		39B2C3C322D57FA700C5BFB2 /* Text to Speech */ = {
+			isa = PBXGroup;
+			children = (
+				39B2C3C422D57FEB00C5BFB2 /* TextToSpeech.storyboard */,
+				39B2C3C622D5801A00C5BFB2 /* TextToSpeech.swift */,
+			);
+			path = "Text to Speech";
 			sourceTree = "<group>";
 		};
 		56084EB6B685B25DC211EEC1 /* Frameworks */ = {
@@ -763,6 +779,7 @@
 				F7838117227A126500902F3B /* GoogleService-Info.plist */,
 				F7DC6506224D182C00C8EA66 /* Assets.xcassets */,
 				F7A70465227A0CDB00C0146B /* AppDelegate.swift */,
+				39B2C3C322D57FA700C5BFB2 /* Text to Speech */,
 				F7838127227A501E00902F3B /* Xylo */,
 				F7A70476227A0DBE00C0146B /* Messages */,
 				396027D7225E9D520007CCDD /* Images */,
@@ -945,6 +962,7 @@
 				3979097A229F920000EAA8FE /* ABC.png in Resources */,
 				3979099022A001FA00EAA8FE /* MCV.jpg in Resources */,
 				F7DC6507224D182C00C8EA66 /* Assets.xcassets in Resources */,
+				39B2C3C522D57FEB00C5BFB2 /* TextToSpeech.storyboard in Resources */,
 				39790BD422BACA0800EAA8FE /* Login.storyboard in Resources */,
 				970385772274FB4700C47655 /* concert.jpg in Resources */,
 				39790B8222BA988300EAA8FE /* DynamicNews.storyboard in Resources */,
@@ -962,6 +980,7 @@
 				39790B3022BA982C00EAA8FE /* NewsChecklist.storyboard in Resources */,
 				3979099822B1BB6900EAA8FE /* arabic.png in Resources */,
 				397909B422B1BBE100EAA8FE /* swahili.png in Resources */,
+				39B2C3C922D5833B00C5BFB2 /* speaker.png in Resources */,
 				970385792274FCCE00C47655 /* speech.jpeg in Resources */,
 				39790984229F939C00EAA8FE /* HP.png in Resources */,
 				F7A70474227A0CDE00C0146B /* Images.xcassets in Resources */,
@@ -1132,6 +1151,7 @@
 				F7A7046C227A0CDE00C0146B /* WelcomeViewController.swift in Sources */,
 				F7A7046B227A0CDE00C0146B /* CustomMessageCell.swift in Sources */,
 				39038295226689A3003422D3 /* AskHowardController.swift in Sources */,
+				39B2C3C722D5801A00C5BFB2 /* TextToSpeech.swift in Sources */,
 				39790970229F7E1300EAA8FE /* DynamicNewsController.swift in Sources */,
 				F7A7046D227A0CDE00C0146B /* RegisterViewController.swift in Sources */,
 				F7A70472227A0CDE00C0146B /* ChatViewController.swift in Sources */,
