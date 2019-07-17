@@ -88,7 +88,7 @@
                                                 </state>
                                                 <connections>
                                                     <action selector="callDistrictFunction:" destination="bYQ-cy-aDS" eventType="touchUpInside" id="91G-23-yZ1"/>
-                                                    <segue destination="5We-lT-tbe" kind="show" id="U8z-7d-7wE"/>
+                                                    <segue destination="eSz-bG-Koc" kind="show" id="Odl-XQ-36e"/>
                                                 </connections>
                                             </button>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="Click to Call" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="p4J-Fn-yQB">
@@ -249,6 +249,14 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="083-R0-8Ls" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="-86" y="414"/>
+        </scene>
+        <!--NavChat-->
+        <scene sceneID="vf8-rq-5JE">
+            <objects>
+                <viewControllerPlaceholder storyboardName="Chat" referencedIdentifier="NavChat" id="eSz-bG-Koc" sceneMemberID="viewController"/>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="6hG-j9-Xza" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-699" y="-120"/>
         </scene>
     </scenes>
     <resources>

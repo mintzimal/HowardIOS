@@ -78,7 +78,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="hD5-eu-Iee" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2862.3188405797105" y="95.758928571428569"/>
+            <point key="canvasLocation" x="5678.2608695652179" y="95.758928571428569"/>
         </scene>
         <!--Howard Center Chat Room-->
         <scene sceneID="xYb-oW-7nJ">
@@ -168,7 +168,25 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="BZF-VK-6ug" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="3815.9420289855075" y="95.758928571428569"/>
+            <point key="canvasLocation" x="6544.9275362318849" y="95.758928571428569"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="6IM-o9-b3a">
+            <objects>
+                <navigationController storyboardIdentifier="NavChat" automaticallyAdjustsScrollViewInsets="NO" useStoryboardIdentifierAsRestorationIdentifier="YES" id="Kj4-3I-Hb6" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="9Y6-nP-eGp">
+                        <rect key="frame" x="0.0" y="44" width="414" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="i42-jB-WY3" kind="relationship" relationship="rootViewController" id="9ol-8k-hlQ"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="mdf-WK-QpR" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="4768.115942028986" y="95.758928571428569"/>
         </scene>
     </scenes>
     <resources>
