@@ -453,9 +453,9 @@ class ChatViewController: UIViewController, UITableViewDelegate, UITableViewData
             
             let allConversations = result?.data?.listConversations?.items
             
-           
             
-                for item in allConversations!{
+            if(allConversations != nil){
+            for item in allConversations!{
                 
                 
                 if (item?.clientId == AWSMobileClient.sharedInstance().getIdentityId().result as GraphQLID? && item?.caseManagerId == self.caseManagerID){
@@ -469,7 +469,7 @@ class ChatViewController: UIViewController, UITableViewDelegate, UITableViewData
                     
                     
                     }
-             
+                }
                 
                 
             }
