@@ -1,0 +1,178 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14490.70" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14490.49"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Landing View Controller-->
+        <scene sceneID="FUm-cg-rHa">
+            <objects>
+                <viewController storyboardIdentifier="ChatRoom" useStoryboardIdentifierAsRestorationIdentifier="YES" id="i42-jB-WY3" customClass="LandingViewController" customModule="Howard2" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="WL6-8j-bGz">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="pL0-1A-43o">
+                                <rect key="frame" x="50" y="581" width="315" height="106"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" red="0.33644006409999999" green="0.40332308709999998" blue="0.69790317359999998" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="55"/>
+                                <state key="normal" title="Sign Out">
+                                    <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                </state>
+                                <connections>
+                                    <action selector="signOutPress:" destination="i42-jB-WY3" eventType="touchUpInside" id="Yvz-34-yVb"/>
+                                </connections>
+                            </button>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="Main" translatesAutoresizingMaskIntoConstraints="NO" id="muy-VA-Reo">
+                                <rect key="frame" x="4" y="88" width="406" height="253"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="HowardCenterHeader.png" translatesAutoresizingMaskIntoConstraints="NO" id="ojN-Fm-DNt">
+                                <rect key="frame" x="-49" y="757" width="512" height="139"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ldF-VX-p3T">
+                                <rect key="frame" x="0.0" y="320" width="414" height="21"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" red="0.33644006409999999" green="0.40332308709999998" blue="0.69790317359999998" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="4Mc-ix-wFu">
+                                <rect key="frame" x="0.0" y="738" width="414" height="21"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" red="0.33644006409999999" green="0.40332308709999998" blue="0.69790317359999998" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="OHA-aw-u3d">
+                                <rect key="frame" x="50" y="385" width="315" height="106"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" red="0.33644006409999999" green="0.40332308709999998" blue="0.69790317359999998" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="55"/>
+                                <state key="normal" title="Chat Room">
+                                    <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                </state>
+                                <connections>
+                                    <segue destination="ba4-0U-O49" kind="show" id="mPp-rq-eRD"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <viewLayoutGuide key="safeArea" id="YpA-ly-6L1"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="Wlg-Di-683"/>
+                    <connections>
+                        <outlet property="ChatRoom" destination="OHA-aw-u3d" id="7wY-GP-57i"/>
+                        <outlet property="SignOut" destination="pL0-1A-43o" id="efe-5a-R4d"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="hD5-eu-Iee" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2862.3188405797105" y="95.758928571428569"/>
+        </scene>
+        <!--Howard Center Chat Room-->
+        <scene sceneID="xYb-oW-7nJ">
+            <objects>
+                <viewController storyboardIdentifier="chatVC" id="ba4-0U-O49" customClass="ChatViewController" customModule="Howard2" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="sXb-k7-hKC"/>
+                        <viewControllerLayoutGuide type="bottom" id="VLQ-9E-AjS"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="ctX-JD-YVk" userLabel="Background">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="GEz-xN-dC1" userLabel="Compose View">
+                                <rect key="frame" x="0.0" y="812" width="414" height="50"/>
+                                <subviews>
+                                    <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Enter Your Message" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="RCv-9F-8gM">
+                                        <rect key="frame" x="8" y="10" width="344" height="30"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                        <textInputTraits key="textInputTraits" keyboardType="emailAddress" returnKeyType="send"/>
+                                    </textField>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="HIE-QI-r4i">
+                                        <rect key="frame" x="360" y="10" width="46" height="30"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="30" id="icw-FO-ncY"/>
+                                            <constraint firstAttribute="width" constant="46" id="m6g-pL-YrO"/>
+                                        </constraints>
+                                        <state key="normal" title="Send">
+                                            <color key="titleShadowColor" red="0.5" green="0.5" blue="0.5" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        </state>
+                                        <connections>
+                                            <action selector="sendPressed:" destination="ba4-0U-O49" eventType="touchUpInside" id="UHw-hk-1Zs"/>
+                                        </connections>
+                                    </button>
+                                </subviews>
+                                <color key="backgroundColor" red="0.33333333329999998" green="0.33333333329999998" blue="0.33333333329999998" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="trailing" secondItem="HIE-QI-r4i" secondAttribute="trailing" constant="8" id="5N0-nS-UcT"/>
+                                    <constraint firstAttribute="height" constant="50" id="8aF-Z7-Fs5"/>
+                                    <constraint firstItem="RCv-9F-8gM" firstAttribute="top" secondItem="GEz-xN-dC1" secondAttribute="top" constant="10" id="9nh-dG-lmM"/>
+                                    <constraint firstItem="HIE-QI-r4i" firstAttribute="leading" secondItem="RCv-9F-8gM" secondAttribute="trailing" constant="8" id="X26-xS-s5Z"/>
+                                    <constraint firstItem="HIE-QI-r4i" firstAttribute="top" secondItem="GEz-xN-dC1" secondAttribute="top" constant="10" id="fml-7n-m8B"/>
+                                    <constraint firstItem="RCv-9F-8gM" firstAttribute="leading" secondItem="GEz-xN-dC1" secondAttribute="leading" constant="8" id="p0X-uI-fVr"/>
+                                </constraints>
+                            </view>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="22" sectionFooterHeight="22" translatesAutoresizingMaskIntoConstraints="NO" id="Wt0-Iw-upO" userLabel="Message Table View">
+                                <rect key="frame" x="0.0" y="88" width="414" height="724"/>
+                                <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <prototypes>
+                                    <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="MessageCell" id="uGs-Q8-tTu">
+                                        <rect key="frame" x="0.0" y="22" width="414" height="44"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="uGs-Q8-tTu" id="ADg-Ew-1cw">
+                                            <rect key="frame" x="0.0" y="0.0" width="414" height="43.5"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                        </tableViewCellContentView>
+                                    </tableViewCell>
+                                </prototypes>
+                            </tableView>
+                        </subviews>
+                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="Wt0-Iw-upO" firstAttribute="top" secondItem="sXb-k7-hKC" secondAttribute="bottom" id="338-LL-XMG"/>
+                            <constraint firstItem="Wt0-Iw-upO" firstAttribute="leading" secondItem="ctX-JD-YVk" secondAttribute="leading" id="Bc2-8O-Avu"/>
+                            <constraint firstAttribute="trailing" secondItem="GEz-xN-dC1" secondAttribute="trailing" id="D3S-gV-FXR"/>
+                            <constraint firstItem="VLQ-9E-AjS" firstAttribute="top" secondItem="GEz-xN-dC1" secondAttribute="bottom" id="GBR-Oa-CmH"/>
+                            <constraint firstItem="GEz-xN-dC1" firstAttribute="leading" secondItem="ctX-JD-YVk" secondAttribute="leading" id="QOq-Yw-QdE"/>
+                            <constraint firstItem="GEz-xN-dC1" firstAttribute="top" secondItem="Wt0-Iw-upO" secondAttribute="bottom" id="kc3-AI-0AO"/>
+                            <constraint firstAttribute="trailing" secondItem="Wt0-Iw-upO" secondAttribute="trailing" id="qvx-FK-yae"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="ARI-8d-g6g"/>
+                    </view>
+                    <navigationItem key="navigationItem" title="Howard Center Chat Room" id="QRM-WT-DYJ">
+                        <barButtonItem key="rightBarButtonItem" title="Refresh" id="tc0-Vd-CIr">
+                            <connections>
+                                <action selector="logOutPressed:" destination="ba4-0U-O49" id="AGQ-Bc-Uec"/>
+                            </connections>
+                        </barButtonItem>
+                    </navigationItem>
+                    <simulatedNavigationBarMetrics key="simulatedTopBarMetrics" prompted="NO"/>
+                    <connections>
+                        <outlet property="heightConstraint" destination="8aF-Z7-Fs5" id="WV3-pH-ZGy"/>
+                        <outlet property="messageTableView" destination="Wt0-Iw-upO" id="C8y-Ri-sBa"/>
+                        <outlet property="messageTextfield" destination="RCv-9F-8gM" id="1JA-n0-7FY"/>
+                        <outlet property="sendButton" destination="HIE-QI-r4i" id="qmu-hL-G7F"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="BZF-VK-6ug" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="3815.9420289855075" y="95.758928571428569"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="HowardCenterHeader.png" width="630" height="200"/>
+        <image name="Main" width="612" height="331"/>
+    </resources>
+</document>
