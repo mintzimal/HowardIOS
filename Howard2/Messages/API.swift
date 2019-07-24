@@ -143,6 +143,111 @@ public struct DeleteConversationsInput: GraphQLMapConvertible {
   }
 }
 
+public struct CreateDataEnvInput: GraphQLMapConvertible {
+  public var graphQLMap: GraphQLMap
+
+  public init(id: Int, newscount: String, appcount: String, roadmap: String) {
+    graphQLMap = ["id": id, "newscount": newscount, "appcount": appcount, "roadmap": roadmap]
+  }
+
+  public var id: Int {
+    get {
+      return graphQLMap["id"] as! Int
+    }
+    set {
+      graphQLMap.updateValue(newValue, forKey: "id")
+    }
+  }
+
+  public var newscount: String {
+    get {
+      return graphQLMap["newscount"] as! String
+    }
+    set {
+      graphQLMap.updateValue(newValue, forKey: "newscount")
+    }
+  }
+
+  public var appcount: String {
+    get {
+      return graphQLMap["appcount"] as! String
+    }
+    set {
+      graphQLMap.updateValue(newValue, forKey: "appcount")
+    }
+  }
+
+  public var roadmap: String {
+    get {
+      return graphQLMap["roadmap"] as! String
+    }
+    set {
+      graphQLMap.updateValue(newValue, forKey: "roadmap")
+    }
+  }
+}
+
+public struct UpdateDataEnvInput: GraphQLMapConvertible {
+  public var graphQLMap: GraphQLMap
+
+  public init(id: Int, newscount: String? = nil, appcount: String? = nil, roadmap: String? = nil) {
+    graphQLMap = ["id": id, "newscount": newscount, "appcount": appcount, "roadmap": roadmap]
+  }
+
+  public var id: Int {
+    get {
+      return graphQLMap["id"] as! Int
+    }
+    set {
+      graphQLMap.updateValue(newValue, forKey: "id")
+    }
+  }
+
+  public var newscount: String? {
+    get {
+      return graphQLMap["newscount"] as! String?
+    }
+    set {
+      graphQLMap.updateValue(newValue, forKey: "newscount")
+    }
+  }
+
+  public var appcount: String? {
+    get {
+      return graphQLMap["appcount"] as! String?
+    }
+    set {
+      graphQLMap.updateValue(newValue, forKey: "appcount")
+    }
+  }
+
+  public var roadmap: String? {
+    get {
+      return graphQLMap["roadmap"] as! String?
+    }
+    set {
+      graphQLMap.updateValue(newValue, forKey: "roadmap")
+    }
+  }
+}
+
+public struct DeleteDataEnvInput: GraphQLMapConvertible {
+  public var graphQLMap: GraphQLMap
+
+  public init(id: Int) {
+    graphQLMap = ["id": id]
+  }
+
+  public var id: Int {
+    get {
+      return graphQLMap["id"] as! Int
+    }
+    set {
+      graphQLMap.updateValue(newValue, forKey: "id")
+    }
+  }
+}
+
 public struct TableConversationsFilterInput: GraphQLMapConvertible {
   public var graphQLMap: GraphQLMap
 
@@ -477,6 +582,23 @@ public struct TableStringFilterInput: GraphQLMapConvertible {
     }
     set {
       graphQLMap.updateValue(newValue, forKey: "beginsWith")
+    }
+  }
+}
+
+public struct TableDataEnvFilterInput: GraphQLMapConvertible {
+  public var graphQLMap: GraphQLMap
+
+  public init(id: TableIntFilterInput? = nil) {
+    graphQLMap = ["id": id]
+  }
+
+  public var id: TableIntFilterInput? {
+    get {
+      return graphQLMap["id"] as! TableIntFilterInput?
+    }
+    set {
+      graphQLMap.updateValue(newValue, forKey: "id")
     }
   }
 }
@@ -868,6 +990,333 @@ public final class DeleteConversationsMutation: GraphQLMutation {
   }
 }
 
+public final class CreateDataEnvMutation: GraphQLMutation {
+  public static let operationString =
+    "mutation CreateDataEnv($input: CreateDataEnvInput!) {\n  createDataEnv(input: $input) {\n    __typename\n    id\n    newscount\n    appcount\n    roadmap\n  }\n}"
+
+  public var input: CreateDataEnvInput
+
+  public init(input: CreateDataEnvInput) {
+    self.input = input
+  }
+
+  public var variables: GraphQLMap? {
+    return ["input": input]
+  }
+
+  public struct Data: GraphQLSelectionSet {
+    public static let possibleTypes = ["Mutation"]
+
+    public static let selections: [GraphQLSelection] = [
+      GraphQLField("createDataEnv", arguments: ["input": GraphQLVariable("input")], type: .object(CreateDataEnv.selections)),
+    ]
+
+    public var snapshot: Snapshot
+
+    public init(snapshot: Snapshot) {
+      self.snapshot = snapshot
+    }
+
+    public init(createDataEnv: CreateDataEnv? = nil) {
+      self.init(snapshot: ["__typename": "Mutation", "createDataEnv": createDataEnv.flatMap { $0.snapshot }])
+    }
+
+    public var createDataEnv: CreateDataEnv? {
+      get {
+        return (snapshot["createDataEnv"] as? Snapshot).flatMap { CreateDataEnv(snapshot: $0) }
+      }
+      set {
+        snapshot.updateValue(newValue?.snapshot, forKey: "createDataEnv")
+      }
+    }
+
+    public struct CreateDataEnv: GraphQLSelectionSet {
+      public static let possibleTypes = ["DataEnv"]
+
+      public static let selections: [GraphQLSelection] = [
+        GraphQLField("__typename", type: .nonNull(.scalar(String.self))),
+        GraphQLField("id", type: .nonNull(.scalar(Int.self))),
+        GraphQLField("newscount", type: .nonNull(.scalar(String.self))),
+        GraphQLField("appcount", type: .nonNull(.scalar(String.self))),
+        GraphQLField("roadmap", type: .nonNull(.scalar(String.self))),
+      ]
+
+      public var snapshot: Snapshot
+
+      public init(snapshot: Snapshot) {
+        self.snapshot = snapshot
+      }
+
+      public init(id: Int, newscount: String, appcount: String, roadmap: String) {
+        self.init(snapshot: ["__typename": "DataEnv", "id": id, "newscount": newscount, "appcount": appcount, "roadmap": roadmap])
+      }
+
+      public var __typename: String {
+        get {
+          return snapshot["__typename"]! as! String
+        }
+        set {
+          snapshot.updateValue(newValue, forKey: "__typename")
+        }
+      }
+
+      public var id: Int {
+        get {
+          return snapshot["id"]! as! Int
+        }
+        set {
+          snapshot.updateValue(newValue, forKey: "id")
+        }
+      }
+
+      public var newscount: String {
+        get {
+          return snapshot["newscount"]! as! String
+        }
+        set {
+          snapshot.updateValue(newValue, forKey: "newscount")
+        }
+      }
+
+      public var appcount: String {
+        get {
+          return snapshot["appcount"]! as! String
+        }
+        set {
+          snapshot.updateValue(newValue, forKey: "appcount")
+        }
+      }
+
+      public var roadmap: String {
+        get {
+          return snapshot["roadmap"]! as! String
+        }
+        set {
+          snapshot.updateValue(newValue, forKey: "roadmap")
+        }
+      }
+    }
+  }
+}
+
+public final class UpdateDataEnvMutation: GraphQLMutation {
+  public static let operationString =
+    "mutation UpdateDataEnv($input: UpdateDataEnvInput!) {\n  updateDataEnv(input: $input) {\n    __typename\n    id\n    newscount\n    appcount\n    roadmap\n  }\n}"
+
+  public var input: UpdateDataEnvInput
+
+  public init(input: UpdateDataEnvInput) {
+    self.input = input
+  }
+
+  public var variables: GraphQLMap? {
+    return ["input": input]
+  }
+
+  public struct Data: GraphQLSelectionSet {
+    public static let possibleTypes = ["Mutation"]
+
+    public static let selections: [GraphQLSelection] = [
+      GraphQLField("updateDataEnv", arguments: ["input": GraphQLVariable("input")], type: .object(UpdateDataEnv.selections)),
+    ]
+
+    public var snapshot: Snapshot
+
+    public init(snapshot: Snapshot) {
+      self.snapshot = snapshot
+    }
+
+    public init(updateDataEnv: UpdateDataEnv? = nil) {
+      self.init(snapshot: ["__typename": "Mutation", "updateDataEnv": updateDataEnv.flatMap { $0.snapshot }])
+    }
+
+    public var updateDataEnv: UpdateDataEnv? {
+      get {
+        return (snapshot["updateDataEnv"] as? Snapshot).flatMap { UpdateDataEnv(snapshot: $0) }
+      }
+      set {
+        snapshot.updateValue(newValue?.snapshot, forKey: "updateDataEnv")
+      }
+    }
+
+    public struct UpdateDataEnv: GraphQLSelectionSet {
+      public static let possibleTypes = ["DataEnv"]
+
+      public static let selections: [GraphQLSelection] = [
+        GraphQLField("__typename", type: .nonNull(.scalar(String.self))),
+        GraphQLField("id", type: .nonNull(.scalar(Int.self))),
+        GraphQLField("newscount", type: .nonNull(.scalar(String.self))),
+        GraphQLField("appcount", type: .nonNull(.scalar(String.self))),
+        GraphQLField("roadmap", type: .nonNull(.scalar(String.self))),
+      ]
+
+      public var snapshot: Snapshot
+
+      public init(snapshot: Snapshot) {
+        self.snapshot = snapshot
+      }
+
+      public init(id: Int, newscount: String, appcount: String, roadmap: String) {
+        self.init(snapshot: ["__typename": "DataEnv", "id": id, "newscount": newscount, "appcount": appcount, "roadmap": roadmap])
+      }
+
+      public var __typename: String {
+        get {
+          return snapshot["__typename"]! as! String
+        }
+        set {
+          snapshot.updateValue(newValue, forKey: "__typename")
+        }
+      }
+
+      public var id: Int {
+        get {
+          return snapshot["id"]! as! Int
+        }
+        set {
+          snapshot.updateValue(newValue, forKey: "id")
+        }
+      }
+
+      public var newscount: String {
+        get {
+          return snapshot["newscount"]! as! String
+        }
+        set {
+          snapshot.updateValue(newValue, forKey: "newscount")
+        }
+      }
+
+      public var appcount: String {
+        get {
+          return snapshot["appcount"]! as! String
+        }
+        set {
+          snapshot.updateValue(newValue, forKey: "appcount")
+        }
+      }
+
+      public var roadmap: String {
+        get {
+          return snapshot["roadmap"]! as! String
+        }
+        set {
+          snapshot.updateValue(newValue, forKey: "roadmap")
+        }
+      }
+    }
+  }
+}
+
+public final class DeleteDataEnvMutation: GraphQLMutation {
+  public static let operationString =
+    "mutation DeleteDataEnv($input: DeleteDataEnvInput!) {\n  deleteDataEnv(input: $input) {\n    __typename\n    id\n    newscount\n    appcount\n    roadmap\n  }\n}"
+
+  public var input: DeleteDataEnvInput
+
+  public init(input: DeleteDataEnvInput) {
+    self.input = input
+  }
+
+  public var variables: GraphQLMap? {
+    return ["input": input]
+  }
+
+  public struct Data: GraphQLSelectionSet {
+    public static let possibleTypes = ["Mutation"]
+
+    public static let selections: [GraphQLSelection] = [
+      GraphQLField("deleteDataEnv", arguments: ["input": GraphQLVariable("input")], type: .object(DeleteDataEnv.selections)),
+    ]
+
+    public var snapshot: Snapshot
+
+    public init(snapshot: Snapshot) {
+      self.snapshot = snapshot
+    }
+
+    public init(deleteDataEnv: DeleteDataEnv? = nil) {
+      self.init(snapshot: ["__typename": "Mutation", "deleteDataEnv": deleteDataEnv.flatMap { $0.snapshot }])
+    }
+
+    public var deleteDataEnv: DeleteDataEnv? {
+      get {
+        return (snapshot["deleteDataEnv"] as? Snapshot).flatMap { DeleteDataEnv(snapshot: $0) }
+      }
+      set {
+        snapshot.updateValue(newValue?.snapshot, forKey: "deleteDataEnv")
+      }
+    }
+
+    public struct DeleteDataEnv: GraphQLSelectionSet {
+      public static let possibleTypes = ["DataEnv"]
+
+      public static let selections: [GraphQLSelection] = [
+        GraphQLField("__typename", type: .nonNull(.scalar(String.self))),
+        GraphQLField("id", type: .nonNull(.scalar(Int.self))),
+        GraphQLField("newscount", type: .nonNull(.scalar(String.self))),
+        GraphQLField("appcount", type: .nonNull(.scalar(String.self))),
+        GraphQLField("roadmap", type: .nonNull(.scalar(String.self))),
+      ]
+
+      public var snapshot: Snapshot
+
+      public init(snapshot: Snapshot) {
+        self.snapshot = snapshot
+      }
+
+      public init(id: Int, newscount: String, appcount: String, roadmap: String) {
+        self.init(snapshot: ["__typename": "DataEnv", "id": id, "newscount": newscount, "appcount": appcount, "roadmap": roadmap])
+      }
+
+      public var __typename: String {
+        get {
+          return snapshot["__typename"]! as! String
+        }
+        set {
+          snapshot.updateValue(newValue, forKey: "__typename")
+        }
+      }
+
+      public var id: Int {
+        get {
+          return snapshot["id"]! as! Int
+        }
+        set {
+          snapshot.updateValue(newValue, forKey: "id")
+        }
+      }
+
+      public var newscount: String {
+        get {
+          return snapshot["newscount"]! as! String
+        }
+        set {
+          snapshot.updateValue(newValue, forKey: "newscount")
+        }
+      }
+
+      public var appcount: String {
+        get {
+          return snapshot["appcount"]! as! String
+        }
+        set {
+          snapshot.updateValue(newValue, forKey: "appcount")
+        }
+      }
+
+      public var roadmap: String {
+        get {
+          return snapshot["roadmap"]! as! String
+        }
+        set {
+          snapshot.updateValue(newValue, forKey: "roadmap")
+        }
+      }
+    }
+  }
+}
+
 public final class GetConversationsQuery: GraphQLQuery {
   public static let operationString =
     "query GetConversations($ConversationID: Int!) {\n  getConversations(ConversationID: $ConversationID) {\n    __typename\n    ConversationID\n    CaseManagerID\n    ClientID\n    Messages\n    Nickname\n    LastUpdate\n  }\n}"
@@ -1170,6 +1619,275 @@ public final class ListConversationsQuery: GraphQLQuery {
           }
           set {
             snapshot.updateValue(newValue, forKey: "LastUpdate")
+          }
+        }
+      }
+    }
+  }
+}
+
+public final class GetDataEnvQuery: GraphQLQuery {
+  public static let operationString =
+    "query GetDataEnv($id: Int!) {\n  getDataEnv(id: $id) {\n    __typename\n    id\n    newscount\n    appcount\n    roadmap\n  }\n}"
+
+  public var id: Int
+
+  public init(id: Int) {
+    self.id = id
+  }
+
+  public var variables: GraphQLMap? {
+    return ["id": id]
+  }
+
+  public struct Data: GraphQLSelectionSet {
+    public static let possibleTypes = ["Query"]
+
+    public static let selections: [GraphQLSelection] = [
+      GraphQLField("getDataEnv", arguments: ["id": GraphQLVariable("id")], type: .object(GetDataEnv.selections)),
+    ]
+
+    public var snapshot: Snapshot
+
+    public init(snapshot: Snapshot) {
+      self.snapshot = snapshot
+    }
+
+    public init(getDataEnv: GetDataEnv? = nil) {
+      self.init(snapshot: ["__typename": "Query", "getDataEnv": getDataEnv.flatMap { $0.snapshot }])
+    }
+
+    public var getDataEnv: GetDataEnv? {
+      get {
+        return (snapshot["getDataEnv"] as? Snapshot).flatMap { GetDataEnv(snapshot: $0) }
+      }
+      set {
+        snapshot.updateValue(newValue?.snapshot, forKey: "getDataEnv")
+      }
+    }
+
+    public struct GetDataEnv: GraphQLSelectionSet {
+      public static let possibleTypes = ["DataEnv"]
+
+      public static let selections: [GraphQLSelection] = [
+        GraphQLField("__typename", type: .nonNull(.scalar(String.self))),
+        GraphQLField("id", type: .nonNull(.scalar(Int.self))),
+        GraphQLField("newscount", type: .nonNull(.scalar(String.self))),
+        GraphQLField("appcount", type: .nonNull(.scalar(String.self))),
+        GraphQLField("roadmap", type: .nonNull(.scalar(String.self))),
+      ]
+
+      public var snapshot: Snapshot
+
+      public init(snapshot: Snapshot) {
+        self.snapshot = snapshot
+      }
+
+      public init(id: Int, newscount: String, appcount: String, roadmap: String) {
+        self.init(snapshot: ["__typename": "DataEnv", "id": id, "newscount": newscount, "appcount": appcount, "roadmap": roadmap])
+      }
+
+      public var __typename: String {
+        get {
+          return snapshot["__typename"]! as! String
+        }
+        set {
+          snapshot.updateValue(newValue, forKey: "__typename")
+        }
+      }
+
+      public var id: Int {
+        get {
+          return snapshot["id"]! as! Int
+        }
+        set {
+          snapshot.updateValue(newValue, forKey: "id")
+        }
+      }
+
+      public var newscount: String {
+        get {
+          return snapshot["newscount"]! as! String
+        }
+        set {
+          snapshot.updateValue(newValue, forKey: "newscount")
+        }
+      }
+
+      public var appcount: String {
+        get {
+          return snapshot["appcount"]! as! String
+        }
+        set {
+          snapshot.updateValue(newValue, forKey: "appcount")
+        }
+      }
+
+      public var roadmap: String {
+        get {
+          return snapshot["roadmap"]! as! String
+        }
+        set {
+          snapshot.updateValue(newValue, forKey: "roadmap")
+        }
+      }
+    }
+  }
+}
+
+public final class ListDataEnvsQuery: GraphQLQuery {
+  public static let operationString =
+    "query ListDataEnvs($filter: TableDataEnvFilterInput, $limit: Int, $nextToken: String) {\n  listDataEnvs(filter: $filter, limit: $limit, nextToken: $nextToken) {\n    __typename\n    items {\n      __typename\n      id\n      newscount\n      appcount\n      roadmap\n    }\n    nextToken\n  }\n}"
+
+  public var filter: TableDataEnvFilterInput?
+  public var limit: Int?
+  public var nextToken: String?
+
+  public init(filter: TableDataEnvFilterInput? = nil, limit: Int? = nil, nextToken: String? = nil) {
+    self.filter = filter
+    self.limit = limit
+    self.nextToken = nextToken
+  }
+
+  public var variables: GraphQLMap? {
+    return ["filter": filter, "limit": limit, "nextToken": nextToken]
+  }
+
+  public struct Data: GraphQLSelectionSet {
+    public static let possibleTypes = ["Query"]
+
+    public static let selections: [GraphQLSelection] = [
+      GraphQLField("listDataEnvs", arguments: ["filter": GraphQLVariable("filter"), "limit": GraphQLVariable("limit"), "nextToken": GraphQLVariable("nextToken")], type: .object(ListDataEnv.selections)),
+    ]
+
+    public var snapshot: Snapshot
+
+    public init(snapshot: Snapshot) {
+      self.snapshot = snapshot
+    }
+
+    public init(listDataEnvs: ListDataEnv? = nil) {
+      self.init(snapshot: ["__typename": "Query", "listDataEnvs": listDataEnvs.flatMap { $0.snapshot }])
+    }
+
+    public var listDataEnvs: ListDataEnv? {
+      get {
+        return (snapshot["listDataEnvs"] as? Snapshot).flatMap { ListDataEnv(snapshot: $0) }
+      }
+      set {
+        snapshot.updateValue(newValue?.snapshot, forKey: "listDataEnvs")
+      }
+    }
+
+    public struct ListDataEnv: GraphQLSelectionSet {
+      public static let possibleTypes = ["DataEnvConnection"]
+
+      public static let selections: [GraphQLSelection] = [
+        GraphQLField("__typename", type: .nonNull(.scalar(String.self))),
+        GraphQLField("items", type: .list(.object(Item.selections))),
+        GraphQLField("nextToken", type: .scalar(String.self)),
+      ]
+
+      public var snapshot: Snapshot
+
+      public init(snapshot: Snapshot) {
+        self.snapshot = snapshot
+      }
+
+      public init(items: [Item?]? = nil, nextToken: String? = nil) {
+        self.init(snapshot: ["__typename": "DataEnvConnection", "items": items.flatMap { $0.map { $0.flatMap { $0.snapshot } } }, "nextToken": nextToken])
+      }
+
+      public var __typename: String {
+        get {
+          return snapshot["__typename"]! as! String
+        }
+        set {
+          snapshot.updateValue(newValue, forKey: "__typename")
+        }
+      }
+
+      public var items: [Item?]? {
+        get {
+          return (snapshot["items"] as? [Snapshot?]).flatMap { $0.map { $0.flatMap { Item(snapshot: $0) } } }
+        }
+        set {
+          snapshot.updateValue(newValue.flatMap { $0.map { $0.flatMap { $0.snapshot } } }, forKey: "items")
+        }
+      }
+
+      public var nextToken: String? {
+        get {
+          return snapshot["nextToken"] as? String
+        }
+        set {
+          snapshot.updateValue(newValue, forKey: "nextToken")
+        }
+      }
+
+      public struct Item: GraphQLSelectionSet {
+        public static let possibleTypes = ["DataEnv"]
+
+        public static let selections: [GraphQLSelection] = [
+          GraphQLField("__typename", type: .nonNull(.scalar(String.self))),
+          GraphQLField("id", type: .nonNull(.scalar(Int.self))),
+          GraphQLField("newscount", type: .nonNull(.scalar(String.self))),
+          GraphQLField("appcount", type: .nonNull(.scalar(String.self))),
+          GraphQLField("roadmap", type: .nonNull(.scalar(String.self))),
+        ]
+
+        public var snapshot: Snapshot
+
+        public init(snapshot: Snapshot) {
+          self.snapshot = snapshot
+        }
+
+        public init(id: Int, newscount: String, appcount: String, roadmap: String) {
+          self.init(snapshot: ["__typename": "DataEnv", "id": id, "newscount": newscount, "appcount": appcount, "roadmap": roadmap])
+        }
+
+        public var __typename: String {
+          get {
+            return snapshot["__typename"]! as! String
+          }
+          set {
+            snapshot.updateValue(newValue, forKey: "__typename")
+          }
+        }
+
+        public var id: Int {
+          get {
+            return snapshot["id"]! as! Int
+          }
+          set {
+            snapshot.updateValue(newValue, forKey: "id")
+          }
+        }
+
+        public var newscount: String {
+          get {
+            return snapshot["newscount"]! as! String
+          }
+          set {
+            snapshot.updateValue(newValue, forKey: "newscount")
+          }
+        }
+
+        public var appcount: String {
+          get {
+            return snapshot["appcount"]! as! String
+          }
+          set {
+            snapshot.updateValue(newValue, forKey: "appcount")
+          }
+        }
+
+        public var roadmap: String {
+          get {
+            return snapshot["roadmap"]! as! String
+          }
+          set {
+            snapshot.updateValue(newValue, forKey: "roadmap")
           }
         }
       }
@@ -1582,6 +2300,351 @@ public final class OnDeleteConversationsSubscription: GraphQLSubscription {
         }
         set {
           snapshot.updateValue(newValue, forKey: "LastUpdate")
+        }
+      }
+    }
+  }
+}
+
+public final class OnCreateDataEnvSubscription: GraphQLSubscription {
+  public static let operationString =
+    "subscription OnCreateDataEnv($id: Int, $newscount: AWSJSON, $appcount: AWSJSON, $roadmap: AWSJSON) {\n  onCreateDataEnv(id: $id, newscount: $newscount, appcount: $appcount, roadmap: $roadmap) {\n    __typename\n    id\n    newscount\n    appcount\n    roadmap\n  }\n}"
+
+  public var id: Int?
+  public var newscount: String?
+  public var appcount: String?
+  public var roadmap: String?
+
+  public init(id: Int? = nil, newscount: String? = nil, appcount: String? = nil, roadmap: String? = nil) {
+    self.id = id
+    self.newscount = newscount
+    self.appcount = appcount
+    self.roadmap = roadmap
+  }
+
+  public var variables: GraphQLMap? {
+    return ["id": id, "newscount": newscount, "appcount": appcount, "roadmap": roadmap]
+  }
+
+  public struct Data: GraphQLSelectionSet {
+    public static let possibleTypes = ["Subscription"]
+
+    public static let selections: [GraphQLSelection] = [
+      GraphQLField("onCreateDataEnv", arguments: ["id": GraphQLVariable("id"), "newscount": GraphQLVariable("newscount"), "appcount": GraphQLVariable("appcount"), "roadmap": GraphQLVariable("roadmap")], type: .object(OnCreateDataEnv.selections)),
+    ]
+
+    public var snapshot: Snapshot
+
+    public init(snapshot: Snapshot) {
+      self.snapshot = snapshot
+    }
+
+    public init(onCreateDataEnv: OnCreateDataEnv? = nil) {
+      self.init(snapshot: ["__typename": "Subscription", "onCreateDataEnv": onCreateDataEnv.flatMap { $0.snapshot }])
+    }
+
+    public var onCreateDataEnv: OnCreateDataEnv? {
+      get {
+        return (snapshot["onCreateDataEnv"] as? Snapshot).flatMap { OnCreateDataEnv(snapshot: $0) }
+      }
+      set {
+        snapshot.updateValue(newValue?.snapshot, forKey: "onCreateDataEnv")
+      }
+    }
+
+    public struct OnCreateDataEnv: GraphQLSelectionSet {
+      public static let possibleTypes = ["DataEnv"]
+
+      public static let selections: [GraphQLSelection] = [
+        GraphQLField("__typename", type: .nonNull(.scalar(String.self))),
+        GraphQLField("id", type: .nonNull(.scalar(Int.self))),
+        GraphQLField("newscount", type: .nonNull(.scalar(String.self))),
+        GraphQLField("appcount", type: .nonNull(.scalar(String.self))),
+        GraphQLField("roadmap", type: .nonNull(.scalar(String.self))),
+      ]
+
+      public var snapshot: Snapshot
+
+      public init(snapshot: Snapshot) {
+        self.snapshot = snapshot
+      }
+
+      public init(id: Int, newscount: String, appcount: String, roadmap: String) {
+        self.init(snapshot: ["__typename": "DataEnv", "id": id, "newscount": newscount, "appcount": appcount, "roadmap": roadmap])
+      }
+
+      public var __typename: String {
+        get {
+          return snapshot["__typename"]! as! String
+        }
+        set {
+          snapshot.updateValue(newValue, forKey: "__typename")
+        }
+      }
+
+      public var id: Int {
+        get {
+          return snapshot["id"]! as! Int
+        }
+        set {
+          snapshot.updateValue(newValue, forKey: "id")
+        }
+      }
+
+      public var newscount: String {
+        get {
+          return snapshot["newscount"]! as! String
+        }
+        set {
+          snapshot.updateValue(newValue, forKey: "newscount")
+        }
+      }
+
+      public var appcount: String {
+        get {
+          return snapshot["appcount"]! as! String
+        }
+        set {
+          snapshot.updateValue(newValue, forKey: "appcount")
+        }
+      }
+
+      public var roadmap: String {
+        get {
+          return snapshot["roadmap"]! as! String
+        }
+        set {
+          snapshot.updateValue(newValue, forKey: "roadmap")
+        }
+      }
+    }
+  }
+}
+
+public final class OnUpdateDataEnvSubscription: GraphQLSubscription {
+  public static let operationString =
+    "subscription OnUpdateDataEnv($id: Int, $newscount: AWSJSON, $appcount: AWSJSON, $roadmap: AWSJSON) {\n  onUpdateDataEnv(id: $id, newscount: $newscount, appcount: $appcount, roadmap: $roadmap) {\n    __typename\n    id\n    newscount\n    appcount\n    roadmap\n  }\n}"
+
+  public var id: Int?
+  public var newscount: String?
+  public var appcount: String?
+  public var roadmap: String?
+
+  public init(id: Int? = nil, newscount: String? = nil, appcount: String? = nil, roadmap: String? = nil) {
+    self.id = id
+    self.newscount = newscount
+    self.appcount = appcount
+    self.roadmap = roadmap
+  }
+
+  public var variables: GraphQLMap? {
+    return ["id": id, "newscount": newscount, "appcount": appcount, "roadmap": roadmap]
+  }
+
+  public struct Data: GraphQLSelectionSet {
+    public static let possibleTypes = ["Subscription"]
+
+    public static let selections: [GraphQLSelection] = [
+      GraphQLField("onUpdateDataEnv", arguments: ["id": GraphQLVariable("id"), "newscount": GraphQLVariable("newscount"), "appcount": GraphQLVariable("appcount"), "roadmap": GraphQLVariable("roadmap")], type: .object(OnUpdateDataEnv.selections)),
+    ]
+
+    public var snapshot: Snapshot
+
+    public init(snapshot: Snapshot) {
+      self.snapshot = snapshot
+    }
+
+    public init(onUpdateDataEnv: OnUpdateDataEnv? = nil) {
+      self.init(snapshot: ["__typename": "Subscription", "onUpdateDataEnv": onUpdateDataEnv.flatMap { $0.snapshot }])
+    }
+
+    public var onUpdateDataEnv: OnUpdateDataEnv? {
+      get {
+        return (snapshot["onUpdateDataEnv"] as? Snapshot).flatMap { OnUpdateDataEnv(snapshot: $0) }
+      }
+      set {
+        snapshot.updateValue(newValue?.snapshot, forKey: "onUpdateDataEnv")
+      }
+    }
+
+    public struct OnUpdateDataEnv: GraphQLSelectionSet {
+      public static let possibleTypes = ["DataEnv"]
+
+      public static let selections: [GraphQLSelection] = [
+        GraphQLField("__typename", type: .nonNull(.scalar(String.self))),
+        GraphQLField("id", type: .nonNull(.scalar(Int.self))),
+        GraphQLField("newscount", type: .nonNull(.scalar(String.self))),
+        GraphQLField("appcount", type: .nonNull(.scalar(String.self))),
+        GraphQLField("roadmap", type: .nonNull(.scalar(String.self))),
+      ]
+
+      public var snapshot: Snapshot
+
+      public init(snapshot: Snapshot) {
+        self.snapshot = snapshot
+      }
+
+      public init(id: Int, newscount: String, appcount: String, roadmap: String) {
+        self.init(snapshot: ["__typename": "DataEnv", "id": id, "newscount": newscount, "appcount": appcount, "roadmap": roadmap])
+      }
+
+      public var __typename: String {
+        get {
+          return snapshot["__typename"]! as! String
+        }
+        set {
+          snapshot.updateValue(newValue, forKey: "__typename")
+        }
+      }
+
+      public var id: Int {
+        get {
+          return snapshot["id"]! as! Int
+        }
+        set {
+          snapshot.updateValue(newValue, forKey: "id")
+        }
+      }
+
+      public var newscount: String {
+        get {
+          return snapshot["newscount"]! as! String
+        }
+        set {
+          snapshot.updateValue(newValue, forKey: "newscount")
+        }
+      }
+
+      public var appcount: String {
+        get {
+          return snapshot["appcount"]! as! String
+        }
+        set {
+          snapshot.updateValue(newValue, forKey: "appcount")
+        }
+      }
+
+      public var roadmap: String {
+        get {
+          return snapshot["roadmap"]! as! String
+        }
+        set {
+          snapshot.updateValue(newValue, forKey: "roadmap")
+        }
+      }
+    }
+  }
+}
+
+public final class OnDeleteDataEnvSubscription: GraphQLSubscription {
+  public static let operationString =
+    "subscription OnDeleteDataEnv($id: Int, $newscount: AWSJSON, $appcount: AWSJSON, $roadmap: AWSJSON) {\n  onDeleteDataEnv(id: $id, newscount: $newscount, appcount: $appcount, roadmap: $roadmap) {\n    __typename\n    id\n    newscount\n    appcount\n    roadmap\n  }\n}"
+
+  public var id: Int?
+  public var newscount: String?
+  public var appcount: String?
+  public var roadmap: String?
+
+  public init(id: Int? = nil, newscount: String? = nil, appcount: String? = nil, roadmap: String? = nil) {
+    self.id = id
+    self.newscount = newscount
+    self.appcount = appcount
+    self.roadmap = roadmap
+  }
+
+  public var variables: GraphQLMap? {
+    return ["id": id, "newscount": newscount, "appcount": appcount, "roadmap": roadmap]
+  }
+
+  public struct Data: GraphQLSelectionSet {
+    public static let possibleTypes = ["Subscription"]
+
+    public static let selections: [GraphQLSelection] = [
+      GraphQLField("onDeleteDataEnv", arguments: ["id": GraphQLVariable("id"), "newscount": GraphQLVariable("newscount"), "appcount": GraphQLVariable("appcount"), "roadmap": GraphQLVariable("roadmap")], type: .object(OnDeleteDataEnv.selections)),
+    ]
+
+    public var snapshot: Snapshot
+
+    public init(snapshot: Snapshot) {
+      self.snapshot = snapshot
+    }
+
+    public init(onDeleteDataEnv: OnDeleteDataEnv? = nil) {
+      self.init(snapshot: ["__typename": "Subscription", "onDeleteDataEnv": onDeleteDataEnv.flatMap { $0.snapshot }])
+    }
+
+    public var onDeleteDataEnv: OnDeleteDataEnv? {
+      get {
+        return (snapshot["onDeleteDataEnv"] as? Snapshot).flatMap { OnDeleteDataEnv(snapshot: $0) }
+      }
+      set {
+        snapshot.updateValue(newValue?.snapshot, forKey: "onDeleteDataEnv")
+      }
+    }
+
+    public struct OnDeleteDataEnv: GraphQLSelectionSet {
+      public static let possibleTypes = ["DataEnv"]
+
+      public static let selections: [GraphQLSelection] = [
+        GraphQLField("__typename", type: .nonNull(.scalar(String.self))),
+        GraphQLField("id", type: .nonNull(.scalar(Int.self))),
+        GraphQLField("newscount", type: .nonNull(.scalar(String.self))),
+        GraphQLField("appcount", type: .nonNull(.scalar(String.self))),
+        GraphQLField("roadmap", type: .nonNull(.scalar(String.self))),
+      ]
+
+      public var snapshot: Snapshot
+
+      public init(snapshot: Snapshot) {
+        self.snapshot = snapshot
+      }
+
+      public init(id: Int, newscount: String, appcount: String, roadmap: String) {
+        self.init(snapshot: ["__typename": "DataEnv", "id": id, "newscount": newscount, "appcount": appcount, "roadmap": roadmap])
+      }
+
+      public var __typename: String {
+        get {
+          return snapshot["__typename"]! as! String
+        }
+        set {
+          snapshot.updateValue(newValue, forKey: "__typename")
+        }
+      }
+
+      public var id: Int {
+        get {
+          return snapshot["id"]! as! Int
+        }
+        set {
+          snapshot.updateValue(newValue, forKey: "id")
+        }
+      }
+
+      public var newscount: String {
+        get {
+          return snapshot["newscount"]! as! String
+        }
+        set {
+          snapshot.updateValue(newValue, forKey: "newscount")
+        }
+      }
+
+      public var appcount: String {
+        get {
+          return snapshot["appcount"]! as! String
+        }
+        set {
+          snapshot.updateValue(newValue, forKey: "appcount")
+        }
+      }
+
+      public var roadmap: String {
+        get {
+          return snapshot["roadmap"]! as! String
+        }
+        set {
+          snapshot.updateValue(newValue, forKey: "roadmap")
         }
       }
     }
