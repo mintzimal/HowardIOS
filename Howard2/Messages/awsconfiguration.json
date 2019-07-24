@@ -1,0 +1,31 @@
+{
+    "UserAgent": "aws-amplify/cli",
+    "Version": "0.1.0",
+    "IdentityManager": {
+        "Default": {}
+    },
+    "CredentialsProvider": {
+        "CognitoIdentity": {
+            "Default": {
+                "PoolId": "us-east-1:56798d7f-abe1-4e85-bcff-0ba0e6ce4b1f",
+                "Region": "us-east-1"
+            }
+        }
+    },
+    "CognitoUserPool": {
+        "Default": {
+            "PoolId": "us-east-1_QRrhT8vVy",
+            "AppClientId": "lrdup1iahoonodkrmsfji9cum",
+            "AppClientSecret": "3vf9h8s3k1gsaql8f5id8b2afd64j5q6k2ecs6ao0u5pudkjemu",
+            "Region": "us-east-1"
+        }
+    },
+    "AppSync": {
+        "Default": {
+            "ApiUrl": "https://nffjugd6urbk7lxw7fsynfllw4.appsync-api.us-east-1.amazonaws.com/graphql",
+            "Region": "us-east-1",
+            "AuthMode": "AMAZON_COGNITO_USER_POOLS",
+            "ClientDatabasePrefix": "HowardMessages_AMAZON_COGNITO_USER_POOLS"
+        }
+    }
+}

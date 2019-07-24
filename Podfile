@@ -15,7 +15,7 @@ target 'Howard2' do
   source 'https://github.com/CocoaPods/Specs.git'
   pod 'Localize-Swift', '~> 2.0'
 
-
+  pod 'Charts'
 
   target 'Howard2Tests' do
     inherit! :search_paths

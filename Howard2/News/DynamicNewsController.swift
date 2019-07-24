@@ -148,28 +148,36 @@ class DynamicNewsController: UIViewController, SFSafariViewControllerDelegate {
 
         if(Label == arrayOfNews[0].title.localized()){
             //Seven Days Calls
-            newsCount[0]  += newsCount[0]
+            newsCount[0]  += 1
+            
+            UserDefaults.standard.set(newsCount,forKey: "newsCount")
             
             let svc = SFSafariViewController(url: NSURL(string: self.sevenDays)! as URL)
             self.present(svc, animated: true, completion: nil)
         }
         if(Label == arrayOfNews[1].title.localized()){
             //Burlington Free Press Calls
-            newsCount[1]  += newsCount[1]
+            newsCount[1]  += 1
+            
+            UserDefaults.standard.set(newsCount,forKey: "newsCount")
             
             let svc = SFSafariViewController(url: NSURL(string: self.burlingtonFreePress)! as URL)
             self.present(svc, animated: true, completion: nil)
         }
         if(Label == arrayOfNews[2].title.localized()){
             //WCAX Calls
-            newsCount[2]  += newsCount[2]
+            newsCount[2]  += 1
+            
+            UserDefaults.standard.set(newsCount,forKey: "newsCount")
             
             let svc = SFSafariViewController(url: NSURL(string: self.WCAX)! as URL)
             self.present(svc, animated: true, completion: nil)
         }
         if(Label == arrayOfNews[3].title.localized()){
             //My Champlain Valley Calls
-            newsCount[3]  += newsCount[3]
+            newsCount[3]  += 1
+            
+            UserDefaults.standard.set(newsCount,forKey: "newsCount")
             
             let svc = SFSafariViewController(url: NSURL(string: self.myChamplainValley)! as URL)
             self.present(svc, animated: true, completion: nil)
@@ -177,91 +185,117 @@ class DynamicNewsController: UIViewController, SFSafariViewControllerDelegate {
         }
         if(Label == arrayOfNews[4].title.localized()){
             //News10 Calls
-            newsCount[4]  += newsCount[4]
+            newsCount[4]  += 1
+            
+            UserDefaults.standard.set(newsCount,forKey: "newsCount")
             
             let svc = SFSafariViewController(url: NSURL(string: self.news10)! as URL)
             self.present(svc, animated: true, completion: nil)
         }
         if(Label == arrayOfNews[5].title.localized()){
             //VPR Calls
-            newsCount[5]  += newsCount[5]
+            newsCount[5]  += 1
+            
+            UserDefaults.standard.set(newsCount,forKey: "newsCount")
             
             let svc = SFSafariViewController(url: NSURL(string: self.VPR)! as URL)
             self.present(svc, animated: true, completion: nil)
         }
         if(Label == arrayOfNews[6].title.localized()){
             //CNN Calls
-            newsCount[6]  += newsCount[6]
+            newsCount[6]  += 1
+            
+            UserDefaults.standard.set(newsCount,forKey: "newsCount")
             
             let svc = SFSafariViewController(url: NSURL(string: self.CNN)! as URL)
             self.present(svc, animated: true, completion: nil)
         }
         if(Label == arrayOfNews[7].title.localized()){
             //Aljazeera Calls
-            newsCount[7]  += newsCount[7]
+            newsCount[7]  += 1
+            
+            UserDefaults.standard.set(newsCount,forKey: "newsCount")
             
             let svc = SFSafariViewController(url: NSURL(string: self.aljazeera)! as URL)
             self.present(svc, animated: true, completion: nil)
         }
         if(Label == arrayOfNews[8].title.localized()){
             //ABC Calls
-            newsCount[8]  += newsCount[8]
+            newsCount[8]  += 1
+            
+            UserDefaults.standard.set(newsCount,forKey: "newsCount")
             
             let svc = SFSafariViewController(url: NSURL(string: self.ABC)! as URL)
             self.present(svc, animated: true, completion: nil)
         }
         if(Label == arrayOfNews[9].title.localized()){
             //Wall Street Journal Calls
-            newsCount[9]  += newsCount[9]
+            newsCount[9]  += 1
+            
+            UserDefaults.standard.set(newsCount,forKey: "newsCount")
             
             let svc = SFSafariViewController(url: NSURL(string: self.wallStreetJournal)! as URL)
             self.present(svc, animated: true, completion: nil)
         }
         if(Label == arrayOfNews[10].title.localized()){
             //NPR Calls
-            newsCount[10]  += newsCount[10]
+            newsCount[10]  += 1
+            
+            UserDefaults.standard.set(newsCount,forKey: "newsCount")
             
             let svc = SFSafariViewController(url: NSURL(string: self.NPR)! as URL)
             self.present(svc, animated: true, completion: nil)
         }
         if(Label == arrayOfNews[11].title.localized()){
             //Reuters Calls
-            newsCount[11]  += newsCount[11]
+            newsCount[11]  += 1
+            
+            UserDefaults.standard.set(newsCount,forKey: "newsCount")
             
             let svc = SFSafariViewController(url: NSURL(string: self.reuters)! as URL)
             self.present(svc, animated: true, completion: nil)
         }
         if(Label == arrayOfNews[12].title.localized()){
             //The Associated Press Calls
-            newsCount[12]  += newsCount[12]
+            newsCount[12]  += 1
+            
+            UserDefaults.standard.set(newsCount,forKey: "newsCount")
             
             let svc = SFSafariViewController(url: NSURL(string: self.theAssociatedPress)! as URL)
             self.present(svc, animated: true, completion: nil)
         }
         if(Label == arrayOfNews[13].title.localized()){
             //Huffington Post Calls
-            newsCount[13]  += newsCount[13]
+            newsCount[13]  += 1
+            
+            UserDefaults.standard.set(newsCount,forKey: "newsCount")
             
             let svc = SFSafariViewController(url: NSURL(string: self.huffingtonPost)! as URL)
             self.present(svc, animated: true, completion: nil)
         }
         if(Label == arrayOfNews[14].title.localized()){
             //BBC Calls
-            newsCount[14]  += newsCount[14]
+            newsCount[14]  += 1
+            
+            UserDefaults.standard.set(newsCount,forKey: "newsCount")
             
             let svc = SFSafariViewController(url: NSURL(string: self.BBC)! as URL)
             self.present(svc, animated: true, completion: nil)
         }
         if(Label == arrayOfNews[15].title.localized()){
             //Washington Post Calls
-            newsCount[15]  += newsCount[15]
+            newsCount[15]  += 1
+            
+            UserDefaults.standard.set(newsCount,forKey: "newsCount")
             
             let svc = SFSafariViewController(url: NSURL(string: self.washingtonPost)! as URL)
             self.present(svc, animated: true, completion: nil)
         }
         if(Label == arrayOfNews[16].title.localized()){
             //The Guardian Calls
-            newsCount[16]  += newsCount[16]
+            newsCount[16]  += 1
+            
+            UserDefaults.standard.set(newsCount,forKey: "newsCount")
             
             let svc = SFSafariViewController(url: NSURL(string: self.theGuardian)! as URL)
             self.present(svc, animated: true, completion: nil)

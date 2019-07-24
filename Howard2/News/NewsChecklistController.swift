@@ -35,6 +35,16 @@ class NewsChecklistController: UITableViewController {
 
     }
     
+    override func viewDidAppear(_ animated: Bool) {
+        
+        let alertController = UIAlertController(title: "Just a heads up", message:
+            "Scroll down to the bottom and press the banner to exit this page.", preferredStyle: .alert)
+        alertController.addAction(UIAlertAction(title: "Dismiss", style: .default))
+        
+        self.present(alertController, animated: true, completion: nil)
+        
+    }
+    
     
         // MARK: - Table view data source
     @IBAction func getRows(_ sender: Any) {

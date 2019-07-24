@@ -9,7 +9,7 @@
 /* Begin PBXBuildFile section */
 		016C6E865FAE85B95C80263F /* Pods_Howard2.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7F2E59DFD23B136C5A7735E1 /* Pods_Howard2.framework */; };
 		3903828F2266864B003422D3 /* funguy.png in Resources */ = {isa = PBXBuildFile; fileRef = 3903828C2266864B003422D3 /* funguy.png */; };
-		390382902266864B003422D3 /* HomeIcon.png in Resources */ = {isa = PBXBuildFile; fileRef = 3903828D2266864B003422D3 /* HomeIcon.png */; };
+		390382902266864B003422D3 /* HomeIcon.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 3903828D2266864B003422D3 /* HomeIcon.jpg */; };
 		390382912266864B003422D3 /* SettingsIcon.png in Resources */ = {isa = PBXBuildFile; fileRef = 3903828E2266864B003422D3 /* SettingsIcon.png */; };
 		39038295226689A3003422D3 /* AskHowardController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 39038294226689A3003422D3 /* AskHowardController.swift */; };
 		3903829722668B2A003422D3 /* questionMark.png in Resources */ = {isa = PBXBuildFile; fileRef = 3903829622668B2A003422D3 /* questionMark.png */; };
@@ -27,6 +27,11 @@
 		3939DBEA2256499B001A8A7B /* SignupController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3939DBE92256499B001A8A7B /* SignupController.swift */; };
 		3939DBEC225649B9001A8A7B /* LaunchScreenController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3939DBEB225649B9001A8A7B /* LaunchScreenController.swift */; };
 		3939DBEE225649D7001A8A7B /* AppsController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3939DBED225649D7001A8A7B /* AppsController.swift */; };
+		394B608722DFED60005032AA /* stats.png in Resources */ = {isa = PBXBuildFile; fileRef = 394B608622DFED60005032AA /* stats.png */; };
+		394B608922DFEDB3005032AA /* newsStats.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 394B608822DFEDB2005032AA /* newsStats.storyboard */; };
+		394B608B22DFEDBC005032AA /* newsStatsController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 394B608A22DFEDBC005032AA /* newsStatsController.swift */; };
+		394B608D22E007B2005032AA /* appsStatsController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 394B608C22E007B2005032AA /* appsStatsController.swift */; };
+		394B608F22E007C1005032AA /* appsStats.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 394B608E22E007C1005032AA /* appsStats.storyboard */; };
 		396027D6225E9AD90007CCDD /* NewCallScreenController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 396027D5225E9AD90007CCDD /* NewCallScreenController.swift */; };
 		396E0DC5226FCD86004F2C13 /* NewCheckListController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 396E0DC4226FCD86004F2C13 /* NewCheckListController.swift */; };
 		39790958227A76D500EAA8FE /* Roxie.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 39790957227A76D500EAA8FE /* Roxie.jpg */; };
@@ -84,22 +89,20 @@
 		39B2C3C522D57FEB00C5BFB2 /* TextToSpeech.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 39B2C3C422D57FEB00C5BFB2 /* TextToSpeech.storyboard */; };
 		39B2C3C722D5801A00C5BFB2 /* TextToSpeech.swift in Sources */ = {isa = PBXBuildFile; fileRef = 39B2C3C622D5801A00C5BFB2 /* TextToSpeech.swift */; };
 		39B2C3C922D5833B00C5BFB2 /* speaker.png in Resources */ = {isa = PBXBuildFile; fileRef = 39B2C3C822D5833B00C5BFB2 /* speaker.png */; };
+		39B2C3DF22DFE3D000C5BFB2 /* LandingViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 39B2C3DE22DFE3D000C5BFB2 /* LandingViewController.swift */; };
+		39B2C3E122DFE86400C5BFB2 /* awsconfiguration.json in Resources */ = {isa = PBXBuildFile; fileRef = 39B2C3E022DFE86400C5BFB2 /* awsconfiguration.json */; };
+		39B2C3E322DFE98300C5BFB2 /* MessageCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 39B2C3E222DFE98300C5BFB2 /* MessageCell.xib */; };
 		39B88B93227292620018B675 /* BFP.png in Resources */ = {isa = PBXBuildFile; fileRef = 39B88B92227292620018B675 /* BFP.png */; };
 		39B88B962272943D0018B675 /* MCV.png in Resources */ = {isa = PBXBuildFile; fileRef = 39B88B952272943D0018B675 /* MCV.png */; };
 		39ED26B122723EA600B7D843 /* border.png in Resources */ = {isa = PBXBuildFile; fileRef = 39ED26B022723EA600B7D843 /* border.png */; };
 		3BD10A5E22669B5C001D0B5B /* MapViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3BD10A5D22669B5C001D0B5B /* MapViewController.swift */; };
-		93692FE722DEEAA000A1234F /* MessageCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 93692FD022DEEA9D00A1234F /* MessageCell.xib */; };
-		93692FE822DEEAA000A1234F /* howardCenter.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 93692FD122DEEA9E00A1234F /* howardCenter.jpg */; };
+		93692FE822DEEAA000A1234F /* howardCenter2.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 93692FD122DEEA9E00A1234F /* howardCenter2.jpg */; };
 		93692FE922DEEAA000A1234F /* CustomMessageCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 93692FD222DEEA9E00A1234F /* CustomMessageCell.swift */; };
 		93692FEA22DEEAA000A1234F /* API.swift in Sources */ = {isa = PBXBuildFile; fileRef = 93692FD322DEEA9E00A1234F /* API.swift */; };
-		93692FEC22DEEAA000A1234F /* awsconfiguration.json in Resources */ = {isa = PBXBuildFile; fileRef = 93692FD522DEEA9F00A1234F /* awsconfiguration.json */; };
-		93692FED22DEEAA000A1234F /* HowardCenterHeader.png in Resources */ = {isa = PBXBuildFile; fileRef = 93692FD622DEEA9F00A1234F /* HowardCenterHeader.png */; };
+		93692FED22DEEAA000A1234F /* HowardCenterHeader2.png in Resources */ = {isa = PBXBuildFile; fileRef = 93692FD622DEEA9F00A1234F /* HowardCenterHeader2.png */; };
 		93692FEE22DEEAA000A1234F /* ChatViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 93692FD822DEEA9F00A1234F /* ChatViewController.swift */; };
-		93692FEF22DEEAA000A1234F /* Custom Cell in Resources */ = {isa = PBXBuildFile; fileRef = 93692FD922DEEA9F00A1234F /* Custom Cell */; };
 		93692FF022DEEAA000A1234F /* Message.swift in Sources */ = {isa = PBXBuildFile; fileRef = 93692FDA22DEEA9F00A1234F /* Message.swift */; };
 		93692FF122DEEAA000A1234F /* client.png in Resources */ = {isa = PBXBuildFile; fileRef = 93692FDB22DEEA9F00A1234F /* client.png */; };
-		93692FF522DEEAA000A1234F /* Custom Cell in Resources */ = {isa = PBXBuildFile; fileRef = 93692FE222DEEAA000A1234F /* Custom Cell */; };
-		93692FF722DEEE1B00A1234F /* LandingViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 93692FF622DEEE1B00A1234F /* LandingViewController.swift */; };
 		93692FF922DEEE4B00A1234F /* Chat.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 93692FF822DEEE4B00A1234F /* Chat.storyboard */; };
 		93692FFB22DF00D900A1234F /* Main.png in Resources */ = {isa = PBXBuildFile; fileRef = 93692FFA22DF00D800A1234F /* Main.png */; };
 		9703856F22721E7C00C47655 /* Flash.png in Resources */ = {isa = PBXBuildFile; fileRef = 9703856E22721E7C00C47655 /* Flash.png */; };
@@ -153,7 +156,7 @@
 		31A9390FF702199E75DB64A0 /* Pods_Howard2Tests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Howard2Tests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		329C6571EB966F17007C3A97 /* Pods-Howard2.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Howard2.release.xcconfig"; path = "Target Support Files/Pods-Howard2/Pods-Howard2.release.xcconfig"; sourceTree = "<group>"; };
 		3903828C2266864B003422D3 /* funguy.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = funguy.png; sourceTree = "<group>"; };
-		3903828D2266864B003422D3 /* HomeIcon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = HomeIcon.png; sourceTree = "<group>"; };
+		3903828D2266864B003422D3 /* HomeIcon.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = HomeIcon.jpg; sourceTree = "<group>"; };
 		3903828E2266864B003422D3 /* SettingsIcon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = SettingsIcon.png; sourceTree = "<group>"; };
 		39038294226689A3003422D3 /* AskHowardController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AskHowardController.swift; sourceTree = "<group>"; };
 		3903829622668B2A003422D3 /* questionMark.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = questionMark.png; sourceTree = "<group>"; };
@@ -171,6 +174,11 @@
 		3939DBE92256499B001A8A7B /* SignupController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignupController.swift; sourceTree = "<group>"; };
 		3939DBEB225649B9001A8A7B /* LaunchScreenController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LaunchScreenController.swift; sourceTree = "<group>"; };
 		3939DBED225649D7001A8A7B /* AppsController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppsController.swift; sourceTree = "<group>"; };
+		394B608622DFED60005032AA /* stats.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = stats.png; sourceTree = "<group>"; };
+		394B608822DFEDB2005032AA /* newsStats.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = newsStats.storyboard; sourceTree = "<group>"; };
+		394B608A22DFEDBC005032AA /* newsStatsController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = newsStatsController.swift; sourceTree = "<group>"; };
+		394B608C22E007B2005032AA /* appsStatsController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = appsStatsController.swift; sourceTree = "<group>"; };
+		394B608E22E007C1005032AA /* appsStats.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = appsStats.storyboard; sourceTree = "<group>"; };
 		396027D5225E9AD90007CCDD /* NewCallScreenController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewCallScreenController.swift; sourceTree = "<group>"; };
 		396E0DC4226FCD86004F2C13 /* NewCheckListController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewCheckListController.swift; sourceTree = "<group>"; };
 		39790957227A76D500EAA8FE /* Roxie.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = Roxie.jpg; sourceTree = "<group>"; };
@@ -425,6 +433,9 @@
 		39B2C3C422D57FEB00C5BFB2 /* TextToSpeech.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = TextToSpeech.storyboard; sourceTree = "<group>"; };
 		39B2C3C622D5801A00C5BFB2 /* TextToSpeech.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TextToSpeech.swift; sourceTree = "<group>"; };
 		39B2C3C822D5833B00C5BFB2 /* speaker.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = speaker.png; sourceTree = "<group>"; };
+		39B2C3DE22DFE3D000C5BFB2 /* LandingViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LandingViewController.swift; sourceTree = "<group>"; };
+		39B2C3E022DFE86400C5BFB2 /* awsconfiguration.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = awsconfiguration.json; sourceTree = "<group>"; };
+		39B2C3E222DFE98300C5BFB2 /* MessageCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = MessageCell.xib; sourceTree = "<group>"; };
 		39B88B92227292620018B675 /* BFP.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = BFP.png; path = Howard2/Images/BFP.png; sourceTree = SOURCE_ROOT; };
 		39B88B952272943D0018B675 /* MCV.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = MCV.png; sourceTree = "<group>"; };
 		39B88B9B227295E70018B675 /* WCAX.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = WCAX.png; path = /Users/mintzimal/Documents/HowardCenterFinal/Howard2/Images/WCAX.png; sourceTree = "<absolute>"; };
@@ -434,18 +445,13 @@
 		78F5DBDD519BCFAE2103DBD7 /* Pods_Howard2UITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Howard2UITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		7F2E59DFD23B136C5A7735E1 /* Pods_Howard2.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Howard2.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		8D46FDDF532E69FB49D5162F /* Pods-Howard2Tests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Howard2Tests.debug.xcconfig"; path = "Target Support Files/Pods-Howard2Tests/Pods-Howard2Tests.debug.xcconfig"; sourceTree = "<group>"; };
-		93692FD022DEEA9D00A1234F /* MessageCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = MessageCell.xib; sourceTree = "<group>"; };
-		93692FD122DEEA9E00A1234F /* howardCenter.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = howardCenter.jpg; sourceTree = "<group>"; };
+		93692FD122DEEA9E00A1234F /* howardCenter2.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = howardCenter2.jpg; sourceTree = "<group>"; };
 		93692FD222DEEA9E00A1234F /* CustomMessageCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CustomMessageCell.swift; sourceTree = "<group>"; };
 		93692FD322DEEA9E00A1234F /* API.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = API.swift; sourceTree = "<group>"; };
-		93692FD522DEEA9F00A1234F /* awsconfiguration.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = awsconfiguration.json; sourceTree = "<group>"; };
-		93692FD622DEEA9F00A1234F /* HowardCenterHeader.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = HowardCenterHeader.png; sourceTree = "<group>"; };
+		93692FD622DEEA9F00A1234F /* HowardCenterHeader2.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = HowardCenterHeader2.png; sourceTree = "<group>"; };
 		93692FD822DEEA9F00A1234F /* ChatViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ChatViewController.swift; sourceTree = "<group>"; };
-		93692FD922DEEA9F00A1234F /* Custom Cell */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Custom Cell"; sourceTree = "<group>"; };
 		93692FDA22DEEA9F00A1234F /* Message.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Message.swift; sourceTree = "<group>"; };
 		93692FDB22DEEA9F00A1234F /* client.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = client.png; sourceTree = "<group>"; };
-		93692FE222DEEAA000A1234F /* Custom Cell */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Custom Cell"; sourceTree = "<group>"; };
-		93692FF622DEEE1B00A1234F /* LandingViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LandingViewController.swift; sourceTree = "<group>"; };
 		93692FF822DEEE4B00A1234F /* Chat.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Chat.storyboard; sourceTree = "<group>"; };
 		93692FFA22DF00D800A1234F /* Main.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = Main.png; path = "Assets.xcassets/Main-1.imageset/Main.png"; sourceTree = "<group>"; };
 		9703856E22721E7C00C47655 /* Flash.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Flash.png; sourceTree = "<group>"; };
@@ -514,6 +520,7 @@
 		396027D7225E9D520007CCDD /* Images */ = {
 			isa = PBXGroup;
 			children = (
+				394B608622DFED60005032AA /* stats.png */,
 				39B2C3C822D5833B00C5BFB2 /* speaker.png */,
 				39790BFB22BAD01800EAA8FE /* backArrow.png */,
 				397909B722B1BBF700EAA8FE /* vietnamese.png */,
@@ -578,7 +585,7 @@
 				3903829622668B2A003422D3 /* questionMark.png */,
 				3903828C2266864B003422D3 /* funguy.png */,
 				39B88B92227292620018B675 /* BFP.png */,
-				3903828D2266864B003422D3 /* HomeIcon.png */,
+				3903828D2266864B003422D3 /* HomeIcon.jpg */,
 				3906899E2279479A0068E4D2 /* peeking.png */,
 				3903828E2266864B003422D3 /* SettingsIcon.png */,
 				390689A0227948FC0068E4D2 /* peeking reverse.png */,
@@ -612,7 +619,6 @@
 			isa = PBXGroup;
 			children = (
 				93692FD822DEEA9F00A1234F /* ChatViewController.swift */,
-				93692FD922DEEA9F00A1234F /* Custom Cell */,
 				93692FDA22DEEA9F00A1234F /* Message.swift */,
 			);
 			path = Model;
@@ -631,6 +637,8 @@
 		F75E70B122721608009BC7EA /* News */ = {
 			isa = PBXGroup;
 			children = (
+				394B608A22DFEDBC005032AA /* newsStatsController.swift */,
+				394B608822DFEDB2005032AA /* newsStats.storyboard */,
 				3979096F229F7E1300EAA8FE /* DynamicNewsController.swift */,
 				39790971229F84B300EAA8FE /* NewsChecklistController.swift */,
 				39790B3222BA982C00EAA8FE /* NewsChecklist.storyboard */,
@@ -662,6 +670,8 @@
 			children = (
 				3939DBED225649D7001A8A7B /* AppsController.swift */,
 				39790AB922BA97AE00EAA8FE /* Apps.storyboard */,
+				394B608C22E007B2005032AA /* appsStatsController.swift */,
+				394B608E22E007C1005032AA /* appsStats.storyboard */,
 			);
 			path = Apps;
 			sourceTree = "<group>";
@@ -724,18 +734,17 @@
 		F7A70476227A0DBE00C0146B /* Messages */ = {
 			isa = PBXGroup;
 			children = (
+				39B2C3E222DFE98300C5BFB2 /* MessageCell.xib */,
 				93692FFA22DF00D800A1234F /* Main.png */,
-				93692FF622DEEE1B00A1234F /* LandingViewController.swift */,
 				93692FD322DEEA9E00A1234F /* API.swift */,
-				93692FD522DEEA9F00A1234F /* awsconfiguration.json */,
 				93692FDB22DEEA9F00A1234F /* client.png */,
-				93692FE222DEEAA000A1234F /* Custom Cell */,
 				93692FD222DEEA9E00A1234F /* CustomMessageCell.swift */,
-				93692FD122DEEA9E00A1234F /* howardCenter.jpg */,
-				93692FD622DEEA9F00A1234F /* HowardCenterHeader.png */,
-				93692FD022DEEA9D00A1234F /* MessageCell.xib */,
+				93692FD122DEEA9E00A1234F /* howardCenter2.jpg */,
+				93692FD622DEEA9F00A1234F /* HowardCenterHeader2.png */,
 				93692FD722DEEA9F00A1234F /* Model */,
 				93692FF822DEEE4B00A1234F /* Chat.storyboard */,
+				39B2C3DE22DFE3D000C5BFB2 /* LandingViewController.swift */,
+				39B2C3E022DFE86400C5BFB2 /* awsconfiguration.json */,
 			);
 			path = Messages;
 			sourceTree = "<group>";
@@ -933,10 +942,10 @@
 				3979097C229F929400EAA8FE /* WSJ.png in Resources */,
 				39790986229F945F00EAA8FE /* BBC.png in Resources */,
 				F74140E5227B2972007836F9 /* note1.wav in Resources */,
+				394B608922DFEDB3005032AA /* newsStats.storyboard in Resources */,
 				F74140E2227B2972007836F9 /* note5.wav in Resources */,
 				397909B022B1BBCC00EAA8FE /* russian.png in Resources */,
 				397909AA22B1BBAF00EAA8FE /* nepalese.png in Resources */,
-				93692FEF22DEEAA000A1234F /* Custom Cell in Resources */,
 				3979099A22B1BB7200EAA8FE /* bengali.png in Resources */,
 				3906899322729CEC0068E4D2 /* SD.jpeg in Resources */,
 				397909B822B1BBF700EAA8FE /* vietnamese.png in Resources */,
@@ -951,7 +960,6 @@
 				93692FF122DEEAA000A1234F /* client.png in Resources */,
 				9703857D227A5BC100C47655 /* bus.png in Resources */,
 				9703857F227A626900C47655 /* youTube.png in Resources */,
-				93692FE722DEEAA000A1234F /* MessageCell.xib in Resources */,
 				397909AC22B1BBB700EAA8FE /* portuguese.jpg in Resources */,
 				390689952272A2090068E4D2 /* placeholder.png in Resources */,
 				3979097A229F920000EAA8FE /* ABC.png in Resources */,
@@ -963,11 +971,13 @@
 				970385772274FB4700C47655 /* concert.jpg in Resources */,
 				39790B8222BA988300EAA8FE /* DynamicNews.storyboard in Resources */,
 				397909A422B1BB9800EAA8FE /* hindi.png in Resources */,
+				39B2C3E122DFE86400C5BFB2 /* awsconfiguration.json in Resources */,
 				3903829722668B2A003422D3 /* questionMark.png in Resources */,
 				39790980229F930300EAA8FE /* reuters.png in Resources */,
 				39B88B962272943D0018B675 /* MCV.png in Resources */,
 				3979095C227A7D1F00EAA8FE /* weather.jpg in Resources */,
 				390689992272A4010068E4D2 /* Calender.png in Resources */,
+				39B2C3E322DFE98300C5BFB2 /* MessageCell.xib in Resources */,
 				3903828F2266864B003422D3 /* funguy.png in Resources */,
 				3979095A227A7ADE00EAA8FE /* Echo.jpg in Resources */,
 				397909A022B1BB8A00EAA8FE /* german.png in Resources */,
@@ -987,17 +997,19 @@
 				3979099E22B1BB8200EAA8FE /* french.png in Resources */,
 				3979098E22A001BA00EAA8FE /* WCAX.jpg in Resources */,
 				397909622285A9E000EAA8FE /* HowardCenterHeader.png in Resources */,
+				394B608722DFED60005032AA /* stats.png in Resources */,
 				9703857B2274FE3B00C47655 /* motivation.jpg in Resources */,
-				93692FED22DEEAA000A1234F /* HowardCenterHeader.png in Resources */,
+				93692FED22DEEAA000A1234F /* HowardCenterHeader2.png in Resources */,
 				39B88B93227292620018B675 /* BFP.png in Resources */,
 				39068991227298CF0068E4D2 /* N10.png in Resources */,
 				3979099C22B1BB7A00EAA8FE /* chinese.png in Resources */,
+				394B608F22E007C1005032AA /* appsStats.storyboard in Resources */,
 				3906899D227928A30068E4D2 /* refresh.png in Resources */,
 				39790AB722BA97AE00EAA8FE /* Apps.storyboard in Resources */,
 				39790AA322BA978A00EAA8FE /* Localizable.strings in Resources */,
 				39790BFC22BAD01800EAA8FE /* backArrow.png in Resources */,
 				3979099622B1BB6200EAA8FE /* english.png in Resources */,
-				390382902266864B003422D3 /* HomeIcon.png in Resources */,
+				390382902266864B003422D3 /* HomeIcon.jpg in Resources */,
 				970385732274F5F900C47655 /* messages.jpg in Resources */,
 				3979097E229F92DD00EAA8FE /* NPR.png in Resources */,
 				390689A8227A660F0068E4D2 /* curtain.jpg in Resources */,
@@ -1012,15 +1024,13 @@
 				F74140DF227B2972007836F9 /* note2.wav in Resources */,
 				9703856F22721E7C00C47655 /* Flash.png in Resources */,
 				3979098A229F94C000EAA8FE /* WP.png in Resources */,
-				93692FE822DEEAA000A1234F /* howardCenter.jpg in Resources */,
-				93692FEC22DEEAA000A1234F /* awsconfiguration.json in Resources */,
+				93692FE822DEEAA000A1234F /* howardCenter2.jpg in Resources */,
 				F7838118227A126500902F3B /* GoogleService-Info.plist in Resources */,
 				F7DC6505224D182A00C8EA66 /* Main.storyboard in Resources */,
 				39790976229F916E00EAA8FE /* CNN.png in Resources */,
 				39790958227A76D500EAA8FE /* Roxie.jpg in Resources */,
 				397909A822B1BBA800EAA8FE /* japanese.png in Resources */,
 				39790B0722BA980300EAA8FE /* NewCallScreen.storyboard in Resources */,
-				93692FF522DEEAA000A1234F /* Custom Cell in Resources */,
 				397909B622B1BBEC00EAA8FE /* swedish.jpg in Resources */,
 				F74140E0227B2972007836F9 /* note6.wav in Resources */,
 				39790BA922BAA38000EAA8FE /* NewCheckList.storyboard in Resources */,
@@ -1138,19 +1148,21 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				394B608B22DFEDBC005032AA /* newsStatsController.swift in Sources */,
 				F74140E8227B2A51007836F9 /* Xylophone.swift in Sources */,
-				93692FF722DEEE1B00A1234F /* LandingViewController.swift in Sources */,
 				93692FE922DEEAA000A1234F /* CustomMessageCell.swift in Sources */,
 				F7DC6502224D182A00C8EA66 /* ViewController.swift in Sources */,
 				F7A70470227A0CDE00C0146B /* AppDelegate.swift in Sources */,
 				396027D6225E9AD90007CCDD /* NewCallScreenController.swift in Sources */,
 				3939DBEA2256499B001A8A7B /* SignupController.swift in Sources */,
 				3939DBEC225649B9001A8A7B /* LaunchScreenController.swift in Sources */,
+				394B608D22E007B2005032AA /* appsStatsController.swift in Sources */,
 				39038295226689A3003422D3 /* AskHowardController.swift in Sources */,
 				39B2C3C722D5801A00C5BFB2 /* TextToSpeech.swift in Sources */,
 				39790970229F7E1300EAA8FE /* DynamicNewsController.swift in Sources */,
 				93692FEE22DEEAA000A1234F /* ChatViewController.swift in Sources */,
 				3939DBE822564989001A8A7B /* LoginController.swift in Sources */,
+				39B2C3DF22DFE3D000C5BFB2 /* LandingViewController.swift in Sources */,
 				39790972229F84B300EAA8FE /* NewsChecklistController.swift in Sources */,
 				3939DBEE225649D7001A8A7B /* AppsController.swift in Sources */,
 				3BD10A5E22669B5C001D0B5B /* MapViewController.swift in Sources */,
