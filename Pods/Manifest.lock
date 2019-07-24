@@ -19,6 +19,9 @@ PODS:
   - AWSUserPoolsSignIn (2.9.10):
     - AWSAuthCore (= 2.9.10)
     - AWSCognitoIdentityProvider (= 2.9.10)
+  - Charts (3.3.0):
+    - Charts/Core (= 3.3.0)
+  - Charts/Core (3.3.0)
   - Localize-Swift (2.0.0)
   - ReachabilitySwift (4.3.0)
   - SQLite.swift (0.11.6):
@@ -31,6 +34,7 @@ DEPENDENCIES:
   - AWSCore (~> 2.9.6)
   - AWSMobileClient (~> 2.9.0)
   - AWSUserPoolsSignIn (~> 2.9.0)
+  - Charts
   - Localize-Swift (~> 2.0)
 
 SPEC REPOS:
@@ -43,6 +47,7 @@ SPEC REPOS:
     - AWSCore
     - AWSMobileClient
     - AWSUserPoolsSignIn
+    - Charts
     - Localize-Swift
     - ReachabilitySwift
     - SQLite.swift
@@ -56,10 +61,11 @@ SPEC CHECKSUMS:
   AWSCore: 22b6bbc6761ca9981d878155d11bc02edd681a64
   AWSMobileClient: a0768be5b34a5a2eb39fd3fcd5d4f14125d4ebbb
   AWSUserPoolsSignIn: 825d6f5c6beaa6f3b11d863d4f43031b1da5e6b0
+  Charts: e0dd4cd8f257bccf98407b58183ddca8e8d5b578
   Localize-Swift: c798ec9286494866f7068f85f7c71283ac5bdab4
   ReachabilitySwift: 408477d1b6ed9779dba301953171e017c31241f3
   SQLite.swift: 46d890be8601964454bd3392527f863d1b802d45
 
-PODFILE CHECKSUM: 2955369afec45bb0e252872d5577fa8f51abdf52
+PODFILE CHECKSUM: faa8e9a4eef5e64a600b263580cbf8b44a5e9464
 
-COCOAPODS: 1.7.0
+COCOAPODS: 1.7.4

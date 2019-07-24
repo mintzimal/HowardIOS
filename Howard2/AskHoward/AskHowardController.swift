@@ -30,6 +30,7 @@ class AskHowardController: UIViewController, MFMailComposeViewControllerDelegate
             let emailForm:MFMailComposeViewController = MFMailComposeViewController()
             
             emailForm.mailComposeDelegate = self
+            
             emailForm.setSubject(emailTitle)
             emailForm.setMessageBody(messageBody, isHTML: false)
             emailForm.setToRecipients(toRecipents)
@@ -44,6 +45,9 @@ class AskHowardController: UIViewController, MFMailComposeViewControllerDelegate
         
     }
     
+    func mailComposeController(_ controller: MFMailComposeViewController, didFinishWith result: MFMailComposeResult, error: Error?) {
+        dismiss(animated: true)
+    }
     
 
     override func viewDidLoad() {

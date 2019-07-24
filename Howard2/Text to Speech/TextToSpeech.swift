@@ -9,7 +9,7 @@
 import UIKit
 import AVFoundation
 
-class TextToSpeech: UIViewController {
+class TextToSpeech: UIViewController, UITextViewDelegate {
     
     @IBOutlet weak var SpeakerButton: UIButton!
     @IBOutlet weak var TextInput: UITextView!

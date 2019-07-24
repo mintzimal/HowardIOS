@@ -122,6 +122,7 @@ class AppsController: UIViewController, SFSafariViewControllerDelegate {
         
         print("App1")
         labelChecker(Label: LabelOne.text!)
+        
     
     } else if sender == AppTwo {
         
@@ -154,32 +155,32 @@ class AppsController: UIViewController, SFSafariViewControllerDelegate {
     func labelChecker(Label: String){
         if(Label == arrayOfApps[0].title.localized()){
             //Medication Manager Calls
-            appCount[0] += appCount[0]
+            appCount[0] += 1
         }
         if(Label == arrayOfApps[1].title.localized()){
             //Google Calender Calls
-            appCount[1] += appCount[1]
+            appCount[1] += 1
             
             let svc = SFSafariViewController(url: NSURL(string: self.calender)! as URL)
             self.present(svc, animated: true, completion: nil)
         }
         if(Label == arrayOfApps[2].title.localized()){
             //Learn Something New Calls
-            appCount[2] += appCount[2]
+            appCount[2] += 1
             
             let svc = SFSafariViewController(url: NSURL(string: self.funFacts)! as URL)
             self.present(svc, animated: true, completion: nil)
         }
         if(Label == arrayOfApps[3].title.localized()){
             //Youtube Calls
-            appCount[3] += appCount[3]
+            appCount[3] += 1
             
             let svc = SFSafariViewController(url: NSURL(string: self.youtube)! as URL)
             self.present(svc, animated: true, completion: nil)
         }
         if(Label == arrayOfApps[4].title.localized()){
             //Xylophone Calls
-            appCount[4] += appCount[4]
+            appCount[4] += 1
             
             let viewController:UIViewController = UIStoryboard(name: "Xylophone", bundle: nil).instantiateViewController(withIdentifier: "Xylo") as UIViewController
             
@@ -187,32 +188,32 @@ class AppsController: UIViewController, SFSafariViewControllerDelegate {
         }
         if(Label == arrayOfApps[5].title.localized()){
             //GMT Bus Schedule Calls
-            appCount[5] += appCount[5]
+            appCount[5] += 1
             
             let svc = SFSafariViewController(url: NSURL(string: self.GMTGuide)! as URL)
             self.present(svc, animated: true, completion: nil)
         }
         if(Label == arrayOfApps[6].title.localized()){
             //Higher Ground Live Music Calls
-            appCount[6] += appCount[6]
+            appCount[6] += 1
             
             let svc = SFSafariViewController(url: NSURL(string: self.HigherGround)! as URL)
             self.present(svc, animated: true, completion: nil)
         }
         if(Label == arrayOfApps[7].title.localized()){
             //Messages
-            appCount[7] += appCount[7]
+            appCount[7] += 1
         }
         if(Label == arrayOfApps[8].title.localized()){
             //Motivational Calls
-            appCount[8] += appCount[8]
+            appCount[8] += 1
             
             let svc = SFSafariViewController(url: NSURL(string: self.Motivational)! as URL)
             self.present(svc, animated: true, completion: nil)
         }
         if(Label == arrayOfApps[9].title.localized()){
             //Text To Speech Calls
-            appCount[9] += appCount[9]
+            appCount[9] += 1
             
             let viewController:UIViewController = UIStoryboard(name: "TextToSpeech", bundle: nil).instantiateViewController(withIdentifier: "TextToSpeech") as UIViewController
             
@@ -220,49 +221,49 @@ class AppsController: UIViewController, SFSafariViewControllerDelegate {
         }
         if(Label == arrayOfApps[10].title.localized()){
             //GMT Bus Schedule Calls
-            appCount[10] += appCount[10]
+            appCount[10] += 1
             
             let svc = SFSafariViewController(url: NSURL(string: self.GMTQuick)! as URL)
             self.present(svc, animated: true, completion: nil)
         }
         if(Label == arrayOfApps[11].title.localized()){
             //Flynn Calls
-            appCount[11] += appCount[11]
+            appCount[11] += 1
             
             let svc = SFSafariViewController(url: NSURL(string: self.Flynn)! as URL)
             self.present(svc, animated: true, completion: nil)
         }
         if(Label == arrayOfApps[12].title.localized()){
             //Roxie Movie Calls
-            appCount[12] += appCount[12]
+            appCount[12] += 1
             
             let svc = SFSafariViewController(url: NSURL(string: self.Roxie)! as URL)
             self.present(svc, animated: true, completion: nil)
         }
         if(Label == arrayOfApps[13].title.localized()){
             //ECHO Calls
-            appCount[13] += appCount[13]
+            appCount[13] += 1
             
             let svc = SFSafariViewController(url: NSURL(string: self.Echo)! as URL)
             self.present(svc, animated: true, completion: nil)
         }
         if(Label == arrayOfApps[14].title.localized()){
             //Burlington Weather Calls
-            appCount[14] += appCount[14]
+            appCount[14] += 1
             
             let svc = SFSafariViewController(url: NSURL(string: self.weather)! as URL)
             self.present(svc, animated: true, completion: nil)
         }
         if(Label == arrayOfApps[15].title.localized()){
             //Howard Center Main Site Calls
-            appCount[15] += appCount[15]
+            appCount[15] += 1
             
             let svc = SFSafariViewController(url: NSURL(string: self.howardCenter)! as URL)
             self.present(svc, animated: true, completion: nil)
         }
         if(Label == arrayOfApps[16].title.localized()){
             //Green Mountain Self Advocates Calls
-            appCount[16] += appCount[16]
+            appCount[16] += 1
             
             let svc = SFSafariViewController(url: NSURL(string: self.GMSA)! as URL)
             self.present(svc, animated: true, completion: nil)
