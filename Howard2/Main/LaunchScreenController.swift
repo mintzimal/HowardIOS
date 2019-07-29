@@ -8,6 +8,10 @@
 
 import UIKit
 
+
+import AWSMobileClient
+import AWSAppSync
+
 class LaunchScreenController: UIViewController {
 
     @IBOutlet weak var loginButton: UIButton!
@@ -28,6 +32,10 @@ class LaunchScreenController: UIViewController {
         timeEntered = Date()
         
         RoadMap.append("Entered Launchscreen at: \(timeEntered)")
+        
+        self.initAWSMobileClient()
+        
+        
     }
     
     @IBAction func LoginTracker(_ sender: Any) {
@@ -63,4 +71,68 @@ class LaunchScreenController: UIViewController {
     }
     */
 
+    func showSignIn(){
+        
+        
+        AWSMobileClient.sharedInstance().showSignIn(navigationController:self.navigationController!, signInUIOptions: SignInUIOptions(logoImage: UIImage(named: "Main.png"), backgroundColor: UIColor.white)){
+            (userState, error) in
+            if(error == nil){
+                DispatchQueue.main.async {
+                    print("User successfully logged in")
+                    
+                }
+            }
+        };
+        
+    }
+    
+    
+    
+    
+    
+    func initAWSMobileClient(){
+        
+        
+        
+        
+        
+        AWSMobileClient.sharedInstance().initialize { (userState, error) in
+            
+            if let userState = userState {
+                switch(userState){
+                case .signedIn:
+                    print("Logged In")
+                    //print("Cognito Identity Id (authenticated): \(AWSModileClient.sharedInstance().identityId))")
+                    
+                case .signedOut:
+                    print("Logged  Out")
+                    DispatchQueue.main.async {
+                        self.showSignIn()
+                    }
+                case .signedOutUserPoolsTokenInvalid:
+                    print("User Pools refresh token is invalid or expired")
+                    DispatchQueue.main.async {
+                        self.showSignIn()
+                    }
+                case .signedOutFederatedTokensInvalid:
+                    print("Federated refresh token is invalid or expired")
+                    DispatchQueue.main.async {
+                        self.showSignIn()
+                    }
+                default:
+                    AWSMobileClient.sharedInstance().signOut()
+                    
+                }
+            }else if let error = error {
+                print(error.localizedDescription)
+                
+                
+                
+                
+            }
+        }
+    }
+    
+    
+    
 }
