@@ -230,6 +230,11 @@ class SignupController: UIViewController {
         
         UserDefaults.standard.set(RoadMap,forKey: "RoadMap")
         
+        var defaultCount:[Int] = [0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0]
+        
+        UserDefaults.standard.set(defaultCount, forKey: "newsCount")
+        UserDefaults.standard.set(defaultCount, forKey: "appCount")
+        
         print(RoadMap)
         
 //        let viewController:UIViewController = UIStoryboard(name: "Language", bundle: nil).instantiateViewController(withIdentifier: "Language") as UIViewController

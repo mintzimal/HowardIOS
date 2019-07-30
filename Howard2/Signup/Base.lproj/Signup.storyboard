@@ -542,17 +542,6 @@
                                     <action selector="Languages:" destination="6ty-a7-uhL" eventType="touchUpInside" id="tZB-IK-In6"/>
                                 </connections>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="jLm-Xl-ruV">
-                                <rect key="frame" x="151" y="426" width="75" height="70"/>
-                                <color key="backgroundColor" red="0.33487445119999998" green="0.40583652260000003" blue="0.69807046650000004" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
-                                <fontDescription key="fontDescription" name="GeezaPro-Bold" family="Geeza Pro" pointSize="55"/>
-                                <state key="normal" title="!" backgroundImage="portuguese.jpg">
-                                    <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                </state>
-                                <connections>
-                                    <action selector="Languages:" destination="6ty-a7-uhL" eventType="touchUpInside" id="l4M-YM-ffP"/>
-                                </connections>
-                            </button>
                             <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="PSc-Ex-DPP">
                                 <rect key="frame" x="267" y="426" width="75" height="70"/>
                                 <color key="backgroundColor" red="0.33487445119999998" green="0.40583652260000003" blue="0.69807046650000004" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
@@ -598,6 +587,17 @@
                                 </state>
                                 <connections>
                                     <action selector="Languages:" destination="6ty-a7-uhL" eventType="touchUpInside" id="iQZ-f5-ZQF"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="jLm-Xl-ruV">
+                                <rect key="frame" x="151" y="426" width="75" height="70"/>
+                                <color key="backgroundColor" red="0.33487445119999998" green="0.40583652260000003" blue="0.69807046650000004" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                <fontDescription key="fontDescription" name="GeezaPro-Bold" family="Geeza Pro" pointSize="55"/>
+                                <state key="normal" backgroundImage="portuguese.jpg">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </state>
+                                <connections>
+                                    <action selector="Languages:" destination="6ty-a7-uhL" eventType="touchUpInside" id="l4M-YM-ffP"/>
                                 </connections>
                             </button>
                         </subviews>

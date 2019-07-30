@@ -34,6 +34,7 @@
 		394B608F22E007C1005032AA /* appsStats.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 394B608E22E007C1005032AA /* appsStats.storyboard */; };
 		396027D6225E9AD90007CCDD /* NewCallScreenController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 396027D5225E9AD90007CCDD /* NewCallScreenController.swift */; };
 		396E0DC5226FCD86004F2C13 /* NewCheckListController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 396E0DC4226FCD86004F2C13 /* NewCheckListController.swift */; };
+		3974E4E622F0BB4B00C5CD18 /* logoSC.png in Resources */ = {isa = PBXBuildFile; fileRef = 3974E4E522F0BB4B00C5CD18 /* logoSC.png */; };
 		39790958227A76D500EAA8FE /* Roxie.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 39790957227A76D500EAA8FE /* Roxie.jpg */; };
 		3979095A227A7ADE00EAA8FE /* Echo.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 39790959227A7ADE00EAA8FE /* Echo.jpg */; };
 		3979095C227A7D1F00EAA8FE /* weather.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 3979095B227A7D1F00EAA8FE /* weather.jpg */; };
@@ -181,6 +182,7 @@
 		394B608E22E007C1005032AA /* appsStats.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = appsStats.storyboard; sourceTree = "<group>"; };
 		396027D5225E9AD90007CCDD /* NewCallScreenController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewCallScreenController.swift; sourceTree = "<group>"; };
 		396E0DC4226FCD86004F2C13 /* NewCheckListController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewCheckListController.swift; sourceTree = "<group>"; };
+		3974E4E522F0BB4B00C5CD18 /* logoSC.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = logoSC.png; sourceTree = "<group>"; };
 		39790957227A76D500EAA8FE /* Roxie.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = Roxie.jpg; sourceTree = "<group>"; };
 		39790959227A7ADE00EAA8FE /* Echo.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = Echo.jpg; sourceTree = "<group>"; };
 		3979095B227A7D1F00EAA8FE /* weather.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = weather.jpg; sourceTree = "<group>"; };
@@ -520,6 +522,7 @@
 		396027D7225E9D520007CCDD /* Images */ = {
 			isa = PBXGroup;
 			children = (
+				3974E4E522F0BB4B00C5CD18 /* logoSC.png */,
 				394B608622DFED60005032AA /* stats.png */,
 				39B2C3C822D5833B00C5BFB2 /* speaker.png */,
 				39790BFB22BAD01800EAA8FE /* backArrow.png */,
@@ -971,6 +974,7 @@
 				970385772274FB4700C47655 /* concert.jpg in Resources */,
 				39790B8222BA988300EAA8FE /* DynamicNews.storyboard in Resources */,
 				397909A422B1BB9800EAA8FE /* hindi.png in Resources */,
+				3974E4E622F0BB4B00C5CD18 /* logoSC.png in Resources */,
 				39B2C3E122DFE86400C5BFB2 /* awsconfiguration.json in Resources */,
 				3903829722668B2A003422D3 /* questionMark.png in Resources */,
 				39790980229F930300EAA8FE /* reuters.png in Resources */,
