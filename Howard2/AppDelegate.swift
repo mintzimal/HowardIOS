@@ -73,33 +73,81 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
     func applicationDidEnterBackground(_ application: UIApplication) {
         // Use this method to release shared resources, save user data, invalidate timers, and store enough application state information to restore your application to its current state in case it is terminated later.
         // If your application supports background execution, this method is called instead of applicationWillTerminate: when the user quits.
-        print("tig oll bitties")
+     
         
-        var NewsClicks:[Int] = UserDefaults.standard.array(forKey: "newsCount") as! [Int]
+             appSyncClient?.clearCache()
         
-        var AppClicks:[Int] = UserDefaults.standard.array(forKey: "appCount") as! [Int]
-        
-        
-        var roadMap:Array<String> = UserDefaults.standard.stringArray(forKey: "RoadMap") ?? Array()
-        
-        
-        let mutationInput = CreateDataEnvMutation(input: CreateDataEnvInput(id: 0, newscount: self.json(from: NewsClicks)!, appcount: self.json(from: AppClicks)!, roadmap: self.json(from: roadMap)!  ))
-        
-        
-        
-        
-        self.appSyncClient?.perform(mutation: mutationInput) { (result, error) in
-            
-            
-            if let error = error as? AWSAppSyncClientError {
-                print("Error occurred: \(error.localizedDescription )")
-            }
-            if let resultError = result?.errors {
-                print("Error saving the item on server: \(resultError)")
+        appSyncClient?.fetch(query: ListDataEnvsQuery()) {(result, error) in
+            if error != nil {
+                print(error?.localizedDescription ?? " error fetching")
                 return
             }
             
+            
+            let count = result?.data?.listDataEnvs?.items?.count
+            
+            
+            var NewsClicks:[Int] = UserDefaults.standard.array(forKey: "newsCount") as! [Int]
+            
+            var AppClicks:[Int] = UserDefaults.standard.array(forKey: "appCount") as! [Int]
+            
+            
+            var roadMap:Array<String> = UserDefaults.standard.stringArray(forKey: "RoadMap") ?? Array()
+            
+            
+            let mutationInput = CreateDataEnvMutation(input: CreateDataEnvInput(id: count!, newscount: self.json(from: NewsClicks)!, appcount: self.json(from: AppClicks)!, roadmap: self.json(from: roadMap)!  ))
+            
+            
+            
+            
+            self.appSyncClient?.perform(mutation: mutationInput) { (result, error) in
+                
+                
+                if let error = error as? AWSAppSyncClientError {
+                    print("Error occurred: \(error.localizedDescription )")
+                }
+                if let resultError = result?.errors {
+                    print("Error saving the item on server: \(resultError)")
+                    return
+                }
+                
+            }
+            
+            
+            
+            
+            
+            /*
+            if(allConversations != nil){
+                for item in allConversations!{
+                    
+                    
+                    
+                        self.convoID = item!.conversationId
+                        
+                        self.retrieveMessages()
+                        
+                        
+                        return
+                        
+                        
+                    }
+                
+                
+                
+ 
+ }
+ 
+ 
+ 
+ */
+ 
         }
+        
+        
+        
+        
+       
         
     }
     

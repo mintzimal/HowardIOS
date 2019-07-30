@@ -69,7 +69,7 @@ class LandingViewController: UIViewController{
     
     
     @IBAction func signOutPress(_ sender: Any) {
-        AWSMobileClient.sharedInstance().signOut()
+       // AWSMobileClient.sharedInstance().signOut()
         DispatchQueue.main.async {
             
             let viewController:UIViewController = UIStoryboard(name: "NewCallScreen", bundle: nil).instantiateViewController(withIdentifier: "Help") as UIViewController
