@@ -6,7 +6,7 @@
 	<string>Community</string>
 	<key>CFBundleIconFiles</key>
 	<array>
-		<string>howardCenter.jpg</string>
+		<string>logoSC.png</string>
 	</array>
 	<key>FirebaseScreenReportingEnabled</key>
 	<false/>
