@@ -205,6 +205,7 @@
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
                     <navigationItem key="navigationItem" id="yeL-nn-uWQ"/>
+                    <nil key="simulatedTopBarMetrics"/>
                     <connections>
                         <outlet property="loginButton" destination="PXL-qw-Muv" id="KeD-2J-aum"/>
                         <outlet property="signupButton" destination="IFi-TN-TCB" id="kOs-ee-oF0"/>

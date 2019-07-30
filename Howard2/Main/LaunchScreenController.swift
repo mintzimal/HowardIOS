@@ -35,8 +35,19 @@ class LaunchScreenController: UIViewController {
         
         self.initAWSMobileClient()
         
+     
+    }
+    
+    override func viewWillAppear(_ animated: Bool) {
+        super.viewWillAppear(animated)
+        
+        self.navigationController?.isNavigationBarHidden = true
+        
+        
         
     }
+    
+    
     
     @IBAction func LoginTracker(_ sender: Any) {
         var timeSpent = Date().timeIntervalSince(timeEntered)

@@ -305,6 +305,7 @@
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="no3-Tj-giC"/>
                     </view>
+                    <nil key="simulatedTopBarMetrics"/>
                     <connections>
                         <outlet property="Button1" destination="BSl-8c-ai8" id="5ag-nc-UFL"/>
                         <outlet property="Button2" destination="Z1a-Zc-Ewq" id="tFS-5Y-t50"/>

@@ -23,7 +23,6 @@ class ViewController: UIViewController {
     
     override func viewDidLoad() {
         
-        self.navigationController?.setNavigationBarHidden(true, animated: false)
         super.viewDidLoad()
         // Do any additional setup after loading the view.
         Help.layer.cornerRadius = 15
@@ -47,6 +46,10 @@ class ViewController: UIViewController {
         Help.setTitle("Help".localized(), for: .normal)
         logoutButton.setTitle("Logout".localized(), for: .normal)
         
+    }
+    
+    override func viewDidAppear(_ animated: Bool) {
+        self.navigationController?.setNavigationBarHidden(true, animated: false)
     }
     
     @IBAction func LeavingHome(_ sender: Any) {
