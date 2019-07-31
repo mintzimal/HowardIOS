@@ -75,79 +75,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         // If your application supports background execution, this method is called instead of applicationWillTerminate: when the user quits.
      
         
-             appSyncClient?.clearCache()
-        
-        appSyncClient?.fetch(query: ListDataEnvsQuery()) {(result, error) in
-            if error != nil {
-                print(error?.localizedDescription ?? " error fetching")
-                return
-            }
-            
-            
-            let count = result?.data?.listDataEnvs?.items?.count
-            
-            
-            var NewsClicks:[Int] = UserDefaults.standard.array(forKey: "newsCount") as! [Int]
-            
-            var AppClicks:[Int] = UserDefaults.standard.array(forKey: "appCount") as! [Int]
-            
-            
-            var roadMap:Array<String> = UserDefaults.standard.stringArray(forKey: "RoadMap") ?? Array()
-            
-            
-            let mutationInput = CreateDataEnvMutation(input: CreateDataEnvInput(id: count!, newscount: self.json(from: NewsClicks)!, appcount: self.json(from: AppClicks)!, roadmap: self.json(from: roadMap)!  ))
-            
-            
-            
-            
-            self.appSyncClient?.perform(mutation: mutationInput) { (result, error) in
-                
-                
-                if let error = error as? AWSAppSyncClientError {
-                    print("Error occurred: \(error.localizedDescription )")
-                }
-                if let resultError = result?.errors {
-                    print("Error saving the item on server: \(resultError)")
-                    return
-                }
-                
-            }
-            
-            
-            
-            
-            
-            /*
-            if(allConversations != nil){
-                for item in allConversations!{
-                    
-                    
-                    
-                        self.convoID = item!.conversationId
-                        
-                        self.retrieveMessages()
-                        
-                        
-                        return
-                        
-                        
-                    }
-                
-                
-                
- 
- }
- 
- 
- 
- */
- 
-        }
-        
-        
-        
-        
-       
+   
         
     }
     
@@ -161,6 +89,9 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
     
     func applicationWillTerminate(_ application: UIApplication) {
         // Called when the application is about to terminate. Save data if appropriate. See also applicationDidEnterBackground:.
+        
+        
+        
     }
     
     func json(from object:Any) -> String? {

@@ -58,7 +58,7 @@
                                                 </connections>
                                             </button>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="WP3-bI-bWY">
-                                                <rect key="frame" x="77" y="252" width="213" height="67"/>
+                                                <rect key="frame" x="76.5" y="252" width="213" height="67"/>
                                                 <color key="backgroundColor" red="0.33487445119999998" green="0.40583652260000003" blue="0.69807046650000004" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                                 <constraints>
                                                     <constraint firstAttribute="width" constant="213" id="6tg-we-a6c"/>
@@ -71,6 +71,7 @@
                                                 <connections>
                                                     <action selector="LeavingHome:" destination="BYZ-38-t0r" eventType="touchUpInside" id="YLT-Lq-Goy"/>
                                                     <action selector="logoutButton:" destination="jY4-Fr-0Sh" eventType="touchUpInside" id="zZa-MX-eK1"/>
+                                                    <action selector="sendData2:" destination="BYZ-38-t0r" eventType="touchUpInside" id="mBT-A6-Nyc"/>
                                                     <segue destination="Nou-9T-gcG" kind="show" id="eA6-zH-P1V"/>
                                                 </connections>
                                             </button>

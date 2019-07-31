@@ -8,8 +8,16 @@
 
 import UIKit
 import Localize_Swift
+import AWSAppSync
+import AWSMobileClient
+
+
 
 class ViewController: UIViewController {
+    
+    var appSyncClient: AWSAppSyncClient?
+    
+    
     
     @IBOutlet weak var Help: UIButton!
     @IBOutlet weak var News: UIButton!
@@ -24,6 +32,8 @@ class ViewController: UIViewController {
     override func viewDidLoad() {
         
         super.viewDidLoad()
+        
+        self.initAppSync()
         // Do any additional setup after loading the view.
         Help.layer.cornerRadius = 15
         News.layer.cornerRadius = 15
@@ -59,7 +69,132 @@ class ViewController: UIViewController {
         UserDefaults.standard.set(RoadMap,forKey: "RoadMap")
     }
     
-
-
+    
+    
+    
+    @IBAction func sendData2(_ sender: Any) {
+        
+        
+        
+        
+        
+        appSyncClient?.clearCache()
+        
+        appSyncClient?.fetch(query: ListDataEnvsQuery()) {(result, error) in
+            if error != nil {
+                print(error?.localizedDescription ?? " error fetching")
+                return
+            }
+            
+            
+            let count = result?.data?.listDataEnvs?.items?.count
+            
+            
+            var NewsClicks:[Int] = UserDefaults.standard.array(forKey: "newsCount") as! [Int]
+            
+            var AppClicks:[Int] = UserDefaults.standard.array(forKey: "appCount") as! [Int]
+            
+            
+            var roadMap:Array<String> = UserDefaults.standard.stringArray(forKey: "RoadMap") ?? Array()
+            
+            
+            let mutationInput = CreateDataEnvMutation(input: CreateDataEnvInput(id: count!, newscount: self.json(from: NewsClicks)!, appcount: self.json(from: AppClicks)!, roadmap: self.json(from: roadMap)!  ))
+            
+            
+            
+            
+            self.appSyncClient?.perform(mutation: mutationInput) { (result, error) in
+                
+                
+                if let error = error as? AWSAppSyncClientError {
+                    print("Error occurred: \(error.localizedDescription )")
+                }
+                if let resultError = result?.errors {
+                    print("Error saving the item on server: \(resultError)")
+                    return
+                }
+                
+            }
+            
+            
+            
+            
+            
+            /*
+             if(allConversations != nil){
+             for item in allConversations!{
+             
+             
+             
+             self.convoID = item!.conversationId
+             
+             self.retrieveMessages()
+             
+             
+             return
+             
+             
+             }
+             
+             
+             
+             
+             }
+             
+             
+             
+             */
+            
+        }
+        
+        
+        
+        
+        
+        
+        
+        
+    }
+    
+    
+    
+    
+    
+    func json(from object:Any) -> String? {
+        guard let data = try? JSONSerialization.data(withJSONObject: object, options: []) else {
+            return nil
+        }
+        return String(data: data, encoding: String.Encoding.utf8)
+    }
+    
+    func initAppSync() {
+        do {
+            // You can choose the directory in which AppSync stores its persistent cache databases
+            let cacheConfiguration = try AWSAppSyncCacheConfiguration()
+            
+            // Initialize the AWS AppSync configuration
+            let appSyncConfig = try AWSAppSyncClientConfiguration(appSyncServiceConfig: AWSAppSyncServiceConfig(),
+                                                                  userPoolsAuthProvider: {
+                                                                    class MyCognitoUserPoolsAuthProvider : AWSCognitoUserPoolsAuthProviderAsync {
+                                                                        func getLatestAuthToken(_ callback: @escaping (String?, Error?) -> Void) {
+                                                                            AWSMobileClient.sharedInstance().getTokens { (tokens, error) in
+                                                                                if error != nil {
+                                                                                    callback(nil, error)
+                                                                                } else {
+                                                                                    callback(tokens?.idToken?.tokenString, nil)
+                                                                                }
+                                                                            }
+                                                                        }
+                                                                    }
+                                                                    return MyCognitoUserPoolsAuthProvider()}(),
+                                                                  cacheConfiguration: cacheConfiguration)
+            
+            // Initialize the AWS AppSync client
+            appSyncClient = try AWSAppSyncClient(appSyncConfig: appSyncConfig)
+        } catch {
+            print("Error initializing appsync client. \(error)")
+        }
+    }
+    
 }
 
