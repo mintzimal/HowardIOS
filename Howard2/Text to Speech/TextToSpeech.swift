@@ -33,6 +33,21 @@ class TextToSpeech: UIViewController, UITextViewDelegate {
         
     }
     
+    
+    override func touchesBegan(_ touches: Set<UITouch>, with event: UIEvent?) {
+        view.endEditing(true)
+        super.touchesBegan(touches, with: event)
+    }
+    
+    override func viewDidAppear(_ animated: Bool) {
+        
+        let alertController = UIAlertController(title: "Just a heads up", message:
+            "If you would like to finish typing and send your message press outside the text field and press the audio icon.", preferredStyle: .alert)
+        alertController.addAction(UIAlertAction(title: "Dismiss", style: .default))
+        
+        self.present(alertController, animated: true, completion: nil)
+        
+    }
 
     /*
     // MARK: - Navigation

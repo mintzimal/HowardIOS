@@ -110,6 +110,8 @@ class SignupController: UIViewController {
             YesButton?.layer.cornerRadius = 15
             NoButton?.layer.cornerRadius = 15
         
+            PINView?.isEnabled = false
+        
         
         
         var newLanguageLabel:String = [languageLabel?.text, UserDefaults.standard.string(forKey: "LanguageName") ].compactMap({$0}).joined(separator:" ")
@@ -119,6 +121,19 @@ class SignupController: UIViewController {
         var newDistrictLabel:String = [districtLabel?.text, UserDefaults.standard.string(forKey: "District") ].compactMap({$0}).joined(separator:" ")
         
         districtLabel?.text = newDistrictLabel
+    }
+    
+    override func viewDidAppear(_ animated: Bool) {
+        
+        if(submitButton != nil){
+            
+            let alertController = UIAlertController(title: "Just a heads up", message:
+                "You can use any length PIN number you would like.", preferredStyle: .alert)
+            alertController.addAction(UIAlertAction(title: "Dismiss", style: .default))
+            
+            self.present(alertController, animated: true, completion: nil)
+        }
+        
     }
     
     @IBAction func Add1(_ sender: Any) {

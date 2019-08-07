@@ -50,11 +50,14 @@ class MapViewController: UIViewController, MKMapViewDelegate {
         
         view.addSubview(geoButton)
         
+    }
+    
+    override func viewWillAppear(_ animated: Bool) {
         geoButtonAction(geoButton)
     }
     
     @objc func geoButtonAction(_ sender: UIButton!) {
-        let span = MKCoordinateSpan.init(latitudeDelta: 0.0075, longitudeDelta: 0.0075)
+        let span = MKCoordinateSpan.init(latitudeDelta: 0.0040, longitudeDelta: 0.0040)
         if locationManager.location != nil {
             let region = MKCoordinateRegion.init(center: (locationManager.location?.coordinate)!, span: span)
             mapView.setRegion(region, animated: true)
@@ -82,7 +85,7 @@ extension MapViewController : CLLocationManagerDelegate {
     
     func locationManager(_ manager: CLLocationManager, didUpdateLocations locations: [CLLocation]) {
         if let location = locations.first {
-            let span = MKCoordinateSpan(latitudeDelta: 0.05, longitudeDelta: 0.05)
+            let span = MKCoordinateSpan(latitudeDelta: 0.0040, longitudeDelta: 0.0040)
             let region = MKCoordinateRegion(center: location.coordinate, span: span)
             mapView.setRegion(region, animated: true)
         }

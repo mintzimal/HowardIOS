@@ -49,6 +49,8 @@ class LoginController: UIViewController {
         
         RoadMap.append("Entered Login PIN Screen at: \(timeEntered)")
         
+        PINView?.isEnabled = false
+        
     }
     
     @IBAction func ShowText(_ sender: Any) {

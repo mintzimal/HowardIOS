@@ -30,6 +30,9 @@ import AWSAppSync
 class LandingViewController: UIViewController{
     //Reference AppSync client
     var appSyncClient: AWSAppSyncClient?
+    var RoadMap:Array<String> = UserDefaults.standard.stringArray(forKey: "RoadMap") ?? Array()
+    
+    var timeEntered:Date = Date()
     
     // self.window = UIWindow(frame: UIScreen.mainScreen().bounds)
     // var window = UIWindow(frame: UIScreen.main.bounds)
@@ -45,6 +48,8 @@ class LandingViewController: UIViewController{
     //ll
     override func viewDidLoad() {
         super.viewDidLoad()
+        
+        RoadMap.append("Entered Chat Room Screen at: \(timeEntered)")
         
         self.navigationController?.setNavigationBarHidden(false, animated: true)
         
@@ -71,6 +76,9 @@ class LandingViewController: UIViewController{
     @IBAction func signOutPress(_ sender: Any) {
        // AWSMobileClient.sharedInstance().signOut()
         DispatchQueue.main.async {
+            
+            var timeSpent = Date().timeIntervalSince(self.timeEntered)
+            self.RoadMap.append("Exited Chat Room Screen after: \(timeSpent) seconds")
             
             let viewController:UIViewController = UIStoryboard(name: "NewCallScreen", bundle: nil).instantiateViewController(withIdentifier: "Help") as UIViewController
             

@@ -52,7 +52,7 @@ class AppsController: UIViewController, SFSafariViewControllerDelegate {
         appStruct(id: 4, title: "Xylophone", text: "Mess with a basic instrument",image: "xylophone.jpg"),
         appStruct(id: 5, title: "GMT Bus Guide", text: "See when transportation services arrives",image: "bus.png"),
         appStruct(id:6, title: "Higher Ground Live Music", text: "Check performance schedules",image: "concert.jpg"),
-        appStruct(id:7, title: "Messages", text: "Receive messages from your safety connection specialist",image: "messages.jpg"),
+        appStruct(id:7, title: "Check-In Reminders", text: "Receive messages from your safety connection specialist",image: "messages.jpg"),
         appStruct(id:8, title: "Motivational", text: "Get motivational messages everyday!",image: "motivation.jpg"),
         appStruct(id:9, title: "Text to Speech", text: "Type what you want to vocalize",image: "speech.jpeg"),
         appStruct(id:10, title: "GMT Bus Schedule Links", text: "Displays information about city public transit",image: "bus.png"),
@@ -69,14 +69,14 @@ class AppsController: UIViewController, SFSafariViewControllerDelegate {
     private var calender:String = "https://calendar.google.com/calendar/"
     private var youtube:String = "https://youtube.com"
     
-    private var GMTGuide:String = "http://ridegmt.com/wp-content/uploads/chittendencounty_current.pdf"
+    private var GMTGuide:String = "https://www.connectingcommuters.org/wp-content/uploads/2019/02/Chittenden-Transportation-Guide.pdf"
     private var GMTQuick:String = "http://ridegmt.com/gmt-schedules/"
     private var Motivational:String = "https://www.brainyquote.com/quote_of_the_day"
     private var HigherGround:String = "https://www.highergroundmusic.com/"
     private var Flynn:String = "https://www.flynncenter.org/calendar.html"
     private var Roxie:String = "http://merrilltheatres.net/showtimes.html"
     private var Echo:String = "https://www.echovermont.org/"
-    private var weather:String = "https://weather.com/weather/today/l/Burlington+VT+USVT0033:1:US"
+    private var weather:String = "https://weather.com/weather/today/l/5b32ed00e546ee2f461bd16b210ec2e41f6b99d20a92d7718d13d36d46c86104"
     private var howardCenter:String = "https://howardcenter.org/"
     private var GMSA:String = "http://www.gmsavt.org/"
     
@@ -201,7 +201,7 @@ class AppsController: UIViewController, SFSafariViewControllerDelegate {
             self.present(svc, animated: true, completion: nil)
         }
         if(Label == arrayOfApps[7].title.localized()){
-            //Messages
+            //Check-In Reminders
             appCount[7] += 1
         }
         if(Label == arrayOfApps[8].title.localized()){
@@ -297,6 +297,8 @@ class AppsController: UIViewController, SFSafariViewControllerDelegate {
         AppsLabel.text = "Apps".localized()
         
         RoadMap.append("Entered Apps Screen at: \(timeEntered)")
+        
+        navigationController?.navigationBar.isHidden = false
         
         }
 

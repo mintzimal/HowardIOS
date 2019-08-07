@@ -37,11 +37,15 @@ class NewCheckListController: UITableViewController {
     
     override func viewDidAppear(_ animated: Bool) {
         
+        if(UserDefaults.standard.integer(forKey: "AppChecklist") == 0){
         let alertController = UIAlertController(title: "Just a heads up", message:
-            "Scroll down to the bottom and press the banner to exit this page.", preferredStyle: .alert)
+            "Press the back button at the top or scroll down to the bottom and press the banner to exit this page.", preferredStyle: .alert)
         alertController.addAction(UIAlertAction(title: "Dismiss", style: .default))
         
         self.present(alertController, animated: true, completion: nil)
+            
+            UserDefaults.standard.set(1, forKey: "AppChecklist")
+        }
         
     }
     

@@ -192,6 +192,12 @@ class ChatViewController: UIViewController, UITableViewDelegate, UITableViewData
     
     @IBAction func sendPressed(_ sender: AnyObject) {
         
+        self.sendM()
+        
+        
+    }
+    
+    func sendM(){
         
         //TODO: Send the message to Firebase and save it in our database
         messageTextfield.endEditing(true)
@@ -208,7 +214,6 @@ class ChatViewController: UIViewController, UITableViewDelegate, UITableViewData
         self.sendButton.isEnabled = true
         self.messageTextfield.text = ""
         self.messageTableView.reloadData()
-        
         
     }
     
@@ -522,9 +527,17 @@ class ChatViewController: UIViewController, UITableViewDelegate, UITableViewData
     }
     
     
+    @IBAction func KeyboardSend(_ sender: Any) {
+       
+        self.sendM()
+        
+    }
     
     
 }
+
+
+
 
 extension String {
     func toJSON() -> Any? {
