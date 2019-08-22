@@ -40,8 +40,8 @@ class NewCallScreenController: UIViewController {
         
         RoadMap.append("Entered Help Screen at: \(timeEntered)")
         
-        districtButton.layer.cornerRadius = 50
-        messageButton.layer.cornerRadius = 50
+        districtButton.layer.cornerRadius = 15
+        messageButton.layer.cornerRadius = 15
         
         messageButton.titleLabel?.adjustsFontSizeToFitWidth = true
         messageButton.setTitle("Message".localized(), for: .normal)

@@ -53,7 +53,7 @@ class AskHowardController: UIViewController, MFMailComposeViewControllerDelegate
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        emailButton.layer.cornerRadius = 15
+        emailButton.layer.cornerRadius = 0
         
         emailButton.titleLabel?.adjustsFontSizeToFitWidth = true
         emailButton.setTitle("Click to Let Me Know".localized(), for: .normal)
