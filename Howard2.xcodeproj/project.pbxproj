@@ -37,6 +37,7 @@
 		394B608F22E007C1005032AA /* appsStats.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 394B608E22E007C1005032AA /* appsStats.storyboard */; };
 		396027D6225E9AD90007CCDD /* NewCallScreenController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 396027D5225E9AD90007CCDD /* NewCallScreenController.swift */; };
 		396E0DC5226FCD86004F2C13 /* NewCheckListController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 396E0DC4226FCD86004F2C13 /* NewCheckListController.swift */; };
+		39714B72230FA4AD00325126 /* testCircle.png in Resources */ = {isa = PBXBuildFile; fileRef = 39714B71230FA4AD00325126 /* testCircle.png */; };
 		3974E4E622F0BB4B00C5CD18 /* logoSC.png in Resources */ = {isa = PBXBuildFile; fileRef = 3974E4E522F0BB4B00C5CD18 /* logoSC.png */; };
 		39790958227A76D500EAA8FE /* Roxie.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 39790957227A76D500EAA8FE /* Roxie.jpg */; };
 		3979095A227A7ADE00EAA8FE /* Echo.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 39790959227A7ADE00EAA8FE /* Echo.jpg */; };
@@ -189,6 +190,7 @@
 		394B608E22E007C1005032AA /* appsStats.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = appsStats.storyboard; sourceTree = "<group>"; };
 		396027D5225E9AD90007CCDD /* NewCallScreenController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewCallScreenController.swift; sourceTree = "<group>"; };
 		396E0DC4226FCD86004F2C13 /* NewCheckListController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewCheckListController.swift; sourceTree = "<group>"; };
+		39714B71230FA4AD00325126 /* testCircle.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = testCircle.png; sourceTree = "<group>"; };
 		3974E4E522F0BB4B00C5CD18 /* logoSC.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = logoSC.png; sourceTree = "<group>"; };
 		39790957227A76D500EAA8FE /* Roxie.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = Roxie.jpg; sourceTree = "<group>"; };
 		39790959227A7ADE00EAA8FE /* Echo.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = Echo.jpg; sourceTree = "<group>"; };
@@ -539,6 +541,7 @@
 		396027D7225E9D520007CCDD /* Images */ = {
 			isa = PBXGroup;
 			children = (
+				39714B71230FA4AD00325126 /* testCircle.png */,
 				3974E4E522F0BB4B00C5CD18 /* logoSC.png */,
 				394B608622DFED60005032AA /* stats.png */,
 				39B2C3C822D5833B00C5BFB2 /* speaker.png */,
@@ -985,6 +988,7 @@
 				397909AA22B1BBAF00EAA8FE /* nepalese.png in Resources */,
 				3979099A22B1BB7200EAA8FE /* bengali.png in Resources */,
 				3906899322729CEC0068E4D2 /* SD.jpeg in Resources */,
+				39714B72230FA4AD00325126 /* testCircle.png in Resources */,
 				397909B822B1BBF700EAA8FE /* vietnamese.png in Resources */,
 				F7838122227A4F1200902F3B /* Xylophone.storyboard in Resources */,
 				3979099422A0025300EAA8FE /* VPR.jpg in Resources */,
