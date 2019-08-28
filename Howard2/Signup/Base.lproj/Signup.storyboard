@@ -98,7 +98,7 @@
                                                     <constraint firstAttribute="height" constant="77" id="d8t-0A-jne"/>
                                                     <constraint firstAttribute="width" constant="84" id="j5T-AD-bZp"/>
                                                 </constraints>
-                                                <fontDescription key="fontDescription" name="GeezaPro-Bold" family="Geeza Pro" pointSize="55"/>
+                                                <fontDescription key="fontDescription" name="GeezaPro-Bold" family="Geeza Pro" pointSize="43"/>
                                                 <state key="normal" title="5" backgroundImage="testCircle.png">
                                                     <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                 </state>
@@ -552,10 +552,10 @@
                                     <action selector="Languages:" destination="6ty-a7-uhL" eventType="touchUpInside" id="l4M-YM-ffP"/>
                                 </connections>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="mSQ-pc-Xta">
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="mSQ-pc-Xta">
                                 <rect key="frame" x="35" y="582" width="297" height="114"/>
                                 <constraints>
-                                    <constraint firstAttribute="height" constant="71" id="sL4-Vh-KgW"/>
+                                    <constraint firstAttribute="height" constant="114" id="hEf-Il-hsb"/>
                                 </constraints>
                                 <fontDescription key="fontDescription" name="GeezaPro-Bold" family="Geeza Pro" pointSize="41"/>
                                 <state key="normal" title="Next Page" backgroundImage="testCircle.png">
@@ -586,7 +586,7 @@
                             <constraint firstItem="Qrv-Tr-XWL" firstAttribute="leading" secondItem="4qr-9L-Mjg" secondAttribute="leading" id="G0p-NX-1Qk"/>
                             <constraint firstItem="s3R-hX-x0f" firstAttribute="trailing" secondItem="jNd-xr-EQg" secondAttribute="trailing" id="Gsc-ET-Lau"/>
                             <constraint firstItem="9OQ-O4-xDM" firstAttribute="leading" secondItem="jLm-Xl-ruV" secondAttribute="leading" id="Gvj-Rs-gaZ"/>
-                            <constraint firstItem="p08-gh-73S" firstAttribute="trailing" secondItem="mSQ-pc-Xta" secondAttribute="trailing" id="HPD-KI-Pd0"/>
+                            <constraint firstItem="p08-gh-73S" firstAttribute="trailing" secondItem="mSQ-pc-Xta" secondAttribute="trailing" constant="43" id="HPD-KI-Pd0"/>
                             <constraint firstItem="QQc-o6-cT6" firstAttribute="firstBaseline" secondItem="559-pe-984" secondAttribute="firstBaseline" id="JOR-ZF-3PP"/>
                             <constraint firstItem="PSc-Ex-DPP" firstAttribute="trailing" secondItem="2y2-12-use" secondAttribute="trailing" id="Jf4-wS-CS7"/>
                             <constraint firstItem="9OQ-O4-xDM" firstAttribute="firstBaseline" secondItem="559-pe-984" secondAttribute="firstBaseline" id="KB4-Ee-V9z"/>
@@ -617,16 +617,16 @@
                             <constraint firstItem="9OQ-O4-xDM" firstAttribute="trailing" secondItem="jLm-Xl-ruV" secondAttribute="trailing" id="j3F-Cn-U9T"/>
                             <constraint firstItem="p08-gh-73S" firstAttribute="top" secondItem="s3R-hX-x0f" secondAttribute="bottom" constant="8" symbolic="YES" id="kLY-wb-yPi"/>
                             <constraint firstItem="4qr-9L-Mjg" firstAttribute="top" secondItem="Qrv-Tr-XWL" secondAttribute="bottom" constant="8" symbolic="YES" id="kea-Kn-gOt"/>
-                            <constraint firstItem="mSQ-pc-Xta" firstAttribute="top" secondItem="4qr-9L-Mjg" secondAttribute="bottom" constant="22" id="lKj-oX-Ezd"/>
+                            <constraint firstItem="mSQ-pc-Xta" firstAttribute="top" secondItem="4qr-9L-Mjg" secondAttribute="bottom" constant="8" id="lKj-oX-Ezd"/>
                             <constraint firstItem="jLm-Xl-ruV" firstAttribute="trailing" secondItem="rxG-i6-Scd" secondAttribute="trailing" id="nmZ-LF-Sm2"/>
                             <constraint firstAttribute="trailing" secondItem="gd8-nE-Ndx" secondAttribute="trailing" id="oqm-CR-sgL"/>
                             <constraint firstItem="jNd-xr-EQg" firstAttribute="top" secondItem="p08-gh-73S" secondAttribute="bottom" constant="8" symbolic="YES" id="pAk-li-iHZ"/>
                             <constraint firstItem="559-pe-984" firstAttribute="trailing" secondItem="Qrv-Tr-XWL" secondAttribute="trailing" id="q4T-o8-eM0"/>
-                            <constraint firstItem="p08-gh-73S" firstAttribute="leading" secondItem="mSQ-pc-Xta" secondAttribute="leading" id="txr-fg-sF1"/>
+                            <constraint firstItem="p08-gh-73S" firstAttribute="leading" secondItem="mSQ-pc-Xta" secondAttribute="leading" constant="-43" id="txr-fg-sF1"/>
                             <constraint firstItem="2y2-12-use" firstAttribute="top" secondItem="PSc-Ex-DPP" secondAttribute="bottom" constant="8" symbolic="YES" id="uFp-Z1-6EW"/>
                             <constraint firstItem="rxG-i6-Scd" firstAttribute="baseline" secondItem="2y2-12-use" secondAttribute="baseline" id="uLu-13-VEf"/>
                             <constraint firstItem="Qrv-Tr-XWL" firstAttribute="firstBaseline" secondItem="PSc-Ex-DPP" secondAttribute="firstBaseline" id="vix-nm-U78"/>
-                            <constraint firstItem="mSQ-pc-Xta" firstAttribute="bottom" secondItem="5MH-F7-jjh" secondAttribute="bottom" id="vrD-dU-rh1"/>
+                            <constraint firstItem="mSQ-pc-Xta" firstAttribute="bottom" secondItem="5MH-F7-jjh" secondAttribute="bottom" constant="29" id="vrD-dU-rh1"/>
                             <constraint firstItem="2y2-12-use" firstAttribute="firstBaseline" secondItem="rxG-i6-Scd" secondAttribute="firstBaseline" id="wne-Up-qMZ"/>
                             <constraint firstItem="jLm-Xl-ruV" firstAttribute="leading" secondItem="rxG-i6-Scd" secondAttribute="leading" id="yz3-Wh-qtD"/>
                             <constraint firstItem="rxG-i6-Scd" firstAttribute="bottom" secondItem="2y2-12-use" secondAttribute="bottom" id="zHX-BW-xD0"/>
@@ -800,10 +800,10 @@
                                     <action selector="Languages:" destination="Ds1-oE-V8B" eventType="touchUpInside" id="D8i-pW-nBC"/>
                                 </connections>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Lso-bN-TNW">
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Lso-bN-TNW">
                                 <rect key="frame" x="92" y="586" width="189" height="100"/>
                                 <constraints>
-                                    <constraint firstAttribute="height" constant="68" id="B9l-Dc-enf"/>
+                                    <constraint firstAttribute="height" constant="100" id="B9l-Dc-enf"/>
                                 </constraints>
                                 <fontDescription key="fontDescription" name="GeezaPro-Bold" family="Geeza Pro" pointSize="55"/>
                                 <state key="normal" title="Skip" backgroundImage="testCircle.png">
@@ -826,7 +826,7 @@
                             <constraint firstItem="evC-wI-NXB" firstAttribute="top" secondItem="xtf-6n-n7Y" secondAttribute="bottom" constant="8" symbolic="YES" id="6US-jh-wiD"/>
                             <constraint firstItem="K2E-VS-3eu" firstAttribute="centerY" secondItem="qnA-3k-poG" secondAttribute="centerY" id="7j8-h5-W0B"/>
                             <constraint firstItem="Gns-VU-OlV" firstAttribute="firstBaseline" secondItem="FmZ-8N-jml" secondAttribute="firstBaseline" id="Dac-El-VNc"/>
-                            <constraint firstItem="xtf-6n-n7Y" firstAttribute="trailing" secondItem="Lso-bN-TNW" secondAttribute="trailing" id="I7x-fH-Ud9"/>
+                            <constraint firstItem="xtf-6n-n7Y" firstAttribute="trailing" secondItem="Lso-bN-TNW" secondAttribute="trailing" constant="94" id="I7x-fH-Ud9"/>
                             <constraint firstItem="0QH-ry-dey" firstAttribute="trailing" secondItem="93w-ua-JOU" secondAttribute="trailing" id="IJB-xd-xmj"/>
                             <constraint firstItem="GpK-aI-wj3" firstAttribute="trailing" secondItem="Vk9-Cl-MQS" secondAttribute="trailing" id="Icw-Fw-9jE"/>
                             <constraint firstItem="GpK-aI-wj3" firstAttribute="leading" secondItem="gea-YD-y7e" secondAttribute="trailing" constant="43" id="JmH-De-xDu"/>
@@ -835,8 +835,8 @@
                             <constraint firstItem="evC-wI-NXB" firstAttribute="leading" secondItem="qnA-3k-poG" secondAttribute="leadingMargin" constant="-17" id="NVK-DP-ELh"/>
                             <constraint firstItem="Gns-VU-OlV" firstAttribute="baseline" secondItem="FmZ-8N-jml" secondAttribute="baseline" id="NoN-k3-PX1"/>
                             <constraint firstItem="0QH-ry-dey" firstAttribute="leading" secondItem="93w-ua-JOU" secondAttribute="leading" id="Ow0-DP-6ty"/>
-                            <constraint firstItem="Lso-bN-TNW" firstAttribute="bottom" secondItem="aXo-rz-e5y" secondAttribute="bottom" id="PyC-zq-neC"/>
-                            <constraint firstItem="Lso-bN-TNW" firstAttribute="top" secondItem="KDZ-7O-zaN" secondAttribute="bottom" constant="21" id="RNz-r7-WEN"/>
+                            <constraint firstItem="Lso-bN-TNW" firstAttribute="bottom" secondItem="aXo-rz-e5y" secondAttribute="bottom" constant="19" id="PyC-zq-neC"/>
+                            <constraint firstItem="Lso-bN-TNW" firstAttribute="top" secondItem="KDZ-7O-zaN" secondAttribute="bottom" constant="8" id="RNz-r7-WEN"/>
                             <constraint firstAttribute="trailing" secondItem="xtf-6n-n7Y" secondAttribute="trailing" id="S6O-zH-mbw"/>
                             <constraint firstItem="93w-ua-JOU" firstAttribute="leading" secondItem="KDZ-7O-zaN" secondAttribute="leading" id="SA3-KG-0no"/>
                             <constraint firstItem="ufE-rA-oXS" firstAttribute="leading" secondItem="Gns-VU-OlV" secondAttribute="leading" id="SSb-Zf-q1W"/>
@@ -859,7 +859,7 @@
                             <constraint firstItem="gea-YD-y7e" firstAttribute="trailing" secondItem="ufE-rA-oXS" secondAttribute="trailing" id="hsV-WE-QTz"/>
                             <constraint firstItem="gea-YD-y7e" firstAttribute="firstBaseline" secondItem="GpK-aI-wj3" secondAttribute="firstBaseline" id="jL9-Hi-P2L"/>
                             <constraint firstItem="gea-YD-y7e" firstAttribute="firstBaseline" secondItem="0QH-ry-dey" secondAttribute="firstBaseline" id="jeO-Il-Irr"/>
-                            <constraint firstItem="Lso-bN-TNW" firstAttribute="leading" secondItem="qnA-3k-poG" secondAttribute="leadingMargin" constant="-25" id="kkD-GM-fKS"/>
+                            <constraint firstItem="Lso-bN-TNW" firstAttribute="leading" secondItem="qnA-3k-poG" secondAttribute="leadingMargin" constant="76" id="kkD-GM-fKS"/>
                             <constraint firstItem="xtf-6n-n7Y" firstAttribute="leading" secondItem="dhB-w9-wHi" secondAttribute="leading" id="kks-CQ-v7a"/>
                             <constraint firstItem="FmZ-8N-jml" firstAttribute="firstBaseline" secondItem="KDZ-7O-zaN" secondAttribute="firstBaseline" id="lXD-9c-Pg8"/>
                             <constraint firstItem="aXo-rz-e5y" firstAttribute="trailing" secondItem="GpK-aI-wj3" secondAttribute="trailing" constant="33" id="loh-sn-OUT"/>
@@ -982,8 +982,9 @@
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="wAZ-WY-2Rp">
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="wAZ-WY-2Rp">
                                 <rect key="frame" x="208" y="556" width="151" height="70"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" type="boldSystem" pointSize="45"/>
                                 <state key="normal" title="No" backgroundImage="testCircle.png">
                                     <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
@@ -1010,17 +1011,13 @@
                             <constraint firstAttribute="trailingMargin" secondItem="HLM-L9-mvv" secondAttribute="trailing" constant="-55" id="Jly-a9-ZQZ"/>
                             <constraint firstItem="mWe-Ui-CSj" firstAttribute="top" secondItem="HLM-L9-mvv" secondAttribute="bottom" constant="8" symbolic="YES" id="Kku-kf-HyW"/>
                             <constraint firstItem="0hD-bL-DFp" firstAttribute="leading" secondItem="GS3-El-qgg" secondAttribute="leading" id="LkF-HD-AYs"/>
-                            <constraint firstItem="wAZ-WY-2Rp" firstAttribute="trailing" secondItem="aj7-Jr-nPP" secondAttribute="trailingMargin" id="Puw-rg-VTO"/>
                             <constraint firstItem="IxW-Wc-NVV" firstAttribute="top" secondItem="aj7-Jr-nPP" secondAttribute="top" id="VnL-dG-8ib"/>
                             <constraint firstAttribute="bottomMargin" secondItem="GS3-El-qgg" secondAttribute="bottom" constant="-47" id="aGy-PM-Wbj"/>
                             <constraint firstItem="GS3-El-qgg" firstAttribute="top" secondItem="H9f-7O-eip" secondAttribute="bottom" constant="67" id="ast-TL-LZY"/>
                             <constraint firstItem="HLM-L9-mvv" firstAttribute="leading" secondItem="0hD-bL-DFp" secondAttribute="leading" id="bwW-YL-hix"/>
-                            <constraint firstItem="H9f-7O-eip" firstAttribute="baseline" secondItem="wAZ-WY-2Rp" secondAttribute="firstBaseline" id="duw-Kg-RfX"/>
                             <constraint firstItem="IxW-Wc-NVV" firstAttribute="trailing" secondItem="mWe-Ui-CSj" secondAttribute="trailing" id="hcG-Kw-lxj"/>
-                            <constraint firstItem="wAZ-WY-2Rp" firstAttribute="leading" secondItem="H9f-7O-eip" secondAttribute="trailing" constant="41" id="hvz-1O-0m3"/>
                             <constraint firstItem="WH3-wl-vvw" firstAttribute="trailing" secondItem="5ID-g4-lIm" secondAttribute="trailing" constant="7" id="ihW-17-dAI"/>
                             <constraint firstItem="uZa-54-rtG" firstAttribute="leading" secondItem="H9f-7O-eip" secondAttribute="leading" id="nHj-a7-Hsk"/>
-                            <constraint firstItem="H9f-7O-eip" firstAttribute="top" secondItem="wAZ-WY-2Rp" secondAttribute="top" id="oS9-8Y-6Fu"/>
                             <constraint firstItem="IxW-Wc-NVV" firstAttribute="leading" secondItem="HLM-L9-mvv" secondAttribute="leading" id="rfs-Qe-jI7"/>
                             <constraint firstItem="HLM-L9-mvv" firstAttribute="trailing" secondItem="0hD-bL-DFp" secondAttribute="trailing" id="xf3-QB-RtY"/>
                             <constraint firstItem="0hD-bL-DFp" firstAttribute="trailing" secondItem="GS3-El-qgg" secondAttribute="trailing" id="yic-1r-I2m"/>
