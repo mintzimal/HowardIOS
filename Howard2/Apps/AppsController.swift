@@ -205,6 +205,10 @@ class AppsController: UIViewController, SFSafariViewControllerDelegate {
         if(Label == arrayOfApps[7].title.localized()){
             //Check-In Reminders
             appCount[7] += 1
+            
+            let viewController:UIViewController = UIStoryboard(name: "checkins", bundle: nil).instantiateViewController(withIdentifier: "Checkins") as UIViewController
+            
+            self.present(viewController, animated: true, completion: nil)
         }
         if(Label == arrayOfApps[8].title.localized()){
             //Motivational Calls
