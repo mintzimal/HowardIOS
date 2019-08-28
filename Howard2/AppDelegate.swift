@@ -15,12 +15,11 @@ import AWSMobileClient
 class AppDelegate: UIResponder, UIApplicationDelegate {
     var window: UIWindow?
     
-    
-    
     var appSyncClient: AWSAppSyncClient?
     
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplication.LaunchOptionsKey: Any]?) -> Bool {
         
+       
         /*
         self.window = UIWindow(frame: UIScreen.main.bounds)
         let nav = UINavigationController()
@@ -93,6 +92,8 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         
         
     }
+    
+   
     
     func json(from object:Any) -> String? {
         guard let data = try? JSONSerialization.data(withJSONObject: object, options: []) else {

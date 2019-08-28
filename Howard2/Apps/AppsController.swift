@@ -20,6 +20,8 @@ struct appStruct:Codable {
 
 class AppsController: UIViewController, SFSafariViewControllerDelegate {
     
+    @IBOutlet weak var LogoutButton: UIButton!
+    @IBOutlet weak var HomeButton: UIButton!
     @IBOutlet weak var refreshButton: UIButton!
     
     @IBOutlet weak var AppOne: UIButton!
@@ -275,6 +277,19 @@ class AppsController: UIViewController, SFSafariViewControllerDelegate {
 
     override func viewDidLoad() {
         super.viewDidLoad()
+        
+        LogoutButton.isHidden = true
+        
+         if UserDefaults.standard.bool(forKey: "disableNews") && UserDefaults.standard.bool(forKey: "disableHelp") {
+            
+            HomeButton.isHidden = true
+            
+            if !UserDefaults.standard.bool(forKey: "disablePIN"){
+                
+                LogoutButton.isHidden = false
+            }
+            
+        }
         
         
         refresh(refreshButton)

@@ -97,6 +97,8 @@
 		39B88B962272943D0018B675 /* MCV.png in Resources */ = {isa = PBXBuildFile; fileRef = 39B88B952272943D0018B675 /* MCV.png */; };
 		39ED26B122723EA600B7D843 /* border.png in Resources */ = {isa = PBXBuildFile; fileRef = 39ED26B022723EA600B7D843 /* border.png */; };
 		3BD10A5E22669B5C001D0B5B /* MapViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3BD10A5D22669B5C001D0B5B /* MapViewController.swift */; };
+		93305B05230CAC6200A8341C /* GeneralSettings.swift in Sources */ = {isa = PBXBuildFile; fileRef = 93305B04230CAC6200A8341C /* GeneralSettings.swift */; };
+		93305B07230CADB800A8341C /* Settings.bundle in Resources */ = {isa = PBXBuildFile; fileRef = 93305B06230CADB800A8341C /* Settings.bundle */; };
 		93692FE822DEEAA000A1234F /* howardCenter2.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 93692FD122DEEA9E00A1234F /* howardCenter2.jpg */; };
 		93692FE922DEEAA000A1234F /* CustomMessageCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 93692FD222DEEA9E00A1234F /* CustomMessageCell.swift */; };
 		93692FEA22DEEAA000A1234F /* API.swift in Sources */ = {isa = PBXBuildFile; fileRef = 93692FD322DEEA9E00A1234F /* API.swift */; };
@@ -447,6 +449,8 @@
 		78F5DBDD519BCFAE2103DBD7 /* Pods_Howard2UITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Howard2UITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		7F2E59DFD23B136C5A7735E1 /* Pods_Howard2.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Howard2.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		8D46FDDF532E69FB49D5162F /* Pods-Howard2Tests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Howard2Tests.debug.xcconfig"; path = "Target Support Files/Pods-Howard2Tests/Pods-Howard2Tests.debug.xcconfig"; sourceTree = "<group>"; };
+		93305B04230CAC6200A8341C /* GeneralSettings.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GeneralSettings.swift; sourceTree = "<group>"; };
+		93305B06230CADB800A8341C /* Settings.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; path = Settings.bundle; sourceTree = "<group>"; };
 		93692FD122DEEA9E00A1234F /* howardCenter2.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = howardCenter2.jpg; sourceTree = "<group>"; };
 		93692FD222DEEA9E00A1234F /* CustomMessageCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CustomMessageCell.swift; sourceTree = "<group>"; };
 		93692FD322DEEA9E00A1234F /* API.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = API.swift; sourceTree = "<group>"; };
@@ -618,6 +622,15 @@
 			path = Pods;
 			sourceTree = "<group>";
 		};
+		93305B01230CAB3D00A8341C /* General Settings */ = {
+			isa = PBXGroup;
+			children = (
+				93305B04230CAC6200A8341C /* GeneralSettings.swift */,
+				93305B06230CADB800A8341C /* Settings.bundle */,
+			);
+			path = "General Settings";
+			sourceTree = "<group>";
+		};
 		93692FD722DEEA9F00A1234F /* Model */ = {
 			isa = PBXGroup;
 			children = (
@@ -782,6 +795,7 @@
 				F7838117227A126500902F3B /* GoogleService-Info.plist */,
 				F7DC6506224D182C00C8EA66 /* Assets.xcassets */,
 				F7A70465227A0CDB00C0146B /* AppDelegate.swift */,
+				93305B01230CAB3D00A8341C /* General Settings */,
 				39B2C3C322D57FA700C5BFB2 /* Text to Speech */,
 				F7838127227A501E00902F3B /* Xylo */,
 				F7A70476227A0DBE00C0146B /* Messages */,
@@ -976,6 +990,7 @@
 				397909A422B1BB9800EAA8FE /* hindi.png in Resources */,
 				3974E4E622F0BB4B00C5CD18 /* logoSC.png in Resources */,
 				39B2C3E122DFE86400C5BFB2 /* awsconfiguration.json in Resources */,
+				93305B07230CADB800A8341C /* Settings.bundle in Resources */,
 				3903829722668B2A003422D3 /* questionMark.png in Resources */,
 				39790980229F930300EAA8FE /* reuters.png in Resources */,
 				39B88B962272943D0018B675 /* MCV.png in Resources */,
@@ -1169,6 +1184,7 @@
 				39B2C3DF22DFE3D000C5BFB2 /* LandingViewController.swift in Sources */,
 				39790972229F84B300EAA8FE /* NewsChecklistController.swift in Sources */,
 				3939DBEE225649D7001A8A7B /* AppsController.swift in Sources */,
+				93305B05230CAC6200A8341C /* GeneralSettings.swift in Sources */,
 				3BD10A5E22669B5C001D0B5B /* MapViewController.swift in Sources */,
 				93692FEA22DEEAA000A1234F /* API.swift in Sources */,
 				93692FF022DEEAA000A1234F /* Message.swift in Sources */,

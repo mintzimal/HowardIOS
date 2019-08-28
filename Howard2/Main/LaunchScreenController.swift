@@ -43,7 +43,19 @@ class LaunchScreenController: UIViewController {
         
         self.navigationController?.isNavigationBarHidden = true
         
-        
+         if UserDefaults.standard.bool(forKey: "disablePIN"){
+            
+            UserDefaults.standard.set(true, forKey: "skipHome")
+            
+            let HomeController = self.storyboard!.instantiateViewController(withIdentifier: "Home")
+            
+            self.present(HomeController, animated: false, completion: nil)
+            
+            
+            
+            
+            
+        }
         
     }
     

@@ -224,6 +224,30 @@
             </objects>
             <point key="canvasLocation" x="544" y="161"/>
         </scene>
+        <!--App-->
+        <scene sceneID="fhn-Vi-7c1">
+            <objects>
+                <viewControllerPlaceholder storyboardIdentifier="A" storyboardName="Apps" referencedIdentifier="App" id="QTr-jQ-aMu" sceneMemberID="viewController"/>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dPu-YX-wCG" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-348" y="711"/>
+        </scene>
+        <!--Help-->
+        <scene sceneID="elW-EN-VmW">
+            <objects>
+                <viewControllerPlaceholder storyboardIdentifier="H" storyboardName="NewCallScreen" referencedIdentifier="Help" id="Kp7-b6-xXr" sceneMemberID="viewController"/>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="OrE-UG-RpF" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-41" y="783"/>
+        </scene>
+        <!--DynamicNews-->
+        <scene sceneID="h6O-4j-ORh">
+            <objects>
+                <viewControllerPlaceholder storyboardIdentifier="N" storyboardName="DynamicNews" referencedIdentifier="DynamicNews" id="TeS-Hw-OG9" sceneMemberID="viewController"/>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="ZUn-Pt-uRK" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-361" y="883"/>
+        </scene>
         <!--LaunchScreen-->
         <scene sceneID="2fJ-Kc-lBQ">
             <objects>

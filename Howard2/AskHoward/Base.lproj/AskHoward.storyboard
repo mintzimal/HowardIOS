@@ -10,6 +10,30 @@
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
+        <!--Help-->
+        <scene sceneID="25h-xb-KvQ">
+            <objects>
+                <viewControllerPlaceholder storyboardIdentifier="H" storyboardName="NewCallScreen" referencedIdentifier="Help" id="6Rw-9u-NND" sceneMemberID="viewController"/>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="ida-sO-Lgq" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-732" y="506"/>
+        </scene>
+        <!--DynamicNews-->
+        <scene sceneID="ARC-jA-Bef">
+            <objects>
+                <viewControllerPlaceholder storyboardIdentifier="N" storyboardName="DynamicNews" referencedIdentifier="DynamicNews" id="JD4-L6-ZRM" sceneMemberID="viewController"/>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="01v-ve-a7z" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-642" y="707"/>
+        </scene>
+        <!--App-->
+        <scene sceneID="pV8-vM-yBd">
+            <objects>
+                <viewControllerPlaceholder storyboardIdentifier="A" storyboardName="Apps" referencedIdentifier="App" id="Khj-6k-GaB" sceneMemberID="viewController"/>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="XnJ-X3-rLE" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-834" y="973"/>
+        </scene>
         <!--Ask Howard Controller-->
         <scene sceneID="7gt-HQ-5IP">
             <objects>

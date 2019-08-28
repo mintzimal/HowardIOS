@@ -109,6 +109,9 @@ class LoginController: UIViewController {
     }
     
     @IBAction func SubmitButton(_ sender: Any) {
+        
+        
+        UserDefaults.standard.set(true, forKey: "skipHome")
     
         if(PINView.text != ""){
             if(PINView.text == UserDefaults.standard.string(forKey: "PIN") ?? "" ){

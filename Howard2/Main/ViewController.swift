@@ -17,6 +17,7 @@ class ViewController: UIViewController {
     
     var appSyncClient: AWSAppSyncClient?
     
+    var flag = 0
     
     
     @IBOutlet weak var Help: UIButton!
@@ -56,10 +57,85 @@ class ViewController: UIViewController {
         Help.setTitle("Help".localized(), for: .normal)
         logoutButton.setTitle("Logout".localized(), for: .normal)
         
+       
+        if UserDefaults.standard.bool(forKey: "disableNews"){
+            News.isHidden = true
+            flag += 1
+        }
+        else{
+            News.isHidden = false
+        }
+        
+        if UserDefaults.standard.bool(forKey: "disableApps"){
+            Apps.isHidden = true
+            flag += 1
+        }
+        else{
+            Apps.isHidden = false
+        }
+        
+        if UserDefaults.standard.bool(forKey: "disableHelp"){
+            Help.isHidden = true
+            flag += 1
+        }
+        else{
+            Help.isHidden = false
+        }
+        
+        if UserDefaults.standard.bool(forKey: "disablePIN"){
+            logoutButton.isHidden = true
+        }
+        else{
+            logoutButton.isHidden = false
+        }
+        
+      
+    
+        
     }
     
     override func viewDidAppear(_ animated: Bool) {
         self.navigationController?.setNavigationBarHidden(true, animated: false)
+        
+        
+        if flag == 2 {
+            
+            if UserDefaults.standard.bool(forKey: "skipHome"){
+            
+            if !UserDefaults.standard.bool(forKey: "disableNews"){
+                
+               
+                let NewsController = self.storyboard!.instantiateViewController(withIdentifier: "N")
+                
+                self.present(NewsController, animated: false, completion: nil)
+                
+            }
+            
+            if !UserDefaults.standard.bool(forKey: "disableApps"){
+                let AppController = self.storyboard!.instantiateViewController(withIdentifier: "A")
+                
+                self.present(AppController, animated: false, completion: nil)
+                
+            }
+            
+            if !UserDefaults.standard.bool(forKey: "disableHelp"){
+                let HelpController = self.storyboard!.instantiateViewController(withIdentifier: "H")
+                
+                self.present(HelpController, animated: false, completion: nil)
+                
+            }
+            
+                UserDefaults.standard.set(false, forKey: "skipHome")
+                
+                
+        }
+            
+            
+            
+            
+        }
+        
+        
     }
     
     @IBAction func LeavingHome(_ sender: Any) {
