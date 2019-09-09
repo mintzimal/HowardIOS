@@ -201,7 +201,7 @@ class checkinsController: UIViewController, UITableViewDelegate, UITableViewData
             }
         }
         
-        center.removeAllPendingNotificationRequests()
+        //center.removeAllPendingNotificationRequests()
         
         let content = UNMutableNotificationContent()
         content.title = "Check-In Reminder"
@@ -209,10 +209,7 @@ class checkinsController: UIViewController, UITableViewDelegate, UITableViewData
         content.sound = UNNotificationSound.default
         
         var dateComponents = DateComponents()
-        dateComponents.year = 2019
-        dateComponents.month = 8
-        dateComponents.day = 22
-        dateComponents.timeZone = TimeZone(abbreviation: "EST")
+        dateComponents.calendar = Calendar.current
         
         dateComponents.hour = Calendar.current.component(.hour, from: UserDefaults.standard.object(forKey: "savedDate") as! Date)
         
@@ -230,8 +227,8 @@ class checkinsController: UIViewController, UITableViewDelegate, UITableViewData
             let userCalendar = Calendar.current // user calendar
             let date = userCalendar.date(from: dateComponents)!
             
-            let triggerWeekly = Calendar.current.dateComponents([.weekday,.hour,.minute,.second,], from: date)
-            let trigger = UNCalendarNotificationTrigger(dateMatching: triggerWeekly, repeats: true)
+//            let triggerWeekly = Calendar.current.dateComponents([.weekday,.hour,.minute,.second,], from: date)
+            let trigger = UNCalendarNotificationTrigger(dateMatching: dateComponents, repeats: true)
             
             // Swift
             let identifier = self.days[numDay-1]

@@ -235,7 +235,7 @@
                                         <rect key="frame" x="0.0" y="546" width="375" height="192"/>
                                         <subviews>
                                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="evR-ki-eBN">
-                                                <rect key="frame" x="0.0" y="25" width="375" height="167"/>
+                                                <rect key="frame" x="-34" y="25" width="443" height="167"/>
                                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                                 <fontDescription key="fontDescription" name="GeezaPro-Bold" family="Geeza Pro" pointSize="55"/>
                                                 <state key="normal" title="Submit" backgroundImage="testCircle.png">
@@ -317,7 +317,7 @@
                                 <constraints>
                                     <constraint firstAttribute="height" constant="130" id="FoT-Z1-4G9"/>
                                 </constraints>
-                                <fontDescription key="fontDescription" name="GeezaPro-Bold" family="Geeza Pro" pointSize="50"/>
+                                <fontDescription key="fontDescription" name="GeezaPro-Bold" family="Geeza Pro" pointSize="45"/>
                                 <state key="normal" title="District 2" backgroundImage="testCircle.png">
                                     <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 </state>
@@ -360,7 +360,7 @@
                                 <constraints>
                                     <constraint firstAttribute="height" constant="130" id="sgg-da-kVH"/>
                                 </constraints>
-                                <fontDescription key="fontDescription" name="GeezaPro-Bold" family="Geeza Pro" pointSize="50"/>
+                                <fontDescription key="fontDescription" name="GeezaPro-Bold" family="Geeza Pro" pointSize="45"/>
                                 <state key="normal" title="District 1" backgroundImage="testCircle.png">
                                     <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 </state>
@@ -553,9 +553,9 @@
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="mSQ-pc-Xta">
-                                <rect key="frame" x="35" y="582" width="297" height="114"/>
+                                <rect key="frame" x="-31" y="582" width="438" height="123"/>
                                 <constraints>
-                                    <constraint firstAttribute="height" constant="114" id="hEf-Il-hsb"/>
+                                    <constraint firstAttribute="height" constant="123" id="hEf-Il-hsb"/>
                                 </constraints>
                                 <fontDescription key="fontDescription" name="GeezaPro-Bold" family="Geeza Pro" pointSize="41"/>
                                 <state key="normal" title="Next Page" backgroundImage="testCircle.png">
@@ -586,7 +586,7 @@
                             <constraint firstItem="Qrv-Tr-XWL" firstAttribute="leading" secondItem="4qr-9L-Mjg" secondAttribute="leading" id="G0p-NX-1Qk"/>
                             <constraint firstItem="s3R-hX-x0f" firstAttribute="trailing" secondItem="jNd-xr-EQg" secondAttribute="trailing" id="Gsc-ET-Lau"/>
                             <constraint firstItem="9OQ-O4-xDM" firstAttribute="leading" secondItem="jLm-Xl-ruV" secondAttribute="leading" id="Gvj-Rs-gaZ"/>
-                            <constraint firstItem="p08-gh-73S" firstAttribute="trailing" secondItem="mSQ-pc-Xta" secondAttribute="trailing" constant="43" id="HPD-KI-Pd0"/>
+                            <constraint firstItem="p08-gh-73S" firstAttribute="trailing" secondItem="mSQ-pc-Xta" secondAttribute="trailing" constant="-32" id="HPD-KI-Pd0"/>
                             <constraint firstItem="QQc-o6-cT6" firstAttribute="firstBaseline" secondItem="559-pe-984" secondAttribute="firstBaseline" id="JOR-ZF-3PP"/>
                             <constraint firstItem="PSc-Ex-DPP" firstAttribute="trailing" secondItem="2y2-12-use" secondAttribute="trailing" id="Jf4-wS-CS7"/>
                             <constraint firstItem="9OQ-O4-xDM" firstAttribute="firstBaseline" secondItem="559-pe-984" secondAttribute="firstBaseline" id="KB4-Ee-V9z"/>
@@ -622,11 +622,11 @@
                             <constraint firstAttribute="trailing" secondItem="gd8-nE-Ndx" secondAttribute="trailing" id="oqm-CR-sgL"/>
                             <constraint firstItem="jNd-xr-EQg" firstAttribute="top" secondItem="p08-gh-73S" secondAttribute="bottom" constant="8" symbolic="YES" id="pAk-li-iHZ"/>
                             <constraint firstItem="559-pe-984" firstAttribute="trailing" secondItem="Qrv-Tr-XWL" secondAttribute="trailing" id="q4T-o8-eM0"/>
-                            <constraint firstItem="p08-gh-73S" firstAttribute="leading" secondItem="mSQ-pc-Xta" secondAttribute="leading" constant="-43" id="txr-fg-sF1"/>
+                            <constraint firstItem="p08-gh-73S" firstAttribute="leading" secondItem="mSQ-pc-Xta" secondAttribute="leading" constant="23" id="txr-fg-sF1"/>
                             <constraint firstItem="2y2-12-use" firstAttribute="top" secondItem="PSc-Ex-DPP" secondAttribute="bottom" constant="8" symbolic="YES" id="uFp-Z1-6EW"/>
                             <constraint firstItem="rxG-i6-Scd" firstAttribute="baseline" secondItem="2y2-12-use" secondAttribute="baseline" id="uLu-13-VEf"/>
                             <constraint firstItem="Qrv-Tr-XWL" firstAttribute="firstBaseline" secondItem="PSc-Ex-DPP" secondAttribute="firstBaseline" id="vix-nm-U78"/>
-                            <constraint firstItem="mSQ-pc-Xta" firstAttribute="bottom" secondItem="5MH-F7-jjh" secondAttribute="bottom" constant="29" id="vrD-dU-rh1"/>
+                            <constraint firstItem="mSQ-pc-Xta" firstAttribute="bottom" secondItem="5MH-F7-jjh" secondAttribute="bottom" constant="38" id="vrD-dU-rh1"/>
                             <constraint firstItem="2y2-12-use" firstAttribute="firstBaseline" secondItem="rxG-i6-Scd" secondAttribute="firstBaseline" id="wne-Up-qMZ"/>
                             <constraint firstItem="jLm-Xl-ruV" firstAttribute="leading" secondItem="rxG-i6-Scd" secondAttribute="leading" id="yz3-Wh-qtD"/>
                             <constraint firstItem="rxG-i6-Scd" firstAttribute="bottom" secondItem="2y2-12-use" secondAttribute="bottom" id="zHX-BW-xD0"/>
@@ -801,12 +801,12 @@
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Lso-bN-TNW">
-                                <rect key="frame" x="92" y="586" width="189" height="100"/>
+                                <rect key="frame" x="-13" y="586" width="408" height="121"/>
                                 <constraints>
-                                    <constraint firstAttribute="height" constant="100" id="B9l-Dc-enf"/>
+                                    <constraint firstAttribute="height" constant="121" id="B9l-Dc-enf"/>
                                 </constraints>
-                                <fontDescription key="fontDescription" name="GeezaPro-Bold" family="Geeza Pro" pointSize="55"/>
-                                <state key="normal" title="Skip" backgroundImage="testCircle.png">
+                                <fontDescription key="fontDescription" name="GeezaPro-Bold" family="Geeza Pro" pointSize="40"/>
+                                <state key="normal" title="Skip For Now" backgroundImage="testCircle.png">
                                     <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 </state>
                                 <connections>
@@ -826,7 +826,7 @@
                             <constraint firstItem="evC-wI-NXB" firstAttribute="top" secondItem="xtf-6n-n7Y" secondAttribute="bottom" constant="8" symbolic="YES" id="6US-jh-wiD"/>
                             <constraint firstItem="K2E-VS-3eu" firstAttribute="centerY" secondItem="qnA-3k-poG" secondAttribute="centerY" id="7j8-h5-W0B"/>
                             <constraint firstItem="Gns-VU-OlV" firstAttribute="firstBaseline" secondItem="FmZ-8N-jml" secondAttribute="firstBaseline" id="Dac-El-VNc"/>
-                            <constraint firstItem="xtf-6n-n7Y" firstAttribute="trailing" secondItem="Lso-bN-TNW" secondAttribute="trailing" constant="94" id="I7x-fH-Ud9"/>
+                            <constraint firstItem="xtf-6n-n7Y" firstAttribute="trailing" secondItem="Lso-bN-TNW" secondAttribute="trailing" constant="-20" id="I7x-fH-Ud9"/>
                             <constraint firstItem="0QH-ry-dey" firstAttribute="trailing" secondItem="93w-ua-JOU" secondAttribute="trailing" id="IJB-xd-xmj"/>
                             <constraint firstItem="GpK-aI-wj3" firstAttribute="trailing" secondItem="Vk9-Cl-MQS" secondAttribute="trailing" id="Icw-Fw-9jE"/>
                             <constraint firstItem="GpK-aI-wj3" firstAttribute="leading" secondItem="gea-YD-y7e" secondAttribute="trailing" constant="43" id="JmH-De-xDu"/>
@@ -835,7 +835,7 @@
                             <constraint firstItem="evC-wI-NXB" firstAttribute="leading" secondItem="qnA-3k-poG" secondAttribute="leadingMargin" constant="-17" id="NVK-DP-ELh"/>
                             <constraint firstItem="Gns-VU-OlV" firstAttribute="baseline" secondItem="FmZ-8N-jml" secondAttribute="baseline" id="NoN-k3-PX1"/>
                             <constraint firstItem="0QH-ry-dey" firstAttribute="leading" secondItem="93w-ua-JOU" secondAttribute="leading" id="Ow0-DP-6ty"/>
-                            <constraint firstItem="Lso-bN-TNW" firstAttribute="bottom" secondItem="aXo-rz-e5y" secondAttribute="bottom" constant="19" id="PyC-zq-neC"/>
+                            <constraint firstItem="Lso-bN-TNW" firstAttribute="bottom" secondItem="aXo-rz-e5y" secondAttribute="bottom" constant="40" id="PyC-zq-neC"/>
                             <constraint firstItem="Lso-bN-TNW" firstAttribute="top" secondItem="KDZ-7O-zaN" secondAttribute="bottom" constant="8" id="RNz-r7-WEN"/>
                             <constraint firstAttribute="trailing" secondItem="xtf-6n-n7Y" secondAttribute="trailing" id="S6O-zH-mbw"/>
                             <constraint firstItem="93w-ua-JOU" firstAttribute="leading" secondItem="KDZ-7O-zaN" secondAttribute="leading" id="SA3-KG-0no"/>
@@ -859,7 +859,7 @@
                             <constraint firstItem="gea-YD-y7e" firstAttribute="trailing" secondItem="ufE-rA-oXS" secondAttribute="trailing" id="hsV-WE-QTz"/>
                             <constraint firstItem="gea-YD-y7e" firstAttribute="firstBaseline" secondItem="GpK-aI-wj3" secondAttribute="firstBaseline" id="jL9-Hi-P2L"/>
                             <constraint firstItem="gea-YD-y7e" firstAttribute="firstBaseline" secondItem="0QH-ry-dey" secondAttribute="firstBaseline" id="jeO-Il-Irr"/>
-                            <constraint firstItem="Lso-bN-TNW" firstAttribute="leading" secondItem="qnA-3k-poG" secondAttribute="leadingMargin" constant="76" id="kkD-GM-fKS"/>
+                            <constraint firstItem="Lso-bN-TNW" firstAttribute="leading" secondItem="qnA-3k-poG" secondAttribute="leadingMargin" constant="-29" id="kkD-GM-fKS"/>
                             <constraint firstItem="xtf-6n-n7Y" firstAttribute="leading" secondItem="dhB-w9-wHi" secondAttribute="leading" id="kks-CQ-v7a"/>
                             <constraint firstItem="FmZ-8N-jml" firstAttribute="firstBaseline" secondItem="KDZ-7O-zaN" secondAttribute="firstBaseline" id="lXD-9c-Pg8"/>
                             <constraint firstItem="aXo-rz-e5y" firstAttribute="trailing" secondItem="GpK-aI-wj3" secondAttribute="trailing" constant="33" id="loh-sn-OUT"/>

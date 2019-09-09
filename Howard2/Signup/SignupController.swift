@@ -123,6 +123,10 @@ class SignupController: UIViewController {
         districtLabel?.text = newDistrictLabel
     }
     
+    override func viewWillAppear(_ animated: Bool) {
+        SkipButton?.titleLabel?.text = "Skip"
+    }
+    
     override func viewDidAppear(_ animated: Bool) {
         
         if(submitButton != nil){
@@ -301,7 +305,8 @@ class SignupController: UIViewController {
         
         print(RoadMap)
         
-        UserDefaults.standard.set("English",forKey:"Language")
+        UserDefaults.standard.set("English",forKey:"LanguageName")
+        UserDefaults.standard.set("en",forKey: "Language")
         
         let checkupController = self.storyboard!.instantiateViewController(withIdentifier: "Checkup")
         
