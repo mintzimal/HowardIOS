@@ -74,6 +74,31 @@ class AskHowardController: UIViewController, MFMailComposeViewControllerDelegate
         UserDefaults.standard.set(RoadMap,forKey: "RoadMap")
         
         print(RoadMap)
+        
+        
+        
+        if UserDefaults.standard.bool(forKey: "disableNews") && UserDefaults.standard.bool(forKey: "disableHelp") {
+            
+            let AppController = self.storyboard!.instantiateViewController(withIdentifier: "A")
+            
+            self.present(AppController, animated: false, completion: nil)
+        }
+            if UserDefaults.standard.bool(forKey: "disableApps") && UserDefaults.standard.bool(forKey: "disableHelp") {
+                
+                let NewsController = self.storyboard!.instantiateViewController(withIdentifier: "N")
+                
+                self.present(NewsController, animated: false, completion: nil)
+        }
+                if UserDefaults.standard.bool(forKey: "disableNews") && UserDefaults.standard.bool(forKey: "disableApps") {
+                    
+                    let HelpController = self.storyboard!.instantiateViewController(withIdentifier: "H")
+                    
+                    self.present(HelpController, animated: false, completion: nil)
+           
+            
+        }
+        
+        
     }
     
 

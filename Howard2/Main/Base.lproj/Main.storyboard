@@ -21,162 +21,81 @@
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="95T-TJ-SPu" userLabel="Canvas">
                                 <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                                 <subviews>
-                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="akC-9b-DL3" userLabel="Middle">
-                                        <rect key="frame" x="4" y="206" width="367" height="294"/>
-                                        <subviews>
-                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="5nP-0y-vUb">
-                                                <rect key="frame" x="33" y="84" width="300" height="80"/>
-                                                <color key="backgroundColor" red="0.33487445116043091" green="0.40583652257919312" blue="0.6980704665184021" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
-                                                <constraints>
-                                                    <constraint firstAttribute="width" constant="300" id="LWd-Cx-UdH"/>
-                                                    <constraint firstAttribute="height" constant="80" id="l6p-g4-rw5"/>
-                                                </constraints>
-                                                <fontDescription key="fontDescription" name="GeezaPro-Bold" family="Geeza Pro" pointSize="55"/>
-                                                <state key="normal" title="News">
-                                                    <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                                </state>
-                                                <connections>
-                                                    <action selector="LeavingHome:" destination="BYZ-38-t0r" eventType="touchUpInside" id="O7c-3E-93t"/>
-                                                    <segue destination="g2P-8c-CJ6" kind="show" id="b1C-6W-VGA"/>
-                                                </connections>
-                                            </button>
-                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="242-Gn-JJt">
-                                                <rect key="frame" x="33" y="0.0" width="300" height="76"/>
-                                                <color key="backgroundColor" red="0.33487445116043091" green="0.40583652257919312" blue="0.6980704665184021" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
-                                                <constraints>
-                                                    <constraint firstAttribute="width" constant="300" id="3Rc-2R-Xlw"/>
-                                                    <constraint firstAttribute="height" constant="76" id="4C4-Ls-qgo"/>
-                                                </constraints>
-                                                <fontDescription key="fontDescription" name="GeezaPro-Bold" family="Geeza Pro" pointSize="51"/>
-                                                <color key="tintColor" red="0.0" green="0.47843137250000001" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                                <state key="normal" title="Apps">
-                                                    <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                                </state>
-                                                <connections>
-                                                    <action selector="LeavingHome:" destination="BYZ-38-t0r" eventType="touchUpInside" id="PC7-x3-Pd0"/>
-                                                    <segue destination="z7S-dV-br0" kind="show" id="VJW-eQ-V5T"/>
-                                                </connections>
-                                            </button>
-                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="WP3-bI-bWY">
-                                                <rect key="frame" x="76.5" y="252" width="213" height="67"/>
-                                                <color key="backgroundColor" red="0.33487445119999998" green="0.40583652260000003" blue="0.69807046650000004" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
-                                                <constraints>
-                                                    <constraint firstAttribute="width" constant="213" id="6tg-we-a6c"/>
-                                                    <constraint firstAttribute="height" constant="67" id="zg8-eO-ZBK"/>
-                                                </constraints>
-                                                <fontDescription key="fontDescription" name="GeezaPro-Bold" family="Geeza Pro" pointSize="55"/>
-                                                <state key="normal" title="Logout">
-                                                    <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                                </state>
-                                                <connections>
-                                                    <action selector="LeavingHome:" destination="BYZ-38-t0r" eventType="touchUpInside" id="YLT-Lq-Goy"/>
-                                                    <action selector="logoutButton:" destination="jY4-Fr-0Sh" eventType="touchUpInside" id="zZa-MX-eK1"/>
-                                                    <action selector="sendData2:" destination="BYZ-38-t0r" eventType="touchUpInside" id="mBT-A6-Nyc"/>
-                                                    <segue destination="Nou-9T-gcG" kind="show" id="eA6-zH-P1V"/>
-                                                </connections>
-                                            </button>
-                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="bt0-zQ-OsI">
-                                                <rect key="frame" x="33" y="172" width="300" height="72"/>
-                                                <color key="backgroundColor" red="0.33644006413619709" green="0.40332308714348264" blue="0.69790317357512954" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
-                                                <constraints>
-                                                    <constraint firstAttribute="width" constant="300" id="KyY-WH-nPA"/>
-                                                    <constraint firstAttribute="height" constant="72" id="Ria-BJ-PqB"/>
-                                                </constraints>
-                                                <fontDescription key="fontDescription" name="GeezaPro-Bold" family="Geeza Pro" pointSize="52"/>
-                                                <state key="normal" title="Help">
-                                                    <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                                </state>
-                                                <connections>
-                                                    <action selector="LeavingHome:" destination="BYZ-38-t0r" eventType="touchUpInside" id="e5q-FL-XwW"/>
-                                                    <segue destination="q2I-IR-uJd" kind="show" id="vgF-kR-oWR"/>
-                                                </connections>
-                                            </button>
-                                        </subviews>
-                                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                        <constraints>
-                                            <constraint firstItem="5nP-0y-vUb" firstAttribute="top" secondItem="242-Gn-JJt" secondAttribute="bottom" constant="8" id="3qK-Zr-Z95"/>
-                                            <constraint firstItem="bt0-zQ-OsI" firstAttribute="top" secondItem="5nP-0y-vUb" secondAttribute="bottom" constant="8" id="Dp0-M7-hSr"/>
-                                            <constraint firstAttribute="height" constant="294" id="Gy3-7e-U7h"/>
-                                            <constraint firstItem="bt0-zQ-OsI" firstAttribute="leading" secondItem="akC-9b-DL3" secondAttribute="leading" constant="33" id="Mm0-lM-WYx"/>
-                                            <constraint firstItem="242-Gn-JJt" firstAttribute="leading" secondItem="akC-9b-DL3" secondAttribute="leading" constant="33" id="UtP-h8-f49"/>
-                                            <constraint firstItem="5nP-0y-vUb" firstAttribute="leading" secondItem="akC-9b-DL3" secondAttribute="leading" constant="33" id="VMF-J7-ipm"/>
-                                            <constraint firstItem="242-Gn-JJt" firstAttribute="top" secondItem="akC-9b-DL3" secondAttribute="top" id="cxw-k4-LGi"/>
-                                            <constraint firstItem="WP3-bI-bWY" firstAttribute="top" secondItem="bt0-zQ-OsI" secondAttribute="bottom" constant="8" id="ly7-sM-XmH"/>
-                                            <constraint firstAttribute="width" constant="367" id="mtz-vX-OBm"/>
-                                            <constraint firstItem="WP3-bI-bWY" firstAttribute="centerX" secondItem="bt0-zQ-OsI" secondAttribute="centerX" id="vds-Sg-nku"/>
-                                        </constraints>
-                                    </view>
-                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="F4C-Ou-wZy" userLabel="Top">
-                                        <rect key="frame" x="0.0" y="0.0" width="375" height="206"/>
-                                        <subviews>
-                                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Main" translatesAutoresizingMaskIntoConstraints="NO" id="2sv-JA-2Yu">
-                                                <rect key="frame" x="0.0" y="0.0" width="375" height="169"/>
-                                            </imageView>
-                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="5W7-GP-n6d">
-                                                <rect key="frame" x="0.0" y="174" width="375" height="24"/>
-                                                <color key="backgroundColor" red="0.33644006409999999" green="0.40332308709999998" blue="0.69790317359999998" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
-                                                <constraints>
-                                                    <constraint firstAttribute="height" constant="24" id="cii-cd-8gi"/>
-                                                </constraints>
-                                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                                <nil key="textColor"/>
-                                                <nil key="highlightedColor"/>
-                                            </label>
-                                        </subviews>
-                                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                        <constraints>
-                                            <constraint firstAttribute="trailing" secondItem="2sv-JA-2Yu" secondAttribute="trailing" id="1zv-dY-7rn"/>
-                                            <constraint firstItem="2sv-JA-2Yu" firstAttribute="top" secondItem="F4C-Ou-wZy" secondAttribute="top" id="7mr-ir-FKS"/>
-                                            <constraint firstItem="5W7-GP-n6d" firstAttribute="top" secondItem="2sv-JA-2Yu" secondAttribute="bottom" constant="5" id="8hX-wP-Eby"/>
-                                            <constraint firstItem="5W7-GP-n6d" firstAttribute="bottom" secondItem="F4C-Ou-wZy" secondAttribute="bottomMargin" id="KZx-fl-wPc"/>
-                                            <constraint firstItem="2sv-JA-2Yu" firstAttribute="leading" secondItem="5W7-GP-n6d" secondAttribute="leading" id="eZC-CT-QnL"/>
-                                            <constraint firstItem="2sv-JA-2Yu" firstAttribute="leading" secondItem="F4C-Ou-wZy" secondAttribute="leading" id="qVw-X0-1Yc"/>
-                                            <constraint firstItem="2sv-JA-2Yu" firstAttribute="trailing" secondItem="5W7-GP-n6d" secondAttribute="trailing" id="yz9-ZX-yDg"/>
-                                        </constraints>
-                                    </view>
-                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="V7H-NX-dwY" userLabel="Bottom">
-                                        <rect key="frame" x="0.0" y="520" width="375" height="147"/>
-                                        <subviews>
-                                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="HowardCenterHeader.png" translatesAutoresizingMaskIntoConstraints="NO" id="hjt-Lg-xjm">
-                                                <rect key="frame" x="-2" y="24" width="377" height="123"/>
-                                                <color key="backgroundColor" red="0.8067662646198831" green="0.78512974403539548" blue="0.71892723931092428" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
-                                            </imageView>
-                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="dOl-Ax-Pob">
-                                                <rect key="frame" x="-2" y="8" width="377" height="25"/>
-                                                <color key="backgroundColor" red="0.33644006409999999" green="0.40332308709999998" blue="0.69790317359999998" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
-                                                <constraints>
-                                                    <constraint firstAttribute="height" constant="25" id="ElQ-8g-L4o"/>
-                                                </constraints>
-                                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                                <nil key="textColor"/>
-                                                <nil key="highlightedColor"/>
-                                            </label>
-                                        </subviews>
-                                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                        <constraints>
-                                            <constraint firstItem="dOl-Ax-Pob" firstAttribute="top" secondItem="V7H-NX-dwY" secondAttribute="topMargin" id="0pe-f1-Bvr"/>
-                                            <constraint firstItem="dOl-Ax-Pob" firstAttribute="leading" secondItem="hjt-Lg-xjm" secondAttribute="leading" id="5Tq-Sz-uLc"/>
-                                            <constraint firstItem="dOl-Ax-Pob" firstAttribute="trailing" secondItem="hjt-Lg-xjm" secondAttribute="trailing" id="6Wr-tj-9IJ"/>
-                                            <constraint firstItem="dOl-Ax-Pob" firstAttribute="leading" secondItem="V7H-NX-dwY" secondAttribute="leading" constant="-2" id="FRE-Ik-Hlp"/>
-                                            <constraint firstAttribute="bottom" secondItem="hjt-Lg-xjm" secondAttribute="bottom" id="IXD-s0-aWc"/>
-                                            <constraint firstItem="hjt-Lg-xjm" firstAttribute="top" secondItem="V7H-NX-dwY" secondAttribute="top" constant="24" id="iKL-LJ-Imv"/>
-                                            <constraint firstAttribute="trailing" secondItem="dOl-Ax-Pob" secondAttribute="trailing" id="oZx-iX-slo"/>
-                                        </constraints>
-                                    </view>
+                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="Main" translatesAutoresizingMaskIntoConstraints="NO" id="2sv-JA-2Yu">
+                                        <rect key="frame" x="0.0" y="0.0" width="375" height="203"/>
+                                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                                        <color key="backgroundColor" red="0.84705882352941175" green="0.82352941176470584" blue="0.76862745098039209" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                    </imageView>
+                                    <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="5nP-0y-vUb">
+                                        <rect key="frame" x="37" y="211" width="300" height="80"/>
+                                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                                        <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <fontDescription key="fontDescription" name="GeezaPro-Bold" family="Geeza Pro" pointSize="55"/>
+                                        <size key="titleShadowOffset" width="3" height="3"/>
+                                        <state key="normal" title="News">
+                                            <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                            <color key="titleShadowColor" white="0.33333333333333331" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        </state>
+                                        <connections>
+                                            <action selector="LeavingHome:" destination="BYZ-38-t0r" eventType="touchUpInside" id="O7c-3E-93t"/>
+                                            <segue destination="g2P-8c-CJ6" kind="show" id="b1C-6W-VGA"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="242-Gn-JJt">
+                                        <rect key="frame" x="37" y="299" width="300" height="80"/>
+                                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                                        <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <fontDescription key="fontDescription" name="GeezaPro-Bold" family="Geeza Pro" pointSize="51"/>
+                                        <color key="tintColor" red="0.0" green="0.47843137250000001" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <size key="titleShadowOffset" width="3" height="3"/>
+                                        <state key="normal" title="Apps">
+                                            <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                            <color key="titleShadowColor" white="0.33333333333333331" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        </state>
+                                        <connections>
+                                            <action selector="LeavingHome:" destination="BYZ-38-t0r" eventType="touchUpInside" id="PC7-x3-Pd0"/>
+                                            <segue destination="z7S-dV-br0" kind="show" id="VJW-eQ-V5T"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="bt0-zQ-OsI">
+                                        <rect key="frame" x="37" y="387" width="300" height="80"/>
+                                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                                        <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <fontDescription key="fontDescription" name="GeezaPro-Bold" family="Geeza Pro" pointSize="52"/>
+                                        <size key="titleShadowOffset" width="3" height="3"/>
+                                        <state key="normal" title="Help">
+                                            <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                            <color key="titleShadowColor" white="0.33333333333333331" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        </state>
+                                        <connections>
+                                            <action selector="LeavingHome:" destination="BYZ-38-t0r" eventType="touchUpInside" id="e5q-FL-XwW"/>
+                                            <segue destination="q2I-IR-uJd" kind="show" id="vgF-kR-oWR"/>
+                                        </connections>
+                                    </button>
+                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="HowardCenterHeader.png" translatesAutoresizingMaskIntoConstraints="NO" id="hjt-Lg-xjm">
+                                        <rect key="frame" x="-1" y="552" width="377" height="115"/>
+                                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                                        <color key="backgroundColor" red="0.8067662646198831" green="0.78512974403539548" blue="0.71892723931092428" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                    </imageView>
+                                    <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="WP3-bI-bWY">
+                                        <rect key="frame" x="81" y="475" width="213" height="67"/>
+                                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                                        <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <fontDescription key="fontDescription" name="GeezaPro-Bold" family="Geeza Pro" pointSize="55"/>
+                                        <size key="titleShadowOffset" width="3" height="3"/>
+                                        <state key="normal" title="Logout">
+                                            <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                            <color key="titleShadowColor" white="0.33333333333333331" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        </state>
+                                        <connections>
+                                            <action selector="LeavingHome:" destination="BYZ-38-t0r" eventType="touchUpInside" id="YLT-Lq-Goy"/>
+                                            <action selector="logoutButton:" destination="jY4-Fr-0Sh" eventType="touchUpInside" id="zZa-MX-eK1"/>
+                                            <action selector="sendData2:" destination="BYZ-38-t0r" eventType="touchUpInside" id="mBT-A6-Nyc"/>
+                                            <segue destination="Nou-9T-gcG" kind="show" id="eA6-zH-P1V"/>
+                                        </connections>
+                                    </button>
                                 </subviews>
-                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                <constraints>
-                                    <constraint firstItem="akC-9b-DL3" firstAttribute="top" secondItem="F4C-Ou-wZy" secondAttribute="bottom" id="7zE-qj-Zwa"/>
-                                    <constraint firstItem="V7H-NX-dwY" firstAttribute="top" secondItem="akC-9b-DL3" secondAttribute="bottom" constant="20" id="AvG-c8-6jE"/>
-                                    <constraint firstItem="F4C-Ou-wZy" firstAttribute="leading" secondItem="V7H-NX-dwY" secondAttribute="leading" id="HCR-0x-JaL"/>
-                                    <constraint firstItem="F4C-Ou-wZy" firstAttribute="top" secondItem="95T-TJ-SPu" secondAttribute="top" id="PYP-8M-awO"/>
-                                    <constraint firstItem="F4C-Ou-wZy" firstAttribute="leading" secondItem="95T-TJ-SPu" secondAttribute="leading" id="Ste-s6-QV1"/>
-                                    <constraint firstItem="F4C-Ou-wZy" firstAttribute="trailing" secondItem="V7H-NX-dwY" secondAttribute="trailing" id="Z5l-ri-PxZ"/>
-                                    <constraint firstItem="akC-9b-DL3" firstAttribute="top" secondItem="95T-TJ-SPu" secondAttribute="top" constant="206" id="eAX-WI-F5t"/>
-                                    <constraint firstAttribute="trailing" secondItem="F4C-Ou-wZy" secondAttribute="trailing" id="lxf-w1-hg4"/>
-                                    <constraint firstAttribute="bottom" secondItem="V7H-NX-dwY" secondAttribute="bottom" id="r8g-4J-1XE"/>
-                                    <constraint firstItem="akC-9b-DL3" firstAttribute="centerX" secondItem="V7H-NX-dwY" secondAttribute="centerX" id="wFd-Xd-Fb2"/>
-                                </constraints>
+                                <color key="backgroundColor" red="0.0" green="0.4823529411764706" blue="0.54117647058823526" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                             </view>
                         </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
@@ -192,6 +111,8 @@
                         <outlet property="Apps" destination="242-Gn-JJt" id="TXL-4S-3bd"/>
                         <outlet property="Help" destination="bt0-zQ-OsI" id="d3d-Rc-Dxa"/>
                         <outlet property="News" destination="5nP-0y-vUb" id="3QN-Vm-4z6"/>
+                        <outlet property="footer" destination="hjt-Lg-xjm" id="9zi-d1-wd6"/>
+                        <outlet property="header" destination="2sv-JA-2Yu" id="pye-0F-svI"/>
                         <outlet property="logoutButton" destination="WP3-bI-bWY" id="Y31-sS-BUv"/>
                     </connections>
                 </viewController>
@@ -223,6 +144,30 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="pnY-KO-lpf" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="544" y="161"/>
+        </scene>
+        <!--App-->
+        <scene sceneID="fhn-Vi-7c1">
+            <objects>
+                <viewControllerPlaceholder storyboardIdentifier="A" storyboardName="Apps" referencedIdentifier="App" id="QTr-jQ-aMu" sceneMemberID="viewController"/>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dPu-YX-wCG" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-348" y="711"/>
+        </scene>
+        <!--Help-->
+        <scene sceneID="elW-EN-VmW">
+            <objects>
+                <viewControllerPlaceholder storyboardIdentifier="H" storyboardName="NewCallScreen" referencedIdentifier="Help" id="Kp7-b6-xXr" sceneMemberID="viewController"/>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="OrE-UG-RpF" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-41" y="783"/>
+        </scene>
+        <!--DynamicNews-->
+        <scene sceneID="h6O-4j-ORh">
+            <objects>
+                <viewControllerPlaceholder storyboardIdentifier="N" storyboardName="DynamicNews" referencedIdentifier="DynamicNews" id="TeS-Hw-OG9" sceneMemberID="viewController"/>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="ZUn-Pt-uRK" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-361" y="883"/>
         </scene>
         <!--LaunchScreen-->
         <scene sceneID="2fJ-Kc-lBQ">

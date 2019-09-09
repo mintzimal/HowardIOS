@@ -167,7 +167,14 @@
                                 <state key="normal" title="Button" image="questionMark.png"/>
                                 <connections>
                                     <action selector="LeavingNews:" destination="9pS-Ge-hFz" eventType="touchUpInside" id="ANg-CK-pXS"/>
-                                    <segue destination="F28-uG-vDl" kind="show" id="Y5R-qq-RoS"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="m68-2t-TXq">
+                                <rect key="frame" x="163" y="606" width="48" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Logout"/>
+                                <connections>
+                                    <segue destination="Thq-Ad-rq8" kind="show" id="AMV-R4-sqJ"/>
                                 </connections>
                             </button>
                         </subviews>
@@ -175,12 +182,14 @@
                         <viewLayoutGuide key="safeArea" id="evN-Ue-UB8"/>
                     </view>
                     <connections>
+                        <outlet property="HomeButton" destination="CWf-9m-uiD" id="kP1-Uu-IPA"/>
                         <outlet property="LabelFive" destination="zEn-BY-Kfc" id="7hF-Eh-gQq"/>
                         <outlet property="LabelFour" destination="t5B-Iz-S9s" id="GzC-Kz-Rqz"/>
                         <outlet property="LabelOne" destination="5S8-x8-Qht" id="sN4-lK-Nav"/>
                         <outlet property="LabelSix" destination="dzq-Qd-013" id="akK-FO-KbK"/>
                         <outlet property="LabelThree" destination="VKx-1r-jwf" id="450-EI-gyZ"/>
                         <outlet property="LabelTwo" destination="oke-PK-V15" id="jU7-qL-dxV"/>
+                        <outlet property="LogoutButton" destination="m68-2t-TXq" id="fuM-Ye-WLt"/>
                         <outlet property="NewsFive" destination="BJB-cv-feJ" id="fUf-1G-cr2"/>
                         <outlet property="NewsFour" destination="RKL-wW-DoV" id="ZsG-0t-o8J"/>
                         <outlet property="NewsLabel" destination="T0W-Um-MPA" id="WYR-wr-PvG"/>
@@ -210,6 +219,14 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="PF0-rY-SJt" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="483" y="-188"/>
+        </scene>
+        <!--LaunchScreen-->
+        <scene sceneID="saC-1W-1Yc">
+            <objects>
+                <viewControllerPlaceholder storyboardName="LaunchScreen" referencedIdentifier="LaunchScreen" id="Thq-Ad-rq8" sceneMemberID="viewController"/>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="pKz-s0-19E" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-38" y="98"/>
         </scene>
         <!--AskHoward-->
         <scene sceneID="Dzm-2F-PEC">

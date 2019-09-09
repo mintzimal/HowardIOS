@@ -17,6 +17,7 @@ class ViewController: UIViewController {
     
     var appSyncClient: AWSAppSyncClient?
     
+    var flag = 0
     
     
     @IBOutlet weak var Help: UIButton!
@@ -28,6 +29,8 @@ class ViewController: UIViewController {
     
     var timeEntered:Date = Date()
     
+    @IBOutlet weak var header: UIImageView!
+    @IBOutlet weak var footer: UIImageView!
     
     override func viewDidLoad() {
         
@@ -35,10 +38,45 @@ class ViewController: UIViewController {
         
         self.initAppSync()
         // Do any additional setup after loading the view.
-        Help.layer.cornerRadius = 15
-        News.layer.cornerRadius = 15
-        Apps.layer.cornerRadius = 15
-        logoutButton.layer.cornerRadius = 15
+        Help.layer.cornerRadius = 5
+        Help.layer.masksToBounds = false
+        Help.layer.shadowColor = UIColor.darkGray.cgColor
+        Help.layer.shadowOpacity = 1
+        Help.layer.shadowRadius = 0
+        Help.layer.shadowOffset = CGSize(width: 5, height: 5)
+        
+        News.layer.cornerRadius = 5
+        News.layer.masksToBounds = false
+        News.layer.shadowColor = UIColor.darkGray.cgColor
+        News.layer.shadowOpacity = 1
+        News.layer.shadowRadius = 0
+        News.layer.shadowOffset = CGSize(width: 5, height: 5)
+        
+        Apps.layer.cornerRadius = 5
+        Apps.layer.masksToBounds = false
+        Apps.layer.shadowColor = UIColor.darkGray.cgColor
+        Apps.layer.shadowOpacity = 1
+        Apps.layer.shadowRadius = 0
+        Apps.layer.shadowOffset = CGSize(width: 5, height: 5)
+        
+        logoutButton.layer.cornerRadius = 5
+        logoutButton.layer.masksToBounds = false
+        logoutButton.layer.shadowColor = UIColor.darkGray.cgColor
+        logoutButton.layer.shadowOpacity = 1
+        logoutButton.layer.shadowRadius = 0
+        logoutButton.layer.shadowOffset = CGSize(width: 5, height: 5)
+        
+        header.layer.masksToBounds = false
+        header.layer.shadowColor = UIColor.darkGray.cgColor
+        header.layer.shadowOpacity = 1
+        header.layer.shadowRadius = 0
+        header.layer.shadowOffset = CGSize(width: 0, height: 5)
+        
+        footer.layer.masksToBounds = false
+        footer.layer.shadowColor = UIColor.darkGray.cgColor
+        footer.layer.shadowOpacity = 1
+        footer.layer.shadowRadius = 0
+        footer.layer.shadowOffset = CGSize(width: 0, height: -5)
         
         timeEntered = Date()
         
@@ -56,10 +94,85 @@ class ViewController: UIViewController {
         Help.setTitle("Help".localized(), for: .normal)
         logoutButton.setTitle("Logout".localized(), for: .normal)
         
+       
+        if UserDefaults.standard.bool(forKey: "disableNews"){
+            News.isHidden = true
+            flag += 1
+        }
+        else{
+            News.isHidden = false
+        }
+        
+        if UserDefaults.standard.bool(forKey: "disableApps"){
+            Apps.isHidden = true
+            flag += 1
+        }
+        else{
+            Apps.isHidden = false
+        }
+        
+        if UserDefaults.standard.bool(forKey: "disableHelp"){
+            Help.isHidden = true
+            flag += 1
+        }
+        else{
+            Help.isHidden = false
+        }
+        
+        if UserDefaults.standard.bool(forKey: "disablePIN"){
+            logoutButton.isHidden = true
+        }
+        else{
+            logoutButton.isHidden = false
+        }
+        
+      
+    
+        
     }
     
     override func viewDidAppear(_ animated: Bool) {
         self.navigationController?.setNavigationBarHidden(true, animated: false)
+        
+        
+        if flag == 2 {
+            
+            if UserDefaults.standard.bool(forKey: "skipHome"){
+            
+            if !UserDefaults.standard.bool(forKey: "disableNews"){
+                
+               
+                let NewsController = self.storyboard!.instantiateViewController(withIdentifier: "N")
+                
+                self.present(NewsController, animated: false, completion: nil)
+                
+            }
+            
+            if !UserDefaults.standard.bool(forKey: "disableApps"){
+                let AppController = self.storyboard!.instantiateViewController(withIdentifier: "A")
+                
+                self.present(AppController, animated: false, completion: nil)
+                
+            }
+            
+            if !UserDefaults.standard.bool(forKey: "disableHelp"){
+                let HelpController = self.storyboard!.instantiateViewController(withIdentifier: "H")
+                
+                self.present(HelpController, animated: false, completion: nil)
+                
+            }
+            
+                UserDefaults.standard.set(false, forKey: "skipHome")
+                
+                
+        }
+            
+            
+            
+            
+        }
+        
+        
     }
     
     @IBAction func LeavingHome(_ sender: Any) {

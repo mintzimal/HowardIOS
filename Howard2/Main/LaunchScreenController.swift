@@ -21,13 +21,40 @@ class LaunchScreenController: UIViewController {
     
     var timeEntered:Date = Date()
 
+    @IBOutlet weak var header: UIImageView!
     
+    @IBOutlet weak var footer: UIImageView!
     
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view.
-        loginButton.layer.cornerRadius = 15
-        signupButton.layer.cornerRadius = 15
+        loginButton.layer.cornerRadius = 5
+        loginButton.layer.masksToBounds = false
+        loginButton.layer.shadowColor = UIColor.darkGray.cgColor
+        loginButton.layer.shadowOpacity = 1
+        loginButton.layer.shadowRadius = 0
+        loginButton.layer.shadowOffset = CGSize(width: 5, height: 5)
+        
+        signupButton.layer.cornerRadius = 5
+        signupButton.layer.masksToBounds = false
+        signupButton.layer.shadowColor = UIColor.darkGray.cgColor
+        signupButton.layer.shadowOpacity = 1
+        signupButton.layer.shadowRadius = 0
+        signupButton.layer.shadowOffset = CGSize(width: 5, height: 5)
+        
+        header.layer.masksToBounds = false
+        header.layer.shadowColor = UIColor.darkGray.cgColor
+        header.layer.shadowOpacity = 1
+        header.layer.shadowRadius = 0
+        header.layer.shadowOffset = CGSize(width: 0, height: 5)
+        
+        footer.layer.masksToBounds = false
+        footer.layer.shadowColor = UIColor.darkGray.cgColor
+        footer.layer.shadowOpacity = 1
+        footer.layer.shadowRadius = 0
+        footer.layer.shadowOffset = CGSize(width: 0, height: -5)
+        
+        
         
         timeEntered = Date()
         
@@ -43,7 +70,19 @@ class LaunchScreenController: UIViewController {
         
         self.navigationController?.isNavigationBarHidden = true
         
-        
+         if UserDefaults.standard.bool(forKey: "disablePIN"){
+            
+            UserDefaults.standard.set(true, forKey: "skipHome")
+            
+            let HomeController = self.storyboard!.instantiateViewController(withIdentifier: "Home")
+            
+            self.present(HomeController, animated: false, completion: nil)
+            
+            
+            
+            
+            
+        }
         
     }
     

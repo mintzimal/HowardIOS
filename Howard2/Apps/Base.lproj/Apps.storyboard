@@ -170,6 +170,14 @@
                                     <segue destination="F28-uG-vDl" kind="show" id="G2D-kH-sl5"/>
                                 </connections>
                             </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Odr-MM-CAL">
+                                <rect key="frame" x="163" y="602" width="48" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Logout"/>
+                                <connections>
+                                    <segue destination="TeE-IU-Nkw" kind="show" id="w6m-Sk-gq4"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <viewLayoutGuide key="safeArea" id="evN-Ue-UB8"/>
@@ -182,18 +190,28 @@
                         <outlet property="AppThree" destination="miS-dB-cr7" id="Fna-H3-LVO"/>
                         <outlet property="AppTwo" destination="p2S-Qp-Lqj" id="Bcj-iv-SKT"/>
                         <outlet property="AppsLabel" destination="T0W-Um-MPA" id="GrB-GI-ow3"/>
+                        <outlet property="HomeButton" destination="CWf-9m-uiD" id="bhQ-ll-RDQ"/>
                         <outlet property="LabelFive" destination="zEn-BY-Kfc" id="L1h-9H-JLY"/>
                         <outlet property="LabelFour" destination="t5B-Iz-S9s" id="scf-ib-0Ql"/>
                         <outlet property="LabelOne" destination="5S8-x8-Qht" id="3By-xF-rHa"/>
                         <outlet property="LabelSix" destination="dzq-Qd-013" id="mAW-Ja-hx4"/>
                         <outlet property="LabelThree" destination="VKx-1r-jwf" id="EQu-PP-yHd"/>
                         <outlet property="LabelTwo" destination="oke-PK-V15" id="hW5-fk-CZJ"/>
+                        <outlet property="LogoutButton" destination="Odr-MM-CAL" id="zQs-uL-KMz"/>
                         <outlet property="refreshButton" destination="r1F-ez-eNf" id="AcU-C6-ac0"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="22h-jC-rvz" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="-42.399999999999999" y="-251.42428785607197"/>
+        </scene>
+        <!--LaunchScreen-->
+        <scene sceneID="qsD-jT-vKh">
+            <objects>
+                <viewControllerPlaceholder storyboardName="LaunchScreen" referencedIdentifier="LaunchScreen" id="TeE-IU-Nkw" sceneMemberID="viewController"/>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="mQS-nd-rqu" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-39" y="165"/>
         </scene>
         <!--NewCheckList-->
         <scene sceneID="cE6-kz-4f8">

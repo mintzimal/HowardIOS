@@ -11,6 +11,8 @@ import SafariServices
 
 class DynamicNewsController: UIViewController, SFSafariViewControllerDelegate {
     
+    @IBOutlet weak var LogoutButton: UIButton!
+    @IBOutlet weak var HomeButton: UIButton!
     @IBOutlet weak var refreshButton: UIButton!
     
     @IBOutlet weak var NewsOne: UIButton!
@@ -306,6 +308,19 @@ class DynamicNewsController: UIViewController, SFSafariViewControllerDelegate {
 
     override func viewDidLoad() {
         super.viewDidLoad()
+        
+        LogoutButton.isHidden = true
+        
+        if UserDefaults.standard.bool(forKey: "disableApps") && UserDefaults.standard.bool(forKey: "disableHelp") {
+            
+            HomeButton.isHidden = true
+            
+            if !UserDefaults.standard.bool(forKey: "disablePIN"){
+                
+                LogoutButton.isHidden = false
+            }
+            
+        }
         
         
         refresh(refreshButton)

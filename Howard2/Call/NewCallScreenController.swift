@@ -11,6 +11,8 @@ import AVFoundation
 
 
 class NewCallScreenController: UIViewController {
+    @IBOutlet weak var LogoutButton: UIButton!
+    @IBOutlet weak var HomeButton: UIButton!
     
     @IBOutlet weak var districtButton: UIButton!
     @IBOutlet weak var messageButton: UIButton!
@@ -38,6 +40,21 @@ class NewCallScreenController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         
+        
+        LogoutButton.isHidden = true
+        
+        if UserDefaults.standard.bool(forKey: "disableNews") && UserDefaults.standard.bool(forKey: "disableApps") {
+            
+            HomeButton.isHidden = true
+            
+            if !UserDefaults.standard.bool(forKey: "disablePIN"){
+                
+                LogoutButton.isHidden = false
+            }
+            
+        }
+        
+        
         RoadMap.append("Entered Help Screen at: \(timeEntered)")
         
         districtButton.layer.cornerRadius = 15
@@ -48,8 +65,7 @@ class NewCallScreenController: UIViewController {
         
         districtButton.titleLabel?.adjustsFontSizeToFitWidth = true
         
-        CallLabel.adjustsFontSizeToFitWidth = true
-        CallLabel.text = "Click to Call".localized()
+        
         
         if(District == 1){
             districtButton.setTitle("District 1".localized(), for: .normal)
