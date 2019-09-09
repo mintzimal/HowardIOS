@@ -29,6 +29,8 @@ class ViewController: UIViewController {
     
     var timeEntered:Date = Date()
     
+    @IBOutlet weak var header: UIImageView!
+    @IBOutlet weak var footer: UIImageView!
     
     override func viewDidLoad() {
         
@@ -36,10 +38,45 @@ class ViewController: UIViewController {
         
         self.initAppSync()
         // Do any additional setup after loading the view.
-        Help.layer.cornerRadius = 15
-        News.layer.cornerRadius = 15
-        Apps.layer.cornerRadius = 15
-        logoutButton.layer.cornerRadius = 15
+        Help.layer.cornerRadius = 5
+        Help.layer.masksToBounds = false
+        Help.layer.shadowColor = UIColor.darkGray.cgColor
+        Help.layer.shadowOpacity = 1
+        Help.layer.shadowRadius = 0
+        Help.layer.shadowOffset = CGSize(width: 5, height: 5)
+        
+        News.layer.cornerRadius = 5
+        News.layer.masksToBounds = false
+        News.layer.shadowColor = UIColor.darkGray.cgColor
+        News.layer.shadowOpacity = 1
+        News.layer.shadowRadius = 0
+        News.layer.shadowOffset = CGSize(width: 5, height: 5)
+        
+        Apps.layer.cornerRadius = 5
+        Apps.layer.masksToBounds = false
+        Apps.layer.shadowColor = UIColor.darkGray.cgColor
+        Apps.layer.shadowOpacity = 1
+        Apps.layer.shadowRadius = 0
+        Apps.layer.shadowOffset = CGSize(width: 5, height: 5)
+        
+        logoutButton.layer.cornerRadius = 5
+        logoutButton.layer.masksToBounds = false
+        logoutButton.layer.shadowColor = UIColor.darkGray.cgColor
+        logoutButton.layer.shadowOpacity = 1
+        logoutButton.layer.shadowRadius = 0
+        logoutButton.layer.shadowOffset = CGSize(width: 5, height: 5)
+        
+        header.layer.masksToBounds = false
+        header.layer.shadowColor = UIColor.darkGray.cgColor
+        header.layer.shadowOpacity = 1
+        header.layer.shadowRadius = 0
+        header.layer.shadowOffset = CGSize(width: 0, height: 5)
+        
+        footer.layer.masksToBounds = false
+        footer.layer.shadowColor = UIColor.darkGray.cgColor
+        footer.layer.shadowOpacity = 1
+        footer.layer.shadowRadius = 0
+        footer.layer.shadowOffset = CGSize(width: 0, height: -5)
         
         timeEntered = Date()
         

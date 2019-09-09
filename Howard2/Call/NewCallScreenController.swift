@@ -65,8 +65,7 @@ class NewCallScreenController: UIViewController {
         
         districtButton.titleLabel?.adjustsFontSizeToFitWidth = true
         
-        CallLabel.adjustsFontSizeToFitWidth = true
-        CallLabel.text = "Click to Call".localized()
+        
         
         if(District == 1){
             districtButton.setTitle("District 1".localized(), for: .normal)
