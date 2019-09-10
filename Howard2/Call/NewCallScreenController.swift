@@ -14,6 +14,8 @@ class NewCallScreenController: UIViewController {
     @IBOutlet weak var LogoutButton: UIButton!
     @IBOutlet weak var HomeButton: UIButton!
     
+    @IBOutlet weak var SegmentedController: UISegmentedControl!
+    @IBOutlet weak var Header: UIImageView!
     @IBOutlet weak var districtButton: UIButton!
     @IBOutlet weak var messageButton: UIButton!
     @IBOutlet weak var CallLabel: UILabel!
@@ -36,10 +38,51 @@ class NewCallScreenController: UIViewController {
         }
     }
     
+    @IBAction func indexChange(_ sender: Any) {
+        
+        switch SegmentedController.selectedSegmentIndex{
+            case 0:
+            NSLog("News")
+            let NewsController = self.storyboard!.instantiateViewController(withIdentifier: "N")
+            
+            self.present(NewsController, animated: false, completion: nil)
+            
+            
+        case 1:
+            NSLog("Apps")
+            let AppController = self.storyboard!.instantiateViewController(withIdentifier: "A")
+            
+            self.present(AppController, animated: false, completion: nil)
+            
+            
+        case 2:
+            NSLog("Message")
+            let MessageController = self.storyboard!.instantiateViewController(withIdentifier: "M")
+            
+            self.present(MessageController, animated: false, completion: nil)
+            
+            
+        case 3:
+            NSLog("Help")
+            
+        default:
+            break;
+            
+        }
+        
+        
+    }
     
     override func viewDidLoad() {
         super.viewDidLoad()
         
+        SegmentedController.selectedSegmentIndex = 3
+        
+        Header.layer.masksToBounds = true
+        Header.layer.shadowRadius = 10
+        Header.layer.shadowColor = UIColor.darkGray.cgColor
+        Header.layer.shadowOffset = CGSize(width: 5, height: 15)
+        Header.layer.shadowOpacity = 1
         
         LogoutButton.isHidden = true
         

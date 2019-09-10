@@ -88,29 +88,56 @@ class SignupController: UIViewController {
             District1?.layer.cornerRadius = 15
             District2?.layer.cornerRadius = 15
         
-            L1?.layer.borderWidth = 3
-            L2?.layer.borderWidth = 3
-            L3?.layer.borderWidth = 3
-            L4?.layer.borderWidth = 3
-            L5?.layer.borderWidth = 3
-            L6?.layer.borderWidth = 3
-            L7?.layer.borderWidth = 3
-            L8?.layer.borderWidth = 3
-            L9?.layer.borderWidth = 3
-            L10?.layer.borderWidth = 3
-            L11?.layer.borderWidth = 3
-            L12?.layer.borderWidth = 3
-            L13?.layer.borderWidth = 3
-            L14?.layer.borderWidth = 3
-            L15?.layer.borderWidth = 3
-            L16?.layer.borderWidth = 3
-            L17?.layer.borderWidth = 3
-            L18?.layer.borderWidth = 3
+            L1?.layer.borderWidth = 1
+            L2?.layer.borderWidth = 1
+            L3?.layer.borderWidth = 1
+            L4?.layer.borderWidth = 1
+            L5?.layer.borderWidth = 1
+            L6?.layer.borderWidth = 1
+            L7?.layer.borderWidth = 1
+            L8?.layer.borderWidth = 1
+            L9?.layer.borderWidth = 1
+            L10?.layer.borderWidth = 1
+            L11?.layer.borderWidth = 1
+            L12?.layer.borderWidth = 1
+            L13?.layer.borderWidth = 1
+            L14?.layer.borderWidth = 1
+            L15?.layer.borderWidth = 1
+            L16?.layer.borderWidth = 1
+            L17?.layer.borderWidth = 1
+            L18?.layer.borderWidth = 1
+    
+        
+        /*
+            L1?.layer.cornerRadius = 15
+        L2?.layer.cornerRadius = 15
+        L3?.layer.cornerRadius = 15
+        L4?.layer.cornerRadius = 15
+        L5?.layer.cornerRadius = 15
+        L6?.layer.cornerRadius = 15
+        L7?.layer.cornerRadius = 15
+        L8?.layer.cornerRadius = 15
+        L9?.layer.cornerRadius = 15
+        L10?.layer.cornerRadius = 15
+        L11?.layer.cornerRadius = 15
+        L12?.layer.cornerRadius = 15
+        L13?.layer.cornerRadius = 15
+        L14?.layer.cornerRadius = 15
+        L15?.layer.cornerRadius = 15
+        L16?.layer.cornerRadius = 15
+        L17?.layer.cornerRadius = 15
+        L18?.layer.cornerRadius = 15
+       */
+        
         
             YesButton?.layer.cornerRadius = 15
             NoButton?.layer.cornerRadius = 15
         
             PINView?.isEnabled = false
+        
+            SkipButton?.layer.cornerRadius = 15
+            NextPage?.layer.cornerRadius = 15
+        
         
         
         

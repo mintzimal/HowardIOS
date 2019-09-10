@@ -31,6 +31,12 @@ class DynamicNewsController: UIViewController, SFSafariViewControllerDelegate {
     
     @IBOutlet weak var NewsLabel: UILabel!
     
+    @IBOutlet weak var Header: UIImageView!
+    
+    @IBOutlet weak var SegmentedController: UISegmentedControl!
+    
+   
+    
     var RoadMap:Array<String> = UserDefaults.standard.stringArray(forKey: "RoadMap") ?? Array()
     
     var timeEntered:Date = Date()
@@ -75,6 +81,41 @@ class DynamicNewsController: UIViewController, SFSafariViewControllerDelegate {
     private var washingtonPost:String = "https://www.washingtonpost.com/"
     private var theGuardian:String = "https://www.theguardian.com/world"
     
+    @IBAction func indexChanged(_ sender: Any) {
+        
+        switch SegmentedController.selectedSegmentIndex{
+        case 0:
+            NSLog("News")
+           
+            
+        case 1:
+            NSLog("Apps")
+            let AppController = self.storyboard!.instantiateViewController(withIdentifier: "A")
+            
+            self.present(AppController, animated: false, completion: nil)
+            
+            
+        case 2:
+            NSLog("Message")
+            let MessageController = self.storyboard!.instantiateViewController(withIdentifier: "M")
+            
+            self.present(MessageController, animated: false, completion: nil)
+            
+            
+        case 3:
+            NSLog("Help")
+            let HelpController = self.storyboard!.instantiateViewController(withIdentifier: "H")
+            
+            self.present(HelpController, animated: false, completion: nil)
+            
+            
+        default:
+            break;
+            
+        }
+        
+        
+    }
     
     
     @IBAction func refresh(_ sender: Any) {
@@ -325,12 +366,12 @@ class DynamicNewsController: UIViewController, SFSafariViewControllerDelegate {
         
         refresh(refreshButton)
         
-        NewsOne.layer.borderWidth = 3
-        NewsTwo.layer.borderWidth = 3
-        NewsThree.layer.borderWidth = 3
-        NewsFour.layer.borderWidth = 3
-        NewsFive.layer.borderWidth = 3
-        NewsSix.layer.borderWidth = 3
+        NewsOne.layer.borderWidth = 1
+        NewsTwo.layer.borderWidth = 1
+        NewsThree.layer.borderWidth = 1
+        NewsFour.layer.borderWidth = 1
+        NewsFive.layer.borderWidth = 1
+        NewsSix.layer.borderWidth = 1
         
         NewsOne.titleLabel?.adjustsFontSizeToFitWidth = true
         NewsTwo.titleLabel?.adjustsFontSizeToFitWidth = true
@@ -339,8 +380,24 @@ class DynamicNewsController: UIViewController, SFSafariViewControllerDelegate {
         NewsFive.titleLabel?.adjustsFontSizeToFitWidth = true
         NewsSix.titleLabel?.adjustsFontSizeToFitWidth = true
         
-        NewsLabel.adjustsFontSizeToFitWidth = true;
-        NewsLabel.text = "News".localized()
+        SegmentedController.selectedSegmentIndex = 0
+        
+        /*
+    LabelOne.isHidden = true
+          LabelTwo.isHidden = true
+        LabelThree.isHidden = true
+        LabelFour.isHidden = true
+        LabelFive.isHidden = true
+        LabelSix.isHidden = true
+ 
+ */ Header.layer.masksToBounds = true
+        Header.layer.shadowRadius = 10
+        Header.layer.shadowColor = UIColor.darkGray.cgColor
+        Header.layer.shadowOffset = CGSize(width: 5, height: 15)
+        Header.layer.shadowOpacity = 1
+        
+        NewsLabel?.adjustsFontSizeToFitWidth = true;
+        NewsLabel?.text = "News".localized()
         
         RoadMap.append("Entered News Screen at: \(timeEntered)")
         }

@@ -20,10 +20,12 @@ struct appStruct:Codable {
 
 class AppsController: UIViewController, SFSafariViewControllerDelegate {
     
+    @IBOutlet weak var Header: UIImageView!
     @IBOutlet weak var LogoutButton: UIButton!
     @IBOutlet weak var HomeButton: UIButton!
     @IBOutlet weak var refreshButton: UIButton!
     
+    @IBOutlet weak var SegmentedController: UISegmentedControl!
     @IBOutlet weak var AppOne: UIButton!
     @IBOutlet weak var AppTwo: UIButton!
     @IBOutlet weak var AppThree: UIButton!
@@ -38,7 +40,7 @@ class AppsController: UIViewController, SFSafariViewControllerDelegate {
     @IBOutlet weak var LabelFive: UILabel!
     @IBOutlet weak var LabelSix: UILabel!
     
-    @IBOutlet weak var AppsLabel: UILabel!
+   //@IBOutlet weak var AppsLabel: UILabel!
     
     var RoadMap:Array<String> = UserDefaults.standard.stringArray(forKey: "RoadMap") ?? Array()
     
@@ -82,6 +84,39 @@ class AppsController: UIViewController, SFSafariViewControllerDelegate {
     private var howardCenter:String = "https://howardcenter.org/"
     private var GMSA:String = "http://www.gmsavt.org/"
     
+    @IBAction func indexChanged(_ sender: Any) {
+        switch SegmentedController.selectedSegmentIndex{
+        case 0:
+            NSLog("News")
+            let NewsController = self.storyboard!.instantiateViewController(withIdentifier: "N")
+            
+            self.present(NewsController, animated: false, completion: nil)
+            
+            
+        case 1:
+            NSLog("Apps")
+           
+            
+            
+        case 2:
+            NSLog("Message")
+            let MessageController = self.storyboard!.instantiateViewController(withIdentifier: "M")
+            
+            self.present(MessageController, animated: false, completion: nil)
+            
+            
+        case 3:
+            NSLog("Help")
+            let HelpController = self.storyboard!.instantiateViewController(withIdentifier: "H")
+            
+            self.present(HelpController, animated: false, completion: nil)
+            
+        default:
+            break;
+            
+        }
+        
+    }
     
     
     @IBAction func refresh(_ sender: Any) {
@@ -298,12 +333,12 @@ class AppsController: UIViewController, SFSafariViewControllerDelegate {
         
         refresh(refreshButton)
         
-        AppOne.layer.borderWidth = 3
-        AppTwo.layer.borderWidth = 3
-        AppThree.layer.borderWidth = 3
-        AppFour.layer.borderWidth = 3
-        AppFive.layer.borderWidth = 3
-        AppSix.layer.borderWidth = 3
+        AppOne.layer.borderWidth = 1
+        AppTwo.layer.borderWidth = 1
+        AppThree.layer.borderWidth = 1
+        AppFour.layer.borderWidth = 1
+        AppFive.layer.borderWidth = 1
+        AppSix.layer.borderWidth = 1
         
         LabelOne.adjustsFontSizeToFitWidth = true
         LabelTwo.adjustsFontSizeToFitWidth = true
@@ -312,8 +347,15 @@ class AppsController: UIViewController, SFSafariViewControllerDelegate {
         LabelFive.adjustsFontSizeToFitWidth = true
         LabelSix.adjustsFontSizeToFitWidth = true
         
-        AppsLabel.adjustsFontSizeToFitWidth = true;
-        AppsLabel.text = "Apps".localized()
+        
+        Header.layer.masksToBounds = true
+        Header.layer.shadowRadius = 10
+        Header.layer.shadowColor = UIColor.darkGray.cgColor
+        Header.layer.shadowOffset = CGSize(width: 5, height: 15)
+        Header.layer.shadowOpacity = 1
+        
+        SegmentedController.selectedSegmentIndex = 1
+       
         
         RoadMap.append("Entered Apps Screen at: \(timeEntered)")
         
