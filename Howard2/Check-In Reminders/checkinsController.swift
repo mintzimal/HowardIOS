@@ -201,7 +201,7 @@ class checkinsController: UIViewController, UITableViewDelegate, UITableViewData
             }
         }
         
-        //center.removeAllPendingNotificationRequests()
+        center.removeAllPendingNotificationRequests()
         
         let content = UNMutableNotificationContent()
         content.title = "Check-In Reminder"

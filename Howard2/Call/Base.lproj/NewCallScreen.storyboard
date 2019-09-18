@@ -35,16 +35,15 @@
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <color key="backgroundColor" red="0.9372091293" green="0.93794280289999998" blue="0.95681291820000003" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                             </imageView>
-                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="Flash.png" translatesAutoresizingMaskIntoConstraints="NO" id="pp2-ry-H8u">
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="flashlightFinal.png" translatesAutoresizingMaskIntoConstraints="NO" id="pp2-ry-H8u">
                                 <rect key="frame" x="278" y="456" width="64" height="64"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <color key="backgroundColor" red="0.9372091293" green="0.93794280289999998" blue="0.95681291820000003" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                             </imageView>
                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="HomeIcon.jpg" translatesAutoresizingMaskIntoConstraints="NO" id="ZOX-MY-bUC">
                                 <rect key="frame" x="158" y="456" width="64" height="64"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             </imageView>
-                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="questionMark.png" translatesAutoresizingMaskIntoConstraints="NO" id="xSe-Y4-n5o">
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="questionFinal.png" translatesAutoresizingMaskIntoConstraints="NO" id="xSe-Y4-n5o">
                                 <rect key="frame" x="36" y="456" width="64" height="64"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             </imageView>
@@ -91,17 +90,6 @@
                                     <segue destination="p7j-vT-uhd" kind="show" id="Bbn-Q9-Jax"/>
                                 </connections>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="sZK-sy-rEU">
-                                <rect key="frame" x="69" y="334" width="242" height="76"/>
-                                <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                                <fontDescription key="fontDescription" name="TimesNewRomanPSMT" family="Times New Roman" pointSize="32"/>
-                                <state key="normal" title="Map">
-                                    <color key="titleColor" cocoaTouchSystemColor="darkTextColor"/>
-                                </state>
-                                <connections>
-                                    <segue destination="bOC-JQ-4zS" kind="show" id="Z5E-or-Ffa"/>
-                                </connections>
-                            </button>
                             <segmentedControl opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="top" segmentControlStyle="plain" selectedSegmentIndex="0" translatesAutoresizingMaskIntoConstraints="NO" id="vib-yY-D97">
                                 <rect key="frame" x="16" y="38" width="343" height="29"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
@@ -136,6 +124,17 @@
                                 </state>
                                 <connections>
                                     <action selector="actionTorchClickWithSender:" destination="bYQ-cy-aDS" eventType="touchUpInside" id="VZO-lr-l3g"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="9I6-ll-pDD">
+                                <rect key="frame" x="69" y="337" width="242" height="70"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" name="TimesNewRomanPSMT" family="Times New Roman" pointSize="32"/>
+                                <state key="normal" title="Map">
+                                    <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </state>
+                                <connections>
+                                    <segue destination="bOC-JQ-4zS" kind="show" id="QAx-Ob-hDh"/>
                                 </connections>
                             </button>
                         </subviews>
@@ -265,12 +264,12 @@
         </scene>
     </scenes>
     <resources>
-        <image name="Flash.png" width="225" height="225"/>
         <image name="HelpWithBlur.png" width="1500" height="2668"/>
         <image name="HomeIcon.jpg" width="512" height="512"/>
-        <image name="questionMark.png" width="225" height="225"/>
+        <image name="flashlightFinal.png" width="3275" height="3274"/>
+        <image name="questionFinal.png" width="512" height="512"/>
     </resources>
     <inferredMetricsTieBreakers>
-        <segue reference="Z5E-or-Ffa"/>
+        <segue reference="QAx-Ob-hDh"/>
     </inferredMetricsTieBreakers>
 </document>

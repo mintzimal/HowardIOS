@@ -8,6 +8,12 @@
 
 /* Begin PBXBuildFile section */
 		016C6E865FAE85B95C80263F /* Pods_Howard2.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7F2E59DFD23B136C5A7735E1 /* Pods_Howard2.framework */; };
+		3901B76D2328431F00408C54 /* flashlightClear.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 3901B76C2328431F00408C54 /* flashlightClear.jpg */; };
+		3901B76F2328436500408C54 /* questionmarkClear.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 3901B76E2328436400408C54 /* questionmarkClear.jpg */; };
+		3901B7712328436F00408C54 /* questionmarkClear2.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 3901B7702328436F00408C54 /* questionmarkClear2.jpg */; };
+		3901B773232843FA00408C54 /* questionmarkclear.png in Resources */ = {isa = PBXBuildFile; fileRef = 3901B772232843F900408C54 /* questionmarkclear.png */; };
+		3901B7752328449600408C54 /* questionFinal.png in Resources */ = {isa = PBXBuildFile; fileRef = 3901B7742328449600408C54 /* questionFinal.png */; };
+		3901B777232844F600408C54 /* flashlightFinal.png in Resources */ = {isa = PBXBuildFile; fileRef = 3901B776232844F600408C54 /* flashlightFinal.png */; };
 		3903828F2266864B003422D3 /* funguy.png in Resources */ = {isa = PBXBuildFile; fileRef = 3903828C2266864B003422D3 /* funguy.png */; };
 		390382902266864B003422D3 /* HomeIcon.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 3903828D2266864B003422D3 /* HomeIcon.jpg */; };
 		390382912266864B003422D3 /* SettingsIcon.png in Resources */ = {isa = PBXBuildFile; fileRef = 3903828E2266864B003422D3 /* SettingsIcon.png */; };
@@ -173,6 +179,12 @@
 		0FA7E868F5821E668F7D03DA /* Pods-Howard2UITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Howard2UITests.debug.xcconfig"; path = "Target Support Files/Pods-Howard2UITests/Pods-Howard2UITests.debug.xcconfig"; sourceTree = "<group>"; };
 		31A9390FF702199E75DB64A0 /* Pods_Howard2Tests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Howard2Tests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		329C6571EB966F17007C3A97 /* Pods-Howard2.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Howard2.release.xcconfig"; path = "Target Support Files/Pods-Howard2/Pods-Howard2.release.xcconfig"; sourceTree = "<group>"; };
+		3901B76C2328431F00408C54 /* flashlightClear.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = flashlightClear.jpg; sourceTree = "<group>"; };
+		3901B76E2328436400408C54 /* questionmarkClear.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = questionmarkClear.jpg; sourceTree = "<group>"; };
+		3901B7702328436F00408C54 /* questionmarkClear2.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = questionmarkClear2.jpg; sourceTree = "<group>"; };
+		3901B772232843F900408C54 /* questionmarkclear.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = questionmarkclear.png; sourceTree = "<group>"; };
+		3901B7742328449600408C54 /* questionFinal.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = questionFinal.png; sourceTree = "<group>"; };
+		3901B776232844F600408C54 /* flashlightFinal.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = flashlightFinal.png; sourceTree = "<group>"; };
 		3903828C2266864B003422D3 /* funguy.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = funguy.png; sourceTree = "<group>"; };
 		3903828D2266864B003422D3 /* HomeIcon.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = HomeIcon.jpg; sourceTree = "<group>"; };
 		3903828E2266864B003422D3 /* SettingsIcon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = SettingsIcon.png; sourceTree = "<group>"; };
@@ -567,6 +579,12 @@
 		396027D7225E9D520007CCDD /* Images */ = {
 			isa = PBXGroup;
 			children = (
+				3901B776232844F600408C54 /* flashlightFinal.png */,
+				3901B7742328449600408C54 /* questionFinal.png */,
+				3901B772232843F900408C54 /* questionmarkclear.png */,
+				3901B7702328436F00408C54 /* questionmarkClear2.jpg */,
+				3901B76E2328436400408C54 /* questionmarkClear.jpg */,
+				3901B76C2328431F00408C54 /* flashlightClear.jpg */,
 				39714B71230FA4AD00325126 /* testCircle.png */,
 				3974E4E522F0BB4B00C5CD18 /* logoSC.png */,
 				394B608622DFED60005032AA /* stats.png */,
@@ -1050,6 +1068,7 @@
 				390689A1227948FC0068E4D2 /* peeking reverse.png in Resources */,
 				93692FF122DEEAA000A1234F /* client.png in Resources */,
 				9703857D227A5BC100C47655 /* bus.png in Resources */,
+				3901B7712328436F00408C54 /* questionmarkClear2.jpg in Resources */,
 				9703857F227A626900C47655 /* youTube.png in Resources */,
 				397909AC22B1BBB700EAA8FE /* portuguese.jpg in Resources */,
 				390689952272A2090068E4D2 /* placeholder.png in Resources */,
@@ -1072,6 +1091,7 @@
 				3979095C227A7D1F00EAA8FE /* weather.jpg in Resources */,
 				390689992272A4010068E4D2 /* Calender.png in Resources */,
 				399D6660232716B00047D572 /* help.png in Resources */,
+				3901B7752328449600408C54 /* questionFinal.png in Resources */,
 				39B2C3E322DFE98300C5BFB2 /* MessageCell.xib in Resources */,
 				3903828F2266864B003422D3 /* funguy.png in Resources */,
 				3979095A227A7ADE00EAA8FE /* Echo.jpg in Resources */,
@@ -1094,8 +1114,10 @@
 				397909622285A9E000EAA8FE /* HowardCenterHeader.png in Resources */,
 				394B608722DFED60005032AA /* stats.png in Resources */,
 				399D665E232713170047D572 /* funguyclose.png in Resources */,
+				3901B773232843FA00408C54 /* questionmarkclear.png in Resources */,
 				9703857B2274FE3B00C47655 /* motivation.jpg in Resources */,
 				399D666E232727B40047D572 /* HelpWithBlur.png in Resources */,
+				3901B777232844F600408C54 /* flashlightFinal.png in Resources */,
 				93692FED22DEEAA000A1234F /* HowardCenterHeader2.png in Resources */,
 				39B88B93227292620018B675 /* BFP.png in Resources */,
 				39068991227298CF0068E4D2 /* N10.png in Resources */,
@@ -1107,6 +1129,7 @@
 				39790AA322BA978A00EAA8FE /* Localizable.strings in Resources */,
 				39790BFC22BAD01800EAA8FE /* backArrow.png in Resources */,
 				399D666A232722890047D572 /* LanguageSelect.png in Resources */,
+				3901B76F2328436500408C54 /* questionmarkClear.jpg in Resources */,
 				399D6668232721860047D572 /* DistrictSelect.png in Resources */,
 				3979099622B1BB6200EAA8FE /* english.png in Resources */,
 				390382902266864B003422D3 /* HomeIcon.jpg in Resources */,
@@ -1119,6 +1142,7 @@
 				399D666623271DBE0047D572 /* pinpad.png in Resources */,
 				397909A222B1BB9100EAA8FE /* hebrew.png in Resources */,
 				399D6672232729560047D572 /* NewsApps.png in Resources */,
+				3901B76D2328431F00408C54 /* flashlightClear.jpg in Resources */,
 				F74140E4227B2972007836F9 /* note4.wav in Resources */,
 				39790982229F934500EAA8FE /* AP.png in Resources */,
 				39ED26B122723EA600B7D843 /* border.png in Resources */,
