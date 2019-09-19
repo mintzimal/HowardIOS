@@ -1,0 +1,38 @@
+# this is an auto generated file. This will be overwritten
+query GetMessages($MessageNum: Int!) {
+  getMessages(MessageNum: $MessageNum) {
+    MessageNum
+    CaseManagerID
+    ClientID
+    Contents
+    Sent
+    Nickname
+  }
+}
+query GetMessagesById($ClientID: ID!) {
+  getMessagesByID(ClientID: $ClientID) {
+    MessageNum
+    CaseManagerID
+    ClientID
+    Contents
+    Sent
+    Nickname
+  }
+}
+query ListMessages(
+  $filter: TableMessagesFilterInput
+  $limit: Int
+  $nextToken: String
+) {
+  listMessages(filter: $filter, limit: $limit, nextToken: $nextToken) {
+    items {
+      MessageNum
+      CaseManagerID
+      ClientID
+      Contents
+      Sent
+      Nickname
+    }
+    nextToken
+  }
+}

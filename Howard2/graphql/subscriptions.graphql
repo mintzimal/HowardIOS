@@ -1,0 +1,67 @@
+# this is an auto generated file. This will be overwritten
+subscription OnCreateMessages(
+  $MessageNum: Int
+  $CaseManagerID: ID
+  $ClientID: ID
+  $Contents: String
+  $Sent: AWSDateTime
+) {
+  onCreateMessages(
+    MessageNum: $MessageNum
+    CaseManagerID: $CaseManagerID
+    ClientID: $ClientID
+    Contents: $Contents
+    Sent: $Sent
+  ) {
+    MessageNum
+    CaseManagerID
+    ClientID
+    Contents
+    Sent
+    Nickname
+  }
+}
+subscription OnUpdateMessages(
+  $MessageNum: Int
+  $CaseManagerID: ID
+  $ClientID: ID
+  $Contents: String
+  $Sent: AWSDateTime
+) {
+  onUpdateMessages(
+    MessageNum: $MessageNum
+    CaseManagerID: $CaseManagerID
+    ClientID: $ClientID
+    Contents: $Contents
+    Sent: $Sent
+  ) {
+    MessageNum
+    CaseManagerID
+    ClientID
+    Contents
+    Sent
+    Nickname
+  }
+}
+subscription OnDeleteMessages(
+  $MessageNum: Int
+  $CaseManagerID: ID
+  $ClientID: ID
+  $Contents: String
+  $Sent: AWSDateTime
+) {
+  onDeleteMessages(
+    MessageNum: $MessageNum
+    CaseManagerID: $CaseManagerID
+    ClientID: $ClientID
+    Contents: $Contents
+    Sent: $Sent
+  ) {
+    MessageNum
+    CaseManagerID
+    ClientID
+    Contents
+    Sent
+    Nickname
+  }
+}

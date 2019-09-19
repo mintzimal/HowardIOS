@@ -11,6 +11,7 @@ target 'Howard2' do
   pod 'AWSMobileClient', '~> 2.9.0'
   pod 'AWSAuthUI', '~> 2.9.0'
   pod 'AWSUserPoolsSignIn', '~> 2.9.0'
+  pod 'AWSPinpoint', '~> 2.9.0'	
 
   source 'https://github.com/CocoaPods/Specs.git'
   pod 'Localize-Swift', '~> 2.0'
