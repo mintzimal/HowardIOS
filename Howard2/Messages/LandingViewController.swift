@@ -81,7 +81,7 @@ class LandingViewController: UIViewController{
     }
     
     @IBAction func signOutPress(_ sender: Any) {
-       // AWSMobileClient.sharedInstance().signOut()
+        AWSMobileClient.sharedInstance().signOut()
         DispatchQueue.main.async {
             
             var timeSpent = Date().timeIntervalSince(self.timeEntered)

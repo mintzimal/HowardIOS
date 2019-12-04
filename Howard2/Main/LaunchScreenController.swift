@@ -41,7 +41,7 @@ class LaunchScreenController: UIViewController {
         
         RoadMap.append("Entered Launchscreen at: \(timeEntered)")
         
-        self.initAWSMobileClient()
+        //self.initAWSMobileClient()
         
      
     }
