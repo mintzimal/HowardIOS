@@ -7,6 +7,7 @@
 //
 
 import UIKit
+import AVKit
 
 
 import AWSMobileClient
@@ -62,6 +63,42 @@ class LaunchScreenController: UIViewController {
             
             
             
+        } 
+        
+    }
+    
+    override func viewDidAppear(_ animated: Bool) {
+        
+        var tutCheck = false
+        tutCheck = UserDefaults.standard.bool(forKey: "launchTut")
+            
+        
+        if tutCheck == false{
+            let alertController = UIAlertController(title: "Walkthrough", message:
+                "Would you like to watch a quick usage video?", preferredStyle: .alert)
+
+            alertController.addAction(UIAlertAction(title: "Yes", style: .default, handler: { (action: UIAlertAction!) in
+                print("Handle Ok logic here")
+                
+                let videoURL = Bundle.main.url(forResource: "testVideo", withExtension: "mp4")!
+                
+                let player = AVPlayer(url: videoURL as URL)
+                let vc = AVPlayerViewController()
+                vc.player = player
+
+                self.present(vc, animated: true) {
+                    vc.player?.play()
+                }
+                
+            }))
+
+            alertController.addAction(UIAlertAction(title: "No", style: .cancel, handler: { (action: UIAlertAction!) in
+                print("Handle Cancel Logic here")
+            }))
+        
+            
+            UserDefaults.standard.set(true,forKey: "launchTut")
+            self.present(alertController, animated: true, completion: nil)
         }
         
     }

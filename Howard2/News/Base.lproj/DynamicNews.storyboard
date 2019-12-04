@@ -1,11 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14490.70" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
-    <device id="retina4_7" orientation="portrait">
-        <adaptation id="fullscreen"/>
-    </device>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="15505" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait" appearance="light"/>
     <dependencies>
         <deployment identifier="iOS"/>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14490.49"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="15510"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
@@ -153,6 +151,7 @@
                                 </state>
                                 <connections>
                                     <action selector="LeavingNews:" destination="9pS-Ge-hFz" eventType="touchUpInside" id="ANg-CK-pXS"/>
+                                    <segue destination="F28-uG-vDl" kind="show" id="hhz-yD-zK4"/>
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="m68-2t-TXq">
@@ -218,7 +217,7 @@
                 <viewControllerPlaceholder storyboardName="NewsChecklist" referencedIdentifier="checklistNews" id="Jig-ZB-3sr" sceneMemberID="viewController"/>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="QGj-7H-fYB" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="483" y="-255"/>
+            <point key="canvasLocation" x="739" y="-258"/>
         </scene>
         <!--HomePage-->
         <scene sceneID="Ii2-kQ-DEG">
@@ -226,7 +225,7 @@
                 <viewControllerPlaceholder storyboardName="Main" referencedIdentifier="HomePage" id="vCx-KO-RkI" sceneMemberID="viewController"/>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="PF0-rY-SJt" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="483" y="-188"/>
+            <point key="canvasLocation" x="499" y="-582"/>
         </scene>
         <!--LaunchScreen-->
         <scene sceneID="saC-1W-1Yc">
@@ -234,15 +233,17 @@
                 <viewControllerPlaceholder storyboardName="LaunchScreen" referencedIdentifier="LaunchScreen" id="Thq-Ad-rq8" sceneMemberID="viewController"/>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="pKz-s0-19E" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-38" y="98"/>
+            <point key="canvasLocation" x="-178" y="109"/>
         </scene>
         <!--AskHoward-->
         <scene sceneID="Dzm-2F-PEC">
             <objects>
-                <viewControllerPlaceholder storyboardName="AskHoward" referencedIdentifier="AskHoward" id="F28-uG-vDl" sceneMemberID="viewController"/>
+                <viewControllerPlaceholder storyboardName="AskHoward" referencedIdentifier="AskHoward" id="F28-uG-vDl" sceneMemberID="viewController">
+                    <navigationItem key="navigationItem" id="TMe-dV-m3G"/>
+                </viewControllerPlaceholder>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="ytQ-Tw-Ygm" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="483" y="-359"/>
+            <point key="canvasLocation" x="699" y="-414"/>
         </scene>
         <!--newsStats-->
         <scene sceneID="0i1-v5-Az3">

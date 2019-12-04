@@ -116,6 +116,7 @@
 		39B2C3E322DFE98300C5BFB2 /* MessageCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 39B2C3E222DFE98300C5BFB2 /* MessageCell.xib */; };
 		39B88B93227292620018B675 /* BFP.png in Resources */ = {isa = PBXBuildFile; fileRef = 39B88B92227292620018B675 /* BFP.png */; };
 		39B88B962272943D0018B675 /* MCV.png in Resources */ = {isa = PBXBuildFile; fileRef = 39B88B952272943D0018B675 /* MCV.png */; };
+		39E64F4023457868001E9D6D /* testVideo.mp4 in Resources */ = {isa = PBXBuildFile; fileRef = 39E64F3F23457868001E9D6D /* testVideo.mp4 */; };
 		39ED26B122723EA600B7D843 /* border.png in Resources */ = {isa = PBXBuildFile; fileRef = 39ED26B022723EA600B7D843 /* border.png */; };
 		3BD10A5E22669B5C001D0B5B /* MapViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3BD10A5D22669B5C001D0B5B /* MapViewController.swift */; };
 		93305B05230CAC6200A8341C /* GeneralSettings.swift in Sources */ = {isa = PBXBuildFile; fileRef = 93305B04230CAC6200A8341C /* GeneralSettings.swift */; };
@@ -486,6 +487,7 @@
 		39B88B92227292620018B675 /* BFP.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = BFP.png; path = Howard2/Images/BFP.png; sourceTree = SOURCE_ROOT; };
 		39B88B952272943D0018B675 /* MCV.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = MCV.png; sourceTree = "<group>"; };
 		39B88B9B227295E70018B675 /* WCAX.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = WCAX.png; path = /Users/mintzimal/Documents/HowardCenterFinal/Howard2/Images/WCAX.png; sourceTree = "<absolute>"; };
+		39E64F3F23457868001E9D6D /* testVideo.mp4 */ = {isa = PBXFileReference; lastKnownFileType = file; name = testVideo.mp4; path = Howard2/testVideo.mp4; sourceTree = SOURCE_ROOT; };
 		39ED26B022723EA600B7D843 /* border.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = border.png; path = Howard2/Images/border.png; sourceTree = SOURCE_ROOT; };
 		3BD10A5D22669B5C001D0B5B /* MapViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MapViewController.swift; sourceTree = "<group>"; };
 		64E3F1CD1125B4BE4FD6D1E4 /* Pods-Howard2.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Howard2.debug.xcconfig"; path = "Target Support Files/Pods-Howard2/Pods-Howard2.debug.xcconfig"; sourceTree = "<group>"; };
@@ -788,6 +790,7 @@
 				399D666123271B0B0047D572 /* LaunchPane.png */,
 				F7DC6508224D182C00C8EA66 /* LaunchScreen.storyboard */,
 				3939DBEB225649B9001A8A7B /* LaunchScreenController.swift */,
+				39E64F3F23457868001E9D6D /* testVideo.mp4 */,
 				F7DC6501224D182A00C8EA66 /* ViewController.swift */,
 				F7DC6503224D182A00C8EA66 /* Main.storyboard */,
 			);
@@ -1128,6 +1131,7 @@
 				399D666223271B0B0047D572 /* LaunchPane.png in Resources */,
 				39790AA322BA978A00EAA8FE /* Localizable.strings in Resources */,
 				39790BFC22BAD01800EAA8FE /* backArrow.png in Resources */,
+				39E64F4023457868001E9D6D /* testVideo.mp4 in Resources */,
 				399D666A232722890047D572 /* LanguageSelect.png in Resources */,
 				3901B76F2328436500408C54 /* questionmarkClear.jpg in Resources */,
 				399D6668232721860047D572 /* DistrictSelect.png in Resources */,

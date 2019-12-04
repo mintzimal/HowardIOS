@@ -1,11 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14490.70" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="geu-Uf-BK9">
-    <device id="retina4_7" orientation="portrait">
-        <adaptation id="fullscreen"/>
-    </device>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="15505" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="geu-Uf-BK9">
+    <device id="retina4_7" orientation="portrait" appearance="light"/>
     <dependencies>
         <deployment identifier="iOS"/>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14490.49"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="15510"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
@@ -37,7 +35,7 @@
                                     <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="PXL-qw-Muv">
                                         <rect key="frame" x="63" y="265" width="249" height="78"/>
                                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                                        <fontDescription key="fontDescription" name="TimesNewRomanPSMT" family="Times New Roman" pointSize="32"/>
+                                        <fontDescription key="fontDescription" name="TimesNewRomanPS-BoldMT" family="Times New Roman" pointSize="32"/>
                                         <size key="titleShadowOffset" width="2" height="2"/>
                                         <state key="normal" title="Login">
                                             <color key="titleColor" cocoaTouchSystemColor="darkTextColor"/>
@@ -51,7 +49,7 @@
                                     <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="IFi-TN-TCB">
                                         <rect key="frame" x="63" y="399" width="249" height="83"/>
                                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                                        <fontDescription key="fontDescription" name="TimesNewRomanPSMT" family="Times New Roman" pointSize="32"/>
+                                        <fontDescription key="fontDescription" name="TimesNewRomanPS-BoldMT" family="Times New Roman" pointSize="32"/>
                                         <size key="titleShadowOffset" width="2" height="2"/>
                                         <state key="normal" title="Signup">
                                             <color key="titleColor" cocoaTouchSystemColor="darkTextColor"/>
@@ -87,7 +85,9 @@
         <!--Signup-->
         <scene sceneID="zCY-9I-6TA">
             <objects>
-                <viewControllerPlaceholder storyboardName="Signup" referencedIdentifier="Signup" id="eK2-F8-gcb" sceneMemberID="viewController"/>
+                <viewControllerPlaceholder storyboardName="Signup" referencedIdentifier="Signup" id="eK2-F8-gcb" sceneMemberID="viewController">
+                    <navigationItem key="navigationItem" id="sJD-eF-e7A"/>
+                </viewControllerPlaceholder>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dhF-km-iFg" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="1520.8" y="285.15742128935534"/>
@@ -95,7 +95,9 @@
         <!--Login-->
         <scene sceneID="pvu-3r-qxs">
             <objects>
-                <viewControllerPlaceholder storyboardName="Login" referencedIdentifier="Login" id="zce-Jp-1FO" sceneMemberID="viewController"/>
+                <viewControllerPlaceholder storyboardName="Login" referencedIdentifier="Login" id="zce-Jp-1FO" sceneMemberID="viewController">
+                    <navigationItem key="navigationItem" id="a7f-xe-nwC"/>
+                </viewControllerPlaceholder>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="jy4-Zs-Xcw" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="1500" y="489.3553223388306"/>
@@ -106,7 +108,7 @@
                 <navigationController automaticallyAdjustsScrollViewInsets="NO" id="geu-Uf-BK9" sceneMemberID="viewController">
                     <toolbarItems/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="Cq1-Jc-3ID">
-                        <rect key="frame" x="0.0" y="20" width="375" height="44"/>
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
                     </navigationBar>
                     <nil name="viewControllers"/>

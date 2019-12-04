@@ -53,6 +53,11 @@ class LandingViewController: UIViewController{
         
         self.navigationController?.setNavigationBarHidden(false, animated: true)
         
+        if(SignOut != nil){
+        
+            self.navigationController?.setNavigationBarHidden(true, animated: true)
+        
+        }
         //self.navigationController?.setViewControllers(LandingViewController, animated: true)
         
         
@@ -71,7 +76,9 @@ class LandingViewController: UIViewController{
     }
     
     
-    
+    @IBAction func chatRoomPress(_ sender: Any){
+        self.navigationController?.setNavigationBarHidden(false, animated: true)
+    }
     
     @IBAction func signOutPress(_ sender: Any) {
        // AWSMobileClient.sharedInstance().signOut()
@@ -80,9 +87,11 @@ class LandingViewController: UIViewController{
             var timeSpent = Date().timeIntervalSince(self.timeEntered)
             self.RoadMap.append("Exited Chat Room Screen after: \(timeSpent) seconds")
             
+            self.navigationController?.setNavigationBarHidden(true, animated: true)
+            
             let viewController:UIViewController = UIStoryboard(name: "NewCallScreen", bundle: nil).instantiateViewController(withIdentifier: "Help") as UIViewController
             
-            self.present(viewController, animated: true, completion: nil)
+            self.show(viewController, sender:self)
 
         }
         

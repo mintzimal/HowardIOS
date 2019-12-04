@@ -126,7 +126,7 @@ class LoginController: UIViewController {
                 let viewController:UIViewController = UIStoryboard(name: "Main", bundle: nil).instantiateViewController(withIdentifier: "HomePage") as UIViewController
                 // .instantiatViewControllerWithIdentifier() returns AnyObject! this must be downcast to utilize it
                 
-                self.present(viewController, animated: false, completion: nil)
+                self.show(viewController, sender:self)
             }
             else {
                 PINView.text = ""

@@ -92,21 +92,21 @@ class DynamicNewsController: UIViewController, SFSafariViewControllerDelegate {
             NSLog("Apps")
             let AppController = self.storyboard!.instantiateViewController(withIdentifier: "A")
             
-            self.present(AppController, animated: false, completion: nil)
+            self.show(AppController, sender:self)
             
             
         case 2:
             NSLog("Message")
             let MessageController = self.storyboard!.instantiateViewController(withIdentifier: "M")
             
-            self.present(MessageController, animated: false, completion: nil)
+            self.show(MessageController, sender:self)
             
             
         case 3:
             NSLog("Help")
             let HelpController = self.storyboard!.instantiateViewController(withIdentifier: "H")
             
-            self.present(HelpController, animated: false, completion: nil)
+            self.show(HelpController, sender:self)
             
             
         default:

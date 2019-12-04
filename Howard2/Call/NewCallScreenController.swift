@@ -45,21 +45,21 @@ class NewCallScreenController: UIViewController {
             NSLog("News")
             let NewsController = self.storyboard!.instantiateViewController(withIdentifier: "N")
             
-            self.present(NewsController, animated: false, completion: nil)
+            self.show(NewsController, sender:self)
             
             
         case 1:
             NSLog("Apps")
             let AppController = self.storyboard!.instantiateViewController(withIdentifier: "A")
             
-            self.present(AppController, animated: false, completion: nil)
+            self.show(AppController, sender:self)
             
             
         case 2:
             NSLog("Message")
             let MessageController = self.storyboard!.instantiateViewController(withIdentifier: "M")
             
-            self.present(MessageController, animated: false, completion: nil)
+            self.show(MessageController, sender:self)
             
             
         case 3:

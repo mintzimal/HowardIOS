@@ -162,7 +162,7 @@ class SignupController: UIViewController {
                 "You can use any length PIN number you would like.", preferredStyle: .alert)
             alertController.addAction(UIAlertAction(title: "Dismiss", style: .default))
             
-            self.present(alertController, animated: true, completion: nil)
+            self.present(alertController, animated: false, completion: nil)
         }
         
     }
@@ -252,7 +252,7 @@ class SignupController: UIViewController {
             
             let districtController = self.storyboard!.instantiateViewController(withIdentifier: "District")
             
-            self.present(districtController, animated: false, completion: nil)
+            self.show(districtController, sender:self)
             
             
             
@@ -337,7 +337,7 @@ class SignupController: UIViewController {
         
         let checkupController = self.storyboard!.instantiateViewController(withIdentifier: "Checkup")
         
-        self.present(checkupController, animated: false, completion: nil)
+        self.show(checkupController, sender:self)
     }
     
     @IBAction func Languages(_ sender:UIButton) {
@@ -469,7 +469,7 @@ class SignupController: UIViewController {
         
         let checkupController = self.storyboard!.instantiateViewController(withIdentifier: "Checkup")
         
-        self.present(checkupController, animated: false, completion: nil)
+        self.show(checkupController, sender: self)
     }
     
     @IBAction func goBack(_ sender: Any) {
@@ -484,7 +484,7 @@ class SignupController: UIViewController {
         
         let districtController = self.storyboard!.instantiateViewController(withIdentifier: "District")
         
-        self.present(districtController, animated: false, completion: nil)
+        self.show(districtController, sender:self)
     }
     
     @IBAction func checkUpSuccess(_ sender: Any) {

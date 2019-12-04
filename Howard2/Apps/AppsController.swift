@@ -90,7 +90,7 @@ class AppsController: UIViewController, SFSafariViewControllerDelegate {
             NSLog("News")
             let NewsController = self.storyboard!.instantiateViewController(withIdentifier: "N")
             
-            self.present(NewsController, animated: false, completion: nil)
+            self.show(NewsController, sender:self)
             
             
         case 1:
@@ -102,14 +102,14 @@ class AppsController: UIViewController, SFSafariViewControllerDelegate {
             NSLog("Message")
             let MessageController = self.storyboard!.instantiateViewController(withIdentifier: "M")
             
-            self.present(MessageController, animated: false, completion: nil)
+            self.show(MessageController, sender:self)
             
             
         case 3:
             NSLog("Help")
             let HelpController = self.storyboard!.instantiateViewController(withIdentifier: "H")
             
-            self.present(HelpController, animated: false, completion: nil)
+            self.show(HelpController, sender:self)
             
         default:
             break;
@@ -221,7 +221,7 @@ class AppsController: UIViewController, SFSafariViewControllerDelegate {
             
             let viewController:UIViewController = UIStoryboard(name: "Xylophone", bundle: nil).instantiateViewController(withIdentifier: "Xylo") as UIViewController
             
-            self.present(viewController, animated: true, completion: nil)
+            self.show(viewController, sender:self)
         }
         if(Label == arrayOfApps[5].title.localized()){
             //GMT Bus Schedule Calls
@@ -258,7 +258,7 @@ class AppsController: UIViewController, SFSafariViewControllerDelegate {
             
             let viewController:UIViewController = UIStoryboard(name: "TextToSpeech", bundle: nil).instantiateViewController(withIdentifier: "TextToSpeech") as UIViewController
             
-            self.present(viewController, animated: true, completion: nil)
+            self.show(viewController, sender:self)
         }
         if(Label == arrayOfApps[10].title.localized()){
             //GMT Bus Schedule Calls
