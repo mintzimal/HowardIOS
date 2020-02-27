@@ -3,60 +3,64 @@
 //  Howard2
 //
 //  Created by Noah Mintz Roberts on 4/4/19.
-//  Copyright © 2019 William Risigo. All rights reserved.
+//  Copyright © 2019 Noah Mintz Roberts. All rights reserved.
 //
 
+//Imports used by LaunchScreenController.swift
 import UIKit
 import AVKit
-
-
 import AWSMobileClient
 import AWSAppSync
 
+//Class definition and inheritance
 class LaunchScreenController: UIViewController {
 
+    //Outlets for the storyboard objects
     @IBOutlet weak var loginButton: UIButton!
     @IBOutlet weak var signupButton: UIButton!
-    
-    var RoadMap:Array<String> = UserDefaults.standard.object(forKey: "RoadMap") as? Array<String> ?? Array()
-    
-    var timeEntered:Date = Date()
-
     @IBOutlet weak var header: UIImageView!
-    
     @IBOutlet weak var footer: UIImageView!
     
+    //Load in the current Roadmap state from the user defaults storage
+    var RoadMap:Array<String> = UserDefaults.standard.object(forKey: "RoadMap") as? Array<String> ?? Array()
+    
+    //Create a new time entered date object
+    var timeEntered:Date = Date()
+    
+    //On the initial view controller load, but before the view controller is initially displayed
     override func viewDidLoad() {
         super.viewDidLoad()
-        // Do any additional setup after loading the view.
+
+        //Round the corners of the two storyboard buttons
         loginButton.layer.cornerRadius = 5
-       
-        
         signupButton.layer.cornerRadius = 5
-     
-        
-     
-        
+
+        //Fill the time entered object with an updated date object
         timeEntered = Date()
         
+        //Add the entrance date to the current Roadmap
         RoadMap.append("Entered Launchscreen at: \(timeEntered)")
-        
-        //self.initAWSMobileClient()
-        
-     
     }
     
+    //On the initial view controller load, but as the view controller is initially displayed
     override func viewWillAppear(_ animated: Bool) {
+        
+        //Animated version of viewWillAppear
         super.viewWillAppear(animated)
         
+        //If there is a legacy nav controller from messages or another location, hide it
         self.navigationController?.isNavigationBarHidden = true
         
+         //If PIN is marked disabled
          if UserDefaults.standard.bool(forKey: "disablePIN"){
             
+            //Skip this page settings remembered
             UserDefaults.standard.set(true, forKey: "skipHome")
             
+            //Make a new home hub storyboard
             let HomeController = self.storyboard!.instantiateViewController(withIdentifier: "Home")
             
+            //Present the home hub to the user, skipping login/signup
             self.present(HomeController, animated: false, completion: nil)
             
             
@@ -106,7 +110,7 @@ class LaunchScreenController: UIViewController {
     
     
     @IBAction func LoginTracker(_ sender: Any) {
-        var timeSpent = Date().timeIntervalSince(timeEntered)
+        let timeSpent = Date().timeIntervalSince(timeEntered)
         
         RoadMap.append("Exited  Launchscreen after: \(timeSpent) seconds")
         
@@ -116,7 +120,7 @@ class LaunchScreenController: UIViewController {
     }
     
     @IBAction func SignupTracker(_ sender: Any) {
-        var timeSpent = Date().timeIntervalSince(timeEntered)
+        let timeSpent = Date().timeIntervalSince(timeEntered)
         
         RoadMap.append("Exited Launchscreen after: \(timeSpent) seconds")
         

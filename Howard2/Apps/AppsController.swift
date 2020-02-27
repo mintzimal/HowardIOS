@@ -3,12 +3,14 @@
 //  Howard2
 //
 //  Created by Noah Mintz Roberts on 4/4/19.
-//  Copyright © 2019 William Risigo. All rights reserved.
+//  Copyright © 2019 Noah Mintz Roberts. All rights reserved.
 //
 
+//Libraries used by AppsController.swift
 import UIKit
 import SafariServices
 
+//Custom struct for storing information on individual apps
 struct appStruct:Codable {
     
     var id : Int
@@ -18,8 +20,10 @@ struct appStruct:Codable {
     
 }
 
+//Class definition and Inheritance
 class AppsController: UIViewController, SFSafariViewControllerDelegate {
     
+    //Outlets for the objects present on the apps page
     @IBOutlet weak var Header: UIImageView!
     @IBOutlet weak var LogoutButton: UIButton!
     @IBOutlet weak var HomeButton: UIButton!
@@ -40,14 +44,16 @@ class AppsController: UIViewController, SFSafariViewControllerDelegate {
     @IBOutlet weak var LabelFive: UILabel!
     @IBOutlet weak var LabelSix: UILabel!
     
-   //@IBOutlet weak var AppsLabel: UILabel!
-    
+    //Load in the current roadmap from the user storage
     var RoadMap:Array<String> = UserDefaults.standard.stringArray(forKey: "RoadMap") ?? Array()
     
+    //Create a new date object on entrance to the storyboard
     var timeEntered:Date = Date()
     
+    //Loads in the current count for the number of times each of the apps has been used by the current user from user storage
     var appCount:[Int] = UserDefaults.standard.array(forKey: "appCount") as? [Int] ?? [0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0]
     
+    //Array of custom structs such that each array member is one app on the apps checklist (one of the options)
     var arrayOfApps = [
         appStruct(id: 0, title: "Medication Manager", text: "Helpful daily reminders", image: "PillReminder.png"),
         appStruct(id: 1, title: "Google Calender", text: "So everything is in one place",image: "Calender.png"),
@@ -69,10 +75,10 @@ class AppsController: UIViewController, SFSafariViewControllerDelegate {
         
     ]
     
+    //URLS for each of the external app features that the safari services library generates
     private var funFacts:String = "https://www.mentalfloss.com/amazingfactgenerator"
     private var calender:String = "https://calendar.google.com/calendar/"
     private var youtube:String = "https://youtube.com"
-    
     private var GMTGuide:String = "https://www.connectingcommuters.org/wp-content/uploads/2019/02/Chittenden-Transportation-Guide.pdf"
     private var GMTQuick:String = "http://ridegmt.com/gmt-schedules/"
     private var Motivational:String = "https://www.brainyquote.com/quote_of_the_day"
@@ -84,111 +90,105 @@ class AppsController: UIViewController, SFSafariViewControllerDelegate {
     private var howardCenter:String = "https://howardcenter.org/"
     private var GMSA:String = "http://www.gmsavt.org/"
     
+    //Segment controller to navigate between the central service pages
     @IBAction func indexChanged(_ sender: Any) {
         switch SegmentedController.selectedSegmentIndex{
+        
+        //Move to the News page from the current apps page
         case 0:
             NSLog("News")
             let NewsController = self.storyboard!.instantiateViewController(withIdentifier: "N")
-            
             self.show(NewsController, sender:self)
-            
-            
+        
+        //Move nowhere
         case 1:
             NSLog("Apps")
-           
-            
-            
+          
+        //Move to the Message page from the current apps page
         case 2:
             NSLog("Message")
             let MessageController = self.storyboard!.instantiateViewController(withIdentifier: "M")
-            
             self.show(MessageController, sender:self)
-            
-            
+        
+        //Move to the Help page from the currentt apps page
         case 3:
             NSLog("Help")
             let HelpController = self.storyboard!.instantiateViewController(withIdentifier: "H")
-            
             self.show(HelpController, sender:self)
-            
+        
+        //Do nothing in the case of no segment selection
         default:
             break;
             
         }
-        
     }
     
-    
+    //Ensures the correct apps have been loaded
     @IBAction func refresh(_ sender: Any) {
+        
+        //Loads the user storage memory of what apps the user looked at last time they were here
         let selectedApps:[Int] = UserDefaults.standard.array(forKey: "AppSelection") as? [Int] ?? [1,2,3,4,5,6]
         
-        print("You Loaded:" , selectedApps)
-        
+        //Save the array of structs to the user defaults so that translation and loading from memory work correctly
         UserDefaults.standard.set(try? PropertyListEncoder().encode(arrayOfApps), forKey:"AppFiles")
         
+        //Checks that the first slot name, image, and endpoint is correct
         if selectedApps.count >= 1 {
             LabelOne.text = arrayOfApps[selectedApps[0]].title.localized()
             AppOne.setImage(UIImage(named: arrayOfApps[selectedApps[0]].image), for: .normal)
         }
+        
+        //Checks that the second slot name, image, and endpoint is correct
         if selectedApps.count >= 2 {
             LabelTwo.text = arrayOfApps[selectedApps[1]].title.localized()
             AppTwo.setImage(UIImage(named: arrayOfApps[selectedApps[1]].image), for: .normal)
         }
+        
+        //Checks that the third slot name, image, and endpoint is corrct
         if selectedApps.count >= 3 {
             LabelThree.text = arrayOfApps[selectedApps[2]].title.localized()
             AppThree.setImage(UIImage(named: arrayOfApps[selectedApps[2]].image), for: .normal)
         }
+        
+        //Checks that the fourth slot name, image, and endpoint is correct
         if selectedApps.count >= 4 {
             LabelFour.text = arrayOfApps[selectedApps[3]].title.localized()
             AppFour.setImage(UIImage(named: arrayOfApps[selectedApps[3]].image), for: .normal)
         }
+        
+        //Checks that the fifth slot name, image, and endpoint is correct
         if selectedApps.count >= 5 {
             LabelFive.text = arrayOfApps[selectedApps[4]].title.localized()
             AppFive.setImage(UIImage(named: arrayOfApps[selectedApps[4]].image), for: .normal)
         }
+        
+        //Checks that the sixth slot name, image, and endpoint is correct
         if selectedApps.count >= 6 {
             LabelSix.text = arrayOfApps[selectedApps[5]].title.localized()
             AppSix.setImage(UIImage(named: arrayOfApps[selectedApps[5]].image), for: .normal)
     }
     }
 
-    
+    //Checks which button sent the load command
     @IBAction func ButtonSorter(sender: UIButton) {
-        
+    
+    //Sends the label checker the correct text from the particular app such that the correct app schema is loaded
     if sender == AppOne {
-        
-        print("App1")
         labelChecker(Label: LabelOne.text!)
-        
-    
     } else if sender == AppTwo {
-        
-        print("App2")
         labelChecker(Label: LabelTwo.text!)
-    
     } else if sender == AppThree {
-        
-        print("App3")
         labelChecker(Label: LabelThree.text!)
-    
     } else if sender == AppFour {
-        
-        print("App4")
         labelChecker(Label: LabelFour.text!)
-        
     } else if sender == AppFive {
-        
-        print("App5")
         labelChecker(Label: LabelFive.text!)
-        
     } else if sender == AppSix {
-        
-        print("App6")
         labelChecker(Label: LabelSix.text!)
-        
     }
     }
     
+    //Defines what the actual apps do
     func labelChecker(Label: String){
         if(Label == arrayOfApps[0].title.localized()){
             //Medication Manager Calls
@@ -243,7 +243,7 @@ class AppsController: UIViewController, SFSafariViewControllerDelegate {
             
             let viewController:UIViewController = UIStoryboard(name: "checkins", bundle: nil).instantiateViewController(withIdentifier: "Checkins") as UIViewController
             
-            self.present(viewController, animated: true, completion: nil)
+            self.show(viewController, sender:self)
         }
         if(Label == arrayOfApps[8].title.localized()){
             //Motivational Calls
@@ -310,29 +310,33 @@ class AppsController: UIViewController, SFSafariViewControllerDelegate {
             self.present(svc, animated: true, completion: nil)
         }
         
+        //Adds the updated app usage counts to the user storage
         UserDefaults.standard.set(appCount,forKey: "appCount")
         
     }
 
+    //When the view is originally created do this
     override func viewDidLoad() {
         super.viewDidLoad()
         
+        //Hide the logout button
         LogoutButton.isHidden = true
         
+        //If the user storage memory for settings says to disable news and help do it
          if UserDefaults.standard.bool(forKey: "disableNews") && UserDefaults.standard.bool(forKey: "disableHelp") {
-            
             HomeButton.isHidden = true
             
+            //If the user storage memory for settings says that the PIN isn't disabled turn the logout button back on
             if !UserDefaults.standard.bool(forKey: "disablePIN"){
-                
                 LogoutButton.isHidden = false
             }
             
         }
         
-        
+        //Call the refresh function to ensure that the apps are correct even on the first load
         refresh(refreshButton)
         
+        //Round the corners of the app boxes
         AppOne.layer.borderWidth = 1
         AppTwo.layer.borderWidth = 1
         AppThree.layer.borderWidth = 1
@@ -340,6 +344,7 @@ class AppsController: UIViewController, SFSafariViewControllerDelegate {
         AppFive.layer.borderWidth = 1
         AppSix.layer.borderWidth = 1
         
+        //Ensure that no matter the length of the title text the text size adapts to the contstraints of the text field
         LabelOne.adjustsFontSizeToFitWidth = true
         LabelTwo.adjustsFontSizeToFitWidth = true
         LabelThree.adjustsFontSizeToFitWidth = true
@@ -347,41 +352,33 @@ class AppsController: UIViewController, SFSafariViewControllerDelegate {
         LabelFive.adjustsFontSizeToFitWidth = true
         LabelSix.adjustsFontSizeToFitWidth = true
         
-        
+        //Define the formatting of the header to fit the space and add a specific shadow and color
         Header.layer.masksToBounds = true
         Header.layer.shadowRadius = 10
         Header.layer.shadowColor = UIColor.darkGray.cgColor
         Header.layer.shadowOffset = CGSize(width: 5, height: 15)
         Header.layer.shadowOpacity = 1
         
+        //Sets the current segment location to the apps page
         SegmentedController.selectedSegmentIndex = 1
        
-        
+        //Add the entered time/date to the current roadmap
         RoadMap.append("Entered Apps Screen at: \(timeEntered)")
         
+        //Hide the navigation controller from messages
         navigationController?.navigationBar.isHidden = false
         
         }
 
+    //On exit from the maps page
     @IBAction func LeavingApps(_ sender: Any) {
-        var timeSpent = Date().timeIntervalSince(timeEntered)
+        
+        //Make another date object and check how long it's been since the last known entrance
+        let timeSpent = Date().timeIntervalSince(timeEntered)
         RoadMap.append("Exited Apps Screen after: \(timeSpent) seconds")
         
+        //Save the roadmap with the additional entries
         UserDefaults.standard.set(RoadMap,forKey: "RoadMap")
         
-        print(RoadMap)
     }
-    
-        // Do any additional setup after loading the view.
     }
-    
-
-    /*
-    // MARK: - Navigation
-
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
-    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        // Get the new view controller using segue.destination.
-        // Pass the selected object to the new view controller.
-    }
-    */

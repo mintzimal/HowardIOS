@@ -3,12 +3,14 @@
 //  Howard2
 //
 //  Created by Noah Mintz Roberts on 4/4/19.
-//  Copyright © 2019 William Risigo. All rights reserved.
+//  Copyright © 2019 Noah Mintz Roberts. All rights reserved.
 //
 
+//Imports used by SignupController.swift
 import UIKit
 import Localize_Swift
 
+//Class definition and inheritance
 class SignupController: UIViewController {
     
     //PIN PAGE BUTTONS
@@ -56,6 +58,8 @@ class SignupController: UIViewController {
     
     var languages = [UIButton]()
     
+    var label:String = ""
+    
     @IBOutlet weak var SkipButton: UIButton!
     
     //CHECKUP PAGE BUTTONS
@@ -64,17 +68,20 @@ class SignupController: UIViewController {
     @IBOutlet weak var YesButton: UIButton!
     @IBOutlet weak var NoButton: UIButton!
     
+    //Load in the current roadmap from the user defaults storage
     var RoadMap:Array<String> = UserDefaults.standard.stringArray(forKey: "RoadMap") ?? Array()
     
+    //Save a date on entry to the storyboard
     var timeEntered:Date = Date()
     
+    //On the initial view controller load, but before the view controller is initially displayed
     override func viewDidLoad() {
         super.viewDidLoad()
-         //Do any additional setup after loading the view.
         
+            //Round the storyboard elements
             submitButton?.layer.cornerRadius = 15
             PINView?.layer.cornerRadius = 15
-
+        
             Button1?.layer.cornerRadius = 15
             Button2?.layer.cornerRadius = 15
             Button3?.layer.cornerRadius = 15
@@ -106,112 +113,63 @@ class SignupController: UIViewController {
             L16?.layer.borderWidth = 1
             L17?.layer.borderWidth = 1
             L18?.layer.borderWidth = 1
-    
-        
-        /*
-            L1?.layer.cornerRadius = 15
-        L2?.layer.cornerRadius = 15
-        L3?.layer.cornerRadius = 15
-        L4?.layer.cornerRadius = 15
-        L5?.layer.cornerRadius = 15
-        L6?.layer.cornerRadius = 15
-        L7?.layer.cornerRadius = 15
-        L8?.layer.cornerRadius = 15
-        L9?.layer.cornerRadius = 15
-        L10?.layer.cornerRadius = 15
-        L11?.layer.cornerRadius = 15
-        L12?.layer.cornerRadius = 15
-        L13?.layer.cornerRadius = 15
-        L14?.layer.cornerRadius = 15
-        L15?.layer.cornerRadius = 15
-        L16?.layer.cornerRadius = 15
-        L17?.layer.cornerRadius = 15
-        L18?.layer.cornerRadius = 15
-       */
-        
         
             YesButton?.layer.cornerRadius = 15
             NoButton?.layer.cornerRadius = 15
-        
-            PINView?.isEnabled = false
-        
             SkipButton?.layer.cornerRadius = 15
             NextPage?.layer.cornerRadius = 15
         
+            //Prevent the user from typing into the PINView
+            PINView?.isEnabled = false
         
+        //Get the selected language and add it to the current language label for the checkup page
+        let newLanguageLabel:String = [languageLabel?.text, UserDefaults.standard.string(forKey: "LanguageName") ].compactMap({$0}).joined(separator:" ")
         
-        
-        var newLanguageLabel:String = [languageLabel?.text, UserDefaults.standard.string(forKey: "LanguageName") ].compactMap({$0}).joined(separator:" ")
-        
+        //Set the language label to the string we just created above
         languageLabel?.text = newLanguageLabel
         
-        var newDistrictLabel:String = [districtLabel?.text, UserDefaults.standard.string(forKey: "District") ].compactMap({$0}).joined(separator:" ")
+        //Get the selected district and add it to the current district label for the checkup page
+        let newDistrictLabel:String = [districtLabel?.text, UserDefaults.standard.string(forKey: "District") ].compactMap({$0}).joined(separator:" ")
         
+        //Set the district label to the string we just created above
         districtLabel?.text = newDistrictLabel
     }
     
+    //On the initial view controller load, right as the view controller is about to be displayed
     override func viewWillAppear(_ animated: Bool) {
         SkipButton?.titleLabel?.text = "Skip"
     }
     
+    //On the initial view controller load, when the view controller first appears
     override func viewDidAppear(_ animated: Bool) {
         
+        //If on the main signup page (the page with the PIN)
         if(submitButton != nil){
             
+            //Create an alert explaining to the user what they can do here
             let alertController = UIAlertController(title: "Just a heads up", message:
                 "You can use any length PIN number you would like.", preferredStyle: .alert)
+            
+            //Add a dismiss button to the alert
             alertController.addAction(UIAlertAction(title: "Dismiss", style: .default))
             
+            //Present the alert to the user
             self.present(alertController, animated: false, completion: nil)
         }
         
     }
     
-    @IBAction func Add1(_ sender: Any) {
-        let text = (PINView?.text ?? "")+"1"
-        PINView?.text = text
+    //Function connected to the buttons of the PIN pad so that they update the PINView correctly
+    @IBAction func numberButtonPress(_ sender: Any){
+        
+        //Get the label of the button that was pressed
+        self.label = (sender as! UIButton).titleLabel!.text!
+        
+        //Add the label of the button that was pressed to the current number label
+        PINView?.text = ((PINView?.text ?? "")+self.label)
     }
     
-    @IBAction func Add2(_ sender: Any) {
-        let text = (PINView?.text ?? "")+"2"
-        PINView?.text = text
-    }
-    
-    @IBAction func Add3(_ sender: Any) {
-        let text = (PINView?.text ?? "")+"3"
-        PINView?.text = text
-    }
-    
-    @IBAction func Add4(_ sender: Any) {
-        let text = (PINView?.text ?? "")+"4"
-        PINView?.text = text
-    }
-    
-    @IBAction func Add5(_ sender: Any) {
-        let text = (PINView?.text ?? "")+"5"
-        PINView?.text = text
-    }
-    
-    @IBAction func Add6(_ sender: Any) {
-        let text = (PINView?.text ?? "")+"6"
-        PINView?.text = text
-    }
-    
-    @IBAction func Add7(_ sender: Any) {
-        let text = (PINView?.text ?? "")+"7"
-        PINView?.text = text
-    }
-    
-    @IBAction func Add8(_ sender: Any) {
-        let text = (PINView?.text ?? "")+"8"
-        PINView?.text = text
-    }
-    
-    @IBAction func Add9(_ sender: Any) {
-        let text = (PINView?.text ?? "")+"9"
-        PINView?.text = text
-    }
-    
+    //Toggle whether the PIN is currently hidden or not
     @IBAction func ShowButton(_ sender: Any) {
         if(PINView?.isSecureTextEntry == true){
             PINView?.isSecureTextEntry = false
@@ -222,138 +180,132 @@ class SignupController: UIViewController {
         }
     }
     
+    //Initialize the signup protocols
     @IBAction func SubmitButton(_ sender: Any) {
         
+        //Assuming that they have put a new PIN in
         if(PINView?.text != ""){
             
+            //Get all key entries in the user defaults storage
             let AllKeys = UserDefaults.standard.dictionaryRepresentation().keys
             
+            //Delete all key entries in the user defaults storage
             for key in AllKeys{
                 UserDefaults.standard.removeObject(forKey: key)
             }
             
+            //Make a blank roadmap
             RoadMap = Array()
             
+            //Set the user defaults storage entry for the new PIN
             UserDefaults.standard.set(PINView?.text, forKey: "PIN")
             
-            var timeSpent = Date().timeIntervalSince(timeEntered)
+            //Calculate the time spent on the signup page
+            let timeSpent = Date().timeIntervalSince(timeEntered)
             
+            //Append the entrance time to the roadmap
             RoadMap.append("Entered Signup PIN Screen at: \(timeEntered)")
             
+            //Append the time spent here to the roadmap
             RoadMap.append("Exited  Signup PIN Screen after: \(timeSpent) seconds")
             
+            //Create a new time entered date
             timeEntered = Date()
             
+            //Append the time entry for the district screen
             RoadMap.append("Entered District Screen at: \(timeEntered)")
             
+            //Save the new roadmap to the user defaults storage
             UserDefaults.standard.set(RoadMap, forKey: "RoadMap")
-            
-            print(RoadMap)
-            
+
+            //Prepare the district controller view controller
             let districtController = self.storyboard!.instantiateViewController(withIdentifier: "District")
             
+            //Present the district controller to the user
             self.show(districtController, sender:self)
-            
-            
-            
-//
-//            let viewController:UIViewController = UIStoryboard(name: "District", bundle: nil).instantiateViewController(withIdentifier: "District") as UIViewController
-//            // .instantiatViewControllerWithIdentifier() returns AnyObject! this must be downcast to utilize it
-//
-//            self.present(viewController, animated: false, completion: nil)
         }
     }
     
-    @IBAction func District1Selected(_ sender: Any) {
+    //Function to determine the district selected
+    @IBAction func DistrictSelected(_ sender: Any) {
         
-        UserDefaults.standard.set(1,forKey: "District")
+        let label = (sender as! UIButton).titleLabel!.text!
         
-        var timeSpent = Date().timeIntervalSince(timeEntered)
+        //Set the user defaults storage key for district to 1
+        UserDefaults.standard.set(label.last!,forKey: "District")
+        
+        //Add a roadmap entry as this function exits the district screen
+        let timeSpent = Date().timeIntervalSince(timeEntered)
         RoadMap.append("Exited District Screen after: \(timeSpent) seconds")
         
+        //Add a roadmap entry for entering the language screen
         timeEntered = Date()
         RoadMap.append("Entered Language Screen at: \(timeEntered)")
         
+        //Write a user defaults storage entry for the updated roadmap
         UserDefaults.standard.set(RoadMap,forKey: "RoadMap")
         
-        var defaultCount:[Int] = [0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0]
+        //Set default counts for the news and apps options
+        let defaultCount:[Int] = [0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0]
         
+        //Write the default counts to the user defaults for both apps and news
         UserDefaults.standard.set(defaultCount, forKey: "newsCount")
         UserDefaults.standard.set(defaultCount, forKey: "appCount")
-        
-        print(RoadMap)
-        
-//        let viewController:UIViewController = UIStoryboard(name: "Language", bundle: nil).instantiateViewController(withIdentifier: "Language") as UIViewController
-//
-//        self.present(viewController, animated: false, completion: nil)
     }
     
-    @IBAction func District2Selected(_ sender: Any) {
-        
-        UserDefaults.standard.set(2,forKey: "District")
-        
-        var timeSpent = Date().timeIntervalSince(timeEntered)
-        RoadMap.append("Exited District Screen after: \(timeSpent) seconds")
-        
-        timeEntered = Date()
-        RoadMap.append("Entered Language Screen at: \(timeEntered)")
-        
-        UserDefaults.standard.set(RoadMap, forKey: "RoadMap")
-        
-        print(RoadMap)
-        
-//        let viewController:UIViewController = UIStoryboard(name: "Language", bundle: nil).instantiateViewController(withIdentifier: "Language") as UIViewController
-//
-//        self.present(viewController, animated: false, completion: nil)
-    }
-    
-    
+    //Move to the second page of languages
     @IBAction func newLanguages(_ sender: Any) {
-        
-//        let viewController:UIViewController = UIStoryboard(name: "Language2", bundle: nil).instantiateViewController(withIdentifier: "Language2") as UIViewController
-//
-//        self.present(viewController, animated: false, completion: nil)
-        
         print("Language wasn't on page one")
-        
     }
     
+    //If no language is selected
     @IBAction func Skip(_ sender: Any) {
         
-        var timeSpent = Date().timeIntervalSince(timeEntered)
+        //Calculate time spent on the languages pages
+        let timeSpent = Date().timeIntervalSince(timeEntered)
         
+        //Add a new exit entry to the roadmap
         RoadMap.append("Exited  Language Screen after: \(timeSpent) seconds")
         
+        //Create a new date object
         timeEntered = Date()
         
+        //Add the new time entered to the roadmap
         RoadMap.append("Entered Checkup Screen at: \(timeEntered)")
         
+        //Write the updated roadmap to the user defaults storage
         UserDefaults.standard.set(RoadMap,forKey: "RoadMap")
         
-        print(RoadMap)
-        
+       //Set the user defaults storage key to the identifier for english
         UserDefaults.standard.set("English",forKey:"LanguageName")
         UserDefaults.standard.set("en",forKey: "Language")
         
+        //Create a new check up controller storyboard to be presented to the user
         let checkupController = self.storyboard!.instantiateViewController(withIdentifier: "Checkup")
         
+        //Present the check up controller to the user
         self.show(checkupController, sender:self)
     }
     
+    //If a language is selected
     @IBAction func Languages(_ sender:UIButton) {
         
-        var timeSpent = Date().timeIntervalSince(timeEntered)
+        //Calculate the time spent on the languages pages
+        let timeSpent = Date().timeIntervalSince(timeEntered)
         
+        //Add a new exit entry to the roadmap
         RoadMap.append("Exited  Language Screen after: \(timeSpent) seconds")
         
+        //Create a new date object for use with the time spent on the checkup page
         timeEntered = Date()
         
+        //Add a roadmap entry for entering the checkup page
         RoadMap.append("Entered Checkup Screen at: \(timeEntered)")
         
+        //Send the updated roadmap to the user defaults storage
         UserDefaults.standard.set(RoadMap,forKey: "RoadMap")
-        
-        print(RoadMap)
-        
+
+        //Check the sender of the click and set language accordingly
         if(sender == L1){
             print("English")
             
@@ -466,49 +418,42 @@ class SignupController: UIViewController {
         }
         
         
-        
+        //Create a checkup controller to be presented to the user
         let checkupController = self.storyboard!.instantiateViewController(withIdentifier: "Checkup")
         
+        //Present the checkup controller to the user
         self.show(checkupController, sender: self)
     }
     
+    //Checkup was not successful and information needs to be re-entered
     @IBAction func goBack(_ sender: Any) {
         
-        var timeSpent = Date().timeIntervalSince(timeEntered)
+        //Calculate time spent on the checkup page
+        let timeSpent = Date().timeIntervalSince(timeEntered)
         
+        //Add time spent entry to the roadmap
         RoadMap.append("Exited  Checkup Screen after: \(timeSpent) seconds")
         
+        //Write the updated roadmap to the user defaults storage
         UserDefaults.standard.set(RoadMap,forKey: "RoadMap")
-        
-        print(RoadMap)
-        
+
+        //Create a new district controller to be presented to the user
         let districtController = self.storyboard!.instantiateViewController(withIdentifier: "District")
         
+        //Present the new district controller to the user
         self.show(districtController, sender:self)
     }
     
+    //Checkup was successful, information can be saved and the user can proceed to the main hub
     @IBAction func checkUpSuccess(_ sender: Any) {
-        var timeSpent = Date().timeIntervalSince(timeEntered)
         
+        //Calculate time spent on the checkup page
+        let timeSpent = Date().timeIntervalSince(timeEntered)
+        
+        //Add the time spent on the checkup page to the roadmap
         RoadMap.append("Exited  Checkup Screen after: \(timeSpent) seconds")
         
+        //Write the updated roadmap to the user defaults storage
         UserDefaults.standard.set(RoadMap, forKey: "RoadMap")
-        
-        print(RoadMap)
     }
-    
-    
-    
-    
-    
-    /*
-    // MARK: - Navigation
-
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
-    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        // Get the new view controller using segue.destination.
-        // Pass the selected object to the new view controller.
-    }
-    */
-
 }

@@ -78,11 +78,11 @@ class ChatViewController: UIViewController, UITableViewDelegate, UITableViewData
         self.conversationInit()
        // self.retrieveMessages()
         
-        let timer = Timer.scheduledTimer(withTimeInterval: 5.0, repeats: true) { timer in
+        _ = Timer.scheduledTimer(withTimeInterval: 5.0, repeats: true) { timer in
             //self.configureTableView()
         }
         
-        let timer2 = Timer.scheduledTimer(withTimeInterval: 5.0, repeats: true) { timer in
+        _ = Timer.scheduledTimer(withTimeInterval: 5.0, repeats: true) { timer in
             self.retrieveMessages()
         }
         
@@ -427,7 +427,7 @@ class ChatViewController: UIViewController, UITableViewDelegate, UITableViewData
     
     @IBAction func logOutPressed(_ sender: AnyObject) {
         
-         print( AWSMobileClient.sharedInstance().getIdentityId().result)
+        print( AWSMobileClient.sharedInstance().getIdentityId().result as Any)
         
         self.appSyncClient?.clearCache()
         
@@ -491,7 +491,7 @@ class ChatViewController: UIViewController, UITableViewDelegate, UITableViewData
             
             self.convoID = allConversations!.count
             
-            let mutationInput = CreateConversationsMutation(input: CreateConversationsInput(conversationId: self.convoID, caseManagerId: self.caseManagerID as GraphQLID, clientId: self.clientID as! GraphQLID, messages: self.json(from: self.messages)!,  nickname:  self.nickName, lastUpdate: "2019-05-05T02:50:50Z" as String))
+            let mutationInput = CreateConversationsMutation(input: CreateConversationsInput(conversationId: self.convoID, caseManagerId: self.caseManagerID as GraphQLID, clientId: self.clientID! as GraphQLID, messages: self.json(from: self.messages)!,  nickname:  self.nickName, lastUpdate: "2019-05-05T02:50:50Z" as String))
             
             
             

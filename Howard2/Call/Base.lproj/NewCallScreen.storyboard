@@ -84,7 +84,6 @@
                                     <color key="titleColor" cocoaTouchSystemColor="darkTextColor"/>
                                 </state>
                                 <connections>
-                                    <action selector="actionTorchClickWithSender:" destination="bYQ-cy-aDS" eventType="touchUpInside" id="U6t-uh-0RU"/>
                                     <segue destination="p7j-vT-uhd" kind="show" id="Bbn-Q9-Jax"/>
                                 </connections>
                             </button>

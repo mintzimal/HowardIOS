@@ -3,17 +3,23 @@
 //  Howard2
 //
 //  Created by Noah Mintz Roberts on 4/4/19.
-//  Copyright © 2019 William Risigo. All rights reserved.
+//  Copyright © 2019 Noah Mintz Roberts. All rights reserved.
 //
 
+//Imports used by LoginController.swift
 import UIKit
 
+//Class definition and inheritance
 class LoginController: UIViewController {
     
+    //Storyboard object definitions
     @IBOutlet weak var PINView: UITextField!
     @IBOutlet weak var submitButton: UIButton!
     
+    //Toggles whether the pin is hidden
     @IBOutlet weak var ShowButton: UIButton!
+    
+    //Buttons for the PIN pad
     @IBOutlet weak var Button1: UIButton!
     @IBOutlet weak var Button2: UIButton!
     @IBOutlet weak var Button3: UIButton!
@@ -24,17 +30,22 @@ class LoginController: UIViewController {
     @IBOutlet weak var Button8: UIButton!
     @IBOutlet weak var Button9: UIButton!
     
+    //Load in the current roadmap state
     var RoadMap:Array<String> = UserDefaults.standard.object(forKey: "RoadMap") as? Array<String> ?? Array()
     
+    //Create a new date object on entrance
     var timeEntered:Date = Date()
     
+    //The label for use with the PIN pad
+    var label:String = ""
     
+    //On the initial view controller load, but before the view controller is initially displayed
     override func viewDidLoad() {
         super.viewDidLoad()
-        // Do any additional setup after loading the view.
+        
+        //Round all of the storyboard objects
         submitButton.layer.cornerRadius = 15
         PINView.layer.cornerRadius = 15
-        
         Button1.layer.cornerRadius = 15
         Button2.layer.cornerRadius = 15
         Button3.layer.cornerRadius = 15
@@ -44,121 +55,108 @@ class LoginController: UIViewController {
         Button7.layer.cornerRadius = 15
         Button8.layer.cornerRadius = 15
         Button9.layer.cornerRadius = 15
-        
+                
+        //Update the time entered tracker with a new date
         timeEntered = Date()
         
+        //Add the updated entrance time to the roadmap
         RoadMap.append("Entered Login PIN Screen at: \(timeEntered)")
         
+        //Toggle off the ability to type directly into the PIN view text field
         PINView?.isEnabled = false
-        
     }
     
+    //Function connected to the show pin button
     @IBAction func ShowText(_ sender: Any) {
+        
+        //If PIN is already hidden
         if(PINView.isSecureTextEntry == true){
+            
+            //Unhide the PIN
             PINView.isSecureTextEntry = false
+            
+            //Switch the title of the button
             ShowButton.setTitle("Hide", for: .normal)
-        }else{
+        }
+        
+        //If PIN is not currently hidden
+        else{
+            
+            //Hide the PIN
             PINView.isSecureTextEntry = true
+            
+            //Switch the title of the button
             ShowButton.setTitle("Show", for: .normal)
         }
         
     }
-    @IBAction func Add1(_ sender: Any) {
-        let text = (PINView.text ?? "")+"1"
-        PINView.text = text
+    
+    //Function connected to the buttons of the PIN pad so that they update the PINView correctly
+    @IBAction func numberButtonPress(_ sender: Any){
+        
+        //Get the label of the button that was pressed
+        self.label = (sender as! UIButton).titleLabel!.text!
+        
+        //Add the label of the button that was pressed to the current number label
+        PINView.text = ((PINView?.text ?? "")+self.label)
     }
     
-    @IBAction func Add2(_ sender: Any) {
-        let text = (PINView.text ?? "")+"2"
-        PINView.text = text
-    }
-    
-    @IBAction func Add3(_ sender: Any) {
-        let text = (PINView.text ?? "")+"3"
-        PINView.text = text
-    }
-    
-    @IBAction func Add4(_ sender: Any) {
-        let text = (PINView.text ?? "")+"4"
-        PINView.text = text
-    }
-    
-    @IBAction func Add5(_ sender: Any) {
-        let text = (PINView.text ?? "")+"5"
-        PINView.text = text
-    }
-    
-    @IBAction func Add6(_ sender: Any) {
-        let text = (PINView.text ?? "")+"6"
-        PINView.text = text
-    }
-    
-    @IBAction func Add7(_ sender: Any) {
-        let text = (PINView.text ?? "")+"7"
-        PINView.text = text
-    }
-    
-    @IBAction func Add8(_ sender: Any) {
-        let text = (PINView.text ?? "")+"8"
-        PINView.text = text
-    }
-    
-    @IBAction func Add9(_ sender: Any) {
-        let text = (PINView.text ?? "")+"9"
-        PINView.text = text
-    }
-    
+    //Connected to the submission button at the bottom of the PIN pad
     @IBAction func SubmitButton(_ sender: Any) {
         
-        
+        //Set correct state for logged in status in the user defaults
         UserDefaults.standard.set(true, forKey: "skipHome")
     
+        //If the PIN isn't empty
         if(PINView.text != ""){
+            
+            //And the PIN matches the user defaults saved PIN
             if(PINView.text == UserDefaults.standard.string(forKey: "PIN") ?? "" ){
             
-                var timeSpent = Date().timeIntervalSince(timeEntered)
+                //Calculate the time spent on the page
+                let timeSpent = Date().timeIntervalSince(timeEntered)
+                
+                //Add the time spent to the Roadmap
                 RoadMap.append("Exited Login PIN Screen after: \(timeSpent) seconds")
                 
+                //Save the Roadmap back to the user defaults storage
                 UserDefaults.standard.set(RoadMap, forKey: "RoadMap")
                 
-                print(RoadMap)
-                
+                //Create a view controller reference for the main page of the app
                 let viewController:UIViewController = UIStoryboard(name: "Main", bundle: nil).instantiateViewController(withIdentifier: "HomePage") as UIViewController
-                // .instantiatViewControllerWithIdentifier() returns AnyObject! this must be downcast to utilize it
-                
+
+                //Present the main hub to the user
                 self.show(viewController, sender:self)
             }
+            
+            //If the PIN is not correct, reset the field and shake to show the user it was incorrect
             else {
                 PINView.text = ""
                 PINView.shake()
             }
         }
     }
-    
-    
-    
-
-    /*
-    // MARK: - Navigation
-
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
-    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        // Get the new view controller using segue.destination.
-        // Pass the selected object to the new view controller.
-    }
-    */
-
 }
 
-
+//Extension of the class that the PINView object is
 extension UITextField {
+    
+    //Animation function
     func shake() {
+        
+        //Define a positional animation
         let animation = CABasicAnimation(keyPath: "position")
+        
+        //Set duration, repetition, and loop status
         animation.duration = 0.05
         animation.repeatCount = 5
         animation.autoreverses = true
+        
+        //Set the rotational values for the animation
         animation.fromValue = CGPoint(x: self.center.x - 4.0, y: self.center.y)
         animation.toValue = CGPoint(x: self.center.x + 4.0, y: self.center.y)
+        
+        //Add the animation to the text field
         layer.add(animation, forKey: "position")
     }
 }
