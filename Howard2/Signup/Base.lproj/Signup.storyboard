@@ -29,7 +29,6 @@
                                     <color key="titleColor" cocoaTouchSystemColor="darkTextColor"/>
                                 </state>
                                 <connections>
-                                    <action selector="Add9:" destination="cdn-A1-9MT" eventType="touchUpInside" id="Fc8-wm-dGs"/>
                                     <action selector="numberButtonPress:" destination="cdn-A1-9MT" eventType="touchUpInside" id="oeR-60-Hqc"/>
                                 </connections>
                             </button>
@@ -42,7 +41,6 @@
                                     <color key="titleColor" cocoaTouchSystemColor="darkTextColor"/>
                                 </state>
                                 <connections>
-                                    <action selector="Add1:" destination="cdn-A1-9MT" eventType="touchUpInside" id="eVo-0f-he4"/>
                                     <action selector="numberButtonPress:" destination="cdn-A1-9MT" eventType="touchUpInside" id="Zsp-QX-CPh"/>
                                 </connections>
                             </button>
@@ -67,7 +65,6 @@
                                     <color key="titleColor" cocoaTouchSystemColor="darkTextColor"/>
                                 </state>
                                 <connections>
-                                    <action selector="Add5:" destination="cdn-A1-9MT" eventType="touchUpInside" id="rC6-za-xVs"/>
                                     <action selector="numberButtonPress:" destination="cdn-A1-9MT" eventType="touchUpInside" id="KSd-n8-hHS"/>
                                 </connections>
                             </button>
@@ -80,7 +77,6 @@
                                     <color key="titleColor" cocoaTouchSystemColor="darkTextColor"/>
                                 </state>
                                 <connections>
-                                    <action selector="Add2:" destination="cdn-A1-9MT" eventType="touchUpInside" id="hte-qG-qc7"/>
                                     <action selector="numberButtonPress:" destination="cdn-A1-9MT" eventType="touchUpInside" id="UYq-xh-n1i"/>
                                 </connections>
                             </button>
@@ -93,7 +89,6 @@
                                     <color key="titleColor" cocoaTouchSystemColor="darkTextColor"/>
                                 </state>
                                 <connections>
-                                    <action selector="Add6:" destination="cdn-A1-9MT" eventType="touchUpInside" id="kqb-h6-uFc"/>
                                     <action selector="numberButtonPress:" destination="cdn-A1-9MT" eventType="touchUpInside" id="eVP-ny-69e"/>
                                 </connections>
                             </button>
@@ -106,7 +101,6 @@
                                     <color key="titleColor" cocoaTouchSystemColor="darkTextColor"/>
                                 </state>
                                 <connections>
-                                    <action selector="Add4:" destination="cdn-A1-9MT" eventType="touchUpInside" id="znd-dM-tDZ"/>
                                     <action selector="numberButtonPress:" destination="cdn-A1-9MT" eventType="touchUpInside" id="J2R-rR-akL"/>
                                 </connections>
                             </button>
@@ -119,7 +113,6 @@
                                     <color key="titleColor" cocoaTouchSystemColor="darkTextColor"/>
                                 </state>
                                 <connections>
-                                    <action selector="Add8:" destination="cdn-A1-9MT" eventType="touchUpInside" id="fNy-s0-bDF"/>
                                     <action selector="numberButtonPress:" destination="cdn-A1-9MT" eventType="touchUpInside" id="hBg-Rp-kSY"/>
                                 </connections>
                             </button>
@@ -132,7 +125,6 @@
                                     <color key="titleColor" cocoaTouchSystemColor="darkTextColor"/>
                                 </state>
                                 <connections>
-                                    <action selector="Add9:" destination="cdn-A1-9MT" eventType="touchUpInside" id="fBL-gc-Ln9"/>
                                     <action selector="numberButtonPress:" destination="cdn-A1-9MT" eventType="touchUpInside" id="ulN-Fo-zqp"/>
                                 </connections>
                             </button>
@@ -145,7 +137,6 @@
                                     <color key="titleColor" cocoaTouchSystemColor="darkTextColor"/>
                                 </state>
                                 <connections>
-                                    <action selector="Add7:" destination="cdn-A1-9MT" eventType="touchUpInside" id="riM-DP-exL"/>
                                     <action selector="numberButtonPress:" destination="cdn-A1-9MT" eventType="touchUpInside" id="zzB-c7-fEt"/>
                                 </connections>
                             </button>
@@ -179,7 +170,6 @@
                                     <color key="titleColor" cocoaTouchSystemColor="darkTextColor"/>
                                 </state>
                                 <connections>
-                                    <action selector="Add3:" destination="cdn-A1-9MT" eventType="touchUpInside" id="TaW-cF-ukQ"/>
                                     <action selector="numberButtonPress:" destination="cdn-A1-9MT" eventType="touchUpInside" id="gfq-5v-zjn"/>
                                 </connections>
                             </button>

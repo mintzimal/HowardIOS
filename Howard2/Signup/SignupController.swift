@@ -232,7 +232,7 @@ class SignupController: UIViewController {
         let label = (sender as! UIButton).titleLabel!.text!
         
         //Set the user defaults storage key for district to 1
-        UserDefaults.standard.set(label.last!,forKey: "District")
+        UserDefaults.standard.set(String(label.last!),forKey: "District")
         
         //Add a roadmap entry as this function exits the district screen
         let timeSpent = Date().timeIntervalSince(timeEntered)
