@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="15505" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="geu-Uf-BK9">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="15705" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="geu-Uf-BK9">
     <device id="retina4_7" orientation="portrait" appearance="light"/>
     <dependencies>
         <deployment identifier="iOS"/>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="15510"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="15706"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
@@ -24,51 +24,95 @@
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="XkH-01-6aN" userLabel="Canvas">
+                            <view clipsSubviews="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="XkH-01-6aN" userLabel="Canvas">
                                 <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
-                                <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                                 <subviews>
-                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="LaunchPane.png" translatesAutoresizingMaskIntoConstraints="NO" id="jHp-EQ-vPo">
-                                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
-                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="aYm-ws-K4X">
+                                        <rect key="frame" x="0.0" y="215" width="375" height="334"/>
+                                        <subviews>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="IFi-TN-TCB">
+                                                <rect key="frame" x="52.5" y="202" width="270" height="81"/>
+                                                <color key="backgroundColor" red="0.93728923799999997" green="0.93697673079999999" blue="0.95686596629999998" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="height" constant="81" id="9Lc-4v-uBI"/>
+                                                    <constraint firstAttribute="width" constant="270" id="Rp2-df-U5C"/>
+                                                    <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="81" id="xKV-h6-RMX"/>
+                                                </constraints>
+                                                <fontDescription key="fontDescription" name="TimesNewRomanPS-BoldMT" family="Times New Roman" pointSize="32"/>
+                                                <size key="titleShadowOffset" width="2" height="2"/>
+                                                <state key="normal" title="Signup">
+                                                    <color key="titleColor" cocoaTouchSystemColor="darkTextColor"/>
+                                                    <color key="titleShadowColor" cocoaTouchSystemColor="lightTextColor"/>
+                                                </state>
+                                                <connections>
+                                                    <action selector="SignupTracker:" destination="01J-lp-oVM" eventType="touchUpInside" id="dQK-ZA-Ptr"/>
+                                                    <segue destination="eK2-F8-gcb" kind="show" id="zJd-pX-EmV"/>
+                                                </connections>
+                                            </button>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="PXL-qw-Muv">
+                                                <rect key="frame" x="52.5" y="61" width="270" height="79"/>
+                                                <color key="backgroundColor" red="0.93728923799999997" green="0.93697673079999999" blue="0.95686596629999998" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="height" constant="79" id="pGf-Zx-tIb"/>
+                                                </constraints>
+                                                <fontDescription key="fontDescription" name="TimesNewRomanPS-BoldMT" family="Times New Roman" pointSize="32"/>
+                                                <size key="titleShadowOffset" width="2" height="2"/>
+                                                <state key="normal" title="Login">
+                                                    <color key="titleColor" cocoaTouchSystemColor="darkTextColor"/>
+                                                    <color key="titleShadowColor" cocoaTouchSystemColor="lightTextColor"/>
+                                                </state>
+                                                <connections>
+                                                    <action selector="LoginTracker:" destination="01J-lp-oVM" eventType="touchUpInside" id="lJP-LD-6on"/>
+                                                    <segue destination="zce-Jp-1FO" kind="show" id="lsn-TX-cN9"/>
+                                                </connections>
+                                            </button>
+                                        </subviews>
+                                        <color key="backgroundColor" red="0.0" green="0.4823529412" blue="0.54117647059999996" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                        <constraints>
+                                            <constraint firstItem="IFi-TN-TCB" firstAttribute="centerX" secondItem="aYm-ws-K4X" secondAttribute="centerX" id="B55-5y-Azm"/>
+                                            <constraint firstItem="IFi-TN-TCB" firstAttribute="centerY" secondItem="aYm-ws-K4X" secondAttribute="centerY" constant="75.5" id="NA4-j7-aO2"/>
+                                            <constraint firstItem="PXL-qw-Muv" firstAttribute="trailing" secondItem="IFi-TN-TCB" secondAttribute="trailing" id="Um3-ZS-Pdm"/>
+                                            <constraint firstItem="PXL-qw-Muv" firstAttribute="leading" secondItem="IFi-TN-TCB" secondAttribute="leading" id="WFM-aT-3BS"/>
+                                            <constraint firstItem="PXL-qw-Muv" firstAttribute="centerY" secondItem="aYm-ws-K4X" secondAttribute="centerY" constant="-66.5" id="qS0-WV-dLn"/>
+                                            <constraint firstItem="PXL-qw-Muv" firstAttribute="centerX" secondItem="aYm-ws-K4X" secondAttribute="centerX" id="zb4-XT-9mA"/>
+                                        </constraints>
+                                    </view>
+                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Main.png" translatesAutoresizingMaskIntoConstraints="NO" id="jHp-EQ-vPo">
+                                        <rect key="frame" x="0.0" y="0.0" width="375" height="207"/>
+                                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="207" id="fif-bv-Mnd"/>
+                                        </constraints>
                                     </imageView>
-                                    <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="PXL-qw-Muv">
-                                        <rect key="frame" x="63" y="265" width="249" height="78"/>
-                                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                                        <fontDescription key="fontDescription" name="TimesNewRomanPS-BoldMT" family="Times New Roman" pointSize="32"/>
-                                        <size key="titleShadowOffset" width="2" height="2"/>
-                                        <state key="normal" title="Login">
-                                            <color key="titleColor" cocoaTouchSystemColor="darkTextColor"/>
-                                            <color key="titleShadowColor" cocoaTouchSystemColor="lightTextColor"/>
-                                        </state>
-                                        <connections>
-                                            <action selector="LoginTracker:" destination="01J-lp-oVM" eventType="touchUpInside" id="lJP-LD-6on"/>
-                                            <segue destination="zce-Jp-1FO" kind="show" id="lsn-TX-cN9"/>
-                                        </connections>
-                                    </button>
-                                    <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="IFi-TN-TCB">
-                                        <rect key="frame" x="63" y="399" width="249" height="83"/>
-                                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                                        <fontDescription key="fontDescription" name="TimesNewRomanPS-BoldMT" family="Times New Roman" pointSize="32"/>
-                                        <size key="titleShadowOffset" width="2" height="2"/>
-                                        <state key="normal" title="Signup">
-                                            <color key="titleColor" cocoaTouchSystemColor="darkTextColor"/>
-                                            <color key="titleShadowColor" cocoaTouchSystemColor="lightTextColor"/>
-                                        </state>
-                                        <connections>
-                                            <action selector="SignupTracker:" destination="01J-lp-oVM" eventType="touchUpInside" id="dQK-ZA-Ptr"/>
-                                            <segue destination="eK2-F8-gcb" kind="show" id="zJd-pX-EmV"/>
-                                        </connections>
-                                    </button>
-                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="HowardCenterHeader2.png" translatesAutoresizingMaskIntoConstraints="NO" id="lFI-MA-Rr0">
-                                        <rect key="frame" x="0.0" y="547" width="375" height="121"/>
-                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="HowardCenterHeader2.png" translatesAutoresizingMaskIntoConstraints="NO" id="lFI-MA-Rr0">
+                                        <rect key="frame" x="0.0" y="549" width="375" height="118"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="118" id="0DL-w1-Vd2"/>
+                                        </constraints>
                                     </imageView>
                                 </subviews>
-                                <color key="backgroundColor" red="0.0" green="0.4823529411764706" blue="0.54117647058823526" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <constraints>
+                                    <constraint firstAttribute="bottom" secondItem="lFI-MA-Rr0" secondAttribute="bottom" id="6f3-ww-Kyh"/>
+                                    <constraint firstItem="aYm-ws-K4X" firstAttribute="leading" secondItem="lFI-MA-Rr0" secondAttribute="leading" id="A4R-7m-Yu3"/>
+                                    <constraint firstItem="jHp-EQ-vPo" firstAttribute="top" secondItem="XkH-01-6aN" secondAttribute="top" id="BvP-0m-Aeo"/>
+                                    <constraint firstItem="aYm-ws-K4X" firstAttribute="trailing" secondItem="lFI-MA-Rr0" secondAttribute="trailing" id="JqV-Ze-Pwy"/>
+                                    <constraint firstAttribute="trailing" secondItem="jHp-EQ-vPo" secondAttribute="trailing" id="S6S-Kt-a7Q"/>
+                                    <constraint firstItem="jHp-EQ-vPo" firstAttribute="leading" secondItem="XkH-01-6aN" secondAttribute="leading" id="Xfb-hA-sIK"/>
+                                    <constraint firstItem="jHp-EQ-vPo" firstAttribute="trailing" secondItem="aYm-ws-K4X" secondAttribute="trailing" id="aW1-zw-Tds"/>
+                                    <constraint firstItem="lFI-MA-Rr0" firstAttribute="top" secondItem="aYm-ws-K4X" secondAttribute="bottom" id="hjh-bq-hgO"/>
+                                    <constraint firstItem="aYm-ws-K4X" firstAttribute="top" secondItem="jHp-EQ-vPo" secondAttribute="bottom" constant="8" symbolic="YES" id="sQO-z3-RRl"/>
+                                    <constraint firstItem="jHp-EQ-vPo" firstAttribute="leading" secondItem="aYm-ws-K4X" secondAttribute="leading" id="uoA-qw-vvj"/>
+                                </constraints>
                             </view>
                         </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="XkH-01-6aN" firstAttribute="bottom" secondItem="6Tk-OE-BBY" secondAttribute="bottom" id="11w-95-UtK"/>
+                            <constraint firstItem="XkH-01-6aN" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" id="ZuD-Km-1bI"/>
+                            <constraint firstAttribute="trailing" secondItem="XkH-01-6aN" secondAttribute="trailing" id="kvV-A3-ykr"/>
+                            <constraint firstItem="XkH-01-6aN" firstAttribute="leading" secondItem="Ze5-6b-2t3" secondAttribute="leading" id="nf3-4U-Gvt"/>
+                        </constraints>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
                     <navigationItem key="navigationItem" id="yeL-nn-uWQ"/>
@@ -80,7 +124,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="iYj-Kq-Ea1" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="986.39999999999998" y="372.86356821589209"/>
+            <point key="canvasLocation" x="983.20000000000005" y="371.06446776611699"/>
         </scene>
         <!--Signup-->
         <scene sceneID="zCY-9I-6TA">
@@ -123,6 +167,6 @@
     </scenes>
     <resources>
         <image name="HowardCenterHeader2.png" width="630" height="200"/>
-        <image name="LaunchPane.png" width="1532" height="2668"/>
+        <image name="Main.png" width="612" height="330.239990234375"/>
     </resources>
 </document>

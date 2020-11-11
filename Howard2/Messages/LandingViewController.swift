@@ -56,7 +56,7 @@ class LandingViewController: UIViewController{
         //Add the entrance date to the Roadmap data structure
         RoadMap.append("Entered Chat Room Screen at: \(timeEntered)")
     
-        //Instantiate the view controller such that it isn't hidden outside the chatroom
+        //Instantiate the navigation controller such that it isn't hidden outside the chatroom
         self.navigationController?.setNavigationBarHidden(false, animated: true)
         
         //This will only activate when inside the chatrooms themselves
@@ -69,6 +69,14 @@ class LandingViewController: UIViewController{
         //Round the chatroom and the signout buttons
         ChatRoom.layer.cornerRadius = 15
         SignOut.layer.cornerRadius = 15
+        
+        ChatRoom.layer.shadowRadius = 5
+        ChatRoom.layer.shadowOpacity = 0.8
+        ChatRoom.layer.shadowOffset = CGSize(width: 2.0, height: 2.0)
+               
+        SignOut.layer.shadowRadius = 5
+        SignOut.layer.shadowOpacity = 0.8
+        SignOut.layer.shadowOffset = CGSize(width: 2.0, height: 2.0)
         
         //Define the appdelegate for the sync client
         let appDelegate = UIApplication.shared.delegate as! AppDelegate

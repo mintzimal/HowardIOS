@@ -55,7 +55,7 @@ class AppsController: UIViewController, SFSafariViewControllerDelegate {
     
     //Array of custom structs such that each array member is one app on the apps checklist (one of the options)
     var arrayOfApps = [
-        appStruct(id: 0, title: "Medication Manager", text: "Helpful daily reminders", image: "PillReminder.png"),
+        appStruct(id: 0, title: "Covid Information", text: "Quick Guide to Covid", image: "PillReminder.png"),
         appStruct(id: 1, title: "Google Calender", text: "So everything is in one place",image: "Calender.png"),
         appStruct(id: 2, title: "Learn Something New", text: "New Tricks for Everyone",image: "thinker.png"),
         appStruct(id: 3, title: "Youtube", text: "Watch YouTube right from this app!",image: "youTube.png"),
@@ -76,6 +76,7 @@ class AppsController: UIViewController, SFSafariViewControllerDelegate {
     ]
     
     //URLS for each of the external app features that the safari services library generates
+    private var covid:String = "https://selfadvocacyinfo.org/wp-content/uploads/2020/03/Plain-Language-Information-on-Coronavirus.pdf"
     private var funFacts:String = "https://www.mentalfloss.com/amazingfactgenerator"
     private var calender:String = "https://calendar.google.com/calendar/"
     private var youtube:String = "https://youtube.com"
@@ -191,8 +192,12 @@ class AppsController: UIViewController, SFSafariViewControllerDelegate {
     //Defines what the actual apps do
     func labelChecker(Label: String){
         if(Label == arrayOfApps[0].title.localized()){
-            //Medication Manager Calls
+            //Covid Information Calls
             appCount[0] += 1
+            
+            let svc = SFSafariViewController(url: NSURL(string: self.covid)! as URL)
+            self.present(svc, animated: true, completion: nil)
+            
         }
         if(Label == arrayOfApps[1].title.localized()){
             //Google Calender Calls

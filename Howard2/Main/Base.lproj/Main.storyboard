@@ -19,71 +19,122 @@
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="95T-TJ-SPu" userLabel="Canvas">
                                 <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                                 <subviews>
-                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Homepage2.png" translatesAutoresizingMaskIntoConstraints="NO" id="mqX-lc-4da">
-                                        <rect key="frame" x="-1" y="0.0" width="376" height="667"/>
+                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Main.png" translatesAutoresizingMaskIntoConstraints="NO" id="mqX-lc-4da">
+                                        <rect key="frame" x="-1" y="0.0" width="376" height="172"/>
+                                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="172" id="kfZ-SS-Rw5"/>
+                                        </constraints>
                                     </imageView>
-                                    <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="5nP-0y-vUb">
-                                        <rect key="frame" x="66" y="217" width="243" height="80"/>
-                                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                                        <fontDescription key="fontDescription" name="TimesNewRomanPS-BoldMT" family="Times New Roman" pointSize="32"/>
-                                        <size key="titleShadowOffset" width="3" height="3"/>
-                                        <state key="normal" title="News">
-                                            <color key="titleColor" cocoaTouchSystemColor="darkTextColor"/>
-                                        </state>
-                                        <connections>
-                                            <action selector="LeavingHome:" destination="BYZ-38-t0r" eventType="touchUpInside" id="O7c-3E-93t"/>
-                                            <segue destination="g2P-8c-CJ6" kind="show" id="b1C-6W-VGA"/>
-                                        </connections>
-                                    </button>
-                                    <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="242-Gn-JJt">
-                                        <rect key="frame" x="66" y="305" width="243" height="80"/>
-                                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                                        <fontDescription key="fontDescription" name="TimesNewRomanPS-BoldMT" family="Times New Roman" pointSize="32"/>
-                                        <color key="tintColor" red="0.0" green="0.47843137250000001" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                        <size key="titleShadowOffset" width="3" height="3"/>
-                                        <state key="normal" title="Apps">
-                                            <color key="titleColor" cocoaTouchSystemColor="darkTextColor"/>
-                                        </state>
-                                        <connections>
-                                            <action selector="LeavingHome:" destination="BYZ-38-t0r" eventType="touchUpInside" id="PC7-x3-Pd0"/>
-                                            <segue destination="z7S-dV-br0" kind="show" id="VJW-eQ-V5T"/>
-                                        </connections>
-                                    </button>
-                                    <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="bt0-zQ-OsI">
-                                        <rect key="frame" x="66" y="393" width="243" height="80"/>
-                                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                                        <fontDescription key="fontDescription" name="TimesNewRomanPS-BoldMT" family="Times New Roman" pointSize="32"/>
-                                        <size key="titleShadowOffset" width="3" height="3"/>
-                                        <state key="normal" title="Help">
-                                            <color key="titleColor" cocoaTouchSystemColor="darkTextColor"/>
-                                        </state>
-                                        <connections>
-                                            <action selector="LeavingHome:" destination="BYZ-38-t0r" eventType="touchUpInside" id="e5q-FL-XwW"/>
-                                            <segue destination="q2I-IR-uJd" kind="show" id="vgF-kR-oWR"/>
-                                        </connections>
-                                    </button>
-                                    <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="WP3-bI-bWY">
-                                        <rect key="frame" x="92" y="481" width="190" height="53"/>
-                                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                                        <fontDescription key="fontDescription" name="TimesNewRomanPS-BoldMT" family="Times New Roman" pointSize="24"/>
-                                        <size key="titleShadowOffset" width="3" height="3"/>
-                                        <state key="normal" title="Logout">
-                                            <color key="titleColor" cocoaTouchSystemColor="darkTextColor"/>
-                                        </state>
-                                        <connections>
-                                            <action selector="LeavingHome:" destination="BYZ-38-t0r" eventType="touchUpInside" id="YLT-Lq-Goy"/>
-                                            <action selector="logoutButton:" destination="jY4-Fr-0Sh" eventType="touchUpInside" id="zZa-MX-eK1"/>
-                                            <action selector="sendData2:" destination="BYZ-38-t0r" eventType="touchUpInside" id="mBT-A6-Nyc"/>
-                                            <segue destination="Nou-9T-gcG" kind="show" id="eA6-zH-P1V"/>
-                                        </connections>
-                                    </button>
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="9r1-A2-nDm">
+                                        <rect key="frame" x="0.0" y="172" width="375" height="368"/>
+                                        <subviews>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="bt0-zQ-OsI">
+                                                <rect key="frame" x="66" y="202" width="243" height="62"/>
+                                                <color key="backgroundColor" red="0.93728923797607422" green="0.93697673082351685" blue="0.95686596632003784" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                                <fontDescription key="fontDescription" name="TimesNewRomanPS-BoldMT" family="Times New Roman" pointSize="32"/>
+                                                <size key="titleShadowOffset" width="3" height="3"/>
+                                                <state key="normal" title="Help">
+                                                    <color key="titleColor" cocoaTouchSystemColor="darkTextColor"/>
+                                                </state>
+                                                <connections>
+                                                    <action selector="LeavingHome:" destination="BYZ-38-t0r" eventType="touchUpInside" id="e5q-FL-XwW"/>
+                                                    <segue destination="q2I-IR-uJd" kind="show" id="vgF-kR-oWR"/>
+                                                </connections>
+                                            </button>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="5nP-0y-vUb">
+                                                <rect key="frame" x="66" y="17" width="243" height="62"/>
+                                                <color key="backgroundColor" red="0.93728923797607422" green="0.93697673082351685" blue="0.95686596632003784" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="243" id="giu-wA-0b4"/>
+                                                    <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="62" id="pfa-ko-84G"/>
+                                                </constraints>
+                                                <fontDescription key="fontDescription" name="TimesNewRomanPS-BoldMT" family="Times New Roman" pointSize="32"/>
+                                                <size key="titleShadowOffset" width="3" height="3"/>
+                                                <state key="normal" title="News">
+                                                    <color key="titleColor" cocoaTouchSystemColor="darkTextColor"/>
+                                                </state>
+                                                <connections>
+                                                    <action selector="LeavingHome:" destination="BYZ-38-t0r" eventType="touchUpInside" id="O7c-3E-93t"/>
+                                                    <segue destination="g2P-8c-CJ6" kind="show" id="b1C-6W-VGA"/>
+                                                </connections>
+                                            </button>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="WP3-bI-bWY">
+                                                <rect key="frame" x="105" y="297" width="165" height="49"/>
+                                                <color key="backgroundColor" red="0.93728923797607422" green="0.93697673082351685" blue="0.95686596632003784" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="165" id="sYX-uO-zWq"/>
+                                                </constraints>
+                                                <fontDescription key="fontDescription" name="TimesNewRomanPS-BoldMT" family="Times New Roman" pointSize="24"/>
+                                                <size key="titleShadowOffset" width="3" height="3"/>
+                                                <state key="normal" title="Logout">
+                                                    <color key="titleColor" cocoaTouchSystemColor="darkTextColor"/>
+                                                </state>
+                                                <connections>
+                                                    <action selector="LeavingHome:" destination="BYZ-38-t0r" eventType="touchUpInside" id="YLT-Lq-Goy"/>
+                                                    <action selector="logoutButton:" destination="jY4-Fr-0Sh" eventType="touchUpInside" id="zZa-MX-eK1"/>
+                                                    <action selector="sendData2:" destination="BYZ-38-t0r" eventType="touchUpInside" id="mBT-A6-Nyc"/>
+                                                    <segue destination="Nou-9T-gcG" kind="show" id="eA6-zH-P1V"/>
+                                                </connections>
+                                            </button>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="242-Gn-JJt">
+                                                <rect key="frame" x="66" y="109" width="243" height="62"/>
+                                                <color key="backgroundColor" red="0.93728923797607422" green="0.93697673082351685" blue="0.95686596632003784" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                                <fontDescription key="fontDescription" name="TimesNewRomanPS-BoldMT" family="Times New Roman" pointSize="32"/>
+                                                <color key="tintColor" red="0.0" green="0.47843137250000001" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                <size key="titleShadowOffset" width="3" height="3"/>
+                                                <state key="normal" title="Apps">
+                                                    <color key="titleColor" cocoaTouchSystemColor="darkTextColor"/>
+                                                </state>
+                                                <connections>
+                                                    <action selector="LeavingHome:" destination="BYZ-38-t0r" eventType="touchUpInside" id="PC7-x3-Pd0"/>
+                                                    <segue destination="z7S-dV-br0" kind="show" id="VJW-eQ-V5T"/>
+                                                </connections>
+                                            </button>
+                                        </subviews>
+                                        <color key="backgroundColor" red="0.0" green="0.4823529412" blue="0.54117647059999996" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                        <constraints>
+                                            <constraint firstItem="bt0-zQ-OsI" firstAttribute="height" secondItem="242-Gn-JJt" secondAttribute="height" id="5os-y8-uBk"/>
+                                            <constraint firstItem="242-Gn-JJt" firstAttribute="trailing" relation="greaterThanOrEqual" secondItem="bt0-zQ-OsI" secondAttribute="trailing" id="A1C-Hn-vS2"/>
+                                            <constraint firstItem="5nP-0y-vUb" firstAttribute="leading" relation="greaterThanOrEqual" secondItem="242-Gn-JJt" secondAttribute="leading" id="Aaz-fN-gWr"/>
+                                            <constraint firstItem="5nP-0y-vUb" firstAttribute="top" secondItem="9r1-A2-nDm" secondAttribute="top" constant="17" id="Frr-WS-1bK"/>
+                                            <constraint firstItem="242-Gn-JJt" firstAttribute="centerX" secondItem="bt0-zQ-OsI" secondAttribute="centerX" id="GXj-Oy-hlX"/>
+                                            <constraint firstItem="bt0-zQ-OsI" firstAttribute="width" secondItem="242-Gn-JJt" secondAttribute="width" id="Ke7-4V-MqX"/>
+                                            <constraint firstItem="242-Gn-JJt" firstAttribute="height" secondItem="5nP-0y-vUb" secondAttribute="height" id="LEL-dL-aHB"/>
+                                            <constraint firstItem="WP3-bI-bWY" firstAttribute="centerX" secondItem="9r1-A2-nDm" secondAttribute="centerX" id="XNo-qG-TGp"/>
+                                            <constraint firstItem="5nP-0y-vUb" firstAttribute="centerX" secondItem="9r1-A2-nDm" secondAttribute="centerX" id="YTQ-g4-NHK"/>
+                                            <constraint firstItem="242-Gn-JJt" firstAttribute="height" secondItem="5nP-0y-vUb" secondAttribute="height" id="adz-9w-uot"/>
+                                            <constraint firstItem="242-Gn-JJt" firstAttribute="width" secondItem="5nP-0y-vUb" secondAttribute="width" id="csT-9P-H3P"/>
+                                            <constraint firstItem="bt0-zQ-OsI" firstAttribute="centerX" secondItem="WP3-bI-bWY" secondAttribute="centerX" id="dJe-vj-LaD"/>
+                                            <constraint firstItem="5nP-0y-vUb" firstAttribute="trailing" relation="greaterThanOrEqual" secondItem="242-Gn-JJt" secondAttribute="trailing" id="g6F-MN-2pU"/>
+                                            <constraint firstItem="242-Gn-JJt" firstAttribute="leading" relation="greaterThanOrEqual" secondItem="bt0-zQ-OsI" secondAttribute="leading" id="n5m-JV-T7N"/>
+                                            <constraint firstItem="WP3-bI-bWY" firstAttribute="height" secondItem="bt0-zQ-OsI" secondAttribute="height" multiplier="0.790323" id="o5f-GT-cJu"/>
+                                            <constraint firstItem="bt0-zQ-OsI" firstAttribute="top" secondItem="242-Gn-JJt" secondAttribute="bottom" constant="31" id="sy6-74-f8G"/>
+                                            <constraint firstItem="WP3-bI-bWY" firstAttribute="top" secondItem="bt0-zQ-OsI" secondAttribute="bottom" constant="33" id="uuw-jt-8D7"/>
+                                            <constraint firstItem="5nP-0y-vUb" firstAttribute="centerX" secondItem="242-Gn-JJt" secondAttribute="centerX" id="wxs-qA-xXM"/>
+                                            <constraint firstItem="242-Gn-JJt" firstAttribute="top" secondItem="5nP-0y-vUb" secondAttribute="bottom" constant="30" id="yHd-3n-mE6"/>
+                                        </constraints>
+                                    </view>
+                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="HowardCenterHeader.png" translatesAutoresizingMaskIntoConstraints="NO" id="Kww-vq-X01">
+                                        <rect key="frame" x="0.0" y="539" width="375" height="128"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="128" id="z9S-VU-p9s"/>
+                                        </constraints>
+                                    </imageView>
                                 </subviews>
-                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <color key="backgroundColor" red="0.0" green="0.4823529412" blue="0.54117647059999996" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                 <constraints>
-                                    <constraint firstItem="mqX-lc-4da" firstAttribute="top" secondItem="95T-TJ-SPu" secondAttribute="top" id="9Ol-k0-dGC"/>
-                                    <constraint firstAttribute="trailing" secondItem="mqX-lc-4da" secondAttribute="trailing" id="IPP-5Z-bgm"/>
-                                    <constraint firstItem="mqX-lc-4da" firstAttribute="leading" secondItem="95T-TJ-SPu" secondAttribute="leading" constant="-1" id="OxG-t1-W9C"/>
-                                    <constraint firstAttribute="bottom" secondItem="mqX-lc-4da" secondAttribute="bottom" id="abS-hC-19z"/>
+                                    <constraint firstAttribute="trailing" secondItem="Kww-vq-X01" secondAttribute="trailing" id="4eg-Jn-sEz"/>
+                                    <constraint firstItem="Kww-vq-X01" firstAttribute="leading" secondItem="95T-TJ-SPu" secondAttribute="leading" id="Ied-AW-2o3"/>
+                                    <constraint firstAttribute="trailing" secondItem="9r1-A2-nDm" secondAttribute="trailing" id="MKt-Uy-FH3"/>
+                                    <constraint firstItem="9r1-A2-nDm" firstAttribute="centerX" secondItem="95T-TJ-SPu" secondAttribute="centerX" id="SzK-fB-mrn"/>
+                                    <constraint firstAttribute="trailing" secondItem="mqX-lc-4da" secondAttribute="trailing" id="Tjt-ct-3FJ"/>
+                                    <constraint firstItem="Kww-vq-X01" firstAttribute="top" secondItem="9r1-A2-nDm" secondAttribute="bottom" constant="-1" id="WcZ-Qr-Gqa"/>
+                                    <constraint firstItem="9r1-A2-nDm" firstAttribute="top" secondItem="mqX-lc-4da" secondAttribute="bottom" id="eDp-fs-6WX"/>
+                                    <constraint firstItem="mqX-lc-4da" firstAttribute="leading" secondItem="95T-TJ-SPu" secondAttribute="leading" constant="-1" id="gg7-Uw-ZpK"/>
+                                    <constraint firstItem="mqX-lc-4da" firstAttribute="top" secondItem="95T-TJ-SPu" secondAttribute="top" id="kBK-Eh-qAI"/>
+                                    <constraint firstItem="9r1-A2-nDm" firstAttribute="leading" secondItem="95T-TJ-SPu" secondAttribute="leading" id="vh6-fN-6BA"/>
+                                    <constraint firstAttribute="bottom" secondItem="Kww-vq-X01" secondAttribute="bottom" id="zN9-vE-eix"/>
                                 </constraints>
                             </view>
                         </subviews>
@@ -91,8 +142,9 @@
                         <constraints>
                             <constraint firstAttribute="trailing" secondItem="95T-TJ-SPu" secondAttribute="trailing" id="5ra-6b-CTQ"/>
                             <constraint firstItem="95T-TJ-SPu" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="PCp-Hs-zKm"/>
-                            <constraint firstItem="95T-TJ-SPu" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="top" id="bVC-iy-iUd"/>
-                            <constraint firstItem="95T-TJ-SPu" firstAttribute="bottom" secondItem="6Tk-OE-BBY" secondAttribute="bottom" id="zdx-w6-lRU"/>
+                            <constraint firstItem="95T-TJ-SPu" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" id="bVC-iy-iUd"/>
+                            <constraint firstItem="9r1-A2-nDm" firstAttribute="bottom" secondItem="Kww-vq-X01" secondAttribute="bottom" constant="-127" id="mGr-co-qul"/>
+                            <constraint firstItem="95T-TJ-SPu" firstAttribute="bottom" secondItem="8bC-Xf-vdC" secondAttribute="bottom" id="zdx-w6-lRU"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
@@ -106,12 +158,14 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
                 <exit id="jY4-Fr-0Sh" userLabel="Exit" sceneMemberID="exit"/>
             </objects>
-            <point key="canvasLocation" x="45.600000000000001" y="19.340329835082461"/>
+            <point key="canvasLocation" x="44" y="18.440779610194905"/>
         </scene>
         <!--App-->
         <scene sceneID="gcj-oX-2Mk">
             <objects>
-                <viewControllerPlaceholder storyboardName="Apps" referencedIdentifier="App" id="z7S-dV-br0" sceneMemberID="viewController"/>
+                <viewControllerPlaceholder storyboardName="Apps" referencedIdentifier="App" id="z7S-dV-br0" sceneMemberID="viewController">
+                    <navigationItem key="navigationItem" id="j4r-xa-K3b"/>
+                </viewControllerPlaceholder>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="FwD-Yb-dqr" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="599" y="-88"/>
@@ -119,7 +173,9 @@
         <!--DynamicNews-->
         <scene sceneID="Hr3-Az-lC7">
             <objects>
-                <viewControllerPlaceholder storyboardName="DynamicNews" referencedIdentifier="DynamicNews" id="g2P-8c-CJ6" sceneMemberID="viewController"/>
+                <viewControllerPlaceholder storyboardName="DynamicNews" referencedIdentifier="DynamicNews" id="g2P-8c-CJ6" sceneMemberID="viewController">
+                    <navigationItem key="navigationItem" id="qWL-B3-Ynp"/>
+                </viewControllerPlaceholder>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="OQA-4u-PgS" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="628" y="21"/>
@@ -127,7 +183,9 @@
         <!--Help-->
         <scene sceneID="vnO-rf-S6s">
             <objects>
-                <viewControllerPlaceholder storyboardName="NewCallScreen" referencedIdentifier="Help" id="q2I-IR-uJd" sceneMemberID="viewController"/>
+                <viewControllerPlaceholder storyboardName="NewCallScreen" referencedIdentifier="Help" id="q2I-IR-uJd" sceneMemberID="viewController">
+                    <navigationItem key="navigationItem" id="63V-uj-sze"/>
+                </viewControllerPlaceholder>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="pnY-KO-lpf" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="544" y="161"/>
@@ -159,13 +217,16 @@
         <!--LaunchScreen-->
         <scene sceneID="2fJ-Kc-lBQ">
             <objects>
-                <viewControllerPlaceholder storyboardName="LaunchScreen" referencedIdentifier="LaunchScreen" id="Nou-9T-gcG" sceneMemberID="viewController"/>
+                <viewControllerPlaceholder storyboardName="LaunchScreen" referencedIdentifier="LaunchScreen" id="Nou-9T-gcG" sceneMemberID="viewController">
+                    <navigationItem key="navigationItem" id="dzw-8Y-k6c"/>
+                </viewControllerPlaceholder>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="L35-D0-Pze" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="709" y="86"/>
         </scene>
     </scenes>
     <resources>
-        <image name="Homepage2.png" width="1500" height="2668"/>
+        <image name="HowardCenterHeader.png" width="630" height="200"/>
+        <image name="Main.png" width="612" height="330.239990234375"/>
     </resources>
 </document>

@@ -36,7 +36,7 @@ class AskHowardController: UIViewController, MFMailComposeViewControllerDelegate
             
             //Populate the subject, message, and receiver of the form
             let emailTitle = "Howard The Elephant's Help"
-            let messageBody = "Type any questions/comments/concerns you have about your safety connection app or experience. I hope you are having a great day!"
+            let messageBody = "Type any questions/comments/concerns you have about your Safety Connection app or experience. I hope you are having a great day!"
             let toRecipents = ["AskSafetyConnection@howardcenter.org"]
             
             //Create a blank mail form

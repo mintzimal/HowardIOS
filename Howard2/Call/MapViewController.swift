@@ -10,6 +10,7 @@
 import UIKit
 import MapKit
 import CoreLocation
+import Contacts
 
 //Class definition and inheritance
 class MapViewController: UIViewController, MKMapViewDelegate {
@@ -23,6 +24,32 @@ class MapViewController: UIViewController, MKMapViewDelegate {
     
     //Button for centering on the user
     var geoButton: UIButton!
+    
+    struct mapStruct:Codable {
+        
+        var name : String
+        var lat : Double
+        var lon : Double
+        
+    }
+    
+    var arrayOfLocations = [
+        mapStruct(name: "Act 1/Bridge",lat:44.480690,lon:-73.211540),
+        mapStruct(name: "HC Administration",lat:44.455810,lon:-73.217970),
+        mapStruct(name: "Baird School",lat:44.447090,lon:-73.214190),
+        mapStruct(name: "Centerpoint School",lat:44.490760,lon:-73.190010),
+        mapStruct(name: "Centerpoint Adolescent Treatment Services",lat:44.464190,lon:-73.154770),
+        mapStruct(name: "Children’s Services",lat:44.44738,lon:-73.2147),
+        mapStruct(name: "Chittenden Clinic",lat:44.461903,lon:-73.17885),
+        mapStruct(name: "Developmental Services",lat:44.477478,lon:-73.21105),
+        mapStruct(name: "Adult Services",lat:44.45544,lon:-73.2145),
+        mapStruct(name: "Jean Garvin School",lat:44.45073,lon:-73.117455),
+        mapStruct(name: "Pine Street Counseling Services",lat:44.455902,lon:-73.21423),
+        mapStruct(name: "Safe Recovery",lat:44.481293,lon:-73.21234),
+        mapStruct(name: "St. Albans Outpatient Substance Abuse Services",lat:44.80558,lon:-73.07028),
+        mapStruct(name: "Winooski Family Center",lat:44.494785,lon:-73.19767)
+    
+    ]
     
     //On the intial view controller load, but before the view controller is initially displayed
     override func viewDidLoad() {
@@ -47,6 +74,14 @@ class MapViewController: UIViewController, MKMapViewDelegate {
         mapView.showsUserLocation = true
         mapView.delegate = self
         
+        for map in arrayOfLocations{
+        
+            let pointToAdd = MKPointAnnotation()
+            pointToAdd.title = map.name
+            pointToAdd.coordinate = CLLocationCoordinate2D(latitude: map.lat, longitude: map.lon)
+            mapView.addAnnotation(pointToAdd)
+        }
+        
         // ** GeoButton Settings **
         let geoButton = UIButton(type: .custom)
         let buttonWidth = 40
@@ -64,6 +99,8 @@ class MapViewController: UIViewController, MKMapViewDelegate {
         
         //Add the button to the map
         view.addSubview(geoButton)
+        
+        
     }
     
     //Center on the user when the map first appears

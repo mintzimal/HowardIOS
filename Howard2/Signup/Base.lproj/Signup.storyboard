@@ -16,169 +16,267 @@
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="pinpad.png" translatesAutoresizingMaskIntoConstraints="NO" id="6U4-gF-E7k">
-                                <rect key="frame" x="-8" y="0.0" width="393" height="682"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="RCF-PR-1sh">
+                                <rect key="frame" x="0.0" y="192" width="375" height="509"/>
+                                <subviews>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="BSl-8c-ai8">
+                                        <rect key="frame" x="80" y="87" width="58" height="58"/>
+                                        <color key="backgroundColor" red="0.93728923799999997" green="0.93697673079999999" blue="0.95686596629999998" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="58" id="WZJ-O0-BNT"/>
+                                            <constraint firstAttribute="width" constant="58" id="qaJ-Qa-ar3"/>
+                                        </constraints>
+                                        <fontDescription key="fontDescription" name="TimesNewRomanPSMT" family="Times New Roman" pointSize="32"/>
+                                        <size key="titleShadowOffset" width="2" height="2"/>
+                                        <state key="normal" title="1">
+                                            <color key="titleColor" cocoaTouchSystemColor="darkTextColor"/>
+                                        </state>
+                                        <connections>
+                                            <action selector="numberButtonPress:" destination="cdn-A1-9MT" eventType="touchUpInside" id="Zsp-QX-CPh"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="8T4-L9-ZIk">
+                                        <rect key="frame" x="159" y="315" width="57" height="58"/>
+                                        <color key="backgroundColor" red="0.93728923799999997" green="0.93697673079999999" blue="0.95686596629999998" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                        <fontDescription key="fontDescription" name="TimesNewRomanPSMT" family="Times New Roman" pointSize="32"/>
+                                        <size key="titleShadowOffset" width="2" height="2"/>
+                                        <state key="normal" title="0">
+                                            <color key="titleColor" cocoaTouchSystemColor="darkTextColor"/>
+                                        </state>
+                                        <connections>
+                                            <action selector="numberButtonPress:" destination="cdn-A1-9MT" eventType="touchUpInside" id="oeR-60-Hqc"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="JMN-cC-Umt">
+                                        <rect key="frame" x="80" y="162" width="58" height="58"/>
+                                        <color key="backgroundColor" red="0.93728923799999997" green="0.93697673079999999" blue="0.95686596629999998" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="58" id="mhp-Ia-jWD"/>
+                                            <constraint firstAttribute="width" constant="58" id="uFu-uZ-EFX"/>
+                                        </constraints>
+                                        <fontDescription key="fontDescription" name="TimesNewRomanPSMT" family="Times New Roman" pointSize="32"/>
+                                        <size key="titleShadowOffset" width="2" height="2"/>
+                                        <state key="normal" title="4">
+                                            <color key="titleColor" cocoaTouchSystemColor="darkTextColor"/>
+                                        </state>
+                                        <connections>
+                                            <action selector="numberButtonPress:" destination="cdn-A1-9MT" eventType="touchUpInside" id="J2R-rR-akL"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="NLg-5Z-7dM">
+                                        <rect key="frame" x="236" y="162" width="58" height="58"/>
+                                        <color key="backgroundColor" red="0.93728923799999997" green="0.93697673079999999" blue="0.95686596629999998" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" constant="58" id="G52-cU-WgB"/>
+                                        </constraints>
+                                        <fontDescription key="fontDescription" name="TimesNewRomanPSMT" family="Times New Roman" pointSize="32"/>
+                                        <size key="titleShadowOffset" width="2" height="2"/>
+                                        <state key="normal" title="6">
+                                            <color key="titleColor" cocoaTouchSystemColor="darkTextColor"/>
+                                        </state>
+                                        <connections>
+                                            <action selector="numberButtonPress:" destination="cdn-A1-9MT" eventType="touchUpInside" id="eVP-ny-69e"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Rgz-Ab-efw">
+                                        <rect key="frame" x="80" y="238" width="58" height="58"/>
+                                        <color key="backgroundColor" red="0.93728923799999997" green="0.93697673079999999" blue="0.95686596629999998" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="58" id="YOL-0p-vvP"/>
+                                            <constraint firstAttribute="width" constant="58" id="dtS-tO-NhK"/>
+                                        </constraints>
+                                        <fontDescription key="fontDescription" name="TimesNewRomanPSMT" family="Times New Roman" pointSize="32"/>
+                                        <size key="titleShadowOffset" width="2" height="2"/>
+                                        <state key="normal" title="7">
+                                            <color key="titleColor" cocoaTouchSystemColor="darkTextColor"/>
+                                        </state>
+                                        <connections>
+                                            <action selector="numberButtonPress:" destination="cdn-A1-9MT" eventType="touchUpInside" id="zzB-c7-fEt"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="5vT-bl-Tad">
+                                        <rect key="frame" x="236" y="238" width="57" height="58"/>
+                                        <color key="backgroundColor" red="0.93728923799999997" green="0.93697673079999999" blue="0.95686596629999998" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                        <fontDescription key="fontDescription" name="TimesNewRomanPSMT" family="Times New Roman" pointSize="32"/>
+                                        <size key="titleShadowOffset" width="2" height="2"/>
+                                        <state key="normal" title="9">
+                                            <color key="titleColor" cocoaTouchSystemColor="darkTextColor"/>
+                                        </state>
+                                        <connections>
+                                            <action selector="numberButtonPress:" destination="cdn-A1-9MT" eventType="touchUpInside" id="ulN-Fo-zqp"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="kkD-z8-dnc">
+                                        <rect key="frame" x="246" y="26" width="47" height="30"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" constant="47" id="PSu-Yx-iPM"/>
+                                        </constraints>
+                                        <state key="normal" title="Show">
+                                            <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        </state>
+                                        <connections>
+                                            <action selector="ShowButton:" destination="cdn-A1-9MT" eventType="touchUpInside" id="hcG-y3-znR"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="hgV-Zi-y7n">
+                                        <rect key="frame" x="236" y="87" width="58" height="58"/>
+                                        <color key="backgroundColor" red="0.93728923799999997" green="0.93697673079999999" blue="0.95686596629999998" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" constant="58" id="Tsb-NB-Ai4"/>
+                                        </constraints>
+                                        <fontDescription key="fontDescription" name="TimesNewRomanPSMT" family="Times New Roman" pointSize="32"/>
+                                        <size key="titleShadowOffset" width="2" height="2"/>
+                                        <state key="normal" title="3">
+                                            <color key="titleColor" cocoaTouchSystemColor="darkTextColor"/>
+                                        </state>
+                                        <connections>
+                                            <action selector="numberButtonPress:" destination="cdn-A1-9MT" eventType="touchUpInside" id="gfq-5v-zjn"/>
+                                        </connections>
+                                    </button>
+                                    <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" clearButtonMode="always" translatesAutoresizingMaskIntoConstraints="NO" id="qCk-ra-IWB">
+                                        <rect key="frame" x="138" y="26" width="99" height="30"/>
+                                        <color key="backgroundColor" white="0.66666666669999997" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="32"/>
+                                        <textInputTraits key="textInputTraits" secureTextEntry="YES"/>
+                                        <connections>
+                                            <action selector="ShowText:" destination="cdn-A1-9MT" eventType="editingDidEnd" id="CsE-BT-Ysf"/>
+                                        </connections>
+                                    </textField>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="9EO-5p-YAP">
+                                        <rect key="frame" x="159" y="238" width="57" height="58"/>
+                                        <color key="backgroundColor" red="0.93728923799999997" green="0.93697673079999999" blue="0.95686596629999998" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" constant="57" id="xrt-dP-cvf"/>
+                                        </constraints>
+                                        <fontDescription key="fontDescription" name="TimesNewRomanPSMT" family="Times New Roman" pointSize="32"/>
+                                        <size key="titleShadowOffset" width="2" height="2"/>
+                                        <state key="normal" title="8">
+                                            <color key="titleColor" cocoaTouchSystemColor="darkTextColor"/>
+                                        </state>
+                                        <connections>
+                                            <action selector="numberButtonPress:" destination="cdn-A1-9MT" eventType="touchUpInside" id="hBg-Rp-kSY"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="evR-ki-eBN">
+                                        <rect key="frame" x="68" y="393" width="239" height="55"/>
+                                        <color key="backgroundColor" red="0.93728923799999997" green="0.93697673079999999" blue="0.95686596629999998" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="55" id="vkH-gH-aec"/>
+                                        </constraints>
+                                        <fontDescription key="fontDescription" name="TimesNewRomanPSMT" family="Times New Roman" pointSize="32"/>
+                                        <size key="titleShadowOffset" width="2" height="2"/>
+                                        <state key="normal" title="Submit">
+                                            <color key="titleColor" cocoaTouchSystemColor="darkTextColor"/>
+                                        </state>
+                                        <connections>
+                                            <action selector="SubmitButton:" destination="cdn-A1-9MT" eventType="touchUpInside" id="d37-nE-VTT"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Z1a-Zc-Ewq">
+                                        <rect key="frame" x="159" y="86" width="57" height="58"/>
+                                        <color key="backgroundColor" red="0.93728923799999997" green="0.93697673079999999" blue="0.95686596629999998" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="58" id="MwP-Zb-b3r"/>
+                                            <constraint firstAttribute="width" constant="57" id="SgU-ma-gzf"/>
+                                            <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="57" id="wsJ-a1-1KD"/>
+                                        </constraints>
+                                        <fontDescription key="fontDescription" name="TimesNewRomanPSMT" family="Times New Roman" pointSize="32"/>
+                                        <size key="titleShadowOffset" width="2" height="2"/>
+                                        <state key="normal" title="2">
+                                            <color key="titleColor" cocoaTouchSystemColor="darkTextColor"/>
+                                        </state>
+                                        <connections>
+                                            <action selector="numberButtonPress:" destination="cdn-A1-9MT" eventType="touchUpInside" id="UYq-xh-n1i"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="f4n-qI-kOv">
+                                        <rect key="frame" x="159" y="161" width="57" height="58"/>
+                                        <color key="backgroundColor" red="0.93728923799999997" green="0.93697673079999999" blue="0.95686596629999998" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" constant="57" id="Tx4-Zx-TCO"/>
+                                        </constraints>
+                                        <fontDescription key="fontDescription" name="TimesNewRomanPSMT" family="Times New Roman" pointSize="32"/>
+                                        <size key="titleShadowOffset" width="2" height="2"/>
+                                        <state key="normal" title="5">
+                                            <color key="titleColor" cocoaTouchSystemColor="darkTextColor"/>
+                                        </state>
+                                        <connections>
+                                            <action selector="numberButtonPress:" destination="cdn-A1-9MT" eventType="touchUpInside" id="KSd-n8-hHS"/>
+                                        </connections>
+                                    </button>
+                                </subviews>
+                                <color key="backgroundColor" red="0.0" green="0.4823529412" blue="0.54117647059999996" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                <constraints>
+                                    <constraint firstItem="hgV-Zi-y7n" firstAttribute="leading" secondItem="Z1a-Zc-Ewq" secondAttribute="trailing" constant="20" id="45S-KX-sXl"/>
+                                    <constraint firstItem="9EO-5p-YAP" firstAttribute="top" secondItem="5vT-bl-Tad" secondAttribute="top" id="4FP-nW-YxM"/>
+                                    <constraint firstItem="9EO-5p-YAP" firstAttribute="trailing" secondItem="8T4-L9-ZIk" secondAttribute="trailing" id="54V-Tb-eBz"/>
+                                    <constraint firstItem="Z1a-Zc-Ewq" firstAttribute="top" secondItem="qCk-ra-IWB" secondAttribute="bottom" constant="30" id="6V3-aM-o0b"/>
+                                    <constraint firstItem="qCk-ra-IWB" firstAttribute="bottom" secondItem="kkD-z8-dnc" secondAttribute="bottom" id="8PT-ea-fUk"/>
+                                    <constraint firstItem="hgV-Zi-y7n" firstAttribute="trailing" secondItem="NLg-5Z-7dM" secondAttribute="trailing" id="A1o-DA-JT1"/>
+                                    <constraint firstItem="JMN-cC-Umt" firstAttribute="trailing" secondItem="Rgz-Ab-efw" secondAttribute="trailing" id="B68-vS-MOa"/>
+                                    <constraint firstItem="9EO-5p-YAP" firstAttribute="leading" secondItem="8T4-L9-ZIk" secondAttribute="leading" id="BZZ-Oe-qi5"/>
+                                    <constraint firstItem="JMN-cC-Umt" firstAttribute="top" secondItem="BSl-8c-ai8" secondAttribute="bottom" constant="17" id="Bch-fA-9Hv"/>
+                                    <constraint firstItem="9EO-5p-YAP" firstAttribute="baseline" secondItem="5vT-bl-Tad" secondAttribute="baseline" id="CVo-La-7hh"/>
+                                    <constraint firstItem="Rgz-Ab-efw" firstAttribute="top" secondItem="JMN-cC-Umt" secondAttribute="bottom" constant="18" id="Cbi-Pk-A1j"/>
+                                    <constraint firstItem="BSl-8c-ai8" firstAttribute="firstBaseline" secondItem="hgV-Zi-y7n" secondAttribute="firstBaseline" id="FTb-jc-UcT"/>
+                                    <constraint firstItem="JMN-cC-Umt" firstAttribute="top" secondItem="NLg-5Z-7dM" secondAttribute="top" id="GXO-sj-iEy"/>
+                                    <constraint firstItem="8T4-L9-ZIk" firstAttribute="centerX" secondItem="evR-ki-eBN" secondAttribute="centerX" id="Gup-Fx-wm0"/>
+                                    <constraint firstItem="BSl-8c-ai8" firstAttribute="trailing" secondItem="JMN-cC-Umt" secondAttribute="trailing" id="Hyu-uU-12M"/>
+                                    <constraint firstItem="kkD-z8-dnc" firstAttribute="leading" secondItem="qCk-ra-IWB" secondAttribute="trailing" constant="9" id="IOK-uf-V0m"/>
+                                    <constraint firstItem="JMN-cC-Umt" firstAttribute="leading" secondItem="Rgz-Ab-efw" secondAttribute="leading" id="Iw6-m2-heC"/>
+                                    <constraint firstItem="f4n-qI-kOv" firstAttribute="leading" secondItem="9EO-5p-YAP" secondAttribute="leading" id="Np8-hr-IWL"/>
+                                    <constraint firstItem="NLg-5Z-7dM" firstAttribute="trailing" secondItem="5vT-bl-Tad" secondAttribute="trailing" constant="1" id="OgO-Ry-HGu"/>
+                                    <constraint firstItem="BSl-8c-ai8" firstAttribute="leading" secondItem="JMN-cC-Umt" secondAttribute="leading" id="R15-7v-vUj"/>
+                                    <constraint firstItem="evR-ki-eBN" firstAttribute="leading" secondItem="RCF-PR-1sh" secondAttribute="leading" constant="68" id="U6D-u1-ebn"/>
+                                    <constraint firstItem="hgV-Zi-y7n" firstAttribute="top" secondItem="kkD-z8-dnc" secondAttribute="bottom" constant="31" id="V4x-0p-orK"/>
+                                    <constraint firstItem="JMN-cC-Umt" firstAttribute="firstBaseline" secondItem="NLg-5Z-7dM" secondAttribute="firstBaseline" id="a6B-WE-q84"/>
+                                    <constraint firstItem="f4n-qI-kOv" firstAttribute="trailing" secondItem="9EO-5p-YAP" secondAttribute="trailing" id="apC-bH-qcI"/>
+                                    <constraint firstItem="qCk-ra-IWB" firstAttribute="centerX" secondItem="RCF-PR-1sh" secondAttribute="centerX" id="atg-xN-nV6"/>
+                                    <constraint firstItem="qCk-ra-IWB" firstAttribute="top" secondItem="RCF-PR-1sh" secondAttribute="top" constant="26" id="cKv-Ik-viP"/>
+                                    <constraint firstItem="Z1a-Zc-Ewq" firstAttribute="trailing" secondItem="f4n-qI-kOv" secondAttribute="trailing" id="dAn-Sz-ZHp"/>
+                                    <constraint firstAttribute="trailing" secondItem="kkD-z8-dnc" secondAttribute="trailing" constant="82" id="dKH-79-hQC"/>
+                                    <constraint firstItem="NLg-5Z-7dM" firstAttribute="leading" secondItem="5vT-bl-Tad" secondAttribute="leading" id="e16-of-Ljk"/>
+                                    <constraint firstItem="8T4-L9-ZIk" firstAttribute="top" secondItem="9EO-5p-YAP" secondAttribute="bottom" constant="19" id="gkV-f8-UrY"/>
+                                    <constraint firstItem="Z1a-Zc-Ewq" firstAttribute="leading" secondItem="BSl-8c-ai8" secondAttribute="trailing" constant="21" id="jlB-aA-cqF"/>
+                                    <constraint firstItem="hgV-Zi-y7n" firstAttribute="leading" secondItem="NLg-5Z-7dM" secondAttribute="leading" id="loF-rz-FsX"/>
+                                    <constraint firstItem="Rgz-Ab-efw" firstAttribute="top" secondItem="9EO-5p-YAP" secondAttribute="top" id="m3F-kW-0jr"/>
+                                    <constraint firstItem="BSl-8c-ai8" firstAttribute="top" secondItem="hgV-Zi-y7n" secondAttribute="top" id="mc1-86-WJw"/>
+                                    <constraint firstItem="Z1a-Zc-Ewq" firstAttribute="leading" secondItem="f4n-qI-kOv" secondAttribute="leading" id="nA0-BI-3gh"/>
+                                    <constraint firstItem="JMN-cC-Umt" firstAttribute="baseline" secondItem="NLg-5Z-7dM" secondAttribute="baseline" id="oKc-vT-24w"/>
+                                    <constraint firstItem="9EO-5p-YAP" firstAttribute="firstBaseline" secondItem="5vT-bl-Tad" secondAttribute="firstBaseline" id="pdX-54-eK1"/>
+                                    <constraint firstItem="9EO-5p-YAP" firstAttribute="top" secondItem="f4n-qI-kOv" secondAttribute="bottom" constant="19" id="qQb-Wf-4Y8"/>
+                                    <constraint firstItem="BSl-8c-ai8" firstAttribute="baseline" secondItem="hgV-Zi-y7n" secondAttribute="baseline" id="rdV-rD-D5x"/>
+                                    <constraint firstItem="evR-ki-eBN" firstAttribute="top" secondItem="Rgz-Ab-efw" secondAttribute="bottom" constant="97" id="rvB-4R-bVr"/>
+                                    <constraint firstItem="evR-ki-eBN" firstAttribute="top" secondItem="8T4-L9-ZIk" secondAttribute="bottom" constant="20" id="tE8-s8-Ogz"/>
+                                    <constraint firstItem="f4n-qI-kOv" firstAttribute="top" secondItem="Z1a-Zc-Ewq" secondAttribute="bottom" constant="17" id="tXp-Pu-d3z"/>
+                                    <constraint firstItem="BSl-8c-ai8" firstAttribute="top" secondItem="RCF-PR-1sh" secondAttribute="top" constant="87" id="uuY-aJ-Fcl"/>
+                                    <constraint firstItem="Rgz-Ab-efw" firstAttribute="baseline" secondItem="9EO-5p-YAP" secondAttribute="baseline" id="vW8-SJ-HLH"/>
+                                    <constraint firstItem="qCk-ra-IWB" firstAttribute="centerX" secondItem="Z1a-Zc-Ewq" secondAttribute="centerX" id="zXp-5Y-VHQ"/>
+                                </constraints>
+                            </view>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Main.png" translatesAutoresizingMaskIntoConstraints="NO" id="6U4-gF-E7k">
+                                <rect key="frame" x="16" y="0.0" width="343" height="192"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="192" id="udY-IV-gnA"/>
+                                </constraints>
                             </imageView>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="8T4-L9-ZIk">
-                                <rect key="frame" x="160" y="490" width="58" height="58"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <fontDescription key="fontDescription" name="TimesNewRomanPSMT" family="Times New Roman" pointSize="32"/>
-                                <size key="titleShadowOffset" width="2" height="2"/>
-                                <state key="normal" title="0">
-                                    <color key="titleColor" cocoaTouchSystemColor="darkTextColor"/>
-                                </state>
-                                <connections>
-                                    <action selector="numberButtonPress:" destination="cdn-A1-9MT" eventType="touchUpInside" id="oeR-60-Hqc"/>
-                                </connections>
-                            </button>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="BSl-8c-ai8">
-                                <rect key="frame" x="78" y="288" width="58" height="58"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <fontDescription key="fontDescription" name="TimesNewRomanPSMT" family="Times New Roman" pointSize="32"/>
-                                <size key="titleShadowOffset" width="2" height="2"/>
-                                <state key="normal" title="1">
-                                    <color key="titleColor" cocoaTouchSystemColor="darkTextColor"/>
-                                </state>
-                                <connections>
-                                    <action selector="numberButtonPress:" destination="cdn-A1-9MT" eventType="touchUpInside" id="Zsp-QX-CPh"/>
-                                </connections>
-                            </button>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="evR-ki-eBN">
-                                <rect key="frame" x="72" y="585" width="238" height="62"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <fontDescription key="fontDescription" name="TimesNewRomanPSMT" family="Times New Roman" pointSize="32"/>
-                                <size key="titleShadowOffset" width="2" height="2"/>
-                                <state key="normal" title="Submit">
-                                    <color key="titleColor" cocoaTouchSystemColor="darkTextColor"/>
-                                </state>
-                                <connections>
-                                    <action selector="SubmitButton:" destination="cdn-A1-9MT" eventType="touchUpInside" id="d37-nE-VTT"/>
-                                </connections>
-                            </button>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="f4n-qI-kOv">
-                                <rect key="frame" x="160" y="355" width="58" height="58"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <fontDescription key="fontDescription" name="TimesNewRomanPSMT" family="Times New Roman" pointSize="32"/>
-                                <size key="titleShadowOffset" width="2" height="2"/>
-                                <state key="normal" title="5">
-                                    <color key="titleColor" cocoaTouchSystemColor="darkTextColor"/>
-                                </state>
-                                <connections>
-                                    <action selector="numberButtonPress:" destination="cdn-A1-9MT" eventType="touchUpInside" id="KSd-n8-hHS"/>
-                                </connections>
-                            </button>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Z1a-Zc-Ewq">
-                                <rect key="frame" x="161" y="287" width="58" height="58"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <fontDescription key="fontDescription" name="TimesNewRomanPSMT" family="Times New Roman" pointSize="32"/>
-                                <size key="titleShadowOffset" width="2" height="2"/>
-                                <state key="normal" title="2">
-                                    <color key="titleColor" cocoaTouchSystemColor="darkTextColor"/>
-                                </state>
-                                <connections>
-                                    <action selector="numberButtonPress:" destination="cdn-A1-9MT" eventType="touchUpInside" id="UYq-xh-n1i"/>
-                                </connections>
-                            </button>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="NLg-5Z-7dM">
-                                <rect key="frame" x="242" y="356" width="58" height="58"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <fontDescription key="fontDescription" name="TimesNewRomanPSMT" family="Times New Roman" pointSize="32"/>
-                                <size key="titleShadowOffset" width="2" height="2"/>
-                                <state key="normal" title="6">
-                                    <color key="titleColor" cocoaTouchSystemColor="darkTextColor"/>
-                                </state>
-                                <connections>
-                                    <action selector="numberButtonPress:" destination="cdn-A1-9MT" eventType="touchUpInside" id="eVP-ny-69e"/>
-                                </connections>
-                            </button>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="JMN-cC-Umt">
-                                <rect key="frame" x="78" y="355" width="58" height="58"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <fontDescription key="fontDescription" name="TimesNewRomanPSMT" family="Times New Roman" pointSize="32"/>
-                                <size key="titleShadowOffset" width="2" height="2"/>
-                                <state key="normal" title="4">
-                                    <color key="titleColor" cocoaTouchSystemColor="darkTextColor"/>
-                                </state>
-                                <connections>
-                                    <action selector="numberButtonPress:" destination="cdn-A1-9MT" eventType="touchUpInside" id="J2R-rR-akL"/>
-                                </connections>
-                            </button>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="9EO-5p-YAP">
-                                <rect key="frame" x="160" y="422" width="58" height="58"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <fontDescription key="fontDescription" name="TimesNewRomanPSMT" family="Times New Roman" pointSize="32"/>
-                                <size key="titleShadowOffset" width="2" height="2"/>
-                                <state key="normal" title="8">
-                                    <color key="titleColor" cocoaTouchSystemColor="darkTextColor"/>
-                                </state>
-                                <connections>
-                                    <action selector="numberButtonPress:" destination="cdn-A1-9MT" eventType="touchUpInside" id="hBg-Rp-kSY"/>
-                                </connections>
-                            </button>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="5vT-bl-Tad">
-                                <rect key="frame" x="242" y="422" width="58" height="58"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <fontDescription key="fontDescription" name="TimesNewRomanPSMT" family="Times New Roman" pointSize="32"/>
-                                <size key="titleShadowOffset" width="2" height="2"/>
-                                <state key="normal" title="9">
-                                    <color key="titleColor" cocoaTouchSystemColor="darkTextColor"/>
-                                </state>
-                                <connections>
-                                    <action selector="numberButtonPress:" destination="cdn-A1-9MT" eventType="touchUpInside" id="ulN-Fo-zqp"/>
-                                </connections>
-                            </button>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Rgz-Ab-efw">
-                                <rect key="frame" x="78" y="422" width="58" height="58"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <fontDescription key="fontDescription" name="TimesNewRomanPSMT" family="Times New Roman" pointSize="32"/>
-                                <size key="titleShadowOffset" width="2" height="2"/>
-                                <state key="normal" title="7">
-                                    <color key="titleColor" cocoaTouchSystemColor="darkTextColor"/>
-                                </state>
-                                <connections>
-                                    <action selector="numberButtonPress:" destination="cdn-A1-9MT" eventType="touchUpInside" id="zzB-c7-fEt"/>
-                                </connections>
-                            </button>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="kkD-z8-dnc">
-                                <rect key="frame" x="254" y="231" width="38" height="30"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <state key="normal" title="Show">
-                                    <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                </state>
-                                <connections>
-                                    <action selector="ShowButton:" destination="cdn-A1-9MT" eventType="touchUpInside" id="hcG-y3-znR"/>
-                                </connections>
-                            </button>
-                            <textField opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" clearButtonMode="always" translatesAutoresizingMaskIntoConstraints="NO" id="qCk-ra-IWB">
-                                <rect key="frame" x="140" y="231" width="97" height="30"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <color key="backgroundColor" white="0.66666666669999997" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="32"/>
-                                <textInputTraits key="textInputTraits" secureTextEntry="YES"/>
-                                <connections>
-                                    <action selector="ShowText:" destination="cdn-A1-9MT" eventType="editingDidEnd" id="CsE-BT-Ysf"/>
-                                </connections>
-                            </textField>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="hgV-Zi-y7n">
-                                <rect key="frame" x="242" y="287" width="58" height="58"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <fontDescription key="fontDescription" name="TimesNewRomanPSMT" family="Times New Roman" pointSize="32"/>
-                                <size key="titleShadowOffset" width="2" height="2"/>
-                                <state key="normal" title="3">
-                                    <color key="titleColor" cocoaTouchSystemColor="darkTextColor"/>
-                                </state>
-                                <connections>
-                                    <action selector="numberButtonPress:" destination="cdn-A1-9MT" eventType="touchUpInside" id="gfq-5v-zjn"/>
-                                </connections>
-                            </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="RCF-PR-1sh" firstAttribute="leading" secondItem="no3-Tj-giC" secondAttribute="leading" id="TAb-XR-HgY"/>
+                            <constraint firstItem="6U4-gF-E7k" firstAttribute="top" secondItem="no3-Tj-giC" secondAttribute="top" id="VO2-gW-4tw"/>
+                            <constraint firstItem="6U4-gF-E7k" firstAttribute="leading" secondItem="aiU-zA-Q98" secondAttribute="leadingMargin" id="Vi1-Ov-iCr"/>
+                            <constraint firstItem="6U4-gF-E7k" firstAttribute="trailing" secondItem="aiU-zA-Q98" secondAttribute="trailingMargin" id="YZv-bO-wtU"/>
+                            <constraint firstItem="RCF-PR-1sh" firstAttribute="top" secondItem="6U4-gF-E7k" secondAttribute="bottom" id="ZAH-ok-vbp"/>
+                            <constraint firstItem="6U4-gF-E7k" firstAttribute="centerX" secondItem="RCF-PR-1sh" secondAttribute="centerX" id="d2j-ET-iuu"/>
+                            <constraint firstAttribute="bottomMargin" secondItem="RCF-PR-1sh" secondAttribute="bottom" constant="-34" id="gEn-5H-q2Z"/>
+                        </constraints>
                         <viewLayoutGuide key="safeArea" id="no3-Tj-giC"/>
                     </view>
                     <nil key="simulatedTopBarMetrics"/>
                     <connections>
+                        <outlet property="Button0" destination="8T4-L9-ZIk" id="064-6L-66B"/>
                         <outlet property="Button1" destination="BSl-8c-ai8" id="5ag-nc-UFL"/>
                         <outlet property="Button2" destination="Z1a-Zc-Ewq" id="tFS-5Y-t50"/>
                         <outlet property="Button3" destination="hgV-Zi-y7n" id="qk3-56-cKh"/>
@@ -195,7 +293,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Oxn-Oi-JcZ" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="136.80000000000001" y="129.98500749625188"/>
+            <point key="canvasLocation" x="136.80000000000001" y="129.08545727136433"/>
         </scene>
         <!--LaunchScreen-->
         <scene sceneID="iD5-Of-bTv">
@@ -213,55 +311,91 @@
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="DistrictSelect.png" translatesAutoresizingMaskIntoConstraints="NO" id="99g-ly-E2t">
-                                <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Main.png" translatesAutoresizingMaskIntoConstraints="NO" id="99g-ly-E2t">
+                                <rect key="frame" x="0.0" y="0.0" width="375" height="191"/>
                             </imageView>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Qxd-je-5N8">
-                                <rect key="frame" x="62" y="517" width="246" height="84"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <fontDescription key="fontDescription" name="TimesNewRomanPSMT" family="Times New Roman" pointSize="32"/>
-                                <size key="titleShadowOffset" width="2" height="2"/>
-                                <state key="normal" title="District 2">
-                                    <color key="titleColor" cocoaTouchSystemColor="darkTextColor"/>
-                                </state>
-                                <connections>
-                                    <action selector="DistrictSelected:" destination="g4d-Id-B9p" eventType="touchUpInside" id="eSs-XO-yK5"/>
-                                    <segue destination="6ty-a7-uhL" kind="show" id="Rfi-eQ-lR7"/>
-                                </connections>
-                            </button>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Select your district:" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="pdb-rT-Nng">
-                                <rect key="frame" x="30" y="261" width="313" height="68"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <fontDescription key="fontDescription" name="TimesNewRomanPSMT" family="Times New Roman" pointSize="24"/>
-                                <nil key="textColor"/>
-                                <nil key="highlightedColor"/>
-                            </label>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="qV9-Fe-mzH">
-                                <rect key="frame" x="62" y="379" width="246" height="81"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <fontDescription key="fontDescription" name="TimesNewRomanPSMT" family="Times New Roman" pointSize="32"/>
-                                <size key="titleShadowOffset" width="2" height="2"/>
-                                <state key="normal" title="District 1">
-                                    <color key="titleColor" cocoaTouchSystemColor="darkTextColor"/>
-                                </state>
-                                <connections>
-                                    <action selector="DistrictSelected:" destination="g4d-Id-B9p" eventType="touchUpInside" id="DyC-pz-ON4"/>
-                                    <segue destination="6ty-a7-uhL" kind="show" id="jYI-dL-xhZ"/>
-                                </connections>
-                            </button>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="PPJ-ws-deg">
+                                <rect key="frame" x="0.0" y="191" width="375" height="510"/>
+                                <subviews>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Qxd-je-5N8">
+                                        <rect key="frame" x="64" y="308" width="247" height="81"/>
+                                        <color key="backgroundColor" red="0.93728923799999997" green="0.93697673079999999" blue="0.95686596629999998" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="81" id="Xg6-Pl-uGO"/>
+                                        </constraints>
+                                        <fontDescription key="fontDescription" name="TimesNewRomanPSMT" family="Times New Roman" pointSize="32"/>
+                                        <size key="titleShadowOffset" width="2" height="2"/>
+                                        <state key="normal" title="District 2">
+                                            <color key="titleColor" cocoaTouchSystemColor="darkTextColor"/>
+                                        </state>
+                                        <connections>
+                                            <action selector="DistrictSelected:" destination="g4d-Id-B9p" eventType="touchUpInside" id="eSs-XO-yK5"/>
+                                            <segue destination="6ty-a7-uhL" kind="show" id="Rfi-eQ-lR7"/>
+                                        </connections>
+                                    </button>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Select your district:" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="pdb-rT-Nng">
+                                        <rect key="frame" x="31" y="66" width="313" height="68"/>
+                                        <color key="backgroundColor" red="0.93728923799999997" green="0.93697673079999999" blue="0.95686596629999998" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="68" id="pBw-7f-uiG"/>
+                                        </constraints>
+                                        <fontDescription key="fontDescription" name="TimesNewRomanPSMT" family="Times New Roman" pointSize="24"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="qV9-Fe-mzH">
+                                        <rect key="frame" x="64" y="181" width="247" height="81"/>
+                                        <color key="backgroundColor" red="0.93728923799999997" green="0.93697673079999999" blue="0.95686596629999998" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="81" id="wc7-rN-h0L"/>
+                                        </constraints>
+                                        <fontDescription key="fontDescription" name="TimesNewRomanPSMT" family="Times New Roman" pointSize="32"/>
+                                        <size key="titleShadowOffset" width="2" height="2"/>
+                                        <state key="normal" title="District 1">
+                                            <color key="titleColor" cocoaTouchSystemColor="darkTextColor"/>
+                                        </state>
+                                        <connections>
+                                            <action selector="DistrictSelected:" destination="g4d-Id-B9p" eventType="touchUpInside" id="DyC-pz-ON4"/>
+                                            <segue destination="6ty-a7-uhL" kind="show" id="jYI-dL-xhZ"/>
+                                        </connections>
+                                    </button>
+                                </subviews>
+                                <color key="backgroundColor" red="0.0" green="0.4823529412" blue="0.54117647059999996" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                <constraints>
+                                    <constraint firstItem="qV9-Fe-mzH" firstAttribute="trailing" secondItem="Qxd-je-5N8" secondAttribute="trailing" id="ArP-dC-L2R"/>
+                                    <constraint firstItem="pdb-rT-Nng" firstAttribute="top" secondItem="PPJ-ws-deg" secondAttribute="top" constant="66" id="Q4V-0H-hd8"/>
+                                    <constraint firstItem="qV9-Fe-mzH" firstAttribute="top" secondItem="pdb-rT-Nng" secondAttribute="bottom" constant="47" id="b2b-nj-lSu"/>
+                                    <constraint firstItem="Qxd-je-5N8" firstAttribute="top" secondItem="qV9-Fe-mzH" secondAttribute="bottom" constant="46" id="cBq-vg-90E"/>
+                                    <constraint firstItem="pdb-rT-Nng" firstAttribute="leading" secondItem="PPJ-ws-deg" secondAttribute="leading" constant="31" id="jb1-D1-1Nb"/>
+                                    <constraint firstItem="qV9-Fe-mzH" firstAttribute="centerX" secondItem="PPJ-ws-deg" secondAttribute="centerX" id="qLL-gg-1cO"/>
+                                    <constraint firstItem="pdb-rT-Nng" firstAttribute="centerX" secondItem="qV9-Fe-mzH" secondAttribute="centerX" id="s0e-jb-h9D"/>
+                                    <constraint firstItem="qV9-Fe-mzH" firstAttribute="leading" secondItem="Qxd-je-5N8" secondAttribute="leading" id="s0u-8F-9OM"/>
+                                    <constraint firstItem="qV9-Fe-mzH" firstAttribute="leading" secondItem="PPJ-ws-deg" secondAttribute="leading" constant="64" id="xgb-Mj-DVZ"/>
+                                </constraints>
+                            </view>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="99g-ly-E2t" firstAttribute="leading" secondItem="PPJ-ws-deg" secondAttribute="leading" id="1qj-kf-mhc"/>
+                            <constraint firstItem="PPJ-ws-deg" firstAttribute="top" secondItem="F2e-Aq-RGN" secondAttribute="top" constant="191" id="90U-Yl-by7"/>
+                            <constraint firstItem="99g-ly-E2t" firstAttribute="top" secondItem="F2e-Aq-RGN" secondAttribute="top" id="GjV-ff-WxQ"/>
+                            <constraint firstItem="99g-ly-E2t" firstAttribute="centerX" secondItem="Ijv-Fc-8ww" secondAttribute="centerX" id="Q2F-1o-Ggx"/>
+                            <constraint firstItem="PPJ-ws-deg" firstAttribute="bottom" secondItem="F2e-Aq-RGN" secondAttribute="bottom" constant="34" id="aXe-tX-7Fq"/>
+                            <constraint firstItem="99g-ly-E2t" firstAttribute="trailing" secondItem="PPJ-ws-deg" secondAttribute="trailing" id="cCe-bg-9lb"/>
+                            <constraint firstItem="99g-ly-E2t" firstAttribute="leading" secondItem="F2e-Aq-RGN" secondAttribute="leading" id="ddo-3c-ZzS"/>
+                            <constraint firstItem="PPJ-ws-deg" firstAttribute="top" secondItem="99g-ly-E2t" secondAttribute="bottom" id="u7W-qr-GkV"/>
+                        </constraints>
                         <viewLayoutGuide key="safeArea" id="F2e-Aq-RGN"/>
                     </view>
                     <connections>
                         <outlet property="District1" destination="qV9-Fe-mzH" id="4q8-QN-1Qv"/>
                         <outlet property="District2" destination="Qxd-je-5N8" id="qZq-3Z-dsw"/>
+                        <outlet property="distLabel" destination="pdb-rT-Nng" id="rme-6x-qFt"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="FCd-FL-9UD" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="855.20000000000005" y="129.98500749625188"/>
+            <point key="canvasLocation" x="855.07246376811599" y="129.91071428571428"/>
         </scene>
         <!--Signup Controller-->
         <scene sceneID="RVn-26-ir5">
@@ -271,144 +405,235 @@
                         <rect key="frame" x="0.0" y="0.0" width="375" height="647"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="LanguageSelect.png" translatesAutoresizingMaskIntoConstraints="NO" id="eWd-cF-gxK">
-                                <rect key="frame" x="0.0" y="0.0" width="374" height="667"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Main.png" translatesAutoresizingMaskIntoConstraints="NO" id="tph-6w-9SB">
+                                <rect key="frame" x="0.0" y="0.0" width="375" height="163"/>
                             </imageView>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="What is your preferred language?" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="p08-gh-73S">
-                                <rect key="frame" x="17" y="214" width="343" height="57"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <fontDescription key="fontDescription" name="TimesNewRomanPSMT" family="Times New Roman" pointSize="24"/>
-                                <nil key="textColor"/>
-                                <nil key="highlightedColor"/>
-                            </label>
-                            <button autoresizesSubviews="NO" opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="559-pe-984">
-                                <rect key="frame" x="36" y="309" width="75" height="70"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <color key="backgroundColor" red="0.33487445119999998" green="0.40583652260000003" blue="0.69807046650000004" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
-                                <fontDescription key="fontDescription" name="GeezaPro-Bold" family="Geeza Pro" pointSize="55"/>
-                                <state key="normal" backgroundImage="english.png">
-                                    <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                    <color key="titleShadowColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                </state>
-                                <connections>
-                                    <action selector="Languages:" destination="6ty-a7-uhL" eventType="touchUpInside" id="p0z-G2-3rd"/>
-                                </connections>
-                            </button>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="9OQ-O4-xDM">
-                                <rect key="frame" x="150" y="309" width="75" height="70"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <color key="backgroundColor" red="0.33487445119999998" green="0.40583652260000003" blue="0.69807046650000004" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
-                                <fontDescription key="fontDescription" name="GeezaPro-Bold" family="Geeza Pro" pointSize="55"/>
-                                <state key="normal" backgroundImage="french.png">
-                                    <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                </state>
-                                <connections>
-                                    <action selector="Languages:" destination="6ty-a7-uhL" eventType="touchUpInside" id="ZfG-8v-jMZ"/>
-                                </connections>
-                            </button>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="QQc-o6-cT6">
-                                <rect key="frame" x="267" y="309" width="75" height="70"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <color key="backgroundColor" red="0.33487445119999998" green="0.40583652260000003" blue="0.69807046650000004" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
-                                <fontDescription key="fontDescription" name="GeezaPro-Bold" family="Geeza Pro" pointSize="55"/>
-                                <state key="normal" backgroundImage="spanish.jpg">
-                                    <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                </state>
-                                <connections>
-                                    <action selector="Languages:" destination="6ty-a7-uhL" eventType="touchUpInside" id="62L-z2-aGg"/>
-                                </connections>
-                            </button>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="PSc-Ex-DPP">
-                                <rect key="frame" x="267" y="404" width="75" height="70"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <color key="backgroundColor" red="0.33487445119999998" green="0.40583652260000003" blue="0.69807046650000004" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
-                                <fontDescription key="fontDescription" name="GeezaPro-Bold" family="Geeza Pro" pointSize="55"/>
-                                <state key="normal" backgroundImage="swahili.png">
-                                    <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                </state>
-                                <connections>
-                                    <action selector="Languages:" destination="6ty-a7-uhL" eventType="touchUpInside" id="Ppa-ef-m17"/>
-                                </connections>
-                            </button>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="4qr-9L-Mjg">
-                                <rect key="frame" x="36" y="504" width="75" height="70"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <color key="backgroundColor" red="0.33487445119999998" green="0.40583652260000003" blue="0.69807046650000004" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
-                                <fontDescription key="fontDescription" name="GeezaPro-Bold" family="Geeza Pro" pointSize="55"/>
-                                <state key="normal" backgroundImage="swedish.jpg">
-                                    <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                </state>
-                                <connections>
-                                    <action selector="Languages:" destination="6ty-a7-uhL" eventType="touchUpInside" id="Rfa-u0-mFH"/>
-                                </connections>
-                            </button>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="rxG-i6-Scd">
-                                <rect key="frame" x="151" y="504" width="75" height="70"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <color key="backgroundColor" red="0.33487445119999998" green="0.40583652260000003" blue="0.69807046650000004" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
-                                <fontDescription key="fontDescription" name="GeezaPro-Bold" family="Geeza Pro" pointSize="55"/>
-                                <state key="normal" backgroundImage="italy.png">
-                                    <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                </state>
-                                <connections>
-                                    <action selector="Languages:" destination="6ty-a7-uhL" eventType="touchUpInside" id="RKO-S3-LIB"/>
-                                </connections>
-                            </button>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="2y2-12-use">
-                                <rect key="frame" x="267" y="504" width="75" height="70"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <color key="backgroundColor" red="0.33487445119999998" green="0.40583652260000003" blue="0.69807046650000004" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
-                                <fontDescription key="fontDescription" name="GeezaPro-Bold" family="Geeza Pro" pointSize="55"/>
-                                <state key="normal" backgroundImage="russian.png">
-                                    <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                </state>
-                                <connections>
-                                    <action selector="Languages:" destination="6ty-a7-uhL" eventType="touchUpInside" id="iQZ-f5-ZQF"/>
-                                </connections>
-                            </button>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="jLm-Xl-ruV">
-                                <rect key="frame" x="150" y="404" width="75" height="70"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <color key="backgroundColor" red="0.33487445119999998" green="0.40583652260000003" blue="0.69807046650000004" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
-                                <fontDescription key="fontDescription" name="GeezaPro-Bold" family="Geeza Pro" pointSize="55"/>
-                                <state key="normal" backgroundImage="portuguese.jpg">
-                                    <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                </state>
-                                <connections>
-                                    <action selector="Languages:" destination="6ty-a7-uhL" eventType="touchUpInside" id="l4M-YM-ffP"/>
-                                </connections>
-                            </button>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="mSQ-pc-Xta">
-                                <rect key="frame" x="187" y="582" width="155" height="53"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                <fontDescription key="fontDescription" name="TimesNewRomanPSMT" family="Times New Roman" pointSize="24"/>
-                                <size key="titleShadowOffset" width="3" height="3"/>
-                                <state key="normal" title="Next Page &gt;">
-                                    <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                </state>
-                                <connections>
-                                    <action selector="newLanguages:" destination="6ty-a7-uhL" eventType="touchUpInside" id="86l-qT-LcV"/>
-                                    <segue destination="Ds1-oE-V8B" kind="show" id="gpx-ze-7JY"/>
-                                </connections>
-                            </button>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Qrv-Tr-XWL">
-                                <rect key="frame" x="36" y="404" width="75" height="70"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <color key="backgroundColor" red="0.33487445119999998" green="0.40583652260000003" blue="0.69807046650000004" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
-                                <fontDescription key="fontDescription" name="GeezaPro-Bold" family="Geeza Pro" pointSize="55"/>
-                                <state key="normal" backgroundImage="german.png">
-                                    <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                </state>
-                                <connections>
-                                    <action selector="Languages:" destination="6ty-a7-uhL" eventType="touchUpInside" id="tZB-IK-In6"/>
-                                </connections>
-                            </button>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="kj9-F0-2qN">
+                                <rect key="frame" x="0.0" y="163" width="375" height="484"/>
+                                <subviews>
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Htd-gn-67c">
+                                        <rect key="frame" x="16" y="20" width="343" height="444"/>
+                                        <subviews>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="What is your preferred language?" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="p08-gh-73S">
+                                                <rect key="frame" x="18" y="20" width="307" height="46"/>
+                                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="height" constant="46" id="qE5-bZ-zTM"/>
+                                                </constraints>
+                                                <fontDescription key="fontDescription" name="TimesNewRomanPSMT" family="Times New Roman" pointSize="22"/>
+                                                <nil key="textColor"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                            <button autoresizesSubviews="NO" opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="559-pe-984">
+                                                <rect key="frame" x="18" y="120" width="75" height="70"/>
+                                                <color key="backgroundColor" red="0.33487445119999998" green="0.40583652260000003" blue="0.69807046650000004" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="height" constant="70" id="adm-cW-mru"/>
+                                                    <constraint firstAttribute="width" constant="75" id="tdd-Nb-CG6"/>
+                                                </constraints>
+                                                <fontDescription key="fontDescription" name="GeezaPro-Bold" family="Geeza Pro" pointSize="55"/>
+                                                <state key="normal" backgroundImage="english.png">
+                                                    <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                    <color key="titleShadowColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                </state>
+                                                <connections>
+                                                    <action selector="Languages:" destination="6ty-a7-uhL" eventType="touchUpInside" id="p0z-G2-3rd"/>
+                                                </connections>
+                                            </button>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="9OQ-O4-xDM">
+                                                <rect key="frame" x="134" y="120" width="75" height="70"/>
+                                                <color key="backgroundColor" red="0.33487445119999998" green="0.40583652260000003" blue="0.69807046650000004" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="height" constant="70" id="YGL-Rl-DZR"/>
+                                                    <constraint firstAttribute="width" constant="75" id="ueg-o7-j0L"/>
+                                                </constraints>
+                                                <fontDescription key="fontDescription" name="GeezaPro-Bold" family="Geeza Pro" pointSize="55"/>
+                                                <state key="normal" backgroundImage="french.png">
+                                                    <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                </state>
+                                                <connections>
+                                                    <action selector="Languages:" destination="6ty-a7-uhL" eventType="touchUpInside" id="ZfG-8v-jMZ"/>
+                                                </connections>
+                                            </button>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="QQc-o6-cT6">
+                                                <rect key="frame" x="250" y="120" width="75" height="70"/>
+                                                <color key="backgroundColor" red="0.33487445119999998" green="0.40583652260000003" blue="0.69807046650000004" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="width" constant="75" id="Kfm-bD-PZu"/>
+                                                    <constraint firstAttribute="height" constant="70" id="f0Q-jK-2Yl"/>
+                                                </constraints>
+                                                <fontDescription key="fontDescription" name="GeezaPro-Bold" family="Geeza Pro" pointSize="55"/>
+                                                <state key="normal" backgroundImage="spanish.jpg">
+                                                    <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                </state>
+                                                <connections>
+                                                    <action selector="Languages:" destination="6ty-a7-uhL" eventType="touchUpInside" id="62L-z2-aGg"/>
+                                                </connections>
+                                            </button>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Qrv-Tr-XWL">
+                                                <rect key="frame" x="18" y="213" width="75" height="70"/>
+                                                <color key="backgroundColor" red="0.33487445119999998" green="0.40583652260000003" blue="0.69807046650000004" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="width" constant="75" id="8Fy-az-6KD"/>
+                                                    <constraint firstAttribute="height" constant="70" id="tce-5y-3xk"/>
+                                                </constraints>
+                                                <fontDescription key="fontDescription" name="GeezaPro-Bold" family="Geeza Pro" pointSize="55"/>
+                                                <state key="normal" backgroundImage="german.png">
+                                                    <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                </state>
+                                                <connections>
+                                                    <action selector="Languages:" destination="6ty-a7-uhL" eventType="touchUpInside" id="tZB-IK-In6"/>
+                                                </connections>
+                                            </button>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="jLm-Xl-ruV">
+                                                <rect key="frame" x="134" y="213" width="75" height="70"/>
+                                                <color key="backgroundColor" red="0.33487445119999998" green="0.40583652260000003" blue="0.69807046650000004" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="height" constant="70" id="FN1-H3-gM3"/>
+                                                    <constraint firstAttribute="width" constant="75" id="e9h-Sz-ABn"/>
+                                                </constraints>
+                                                <fontDescription key="fontDescription" name="GeezaPro-Bold" family="Geeza Pro" pointSize="55"/>
+                                                <state key="normal" backgroundImage="portuguese.jpg">
+                                                    <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                </state>
+                                                <connections>
+                                                    <action selector="Languages:" destination="6ty-a7-uhL" eventType="touchUpInside" id="l4M-YM-ffP"/>
+                                                </connections>
+                                            </button>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="PSc-Ex-DPP">
+                                                <rect key="frame" x="250" y="213" width="75" height="70"/>
+                                                <color key="backgroundColor" red="0.33487445119999998" green="0.40583652260000003" blue="0.69807046650000004" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="height" constant="70" id="kTu-z7-Ft8"/>
+                                                    <constraint firstAttribute="width" constant="75" id="vE7-wB-HjJ"/>
+                                                </constraints>
+                                                <fontDescription key="fontDescription" name="GeezaPro-Bold" family="Geeza Pro" pointSize="55"/>
+                                                <state key="normal" backgroundImage="swahili.png">
+                                                    <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                </state>
+                                                <connections>
+                                                    <action selector="Languages:" destination="6ty-a7-uhL" eventType="touchUpInside" id="Ppa-ef-m17"/>
+                                                </connections>
+                                            </button>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="4qr-9L-Mjg">
+                                                <rect key="frame" x="18" y="316" width="75" height="70"/>
+                                                <color key="backgroundColor" red="0.33487445119999998" green="0.40583652260000003" blue="0.69807046650000004" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="width" constant="75" id="QNg-kp-pXO"/>
+                                                    <constraint firstAttribute="height" constant="70" id="Sv5-wq-NSj"/>
+                                                </constraints>
+                                                <fontDescription key="fontDescription" name="GeezaPro-Bold" family="Geeza Pro" pointSize="55"/>
+                                                <state key="normal" backgroundImage="swedish.jpg">
+                                                    <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                </state>
+                                                <connections>
+                                                    <action selector="Languages:" destination="6ty-a7-uhL" eventType="touchUpInside" id="Rfa-u0-mFH"/>
+                                                </connections>
+                                            </button>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="rxG-i6-Scd">
+                                                <rect key="frame" x="134" y="316" width="75" height="70"/>
+                                                <color key="backgroundColor" red="0.33487445119999998" green="0.40583652260000003" blue="0.69807046650000004" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="height" constant="70" id="3JE-8D-nDH"/>
+                                                    <constraint firstAttribute="width" constant="75" id="Dri-eY-ooc"/>
+                                                </constraints>
+                                                <fontDescription key="fontDescription" name="GeezaPro-Bold" family="Geeza Pro" pointSize="55"/>
+                                                <state key="normal" backgroundImage="italy.png">
+                                                    <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                </state>
+                                                <connections>
+                                                    <action selector="Languages:" destination="6ty-a7-uhL" eventType="touchUpInside" id="RKO-S3-LIB"/>
+                                                </connections>
+                                            </button>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="2y2-12-use">
+                                                <rect key="frame" x="250" y="316" width="75" height="70"/>
+                                                <color key="backgroundColor" red="0.33487445119999998" green="0.40583652260000003" blue="0.69807046650000004" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="height" constant="70" id="5xg-YQ-saN"/>
+                                                    <constraint firstAttribute="width" constant="75" id="zKR-qQ-D59"/>
+                                                </constraints>
+                                                <fontDescription key="fontDescription" name="GeezaPro-Bold" family="Geeza Pro" pointSize="55"/>
+                                                <state key="normal" backgroundImage="russian.png">
+                                                    <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                </state>
+                                                <connections>
+                                                    <action selector="Languages:" destination="6ty-a7-uhL" eventType="touchUpInside" id="iQZ-f5-ZQF"/>
+                                                </connections>
+                                            </button>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="mSQ-pc-Xta">
+                                                <rect key="frame" x="94" y="397" width="155" height="39"/>
+                                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="width" constant="155" id="8ZS-BO-YFq"/>
+                                                    <constraint firstAttribute="height" constant="39" id="ISZ-yl-BKQ"/>
+                                                </constraints>
+                                                <fontDescription key="fontDescription" name="TimesNewRomanPSMT" family="Times New Roman" pointSize="24"/>
+                                                <size key="titleShadowOffset" width="3" height="3"/>
+                                                <state key="normal" title="Next Page &gt;">
+                                                    <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                </state>
+                                                <connections>
+                                                    <action selector="newLanguages:" destination="6ty-a7-uhL" eventType="touchUpInside" id="86l-qT-LcV"/>
+                                                    <segue destination="Ds1-oE-V8B" kind="show" id="gpx-ze-7JY"/>
+                                                </connections>
+                                            </button>
+                                        </subviews>
+                                        <color key="backgroundColor" red="0.82744318250000004" green="0.82744568590000001" blue="0.82745128869999995" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                        <constraints>
+                                            <constraint firstItem="jLm-Xl-ruV" firstAttribute="centerX" secondItem="Htd-gn-67c" secondAttribute="centerX" id="0l7-ob-wFp"/>
+                                            <constraint firstItem="QQc-o6-cT6" firstAttribute="leading" secondItem="9OQ-O4-xDM" secondAttribute="trailing" constant="41" id="1sk-nd-IqZ"/>
+                                            <constraint firstItem="p08-gh-73S" firstAttribute="leading" secondItem="Htd-gn-67c" secondAttribute="leading" constant="18" id="1zM-Mb-U7N"/>
+                                            <constraint firstItem="559-pe-984" firstAttribute="top" secondItem="Htd-gn-67c" secondAttribute="top" constant="120" id="3Pj-GI-vNx"/>
+                                            <constraint firstItem="2y2-12-use" firstAttribute="leading" secondItem="rxG-i6-Scd" secondAttribute="trailing" constant="41" id="4ZY-Qx-udw"/>
+                                            <constraint firstItem="mSQ-pc-Xta" firstAttribute="top" secondItem="rxG-i6-Scd" secondAttribute="bottom" constant="11" id="7Nz-PQ-399"/>
+                                            <constraint firstItem="2y2-12-use" firstAttribute="top" secondItem="PSc-Ex-DPP" secondAttribute="bottom" constant="33" id="CrB-aU-RQo"/>
+                                            <constraint firstAttribute="height" constant="444" id="FEd-fn-2xT"/>
+                                            <constraint firstItem="Qrv-Tr-XWL" firstAttribute="top" secondItem="559-pe-984" secondAttribute="bottom" constant="23" id="Gx9-HX-EWa"/>
+                                            <constraint firstItem="9OQ-O4-xDM" firstAttribute="leading" secondItem="559-pe-984" secondAttribute="trailing" constant="41" id="Ljp-gM-85x"/>
+                                            <constraint firstItem="rxG-i6-Scd" firstAttribute="leading" secondItem="4qr-9L-Mjg" secondAttribute="trailing" constant="41" id="SJr-cT-rkx"/>
+                                            <constraint firstItem="p08-gh-73S" firstAttribute="centerX" secondItem="Htd-gn-67c" secondAttribute="centerX" id="Suq-Lo-n7f"/>
+                                            <constraint firstItem="mSQ-pc-Xta" firstAttribute="centerX" secondItem="Htd-gn-67c" secondAttribute="centerX" id="TVE-Uz-1ph"/>
+                                            <constraint firstItem="rxG-i6-Scd" firstAttribute="centerX" secondItem="Htd-gn-67c" secondAttribute="centerX" id="Xvg-BU-7bC"/>
+                                            <constraint firstItem="PSc-Ex-DPP" firstAttribute="leading" secondItem="jLm-Xl-ruV" secondAttribute="trailing" constant="41" id="Y6G-K4-Vs2"/>
+                                            <constraint firstItem="p08-gh-73S" firstAttribute="top" secondItem="Htd-gn-67c" secondAttribute="top" constant="20" id="a23-Qc-ecq"/>
+                                            <constraint firstItem="p08-gh-73S" firstAttribute="leading" secondItem="Htd-gn-67c" secondAttribute="leading" constant="18" id="abQ-yB-WBj"/>
+                                            <constraint firstItem="jLm-Xl-ruV" firstAttribute="leading" secondItem="Qrv-Tr-XWL" secondAttribute="trailing" constant="41" id="geq-ff-5ol"/>
+                                            <constraint firstItem="PSc-Ex-DPP" firstAttribute="top" secondItem="QQc-o6-cT6" secondAttribute="bottom" constant="23" id="ghM-8H-GBO"/>
+                                            <constraint firstAttribute="trailing" secondItem="p08-gh-73S" secondAttribute="trailing" constant="18" id="iEd-uy-GU8"/>
+                                            <constraint firstItem="rxG-i6-Scd" firstAttribute="top" secondItem="jLm-Xl-ruV" secondAttribute="bottom" constant="33" id="kua-nN-c3Y"/>
+                                            <constraint firstItem="9OQ-O4-xDM" firstAttribute="centerX" secondItem="Htd-gn-67c" secondAttribute="centerX" id="mGK-cp-E1P"/>
+                                            <constraint firstItem="QQc-o6-cT6" firstAttribute="top" secondItem="Htd-gn-67c" secondAttribute="top" constant="120" id="q8p-vi-0uO"/>
+                                            <constraint firstItem="4qr-9L-Mjg" firstAttribute="top" secondItem="Qrv-Tr-XWL" secondAttribute="bottom" constant="33" id="vlw-qI-zHR"/>
+                                            <constraint firstItem="jLm-Xl-ruV" firstAttribute="top" secondItem="9OQ-O4-xDM" secondAttribute="bottom" constant="23" id="wNI-2B-pT5"/>
+                                            <constraint firstItem="9OQ-O4-xDM" firstAttribute="top" secondItem="Htd-gn-67c" secondAttribute="top" constant="120" id="y6U-6H-pCH"/>
+                                        </constraints>
+                                    </view>
+                                </subviews>
+                                <color key="backgroundColor" red="0.0" green="0.4823529412" blue="0.54117647059999996" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                <constraints>
+                                    <constraint firstAttribute="trailing" secondItem="Htd-gn-67c" secondAttribute="trailing" constant="16" id="YAh-fJ-4xZ"/>
+                                    <constraint firstItem="Htd-gn-67c" firstAttribute="leading" secondItem="kj9-F0-2qN" secondAttribute="leading" constant="16" id="c2n-pT-nI6"/>
+                                    <constraint firstItem="Htd-gn-67c" firstAttribute="top" secondItem="kj9-F0-2qN" secondAttribute="top" constant="20" id="jdb-1y-3OA"/>
+                                    <constraint firstItem="Htd-gn-67c" firstAttribute="centerX" secondItem="kj9-F0-2qN" secondAttribute="centerX" id="qBN-c1-IWp"/>
+                                </constraints>
+                            </view>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="kj9-F0-2qN" firstAttribute="centerX" secondItem="5MH-F7-jjh" secondAttribute="centerX" id="0o8-N7-kVA"/>
+                            <constraint firstItem="5MH-F7-jjh" firstAttribute="trailing" secondItem="tph-6w-9SB" secondAttribute="trailing" id="1fA-7P-Du4"/>
+                            <constraint firstItem="kj9-F0-2qN" firstAttribute="top" secondItem="5MH-F7-jjh" secondAttribute="top" constant="163" id="91I-gS-Ffc"/>
+                            <constraint firstItem="5MH-F7-jjh" firstAttribute="top" secondItem="tph-6w-9SB" secondAttribute="top" id="GSZ-EH-9Mh"/>
+                            <constraint firstItem="tph-6w-9SB" firstAttribute="leading" secondItem="5MH-F7-jjh" secondAttribute="leading" id="MEn-x6-O9o"/>
+                            <constraint firstItem="tph-6w-9SB" firstAttribute="bottom" secondItem="kj9-F0-2qN" secondAttribute="top" id="XOH-UT-Ql1"/>
+                            <constraint firstItem="5MH-F7-jjh" firstAttribute="trailing" secondItem="kj9-F0-2qN" secondAttribute="trailing" id="pLK-d8-ZNL"/>
+                            <constraint firstItem="kj9-F0-2qN" firstAttribute="leading" secondItem="5MH-F7-jjh" secondAttribute="leading" id="ptA-fo-v7P"/>
+                            <constraint firstItem="tph-6w-9SB" firstAttribute="centerX" secondItem="5MH-F7-jjh" secondAttribute="centerX" id="q6M-AE-j9K"/>
+                            <constraint firstAttribute="bottom" secondItem="kj9-F0-2qN" secondAttribute="bottom" id="sZh-hd-dcS"/>
+                        </constraints>
                         <viewLayoutGuide key="safeArea" id="5MH-F7-jjh"/>
                     </view>
+                    <navigationItem key="navigationItem" id="zzQ-ib-ywt"/>
                     <connections>
                         <outlet property="L1" destination="559-pe-984" id="5w5-4a-oGG"/>
                         <outlet property="L2" destination="9OQ-O4-xDM" id="Q25-Re-B6I"/>
@@ -419,12 +644,14 @@
                         <outlet property="L7" destination="4qr-9L-Mjg" id="cao-fm-Sef"/>
                         <outlet property="L8" destination="rxG-i6-Scd" id="ja7-7j-ZbG"/>
                         <outlet property="L9" destination="2y2-12-use" id="tNi-fT-eN8"/>
+                        <outlet property="LQ" destination="p08-gh-73S" id="WTA-eM-hel"/>
+                        <outlet property="LangBackground" destination="Htd-gn-67c" id="BPC-he-QBe"/>
                         <outlet property="NextPage" destination="mSQ-pc-Xta" id="3iH-W6-B2H"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="whM-wl-aE1" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1560.8" y="129.98500749625188"/>
+            <point key="canvasLocation" x="1559.4202898550725" y="129.91071428571428"/>
         </scene>
         <!--Signup Controller-->
         <scene sceneID="HB5-hX-Qw5">
@@ -434,142 +661,230 @@
                         <rect key="frame" x="0.0" y="0.0" width="375" height="647"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="LanguageSelect.png" translatesAutoresizingMaskIntoConstraints="NO" id="8no-d8-nK8">
-                                <rect key="frame" x="0.0" y="0.0" width="374" height="667"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Main.png" translatesAutoresizingMaskIntoConstraints="NO" id="12d-1a-Gj9">
+                                <rect key="frame" x="0.0" y="0.0" width="375" height="164"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="164" id="Nkc-YZ-Fxx"/>
+                                </constraints>
                             </imageView>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="0QH-ry-dey">
-                                <rect key="frame" x="35" y="308" width="75" height="70"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <color key="backgroundColor" red="0.33487445119999998" green="0.40583652260000003" blue="0.69807046650000004" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
-                                <fontDescription key="fontDescription" name="GeezaPro-Bold" family="Geeza Pro" pointSize="55"/>
-                                <state key="normal" backgroundImage="nepalese.png">
-                                    <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                </state>
-                                <connections>
-                                    <action selector="Languages:" destination="Ds1-oE-V8B" eventType="touchUpInside" id="3dl-2C-OJL"/>
-                                </connections>
-                            </button>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="gea-YD-y7e">
-                                <rect key="frame" x="149" y="308" width="75" height="70"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <color key="backgroundColor" red="0.33487445119999998" green="0.40583652260000003" blue="0.69807046650000004" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
-                                <fontDescription key="fontDescription" name="GeezaPro-Bold" family="Geeza Pro" pointSize="55"/>
-                                <state key="normal" backgroundImage="arabic.png">
-                                    <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                </state>
-                                <connections>
-                                    <action selector="Languages:" destination="Ds1-oE-V8B" eventType="touchUpInside" id="QpI-xx-Tt2"/>
-                                </connections>
-                            </button>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="GpK-aI-wj3">
-                                <rect key="frame" x="267" y="308" width="75" height="70"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <color key="backgroundColor" red="0.33487445119999998" green="0.40583652260000003" blue="0.69807046650000004" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
-                                <fontDescription key="fontDescription" name="GeezaPro-Bold" family="Geeza Pro" pointSize="55"/>
-                                <state key="normal" backgroundImage="hindi.png">
-                                    <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                </state>
-                                <connections>
-                                    <action selector="Languages:" destination="Ds1-oE-V8B" eventType="touchUpInside" id="yfy-Yr-vfz"/>
-                                </connections>
-                            </button>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="93w-ua-JOU">
-                                <rect key="frame" x="35" y="403" width="75" height="70"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <color key="backgroundColor" red="0.33487445119999998" green="0.40583652260000003" blue="0.69807046650000004" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
-                                <fontDescription key="fontDescription" name="GeezaPro-Bold" family="Geeza Pro" pointSize="55"/>
-                                <state key="normal" backgroundImage="punjabi.png">
-                                    <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                </state>
-                                <connections>
-                                    <action selector="Languages:" destination="Ds1-oE-V8B" eventType="touchUpInside" id="Xqh-1F-lD1"/>
-                                </connections>
-                            </button>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Vk9-Cl-MQS">
-                                <rect key="frame" x="268" y="403" width="74" height="70"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <color key="backgroundColor" red="0.33487445119999998" green="0.40583652260000003" blue="0.69807046650000004" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
-                                <fontDescription key="fontDescription" name="GeezaPro-Bold" family="Geeza Pro" pointSize="55"/>
-                                <state key="normal" backgroundImage="japanese.png">
-                                    <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                </state>
-                                <connections>
-                                    <action selector="Languages:" destination="Ds1-oE-V8B" eventType="touchUpInside" id="rAO-FJ-rWh"/>
-                                </connections>
-                            </button>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="KDZ-7O-zaN">
-                                <rect key="frame" x="35" y="504" width="75" height="70"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <color key="backgroundColor" red="0.33487445119999998" green="0.40583652260000003" blue="0.69807046650000004" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
-                                <fontDescription key="fontDescription" name="GeezaPro-Bold" family="Geeza Pro" pointSize="55"/>
-                                <state key="normal" backgroundImage="hebrew.png">
-                                    <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                </state>
-                                <connections>
-                                    <action selector="Languages:" destination="Ds1-oE-V8B" eventType="touchUpInside" id="vAl-fr-Xuv"/>
-                                </connections>
-                            </button>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Gns-VU-OlV">
-                                <rect key="frame" x="149" y="504" width="75" height="70"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <color key="backgroundColor" red="0.33487445119999998" green="0.40583652260000003" blue="0.69807046650000004" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
-                                <fontDescription key="fontDescription" name="GeezaPro-Bold" family="Geeza Pro" pointSize="55"/>
-                                <state key="normal" backgroundImage="bengali.png">
-                                    <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                </state>
-                                <connections>
-                                    <action selector="Languages:" destination="Ds1-oE-V8B" eventType="touchUpInside" id="Evl-Eg-SdI"/>
-                                </connections>
-                            </button>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Is it any of these ones?" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="dhB-w9-wHi">
-                                <rect key="frame" x="16" y="218" width="343" height="52"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <fontDescription key="fontDescription" name="TimesNewRomanPSMT" family="Times New Roman" pointSize="24"/>
-                                <nil key="textColor"/>
-                                <nil key="highlightedColor"/>
-                            </label>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="FmZ-8N-jml">
-                                <rect key="frame" x="268" y="504" width="74" height="70"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <color key="backgroundColor" red="0.33487445119999998" green="0.40583652260000003" blue="0.69807046650000004" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
-                                <fontDescription key="fontDescription" name="GeezaPro-Bold" family="Geeza Pro" pointSize="55"/>
-                                <state key="normal" backgroundImage="vietnamese.png">
-                                    <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                </state>
-                                <connections>
-                                    <action selector="Languages:" destination="Ds1-oE-V8B" eventType="touchUpInside" id="D8i-pW-nBC"/>
-                                </connections>
-                            </button>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Lso-bN-TNW">
-                                <rect key="frame" x="187" y="582" width="155" height="53"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                <fontDescription key="fontDescription" name="TimesNewRomanPSMT" family="Times New Roman" pointSize="24"/>
-                                <size key="titleShadowOffset" width="3" height="3"/>
-                                <state key="normal" title="Skip For Now">
-                                    <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                </state>
-                                <connections>
-                                    <action selector="Skip:" destination="Ds1-oE-V8B" eventType="touchUpInside" id="2yS-gf-oyL"/>
-                                </connections>
-                            </button>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ufE-rA-oXS">
-                                <rect key="frame" x="149" y="403" width="75" height="70"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <color key="backgroundColor" red="0.33487445119999998" green="0.40583652260000003" blue="0.69807046650000004" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
-                                <fontDescription key="fontDescription" name="GeezaPro-Bold" family="Geeza Pro" pointSize="55"/>
-                                <state key="normal" backgroundImage="chinese.png">
-                                    <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                </state>
-                                <connections>
-                                    <action selector="Languages:" destination="Ds1-oE-V8B" eventType="touchUpInside" id="TKe-X4-XSQ"/>
-                                </connections>
-                            </button>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="UO7-za-XbM">
+                                <rect key="frame" x="0.0" y="162" width="375" height="485"/>
+                                <subviews>
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="NwL-Va-uAZ">
+                                        <rect key="frame" x="16" y="19" width="343" height="446"/>
+                                        <subviews>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Is it any of these ones?" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="dhB-w9-wHi">
+                                                <rect key="frame" x="18" y="18" width="307" height="52"/>
+                                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="height" constant="52" id="GQz-cp-7DP"/>
+                                                    <constraint firstAttribute="width" constant="307" id="M06-ja-IN1"/>
+                                                </constraints>
+                                                <fontDescription key="fontDescription" name="TimesNewRomanPSMT" family="Times New Roman" pointSize="24"/>
+                                                <nil key="textColor"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="0QH-ry-dey">
+                                                <rect key="frame" x="134" y="210" width="75" height="70"/>
+                                                <color key="backgroundColor" red="0.33487445119999998" green="0.40583652260000003" blue="0.69807046650000004" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="width" constant="75" id="2jb-qU-WYg"/>
+                                                    <constraint firstAttribute="height" constant="70" id="RDg-r4-bTU"/>
+                                                </constraints>
+                                                <fontDescription key="fontDescription" name="GeezaPro-Bold" family="Geeza Pro" pointSize="55"/>
+                                                <state key="normal" backgroundImage="nepalese.png">
+                                                    <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                </state>
+                                                <connections>
+                                                    <action selector="Languages:" destination="Ds1-oE-V8B" eventType="touchUpInside" id="3dl-2C-OJL"/>
+                                                </connections>
+                                            </button>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="gea-YD-y7e">
+                                                <rect key="frame" x="19" y="113" width="75" height="70"/>
+                                                <color key="backgroundColor" red="0.33487445119999998" green="0.40583652260000003" blue="0.69807046650000004" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="height" constant="70" id="44H-fz-Wz5"/>
+                                                    <constraint firstAttribute="width" constant="75" id="5HS-D2-MHP"/>
+                                                </constraints>
+                                                <fontDescription key="fontDescription" name="GeezaPro-Bold" family="Geeza Pro" pointSize="55"/>
+                                                <state key="normal" backgroundImage="arabic.png">
+                                                    <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                </state>
+                                                <connections>
+                                                    <action selector="Languages:" destination="Ds1-oE-V8B" eventType="touchUpInside" id="QpI-xx-Tt2"/>
+                                                </connections>
+                                            </button>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="GpK-aI-wj3">
+                                                <rect key="frame" x="251" y="113" width="75" height="70"/>
+                                                <color key="backgroundColor" red="0.33487445119999998" green="0.40583652260000003" blue="0.69807046650000004" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="height" constant="70" id="Cnc-eC-LLD"/>
+                                                    <constraint firstAttribute="width" constant="75" id="Ijh-i2-cZS"/>
+                                                </constraints>
+                                                <fontDescription key="fontDescription" name="GeezaPro-Bold" family="Geeza Pro" pointSize="55"/>
+                                                <state key="normal" backgroundImage="hindi.png">
+                                                    <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                </state>
+                                                <connections>
+                                                    <action selector="Languages:" destination="Ds1-oE-V8B" eventType="touchUpInside" id="yfy-Yr-vfz"/>
+                                                </connections>
+                                            </button>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="93w-ua-JOU">
+                                                <rect key="frame" x="19" y="210" width="75" height="70"/>
+                                                <color key="backgroundColor" red="0.33487445119999998" green="0.40583652260000003" blue="0.69807046650000004" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="width" constant="75" id="JKZ-x3-7Dz"/>
+                                                    <constraint firstAttribute="height" constant="70" id="XEb-xT-6nK"/>
+                                                </constraints>
+                                                <fontDescription key="fontDescription" name="GeezaPro-Bold" family="Geeza Pro" pointSize="55"/>
+                                                <state key="normal" backgroundImage="punjabi.png">
+                                                    <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                </state>
+                                                <connections>
+                                                    <action selector="Languages:" destination="Ds1-oE-V8B" eventType="touchUpInside" id="Xqh-1F-lD1"/>
+                                                </connections>
+                                            </button>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ufE-rA-oXS">
+                                                <rect key="frame" x="134" y="113" width="75" height="70"/>
+                                                <color key="backgroundColor" red="0.33487445119999998" green="0.40583652260000003" blue="0.69807046650000004" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="height" constant="70" id="ERt-6b-n8G"/>
+                                                    <constraint firstAttribute="width" constant="75" id="dKW-iM-7P7"/>
+                                                </constraints>
+                                                <fontDescription key="fontDescription" name="GeezaPro-Bold" family="Geeza Pro" pointSize="55"/>
+                                                <state key="normal" backgroundImage="chinese.png">
+                                                    <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                </state>
+                                                <connections>
+                                                    <action selector="Languages:" destination="Ds1-oE-V8B" eventType="touchUpInside" id="TKe-X4-XSQ"/>
+                                                </connections>
+                                            </button>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Vk9-Cl-MQS">
+                                                <rect key="frame" x="252" y="210" width="74" height="70"/>
+                                                <color key="backgroundColor" red="0.33487445119999998" green="0.40583652260000003" blue="0.69807046650000004" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="width" constant="74" id="0BX-Ra-PoT"/>
+                                                    <constraint firstAttribute="height" constant="70" id="96D-TM-43W"/>
+                                                </constraints>
+                                                <fontDescription key="fontDescription" name="GeezaPro-Bold" family="Geeza Pro" pointSize="55"/>
+                                                <state key="normal" backgroundImage="japanese.png">
+                                                    <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                </state>
+                                                <connections>
+                                                    <action selector="Languages:" destination="Ds1-oE-V8B" eventType="touchUpInside" id="rAO-FJ-rWh"/>
+                                                </connections>
+                                            </button>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="KDZ-7O-zaN">
+                                                <rect key="frame" x="19" y="307" width="75" height="70"/>
+                                                <color key="backgroundColor" red="0.33487445119999998" green="0.40583652260000003" blue="0.69807046650000004" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="width" constant="75" id="3d0-L5-bCa"/>
+                                                    <constraint firstAttribute="height" constant="70" id="NMY-Di-xZU"/>
+                                                </constraints>
+                                                <fontDescription key="fontDescription" name="GeezaPro-Bold" family="Geeza Pro" pointSize="55"/>
+                                                <state key="normal" backgroundImage="hebrew.png">
+                                                    <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                </state>
+                                                <connections>
+                                                    <action selector="Languages:" destination="Ds1-oE-V8B" eventType="touchUpInside" id="vAl-fr-Xuv"/>
+                                                </connections>
+                                            </button>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Gns-VU-OlV">
+                                                <rect key="frame" x="134" y="307" width="75" height="70"/>
+                                                <color key="backgroundColor" red="0.33487445119999998" green="0.40583652260000003" blue="0.69807046650000004" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="height" constant="70" id="XF6-7N-zxi"/>
+                                                    <constraint firstAttribute="width" constant="75" id="ivy-88-cM9"/>
+                                                </constraints>
+                                                <fontDescription key="fontDescription" name="GeezaPro-Bold" family="Geeza Pro" pointSize="55"/>
+                                                <state key="normal" backgroundImage="bengali.png">
+                                                    <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                </state>
+                                                <connections>
+                                                    <action selector="Languages:" destination="Ds1-oE-V8B" eventType="touchUpInside" id="Evl-Eg-SdI"/>
+                                                </connections>
+                                            </button>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="FmZ-8N-jml">
+                                                <rect key="frame" x="252" y="307" width="74" height="70"/>
+                                                <color key="backgroundColor" red="0.33487445119999998" green="0.40583652260000003" blue="0.69807046650000004" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="width" constant="74" id="P7A-qs-TWQ"/>
+                                                    <constraint firstAttribute="height" constant="70" id="yHC-sG-poJ"/>
+                                                </constraints>
+                                                <fontDescription key="fontDescription" name="GeezaPro-Bold" family="Geeza Pro" pointSize="55"/>
+                                                <state key="normal" backgroundImage="vietnamese.png">
+                                                    <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                </state>
+                                                <connections>
+                                                    <action selector="Languages:" destination="Ds1-oE-V8B" eventType="touchUpInside" id="D8i-pW-nBC"/>
+                                                </connections>
+                                            </button>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Lso-bN-TNW">
+                                                <rect key="frame" x="94" y="396" width="155" height="42"/>
+                                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="height" constant="42" id="EaI-iv-Xnz"/>
+                                                    <constraint firstAttribute="width" constant="155" id="T3j-EX-9FN"/>
+                                                </constraints>
+                                                <fontDescription key="fontDescription" name="TimesNewRomanPSMT" family="Times New Roman" pointSize="24"/>
+                                                <size key="titleShadowOffset" width="3" height="3"/>
+                                                <state key="normal" title="Skip For Now">
+                                                    <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                </state>
+                                                <connections>
+                                                    <action selector="Skip:" destination="Ds1-oE-V8B" eventType="touchUpInside" id="2yS-gf-oyL"/>
+                                                </connections>
+                                            </button>
+                                        </subviews>
+                                        <color key="backgroundColor" red="0.82744318250000004" green="0.82744568590000001" blue="0.82745128869999995" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                        <constraints>
+                                            <constraint firstItem="GpK-aI-wj3" firstAttribute="top" secondItem="NwL-Va-uAZ" secondAttribute="top" constant="113" id="97m-E4-7s8"/>
+                                            <constraint firstItem="ufE-rA-oXS" firstAttribute="centerX" secondItem="NwL-Va-uAZ" secondAttribute="centerX" id="ANr-V9-qNg"/>
+                                            <constraint firstItem="0QH-ry-dey" firstAttribute="leading" secondItem="93w-ua-JOU" secondAttribute="trailing" constant="40" id="C8I-E9-3HS"/>
+                                            <constraint firstItem="FmZ-8N-jml" firstAttribute="leading" secondItem="Gns-VU-OlV" secondAttribute="trailing" constant="43" id="CP9-FZ-dee"/>
+                                            <constraint firstItem="KDZ-7O-zaN" firstAttribute="top" secondItem="93w-ua-JOU" secondAttribute="bottom" constant="27" id="CZ0-KX-gpT"/>
+                                            <constraint firstItem="Vk9-Cl-MQS" firstAttribute="top" secondItem="GpK-aI-wj3" secondAttribute="bottom" constant="27" id="EbO-ud-xhQ"/>
+                                            <constraint firstItem="0QH-ry-dey" firstAttribute="top" secondItem="ufE-rA-oXS" secondAttribute="bottom" constant="27" id="Gsj-KJ-EK5"/>
+                                            <constraint firstItem="dhB-w9-wHi" firstAttribute="centerX" secondItem="NwL-Va-uAZ" secondAttribute="centerX" id="Jkb-zS-sfd"/>
+                                            <constraint firstItem="dhB-w9-wHi" firstAttribute="top" secondItem="NwL-Va-uAZ" secondAttribute="top" constant="18" id="JwA-Pr-KfP"/>
+                                            <constraint firstItem="ufE-rA-oXS" firstAttribute="leading" secondItem="gea-YD-y7e" secondAttribute="trailing" constant="40" id="OMK-Om-ekt"/>
+                                            <constraint firstItem="GpK-aI-wj3" firstAttribute="leading" secondItem="ufE-rA-oXS" secondAttribute="trailing" constant="42" id="QD1-Eg-5qz"/>
+                                            <constraint firstItem="Lso-bN-TNW" firstAttribute="centerX" secondItem="NwL-Va-uAZ" secondAttribute="centerX" id="QNo-qj-mjn"/>
+                                            <constraint firstItem="ufE-rA-oXS" firstAttribute="top" secondItem="NwL-Va-uAZ" secondAttribute="top" constant="113" id="QgD-zr-3tt"/>
+                                            <constraint firstItem="Vk9-Cl-MQS" firstAttribute="leading" secondItem="0QH-ry-dey" secondAttribute="trailing" constant="43" id="S4s-VR-i6C"/>
+                                            <constraint firstItem="Gns-VU-OlV" firstAttribute="centerX" secondItem="NwL-Va-uAZ" secondAttribute="centerX" id="THg-te-NOj"/>
+                                            <constraint firstItem="FmZ-8N-jml" firstAttribute="top" secondItem="Vk9-Cl-MQS" secondAttribute="bottom" constant="27" id="UQ7-g7-wsU"/>
+                                            <constraint firstItem="Gns-VU-OlV" firstAttribute="top" secondItem="0QH-ry-dey" secondAttribute="bottom" constant="27" id="YYE-ji-arK"/>
+                                            <constraint firstItem="0QH-ry-dey" firstAttribute="centerX" secondItem="NwL-Va-uAZ" secondAttribute="centerX" id="ajx-cd-2HM"/>
+                                            <constraint firstItem="Gns-VU-OlV" firstAttribute="leading" secondItem="KDZ-7O-zaN" secondAttribute="trailing" constant="40" id="fPO-Zz-lwq"/>
+                                            <constraint firstItem="gea-YD-y7e" firstAttribute="top" secondItem="NwL-Va-uAZ" secondAttribute="top" constant="113" id="goe-xm-lfD"/>
+                                            <constraint firstItem="93w-ua-JOU" firstAttribute="top" secondItem="gea-YD-y7e" secondAttribute="bottom" constant="27" id="n1p-NJ-cku"/>
+                                            <constraint firstAttribute="bottom" secondItem="Lso-bN-TNW" secondAttribute="bottom" constant="8" id="sPl-qY-oFm"/>
+                                            <constraint firstAttribute="height" constant="446" id="tWA-Lt-TrZ"/>
+                                        </constraints>
+                                    </view>
+                                </subviews>
+                                <color key="backgroundColor" red="0.0" green="0.4823529412" blue="0.54117647059999996" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                <constraints>
+                                    <constraint firstAttribute="trailing" secondItem="NwL-Va-uAZ" secondAttribute="trailing" constant="16" id="4IW-iR-MDB"/>
+                                    <constraint firstItem="NwL-Va-uAZ" firstAttribute="leading" secondItem="UO7-za-XbM" secondAttribute="leading" constant="16" id="nem-xH-Zvt"/>
+                                    <constraint firstItem="NwL-Va-uAZ" firstAttribute="top" secondItem="UO7-za-XbM" secondAttribute="top" constant="19" id="yed-EY-ju4"/>
+                                </constraints>
+                            </view>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="UO7-za-XbM" firstAttribute="leading" secondItem="aXo-rz-e5y" secondAttribute="leading" id="25G-5f-dkb"/>
+                            <constraint firstItem="UO7-za-XbM" firstAttribute="top" secondItem="aXo-rz-e5y" secondAttribute="top" constant="162" id="7p0-4X-RCh"/>
+                            <constraint firstItem="12d-1a-Gj9" firstAttribute="top" secondItem="aXo-rz-e5y" secondAttribute="top" id="Pre-wk-XUN"/>
+                            <constraint firstItem="12d-1a-Gj9" firstAttribute="trailing" secondItem="UO7-za-XbM" secondAttribute="trailing" id="bc6-B3-ZMP"/>
+                            <constraint firstItem="aXo-rz-e5y" firstAttribute="trailing" secondItem="UO7-za-XbM" secondAttribute="trailing" id="oGP-0p-XIb"/>
+                            <constraint firstItem="12d-1a-Gj9" firstAttribute="leading" secondItem="UO7-za-XbM" secondAttribute="leading" id="sza-be-0T0"/>
+                            <constraint firstAttribute="bottom" secondItem="UO7-za-XbM" secondAttribute="bottom" id="xiy-da-V9w"/>
+                        </constraints>
                         <viewLayoutGuide key="safeArea" id="aXo-rz-e5y"/>
                     </view>
+                    <navigationItem key="navigationItem" id="uvL-UX-V6d"/>
                     <connections>
                         <outlet property="L10" destination="0QH-ry-dey" id="mA4-B6-HH5"/>
                         <outlet property="L11" destination="gea-YD-y7e" id="BLm-u5-d2P"/>
@@ -580,12 +895,14 @@
                         <outlet property="L16" destination="KDZ-7O-zaN" id="Fn9-Ce-WmO"/>
                         <outlet property="L17" destination="Gns-VU-OlV" id="EMO-A2-qB2"/>
                         <outlet property="L18" destination="FmZ-8N-jml" id="0QU-2J-wtV"/>
+                        <outlet property="LQ2" destination="dhB-w9-wHi" id="kJ4-u5-3tR"/>
+                        <outlet property="LangBackground2" destination="NwL-Va-uAZ" id="Kxa-e5-AFK"/>
                         <outlet property="SkipButton" destination="Lso-bN-TNW" id="Alw-7a-bfZ"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="JBu-YX-DcI" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2207.1999999999998" y="129.98500749625188"/>
+            <point key="canvasLocation" x="2205.5999999999999" y="129.08545727136433"/>
         </scene>
         <!--Signup Controller-->
         <scene sceneID="ubT-L0-0hQ">
@@ -595,107 +912,159 @@
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="Confermation.png" translatesAutoresizingMaskIntoConstraints="NO" id="Wq5-he-cca">
-                                <rect key="frame" x="0.0" y="0.0" width="373" height="667"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Main.png" translatesAutoresizingMaskIntoConstraints="NO" id="Dc4-Q6-GVY">
+                                <rect key="frame" x="0.0" y="0.0" width="375" height="185"/>
                             </imageView>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="HLM-L9-mvv">
-                                <rect key="frame" x="414" y="381" width="0.0" height="0.0"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <color key="backgroundColor" red="0.33644006409999999" green="0.40332308709999998" blue="0.69790317359999998" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                <nil key="textColor"/>
-                                <nil key="highlightedColor"/>
-                            </label>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="0hD-bL-DFp">
-                                <rect key="frame" x="414" y="422.5" width="0.0" height="0.0"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <color key="backgroundColor" red="0.33644006409999999" green="0.40332308709999998" blue="0.69790317359999998" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                <nil key="textColor"/>
-                                <nil key="highlightedColor"/>
-                            </label>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Is this correct?" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="mWe-Ui-CSj">
-                                <rect key="frame" x="16" y="214" width="343" height="59"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <fontDescription key="fontDescription" name="TimesNewRomanPSMT" family="Times New Roman" pointSize="24"/>
-                                <nil key="textColor"/>
-                                <nil key="highlightedColor"/>
-                            </label>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="District: " lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="5ID-g4-lIm">
-                                <rect key="frame" x="29" y="294" width="321" height="87"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <fontDescription key="fontDescription" name="TimesNewRomanPSMT" family="Times New Roman" pointSize="32"/>
-                                <nil key="textColor"/>
-                                <nil key="highlightedColor"/>
-                            </label>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Language: " lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="uZa-54-rtG">
-                                <rect key="frame" x="29" y="374" width="321" height="104"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <fontDescription key="fontDescription" name="TimesNewRomanPSMT" family="Times New Roman" pointSize="32"/>
-                                <nil key="textColor"/>
-                                <nil key="highlightedColor"/>
-                            </label>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="H9f-7O-eip">
-                                <rect key="frame" x="16" y="528" width="162" height="80"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <fontDescription key="fontDescription" name="TimesNewRomanPSMT" family="Times New Roman" pointSize="32"/>
-                                <size key="titleShadowOffset" width="2" height="2"/>
-                                <state key="normal" title="Yes">
-                                    <color key="titleColor" cocoaTouchSystemColor="darkTextColor"/>
-                                </state>
-                                <connections>
-                                    <action selector="checkUpSuccess:" destination="vS4-aj-ghc" eventType="touchUpInside" id="b6V-Yv-faa"/>
-                                    <segue destination="W0q-6d-xKy" kind="show" id="yML-Qa-feY"/>
-                                </connections>
-                            </button>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="GS3-El-qgg">
-                                <rect key="frame" x="414" y="693" width="0.0" height="0.0"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <color key="backgroundColor" red="0.33644006409999999" green="0.40332308709999998" blue="0.69790317359999998" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                <nil key="textColor"/>
-                                <nil key="highlightedColor"/>
-                            </label>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="wAZ-WY-2Rp">
-                                <rect key="frame" x="199" y="532" width="159" height="80"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <fontDescription key="fontDescription" name="TimesNewRomanPSMT" family="Times New Roman" pointSize="32"/>
-                                <state key="normal" title="No">
-                                    <color key="titleColor" cocoaTouchSystemColor="darkTextColor"/>
-                                </state>
-                                <connections>
-                                    <action selector="goBack:" destination="vS4-aj-ghc" eventType="touchUpInside" id="U8e-9f-fpk"/>
-                                </connections>
-                            </button>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Gsp-jF-ySQ">
+                                <rect key="frame" x="0.0" y="190" width="375" height="511"/>
+                                <subviews>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="wAZ-WY-2Rp">
+                                        <rect key="frame" x="198" y="374" width="159" height="80"/>
+                                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="80" id="a9G-aM-Sov"/>
+                                            <constraint firstAttribute="width" constant="159" id="aYd-eD-hvU"/>
+                                        </constraints>
+                                        <fontDescription key="fontDescription" name="TimesNewRomanPSMT" family="Times New Roman" pointSize="32"/>
+                                        <state key="normal" title="No">
+                                            <color key="titleColor" cocoaTouchSystemColor="darkTextColor"/>
+                                        </state>
+                                        <connections>
+                                            <action selector="goBack:" destination="vS4-aj-ghc" eventType="touchUpInside" id="U8e-9f-fpk"/>
+                                        </connections>
+                                    </button>
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="pc7-cZ-xhm">
+                                        <rect key="frame" x="20" y="25" width="335" height="324"/>
+                                        <subviews>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="  District: " lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="5ID-g4-lIm">
+                                                <rect key="frame" x="16.5" y="217" width="302" height="87"/>
+                                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="width" constant="302" id="CYZ-4G-qOJ"/>
+                                                    <constraint firstAttribute="height" constant="87" id="Sqv-2D-anu"/>
+                                                </constraints>
+                                                <fontDescription key="fontDescription" name="TimesNewRomanPSMT" family="Times New Roman" pointSize="32"/>
+                                                <nil key="textColor"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="  Language: " lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="uZa-54-rtG">
+                                                <rect key="frame" x="16.5" y="108" width="302" height="85"/>
+                                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="width" constant="302" id="2qr-bI-LMZ"/>
+                                                    <constraint firstAttribute="height" constant="85" id="N9g-of-biB"/>
+                                                </constraints>
+                                                <fontDescription key="fontDescription" name="TimesNewRomanPSMT" family="Times New Roman" pointSize="32"/>
+                                                <nil key="textColor"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="GS3-El-qgg">
+                                                <rect key="frame" x="168" y="217" width="0.0" height="0.0"/>
+                                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                <color key="backgroundColor" red="0.33644006409999999" green="0.40332308709999998" blue="0.69790317359999998" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                <nil key="textColor"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Is this correct?" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="mWe-Ui-CSj">
+                                                <rect key="frame" x="44.5" y="23" width="246" height="59"/>
+                                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="height" constant="59" id="PRp-Qo-HmN"/>
+                                                    <constraint firstAttribute="width" constant="246" id="ieE-UY-9R2"/>
+                                                </constraints>
+                                                <fontDescription key="fontDescription" name="TimesNewRomanPSMT" family="Times New Roman" pointSize="24"/>
+                                                <nil key="textColor"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                        </subviews>
+                                        <color key="backgroundColor" red="0.82744318250000004" green="0.82744568590000001" blue="0.82745128869999995" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                        <constraints>
+                                            <constraint firstAttribute="bottom" relation="greaterThanOrEqual" secondItem="5ID-g4-lIm" secondAttribute="bottom" constant="20" id="3Od-zX-LVR"/>
+                                            <constraint firstItem="5ID-g4-lIm" firstAttribute="top" secondItem="uZa-54-rtG" secondAttribute="bottom" constant="24" id="BbN-5B-pEh"/>
+                                            <constraint firstItem="mWe-Ui-CSj" firstAttribute="centerX" secondItem="pc7-cZ-xhm" secondAttribute="centerX" id="IDZ-XN-miB"/>
+                                            <constraint firstItem="uZa-54-rtG" firstAttribute="centerX" secondItem="pc7-cZ-xhm" secondAttribute="centerX" id="YGM-w4-ROJ"/>
+                                            <constraint firstItem="5ID-g4-lIm" firstAttribute="centerX" secondItem="pc7-cZ-xhm" secondAttribute="centerX" id="avX-bx-1FQ"/>
+                                            <constraint firstItem="mWe-Ui-CSj" firstAttribute="top" secondItem="pc7-cZ-xhm" secondAttribute="top" constant="23" id="rMr-qO-lOg"/>
+                                            <constraint firstItem="uZa-54-rtG" firstAttribute="top" secondItem="mWe-Ui-CSj" secondAttribute="bottom" constant="26" id="wHv-ta-5p2"/>
+                                        </constraints>
+                                    </view>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="H9f-7O-eip">
+                                        <rect key="frame" x="20" y="374" width="162" height="80"/>
+                                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" constant="162" id="b32-9K-PqU"/>
+                                            <constraint firstAttribute="height" constant="80" id="qHK-Og-Yf2"/>
+                                        </constraints>
+                                        <fontDescription key="fontDescription" name="TimesNewRomanPSMT" family="Times New Roman" pointSize="32"/>
+                                        <size key="titleShadowOffset" width="2" height="2"/>
+                                        <state key="normal" title="Yes">
+                                            <color key="titleColor" cocoaTouchSystemColor="darkTextColor"/>
+                                        </state>
+                                        <connections>
+                                            <action selector="checkUpSuccess:" destination="vS4-aj-ghc" eventType="touchUpInside" id="b6V-Yv-faa"/>
+                                            <segue destination="W0q-6d-xKy" kind="show" id="yML-Qa-feY"/>
+                                        </connections>
+                                    </button>
+                                </subviews>
+                                <color key="backgroundColor" red="0.0" green="0.4823529412" blue="0.54117647059999996" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                <constraints>
+                                    <constraint firstItem="H9f-7O-eip" firstAttribute="top" secondItem="wAZ-WY-2Rp" secondAttribute="top" id="5a4-tR-nb2"/>
+                                    <constraint firstAttribute="bottom" secondItem="wAZ-WY-2Rp" secondAttribute="bottom" constant="57" id="5vQ-6T-ZLD"/>
+                                    <constraint firstItem="H9f-7O-eip" firstAttribute="leading" secondItem="Gsp-jF-ySQ" secondAttribute="leading" constant="20" id="8co-mP-3Ai"/>
+                                    <constraint firstItem="pc7-cZ-xhm" firstAttribute="leading" secondItem="Gsp-jF-ySQ" secondAttribute="leading" constant="20" id="AHd-IW-eoC"/>
+                                    <constraint firstAttribute="trailing" secondItem="wAZ-WY-2Rp" secondAttribute="trailing" constant="18" id="ALu-Si-fC5"/>
+                                    <constraint firstItem="pc7-cZ-xhm" firstAttribute="centerX" secondItem="Gsp-jF-ySQ" secondAttribute="centerX" id="IbH-ms-mix"/>
+                                    <constraint firstItem="H9f-7O-eip" firstAttribute="top" secondItem="pc7-cZ-xhm" secondAttribute="bottom" constant="25" id="L8p-5K-rGP"/>
+                                    <constraint firstAttribute="trailing" secondItem="pc7-cZ-xhm" secondAttribute="trailing" constant="20" id="QoJ-OO-WbQ"/>
+                                    <constraint firstAttribute="bottom" secondItem="H9f-7O-eip" secondAttribute="bottom" constant="57" id="ZqY-SY-VVm"/>
+                                    <constraint firstItem="wAZ-WY-2Rp" firstAttribute="top" secondItem="pc7-cZ-xhm" secondAttribute="bottom" constant="25" id="mVJ-kW-PbS"/>
+                                    <constraint firstItem="pc7-cZ-xhm" firstAttribute="top" secondItem="Gsp-jF-ySQ" secondAttribute="top" constant="25" id="prg-VI-f5A"/>
+                                    <constraint firstItem="H9f-7O-eip" firstAttribute="bottom" secondItem="wAZ-WY-2Rp" secondAttribute="bottom" id="qlG-rS-Zh8"/>
+                                </constraints>
+                            </view>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="Gsp-jF-ySQ" firstAttribute="centerX" secondItem="WH3-wl-vvw" secondAttribute="centerX" id="56r-XS-21R"/>
+                            <constraint firstItem="Gsp-jF-ySQ" firstAttribute="top" secondItem="WH3-wl-vvw" secondAttribute="top" constant="190" id="8bU-ri-sPL"/>
+                            <constraint firstItem="Gsp-jF-ySQ" firstAttribute="leading" secondItem="WH3-wl-vvw" secondAttribute="leading" id="9gc-6Y-J3G"/>
+                            <constraint firstItem="Dc4-Q6-GVY" firstAttribute="centerX" secondItem="WH3-wl-vvw" secondAttribute="centerX" id="C4I-Nn-Zpc"/>
+                            <constraint firstItem="Dc4-Q6-GVY" firstAttribute="top" secondItem="WH3-wl-vvw" secondAttribute="top" id="SNn-ZH-lfq"/>
+                            <constraint firstItem="Gsp-jF-ySQ" firstAttribute="top" secondItem="Dc4-Q6-GVY" secondAttribute="bottom" constant="5" id="SaT-X0-Zji"/>
+                            <constraint firstItem="WH3-wl-vvw" firstAttribute="trailing" secondItem="Gsp-jF-ySQ" secondAttribute="trailing" id="VRI-0K-TLo"/>
+                            <constraint firstItem="Dc4-Q6-GVY" firstAttribute="trailing" secondItem="WH3-wl-vvw" secondAttribute="trailing" id="YVk-zs-mjo"/>
+                            <constraint firstItem="Dc4-Q6-GVY" firstAttribute="leading" secondItem="WH3-wl-vvw" secondAttribute="leading" id="ZZW-a5-iXa"/>
+                            <constraint firstItem="WH3-wl-vvw" firstAttribute="bottom" secondItem="Gsp-jF-ySQ" secondAttribute="bottom" constant="-34" id="pcU-Nj-A90"/>
+                        </constraints>
                         <viewLayoutGuide key="safeArea" id="WH3-wl-vvw"/>
                     </view>
                     <connections>
+                        <outlet property="DQ" destination="mWe-Ui-CSj" id="p5L-OT-wuZ"/>
                         <outlet property="NoButton" destination="wAZ-WY-2Rp" id="cJy-qn-ALh"/>
                         <outlet property="YesButton" destination="H9f-7O-eip" id="nf1-WU-vQL"/>
+                        <outlet property="checkBackground" destination="pc7-cZ-xhm" id="MsT-Kw-fwR"/>
                         <outlet property="districtLabel" destination="5ID-g4-lIm" id="5gu-MP-9Vc"/>
                         <outlet property="languageLabel" destination="uZa-54-rtG" id="JXT-Zg-HZr"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Fso-QT-1Ss" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2876" y="129.98500749625188"/>
+            <point key="canvasLocation" x="2875.36231884058" y="129.91071428571428"/>
         </scene>
         <!--HomePage-->
         <scene sceneID="tUo-3e-CPh">
             <objects>
-                <viewControllerPlaceholder storyboardName="Main" referencedIdentifier="HomePage" id="W0q-6d-xKy" sceneMemberID="viewController"/>
+                <viewControllerPlaceholder storyboardName="Main" referencedIdentifier="HomePage" id="W0q-6d-xKy" sceneMemberID="viewController">
+                    <navigationItem key="navigationItem" id="gRA-N7-46s"/>
+                </viewControllerPlaceholder>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="6nb-bp-4BV" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="3460" y="131"/>
         </scene>
     </scenes>
     <resources>
-        <image name="Confermation.png" width="1500" height="2668"/>
-        <image name="DistrictSelect.png" width="1500" height="2668"/>
-        <image name="LanguageSelect.png" width="1500" height="2668"/>
+        <image name="Main.png" width="612" height="330.239990234375"/>
         <image name="arabic.png" width="283" height="178"/>
         <image name="bengali.png" width="290" height="174"/>
         <image name="chinese.png" width="275" height="183"/>
@@ -707,7 +1076,6 @@
         <image name="italy.png" width="255" height="170"/>
         <image name="japanese.png" width="275" height="183"/>
         <image name="nepalese.png" width="203" height="248"/>
-        <image name="pinpad.png" width="1500" height="2668"/>
         <image name="portuguese.jpg" width="275" height="183"/>
         <image name="punjabi.png" width="275" height="183"/>
         <image name="russian.png" width="275" height="183"/>

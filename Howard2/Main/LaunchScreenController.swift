@@ -35,6 +35,14 @@ class LaunchScreenController: UIViewController {
         loginButton.layer.cornerRadius = 5
         signupButton.layer.cornerRadius = 5
 
+        loginButton.layer.shadowRadius = 5
+        loginButton.layer.shadowOpacity = 0.8
+        loginButton.layer.shadowOffset = CGSize(width: 2.0, height: 2.0)
+        
+        signupButton.layer.shadowRadius = 5
+        signupButton.layer.shadowOpacity = 0.8
+        signupButton.layer.shadowOffset = CGSize(width: 2.0, height: 2.0)
+        
         //Fill the time entered object with an updated date object
         timeEntered = Date()
         

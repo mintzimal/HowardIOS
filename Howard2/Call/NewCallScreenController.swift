@@ -225,17 +225,17 @@ class NewCallScreenController: UIViewController {
                     device.torchMode = .off
                 }
                 
-                //Unlock the config lock placed by the app when toggling the devices flash
+                //Unlock the config lock placed by the app when toggling the devices flash. NOTE: This will not work if the device does not have the permissions level granted to the app to control outside of app configuration/functionality
                 device.unlockForConfiguration()
             }
                 
-            //If the above doesn't work the torch is not able to be toggled manually
+            //If the above doesn't work the torch is not able to be toggled manually, typically due to permission descrepencies
             catch {
                 print("Torch is not working.")
             }
         }
         
-        //The device does not have a flashlight
+        //The device does not have a flashlight, this typically won't be the case on all new devices. The app is not designed to be optimized on I-devices old enough to not have a flashlight anyways so if this is ever triggered by a user it should be a point of concern. (Iphones 4+ have flashlights just for the note)
         else {
             print("Torch not compatible with device.")
         }

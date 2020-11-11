@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="15505" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="15705" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
     <device id="retina4_7" orientation="portrait" appearance="light"/>
     <dependencies>
         <deployment identifier="iOS"/>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="15510"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="15706"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
@@ -45,26 +45,16 @@
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" title="Button" image="funguy.png"/>
                             </button>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="xq2-Xf-QC2">
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="xq2-Xf-QC2">
                                 <rect key="frame" x="0.0" y="0.0" width="375" height="27"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <color key="backgroundColor" red="0.0" green="0.4823529412" blue="0.54901960780000003" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="27" id="guO-JY-xFk"/>
+                                </constraints>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="UHe-vY-zIB">
-                                <rect key="frame" x="0.0" y="601" width="375" height="66"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <color key="backgroundColor" red="0.0" green="0.4823529411764706" blue="0.5490196078431373" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
-                                <fontDescription key="fontDescription" name="GeezaPro-Bold" family="Geeza Pro" pointSize="36"/>
-                                <state key="normal" title="Click to let me know">
-                                    <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                </state>
-                                <connections>
-                                    <action selector="sendMail:" destination="89T-kU-rUW" eventType="touchUpInside" id="1dh-DL-WwT"/>
-                                </connections>
-                            </button>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Do you have any questions?" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="695-lf-FJh">
                                 <rect key="frame" x="90" y="35" width="194" height="90"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
@@ -72,10 +62,13 @@
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="L1o-Xz-AgD">
-                                <rect key="frame" x="220" y="496" width="120" height="97"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <state key="normal" title="Click to Let Me Know" image="HomeIcon.jpg">
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="L1o-Xz-AgD">
+                                <rect key="frame" x="220" y="502" width="120" height="97"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="120" id="Dmo-fp-5eb"/>
+                                    <constraint firstAttribute="height" constant="97" id="Edp-S3-nMa"/>
+                                </constraints>
+                                <state key="normal" title="Click to Let Me Know" image="backArrow.png">
                                     <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 </state>
                                 <connections>
@@ -83,24 +76,55 @@
                                     <segue destination="W9k-kn-WA8" kind="show" id="vvP-if-pP9"/>
                                 </connections>
                             </button>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="PVZ-3s-Ydi">
-                                <rect key="frame" x="0.0" y="0.0" width="27" height="609"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="PVZ-3s-Ydi">
+                                <rect key="frame" x="0.0" y="0.0" width="27" height="667"/>
                                 <color key="backgroundColor" red="0.0" green="0.4823529412" blue="0.54901960780000003" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="27" id="jdH-1R-YIo"/>
+                                </constraints>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="cN8-pv-2U5">
-                                <rect key="frame" x="348" y="0.0" width="27" height="615"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="cN8-pv-2U5">
+                                <rect key="frame" x="348" y="0.0" width="27" height="667"/>
                                 <color key="backgroundColor" red="0.0" green="0.4823529412" blue="0.54901960780000003" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="27" id="Bmf-tC-Ug8"/>
+                                </constraints>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="UHe-vY-zIB">
+                                <rect key="frame" x="0.0" y="616" width="375" height="51"/>
+                                <color key="backgroundColor" red="0.0" green="0.4823529411764706" blue="0.5490196078431373" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                <fontDescription key="fontDescription" name="GeezaPro-Bold" family="Geeza Pro" pointSize="31"/>
+                                <state key="normal" title="Click here to let us know">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </state>
+                                <connections>
+                                    <action selector="sendMail:" destination="89T-kU-rUW" eventType="touchUpInside" id="1dh-DL-WwT"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="xq2-Xf-QC2" firstAttribute="top" secondItem="ucH-PX-ijL" secondAttribute="top" id="Has-RX-wpS"/>
+                            <constraint firstItem="xq2-Xf-QC2" firstAttribute="leading" secondItem="Ckq-vZ-mEJ" secondAttribute="leading" id="JWw-jp-kTN"/>
+                            <constraint firstItem="Ckq-vZ-mEJ" firstAttribute="trailing" secondItem="UHe-vY-zIB" secondAttribute="trailing" id="KRx-iQ-gKF"/>
+                            <constraint firstAttribute="bottom" secondItem="UHe-vY-zIB" secondAttribute="bottom" id="PPT-U2-gqW"/>
+                            <constraint firstItem="UHe-vY-zIB" firstAttribute="top" secondItem="L1o-Xz-AgD" secondAttribute="bottom" constant="17" id="Wvn-EG-KYd"/>
+                            <constraint firstItem="UHe-vY-zIB" firstAttribute="leading" secondItem="Ckq-vZ-mEJ" secondAttribute="leading" id="gCq-I7-Bnw"/>
+                            <constraint firstAttribute="trailing" secondItem="xq2-Xf-QC2" secondAttribute="trailing" id="gyj-LD-mpb"/>
+                            <constraint firstItem="cN8-pv-2U5" firstAttribute="leading" secondItem="L1o-Xz-AgD" secondAttribute="trailing" constant="8" id="iqO-42-QNS"/>
+                            <constraint firstItem="PVZ-3s-Ydi" firstAttribute="top" secondItem="ucH-PX-ijL" secondAttribute="top" id="j2q-xP-o3R"/>
+                            <constraint firstItem="Ckq-vZ-mEJ" firstAttribute="bottom" secondItem="cN8-pv-2U5" secondAttribute="bottom" id="jcA-Vx-751"/>
+                            <constraint firstItem="PVZ-3s-Ydi" firstAttribute="leading" secondItem="Ckq-vZ-mEJ" secondAttribute="leading" id="nux-2M-I6K"/>
+                            <constraint firstItem="Ckq-vZ-mEJ" firstAttribute="trailing" secondItem="cN8-pv-2U5" secondAttribute="trailing" id="phz-ET-kEm"/>
+                            <constraint firstItem="Ckq-vZ-mEJ" firstAttribute="bottom" secondItem="PVZ-3s-Ydi" secondAttribute="bottom" id="ubF-mz-1No"/>
+                            <constraint firstItem="cN8-pv-2U5" firstAttribute="top" secondItem="ucH-PX-ijL" secondAttribute="top" id="yw0-JH-UuJ"/>
+                        </constraints>
                         <viewLayoutGuide key="safeArea" id="Ckq-vZ-mEJ"/>
                     </view>
                     <connections>
@@ -123,7 +147,7 @@
         </scene>
     </scenes>
     <resources>
-        <image name="HomeIcon.jpg" width="512" height="512"/>
+        <image name="backArrow.png" width="160" height="160"/>
         <image name="funguy.png" width="753" height="742"/>
     </resources>
 </document>

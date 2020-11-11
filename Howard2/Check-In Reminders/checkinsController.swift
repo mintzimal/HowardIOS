@@ -66,7 +66,6 @@ class checkinsController: UIViewController, UITableViewDelegate, UITableViewData
         //Round all of the storyboard elements
         setReminders?.layer.cornerRadius = 15
         numberLabel?.layer.cornerRadius = 15
-        nextOne?.layer.cornerRadius = 15
         Button1?.layer.cornerRadius = 15
         Button2?.layer.cornerRadius = 15
         Button3?.layer.cornerRadius = 15
@@ -76,8 +75,6 @@ class checkinsController: UIViewController, UITableViewDelegate, UITableViewData
         Button7?.layer.cornerRadius = 15
         Button8?.layer.cornerRadius = 15
         Button9?.layer.cornerRadius = 15
-        nextTwo?.layer.cornerRadius = 15
-        nextThree?.layer.cornerRadius = 15
         confirm?.layer.cornerRadius = 15
         redo?.layer.cornerRadius = 15
         

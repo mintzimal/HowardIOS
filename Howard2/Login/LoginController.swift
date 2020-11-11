@@ -29,6 +29,12 @@ class LoginController: UIViewController {
     @IBOutlet weak var Button7: UIButton!
     @IBOutlet weak var Button8: UIButton!
     @IBOutlet weak var Button9: UIButton!
+    @IBOutlet weak var Button0: UIButton!
+    @IBOutlet weak var banner: UIImageView!
+    
+    
+    
+    var buttonBox:[UIButton] = []
     
     //Load in the current roadmap state
     var RoadMap:Array<String> = UserDefaults.standard.object(forKey: "RoadMap") as? Array<String> ?? Array()
@@ -43,18 +49,40 @@ class LoginController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         
+        buttonBox.append(Button1)
+        buttonBox.append(Button2)
+        buttonBox.append(Button3)
+        buttonBox.append(Button4)
+        buttonBox.append(Button5)
+        buttonBox.append(Button6)
+        buttonBox.append(Button7)
+        buttonBox.append(Button8)
+        buttonBox.append(Button9)
+        buttonBox.append(Button0)
+        
         //Round all of the storyboard objects
         submitButton.layer.cornerRadius = 15
         PINView.layer.cornerRadius = 15
-        Button1.layer.cornerRadius = 15
-        Button2.layer.cornerRadius = 15
-        Button3.layer.cornerRadius = 15
-        Button4.layer.cornerRadius = 15
-        Button5.layer.cornerRadius = 15
-        Button6.layer.cornerRadius = 15
-        Button7.layer.cornerRadius = 15
-        Button8.layer.cornerRadius = 15
-        Button9.layer.cornerRadius = 15
+        
+        for button in buttonBox{
+            button.layer.cornerRadius = button.frame.height/2
+            
+            button.layer.shadowRadius = 5
+            button.layer.shadowOpacity = 0.8
+            button.layer.shadowOffset = CGSize(width: 2.0, height: 2.0)
+        }
+        
+        banner.layer.shadowRadius = 30
+        banner.layer.shadowOpacity = 0.8
+        banner.layer.shadowOffset = CGSize(width: 0.0, height: 2.0)
+        
+        submitButton.layer.shadowRadius = 5
+        submitButton.layer.shadowOpacity = 0.8
+        submitButton.layer.shadowOffset = CGSize(width: 2.0, height: 2.0)
+        
+        PINView.layer.shadowRadius = 5
+        PINView.layer.shadowOpacity = 0.8
+        PINView.layer.shadowOffset = CGSize(width: 2.0, height: 2.0)
                 
         //Update the time entered tracker with a new date
         timeEntered = Date()

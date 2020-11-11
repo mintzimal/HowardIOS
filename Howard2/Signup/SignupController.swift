@@ -28,12 +28,22 @@ class SignupController: UIViewController {
     @IBOutlet weak var Button7: UIButton?
     @IBOutlet weak var Button8: UIButton?
     @IBOutlet weak var Button9: UIButton?
+    @IBOutlet weak var Button0: UIButton?
+
+    var buttonBox:[UIButton]  = []
+    var backgroundBox:[UIButton] = []
+    var labelBox:[UILabel] = []
+    
     
     //DISTRICT PAGE BUTTONS
     @IBOutlet weak var District1: UIButton!
     @IBOutlet weak var District2: UIButton!
+    @IBOutlet weak var distLabel: UILabel!
     
     //LANGUAGE PAGE BUTTONS
+    @IBOutlet weak var LangBackground: UIView!
+    @IBOutlet weak var LangBackground2: UIView!
+    @IBOutlet weak var LQ: UILabel!
     @IBOutlet weak var L1: UIButton!
     @IBOutlet weak var L2: UIButton!
     @IBOutlet weak var L3: UIButton!
@@ -46,6 +56,7 @@ class SignupController: UIViewController {
     
     @IBOutlet weak var NextPage: UIButton!
     
+    @IBOutlet weak var LQ2: UILabel!
     @IBOutlet weak var L10: UIButton!
     @IBOutlet weak var L11: UIButton!
     @IBOutlet weak var L12: UIButton!
@@ -63,6 +74,8 @@ class SignupController: UIViewController {
     @IBOutlet weak var SkipButton: UIButton!
     
     //CHECKUP PAGE BUTTONS
+    @IBOutlet weak var checkBackground: UIView!
+    @IBOutlet weak var DQ: UILabel!
     @IBOutlet weak var districtLabel: UILabel!
     @IBOutlet weak var languageLabel: UILabel!
     @IBOutlet weak var YesButton: UIButton!
@@ -78,46 +91,154 @@ class SignupController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         
-            //Round the storyboard elements
+        //Round the storyboard elements
+        if(Button1 != nil){
+            buttonBox.append(Button1!)
+            buttonBox.append(Button2!)
+            buttonBox.append(Button3!)
+            buttonBox.append(Button4!)
+            buttonBox.append(Button5!)
+            buttonBox.append(Button6!)
+            buttonBox.append(Button7!)
+            buttonBox.append(Button8!)
+            buttonBox.append(Button9!)
+            buttonBox.append(Button0!)
+            buttonBox.append(submitButton!)
+            
+            for button in buttonBox{
+                button.layer.cornerRadius = button.frame.height/2
+                
+                button.layer.shadowRadius = 5
+                button.layer.shadowOpacity = 0.8
+                button.layer.shadowOffset = CGSize(width: 2.0, height: 2.0)
+            }
+            
             submitButton?.layer.cornerRadius = 15
+            
             PINView?.layer.cornerRadius = 15
+            PINView?.layer.shadowRadius = 5
+            PINView?.layer.shadowOpacity = 0.8
+            PINView?.layer.shadowOffset = CGSize(width: 2.0, height: 2.0)
+            
+        }
         
-            Button1?.layer.cornerRadius = 15
-            Button2?.layer.cornerRadius = 15
-            Button3?.layer.cornerRadius = 15
-            Button4?.layer.cornerRadius = 15
-            Button5?.layer.cornerRadius = 15
-            Button6?.layer.cornerRadius = 15
-            Button7?.layer.cornerRadius = 15
-            Button8?.layer.cornerRadius = 15
-            Button9?.layer.cornerRadius = 15
+        if(District1 != nil){
+            buttonBox = []
+            buttonBox.append(District1)
+            buttonBox.append(District2)
+            
+            for button in buttonBox{
+                button.layer.cornerRadius = 15
+                
+                button.layer.shadowRadius = 5
+                button.layer.shadowOpacity = 0.8
+                button.layer.shadowOffset = CGSize(width: 2.0, height: 2.0)
+            }
+            
+            distLabel?.layer.cornerRadius = 15
+            distLabel?.layer.shadowRadius = 5
+            distLabel?.layer.shadowOpacity = 0.8
+            distLabel?.layer.shadowOffset = CGSize(width: 3.0, height: 3.0)
+        }
         
-            District1?.layer.cornerRadius = 15
-            District2?.layer.cornerRadius = 15
+        if(L1 != nil){
+            buttonBox = []
+            buttonBox.append(L1)
+            buttonBox.append(L2)
+            buttonBox.append(L3)
+            buttonBox.append(L4)
+            buttonBox.append(L5)
+            buttonBox.append(L6)
+            buttonBox.append(L7)
+            buttonBox.append(L8)
+            buttonBox.append(L9)
+            
+            for button in buttonBox{
+                button.layer.borderWidth = 1
+                button.layer.shadowRadius = 5
+                button.layer.shadowOpacity = 0.8
+                button.layer.shadowOffset = CGSize(width: 2.0, height: 2.0)
+            }
+            LangBackground.layer.cornerRadius = 15
+            LangBackground.layer.shadowRadius = 5
+            LangBackground.layer.shadowOpacity = 0.8
+            LangBackground.layer.shadowOffset = CGSize(width: 2.0, height: 2.0)
+            
+            NextPage.layer.cornerRadius = 15
+            NextPage.layer.shadowRadius = 5
+            NextPage.layer.shadowOpacity = 0.8
+            NextPage.layer.shadowOffset = CGSize(width: 2.0, height: 2.0)
+            
+            LQ.layer.cornerRadius = 15
+            LQ.layer.shadowRadius = 5
+            LQ.layer.shadowOpacity = 0.8
+            LQ.layer.shadowOffset = CGSize(width: 2.0, height: 2.0)
+        }
         
-            L1?.layer.borderWidth = 1
-            L2?.layer.borderWidth = 1
-            L3?.layer.borderWidth = 1
-            L4?.layer.borderWidth = 1
-            L5?.layer.borderWidth = 1
-            L6?.layer.borderWidth = 1
-            L7?.layer.borderWidth = 1
-            L8?.layer.borderWidth = 1
-            L9?.layer.borderWidth = 1
-            L10?.layer.borderWidth = 1
-            L11?.layer.borderWidth = 1
-            L12?.layer.borderWidth = 1
-            L13?.layer.borderWidth = 1
-            L14?.layer.borderWidth = 1
-            L15?.layer.borderWidth = 1
-            L16?.layer.borderWidth = 1
-            L17?.layer.borderWidth = 1
-            L18?.layer.borderWidth = 1
+        if(L10 != nil){
+            buttonBox = []
+            buttonBox.append(L10)
+            buttonBox.append(L11)
+            buttonBox.append(L12)
+            buttonBox.append(L13)
+            buttonBox.append(L14)
+            buttonBox.append(L15)
+            buttonBox.append(L16)
+            buttonBox.append(L17)
+            buttonBox.append(L18)
+            buttonBox.append(SkipButton)
+            
+            for button in buttonBox{
+                button.layer.borderWidth = 1
+                
+                button.layer.shadowRadius = 5
+                button.layer.shadowOpacity = 0.8
+                button.layer.shadowOffset = CGSize(width: 2.0, height: 2.0)
+            }
+            
+            SkipButton.layer.cornerRadius = 15
+            
+            LangBackground2.layer.cornerRadius = 15
+            LangBackground2.layer.shadowRadius = 5
+            LangBackground2.layer.shadowOpacity = 0.8
+            LangBackground2.layer.shadowOffset = CGSize(width: 2.0, height: 2.0)
+            
+            LQ2.layer.cornerRadius = 15
+            LQ2.layer.shadowRadius = 5
+            LQ2.layer.shadowOpacity = 0.8
+            LQ2.layer.shadowOffset = CGSize(width: 2.0, height: 2.0)
+        }
         
-            YesButton?.layer.cornerRadius = 15
-            NoButton?.layer.cornerRadius = 15
-            SkipButton?.layer.cornerRadius = 15
-            NextPage?.layer.cornerRadius = 15
+        if (YesButton != nil) {
+            buttonBox = []
+            buttonBox.append(YesButton)
+            buttonBox.append(NoButton)
+            
+            labelBox = []
+            labelBox.append(DQ)
+            labelBox.append(languageLabel)
+            labelBox.append(districtLabel)
+            
+            for button in buttonBox{
+                button.layer.cornerRadius = 15
+                button.layer.shadowRadius = 5
+                button.layer.shadowOpacity = 0.8
+                button.layer.shadowOffset = CGSize(width: 2.0, height: 2.0)
+            }
+            
+            for label in labelBox{
+                label.layer.cornerRadius = 15
+                
+                label.layer.shadowRadius = 5
+                label.layer.shadowOpacity = 0.8
+                label.layer.shadowOffset = CGSize(width: 2.0, height: 2.0)
+            }
+            
+            checkBackground?.layer.cornerRadius = 15
+            checkBackground?.layer.shadowRadius = 5
+            checkBackground?.layer.shadowOpacity = 0.8
+            checkBackground?.layer.shadowOffset = CGSize(width: 2.0, height: 2.0)
+        }
         
             //Prevent the user from typing into the PINView
             PINView?.isEnabled = false
@@ -143,6 +264,8 @@ class SignupController: UIViewController {
     //On the initial view controller load, when the view controller first appears
     override func viewDidAppear(_ animated: Bool) {
         
+
+        
         //If on the main signup page (the page with the PIN)
         if(submitButton != nil){
             
@@ -159,6 +282,12 @@ class SignupController: UIViewController {
         
     }
     
+    func cornersAndShadows(_ sender: UIButton){
+        sender.layer.cornerRadius = 15
+        sender.layer.shadowRadius = 5
+        sender.layer.shadowOpacity = 0.8
+        sender.layer.shadowOffset = CGSize(width: 2.0, height: 2.0)
+    }
     //Function connected to the buttons of the PIN pad so that they update the PINView correctly
     @IBAction func numberButtonPress(_ sender: Any){
         

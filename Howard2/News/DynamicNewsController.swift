@@ -17,6 +17,9 @@ class DynamicNewsController: UIViewController, SFSafariViewControllerDelegate {
     @IBOutlet weak var LogoutButton: UIButton!
     @IBOutlet weak var HomeButton: UIButton!
     @IBOutlet weak var refreshButton: UIButton!
+    @IBOutlet weak var checklistButton: UIButton!
+    @IBOutlet weak var questionsButton: UIButton!
+    
     
     //Six buttons to be populated by the selected apps
     @IBOutlet weak var NewsOne: UIButton!
@@ -61,8 +64,8 @@ class DynamicNewsController: UIViewController, SFSafariViewControllerDelegate {
         appStruct(id: 4, title: "News10", text: "Local News",image: "N10.jpg"),
         appStruct(id: 5, title: "VPR", text: "Local News",image: "VPR.jpg"),
         appStruct(id:6, title: "CNN", text: "Global News",image: "CNN.png"),
-        appStruct(id:7, title: "Aljazeera", text: "Global News",image: "ALZ.png"),
-        appStruct(id:8, title: "ABC", text: "Global News",image: "ABC.png"),
+        appStruct(id:7, title: "Aljazeera", text: "Global News",image: "ALZ.jpg"),
+        appStruct(id:8, title: "ABC", text: "Global News",image: "ABCNew.jpg"),
         appStruct(id:9, title: "Wall Street Journal", text: "Global News",image: "WSJ.png"),
         appStruct(id:10, title: "NPR", text:"Global News",image: "NPR.png"),
         appStruct(id:11, title: "Reuters", text: "Global News", image: "reuters.png" ),
@@ -138,40 +141,57 @@ class DynamicNewsController: UIViewController, SFSafariViewControllerDelegate {
         UserDefaults.standard.set(try? PropertyListEncoder().encode(arrayOfNews), forKey:"NewsFiles")
         
         //If there's only one selected news site, populate the first image and first title
-        if selectedApps.count >= 1 {
-            LabelOne.text = arrayOfNews[selectedApps[0]].title.localized()
-            NewsOne.setImage(UIImage(named: arrayOfNews[selectedApps[0]].image), for: .normal)
-        }
+//        if selectedApps.count >= 1 {
+//            LabelOne.text = arrayOfNews[selectedApps[0]].title.localized()
+//            NewsOne.setImage(UIImage(named: arrayOfNews[selectedApps[0]].image), for: .normal)
+//        }
+//
+//        //If there's a second selected news site, populate the second image and second title
+//        if selectedApps.count >= 2 {
+//            LabelTwo.text = arrayOfNews[selectedApps[1]].title.localized()
+//            NewsTwo.setImage(UIImage(named: arrayOfNews[selectedApps[1]].image), for: .normal)
+//        }
+//
+//        //If there's a third selected news site, populate the third image and third title
+//        if selectedApps.count >= 3 {
+//            LabelThree.text = arrayOfNews[selectedApps[2]].title.localized()
+//            NewsThree.setImage(UIImage(named: arrayOfNews[selectedApps[2]].image), for: .normal)
+//        }
+//
+//        //If there's a fourth selected news site, populate the fourth image and fourth title
+//        if selectedApps.count >= 4 {
+//            LabelFour.text = arrayOfNews[selectedApps[3]].title.localized()
+//            NewsFour.setImage(UIImage(named: arrayOfNews[selectedApps[3]].image), for: .normal)
+//        }
+//
+//        //If there's a fifth selected news site, populate the fifth image and fifth title
+//        if selectedApps.count >= 5 {
+//            LabelFive.text = arrayOfNews[selectedApps[4]].title.localized()
+//            NewsFive.setImage(UIImage(named: arrayOfNews[selectedApps[4]].image), for: .normal)
+//        }
+//
+//        //If there's a sixth selected news site, populate the sixth image and sixth title
+//        if selectedApps.count >= 6 {
+//            LabelSix.text = arrayOfNews[selectedApps[5]].title.localized()
+//            NewsSix.setImage(UIImage(named: arrayOfNews[selectedApps[5]].image), for: .normal)
+//    }
         
-        //If there's a second selected news site, populate the second image and second title
-        if selectedApps.count >= 2 {
-            LabelTwo.text = arrayOfNews[selectedApps[1]].title.localized()
-            NewsTwo.setImage(UIImage(named: arrayOfNews[selectedApps[1]].image), for: .normal)
-        }
+        var newsBox = [NewsOne,NewsTwo,NewsThree,NewsFour,NewsFive,NewsSix]
+        var labelBox = [LabelOne,LabelTwo,LabelThree,LabelFour,LabelFive,LabelSix]
         
-        //If there's a third selected news site, populate the third image and third title
-        if selectedApps.count >= 3 {
-            LabelThree.text = arrayOfNews[selectedApps[2]].title.localized()
-            NewsThree.setImage(UIImage(named: arrayOfNews[selectedApps[2]].image), for: .normal)
+        for i in 1...6{
+            if selectedApps.count >= i {
+                labelBox[i-1]?.text = arrayOfNews[selectedApps[i-1]].title.localized()
+                
+                var imageForButton = UIImage(named: arrayOfNews[selectedApps[i-1]].image)
+                
+                newsBox[i-1]?.titleLabel?.isHidden = true
+                newsBox[i-1]?.setBackgroundImage(imageForButton, for: .normal)
+                newsBox[i-1]?.contentVerticalAlignment = .fill
+                newsBox[i-1]?.contentHorizontalAlignment = .fill
+                
+            }
         }
-        
-        //If there's a fourth selected news site, populate the fourth image and fourth title
-        if selectedApps.count >= 4 {
-            LabelFour.text = arrayOfNews[selectedApps[3]].title.localized()
-            NewsFour.setImage(UIImage(named: arrayOfNews[selectedApps[3]].image), for: .normal)
-        }
-        
-        //If there's a fifth selected news site, populate the fifth image and fifth title
-        if selectedApps.count >= 5 {
-            LabelFive.text = arrayOfNews[selectedApps[4]].title.localized()
-            NewsFive.setImage(UIImage(named: arrayOfNews[selectedApps[4]].image), for: .normal)
-        }
-        
-        //If there's a sixth selected news site, populate the sixth image and sixth title
-        if selectedApps.count >= 6 {
-            LabelSix.text = arrayOfNews[selectedApps[5]].title.localized()
-            NewsSix.setImage(UIImage(named: arrayOfNews[selectedApps[5]].image), for: .normal)
-    }
     }
 
     //Function that determines the origin of the click and sends it to the news router
@@ -405,7 +425,7 @@ class DynamicNewsController: UIViewController, SFSafariViewControllerDelegate {
         super.viewDidLoad()
         
         //Logout button is hidden by default
-        LogoutButton.isHidden = true
+        LogoutButton?.isHidden = true
         
         //If apps and help are disabled
         if UserDefaults.standard.bool(forKey: "disableApps") && UserDefaults.standard.bool(forKey: "disableHelp") {
@@ -420,6 +440,20 @@ class DynamicNewsController: UIViewController, SFSafariViewControllerDelegate {
                 LogoutButton.isHidden = false
             }
         }
+        
+        var buttonBox = [HomeButton,questionsButton,checklistButton,NewsOne,NewsTwo,NewsThree,NewsFour,NewsFive,NewsSix]
+        
+        for button in buttonBox{
+            button?.layer.shadowRadius = 5
+            button?.layer.shadowOpacity = 0.8
+            button?.layer.shadowOffset = CGSize(width: 2.0, height: 2.0)
+        }
+        
+        HomeButton.imageEdgeInsets = UIEdgeInsets(top: 3,left: 3,bottom: 3,right: 3)
+        HomeButton.layer.cornerRadius = 15
+        questionsButton.layer.cornerRadius = 15
+        checklistButton.layer.cornerRadius = 15
+
         
         //Call refresh to update the page with the correct news sites and titles
         refresh(refreshButton)
@@ -444,11 +478,11 @@ class DynamicNewsController: UIViewController, SFSafariViewControllerDelegate {
         SegmentedController.selectedSegmentIndex = 0
         
         //Shadow for the header image
-        Header.layer.masksToBounds = true
-        Header.layer.shadowRadius = 10
-        Header.layer.shadowColor = UIColor.darkGray.cgColor
-        Header.layer.shadowOffset = CGSize(width: 5, height: 15)
-        Header.layer.shadowOpacity = 1
+//        Header.layer.masksToBounds = true
+//        Header.layer.shadowRadius = 10
+//        Header.layer.shadowColor = UIColor.darkGray.cgColor
+//        Header.layer.shadowOffset = CGSize(width: 5, height: 15)
+//        Header.layer.shadowOpacity = 1
         
         //Page header adapting to different localized languages
         NewsLabel?.adjustsFontSizeToFitWidth = true;

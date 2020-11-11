@@ -44,11 +44,17 @@ class ViewController: UIViewController {
         //Initialize the AWS app sync service
         self.initAppSync()
         
-        //Round the corners of the storyboard buttons
-        Help.layer.cornerRadius = 5
-        News.layer.cornerRadius = 5
-        Apps.layer.cornerRadius = 5
-        logoutButton.layer.cornerRadius = 5
+        
+        //Round the corners of the storyboard buttons and add shadows
+        var buttonBox = [Help,News,Apps,logoutButton]
+        
+        for button in buttonBox{
+            button?.layer.cornerRadius = 15
+            button?.layer.shadowRadius = 5
+            button?.layer.shadowOpacity = 0.8
+            button?.layer.shadowOffset = CGSize(width: 2.0, height: 2.0)
+        }
+        
     
         //Set the labels of the buttons to adjust their font size based on the number of characters in the label so that language localization does not cause text overflows
         Help.titleLabel?.adjustsFontSizeToFitWidth = true;
